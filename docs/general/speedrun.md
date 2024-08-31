@@ -1,0 +1,1 @@
+* [速通网站](https://www.speedrun.com/celeste)

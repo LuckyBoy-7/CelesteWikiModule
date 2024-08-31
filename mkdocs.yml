@@ -1,0 +1,86 @@
+site_name: Celeste Wiki
+
+theme:
+  name: material
+  logo: assets/images/favicon.png
+  features:
+    - content.code.copy
+    - content.tabs.link
+
+extra_css:
+  - css/content.css
+
+markdown_extensions:
+  - admonition # 警告
+  - meta # 元数据
+  - attr_list
+  - md_in_html
+  - def_list # 列表
+  - pymdownx.tilde # 下划线
+  - pymdownx.tasklist # 列表
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.highlight: # 语法高亮
+      pygments_lang_class: true
+      linenums: true
+
+nav:
+  - 首页: "index.md"
+  - 常规:
+      - 游戏官网: "https://www.celestegame.com/"
+      - Wiki: "general/wiki.md"
+      - 社区: "general/community.md"
+      - 常规:
+          - 原版常见问题: "general/common/vanilla_issues.md"
+          - 基本术语补充: "general/common/basic_terms.md"
+          - 游戏机制和技巧: "general/common/mechanics.md"
+          - 彩蛋: "general/common/easter_eggs.md"
+          - 技巧和攻略向教程: "general/common/tutorials.md"
+      - 查阅: "general/lookup.md"
+      - 新闻: "https://maddie480.ovh/celeste/olympus-news"
+      - 速通: "general/speedrun.md"
+      - 炼金: "general/deathless.md"
+      - TAS: "general/tas.md"
+  - Mods:
+      - Mod下载: "mods/download.md"
+      - 常规:
+          - Everest下载问题: "mods/common/everest_install_issues.md"
+          - 游戏崩溃问题: "mods/common/common_crashes.md"
+          - 调试模式: "https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F"
+          - 推荐Mod: "mods/common/recommended_mods.md"
+      - 工具: "mods/tools.md"
+      - 资源: "mods/resources.md"
+  - 制图:
+      - 入门:
+        - 开始: "mappings/start/start.md"
+        - 常见问题: "https://github.com/EverestAPI/Resources/wiki/FAQ"
+        - 这...是个梦吗: "mappings/start/is_that_a_dream.md"
+      - Loenn:
+          - 下载(或者群文件里下): "https://github.com/CelestialCartographers/Loenn/releases"
+          - 基本概念: "mappings/loenn/loenn_basis.md"
+          - 常见问题: "mappings/loenn/faq.md"
+          - 房间属性: "https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7"
+          - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
+          - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds"
+      - 常用:
+          - 官图实体一览(b站 Wiki): "https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93"
+          - 官图实体和Trigger一览(Everest Wiki): "https://github.com/EverestAPI/Resources/wiki/Entity-and-Trigger-Documentation"
+          - 玩家自定义实体一览: "https://maddie480.ovh/celeste/custom-entity-catalog"
+          - 官图Audio Event ID一览: "https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump"
+          - 常用Helper文档: "https://github.com/EverestAPI/Resources/wiki/Helper-Manuals"
+      - 教程: "mappings/overall.md"
+      - Mod结构: "mappings/mod_structure.md"
+      - Dialog: "mappings/dialog.md"
+      - Camera: "mappings/camera.md"
+      - Graphics: "mappings/graphics.md"
+      - Audio: "mappings/audio.md"
+      - Lua Cutscene: "mappings/lua_cutscene.md"
+      - Collab: "https://wiki.biligame.com/celeste/%E5%90%88%E9%9B%86%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B"
+      - Code: "mappings/code.md"
+      - 发布Mod: "https://github.com/EverestAPI/Resources/wiki/Uploading-Mods"
+        
