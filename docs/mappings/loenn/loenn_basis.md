@@ -7,13 +7,23 @@
 
 ## Entity
 
-即实体, 大多数时候就是那些可见, 可交互的物体, 例如:水母, Theo水晶, 红绿灯, Swap块, 移动块, 新浪, 单向板等, 也有例外, 例如: Player(Spawn Point)重生点
+即实体, 大多数时候就是那些可见, 可交互的物体, 例如:
+
+* 水母, Theo水晶, 红绿灯, Swap块, 移动块, 新浪, 单向板等, 
+
+也有例外, 例如: 
+
+* Player(Spawn Point)重生点
 
 ## Trigger
 
 即触发器, 顾名思义就是当player碰到的时候触发某些东西, 做某些事, 大多数时候不可见, 例如:
 
 * Everest Dialog Cutscene: 在player碰到trigger时播放对应对话(详情见[Dialog栏目](../dialog.md))
+
+或者当player呆在Trigger里的时候干某些事, 例如:
+
+* Bloom Fade Trigger可以根据玩家在Trigger中的不同位置来调整泛光的强度的大小
 
 ## Decals
 
