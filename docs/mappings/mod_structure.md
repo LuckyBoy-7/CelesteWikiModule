@@ -32,8 +32,8 @@ Celeste
         - OtherMod3
         - MyMod  // 你的Mod
             - Maps 
-                - Lucky_boy
-                    - LuckyIsland
+                - 作者名
+                    - 地图集名字
                          - MyFirstMap.bin  
                          - MyFirstMap-B.bin
                          - MyFirstMap-C.bin

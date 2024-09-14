@@ -1,4 +1,14 @@
+!!! warning
+    请先阅读Wiki首页的[提问的艺术](../../index.md)
+
+## [b站 Wiki](https://wiki.biligame.com/celeste/Loenn#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+
+## 忘了自己把地图文件保存在哪儿了
+
+重开一次Loenn, 右下角应该会显示"Loaded map: xxxx.bin"
+
 ## ForegroundTiles, BackgroundTiles, Entity, Trigger, Decal都是什么
+
 [详情见](loenn_basis.md)
 
 ## 为什么不能切板
@@ -7,7 +17,11 @@
 
 ## 怎么修改查看对象属性
 
-Loenn右键对象
+Loenn里右键对象
+
+## 怎么置顶右侧placement条目, 方便查找
+
+双击置顶, 双击取消置顶
 
 ## xxx这个实体叫什么
 
