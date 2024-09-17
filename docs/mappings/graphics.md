@@ -1,3 +1,9 @@
+## 资源
+
+[官图素材资源](../mods/resources.md)
+
+## 界面
+
 * [自定义开始界面（包括山体建模等）](https://github.com/EverestAPI/Resources/wiki/Overworld-Customisation)
 * [自定义游戏结束界面](https://github.com/EverestAPI/Resources/wiki/Chapter-Complete-Screen)
 
@@ -5,7 +11,7 @@
 
 * [蔚蓝科技之自制皮肤mod教程](https://www.bilibili.com/video/BV1Uv4y1K751)
 * [蔚蓝皮肤制作教程-星夜祈梦](https://www.bilibili.com/video/BV1YpYueREPt)
-    * [文字版](../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf) 
+    * [文字版](../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf)
 
 ## Decal & DecalRegistry
 
