@@ -19,6 +19,7 @@
 * [摘自b站 Wiki(描述不详细，但很全，含helper自定义的decalregistry内容)](https://wiki.biligame.com/celeste/DecalRegistry)
 * [celeste地图制作指南(装饰，decals)(适合新手，有配图)](https://www.bilibili.com/read/cv18389517/)
 * [摘自Everest Wiki(描述详细，且提供了自定义decalregistry的教程)](https://github.com/EverestAPI/Resources/wiki/Decal-Registry)
+* [暮q中翻 - Donker's Deco Guide](../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx)
 
 ## 替换官图素材
 
