@@ -1,4 +1,4 @@
-# [常见报错解决方案](https://saplonily.elecho.dev/celeste_common_issues/index.html)
+# [常见报错解决方案(这个蓝蓝的可以点你知道的吧)](https://saplonily.elecho.dev/celeste_common_issues/index.html)
 
 # 我蔚蓝崩了，怎么办😭
 

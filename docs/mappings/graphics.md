@@ -19,7 +19,7 @@
 * [摘自b站 Wiki(描述不详细，但很全，含helper自定义的decalregistry内容)](https://wiki.biligame.com/celeste/DecalRegistry)
 * [celeste地图制作指南(装饰，decals)(适合新手，有配图)](https://www.bilibili.com/read/cv18389517/)
 * [摘自Everest Wiki(描述详细，且提供了自定义decalregistry的教程)](https://github.com/EverestAPI/Resources/wiki/Decal-Registry)
-* [暮q中翻 - Donker's Deco Guide](../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx)
+* [春暮Q 中翻 - Donker's Deco Guide](../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx)
 
 ## 替换官图素材
 
@@ -32,3 +32,14 @@
 * [摘自Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 * [瓦片集格式参考](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 * [motonine的自制tiles教程](../assets/mappings/graphics/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
+
+### QA
+#### 怎样获取精美的美术素材
+1. 自己画
+2. 利用生成器自动生成
+3. 在群“制图素材”文件夹里寻找素材。
+4. 官图素材改色
+
+注：
+1. 这些素材文件中有些是香蕉网的mod，可直接取用而有些则要解压取用。可以通过celemod/Olympus搜索mod名区分，搜不到=需解压。
+2. 在解压取用的文件中，如果有则请先阅读readme.txt/docx.了解格式和原作者的取用限制。并请严格按其规则执行。如果没有明确规定或只有“give a credit”，请在地图明显处或香蕉网界面设置其为素材提供者。
