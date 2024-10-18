@@ -8,6 +8,7 @@
 * [全国首发!(?) 带你详解蔚蓝逆天技巧大串烧Alaska 你会的你不会的都在这里!](https://www.bilibili.com/video/BV1oV411L7Kp)
 * [奇怪的望远镜小寄巧（和原理解释）](https://www.bilibili.com/video/BV1vZ421N7Ps)
 * [Celeste Tech](https://celeste.ink/wiki/Tech)
+* [Celeste TAS Tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws)
 * [狼狼赞专栏](https://space.bilibili.com/361792051/article)
 
 ## 前置知识
