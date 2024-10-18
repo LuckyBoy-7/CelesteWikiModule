@@ -25,6 +25,7 @@
 
 * [正常替换](https://github.com/EverestAPI/Resources/wiki/Replacing-A-Texture)
 * [高级替换](https://github.com/EverestAPI/Resources/wiki/Reskinning-Entities)
+* 看电箱教程或者冬菜教程
 
 ## 自定义瓦片集
 
@@ -34,6 +35,11 @@
 * [motonine的自制tiles教程](../assets/mappings/graphics/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
 
 ### QA
+
+#### 怎么设置存档点(章节)的插图
+[看电箱教程](https://www.bilibili.com/video/BV1A14y1W7hr)或者冬菜教程
+
+
 #### 怎样获取精美的美术素材
 1. 自己画
 2. 利用生成器自动生成
