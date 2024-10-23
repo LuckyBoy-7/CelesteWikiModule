@@ -46,6 +46,7 @@
 3. 在群“制图素材”文件夹里寻找素材。
 4. 官图素材改色
 5. [Itch.io](https://itch.io/game-assets)
+6. [opengameart](https://opengameart.org/)
 
 注：
 
