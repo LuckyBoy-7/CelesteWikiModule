@@ -22,6 +22,7 @@
 * [春暮Q 中翻 - Donker's Deco Guide](../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx)
 
 ## 替换官图素材
+> ￥: 会找custom实体直接改贴图能改80%，会改xml能改95%，会code自己写实体能改100%
 
 * [正常替换](https://github.com/EverestAPI/Resources/wiki/Replacing-A-Texture)
 * [高级替换](https://github.com/EverestAPI/Resources/wiki/Reskinning-Entities)
