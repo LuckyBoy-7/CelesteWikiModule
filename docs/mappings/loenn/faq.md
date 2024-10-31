@@ -3,6 +3,18 @@
 
 ## [b站 Wiki](https://wiki.biligame.com/celeste/Loenn#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 
+## xxx出问题了, 没反应, 没效果
+
+内容填对了吗?
+
+保存了吗(实体属性保存, Metadata保存, Loenn保存)?
+
+路径对了吗(斜杠有敲反吗, 文件名对吗, 要加后缀吗)?
+
+xml内容对了吗(id冲突, 模板错误, 是否多加或者少加了一个/)?
+
+Mod启用了吗?
+
 ## 忘了自己把地图文件保存在哪儿了
 
 重开一次Loenn, 右下角应该会显示"Loaded map: xxxx.bin"
