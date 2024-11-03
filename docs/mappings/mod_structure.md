@@ -71,3 +71,9 @@ Celeste
       - everest.yaml
 ```
 
+
+## FAQ
+
+### loenn里的实时人物尾迹要怎么打开
+
+下载`Aurora's Loenn Plugin`插件, 在Loenn上方导航栏点击打开`View -> Show Player Sihouette [Aurora's Loenn Plugin]`
