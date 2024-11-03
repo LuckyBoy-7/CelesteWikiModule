@@ -1,8 +1,10 @@
 site_name: Celeste Wiki
+repo_url: https://github.com/LuckyBoy-7/CelesteWikiModule
 
 theme:
   name: material
   logo: assets/images/favicon.png
+  font: false
   features:
     - content.code.copy
     - content.tabs.link
