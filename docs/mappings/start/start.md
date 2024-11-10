@@ -79,7 +79,7 @@ Loenn
 
 详情见[Dialog](../dialog.md)
 
-### 怎么做皮肤, 改帖图等
+### 怎么做皮肤, 改贴图等
 
 详情见[Graphics](../graphics.md)
 
