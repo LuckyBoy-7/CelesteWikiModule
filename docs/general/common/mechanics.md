@@ -10,6 +10,7 @@
 * [Celeste Tech](https://celeste.ink/wiki/Tech)
 * [Celeste TAS Tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws)
 * [狼狼赞专栏](https://space.bilibili.com/361792051/article)
+* [Celeste 机制详解 (第 0 版) by 反向钟](../../assets/general/mechanics/Celeste%20机制详解%20(第%200%20版).pdf)
 
 ## 前置知识
 
