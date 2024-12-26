@@ -6,7 +6,7 @@
 > 顾名思义就是游戏中一切跟文本有关的东西, [主要包括](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E6%9C%AC%E4%BD%BF%E7%94%A8)
 > 
 > * 对话(人物对话文本)
-> * UI(例如开始界面的文本, Mod选项界面的文本, 暂停界面的文本, 选关界面的文本)
+> * UI(例如开始界面的文本, Mod选项界面的文本, 暂停界面的文本, 选关界面的文本, 明信片等)
 >
 > 你要知道游戏中的每一段文本都对应一个唯一的`id`, 叫做**键**, 或者说`key`, 游戏就是通过相同的`key`访问不同的语言文件来实现本地化的工作,
 > 我们以`Celeste/Content/Dialog/English.txt`下的`Main Menu` 部分为例, 是不是和你游戏开始界面上显示的一样呢
@@ -46,6 +46,7 @@
 * [添加对话emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes)
 把你的emoji图片放到`Graphics/Atlases/Gui/emoji`目录下(`.png`格式的), 对话对应文本为`:你的图片相对路径(不带.png):`例如`:LuckyCelesteMod/shock:`
 * [Lua Cutscene过场动画(即配合对话的演出)](lua_cutscene.md)
+* [明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179)
 
 ## QA
 
