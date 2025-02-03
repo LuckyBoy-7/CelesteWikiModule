@@ -75,7 +75,7 @@ nav:
       - Mod下载: "mods/download.md"
       - 常规:
           - Everest下载问题: "mods/common/everest_install_issues.md"
-          - 游戏崩溃问题: "mods/common/common_crashes.md"
+          - 游戏崩溃问题: "https://saplonily.top/celeste_common_issues/index.html"
           - 调试模式: "https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F"
           - 推荐Mod: "mods/common/recommended_mods.md"
       - 工具: "mods/tools.md"
