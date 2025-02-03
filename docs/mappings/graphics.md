@@ -20,6 +20,8 @@
 * [celeste地图制作指南(装饰，decals)(适合新手，有配图)](https://www.bilibili.com/read/cv18389517/)
 * [摘自Everest Wiki(描述详细，且提供了自定义decalregistry的教程)](https://github.com/EverestAPI/Resources/wiki/Decal-Registry)
 * [春暮Q 中翻 - Donker's Deco Guide](../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx)
+* [废话deco教程]()(群文件里下)
+* [jpyx258的deco轮椅]()(群文件里下)
 
 ## 替换官图素材
 > ￥: 会找custom实体直接改贴图能改80%，会改xml能改95%，会code自己写实体能改100%
@@ -34,12 +36,12 @@
 * [摘自Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 * [瓦片集格式参考](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 * [motonine的自制tiles教程](../assets/mappings/graphics/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
+* [底龙的自定义tiles教程](https://www.bilibili.com/video/BV1Eu4y1L78Y)
 
 ### QA
 
 #### 怎么设置存档点(章节)的插图
 [看电箱教程](https://www.bilibili.com/video/BV1A14y1W7hr)或者冬菜教程
-
 
 #### 怎样获取精美的美术素材
 1. 自己画

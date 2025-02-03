@@ -104,10 +104,10 @@ Celeste
                 - MyFirstMap1.bin  // 如果名字不一样地图就会被分成多个模块, 就像官图1a, 2a ... 8a一样
 ```
 
-### 了解`Everest`处理这些文件的逻辑
+### [了解`Everest`处理这些文件的逻辑](https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders)
 
 按照原版的路径(请查看`Celeste/Content/`路径下的文件夹), `Everest`会把要加载的Mod里的的资源(包括官图的`Maps, Dialog, Audio, Graphics`等)
-整合到一起(对于大部分文件来说是覆盖, 而对`Dialog`里的文件来说是合并), 做好合并工作后Everest就可以像处理原版东西那样处理我们的东西了
+整合到一起(对于大部分文件来说同路径会覆盖, 而对`Dialog`里的文件来说是合并), 做好合并工作后Everest就可以像处理原版东西那样处理我们的东西了
 
 正是因为地图和素材等文件同路径的时候会被覆盖, 比如你和它的Mod都长这样, 你俩有个人的图就加载不出来了, 如果贴图和音频等文件也重名重路径了, 你的图可能会加载到错误的素材
 
@@ -144,6 +144,11 @@ Celeste
                          - MyFirstMap1.bin 
 ```
 
+### 注意事项
+
+如果你在此期间移动了`.bin`文件, 再次打开Loenn后, Loenn可能记住的是原来的文件位置, 所以如果此时你保存了, Loenn会在原位置生成一个`.bin`, 
+而不是修改你放在新的位置的`.bin`, 所以移动`.bin`文件之后记得在Loenn里重新打开新的`.bin`文件
+
 ## Tutorials
 
 * [录制残影1](https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93#Ghost_Player_Playback)
@@ -152,11 +157,13 @@ Celeste
 ### 在Loenn里显示游戏内人物的实时尾迹
 
 下载`Aurora's Loenn Plugin`插件(本质上也是个Mod, 所以Mod怎么下它也怎么下), 在Loenn上方导航栏点击打开`View -> Show Player Sihouette [Aurora's Loenn Plugin]`, 在游戏内随便走走,
-返回Loenn并刷新即可, 如果需要清空尾迹, 则点击`View -> Clear Player Sihouette [Aurora's Loenn Plugin]`
+返回Loenn即可, 如果需要清空尾迹, 则点击`View -> Clear Player Sihouette [Aurora's Loenn Plugin]`
 
 ## 常见错误
 
-### 当你发布你的Mod的时候你要把你Mods里`Maps`同级的文件打包到一个`.zip`文件里, 而不是把你的整个Mod打包成`.zip`
+### Mod打包问题
+
+当你发布你的Mod的时候你要把你Mods里`Maps`同级的文件打包到一个`.zip`文件里, 而不是把你的整个Mod打包成`.zip`
 
 例如这样是对的
 
