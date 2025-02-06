@@ -91,12 +91,7 @@ nav:
           - 房间属性: "https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7"
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
           - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds"
-      - 常用:
-          - 官图实体一览(b站 Wiki): "https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93"
-          - 官图实体和Trigger一览(Everest Wiki): "https://github.com/EverestAPI/Resources/wiki/Entity-and-Trigger-Documentation"
-          - 玩家自定义实体一览: "https://maddie480.ovh/celeste/custom-entity-catalog"
-          - 官图Audio Event ID一览: "https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump"
-          - 常用Helper文档: "https://github.com/EverestAPI/Resources/wiki/Helper-Manuals"
+      - 常用: "mappings/useful_links.md"
       - 教程: "mappings/overall.md"
       - Mod结构: "mappings/mod_structure.md"
       - Dialog: "mappings/dialog.md"

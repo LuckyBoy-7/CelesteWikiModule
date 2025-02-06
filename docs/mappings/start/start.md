@@ -81,7 +81,8 @@ Loenn初次打开就报错的[解决方案](../loenn/loenn_issues.md)
 * 下载`CelesteTas`这个Mod, 在游戏内按`Ctrl + B`就能查看Entity和Trigger碰撞箱, 方便制图
 * 下载[官图图片素材](../../mods/resources.md), 以后肯定用得上
 * 上网了解下什么是相对路径和绝对路径, 这在替换图片, 选择的路径几乎都是相对路径, 一般都是相对于官图素材里`Gameplay`里的一些文件夹的路径
-* 了解[啥是Flag](https://github.com/EverestAPI/Resources/wiki/FAQ#what-are-flags)
+* 了解[啥是Flag](https://www.bilibili.com/video/BV1p44y1S79A), 简单来说就是带名字的开关, 我们一般使用某个实体或者Trigger触发某个flag, 以触发对应flag实体(例如`FlagSwitchGate`), 做到一对一的交互
+* 了解[啥是XML](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/), 方便你以后改`XML`
 * 碰到问题时可以查看[Loenn常见问题](../loenn/faq.md)
 * 不会就抄别人的Mod, 抄多了就会了
 
