@@ -1162,7 +1162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loenn/stylegrounds" class="md-nav__link">
+      <a href="../loenn/stylegrounds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1305,6 +1305,15 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       部分引用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是Dialog
     </span>
   </a>
   
@@ -1559,6 +1568,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是Dialog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       修改自己地图名称和吃心文本
@@ -1629,52 +1647,55 @@
 <li><a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B">B站 Wiki 的Dialog教程</a></li>
 <li><a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue">Everest Wiki 的Dialog教程</a></li>
 </ul>
-<blockquote>
-<p>Dialog:
-顾名思义就是游戏中一切跟文本有关的东西, <a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E6%9C%AC%E4%BD%BF%E7%94%A8">主要包括</a></p>
+<h2 id="dialog">什么是Dialog</h2>
+<p>顾名思义就是游戏中一切跟文本有关的东西, <a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E6%9C%AC%E4%BD%BF%E7%94%A8">主要包括</a></p>
 <ul>
 <li>对话(人物对话文本)</li>
 <li>UI(例如开始界面的文本, Mod选项界面的文本, 暂停界面的文本, 选关界面的文本, 明信片等)</li>
 </ul>
-<p>你要知道游戏中的每一段文本可能对应不同的语言, 所以怎么组织这些文本呢</p>
+<p>你要知道游戏中的每一段文本可能对应不同的语言, 所以该怎么组织这些文本呢</p>
 <p>官方的做法是一种语言对应一个<code>.txt</code>, 一段文本对应一个唯一的<code>id</code>, 叫做<strong>键</strong>, 或者说<code>key</code>, 游戏就是通过你使用的语言来访问对应的文件, 用<code>key</code>来访问对应的文本来实现本地化的工作,</p>
 <p>我们以<code>Celeste/Content/Dialog/English.txt</code>下的<code>Main Menu</code> 部分为例(找不到可以<code>Ctrl + F</code>搜索), 如果你此时的语言是英文, 看看这是不是和你游戏开始界面上显示的一样呢(左边是<code>key</code>, 右边是
 <code>对应语言的文本</code>)
-<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+ <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Main Menu</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_DEBUG=       ~DEBUG~</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_BEGIN=       CLIMB</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_PICO8=       PICO-8</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_OPTIONS= Options</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_CREDITS= Credits</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_EXIT=        Exit</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_DEBUG=        ~DEBUG~</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_BEGIN=        CLIMB</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_PICO8=        PICO-8</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_OPTIONS=  Options</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_CREDITS=  Credits</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_EXIT=     Exit</span>
 </code></pre></div></td></tr></table></div>
-知道原理后我们就可以添加新的<code>key</code>来生成我们需要的文本, 甚至是替换官图文本</p>
-</blockquote>
+ 知道原理后我们就可以添加新的<code>key</code>来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的)</p>
 <p>首先在你Mod根目录下创建一个Dialog<strong>文件夹</strong>形成类似<code>Celeste/Mods/你的mod名/Dialog/</code>的目录结构</p>
-<p>接着你就可以创建各种<code>.txt</code>
-文件来做不同语言的翻译和添加文本的工作<a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file">详情见Everest Wiki</a>, 但最常见的是
-<code>English.txt</code>和<code>Simplified Chinese.txt</code></p>
-<h2 id="_2"><a href="https://github.com/EverestAPI/Resources/wiki/map-metadata#map-name">修改自己地图名称和吃心文本</a></h2>
+<p>接着你就可以创建<a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file">各种<code>.txt</code></a>
+文件来做不同语言的翻译和添加文本的工作, 但一般加中文<code>Simplified Chinese.txt</code>跟英文<code>English.txt</code>就够了</p>
+<p>写好对应的文本后在对应Trigger中填入对应<code>id/key</code>即可</p>
+<h2 id="_2">修改自己地图名称和吃心文本</h2>
+<ul>
+<li><a href="https://github.com/EverestAPI/Resources/wiki/map-metadata#map-name">教程 by Everest</a></li>
+<li><a href="https://www.bilibili.com/video/BV1Av4y1D7a8/?t=174">教程 by 电箱</a></li>
+</ul>
 <p>最简单粗暴识别哪些东西是键名的方法就是那一串东西是不是被大括号<code>{}</code>或者中括号<code>[]</code>包着, 所以照抄就好了, 例如</p>
 <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Lucky_Tutorial=Tutorial
-Lucky_Tutorial_CelesteWikiTutorial=LuckyWikiTutorial
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Wiki_Tutorial=Tutorial
+Wiki_Tutorial_CelesteWikiTutorial=WikiTutorial
 
-poem_Lucky_Tutorial_CelesteWikiTutorial_A=Hello world!
+poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
 </code></pre></div></td></tr></table></div>
 <p>如果要添加自定义文本键名一定要长~, 不然很可能和别人重了出问题, 一般建议是<code>作者名_图名_键名</code></p>
 <h2 id="trigger">常用对话Trigger</h2>
 <ul>
 <li>Minitextbox Trigger(trigger)</li>
 <li>Everest Dialog Cutscene(trigger)</li>
+<li>Custom NPC(entity)</li>
 </ul>
 <h2 id="_3">注意事项</h2>
 <ul>
@@ -1687,7 +1708,7 @@ poem_Lucky_Tutorial_CelesteWikiTutorial_A=Hello world!
 <li><a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85">人物表情</a>(也可以在控制台输入<code>portraits</code>来查看)</li>
 <li><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Portraits">自定义人物对话头像</a></li>
 <li><a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes">添加对话emoji</a>
-  把你的emoji图片放到<code>Graphics/Atlases/Gui/emoji</code>目录下(<code>.png</code>格式的), 对话对应文本为<code>:你的图片相对路径(不带.png):</code>例如<code>:LuckyCelesteMod/shock:</code></li>
+  把你的emoji图片放到<code>Graphics/Atlases/Gui/emoji</code>目录下(<code>.png</code>格式的), 对话对应文本为<code>:你的图片相对路径(不带.png):</code>例如<code>:MyCelesteMod/shock:</code></li>
 <li><a href="../lua_cutscene/">Lua Cutscene过场动画(即配合对话的演出)</a></li>
 <li><a href="https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179">明信片</a></li>
 </ul>
