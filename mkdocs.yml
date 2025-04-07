@@ -90,7 +90,7 @@ nav:
           - 常见问题: "mappings/loenn/faq.md"
           - 房间属性: "https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7"
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
-          - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds"
+          - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
       - 常用: "mappings/useful_links.md"
       - 教程: "mappings/overall.md"
       - Mod结构: "mappings/mod_structure.md"
