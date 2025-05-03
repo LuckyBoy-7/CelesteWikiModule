@@ -1,12 +1,17 @@
+本篇会讲解一个Mod的结构大概是怎么样的, Everest是如何加载我们的Mod的
+
 ## 引用
 
 * [everest.yaml](https://github.com/EverestAPI/Resources/wiki/everest.yaml-Setup)
 * [Mod结构（摘自b站 Wiki）](https://wiki.biligame.com/celeste/Mod%E7%BB%93%E6%9E%84)
 * [Mod结构（摘自Everest Wiki）](https://github.com/EverestAPI/Resources/wiki/Mod-Structure)
+* [【Celeste蔚蓝】作图教程第一章-路径](https://www.bilibili.com/video/BV1tR4y1X7wu)
+* [【Celeste蔚蓝】二代作图教程 1-5 基础路径](https://www.bilibili.com/video/BV1394y1C7Fy)
+
 
 如果你很急, 那么你在Loenn里作好图之后可以直接把`.bin`文件丢在蔚蓝根目录的Mods(一般应该运行过一次`Everest`应该就有了)文件夹下, 此时打开游戏理论上你就能看到你作的图了,
 但是这样你的Mod会被当作`Uncategorized未分类的`, 因为`Everest`只知道这有一张图, 但是其他啥也不知道, 所以你才需要学习Mod结构,
-一个比较标准的Mod一般会包含`Audio`, `Dialog`, `Graphics`, `Maps`, `Tutorials`文件夹, `everest.yaml`文件
+一个比较标准的Mod一般会包含`Audio`, `Dialog`, `Graphics`, `Maps`, `Tutorials`文件夹, `everest.yaml`文件(你可以直接配着游戏本体结构`../Steam/steamapps/common/Celeste/Content/`或者其他Mod结构一起看)
 
 | 文件/文件夹       | 是否必须 | 作用             |
 |:-------------|:-----|:---------------|
@@ -19,12 +24,12 @@
 
 ## everest.yaml
 
-他是一个`.yaml`格式的文件, 你可以简单把它当作有一定格式规范的`.txt`, 你可以用记事本打开编辑,
+它是一个`.yaml`格式的文件, 你可以简单把它当作有一定格式规范的`.txt`, 你可以用记事本打开编辑,
 至于它的作用, 当然就是用来告诉`Everest`有关你这Mod的所有信息, 所以下面举例来解释里面各个参数代表的含义
 
 首先这是最精简的`everest.yaml`格式
 
-```
+```yaml
 - Name: MyMod
   Version: 1.0.0 
   Dependencies:
@@ -34,11 +39,11 @@
 
 ### Name
 
-你的Mod的名字，用英文, `Everest`总得知道你Mod叫什么吧
+你的Mod的名字, 用英文, `Everest`总得知道你Mod叫什么吧
 
 ### Version
 
-你的Mod的版本号, 你每次更新Mod的时候都要调整这些数字, 这被称为版本迭代, 一次更新对应一个版本, 这样才不会出现同一个版本有两个不同包的尴尬情况, 而且这可能导致其他人无法及时更新对应的Mod
+你的Mod的版本号, 你每次更新Mod的时候都要调整这些数字, 这被称为版本迭代, 一次更新对应一个版本, 这样才不会出现同一个版本有两个不同Mod的尴尬情况, 而且这可能导致其他人无法及时更新对应的Mod
 
 #### 举例
 
@@ -152,8 +157,10 @@ Celeste
 
 ## Tutorials
 
+### 录制像9a凌波微步那样的残影
+
 * [录制残影1](https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93#Ghost_Player_Playback)
-* [录制残影2](https://github.com/EverestAPI/Resources/wiki/Mod-Structure#adding-custom-tutorial-ghosts),
+* [录制残影2](https://github.com/EverestAPI/Resources/wiki/Mod-Structure#adding-custom-tutorial-ghosts)
 
 ### 在Loenn里显示游戏内人物的实时尾迹
 

@@ -10,34 +10,10 @@
 
 ## 建议
 
-* 建议你下载的所有东西, 蔚蓝, 制图工具和素材等都放在英文路径下(如果用户名是中文那么桌面也算中文路径), 不然可能会有奇奇怪怪的bug
 * 建议一开始的时候先过一遍教程有个印象, 虽然我知道你很想赶紧在制图器里摆几个砖然后开u, 但还是请你先忍一忍
-  > K: 所有不看群文件教程就在群里问教程讲过的东西的人直接踢出群聊
-* 建议学会使用搜索工具(比如[bing](https://cn.bing.com))和AI(比如deepseek), 什么? 你问我为什么deepseek没链接, 我说你自己去搜啊😡
-* 建议善用`Ctrl + F`搜索和网页上方的全局搜索: 帮你快速定位想要的内容
-* 建议善用翻译软件(比如[有道翻译](https://fanyi.youdao.com/download-Windows)), 遇到不会的单词时第一反应应该是查而不是问
-* 建议学会提问, 只需要如下要素就会有大佬来帮你了🥰, 详情见wiki首页的`提问的艺术`
-    * 努力的证明: 先动手再问, 不做伸手党
-    * 详细的信息: 别惜字如金, 能提供越多清晰详细信息越好
-        * 口头描述: 不管是需求还是游戏崩了都请描述清晰点
-        * 截图
-            * 下载snipaste这个软件
-            * 用QQ截屏
-            * `Shift + Win徽标键 + S`截屏
-        * [log.txt](https://saplonily.top/celeste_common_issues/index.html#logtxt): 存放了游戏的调试信息, 方便在游戏崩溃时向群友求助(求助前确保所有Mod已是最新版且bug能稳定复现)
-    * 谦卑的语气
-    * 将心比心: 问问自己"如果我是大佬那么这个人提的问题值得我解答吗还是说得不断追问最后发现是别人自己🐷了结果别人也没学到东西自己也浪费了时间"
-* 有些链接需要上Github, 国内裸连不稳定, 建议自行搜索解决方案, 或者下载相关加速工具(如FastGithub), 会科学上网更好
-
-## 词汇解释
-
-* `蔚蓝根目录`: `.../Steam/steamapps/common/Celeste/`, 游戏本体所在目录
-* `Everest`: Mod加载器
-* `Olympus`, `Celemod`: Mod管理器
-* `Ahorn`, `Loenn`: 制图器
-* `实体(Entity)`: 一般游戏内看得见能交互的都是, 比如新浪Seeker, 胖头鱼Puffer, 单向板JumpThru, 玩家Player本身, 刺Spike等等
-* `触发器(Trigger)`: 一般指游戏内看不见的一块区域, 玩家在进入Trigger时它会改变游戏内的一些参数(比如游戏亮度, 玩家冲刺数)或是触发一些东西(比如让玩家立即死亡, 触发一段对话)
-* `Player`: 指Madeline自身
+> K: 所有不看群文件教程就在群里问教程讲过的东西的人直接踢出群聊
+* 建议你下载的所有东西, 蔚蓝, 制图工具和素材等都放在英文路径下(如果用户名是中文那么桌面也算中文路径), 不然可能会有奇奇怪怪的bug
+* [学会提问/搜索/自学](../question_and_self_study.md) 
 
 ## 前期准备
 
@@ -50,10 +26,10 @@
 
 ## 初出茅庐
 
-### 了解什么是Mod, 什么是Everest
+### 了解什么是游戏, 什么是Mod, 什么是Everest
 
-要知道我们在电脑上运行一款软件本质上是跑了一段`.exe程序`, 游戏也是如此, 它会在程序运行后先加载需要的资源(比如启动蔚蓝的时候你看到小Madeline在跑说明就是在加载资源),
-然后程序将使用这些资源来将`玩`的部分呈现给你
+要知道我们在电脑上运行一款软件本质上是跑了一段`.exe格式的程序`, 游戏也是如此,
+它会通过代码在游戏启动的时候加载各种资源, 然后组织管理游戏内的逻辑(比如键盘操作, 碰撞, 玩家的运动, 音频的播放等)和绘制(游戏内你能看到的一切), 让你以为这是一个活灵活现的世界, 实际上就是一堆代码在跑, 而它们只是在恰当的时机使用资源罢了
 
 所以简单来说我们可以把蔚蓝分解成程序和资源两个部分:
 
@@ -66,19 +42,22 @@
 * 代码`Code`: `Coders`写的各种Helper
 * 美术`Graphics`: 游戏中你看得见的几乎都是, 就是一张张`.png`图片
 * 音乐音效`Audio`: BGM, [玛德琳音](https://www.bilibili.com/video/BV1vrFieDEak)等等
-* 文本`Dialog`: 对话, 文本本地化
+* 文本`Dialog`: 对话, 文本本地化/汉化
 * 过场`Lua Cutscenes`: 游戏中各种剧情的演绎
 * 残影`Tutorials`: 9a凌波教程
-* 地图`Maps`: 包含上述所有内容
+* 地图`Maps`: 包含上述所有内容, 使用Loenn制作(马上就要提到了)
 * 等等
 
-你会发现当我们把蔚蓝分解之后它几乎就是以全裸的形式呈现在我们面前, 我们几乎可以随意对它进行修改, 就好像我们自己是开发者一样, 事实也确实如此
+所以你应该明白了, 为一个游戏做Mod, 本质上就是修改部分核心程序, 让程序按我们的意愿额外加载我们资源(所以你经常能看到各种游戏跟Mod有关的资源都是放到游戏本体根目录下的Mods文件夹中), 
+然后Modder在Mods文件夹中添加各种上述资源, 我们的Mod就完成啦
 
-但如果我们各改各的, 那势必会造成混乱, 所以需要一个中间商来制定一套规则, 只要大伙儿都遵循这套规则, 做出来的东西就方便传播和使用
+显然, 不是所有人都有能力去修改核心程序的, 这不仅需要门槛, 而且大家各改各的容易造成混乱, 所以需要一个中间商来制定一套规则, 只要大伙儿都遵循这套规则, 做出来的东西就方便传播和使用
 
 这就是[Everest Mod加载器](https://github.com/EverestAPI/Everest)在干的事, 它修改了游戏的核心程序并在此基础上添加了更丰富的内容, 我们无需关心资源是怎么读取的,
 只需要按它规定的把我们的Mod放到`.../Steam/steamapps/common/Celeste/Mods/`文件夹下, 然后把上文说的所谓的游戏资源也按它[规定的格式](../mod_structure.md)放在自己的Mod里该放的位置,
 理论上你的Mod就能被正确的加载并运行
+
+![why_everest](../../assets/images/why_everest.png){width=500}
 
 ### 下载[Olympus](https://everestapi.github.io/)或[CeleMod](https://www.bilibili.com/video/BV1Hx4y1z7L5)并安装Everest
 
@@ -88,7 +67,7 @@
 
 `Loenn`被称作制图器, 它的前辈是`Ahorn`, 它为作图提供了图形化界面, 让我们制作`Map`这个游戏内容方便不少, 要知道, 前文提及的`Code, Graphics, Audio, Dialog, Lua Cutscenes`都是为了`Map`
 服务的, 所以`Loenn`可以说是制图的核心,
-我们可以使用原版`Celeste`或是`Everest`和`Coders`额外提供的实体和Trigger来作图, `Coders`写的Mod一般会叫作`XXX Helper`
+如果你现在什么Mod都没下, 那么你在Loenn右侧栏目里看到的一切全都是原版官图的内容, 而如果你下了, 往往你能看到各种带`[xxx resources pack]` `[xxx Helper]` `[Everest]`标签的条目, 这些就是其他Mod里的资源(大部分都是可以随便用的, 小部分不能用, 小部分在你发布Mod的时候要填写致谢, 初学的时候不用很关注这个, 想用就用, 真到发布Mod的时候再说)
 
 #### 注意事项
 
@@ -100,7 +79,7 @@ Loenn初次打开就报错的[解决方案](../loenn/loenn_issues.md)
 
 ### 随便捣鼓下Loenn并保存生成`.bin`地图文件
 
-可以先简略阅读下[教程](../overall.md)
+可以自己捣鼓或者阅读下[【Celeste蔚蓝】二代作图教程 1-1 Loenn的使用](https://www.bilibili.com/video/BV1b24y157zW) 和[【Celeste蔚蓝】二代作图教程 2-1 基础trigger](https://www.bilibili.com/video/BV1Gr4y197Tg)
 
 或者你很急的话可按照如下操作光速出图:
 
@@ -128,11 +107,11 @@ Loenn初次打开就报错的[解决方案](../loenn/loenn_issues.md)
 * 上网了解下什么是相对路径和绝对路径, 当使用自定义实体替换贴图的时候填写的路径几乎都是相对路径, 一般都是相对于官图素材里`Gameplay`里的一些文件夹的路径
 * 了解[啥是Flag](https://www.bilibili.com/video/BV1p44y1S79A), 简单来说就是带名字的开关, 我们一般使用某个实体或者Trigger触发某个flag, 以触发对应flag实体(例如`FlagSwitchGate`),
   做到一对一的交互
-* 了解[啥是XML](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/), 方便你以后改`XML`
+* 了解[啥是XML](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/), 方便你以后改各种`XML`
 * 碰到问题时可以查看[Loenn常见问题](../loenn/faq.md)
 * 不会就抄别人的Mod, 抄多了就会了
 
-#### [本地化你的地图](../dialog.md)
+#### [本地化/汉化你的地图](../dialog.md)
 
 此时你会发现你地图的名字还没有取, 吃心文本等显示的都是一些被括号包裹键名如`{XXX_Tutorial_CelesteWikiTutorial}`, 这就需要你自己去配置对应的内容
 
