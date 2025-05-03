@@ -1118,11 +1118,11 @@
   
   
     <li class="md-nav__item">
-      <a href="https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7" class="md-nav__link">
+      <a href="../loenn/room/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    房间属性
+    房间
     
   </span>
   
@@ -1197,6 +1197,28 @@
   
   <span class="md-ellipsis">
     常用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../question_and_self_study/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提问/自学
     
   </span>
   
@@ -1352,6 +1374,21 @@
       常用部分
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="常用部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义人物对话头像
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1610,6 +1647,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="常用部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义人物对话头像
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1646,6 +1698,8 @@
 <ul>
 <li><a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B">B站 Wiki 的Dialog教程</a></li>
 <li><a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue">Everest Wiki 的Dialog教程</a></li>
+<li><a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue">Everest Wiki 的Dialog教程</a></li>
+<li><a href="https://www.bilibili.com/video/BV1Av4y1D7a8/?t=158">[Celeste蔚蓝]作图教程第四章-背景, 元数据, 文本教程</a></li>
 </ul>
 <h2 id="dialog">什么是Dialog</h2>
 <p>顾名思义就是游戏中一切跟文本有关的东西, <a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E6%9C%AC%E4%BD%BF%E7%94%A8">主要包括</a></p>
@@ -1654,8 +1708,8 @@
 <li>UI(例如开始界面的文本, Mod选项界面的文本, 暂停界面的文本, 选关界面的文本, 明信片等)</li>
 </ul>
 <p>你要知道游戏中的每一段文本可能对应不同的语言, 所以该怎么组织这些文本呢</p>
-<p>官方的做法是一种语言对应一个<code>.txt</code>, 一段文本对应一个唯一的<code>id</code>, 叫做<strong>键</strong>, 或者说<code>key</code>, 游戏就是通过你使用的语言来访问对应的文件, 用<code>key</code>来访问对应的文本来实现本地化的工作,</p>
-<p>我们以<code>Celeste/Content/Dialog/English.txt</code>下的<code>Main Menu</code> 部分为例(找不到可以<code>Ctrl + F</code>搜索), 如果你此时的语言是英文, 看看这是不是和你游戏开始界面上显示的一样呢(左边是<code>key</code>, 右边是
+<p>官方的做法是一种语言对应一个<code>.txt</code>, 一段文本对应一个唯一的<code>id</code>, 叫做<strong>键</strong>, 或者说<code>key</code>, 游戏就是通过你使用的语言来访问对应的文件, 用<code>key</code>来访问对应的文本来实现本地化的工作</p>
+<p>我们以<code>Celeste/Content/Dialog/English.txt</code>下的<code>Main Menu</code> 部分为例(找不到可以<code>Ctrl + F</code>搜索), 看看这是不是和你游戏开始界面上显示的一样呢(左边是<code>key</code>, 右边是
 <code>对应语言的文本</code>)
  <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1663,18 +1717,18 @@
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Main Menu</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_DEBUG=        ~DEBUG~</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_BEGIN=        CLIMB</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_PICO8=        PICO-8</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_OPTIONS=  Options</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_CREDITS=  Credits</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">MENU_EXIT=     Exit</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w"> </span><span class="c1"># Main Menu</span>
+<span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MENU_DEBUG=       ~调试~</span>
+<span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MENU_BEGIN=       攀登</span>
+<span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MENU_PICO8=       PICO-8</span>
+<span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MENU_OPTIONS=     选项</span>
+<span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MENU_CREDITS=     主创人员</span>
+<span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MENU_EXIT=        退出</span>
 </code></pre></div></td></tr></table></div>
- 知道原理后我们就可以添加新的<code>key</code>来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的)</p>
+ 知道原理后我们就可以添加新的<code>key</code>来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的), 在使用上我们只需要写好对话, 在地图里放个触发对话的Trigger, 然后填入对应的<code>key</code>就好了</p>
 <p>首先在你Mod根目录下创建一个Dialog<strong>文件夹</strong>形成类似<code>Celeste/Mods/你的mod名/Dialog/</code>的目录结构</p>
 <p>接着你就可以创建<a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file">各种<code>.txt</code></a>
-文件来做不同语言的翻译和添加文本的工作, 但一般加中文<code>Simplified Chinese.txt</code>跟英文<code>English.txt</code>就够了</p>
+文件来做不同语言的翻译和添加文本的工作, 但一般加中文<code>Simplified Chinese.txt</code>跟英文<code>English.txt</code>(必备)就够了</p>
 <p>写好对应的文本后在对应Trigger中填入对应<code>id/key</code>即可</p>
 <h2 id="_2">修改自己地图名称和吃心文本</h2>
 <ul>
@@ -1706,11 +1760,15 @@ poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
 <li><a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C">文字效果(抖动, 改色, 变速等)</a></li>
 <li><a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E5%AF%B9%E8%AF%9D%E6%95%88%E6%9E%9C">对话效果</a></li>
 <li><a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85">人物表情</a>(也可以在控制台输入<code>portraits</code>来查看)</li>
-<li><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Portraits">自定义人物对话头像</a></li>
 <li><a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes">添加对话emoji</a>
   把你的emoji图片放到<code>Graphics/Atlases/Gui/emoji</code>目录下(<code>.png</code>格式的), 对话对应文本为<code>:你的图片相对路径(不带.png):</code>例如<code>:MyCelesteMod/shock:</code></li>
 <li><a href="../lua_cutscene/">Lua Cutscene过场动画(即配合对话的演出)</a></li>
 <li><a href="https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179">明信片</a></li>
+</ul>
+<h3 id="_5">自定义人物对话头像</h3>
+<ul>
+<li><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Portraits">by Everest Wiki</a></li>
+<li><a href="https://www.bilibili.com/video/BV1cP4y1m7B2">[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)</a></li>
 </ul>
 <h2 id="qa">QA</h2>
 <p>Q: <a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading">为什么我文本缺字了</a></p>
