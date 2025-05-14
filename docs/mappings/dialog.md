@@ -77,6 +77,12 @@ poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
 
 ## QA
 
-Q: [为什么我文本缺字了](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading)
+### Q: [为什么我文本缺字了](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading)
 
 A: 因为蔚蓝字库里没有, 请自己按[示例](https://www.bilibili.com/video/BV1A14y1W7hr)生成([字库生成网站](https://maddie480.ovh/celeste/font-generator)), 或者你直接依赖`extended chinese font`这个Mod, 大概率不会缺字, 但可能还是会缺
+
+### 有选择的对话怎么做
+
+> Myn: 可以抄一下[画游](https://gamebanana.com/mods/494348)序章的
+
+具体路径`gallerycollab2024_v2015\Cutscenes\cny2024\prologue\granny.lua`
