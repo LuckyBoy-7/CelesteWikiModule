@@ -97,7 +97,10 @@ nav:
       - Mod结构: "mappings/mod_structure.md"
       - Dialog: "mappings/dialog.md"
       - Camera: "mappings/camera.md"
-      - Graphics: "mappings/graphics.md"
+      - Graphics:
+          - 大纲: "mappings/graphics.md"
+          - 替换素材/贴图: "mappings/graphics/replace_assets.md"
+          - 自定义Tilesets: "mappings/graphics/tilesets.md"
       - Audio: "mappings/audio.md"
       - Lua Cutscene: "mappings/lua_cutscene.md"
       - Collab: "https://wiki.biligame.com/celeste/%E5%90%88%E9%9B%86%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B"
