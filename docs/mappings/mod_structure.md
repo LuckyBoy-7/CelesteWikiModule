@@ -59,7 +59,7 @@
 
 稍微复杂点的`everest.yaml`举例
 
-```
+``` yaml
 - Name: YourModName
   Version: 1.0.0
   DLL: Code/YourCode.dll
