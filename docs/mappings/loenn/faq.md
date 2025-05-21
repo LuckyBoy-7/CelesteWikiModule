@@ -84,7 +84,7 @@ Grouped, Connected之类的前缀, 最稳的方法是直接在[所有Helper及�
 
 ## 为什么我的刺吸在另一个红绿灯上了
 
-请先阅读[更新顺序](../../general/common/mechanics.md#更新顺序), 所以你想让刺吸在另一个红绿灯上就把那个红绿灯删了重放即可, 对了, 想在Loenn里判断深度直接看谁的图层在下面即可,
+请先阅读[更新顺序](../../general/common/mechanics.md#_3), 所以你想让刺吸在另一个红绿灯上就把那个红绿灯删了重放即可, 对了, 想在Loenn里判断深度直接看谁的图层在下面即可,
 这里就是在下面的红绿灯先加载, 先占刺
 
 ## 怎么将两个物体绑定在一起
@@ -93,7 +93,7 @@ Grouped, Connected之类的前缀, 最稳的方法是直接在[所有Helper及�
 
 ## 我的镜头怎么不受控制了, 看望远镜怎么死了
 
-可参考[镜头垂直锁定](../../general/common/mechanics.md#镜头垂直锁定), 大概率是因为你的场景内有badeline球, 把它的`Lock Camera`属性取消即可
+可参考[镜头垂直锁定](../../general/common/mechanics.md#_13), 大概率是因为你的场景内有badeline球, 把它的`Lock Camera`属性取消即可
 
 ## 这个实体上的属性让我填的路径填什么
 

@@ -87,6 +87,7 @@ nav:
       - Loenn:
           - 下载(或者群文件里下): "https://github.com/CelestialCartographers/Loenn/releases"
           - 基本概念及使用: "https://wiki.biligame.com/celeste/Loenn"
+          - 崩溃问题: "mappings/loenn/loenn_crash_issues.md"
           - 常见问题: "mappings/loenn/faq.md"
           - 房间: "mappings/loenn/room.md"
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"

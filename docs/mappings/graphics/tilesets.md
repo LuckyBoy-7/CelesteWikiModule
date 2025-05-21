@@ -3,7 +3,7 @@
 * [摘自电箱教程](https://www.bilibili.com/video/BV1kV4y137Mn/?spm_id_from=333.788&vd_source=217bacbee37820b5bf3ed2f4fb8f6c94)
 * [摘自Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 * [瓦片集格式参考](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
-* [motonine的自制tiles教程](../assets/mappings/graphics/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
+* [motonine的自制tiles教程](../../assets/mappings/graphics/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
 * [底龙的自定义tiles教程](https://www.bilibili.com/video/BV1Eu4y1L78Y), [非官方模板的tiles应用](https://www.bilibili.com/video/BV1t94y1c7ZT)
 
 ## Tile
@@ -199,7 +199,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 对于一个单元, 它只会由点和线组成, 最多 4 个点, 4 条边, 最少 0 个点, 0 条边, 所以我们可以分类讨论穷举所有情况
 
-我们用绿色/蓝色来表示规则里对应的砖, 红色只是方便理解对应的情况
+我们用绿色/蓝色来表示规则里对应的砖, 红色只是为了方便理解对应的情况
 
 ```xml title="Celeste\Mods\CelesteWikiTutorial\Graphics\PureColorForegroundTiles.xml"
 <Data>

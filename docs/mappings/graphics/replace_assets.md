@@ -13,11 +13,11 @@
 
 ### 官图素材路径
 
-可参照`../Steam/steamapps/common/Celeste/Content/Graphics/Atlases`这个路径, 具体内容参照[解包素材](../mods/resources.md), 这里的`Content`相当于我们Mod的根目录
+可参照`../Steam/steamapps/common/Celeste/Content/Graphics/Atlases`这个路径, 具体内容参照[解包素材](../../mods/resources.md), 这里的`Content`相当于我们Mod的根目录
 
 ## 使用自定义实体
 
-一般就是那些以Custom Reskinable之类的词为前缀的扩展实体, 显然Helper作者都帮我们写好了, 我们把路径填上直接用就好了([不知道路径填什么](./loenn/faq.md#_9))
+一般就是那些以Custom Reskinable之类的词为前缀的扩展实体, 显然Helper作者都帮我们写好了, 我们把路径填上直接用就好了([不知道路径填什么](../loenn/faq.md#_9))
 
 ## 修改`Sprites.xml`
 
