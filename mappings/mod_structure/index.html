@@ -1096,6 +1096,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../loenn/loenn_crash_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    崩溃问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../loenn/faq/" class="md-nav__link">
         
   
@@ -1534,9 +1556,19 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../graphics/" class="md-nav__link">
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Graphics
@@ -1544,7 +1576,85 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            Graphics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大纲
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/replace_assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    替换素材/贴图
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/tilesets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    自定义Tilesets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1965,7 +2075,7 @@
 <p>你的Mod的依赖, 即你这个Mod使用了哪些Mod的东西, 可能是Code(也就是别人写的各种各样的实体等功能, 即所谓的Helper, 也是Mod), 也可能是美术素材(有的bro会依赖草莓酱💀),
 这样当别人使用Mod管理器下载你的Mod的时候也会自动下载你依赖的Mod, 缺依赖或者版本低了<code>Everest</code>都会警告玩不了, 如果没问题则被依赖的Mod会先被加载, 总之<code>Everest</code>总得知道你Mod需要什么Mod吧</p>
 <p>稍微复杂点的<code>everest.yaml</code>举例</p>
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -1984,26 +2094,26 @@
 <span class="normal">17</span>
 <span class="normal">18</span>
 <span class="normal">19</span>
-<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code>- Name: YourModName
-  Version: 1.0.0
-  DLL: Code/YourCode.dll
-  Dependencies:
-    - Name: Everest
-      Version: 1.0.0
-    - Name: FakeModForSecondDLL
-      Version: 1.0.0
-    - Name: SomeHelper
-      Version: 1.0.0
-  OptionalDependencies:
-    - Name: Randomizer
-      Version: 1.0.0
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">YourModName</span>
+<span class="w">  </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
+<span class="w">  </span><span class="nt">DLL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Code/YourCode.dll</span>
+<span class="w">  </span><span class="nt">Dependencies</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Everest</span>
+<span class="w">      </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FakeModForSecondDLL</span>
+<span class="w">      </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SomeHelper</span>
+<span class="w">      </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
+<span class="w">  </span><span class="nt">OptionalDependencies</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Randomizer</span>
+<span class="w">      </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
 
-- Name: FakeModForSecondDLL
-  Version: 1.0.0
-  DLL: Code/YourCode2.dll
-  Dependencies:
-    - Name: Everest
-      Version: 1.0.0
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FakeModForSecondDLL</span>
+<span class="w">  </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
+<span class="w">  </span><span class="nt">DLL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Code/YourCode2.dll</span>
+<span class="w">  </span><span class="nt">Dependencies</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Everest</span>
+<span class="w">      </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="dll">DLL</h3>
 <p>你编译出来的DLL的位置, 如果你会Code, 写了自定义实体或者别的什么功能, <code>Everest</code>总得知道你DLL在哪儿吧</p>
@@ -2040,6 +2150,12 @@
 <h3 id="everest"><a href="https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders">了解<code>Everest</code>处理这些文件的逻辑</a></h3>
 <p><code>Everest</code>在加载Mod资源的时候会把里面的资源(比如<code>Maps, Dialog, Audio, Graphics</code>等)
 连带官图的整合到一起(对于大部分文件来说同路径会覆盖, 而对<code>Dialog</code>里的文件来说是合并), 做好合并工作后Everest就可以集中处理这些资源了</p>
+<p>当你理解了这回事, Mod中的很多东西就会立即变得清晰明了, 比如:</p>
+<ul>
+<li>为什么别人的素材我能用, 因为合并完都是一个东西</li>
+<li>为什么要加依赖, 因为能在Loenn里使用是因为你有这个Mod, 而打包出去别人用的时候别人可能没有对应Mod</li>
+<li>为什么文件夹要套多层, 为什么 Dialog 的 key 要写的很长, 因为合并完可能发生覆盖</li>
+</ul>
 <p>正是因为地图和素材等文件同路径的时候会被覆盖, 比如你和它的Mod都长这样, 你俩有个人的图就加载不出来了, 如果贴图和音频等文件也重名重路径了, 你的图可能会加载到错误的素材</p>
 <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>

@@ -1096,6 +1096,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../loenn/loenn_crash_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    崩溃问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../loenn/faq/" class="md-nav__link">
         
   
@@ -1399,6 +1421,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="QA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q: 为什么我文本缺字了
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      有选择的对话怎么做
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1438,9 +1484,19 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../graphics/" class="md-nav__link">
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Graphics
@@ -1448,7 +1504,85 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            Graphics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大纲
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/replace_assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    替换素材/贴图
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/tilesets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    自定义Tilesets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1671,6 +1805,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="QA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q: 为什么我文本缺字了
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      有选择的对话怎么做
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1709,7 +1867,7 @@
 </ul>
 <p>你要知道游戏中的每一段文本可能对应不同的语言, 所以该怎么组织这些文本呢</p>
 <p>官方的做法是一种语言对应一个<code>.txt</code>, 一段文本对应一个唯一的<code>id</code>, 叫做<strong>键</strong>, 或者说<code>key</code>, 游戏就是通过你使用的语言来访问对应的文件, 用<code>key</code>来访问对应的文本来实现本地化的工作</p>
-<p>我们以<code>Celeste/Content/Dialog/English.txt</code>下的<code>Main Menu</code> 部分为例(找不到可以<code>Ctrl + F</code>搜索), 看看这是不是和你游戏开始界面上显示的一样呢(左边是<code>key</code>, 右边是
+<p>我们以 <code>Celeste/Content/Dialog/English.txt</code> 下的 <code>Main Menu</code> 部分为例(找不到可以<code>Ctrl + F</code>搜索), 看看这是不是和你游戏开始界面上显示的一样呢(左边是<code>key</code>, 右边是
 <code>对应语言的文本</code>)
  <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1727,7 +1885,7 @@
 </code></pre></div></td></tr></table></div>
  知道原理后我们就可以添加新的<code>key</code>来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的), 在使用上我们只需要写好对话, 在地图里放个触发对话的Trigger, 然后填入对应的<code>key</code>就好了</p>
 <p>首先在你Mod根目录下创建一个Dialog<strong>文件夹</strong>形成类似<code>Celeste/Mods/你的mod名/Dialog/</code>的目录结构</p>
-<p>接着你就可以创建<a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file">各种<code>.txt</code></a>
+<p>接着你就可以创建<a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file">各种语言的<code>.txt</code></a>
 文件来做不同语言的翻译和添加文本的工作, 但一般加中文<code>Simplified Chinese.txt</code>跟英文<code>English.txt</code>(必备)就够了</p>
 <p>写好对应的文本后在对应Trigger中填入对应<code>id/key</code>即可</p>
 <h2 id="_2">修改自己地图名称和吃心文本</h2>
@@ -1771,8 +1929,14 @@ poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
 <li><a href="https://www.bilibili.com/video/BV1cP4y1m7B2">[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)</a></li>
 </ul>
 <h2 id="qa">QA</h2>
-<p>Q: <a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading">为什么我文本缺字了</a></p>
-<p>A: 因为蔚蓝字库里没有, 请自己按<a href="https://www.bilibili.com/video/BV1A14y1W7hr">示例</a>生成(<a href="https://maddie480.ovh/celeste/font-generator">字库生成网站</a>), 或者你直接依赖<code>extended chinese font</code>这个Mod, 大概率不会缺字, 但可能还是会缺</p>
+<h3 id="q">Q: <a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading">为什么我文本缺字了</a></h3>
+<p>A: 因为蔚蓝字库里没有, 请自己按<a href="https://www.bilibili.com/video/BV1A14y1W7hr">示例</a>生成(<a href="https://maddie480.ovh/celeste/font-generator">字库生成网站</a>), 或者你直接依赖<a href="https://gamebanana.com/mods/53736"><code>Extended Chinese Font</code></a>/<a href="https://gamebanana.com/mods/493138"><code>Chinese Font Pack</code></a>这个Mod, 大概率不会缺字, 但可能还是会缺</p>
+<h3 id="_6">有选择的对话怎么做</h3>
+<p>写 <code>lua</code></p>
+<blockquote>
+<p>Myn: 可以抄一下<a href="https://gamebanana.com/mods/494348">画游</a>序章的</p>
+</blockquote>
+<p>具体路径<code>gallerycollab2024_v2015\Cutscenes\cny2024\prologue\granny.lua</code></p>
 
 
 
