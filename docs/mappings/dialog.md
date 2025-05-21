@@ -15,7 +15,7 @@
 
  官方的做法是一种语言对应一个`.txt`, 一段文本对应一个唯一的`id`, 叫做**键**, 或者说`key`, 游戏就是通过你使用的语言来访问对应的文件, 用`key`来访问对应的文本来实现本地化的工作
 
- 我们以`Celeste/Content/Dialog/English.txt`下的`Main Menu` 部分为例(找不到可以`Ctrl + F`搜索), 看看这是不是和你游戏开始界面上显示的一样呢(左边是`key`, 右边是
+ 我们以 `Celeste/Content/Dialog/English.txt` 下的 `Main Menu` 部分为例(找不到可以`Ctrl + F`搜索), 看看这是不是和你游戏开始界面上显示的一样呢(左边是`key`, 右边是
 `对应语言的文本`)
  ```yaml
   # Main Menu
@@ -30,7 +30,7 @@
 
 首先在你Mod根目录下创建一个Dialog**文件夹**形成类似`Celeste/Mods/你的mod名/Dialog/`的目录结构
 
-接着你就可以创建[各种`.txt`](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file)
+接着你就可以创建[各种语言的`.txt`](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file)
 文件来做不同语言的翻译和添加文本的工作, 但一般加中文`Simplified Chinese.txt`跟英文`English.txt`(必备)就够了
 
 写好对应的文本后在对应Trigger中填入对应`id/key`即可

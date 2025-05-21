@@ -71,7 +71,7 @@
 
 #### 注意事项
 
-Loenn初次打开就报错的[解决方案](../loenn/loenn_issues.md)
+Loenn初次打开就报错的[解决方案](../loenn/loenn_crash_issues.md)
 
 ## 小试牛刀
 

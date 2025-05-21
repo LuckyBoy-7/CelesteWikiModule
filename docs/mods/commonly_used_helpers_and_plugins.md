@@ -1,1 +1,0 @@
-* [Everest Wiki Helper手册](https://github.com/EverestAPI/Resources/wiki/Helper-Manuals)
