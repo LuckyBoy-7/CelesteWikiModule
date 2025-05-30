@@ -3,7 +3,7 @@
 * [摘自电箱教程](https://www.bilibili.com/video/BV1kV4y137Mn/?spm_id_from=333.788&vd_source=217bacbee37820b5bf3ed2f4fb8f6c94)
 * [摘自Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 * [瓦片集格式参考](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
-* [motonine的自制tiles教程](../../assets/mappings/graphics/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
+* [motonine的自制tiles教程](../../assets/mappings/xml/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
 * [底龙的自定义tiles教程](https://www.bilibili.com/video/BV1Eu4y1L78Y), [非官方模板的tiles应用](https://www.bilibili.com/video/BV1t94y1c7ZT)
 
 ## Tile
@@ -14,7 +14,7 @@ Tile, 即**瓦片**
 
 ### 热知识
 
-我们在 Loenn 里涂的砖是永远不会被卸载的, 也就是不存在进房间的时候加载对应区域的砖, 离开房间的时候卸载, 所以像 Filler 这种会在我们切板的时候被看到
+我们在 Loenn 里涂的砖是永远不会被卸载的, 也就是不存在进房间的时候加载对应区域的砖, 离开房间的时候卸载, 所以像 Filler 这种进不去的房间, 里面的砖也会在我们切板的时候被看到
 
 ## Tileset
 
@@ -28,31 +28,35 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 
 <figure markdown>
-  ![tileset](../../assets/mappings/graphics/tileset/cement.png){style="width: 150px; image-rendering: pixelated; title=123"}
+  ![tileset](../../assets/mappings/xml/tileset/cement.png){style="width: 150px; image-rendering: pixelated; title=123"}
   <figcaption>路径: Celeste\Graphics\Atlases\Gameplay\tilesets\cement.png</figcaption>
 </figure>
 
 我们以 cement tileset 为例, 我们会发现它正是由一个个 `8px * 8px` 单元的贴图块组成, 游戏里的砖的贴图正是从这里面**切**出来的
 
-![tileset_explanation0](../../assets/mappings/graphics/tileset/tileset_explanation0.png)
-![tileset_explanation1](../../assets/mappings/graphics/tileset/tileset_explanation1.png)
+![tileset_explanation0](../../assets/mappings/xml/tileset/tileset_explanation0.png)
+![tileset_explanation1](../../assets/mappings/xml/tileset/tileset_explanation1.png)
 
 当然如果我们把 CelesteTAS 的简化图形看开了, 碰撞箱看的更清楚
 
-![tileset_explanation1](../../assets/mappings/graphics/tileset/tileset_explanation2.png)
+![tileset_explanation1](../../assets/mappings/xml/tileset/tileset_explanation2.png)
 
+
+## ForegroundTiles.xml
 
 现在我们搞清楚了砖是什么, 素材从哪儿来, 现在该开始摆砖了, 但你可能开始头疼起来, 这么一种砖就有这么多个单元, 要一个个选吗, 不仅费事, 还容易选错,
 所以这时我们就要指定一套**规则**, 比如看下面这个 `3px * 3px` 大小的自定义砖
 
-![tileset](../../assets/mappings/graphics/tileset/3by3_tileset.png){style="width: 150px; image-rendering: pixelated; title=123"}
+![tileset](../../assets/mappings/xml/tileset/3by3_tileset.png){style="width: 150px; image-rendering: pixelated; title=123"}
 
 * 如果我告诉中间的砖: 嘿, 兄弟, 你要是看见周围都有砖的话, 你就把自己的的贴图改成素材第 i 行, 第 j 列单元对应的素材
 * 如果我告诉正右边的砖: 兄弟...你好..., 你要是看见上下都有砖, 而且左边也有砖的话, 你就把自己的的贴图改成素材第 m 行, 第 n 列单元对应的素材
 
 如果我们把所有的砖通知一遍, 那是不是就不用我们自己一个个挑素材啦, 而这正是 `ForegroundTiles.xml` 和 Loenn(Celeste 也干了) 在做的事, `ForegroundTiles.xml` 制定了一套规则, 而 Loenn 使用这些规则告诉每个砖该如何绘制(所以如果我们要做自定义砖的话, 我们要自己写`ForegroundTiles.xml`, 而且得在 Loenn 元数据里选)
 
-下面我们来简单介绍一下`ForegroundTiles.xml` 中相对重要的属性(如果你还不知道什么是[XML](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/))
+
+### ForegroundTiles.xml 属性
+下面我们来简单介绍一下`ForegroundTiles.xml` 中相对重要的属性(如果你还不知道什么是 XML 可以看[这里](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/), 其他砖的 XML 大同小异, 这里主要介绍 `ForegroundTiles.xml`)
 
 更多属性请参考[Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 
@@ -158,7 +162,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 这里仿照官图就直接塞 Graphics 文件夹里了, 就像这样
 
-![custom_foreground_tile_xml_location](../../assets/mappings/graphics/tileset/custom_foreground_tile_xml_location.png)
+![custom_foreground_tile_xml_location](../../assets/mappings/xml/tileset/custom_foreground_tile_xml_location.png)
 
 ### 清理, 补充 xml
 
@@ -183,13 +187,13 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 可以使用任意像素绘画软件(Aseprite, Pixel Studio, PS等)
 
 <figure markdown>
-  ![tileset](../../assets/mappings/graphics/tileset/awa.png){style="width: 700px; image-rendering: pixelated; title=123"}
+  ![tileset](../../assets/mappings/xml/tileset/awa.png){style="width: 700px; image-rendering: pixelated; title=123"}
   <figcaption>路径: Celeste\Mods\CelesteWikiTutorial\Graphics\Atlases\Gameplay\tilesets\awa.png</figcaption>
   <figcaption>可右键图像另存为</figcaption>
 </figure>
 
 <figure markdown>
-  ![tileset](../../assets/mappings/graphics/tileset/awa_with_grid.png){style="width: 700px; image-rendering: pixelated; title=123"}
+  ![tileset](../../assets/mappings/xml/tileset/awa_with_grid.png){style="width: 700px; image-rendering: pixelated; title=123"}
   <figcaption>使用软件自带网格查看更加清晰</figcaption>
 </figure>
 
@@ -307,9 +311,9 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 ```
 ### 在 Loenn 元数据中选择配置
 
-不要问我元数据是什么😡
+记得 `ForegroundTiles.xml` 改名或者套文件夹(如果你不知道这意味着什么, 请看[这里](../mod_structure.md#everest))
 
-![loenn_foreground_tile_xml_config](../../assets/mappings/graphics/tileset/loenn_foreground_tile_xml_config.png)
+![loenn_xml_config](../../assets/mappings/xml/loenn_xml_config.png)
 
 然后`Ctrl + F5`刷新 Loenn, 随便涂涂画画即可
 
@@ -317,23 +321,23 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 理论上 Loenn 在这里只会显示绿色和蓝色的砖
 
-![custom_tileset_showcase](../../assets/mappings/graphics/tileset/custom_tileset_showcase.png)
+![custom_tileset_showcase](../../assets/mappings/xml/tileset/custom_tileset_showcase.png)
 
 ## 使用别人自定义的 `ForegroundTiles.xml`
 
 如果你觉得你的模板更好, 欢迎投稿😋
 
-## [`ForegroundTiles.xml` from 0x0ade](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
+### [`ForegroundTiles.xml` from 0x0ade](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 
 常用在[Spooooky素材包](https://gamebanana.com/mods/474010)中, 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)
 
 <figure markdown>
-  ![tileset](../../assets/mappings/graphics/tileset/0x0ade_tileset_template.png){style="width: 600px; image-rendering: pixelated; title=123"}
+  ![tileset](../../assets/mappings/xml/tileset/0x0ade_tileset_template.png){style="width: 600px; image-rendering: pixelated; title=123"}
   <figcaption>tileset 模板(若要使用, 请右键另存为)</figcaption>
 </figure>
 
 <figure markdown>
-  ![tileset](../../assets/mappings/graphics/tileset/0x0ade_tileset_template_explanation.png){style="width: 800px; image-rendering: pixelated; title=123"}
+  ![tileset](../../assets/mappings/xml/tileset/0x0ade_tileset_template_explanation.png){style="width: 800px; image-rendering: pixelated; title=123"}
   <figcaption>tileset 模板说明</figcaption>
 </figure>
 
@@ -466,4 +470,4 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 别忘了在 Loenn 元数据里选择 `AnimatedTiles.xml`
 
 然后你就能看到生草的砖了😋
-![custom_tileset_showcase](../../assets/mappings/graphics/tileset/custom_tileset_with_animated_tiles.png)
+![custom_tileset_showcase](../../assets/mappings/xml/tileset/custom_tileset_with_animated_tiles.png)

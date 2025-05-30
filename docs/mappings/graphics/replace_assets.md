@@ -13,7 +13,7 @@
 
 ### 官图素材路径
 
-可参照`../Steam/steamapps/common/Celeste/Content/Graphics/Atlases`这个路径, 具体内容参照[解包素材](../../mods/resources.md), 这里的`Content`相当于我们Mod的根目录
+可参照`../Steam/steamapps/common/Celeste/Content/Graphics/Atlases`这个路径, 具体内容参照[解包素材](../useful_links.md), 这里的`Content`相当于我们Mod的根目录
 
 ## 使用自定义实体
 

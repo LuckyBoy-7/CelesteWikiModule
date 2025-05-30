@@ -1,6 +1,6 @@
 ## 资源
 
-[官图素材资源](../mods/resources.md)
+[官图素材资源](./useful_links.md)
 
 ## 自定义界面
 
@@ -17,12 +17,8 @@
 * [自定义结束界面 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=154)
 * 使用`XaphanHelper/CustomEndScreenController`, 放在你结束关卡的房间里即可(Myn力推)
 
-## 自制皮肤
+## [自制皮肤](./graphics/skin.md)
 
-* [模板](https://kuksattu.github.io/celeste/skinmod-template/)
-* [蔚蓝科技之自制皮肤mod教程](https://www.bilibili.com/video/BV1Uv4y1K751)
-* [蔚蓝皮肤制作教程-星夜祈梦](https://www.bilibili.com/video/BV1YpYueREPt)
-    * [文字版](../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf)
 
 ## Decal
 
@@ -39,7 +35,7 @@
 
 ## [替换官图素材](./graphics/replace_assets.md)
 
-## [自定义瓦片(Tileset)](./graphics/tilesets.md)
+## [自定义瓦片(Tileset)](./xml/tilesets.md)
 
 
 ### QA
@@ -50,7 +46,7 @@
 
 #### 怎样获取精美的美术素材
 
-1. 自己画
+1. 自己画, 可参考的[教程之一](https://www.bilibili.com/read/readlist/rl38114?spm_id_from=333.1369.opus.module_collection.click)
 2. 利用生成器自动生成
 3. 在群“制图素材”文件夹里寻找素材。
 4. 官图素材改色

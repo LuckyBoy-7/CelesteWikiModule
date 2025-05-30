@@ -56,10 +56,10 @@ markdown_extensions:
 
 nav:
   - 首页: "index.md"
+  - Wiki: "general/wiki.md"
+  - 社区: "general/community.md"
   - 常规:
       - 游戏官网: "https://www.celestegame.com/"
-      - Wiki: "general/wiki.md"
-      - 社区: "general/community.md"
       - 常规:
           - 原版常见问题: "general/common/vanilla_issues.md"
           - 基本术语补充: "general/common/basic_terms.md"
@@ -79,7 +79,6 @@ nav:
           - 调试模式: "https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F"
           - 推荐Mod: "mods/common/recommended_mods.md"
       - 工具: "mods/tools.md"
-      - 资源: "mods/resources.md"
   - 制图:
       - 入门:
         - 开始: "mappings/start/start.md"
@@ -96,12 +95,16 @@ nav:
       - 提问/自学: "mappings/question_and_self_study.md"
       - 教程: "mappings/overall.md"
       - Mod结构: "mappings/mod_structure.md"
+      - XML:
+          - 大纲: "mappings/xml/xml.md"
+          - 砖 XML: "mappings/xml/tilesets.md"
+          - 动画 XML: "mappings/xml/sprites_xml.md"
       - Dialog: "mappings/dialog.md"
       - Camera: "mappings/camera.md"
       - Graphics:
           - 大纲: "mappings/graphics.md"
           - 替换素材/贴图: "mappings/graphics/replace_assets.md"
-          - 自定义Tilesets: "mappings/graphics/tilesets.md"
+          - 皮肤制作: "mappings/graphics/skin.md"
       - Audio: "mappings/audio.md"
       - Lua Cutscene: "mappings/lua_cutscene.md"
       - Collab: "https://wiki.biligame.com/celeste/%E5%90%88%E9%9B%86%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B"

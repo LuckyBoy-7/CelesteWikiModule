@@ -62,6 +62,8 @@ poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
 
 ## 常用部分
 
+推荐下载 [VSCode](https://code.visualstudio.com/) 并安装 `Celeste Dialog Highlighter` 插件
+
 * [文字效果(抖动, 改色, 变速等)](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C)
 * [对话效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E5%AF%B9%E8%AF%9D%E6%95%88%E6%9E%9C)
 * [人物表情](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85)(也可以在控制台输入`portraits`来查看)
@@ -73,6 +75,7 @@ poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
 ### 自定义人物对话头像
 * [by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Portraits)
 * [[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)](https://www.bilibili.com/video/BV1cP4y1m7B2)
+
 
 
 ## QA
