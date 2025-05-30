@@ -8,6 +8,7 @@
 * [【Celeste蔚蓝】作图教程第一章-路径](https://www.bilibili.com/video/BV1tR4y1X7wu)
 * [【Celeste蔚蓝】二代作图教程 1-5 基础路径](https://www.bilibili.com/video/BV1394y1C7Fy)
 
+你可能需要下载[官图素材](./useful_links.md)来更好的了解蔚蓝素材的结构
 
 如果你很急, 那么你在Loenn里作好图之后可以直接把`.bin`文件丢在蔚蓝根目录的Mods(一般应该运行过一次`Everest`应该就有了)文件夹下, 此时打开游戏理论上你就能看到你作的图了,
 但是这样你的Mod会被当作`Uncategorized未分类的`, 因为`Everest`只知道这有一张图, 但是其他啥也不知道, 所以你才需要学习Mod结构,

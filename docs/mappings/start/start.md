@@ -103,7 +103,7 @@ Loenn初次打开就报错的[解决方案](../loenn/loenn_crash_issues.md)
 #### 建议
 
 * 下载`CelesteTas`这个Mod, 在游戏内按`Ctrl + B`就能查看Entity和Trigger碰撞箱, 方便制图
-* 下载[官图图片素材](../../mods/resources.md), 以后肯定用得上
+* 下载[官图图片素材](../useful_links.md), 以后肯定用得上
 * 上网了解下什么是相对路径和绝对路径, 当使用自定义实体替换贴图的时候填写的路径几乎都是相对路径, 一般都是相对于官图素材里`Gameplay`里的一些文件夹的路径
 * 了解[啥是Flag](https://www.bilibili.com/video/BV1p44y1S79A), 简单来说就是带名字的开关, 我们一般使用某个实体或者Trigger触发某个flag, 以触发对应flag实体(例如`FlagSwitchGate`),
   做到一对一的交互
