@@ -37,6 +37,8 @@
 
 ## [自定义瓦片(Tileset)](./xml/tilesets.md)
 
+## [滤镜制作](./graphics/skin.md#_3)
+
 
 ### QA
 
