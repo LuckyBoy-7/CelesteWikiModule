@@ -99,6 +99,7 @@ nav:
           - 大纲: "mappings/xml/xml.md"
           - 砖 XML: "mappings/xml/tilesets.md"
           - 动画 XML: "mappings/xml/sprites_xml.md"
+          - Tile Sound Id: "mappings/xml/tile_sounds.md"
       - Dialog: "mappings/dialog.md"
       - Camera: "mappings/camera.md"
       - Graphics:

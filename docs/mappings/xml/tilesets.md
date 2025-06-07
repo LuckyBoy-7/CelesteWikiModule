@@ -1,5 +1,7 @@
 # 自定义瓦片(Tileset)
 
+你可能需要先了解一下什么是[XML](xml.md)
+
 * [摘自电箱教程](https://www.bilibili.com/video/BV1kV4y137Mn/?spm_id_from=333.788&vd_source=217bacbee37820b5bf3ed2f4fb8f6c94)
 * [摘自Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 * [瓦片集格式参考](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
@@ -56,7 +58,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 
 ### ForegroundTiles.xml 属性
-下面我们来简单介绍一下`ForegroundTiles.xml` 中相对重要的属性(如果你还不知道什么是 XML 可以看[这里](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/), 其他砖的 XML 大同小异, 这里主要介绍 `ForegroundTiles.xml`)
+下面我们来简单介绍一下`ForegroundTiles.xml` 中相对重要的属性
 
 更多属性请参考[Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 
@@ -66,55 +68,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 * `tiles`: 对应素材的哪些单元(一个单元占`8px * 8px`的大小并且坐标从左上(0, 0)位置开始算, (1, 0)表示第二列第一行对应的单元格, 是的没错, 从列开始算!)  
 * `ignores`: 需要忽略的 tileset 对应的 id, 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` 
 * `copy`: 需要拷贝配置(即内部的`set`节点)的 tileset 对应的 id, 这样我们就可以只写一个 template(模板) 然后复用了, 当然我们可以继续写`set`节点来覆盖拷贝过来的一部分配置  
-* `sound`: Everest 添加的额外配置, 表示玩家踩上去什么声音, 写在`set`节点里, 如`<set ... sound="1"/>`
-
-??? Sound对照表
-    0. 无
-    1. 沥青路（序章车后边的道路
-    2. 车
-    3. 土
-    4. 雪
-    5. 木头
-    6. 桥
-    7. 钢梁
-    8. 砖
-    9. traffic block
-    10. (unused)
-    11. 未启用时的果冻
-    12. 启用时的果冻
-    13. 山庄木头
-    14. 山庄房顶
-    15. 山庄移动板
-    16. 山庄地窖砖
-    17. 山庄衣物
-    18. 山庄箱子
-    19. 山庄书
-    20. resort forcefield
-    21. 山庄清理杂物开关
-    22. 山庄电梯
-    23. 山脊雪
-    24. (unused)
-    25. 枯草
-    26. (unused)
-    27. 山脊白块
-    28. 缆车
-    29. (unused)
-    30. (unused)
-    31. (unused)
-    32. 玻璃
-    33. 草
-    34. (unused)
-    35. 节奏块
-    36. 核心冰块
-    37. 核心岩石
-    38. (unused)
-    39. (unused)
-    40. 故障块
-    41. (unused)
-    42. 网吧（凌波微步.ppt那个房子）
-    43. 云
-    44. 月亮块
-
+* `sound`: Everest 添加的额外配置, 表示玩家踩上去什么声音, 写在`set`节点里, 如`<set ... sound="1"/>`, 具体数字对应的声音可以看[对照表](./tile_sounds.md)
 
 
 ```xml title="Celeste\Content\Graphics\ForegroundTiles.xml"
