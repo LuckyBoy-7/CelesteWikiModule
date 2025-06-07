@@ -19,9 +19,9 @@
 
 一般就是那些以Custom Reskinable之类的词为前缀的扩展实体, 显然Helper作者都帮我们写好了, 我们把路径填上直接用就好了([不知道路径填什么](../loenn/faq.md#_9))
 
-## 修改`Sprites.xml`
+## 修改[`Sprites.xml`](../xml/sprites_xml.md)
 
-你可能需要先了解一下什么是[XML](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/)
+你可能需要先了解一下什么是[XML](../xml/xml.md)
 
 `Sprites.xml`是蔚蓝的一个管理所有动画的配置文件
 
@@ -33,9 +33,9 @@
 </Sprites>
 ```
 
-对于如上的内容, 蔚蓝会通过player这个标签加载path(相对于`Gameplay文件夹`)中的素材, 再根据`...`中的配置来组合出游戏中的一个动画对象, 听不懂也没关系, 既然你已经学会了"覆盖大法", 如果你要修改player的配置, 显然你可以自己创建一个`Sprites.xml`, 然后把下面这部分内容粘进去, 然后把path改成你自己的, 之后在Loenn`Map -> Metadata`中选择你的`Sprites.xml`即可,
+对于如上的内容, 蔚蓝会通过 player 这个标签加载 path(相对于`Gameplay文件夹`)中的素材, 再根据`...`中的配置来组合出游戏中的一个动画对象, 听不懂也没关系, 既然你已经学会了"覆盖大法", 如果你要修改player的配置, 显然你可以自己创建一个`Sprites.xml`, 然后把下面这部分内容粘进去, 然后把path改成你自己的, 之后在Loenn`Map -> Metadata`中选择你的`Sprites.xml`即可,
 这样它就会覆盖一部分官图的配置, 从而达到替换素材的效果, 而且这方法不会影响别人的图(不过有的实体不一定会有对应配置, 视情况而定)
 
 ## 自己写code
 
-我又幻想了, 幻想自己写出让众人啧啧称赞的Helper, 并且在香蕉网上收获上千Like...  
+我又幻想了, 幻想自己写出让众人啧啧称赞的 Helper, 并且在香蕉网上收获上千 Like...  

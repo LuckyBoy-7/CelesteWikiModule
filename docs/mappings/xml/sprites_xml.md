@@ -1,5 +1,7 @@
 # Sprites.xml
 
+你可能需要先了解一下什么是[XML](xml.md)
+
 ## 动画
 
 我们在讲 `Sprites.xml` 之前先简单介绍下什么是动画

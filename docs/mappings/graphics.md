@@ -1,3 +1,5 @@
+你可能需要了解一下什么是[XML](./xml/xml.md)
+
 ## 资源
 
 [官图素材资源](./useful_links.md)

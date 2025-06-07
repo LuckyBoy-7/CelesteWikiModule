@@ -4,7 +4,7 @@
 
 * [模板](https://kuksattu.github.io/celeste/skinmod-template/)
 * [蔚蓝皮肤制作教程-星夜祈梦](https://www.bilibili.com/video/BV1YpYueREPt)
-    * [文字版](../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf)
+    * [文字版](../../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf)
 * [Skin Mod Helper README](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md)
 * [蔚蓝科技之自制皮肤mod教程](https://www.bilibili.com/video/BV1Uv4y1K751)
 
@@ -79,7 +79,7 @@
 
 ### [滤镜制作](https://www.bilibili.com/video/BV1WW7czqEPi)
 
-这里本来想贴 WEG 录的视频的, 但是太久了没找到, 只能新录一个了
+这里本来想贴 WEG 录的视频的, 但是太久远了没找到, 只能新录一个了
 
 既然滤镜本质上是替换颜色, 那么我们把滤镜图片和游戏图片放一起调整即可
 
