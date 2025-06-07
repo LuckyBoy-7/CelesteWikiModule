@@ -1,0 +1,2232 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../tilesets/">
+      
+      
+        <link rel="next" href="../tile_sounds/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.1">
+    
+    
+      
+        <title>动画 XML - Celeste Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/content.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spritesxml" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Celeste Wiki" class="md-header__button md-logo" aria-label="Celeste Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Celeste Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              动画 XML
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LuckyBoy-7/CelesteWikiModule" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Celeste Wiki" class="md-nav__button md-logo" aria-label="Celeste Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    Celeste Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LuckyBoy-7/CelesteWikiModule" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/wiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wiki
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/community/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    社区
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    常规
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            常规
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.celestegame.com/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    游戏官网
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    常规
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            常规
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/vanilla_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    原版常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/basic_terms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基本术语补充
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/mechanics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    游戏机制和技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/easter_eggs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    彩蛋
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/tutorials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    技巧和攻略向教程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/lookup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    查阅
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://maddie480.ovh/celeste/olympus-news" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    新闻
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/speedrun/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    速通
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/deathless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    炼金
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/tas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TAS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mods
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Mods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mods/download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod下载
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    常规
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            常规
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mods/common/everest_install_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Everest下载问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://saplonily.top/celeste_common_issues/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    游戏崩溃问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    调试模式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mods/common/recommended_mods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    推荐Mod
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mods/tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    工具
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    制图
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            制图
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    入门
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            入门
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/is_that_a_dream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    这...是个梦吗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Loenn
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Loenn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/CelestialCartographers/Loenn/releases" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    下载(或者群文件里下)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://wiki.biligame.com/celeste/Loenn" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基本概念及使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/loenn_crash_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    崩溃问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/room/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    房间
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    元数据(Map -> Metadata)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/stylegrounds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    背景(Map -> Stylegrounds)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../question_and_self_study/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提问/自学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    教程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mod_structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    XML
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            XML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大纲
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tilesets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    砖 XML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    动画 XML
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    动画 XML
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      动画
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="动画">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      帧动画
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      骨骼动画
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      动画状态机
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="动画状态机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      分组
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="分组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idle" class="md-nav__link">
+    <span class="md-ellipsis">
+      闲置状态(idle)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inside" class="md-nav__link">
+    <span class="md-ellipsis">
+      玩家刚进绿泡泡时的状态(inside)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spin" class="md-nav__link">
+    <span class="md-ellipsis">
+      玩家在绿泡泡里冲刺时的状态(spin)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop" class="md-nav__link">
+    <span class="md-ellipsis">
+      玩家冲刺结束, 绿泡泡爆炸时的状态(pop)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      跳转
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="跳转">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      随机性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spritesxml_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprites.xml
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spritesxml_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义 Sprites.xml
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tile_sounds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tile Sound Id
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dialog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dialog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../camera/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Camera
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_10" id="__nav_6_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Graphics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_10">
+            <span class="md-nav__icon md-icon"></span>
+            Graphics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大纲
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphics/replace_assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    替换素材/贴图
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphics/skin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    皮肤制作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua_cutscene/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Cutscene
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://wiki.biligame.com/celeste/%E5%90%88%E9%9B%86%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../publish_mod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    发布Mod
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      动画
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="动画">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      帧动画
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      骨骼动画
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      动画状态机
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="动画状态机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      分组
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="分组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idle" class="md-nav__link">
+    <span class="md-ellipsis">
+      闲置状态(idle)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inside" class="md-nav__link">
+    <span class="md-ellipsis">
+      玩家刚进绿泡泡时的状态(inside)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spin" class="md-nav__link">
+    <span class="md-ellipsis">
+      玩家在绿泡泡里冲刺时的状态(spin)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop" class="md-nav__link">
+    <span class="md-ellipsis">
+      玩家冲刺结束, 绿泡泡爆炸时的状态(pop)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      跳转
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="跳转">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      随机性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spritesxml_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprites.xml
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spritesxml_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义 Sprites.xml
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="spritesxml">Sprites.xml</h1>
+<p>你可能需要先了解一下什么是<a href="../xml/">XML</a></p>
+<h2 id="_1">动画</h2>
+<p>我们在讲 <code>Sprites.xml</code> 之前先简单介绍下什么是动画</p>
+<p>简单来说就是利用人类的视觉残留现象通过连续的相近的画面给人一种 "动" 的感觉, 比较贴近现实的是<a href="https://search.bilibili.com/all?vt=16694194&amp;keyword=%E7%BF%BB%E9%A1%B5%E5%8A%A8%E7%94%BB">翻页动画</a></p>
+<p>但是在计算机动画中比较常见的是 <code>帧动画</code> 和 <code>骨骼动画</code></p>
+<h3 id="_2">帧动画</h3>
+<p>连续播放一张张图片</p>
+<p>这是 5 张 绿泡泡<code>Booster</code> 的 闲置<code>idle</code> 图片</p>
+<p><img 123_="123&quot;" alt="booster" src="../../../assets/mappings/xml/sprites_xml/booster/idle/booster00.png" style="width: 150px; image-rendering: pixelated; title=" />
+<img 123_="123&quot;" alt="booster" src="../../../assets/mappings/xml/sprites_xml/booster/idle/booster01.png" style="width: 150px; image-rendering: pixelated; title=" />
+<img 123_="123&quot;" alt="booster" src="../../../assets/mappings/xml/sprites_xml/booster/idle/booster02.png" style="width: 150px; image-rendering: pixelated; title=" />
+<img 123_="123&quot;" alt="booster" src="../../../assets/mappings/xml/sprites_xml/booster/idle/booster03.png" style="width: 150px; image-rendering: pixelated; title=" />
+<img 123_="123&quot;" alt="booster" src="../../../assets/mappings/xml/sprites_xml/booster/idle/booster04.png" style="width: 150px; image-rendering: pixelated; title=" /></p>
+<p>如果按一定时间间隔连续播放, 我们就得到了一张生动的动画(这里我们播放完一次会再播放一次, 这被称为 <code>loop</code>)</p>
+<p>一张图片在动画中被称为<strong>一帧</strong> </p>
+<p><img alt="booster" src="../../../assets/mappings/xml/sprites_xml/booster/booster_idle_gif.gif" style="width: 150px; image-rendering: pixelated; title=123" /></p>
+<h3 id="_3">骨骼动画</h3>
+<p>由于蔚蓝里几乎全是帧动画(当然还有程序生成的动画, 比如 9a 的黑洞, 就是通过拉伸, 旋转, 平移改变各种贴图的颜色实现的), 所以这里就简单聊一下骨骼动画</p>
+<p>我们将一张图片分解成若干网格, 再用"骨骼"来控制一部分网格, 这样当我们旋转骨骼的时候, 网格也会跟着形变, 这样我们就可以用一张图片来做动画了</p>
+<p>具体可以看看<a href="https://www.bilibili.com/video/BV1kK4y1t79f/?vd_source=88291083a8b9233d0006bb44b0331137&amp;t=135">相关视频</a></p>
+<h2 id="_4">动画状态机</h2>
+<p>如果我们有了一堆图片, 我们就可以制作各种各样的动画, 但是该怎么管理他们呢</p>
+<h3 id="_5">分组</h3>
+<p>显然我们可以根据状态/逻辑来划分动画, 这样便于动画衔接, 管理和制作, 比如上面的绿泡泡<code>Booster</code>会有四种状态</p>
+<h4 id="idle">闲置状态(<code>idle</code>)</h4>
+<p>绿泡泡在正常情况下的样子</p>
+<p><img alt="booster_idle" src="../../../assets/mappings/xml/sprites_xml/booster/booster_idle_gif.gif" style="width: 150px; image-rendering: pixelated; title=123" /></p>
+<h4 id="inside">玩家刚进绿泡泡时的状态(<code>inside</code>)</h4>
+<p>在写这个引导之前我从来没有注意过绿泡泡里面有个Madline😱</p>
+<p><img alt="booster_inside" src="../../../assets/mappings/xml/sprites_xml/booster/booster_inside_gif.gif" style="width: 150px; image-rendering: pixelated; title=123" /></p>
+<h4 id="spin">玩家在绿泡泡里冲刺时的状态(<code>spin</code>)</h4>
+<p><img alt="booster_spin" src="../../../assets/mappings/xml/sprites_xml/booster/booster_spin_gif.gif" style="width: 150px; image-rendering: pixelated; title=123" /></p>
+<h4 id="pop">玩家冲刺结束, 绿泡泡爆炸时的状态(<code>pop</code>)</h4>
+<p><img alt="booster_pop" src="../../../assets/mappings/xml/sprites_xml/booster/booster_pop_gif.gif" style="width: 150px; image-rendering: pixelated; title=123" /></p>
+<h3 id="_6">跳转</h3>
+<p>比如我们在泡泡快启/不快启的时候泡泡动画得马上/等待一会儿从 <code>inside</code> 状态中断然后跳转到 <code>spin</code> 状态</p>
+<h4 id="_7">随机性</h4>
+<p>虽然动画相比于图片已经生动许多, 但是如果泡泡每次爆炸的动画都长一样, 那看多了难免也会觉得生硬, 所以我们可以定义多个 <code>pop</code> 动画, 这样在切换动画的时候随机选择一个 <code>pop</code> 动画即可</p>
+<p>如果我们把一个分组的动画看作一个节点, 把动画跳转所需的条件来连接各个节点, 则我们可以清晰的看出绿泡泡各动画之间的关联, 这被称作...<code>动画状态机</code>!</p>
+<p><img 800px_="800px;" alt="booster_pop" src="../../../assets/mappings/xml/sprites_xml/booster_animation_statemachine.png" style="&quot;width:" /></p>
+<h2 id="spritesxml_1">Sprites.xml</h2>
+<p><code>Sprites.xml</code>是蔚蓝用来配置动画和动画状态机的配置文件</p>
+<p>接下来简单讲解下节点和属性的含义</p>
+<ul>
+<li>&lt;xxx&gt; ... &lt;/xxx&gt;: 这里 xxx 表明了一个对象 id, 比如这里是 booster, 标签内部包含了对象的各种动画分组和配置, 
+游戏会根据标签生成一个动画对象, 所以对于有的换肤实体可能会让你填动画对象的 id, 而不是素材所在文件夹路径</li>
+<li>path: 素材文件夹路径, 相对于 <code>Gameplay</code> 文件夹</li>
+<li>start: 开始动画对应的 id</li>
+<li>&lt;Justify/&gt;: 锚点位置, 或者说图片中心在哪儿, 一张图片放在某个位置, 光有坐标还不够(一个面上会有无穷个点), 还得有图片的中心, 也就是图片上的哪个点该放在那个位置(范围<code>0 ~ 1</code>)</li>
+<li>&lt;Loop/&gt;: 循环动画, 播放这个动画会自动循环</li>
+<li>&lt;Anim/&gt;: 普通动画, 播放结束后停止<ul>
+<li>id: 动画 id, </li>
+<li>path: 动画素材相对于素材文件夹的路径</li>
+<li>delay: 动画一帧的持续时间</li>
+<li>frames: 指定哪些帧来组成动画(动画命名规则一般是<code>booster00``booster01</code> ... <code>boosterXX</code>, 你看一眼官图素材就全懂了)<ul>
+<li>显式指定: <code>0 1 2 3 4</code> 表示从第 0 帧到第 4 帧</li>
+<li>指定范围: <code>0-4</code> 表示从第 0 帧到第 4 帧</li>
+</ul>
+</li>
+<li>goto: 播放完动画后跳到哪个动画, 如果写了多个 id, 则可以写上数字表示对应跳转的概率有多大, 如下面的 <code>badelineBoost</code> 的 <code>goto="idle:10,flash:2,blink</code> (你可能会注意到 <code>booster</code> 并没有 <code>goto</code>, 因为上面的例子是我编的, 只是方便理解而已^_^)</li>
+</ul>
+</li>
+</ul>
+<div class="language-xml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Celeste/Content/Graphics/Sprites.xml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+<span class="nt">&lt;Sprites&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- 前面的一些配置... --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;booster</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;objects/booster/&quot;</span><span class="w"> </span><span class="na">start=</span><span class="s">&quot;loop&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Justify</span><span class="w"> </span><span class="na">x=</span><span class="s">&quot;0.5&quot;</span><span class="w"> </span><span class="na">y=</span><span class="s">&quot;0.5&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Loop</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;loop&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;booster&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.1&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;0-4&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Loop</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;inside&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;booster&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.1&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;5-8&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Loop</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;spin&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;booster&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.06&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;18-25&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Anim</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;pop&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;booster&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.08&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;9-17&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/booster&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;boosterRed</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;objects/booster/&quot;</span><span class="w"> </span><span class="na">start=</span><span class="s">&quot;loop&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Justify</span><span class="w"> </span><span class="na">x=</span><span class="s">&quot;0.5&quot;</span><span class="w"> </span><span class="na">y=</span><span class="s">&quot;0.5&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Anim</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;appear&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;boosterRed&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.08&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;26-34&quot;</span><span class="w"> </span><span class="na">goto=</span><span class="s">&quot;loop&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Loop</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;loop&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;boosterRed&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.1&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;0-4&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Loop</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;inside&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;boosterRed&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.1&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;5-8&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Loop</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;spin&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;boosterRed&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.06&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;18-25&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Anim</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;pop&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;boosterRed&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.08&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;9-17&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/boosterRed&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;badelineBoost</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;objects/badelineBoost/&quot;</span><span class="w"> </span><span class="na">start=</span><span class="s">&quot;idle&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Justify</span><span class="w"> </span><span class="na">x=</span><span class="s">&quot;0.5&quot;</span><span class="w"> </span><span class="na">y=</span><span class="s">&quot;0.5&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Anim</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;idle&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;idle&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;0-5&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.08&quot;</span><span class="w"> </span><span class="na">goto=</span><span class="s">&quot;idle:10,flash:2,blink&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Anim</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;flash&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;idle&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;6-11&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.08&quot;</span><span class="w"> </span><span class="na">goto=</span><span class="s">&quot;idle&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Anim</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;blink&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;idle&quot;</span><span class="w"> </span><span class="na">frames=</span><span class="s">&quot;12-25&quot;</span><span class="w"> </span><span class="na">delay=</span><span class="s">&quot;0.08&quot;</span><span class="w"> </span><span class="na">goto=</span><span class="s">&quot;idle&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/badelineBoost&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- 后面的一些配置... --&gt;</span>
+<span class="nt">&lt;/Sprites&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="spritesxml_2">自定义 <code>Sprites.xml</code></h2>
+<ol>
+<li>把官图的 <code>Sprites.xml</code> 粘过来放自己 Mod 里(路径<code>Celeste/Content/Graphics/Sprites.xml</code>)</li>
+<li>记得改名或者套文件夹(如果你不知道这意味着什么, 请看<a href="../../mod_structure/#everest">这里</a>)</li>
+<li>之后修改官图配置或者额外写自己的配置即可</li>
+<li>在 Loenn 元数据中选择自己的 <code>Sprites.xml</code> 即可
+   <img alt="loenn_xml_config" src="../../../assets/mappings/xml/loenn_xml_config.png" /></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.5090c770.min.js"></script>
+      
+    
+  </body>
+</html>
