@@ -1,8 +1,8 @@
-你可能需要了解一下什么是[XML](./xml/xml.md)
-
 ## 资源
 
-[官图素材资源](./useful_links.md)
+* [官图素材资源](./useful_links.md)
+* [UnderDragon’s Repository 2.5](https://gamebanana.com/mods/427729)
+* [Spooooky's Asset Pack](https://gamebanana.com/mods/427729)
 
 ## 自定义界面
 
@@ -21,7 +21,6 @@
 
 ## [自制皮肤](./graphics/skin.md)
 
-
 ## Decal
 
 * [Decal](https://wiki.biligame.com/celeste/Decal)
@@ -30,6 +29,8 @@
 * [jpyx258的deco轮椅]()(群文件里下)
 
 ## DecalRegistry
+
+你可能需要了解一下什么是[XML](./xml/xml.md)
 
 * [摘自b站 Wiki(描述不详细, 但很全, 含helper自定义的decalregistry内容)](https://wiki.biligame.com/celeste/DecalRegistry)
 * [celeste地图制作指南(装饰, decals)(适合新手, 有配图)](https://www.bilibili.com/read/cv18389517/)
@@ -40,7 +41,6 @@
 ## [自定义瓦片(Tileset)](./xml/tilesets.md)
 
 ## [滤镜制作](./graphics/skin.md#_3)
-
 
 ### QA
 
@@ -59,5 +59,5 @@
 
 注：
 
-1. 这些素材文件中有些是香蕉网的mod, 可直接取用而有些则要解压取用。可以通过celemod/Olympus搜索mod名区分, 搜不到=需解压。
+1. 这些素材文件中有些是香蕉网的mod, 可直接取用而有些则要解压取用。可以通过Celemod/Olympus搜索mod名区分, 搜不到=需解压。
 2. 在解压取用的文件中, 如果有则请先阅读readme.txt/docx.了解格式和原作者的取用限制。并请严格按其规则执行。如果没有明确规定或只有“give a credit”, 请在地图明显处或香蕉网界面设置其为素材提供者。

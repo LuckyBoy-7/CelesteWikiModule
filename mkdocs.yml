@@ -92,8 +92,9 @@ nav:
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
           - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
       - 常用: "mappings/useful_links.md"
-      - 提问/自学: "mappings/question_and_self_study.md"
-      - 教程: "mappings/overall.md"
+      - 游戏崩溃问题 😭: "mappings/game_crashes.md"
+      - 提问/自学 💪: "mappings/question_and_self_study.md"
+      - 教程 👈😋: "mappings/overall.md"
       - Mod结构: "mappings/mod_structure.md"
       - XML:
           - 大纲: "mappings/xml/xml.md"

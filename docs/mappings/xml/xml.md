@@ -13,7 +13,6 @@
 
 类似的有
 
-* ForegroundTiles.xml
 * AnimatedTiles.xml
 * BackgroundTiles.xml
 
@@ -21,15 +20,12 @@
 
 类似的有
 
-* Sprites.xml
 * SpritesGui.xml
 * Portraits.xml
 
 ## CompleteScreens.xml
 
 官图结束背景对应的配置, 这一部分被 `meta.yaml` 配置收容, 所以你要是真的感兴趣随便看看就好
-
-* CompleteScreens.xml
 
 ## [.meta.yaml](../loenn/metadata.md)
 
@@ -41,5 +37,3 @@
 ## [DecalRegistry.xml](../graphics.md#decalregistry)
 
 因为很多原版的 Decal 配置都是硬编码的(所以有时候你会奇怪为什么有的 Decal 莫名其妙多了些特性, 因为代码里写死了), 所以 Everest 为我们提供了 `DecalRegistry.xml` 配置文件以修改更多 Decal 配置
-
-* DecalRegistry.xml
