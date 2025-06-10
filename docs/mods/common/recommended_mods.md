@@ -1,8 +1,8 @@
-> 虽然CeleMod里已经罗列了一些, 但想着这里还是得写点的, 顺便提供更详细的说明
+> 虽然Celemod里已经罗列了一些, 但想着这里还是得写点的, 顺便提供更详细的说明
 
-## [Mod推荐](https://celestenyaserver.github.io/CelesteMiaoServer.Wiki/#/zh-cn/Celeste/Mods/Functional_mod_list)（应该是和CeleMod上同步的）
+## [Mod推荐](https://celestenyaserver.github.io/CelesteMiaoServer.Wiki/#/zh-cn/Celeste/Mods/Functional_mod_list)（应该是和Celemod上同步的）
 
-## ChinaMirror（国内镜像, 可通过CeleMod下载）
+## ChinaMirror（国内镜像, 可通过Celemod下载）
   当你下载一些缺失的Mod的时候可以将下载链接转到国内镜像
 
 ## [Miao.CelesteNet.Client](https://celeste.centralteam.cn/d/211-wei-lan-qun-fu-xiao-bai-shi-yong-zhi-nan)
