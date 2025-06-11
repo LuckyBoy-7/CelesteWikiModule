@@ -61,31 +61,9 @@
   </Metadata>
 ```
 
-## [ColorGrading](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md#part-3-miscellaneous)
+## [ColorGrading](./color_grading.md)
 
-使用一张图片来配置皮肤在不同冲次数下的冲刺颜色
+使用一张图片来配置皮肤某些位置在不同冲次数下的颜色, [参考](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md#part-3-miscellaneous)
 
-<figure markdown>
-  ![none](../../assets/mappings/graphics/skin/none.png){style="width: 900px; image-rendering: pixelated; title=123"}
-  <figcaption>路径: Celeste\Content\Graphics\ColorGrading\none.png</figcaption>
-</figure>
-
-仔细观察你会发现这张图片是由 16 个 16 x 16 的 像素块组成, 那么聪明的你一定已经想到了吧, 这不就是精度低一点儿的 RGB 嘛, 一个块里用 x 方向(从左上角开始)存储 R, 用 y 方向存储 G,
-从左到右 16 个块存储 B(用二维的图片存储三维的颜色信息)
-
-这样你只需要把文件名改成对应的冲次数(具体配置看上面链接, 或者抄), 把对应颜色 A 换成你想要的颜色 B, 
+你只需要把文件名改成对应的冲次数(具体配置看上面链接, 或者抄), 把对应颜色 A 换成你想要的颜色 B,
 这样 SMH 就可以通过这个配置来设置, 使你在这个冲次数下你皮肤中的颜色 A 变成颜色 B
-
-
-### [滤镜制作](https://www.bilibili.com/video/BV1WW7czqEPi)
-
-这里本来想贴 WEG 录的视频的, 但是太久远了没找到, 只能新录一个了
-
-既然滤镜本质上是替换颜色, 那么我们把滤镜图片和游戏图片放一起调整即可
-
-视频中演示的是改 HSV, 如果你改 RGB 啥的原理也是一样的
-
-
-
-
-

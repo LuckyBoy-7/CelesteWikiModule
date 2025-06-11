@@ -5,7 +5,7 @@
 !!! note
     本文使用的环境为 Windows 11
 
-请先阅读[引言](https://wiki.biligame.com/celeste/%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC), 不管你是做着玩的还是想做出东西的, 制图都值得你认真对待,
+请先阅读[引言](./introduction.md), 不管你是做着玩的还是想做出东西的, 制图都值得你认真对待,
 在那之后制图一定会成为你[独特的回忆](is_that_a_dream.md)
 
 ## 建议

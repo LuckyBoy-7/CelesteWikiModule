@@ -9,11 +9,10 @@
 
 但由于原理大同小异, 所以这里会挑有代表性的讲
 
-## [ForegroundTiles.xml](./tilesets.md)
+## [ForegroundTiles.xml / AnimatedTiles.xml](./tilesets.md)
 
 类似的有
 
-* AnimatedTiles.xml
 * BackgroundTiles.xml
 
 ## [Sprites.xml](./sprites_xml.md)

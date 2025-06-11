@@ -7,6 +7,7 @@
 * [Mod结构（摘自Everest Wiki）](https://github.com/EverestAPI/Resources/wiki/Mod-Structure)
 * [【Celeste蔚蓝】作图教程第一章-路径](https://www.bilibili.com/video/BV1tR4y1X7wu)
 * [【Celeste蔚蓝】二代作图教程 1-5 基础路径](https://www.bilibili.com/video/BV1394y1C7Fy)
+* [Mod Structure Tutorial by Snip](https://gist.github.com/SnipUndercover/7ca0051ed649a32aac46ae2a9e034e37)
 
 你可能需要下载[官图素材](./useful_links.md)来更好的了解蔚蓝素材的结构
 

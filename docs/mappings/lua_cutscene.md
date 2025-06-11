@@ -1,2 +1,5 @@
-* [Saplonily的LuaCutscene教程](https://sapcelestemod.netlify.app/extra_luacs/begin/)
+* [Saplonily 的 LuaCutscenes 教程](https://sapcelestemod.netlify.app/extra_luacs/begin/)
 * motonine的LuaCutscene教程(群文件里)
+* [Prismatic Helper 文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes)
+* [Lua Cutscenes Recipe Book by Everest Wiki](https://github.com/EverestAPI/ModResources/wiki/Lua-Cutscenes-Recipe-Book)
+* [Lua Cutscenes without Lua Experience by Gamation](https://medium.com/@crumpledmemes/lua-cutscenes-without-lua-experience-3c2d87804e20)
