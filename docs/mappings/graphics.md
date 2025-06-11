@@ -17,16 +17,22 @@
 
 * [自定义结束界面 by Everest](https://github.com/EverestAPI/Resources/wiki/Chapter-Complete-Screen)
 * [自定义结束界面 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=154)
-* 使用`XaphanHelper/CustomEndScreenController`, 放在你结束关卡的房间里即可(Myn力推)
+* 使用`XaphanHelper/CustomEndScreenController`, 放在你结束关卡的房间里即可(Myn 力推)
 
 ## [自制皮肤](./graphics/skin.md)
 
 ## Decal
 
 * [Decal](https://wiki.biligame.com/celeste/Decal)
-* [春暮Q 中翻 - Donker's Deco Guide](../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx)
 * [废话deco教程]()(群文件里下)
 * [jpyx258的deco轮椅]()(群文件里下)
+
+### 心得
+
+> KaileyTheAlien: I remember when I found that room in Paint on my first playthrough and just stood there crying for like 10-15 minutes
+
+* [春暮Q 中翻 - Donker's Deco Guide](../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx), [原文](https://docs.google.com/document/d/1ebzZTL7eX21M0FJR2IAUPCCGxnDUscZdRW8GiGl8Yus/edit?tab=t.0)
+* [Creating Atmosphere in Celeste Mods by ricky06](https://www.youtube.com/watch?v=n5iHuXW8TyY)
 
 ## DecalRegistry
 
@@ -42,7 +48,22 @@
 
 ## [滤镜制作](./graphics/skin.md#_3)
 
-### QA
+## 杂
+
+* [Remaking Celeste’s Lighting / 蔚蓝的光源实现原理](https://medium.com/@NoelFB/remaking-celestes-lighting-3478d6f10bf)
+* [像素宝典 -- 风农译制](https://www.bilibili.com/read/readlist/rl38114?spm_id_from=333.1369.opus.module_collection.click)
+* [Pedro's Pixel Art Tutorials (Patreon)](https://www.patreon.com/collection/266583?view=condensed)
+* [Pedro's Pixel Art Tutorials (Lospec)](https://lospec.com/pixel-art-tutorials/author/pedro-medeiros)
+
+## 工具
+
+* [存档点插图生成器](https://postcard.leo60228.space/mask/)
+* [行星生成器](https://deep-fold.itch.io/pixel-planet-generator)
+* [宇宙背景生成器](https://deep-fold.itch.io/space-background-generator)
+* [更科学的颜色调色盘](https://meodai.github.io/poline/): 调整左侧设置和右侧锚点即可在下方粘贴各颜色编号
+* [渐变色调色盘](https://cssgradient.io/)
+
+### FAQ
 
 #### 怎么设置存档点(章节)的插图
 
@@ -50,7 +71,7 @@
 
 #### 怎样获取精美的美术素材
 
-1. 自己画, 可参考的[教程之一](https://www.bilibili.com/read/readlist/rl38114?spm_id_from=333.1369.opus.module_collection.click)
+1. 自己画
 2. 利用生成器自动生成
 3. 在群“制图素材”文件夹里寻找素材。
 4. 官图素材改色

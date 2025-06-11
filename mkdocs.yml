@@ -82,6 +82,7 @@ nav:
   - 制图:
       - 入门:
         - 开始: "mappings/start/start.md"
+        - 引言: "mappings/start/introduction.md"
         - 这...是个梦吗: "mappings/start/is_that_a_dream.md"
       - Loenn:
           - 下载(或者群文件里下): "https://github.com/CelestialCartographers/Loenn/releases"
@@ -107,6 +108,7 @@ nav:
           - 大纲: "mappings/graphics.md"
           - 替换素材/贴图: "mappings/graphics/replace_assets.md"
           - 皮肤制作: "mappings/graphics/skin.md"
+          - 滤镜: "mappings/graphics/color_grading.md"
       - Audio: "mappings/audio.md"
       - Lua Cutscene: "mappings/lua_cutscene.md"
       - Collab: "https://wiki.biligame.com/celeste/%E5%90%88%E9%9B%86%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B"
