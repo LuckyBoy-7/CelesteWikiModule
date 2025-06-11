@@ -46,17 +46,21 @@
 
 ## [自定义瓦片(Tileset)](./xml/tilesets.md)
 
-## [滤镜制作](./graphics/skin.md#_3)
+## [滤镜制作](./graphics/color_grading.md)
 
 ## 杂
 
 * [Remaking Celeste’s Lighting / 蔚蓝的光源实现原理](https://medium.com/@NoelFB/remaking-celestes-lighting-3478d6f10bf)
+
+### 像素画教程
+
 * [像素宝典 -- 风农译制](https://www.bilibili.com/read/readlist/rl38114?spm_id_from=333.1369.opus.module_collection.click)
 * [Pedro's Pixel Art Tutorials (Patreon)](https://www.patreon.com/collection/266583?view=condensed)
 * [Pedro's Pixel Art Tutorials (Lospec)](https://lospec.com/pixel-art-tutorials/author/pedro-medeiros)
 
 ## 工具
 
+* [Aseprite](https://www.aseprite.org/): 像素画绘制工具(推荐), 收费但[开源](https://github.com/aseprite/aseprite), 群里有群友 build 的版本
 * [存档点插图生成器](https://postcard.leo60228.space/mask/)
 * [行星生成器](https://deep-fold.itch.io/pixel-planet-generator)
 * [宇宙背景生成器](https://deep-fold.itch.io/space-background-generator)

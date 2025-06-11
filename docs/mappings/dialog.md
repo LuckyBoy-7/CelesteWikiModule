@@ -2,7 +2,6 @@
 
 * [B站 Wiki 的Dialog教程](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B)
 * [Everest Wiki 的Dialog教程](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue)
-* [Everest Wiki 的Dialog教程](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue)
 * [[Celeste蔚蓝]作图教程第四章-背景, 元数据, 文本教程](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=158)
 
 ## 什么是Dialog
@@ -17,7 +16,8 @@
 
  我们以 `Celeste/Content/Dialog/English.txt` 下的 `Main Menu` 部分为例(找不到可以`Ctrl + F`搜索), 看看这是不是和你游戏开始界面上显示的一样呢(左边是`key`, 右边是
 `对应语言的文本`)
- ```yaml
+
+ ```
   # Main Menu
   MENU_DEBUG=		~调试~
   MENU_BEGIN=		攀登
@@ -31,7 +31,7 @@
 首先在你Mod根目录下创建一个Dialog**文件夹**形成类似`Celeste/Mods/你的mod名/Dialog/`的目录结构
 
 接着你就可以创建[各种语言的`.txt`](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file)
-文件来做不同语言的翻译和添加文本的工作, 但一般加中文`Simplified Chinese.txt`跟英文`English.txt`(必备)就够了
+文件来做不同语言的翻译和添加文本的工作, 但一般加英文 `English.txt` (必备)跟中文 `Simplified Chinese.txt` 就够了
 
 写好对应的文本后在对应Trigger中填入对应`id/key`即可
 
@@ -41,11 +41,19 @@
 
 最简单粗暴识别哪些东西是键名的方法就是那一串东西是不是被大括号`{}`或者中括号`[]`包着, 所以照抄就好了, 例如
 
-```
-Wiki_Tutorial=Tutorial
-Wiki_Tutorial_CelesteWikiTutorial=WikiTutorial
+![localization](../assets/mappings/dialog/localization/localization0.png){style="width: 200px; title="123"}
+![localization](../assets/mappings/dialog/localization/localization3.png){style="width: 200px; title="123"}
 
-poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
+![localization](../assets/mappings/dialog/localization/localization1.png){style="width: 350px; title="123"}
+![localization](../assets/mappings/dialog/localization/localization4.png){style="width: 350px; title="123"}
+
+![localization](../assets/mappings/dialog/localization/localization2.png){style="width: 450px; title="123"}
+![localization](../assets/mappings/dialog/localization/localization5.png){style="width: 300px; title="123"}
+
+```
+Lucky_Tutorial=教程小标题
+Lucky_Tutorial_CelesteWikiTutorial=教程主标题
+poem_Lucky_Tutorial_CelesteWikiTutorial_A=你好, 我是爱心
 ```
 
 如果要添加自定义文本键名一定要长~, 不然很可能和别人重了出问题, 一般建议是`作者名_图名_键名`
@@ -75,6 +83,7 @@ poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
 ### 自定义人物对话头像
 * [by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Portraits)
 * [[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)](https://www.bilibili.com/video/BV1cP4y1m7B2)
+* [素材替换](./graphics/replace_assets.md)
 
 
 
@@ -84,10 +93,3 @@ poem_Wiki_Tutorial_CelesteWikiTutorial_A=Hello world!
 
 因为蔚蓝字库里没有, 请自己按[示例](https://www.bilibili.com/video/BV1A14y1W7hr)生成([字库生成网站](https://maddie480.ovh/celeste/font-generator)), 或者你直接依赖[`Extended Chinese Font`](https://gamebanana.com/mods/53736)/[`Chinese Font Pack`](https://gamebanana.com/mods/493138)这个Mod, 大概率不会缺字, 但可能还是会缺
 
-### 有选择的对话怎么做
-
-写 `lua`
-
-> Myn: 可以抄一下[画游](https://gamebanana.com/mods/494348)序章的
-
-具体路径`gallerycollab2024_v2015\Cutscenes\cny2024\prologue\granny.lua`
