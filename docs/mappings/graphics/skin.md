@@ -67,3 +67,10 @@
 
 你只需要把文件名改成对应的冲次数(具体配置看上面链接, 或者抄), 把对应颜色 A 换成你想要的颜色 B,
 这样 SMH 就可以通过这个配置来设置, 使你在这个冲次数下你皮肤中的颜色 A 变成颜色 B
+
+
+## FAQ
+
+### Badeline 随从对应的贴图路径是什么
+
+Graphics/Atlases/Gameplay/characters/badeline/jumpSlowXX.png
