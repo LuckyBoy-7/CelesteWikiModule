@@ -34,13 +34,13 @@
 
 然后我们开始介绍 `hair` 属性
 
-`hair`的格式类似`a,b|c,d|...|g,h|` , 它被 `|` 分隔成一个个组, 每个组对应了动画的一帧, 按顺序排列, 比如 `idle` 动画占 8 帧, 所以下面配置有 8 组,
-每个组有两个数被 `,` 分隔, 表示刘海相对于  Madeline  头顶的某个位置的 x/y 偏移(要是不设置 Madeline 的头就掉了), 因为官方已经大概调好了, 所以你只需要微调 x/y 即可(这也是为什么这些数字都很小的原因),
-有些分组形如`a,b:c`, 这里的 `c` 范围为`0~2`(不填默认为 `0`), 表示 Madeline 的刘海朝向(具体看`player`素材里的`bangs00` `bangs01` `bangs02` `bangs03`), 比如像 `idleA` 动画中的 Madeline 会左看看右看看, 这就得修改刘海的朝向 
+`hair` 的格式类似 `a,b|c,d|...|g,h|`, 它被 `|` 分隔成一个个组, 每个组对应了动画的一帧, 按顺序排列, 比如 `idle` 动画占 8 帧, 所以下面配置有 8 组,
+每个组有两个数被 `,` 分隔, 表示刘海相对于  Madeline  头顶的某个位置的 x/y 偏移(要是不设置 Madeline 的头就掉了), 因为官方已经大概调好刘海的位置了, 所以你只需要微调 x/y 即可(这也是为什么这些数字都很小的原因),
+有些分组形如 `a,b:c`, 这里的 `c` 范围为`0~2`(不填默认为 `0`), 表示 Madeline 的刘海朝向(具体看`player`素材里的`bangs00` `bangs01` `bangs02` `bangs03`), 比如像 `idleA` 动画中的 Madeline 会左看看右看看, 这就得修改刘海的朝向 
 
 #### carry
 
-`carry`的格式类似`a,b,c,d,...,l,m,n` , 它被 `,` 分隔成一个个组, 每个组对应了动画的一帧, 表示对应帧抓取物 y 方向的偏移(不然抓取物一直僵在一个高度很不自然)
+`carry` 的格式类似 `a,b,c,d,...,l,m,n`, 它被 `,` 分隔成一个个组, 每个组对应了动画的一帧, 表示对应帧抓取物 y 方向的偏移(不然抓取物一直僵在一个高度很不自然)
 
 ```xml
 <Metadata>
@@ -63,7 +63,7 @@
 
 ## [ColorGrading](./color_grading.md)
 
-使用一张图片来配置皮肤某些位置在不同冲次数下的颜色, [参考](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md#part-3-miscellaneous)
+使用一张图片来配置皮肤某些位置在不同冲次数下的颜色, 配置方式参考 [SMH 文档](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md#part-3-miscellaneous)
 
 你只需要把文件名改成对应的冲次数(具体配置看上面链接, 或者抄), 把对应颜色 A 换成你想要的颜色 B,
 这样 SMH 就可以通过这个配置来设置, 使你在这个冲次数下你皮肤中的颜色 A 变成颜色 B

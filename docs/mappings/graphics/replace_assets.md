@@ -9,21 +9,21 @@
 
 ## 暴力替换
 
-前面我们已经说过Everest在合并Mod和官图资源时同路径文件会发生覆盖, 那么也就是说如果我们按照官图素材路径放我们的图片, 那么自然我们的图片能覆盖官图的, 理论上所有素材都可以换(不过有的画面是程序生成的, 还是写code罢), 唯一不好的点就是"这会污染其他Mod", 因为这么做的影响是全局的
+前面我们已经说过 Everest 在合并 Mod 和官图资源时同路径文件会发生覆盖, 那么也就是说如果我们按照官图素材路径放我们的图片, 那么自然我们的图片能覆盖官图的, 理论上所有素材都可以换(不过有的画面是程序生成的, 还是写code罢), 唯一不好的点就是"这会污染其他 Mod", 因为这么做的影响是全局的
 
 ### 官图素材路径
 
-可参照`../Steam/steamapps/common/Celeste/Content/Graphics/Atlases`这个路径, 具体内容参照[解包素材](../useful_links.md), 这里的`Content`相当于我们Mod的根目录
+可参照 `../Steam/steamapps/common/Celeste/Content/Graphics/Atlases` 这个路径, 具体内容参照[解包素材](../useful_links.md), 这里的 `Content` 相当于我们 Mod 的根目录
 
 ## 使用自定义实体
 
-一般就是那些以Custom Reskinable之类的词为前缀的扩展实体, 显然Helper作者都帮我们写好了, 我们把路径填上直接用就好了([不知道路径填什么](../loenn/faq.md#_9))
+一般就是那些以 Custom, Reskinable 之类的词为前缀的扩展实体, 显然 Helper 作者都帮我们写好了, 我们把路径填上直接用就好了([不知道路径填什么](../loenn/faq.md#_9))
 
 ## 修改[`Sprites.xml`](../xml/sprites_xml.md)
 
-你可能需要先了解一下什么是[XML](../xml/xml.md)
+你可能需要先了解一下什么是 [XML](../xml/xml.md)
 
-`Sprites.xml`是蔚蓝的一个管理所有动画的配置文件
+`Sprites.xml` 是蔚蓝的一个管理所有动画的配置文件
 
 ```xml title="Sprites.xml"
 <Sprites>
