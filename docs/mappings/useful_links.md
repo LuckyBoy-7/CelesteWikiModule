@@ -33,7 +33,7 @@
 * [XML Validator](https://codebeautify.org/xmlvalidator): XML 合法检查器, 还是下[插件](./xml/xml.md)方便点
 
 ## 推荐 Mod
-* [UDAllHelper](https://gamebanana.com/mods/437806): 包含了常用 Mod 依赖, 妈妈再也不用担心我缺 Mod 了
+* [UDAllHelper](https://gamebanana.com/mods/437806): 包含了常用 Helper / Loenn插件 依赖, 妈妈再也不用担心我缺 Mod 了
 * [Mapping Utils](https://gamebanana.com/mods/454074): 方便作图时调试, 可以看 Flag, 调整基本 Metadata 设置, 看各实体性能消耗等等等等 
 * [CelesteTAS](https://gamebanana.com/tools/6715): 可以在移动时查看碰撞箱, 开简化图形等, 方便调试, 还可以写 TAS😋
 * [Speedrun Tool](https://gamebanana.com/tools/6597): 可以 SL(保存/加载关卡状态), 方便调试, 还可以练速通😋
@@ -41,3 +41,4 @@
 ## 命令
 
 * [Everest 启动参数配置](https://github.com/EverestAPI/Resources/wiki/Command-Line-Arguments): 你甚至可以自己输出官图素材
+* [Environment Variables](https://github.com/EverestAPI/Resources/wiki/Environment-Variables)

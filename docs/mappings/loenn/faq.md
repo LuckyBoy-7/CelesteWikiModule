@@ -1,5 +1,10 @@
 ## [b站 Wiki 常见问题解决方案](https://wiki.biligame.com/celeste/Loenn#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+
 ## [Everest Wiki 常见问题解决方案](https://github.com/EverestAPI/Resources/wiki/Mapping-FAQ)
+
+## [Discord 问答区](https://discord.com/channels/403698615446536203/953393160464269402)
+
+你能问出的问题别人大概率也问过了, 可以在问答区和和全局搜索区(右上角)试着搜搜看 
 
 
 ## 为什么不能切板
@@ -102,7 +107,9 @@ Grouped, Connected之类的前缀, 最稳的方法是直接在[所有Helper及�
 
 如果没告诉你, 那看看这个栏目有无默认值, 有默认值就可以很方便的推导出这个路径是相对什么文件夹的
 
-如果都没有, 那就穷举吧😂, 一般都是从`Gameplay`文件夹开始的
+如果还没有, 那么可以在对应 Helper 的 香蕉网 / Github 上查看有无相应文档, 在[所有实体列表](https://maddie480.ovh/celeste/custom-entity-catalog)上搜索更方便
+
+如果都没有, 那就凭经验穷举吧😂, 一般都是从`Gameplay`文件夹开始的
 
 ## 路径对的但图片加载不出来
 
