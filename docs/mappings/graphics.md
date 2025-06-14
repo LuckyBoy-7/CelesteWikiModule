@@ -17,7 +17,7 @@
 
 * [自定义结束界面 by Everest](https://github.com/EverestAPI/Resources/wiki/Chapter-Complete-Screen)
 * [自定义结束界面 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=154)
-* 使用`XaphanHelper/CustomEndScreenController`, 放在你结束关卡的房间里即可(Myn 力推)
+* 使用`XaphanHelper/Custom End Screen Controller`, 放在你结束关卡的房间里即可(Myn 力推)
 
 ## [自制皮肤](./graphics/skin.md)
 
