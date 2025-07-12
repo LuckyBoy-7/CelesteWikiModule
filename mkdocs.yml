@@ -31,7 +31,10 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-
+plugins:
+  - search:
+      separator: '[\s\u200b\-]'
+      
 extra_css:
   - css/content.css
 
