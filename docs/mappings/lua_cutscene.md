@@ -16,7 +16,8 @@
 
 ### 怎么让 Badeline 出来
 
-详情见 [Prismatic Helper 文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#baddy_split-xoffset--0-yoffset--y-faceplayer--true), 下面画游的例子中也有提及
+* 详情见 [Prismatic Helper 文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#baddy_split-xoffset--0-yoffset--y-faceplayer--true), 写 Dialog 即可,  下面画游的例子中也有提及(翻 Dialog)
+* 或者使用 DJ Map Helper 的 Talk To Badeline Trigger
 
 ### 有选择的对话怎么做
 
