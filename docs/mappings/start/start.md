@@ -73,7 +73,7 @@
 
 简单来说这俩就是Mod管理器, 方便我们下载和更新`Everest`, 启用和禁用Mod, 下载安装Mod, 设置Mod预设等等, 这里推荐小白用`Celemod`
 
-### 下载[Loenn](https://github.com/CelestialCartographers/Loenn/releases)(或者群文件里下)
+### 下载[Loenn](https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/)(或者群文件里下)
 
 `Loenn`被称作制图器, 它的前辈是`Ahorn`, 它为作图提供了图形化界面, 让我们制作`Map`这个游戏内容方便不少, 要知道, 前文提及的`Code, Graphics, Audio, Dialog, Lua Cutscenes`都是为了`Map`
 服务的, 所以`Loenn`可以说是制图的核心,
@@ -81,7 +81,7 @@
 
 #### 注意事项
 
-Loenn初次打开就报错的[解决方案](../loenn/loenn_crash_issues.md)
+Loenn初次打开就报错的[解决方案](../loenn/loenn_first_encountered_issues.md)
 
 ## 小试牛刀
 

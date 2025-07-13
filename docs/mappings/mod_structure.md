@@ -7,6 +7,7 @@
 * [Mod结构（摘自Everest Wiki）](https://github.com/EverestAPI/Resources/wiki/Mod-Structure)
 * [【Celeste蔚蓝】作图教程第一章-路径](https://www.bilibili.com/video/BV1tR4y1X7wu)
 * [【Celeste蔚蓝】二代作图教程 1-5 基础路径](https://www.bilibili.com/video/BV1394y1C7Fy)
+* [Mod结构 by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/mod_structure/)
 * [Mod Structure Tutorial by Snip](https://gist.github.com/SnipUndercover/7ca0051ed649a32aac46ae2a9e034e37)
 
 你可能需要下载[官图素材](./useful_links.md)来更好的了解蔚蓝素材的结构
@@ -174,6 +175,16 @@ Celeste
 
 下载 `Aurora's Loenn Plugin` 插件(本质上也是个Mod, 所以Mod怎么下它也怎么下), 在Loenn上方导航栏点击打开 `View -> Show Player Sihouette [Aurora's Loenn Plugin]`, 在游戏内随便走走,
 返回 Loenn 即可, 如果需要清空尾迹, 则点击 `View -> Clear Player Sihouette [Aurora's Loenn Plugin]`
+
+## 常见问题
+
+### [如何自定义 ABC 面](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#bc)
+
+在 `.bin` 文件 后面加 `-字母` 即可, 如 `FirstMap-A.bin`, ``SecondMap-B.bin``
+
+### [如何自定义多章节地图顺序](https://saplonily.top/celeste_modding_tutorial/mapping/mod_structure/#bin)
+
+在 `.bin` 文件 前加 `数字-` 即可, 如 `0-FirstMap.bin`, ``1-SecondMap.bin``
 
 ## 常见错误
 

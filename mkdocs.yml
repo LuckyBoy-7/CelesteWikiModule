@@ -88,9 +88,9 @@ nav:
         - 引言: "mappings/start/introduction.md"
         - 这...是个梦吗: "mappings/start/is_that_a_dream.md"
       - Loenn:
-          - 下载(或者群文件里下): "https://github.com/CelestialCartographers/Loenn/releases"
-          - 基本概念及使用: "https://wiki.biligame.com/celeste/Loenn"
-          - 崩溃问题: "mappings/loenn/loenn_crash_issues.md"
+          - 下载及游戏配置: "https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/"
+          - 基本概念及使用: "mappings/loenn/basic.md"
+          - 初见问题: "mappings/loenn/loenn_first_encountered_issues.md"
           - 常见问题: "mappings/loenn/faq.md"
           - 房间: "mappings/loenn/room.md"
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"

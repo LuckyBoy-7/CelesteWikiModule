@@ -1,4 +1,5 @@
-* [b wiki](https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7)
+* [by b Wiki](https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7)
+* [by Saploniy](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_2)
 
 ## by 电箱
 * [【Celeste蔚蓝】作图教程第二章-基础作图教程](https://www.bilibili.com/video/BV1ze411V7Yb)
