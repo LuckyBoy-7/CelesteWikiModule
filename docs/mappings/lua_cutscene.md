@@ -7,17 +7,24 @@
 
 由于蔚蓝是用 `C#` 编程语言编写制作的, 而官方的剧情都是硬编码的, 导致玩家写剧情的门槛太高, 所以就出现了 [Lua Cutscenes](https://gamebanana.com/mods/53678) 这样的 helper 来用 `Lua` 这种简单的编程语言来对接 `C#`, 即我们可以编写简单的 `Lua` 脚本来使用官方代码中的各种跟剧情相关的函数
 
-还有 [Prismatic Helper](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes) 这种 Helper, 主要是嵌入 Dialog 中使用的
+还有 [Prismatic Helper](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes) 这种 Helper(简称 ph), 主要是嵌入 Dialog 中使用的
 
 !!! 注意事项
     因为 Lua Cutscenes 本质也是个 Mod, 所以记得开(, 问就是踩过坑
 
 ## FAQ
 
+### 怎么在对完话后传送
+
+* 写 [lua](https://sapcelestemod.netlify.app/extra_luacs/reference/#teleportto)
+* 使用 [Prismatic Helper](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#goto-x--0-y--0), `{ph_trigger goto x坐标 y坐标}`
+
+坐标可以按 `~` 打开控制台查看当前鼠标位置
+
 ### 怎么让 Badeline 出来
 
 * 详情见 [Prismatic Helper 文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#baddy_split-xoffset--0-yoffset--y-faceplayer--true), 写 Dialog 即可,  下面画游的例子中也有提及(翻 Dialog)
-* 或者使用 DJ Map Helper 的 Talk To Badeline Trigger
+* 使用 DJ Map Helper 的 Talk To Badeline Trigger
 
 ### 有选择的对话怎么做
 
