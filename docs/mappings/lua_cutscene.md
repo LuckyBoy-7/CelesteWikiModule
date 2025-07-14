@@ -14,6 +14,43 @@
 
 ## FAQ
 
+### 为什么对话时无法设置相机的偏移
+
+你的代码可能是这样的
+
+```lua
+function onBegin()
+    disableMovement()
+    disablePause()
+
+    say("T_01")
+    setCameraOffset(3, 0)
+
+    enablePause()
+    enableMovement()
+end
+```
+
+但实际得是这样
+
+* 因为 `say` 函数会阻塞程序(还在说话呢, 自然不会执行后面的), 所以 `say` 函数得写在 `setCameraOffset` 之后
+* 其次由于 `disableMovement` 本质上是将玩家的状态设置为 `StDummy`, 这个时候摄像机不会更新位置, 所以咋们还得给玩家设置下参数强制更新摄像机, 也就是这里的 `player.ForceCameraUpdate = true`(记得最后复原)
+
+```lua
+function onBegin()
+    disableMovement()
+    disablePause()
+
+    player.ForceCameraUpdate = true
+    setCameraOffset(3, 0)
+    say("T_01")
+    player.ForceCameraUpdate = false
+
+    enablePause()
+    enableMovement()
+end
+```
+
 ### 怎么在对完话后传送
 
 * 写 [lua](https://sapcelestemod.netlify.app/extra_luacs/reference/#teleportto)
