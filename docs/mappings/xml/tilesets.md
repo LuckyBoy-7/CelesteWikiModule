@@ -62,11 +62,11 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 更多属性请参考[Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 
-* `id`: 嗯...就是类似身份证一样的东西, 唯一标识符, 对...你懂的吧...就..就是 id 啊...嗯...比如类比下你叫张三, 你的学号是 114, 那么你的 id 就是 114... id 不能重复你应该知道的吧...
+* `id`: 就是类似身份证一样的东西, 唯一标识符, 不能重复... 所以如果你加新的砖模板要更换 `id`, 可以用英文字母, 也可以用汉字(笑
 * `path`: 指明了 tileset 对应的素材位置, 路径相对于`Gameplay/tilesets` 文件夹, 例如上面提到的 `cement` 对应的 `path` 就是 `cement` 
 * `mask`: 也就是上文提到的**规则**, 表示对应位置砖周围的情况, 去掉 `-` 分三行排列刚好是个 `3 x 3` 的块, 块中间的位置对应当前砖的位置, 然后我们需要在这个九宫格内填规则, `0` 表示无砖, `1` 表示有砖, `x` 表示任意, 因为九宫格的中间对应当前砖, 所以永远填 `1`, 如果不写规则直接填`padding`则表示最外层的里面一层(例如对于`4 x 4`的块, 它的`padding`在`3 x 3`位置), 如果不写规则直接填`center`, 则表示剩下的没有被考虑的所有情况(一般来说就是指比`padding`还要里面的), 一个单元就是通过这样的规则来判断自己要选择什么贴图的  
-* `tiles`: 对应素材的哪些单元(一个单元占`8px * 8px`的大小并且坐标从左上(0, 0)位置开始算, (1, 0)表示第二列第一行对应的单元格, 是的没错, 从列开始算!)  
-* `ignores`: 需要忽略的 tileset 对应的 id, 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` 
+* `tiles`: 对应素材的哪些单元(一个单元占`8px * 8px`的大小并且坐标从左上(0, 0)位置开始算, (1, 0)表示第二列第一行对应的单元格, 是的没错, 从 0 开始, 从列开始算!)  
+* `ignores`: 需要忽略的 tileset 对应的 id, 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` (常用于制作 tile 分层的效果, 让画面的层次更丰富)
 * `copy`: 需要拷贝配置(即内部的`set`节点)的 tileset 对应的 id, 这样我们就可以只写一个 template(模板) 然后复用了, 当然我们可以继续写`set`节点来覆盖拷贝过来的一部分配置  
 * `sound`: Everest 添加的额外配置, 表示玩家踩上去什么声音, 写在`set`节点里, 如`<set ... sound="1"/>`, 具体数字对应的声音可以看[对照表](./tile_sounds.md)
 
@@ -101,181 +101,8 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 * 直接对原版素材改色, 然后把官图的`ForegroundTiles.xml` copy 一份, 在新的那份中添加一个自己的 Tileset节点, 之后在Loenn元数据里选择这个新的`xml`即可 
 * 照着原版的 template 砖改 
 * 自己写一个`ForegroundTiles.xml`
-* 抄/借别人的`ForegroundTiles.xml`, 详情见[Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
-* 向群友要一份, 群友什么都有😋
+* 抄/借别人的`ForegroundTiles.xml`, 比如[Spooooky素材包](https://gamebanana.com/mods/474010), 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)(里面会自带 xml 的)
 
-## 自定义 ForegroundTiles.xml
-
-虽说你可以直接改色或者抄, 我还是撸了一份样例来帮助大家自制 ForegroundTiles.xml(丐版制作耗时不超过 4 节水课)
-
-我们这次将制作纯色砖, 为的是便于理解点和线之间的关系, 而且无需为一种规则的单元画多种样式(绝对不是我懒
-
-### 借用 xml
-
-首先你肯定得有xml才能写吧, 简单点就是直接从官图文件(路径: `Celeste\Content\Graphics\ForegroundTiles.xml`)里复制粘贴出来, 不然就自己建一个, 之后放在自己的mod里, 随便取什么名字, 放哪儿都行(但要记得之前提过的重名问题, 需要套文件夹来降低风险)
-
-这里仿照官图就直接塞 Graphics 文件夹里了, 就像这样
-
-![custom_foreground_tile_xml_location](../../assets/mappings/xml/tileset/custom_foreground_tile_xml_location.png)
-
-### 清理, 补充 xml
-
-既然都是自制 ForegroundTiles.xml, 那官图相关的配置就没必要留了(你想留的话也可以), 清理一下, 然后加上自己的配置后大概长这样(记得看里面灰灰的注释)
-```xml 
-
-<Data>
-    <!-- 这里是一些官图配置, 如果你不删的话 -->
-    ...
-    
-  <Tileset id="A" path="awa">
-      <!-- 我们之后在这里写规则-->
-  </Tileset>
-      <!-- 好像得至少写一个带 copy 的节点 Loenn 才会显示, 所以这里我们重复写一遍 -->
-  <Tileset id="B" copy="A" path="awa"/>
-</Data>
-
-```
-
-### 准备 tileset 素材
-
-可以使用任意像素绘画软件(Aseprite, Pixel Studio, PS等)
-
-<figure markdown>
-  ![tileset](../../assets/mappings/xml/tileset/awa.png){style="width: 700px; image-rendering: pixelated; title=123"}
-  <figcaption>路径: Celeste\Mods\CelesteWikiTutorial\Graphics\Atlases\Gameplay\tilesets\awa.png</figcaption>
-  <figcaption>可右键图像另存为</figcaption>
-</figure>
-
-<figure markdown>
-  ![tileset](../../assets/mappings/xml/tileset/awa_with_grid.png){style="width: 700px; image-rendering: pixelated; title=123"}
-  <figcaption>使用软件自带网格查看更加清晰</figcaption>
-</figure>
-
-### 写配置
-
-虽然写配置在准备素材之后, 但实际操作上我们是边写配置边画的
-
-对于一个单元, 它只会由点和线组成, 最多 4 个点, 4 条边, 最少 0 个点, 0 条边, 所以我们可以分类讨论穷举所有情况
-
-我们用绿色/蓝色来表示规则里对应的砖, 红色只是为了方便理解对应的情况
-
-```xml title="Celeste\Mods\CelesteWikiTutorial\Graphics\PureColorForegroundTiles.xml"
-<Data>
-  <Tileset id="A" path="awa">
-    <!-- 0 个点, 0 条边 -->
-    <!-- 绿色 -->
-    <set mask="center" tiles="0,0"/>
-    <!-- 蓝色 -->
-    <set mask="padding" tiles="0,2"/>  
-
-    <!-- 0 个点, 1 条边 -->
-    <set mask="x0x-111-111" tiles="3,0"/>
-    <set mask="111-111-x0x" tiles="3,2"/>
-    <set mask="x11-011-x11" tiles="2,1"/>
-    <set mask="11x-110-11x" tiles="4,1"/>
-
-    <!-- 0 个点, 2 条边 -->
-    <!-- L型 -->
-    <set mask="x0x-011-x11" tiles="6,0"/>
-    <set mask="x0x-110-11x" tiles="8,0"/>
-    <set mask="11x-110-x0x" tiles="8,2"/>
-    <set mask="x11-011-x0x" tiles="6,2"/>
-    <!-- 平行 -->
-    <set mask="x0x-111-x0x" tiles="12,14"/>
-    <set mask="x1x-010-x1x" tiles="12,11"/>
-
-    <!-- 0 个点, 3 条边 -->
-    <set mask="x0x-010-x1x" tiles="11,0"/>
-    <set mask="x0x-110-x0x" tiles="12,1"/>
-    <set mask="x1x-010-x0x" tiles="11,2"/>
-    <set mask="x0x-011-x0x" tiles="10,1"/>
-
-    <!-- 0 个点, 4 条边 -->
-    <set mask="x0x-010-x0x" tiles="14,1"/>
-
-    <!-- 1 个点, 0 条边 -->
-    <set mask="011-111-111" tiles="17,1"/>
-    <set mask="110-111-111" tiles="18,1"/>
-    <set mask="111-111-110" tiles="18,2"/>
-    <set mask="111-111-011" tiles="17,2"/>
-
-    <!-- 1 个点, 1 条边 -->
-    <!-- 左上 -->
-    <set mask="01x-110-11x" tiles="23,1"/>
-    <set mask="011-111-x0x" tiles="22,2"/>
-    <!-- 右上 -->
-    <set mask="110-111-x0x" tiles="26,2"/>
-    <set mask="x10-011-x11" tiles="25,1"/>
-    <!-- 右下 -->
-    <set mask="x11-011-x10" tiles="25,5"/>
-    <set mask="x0x-111-110" tiles="26,4"/>
-    <!-- 左下 -->
-    <set mask="x0x-111-011" tiles="22,4"/>
-    <set mask="11x-110-01x" tiles="23,5"/>
-
-    <!-- 1 个点, 2 条边 -->
-    <set mask="01x-110-x0x" tiles="1,5"/>
-    <set mask="x10-011-x0x" tiles="3,5"/>
-    <set mask="x0x-011-x10" tiles="3,7"/>
-    <set mask="x0x-110-01x" tiles="1,7"/>
-
-    <!-- 1 个点, 3 条边(不存在) -->
-    <!-- 1 个点, 4 条边(不存在) -->
-     
-    <!-- 2 个点, 0 条边 -->
-    <!-- 同侧 -->
-    <set mask="111-111-010" tiles="9,5"/>
-    <set mask="011-111-011" tiles="11,7"/>
-    <set mask="010-111-111" tiles="9,9"/>
-    <set mask="110-111-110" tiles="7,7"/>
-    <!-- 对角 -->
-    <set mask="110-111-011" tiles="15,12"/>
-    <set mask="011-111-110" tiles="19,12"/>
-
-    <!-- 2 个点, 1 条边 -->
-    <set mask="x0x-111-010" tiles="16,5"/>
-    <set mask="01x-110-01x" tiles="18,7"/>
-    <set mask="010-111-x0x" tiles="16,9"/>
-    <set mask="x10-011-x10" tiles="14,7"/>
-
-    <!-- 2 个点, 2 条边(不存在) -->
-    <!-- 2 个点, 3 条边(不存在) -->
-    <!-- 2 个点, 4 条边(不存在) -->
-
-
-    <!-- 3 个点, 0 条边 -->
-    <set mask="010-111-011" tiles="1,11"/>
-    <set mask="010-111-110" tiles="5,11"/>
-    <set mask="110-111-010" tiles="5,15"/>
-    <set mask="011-111-010" tiles="1,15"/>
-
-    <!-- 3 个点, 1 条边(不存在) -->
-    <!-- 3 个点, 2 条边(不存在) -->
-    <!-- 3 个点, 3 条边(不存在) -->
-    <!-- 3 个点, 4 条边(不存在) -->
-
-    <!-- 4 个点, 0 条边 -->
-    <set mask="010-111-010" tiles="8,13"/>
-
-  </Tileset>
-
-  <!-- 好像得至少写一个带 copy 的节点 Loenn 才会显示-->
-  <Tileset id="B" copy="A" path="awa"/>
-</Data>
-```
-### 在 Loenn 元数据中选择配置
-
-记得 `ForegroundTiles.xml` 改名或者套文件夹(如果你不知道这意味着什么, 请看[这里](../mod_structure.md#everest))
-
-![loenn_xml_config](../../assets/mappings/xml/loenn_xml_config.png)
-
-然后`Ctrl + F5`刷新 Loenn, 随便涂涂画画即可
-
-### 成果展示
-
-理论上 Loenn 在这里只会显示绿色和蓝色的砖
-
-![custom_tileset_showcase](../../assets/mappings/xml/tileset/custom_tileset_showcase.png)
 
 ## 使用别人自定义的 `ForegroundTiles.xml`
 
@@ -497,6 +324,180 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
         <set mask="center" tiles="7,7; 8,7; 7,8; 8,8"/>
     </Tileset>
 ```
+
+
+## 自定义 ForegroundTiles.xml
+
+虽说你可以直接改色或者抄, 我还是撸了一份样例来帮助大家理解/自制 ForegroundTiles.xml(丐版制作耗时不超过 4 节水课)
+
+我们这次将制作纯色砖, 为的是便于理解点和线之间的关系, 而且无需为一种规则的单元画多种样式(绝对不是我懒
+
+### 借用 xml
+
+首先你肯定得有xml才能写吧, 简单点就是直接从官图文件(路径: `Celeste\Content\Graphics\ForegroundTiles.xml`)里复制粘贴出来, 不然就自己建一个, 之后放在自己的mod里, 随便取什么名字, 放哪儿都行(但要记得之前提过的重名问题, 需要套文件夹来降低风险)
+
+这里仿照官图就直接塞 Graphics 文件夹里了, 就像这样
+
+![custom_foreground_tile_xml_location](../../assets/mappings/xml/tileset/custom_foreground_tile_xml_location.png)
+
+### 清理, 补充 xml
+
+既然都是自制 ForegroundTiles.xml, 那官图相关的配置就没必要留了(你想留的话也可以), 清理一下, 然后加上自己的配置后大概长这样(记得看里面灰灰的注释)
+```xml 
+
+<Data>
+    <!-- 这里是一些官图配置, 如果你不删的话 -->
+    ...
+    
+  <Tileset id="A" path="awa">
+      <!-- 我们之后在这里写规则-->
+  </Tileset>
+      <!-- 好像得至少写一个带 copy 的节点 Loenn 才会显示, 所以这里我们重复写一遍 -->
+  <Tileset id="B" copy="A" path="awa"/>
+</Data>
+
+```
+
+### 准备 tileset 素材
+
+可以使用任意像素绘画软件(Aseprite, Pixel Studio, PS等)
+
+<figure markdown>
+  ![tileset](../../assets/mappings/xml/tileset/awa.png){style="width: 700px; image-rendering: pixelated; title=123"}
+  <figcaption>路径: Celeste\Mods\CelesteWikiTutorial\Graphics\Atlases\Gameplay\tilesets\awa.png</figcaption>
+  <figcaption>可右键图像另存为</figcaption>
+</figure>
+
+<figure markdown>
+  ![tileset](../../assets/mappings/xml/tileset/awa_with_grid.png){style="width: 700px; image-rendering: pixelated; title=123"}
+  <figcaption>使用软件自带网格查看更加清晰</figcaption>
+</figure>
+
+### 写配置
+
+虽然写配置在准备素材之后, 但实际操作上我们是边写配置边画的
+
+对于一个单元, 它只会由点和线组成, 最多 4 个点, 4 条边, 最少 0 个点, 0 条边, 所以我们可以分类讨论穷举所有情况
+
+我们用绿色/蓝色来表示规则里对应的砖, 红色只是为了方便理解对应的情况
+
+```xml title="Celeste\Mods\CelesteWikiTutorial\Graphics\PureColorForegroundTiles.xml"
+<Data>
+  <Tileset id="A" path="awa">
+    <!-- 0 个点, 0 条边 -->
+    <!-- 绿色 -->
+    <set mask="center" tiles="0,0"/>
+    <!-- 蓝色 -->
+    <set mask="padding" tiles="0,2"/>  
+
+    <!-- 0 个点, 1 条边 -->
+    <set mask="x0x-111-111" tiles="3,0"/>
+    <set mask="111-111-x0x" tiles="3,2"/>
+    <set mask="x11-011-x11" tiles="2,1"/>
+    <set mask="11x-110-11x" tiles="4,1"/>
+
+    <!-- 0 个点, 2 条边 -->
+    <!-- L型 -->
+    <set mask="x0x-011-x11" tiles="6,0"/>
+    <set mask="x0x-110-11x" tiles="8,0"/>
+    <set mask="11x-110-x0x" tiles="8,2"/>
+    <set mask="x11-011-x0x" tiles="6,2"/>
+    <!-- 平行 -->
+    <set mask="x0x-111-x0x" tiles="12,14"/>
+    <set mask="x1x-010-x1x" tiles="12,11"/>
+
+    <!-- 0 个点, 3 条边 -->
+    <set mask="x0x-010-x1x" tiles="11,0"/>
+    <set mask="x0x-110-x0x" tiles="12,1"/>
+    <set mask="x1x-010-x0x" tiles="11,2"/>
+    <set mask="x0x-011-x0x" tiles="10,1"/>
+
+    <!-- 0 个点, 4 条边 -->
+    <set mask="x0x-010-x0x" tiles="14,1"/>
+
+    <!-- 1 个点, 0 条边 -->
+    <set mask="011-111-111" tiles="17,1"/>
+    <set mask="110-111-111" tiles="18,1"/>
+    <set mask="111-111-110" tiles="18,2"/>
+    <set mask="111-111-011" tiles="17,2"/>
+
+    <!-- 1 个点, 1 条边 -->
+    <!-- 左上 -->
+    <set mask="01x-110-11x" tiles="23,1"/>
+    <set mask="011-111-x0x" tiles="22,2"/>
+    <!-- 右上 -->
+    <set mask="110-111-x0x" tiles="26,2"/>
+    <set mask="x10-011-x11" tiles="25,1"/>
+    <!-- 右下 -->
+    <set mask="x11-011-x10" tiles="25,5"/>
+    <set mask="x0x-111-110" tiles="26,4"/>
+    <!-- 左下 -->
+    <set mask="x0x-111-011" tiles="22,4"/>
+    <set mask="11x-110-01x" tiles="23,5"/>
+
+    <!-- 1 个点, 2 条边 -->
+    <set mask="01x-110-x0x" tiles="1,5"/>
+    <set mask="x10-011-x0x" tiles="3,5"/>
+    <set mask="x0x-011-x10" tiles="3,7"/>
+    <set mask="x0x-110-01x" tiles="1,7"/>
+
+    <!-- 1 个点, 3 条边(不存在) -->
+    <!-- 1 个点, 4 条边(不存在) -->
+     
+    <!-- 2 个点, 0 条边 -->
+    <!-- 同侧 -->
+    <set mask="111-111-010" tiles="9,5"/>
+    <set mask="011-111-011" tiles="11,7"/>
+    <set mask="010-111-111" tiles="9,9"/>
+    <set mask="110-111-110" tiles="7,7"/>
+    <!-- 对角 -->
+    <set mask="110-111-011" tiles="15,12"/>
+    <set mask="011-111-110" tiles="19,12"/>
+
+    <!-- 2 个点, 1 条边 -->
+    <set mask="x0x-111-010" tiles="16,5"/>
+    <set mask="01x-110-01x" tiles="18,7"/>
+    <set mask="010-111-x0x" tiles="16,9"/>
+    <set mask="x10-011-x10" tiles="14,7"/>
+
+    <!-- 2 个点, 2 条边(不存在) -->
+    <!-- 2 个点, 3 条边(不存在) -->
+    <!-- 2 个点, 4 条边(不存在) -->
+
+
+    <!-- 3 个点, 0 条边 -->
+    <set mask="010-111-011" tiles="1,11"/>
+    <set mask="010-111-110" tiles="5,11"/>
+    <set mask="110-111-010" tiles="5,15"/>
+    <set mask="011-111-010" tiles="1,15"/>
+
+    <!-- 3 个点, 1 条边(不存在) -->
+    <!-- 3 个点, 2 条边(不存在) -->
+    <!-- 3 个点, 3 条边(不存在) -->
+    <!-- 3 个点, 4 条边(不存在) -->
+
+    <!-- 4 个点, 0 条边 -->
+    <set mask="010-111-010" tiles="8,13"/>
+
+  </Tileset>
+
+  <!-- 好像得至少写一个带 copy 的节点 Loenn 才会显示-->
+  <Tileset id="B" copy="A" path="awa"/>
+</Data>
+```
+### 在 Loenn 元数据中选择配置
+
+记得 `ForegroundTiles.xml` 改名或者套文件夹(如果你不知道这意味着什么, 请看[这里](../mod_structure.md#everest))
+
+![loenn_xml_config](../../assets/mappings/xml/loenn_xml_config.png)
+
+然后`Ctrl + F5`刷新 Loenn, 随便涂涂画画即可
+
+### 成果展示
+
+理论上 Loenn 在这里只会显示绿色和蓝色的砖
+
+![custom_tileset_showcase](../../assets/mappings/xml/tileset/custom_tileset_showcase.png)
 
 ## 自定义 AnimatedTiles.xml
 

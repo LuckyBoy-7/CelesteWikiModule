@@ -1,3 +1,8 @@
+## Mod 管理器
+
+* [Olympus](https://everestapi.github.io/)（国外mod下载管理工具, 可下载Everest）
+* [Celemod](https://www.bilibili.com/video/BV1Hx4y1z7L5)（国内mod下载管理工具, 可下载Everest）
+
 ## 资源
 
 建议群文件里翻翻
@@ -21,7 +26,7 @@
 * [存档点图片生成器](http://postcard.leo60228.space/mask/)
 * [字库生成器](https://maddie480.ovh/celeste/font-generator)
 * [文件结构检查 / Celeste Mod Structure Verifier](https://maddie480.ovh/celeste/mod-structure-verifier)
-* [Dialog 图形化界面编辑工具]()(群文件, 施工ing)
+* [Dialog 图形化界面编辑工具]()(群文件)
 * [[音频类] Fmod Bank Tools（Mod 音乐解压工具）]()(群文件)
 * [ZipsVerifier]()(群文件): 检查 `.zip` 文件是否损坏(放到 Mods 文件夹下使用)
 * [BinaryXML.v2]()(群文件): 将地图 `.bin` 文件转化为 `.xml` 格式, 将 `.bin` 文件拖入 `.exe` 即可
