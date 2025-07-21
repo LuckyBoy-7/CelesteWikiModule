@@ -58,7 +58,7 @@
 ### Dependencies
 
 你的 Mod 的依赖, 即你这个 Mod 使用了哪些Mod的东西, 可能是 Code(也就是别人写的各种各样的实体等功能, 即所谓的 Helper, 也是 Mod), 也可能是美术素材(有的 bro 会依赖草莓酱💀),
-这样当别人使用 Mod 管理器下载你的 Mod 的时候也会自动下载你依赖的 Mod, 缺依赖或者版本低了 `Everest` 都会警告玩不了, 如果没问题则被依赖的 Mod 会先被加载, 总之 `Everest` 总得知道你Mod需要什么Mod吧
+这样当别人使用 Mod 管理器下载你的 Mod 的时候也会自动下载你依赖的 Mod, 缺依赖或者版本低了 `Everest` 都会警告玩不了, 如果没问题则被依赖的 Mod 会先被加载, 总之 `Everest` 总得知道你的 Mod 需要什么 Mod 吧
 
 稍微复杂点的 `everest.yaml` 举例
 
@@ -91,32 +91,60 @@
 
 ### OptionalDependencies
 
-跟 `Dependencies` 同理, 就是多了 `Optional可选的`, 按照 `Everest Wiki` 的说法, 这和 `Dependencies` 区别就是这个依赖不强制要求, 缺了也能玩
+跟 `Dependencies` 同理, 就是多了 `Optional 可选的`, 也就是说这个依赖缺了/没开也能玩, 但如果开了, 那依赖的版本不能低于 `OptionalDependencies` 里写的版本(跟 `Dependencies` 同理), 且在你的 Mod 加载之前加载, 
+
+你就把它想象成 `Dependencies`, 但是缺了依赖也没事就行
+
+常用于:
+
+* 你做了一个皮肤 Mod, 但是你只想这个皮肤应用于某两张图, 我们就需要画素材或者写 .xml 去覆盖别人的东西(这就需要人家 Mod 先加载), 而且别人可能只玩其中一张图, 那么下你皮肤就不会同时把两张图下过来, 更灵活
+* 你写 Code Mod 给其他 Mod 做适配的时候需要别人的 Mod 先加载
 
 ## Maps
 
 这里假设我们的Mod名称叫做 `MyMod`, 我们的 Mod 要放到 Mods 文件夹内, 然后假设你的地图文件为 `MyFirstMap.bin`, 那么你的 Mod 文件路径大概长这样
 
-```
-Celeste
-    - Mods
-        - OtherMod1
+* 📁Celeste
+    - 📁Mods
+        - 📁OtherMod1
             - ...
-        - OtherMod2
+        - 📁OtherMod2
             - ...
-        - MyMod  // 你的Mod
-            - everest.yaml
-            - Maps 
-                - MyFirstMap.bin  // A面
-                - MyFirstMap-B.bin  // B面
-                - MyFirstMap-C.bin  // C面
-                - MyFirstMap1.bin  // 如果名字不一样地图就会被分成多个模块, 就像官图1a, 2a ... 8a一样
-```
+        - 📁MyMod  // 你的Mod
+            - 📄everest.yaml
+            - 📁Maps 
+                - 📄MyFirstMap.bin  // A面
+                - 📄MyFirstMap-B.bin  // B面
+                - 📄MyFirstMap-C.bin  // C面
+                - 📄MyFirstMap1.bin  // 如果名字不一样地图就会被分成多个模块, 就像官图1a, 2a ... 8a一样
 
 ### [了解 `Everest` 处理这些文件的逻辑](https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders)
 
 `Everest` 在加载Mod资源的时候会把里面的资源(比如 `Maps, Dialog, Audio, Graphics`等)
-连带官图的整合到一起(对于大部分文件来说同路径会覆盖, 而对 `Dialog` 里的文件来说是合并), 做好合并工作后Everest就可以集中处理这些资源了
+连带官图的整合到一起, 做好合并工作后Everest就可以集中处理这些资源了
+
+对于大部分文件来说同路径会文件覆盖, 比如图片A 覆盖同路径 图片B, 而对 `Dialog` 里的文件 和`.xml`等文件来说是内容覆盖
+
+以 dialog 为例, 如果别人写了
+```ini
+a=1
+b=2
+```
+
+你写了
+
+```ini
+b=3
+c=4
+```
+
+如果对话文件同路径且别人 Mod 先加载, 则最后会变成下面这样, 我们可以通过这个性质更改官图文本, 比如 [FunnyDialog](https://www.bilibili.com/video/BV1Pz421i7SZ)的应用
+```ini
+a=1
+b=3
+c=4
+```
+
 
 当你理解了这回事, Mod中的很多东西就会立即变得清晰明了, 比如:
 
@@ -126,38 +154,34 @@ Celeste
 
 正是因为地图和素材等文件同路径的时候会被覆盖, 比如你和它的Mod都长这样, 你俩有个人的图就加载不出来了, 如果贴图和音频等文件也重名重路径了, 你的图可能会加载到错误的素材
 
-```
-Celeste
-    - Mods
-        - HisMod
-            - everest.yaml
-            - Maps 
-                - MyFirstMap.bin
-        - MyMod  // 你的Mod
-            - everest.yaml
-            - Maps 
-                - MyFirstMap.bin
-```
+* 📁Celeste
+    - 📁Mods
+        - 📁HisMod
+            - 📄everest.yaml
+            - 📁Maps 
+                - 📄MyFirstMap.bin
+        - 📁MyMod  // 你的Mod
+            - 📄everest.yaml
+            - 📁Maps 
+                - 📄MyFirstMap.bin
 
 所以我们添加自定义的资源时文件路径要多套几层, 目的就是为了不和官图也不和其他人的 Mod 重名(写 Dialog 的 key 的时候也是同理), 一般来说两层足矣, 所以地图结构一般是
 `Maps/{作者名}/{地图集名字}/{地图}.bin`, 基本上就是如下图所示
 
-```
-Celeste
-    - Mods
-        - OtherMod1
-        - OtherMod2
-        - OtherMod3
-        - MyMod  // 你的Mod
-            - everest.yaml
-            - Maps 
-                - 作者名
-                    - 地图集名字
-                         - MyFirstMap.bin  
-                         - MyFirstMap-B.bin
-                         - MyFirstMap-C.bin
-                         - MyFirstMap1.bin 
-```
+* 📁Celeste
+    - 📁Mods
+        - 📁OtherMod1
+        - 📁OtherMod2
+        - 📁OtherMod3
+        - 📁MyMod  // 你的Mod
+            - 📄everest.yaml
+            - 📁Maps 
+                - 📁作者名
+                    - 📁地图集名字
+                         - 📄MyFirstMap.bin  
+                         - 📄MyFirstMap-B.bin
+                         - 📄MyFirstMap-C.bin
+                         - 📄MyFirstMap1.bin 
 
 ### 注意事项
 
@@ -194,19 +218,15 @@ Celeste
 
 例如这样是对的
 
-```
-- 你的 Mod.zip
-    - Maps
-    - Graphics
-    - everest.yaml
-```
+- 📁你的 Mod.zip
+    - 📁Maps
+    - 📁Graphics
+    - 📄everest.yaml
 
 这样是错的
 
-```
-- xxx.zip
-  - MyMod
-      - Maps
-      - Graphics
-      - everest.yaml
-```
+- 📁你的 Mod.zip
+    - 📁xxx
+        - 📁Maps
+        - 📁Graphics
+        - 📄everest.yaml

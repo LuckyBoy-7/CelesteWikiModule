@@ -83,24 +83,9 @@
 
  `Sprites.xml`是蔚蓝用来配置动画和动画状态机的配置文件
 
-接下来简单讲解下节点和属性的含义
+接下来搭配 `Booster` 的 `Sprites.xml` 和文件路径简单讲解下节点和属性的含义
 
-* &lt;xxx&gt; ... &lt;/xxx&gt;: 这里 xxx 表明了一个对象 id, 比如这里是 booster, 标签内部包含了对象的各种动画分组和配置, 
-游戏会根据标签生成一个动画对象, 所以对于有的换肤实体可能会让你填动画对象的 id, 而不是素材所在文件夹路径
-* path: 素材文件夹路径, 相对于 `Gameplay` 文件夹
-* start: 开始动画对应的 id
-* &lt;Justify/&gt;: 锚点位置, 或者说图片中心在哪儿, 一张图片放在某个位置, 光有坐标还不够(一个面上会有无穷个点), 还得有图片的中心, 也就是图片上的哪个点该放在那个位置(范围`0 ~ 1`)
-* &lt;Loop/&gt;: 循环动画, 播放这个动画会自动循环
-* &lt;Anim/&gt;: 普通动画, 播放结束后停止
-    * id: 动画 id, 
-    * path: 动画素材相对于素材文件夹的路径
-    * delay: 动画一帧的持续时间
-    * frames: 指定哪些帧来组成动画(动画命名规则一般是`booster00``booster01` ... `boosterXX`, 你看一眼官图素材就全懂了)
-        * 显式指定: `0 1 2 3 4` 表示从第 0 帧到第 4 帧
-        * 指定范围: `0-4` 表示从第 0 帧到第 4 帧
-    * goto: 播放完动画后跳到哪个动画, 如果写了多个 id, 则可以写上数字表示对应跳转的概率有多大, 如下面的 `badelineBoost` 的 `goto="idle:10,flash:2,blink` (你可能会注意到 `booster` 并没有 `goto`, 因为上面的例子是我编的, 只是方便理解而已^_^)
-
-```xml title="Celeste/Content/Graphics/Sprites.xml"
+```xml title="Celeste/Content/Graphics/Sprites.xml" hl_lines="5 6 7 10 15 24"
 <?xml version="1.0" encoding="utf-8" ?>
 <Sprites>
     <!-- 前面的一些配置... -->
@@ -131,6 +116,32 @@
     <!-- 后面的一些配置... -->
 </Sprites>
 ```
+
+* 📁Graphics
+    * 📁Atlases 
+        * 📁Gameplay
+            * 📁objects
+                * 📁booster
+                    * 🟢booster00
+                    * 🟢booster01
+                    * 🟢 ...
+                    * 🟢booster25
+
+* &lt;xxx&gt; ... &lt;/xxx&gt;: 这里 xxx 表明了一个对象 id, 比如这里是 booster, 标签内部包含了对象的各种动画分组和配置,
+  游戏会根据标签生成一个动画对象, 所以对于有的换肤实体可能会让你填动画对象的 id, 而不是素材文件路径
+    * path: 素材文件夹路径, 相对于 `Gameplay` 文件夹
+    * start: 开始动画对应的 id
+    * &lt;Justify/&gt;: 锚点位置, 或者说图片中心在哪儿, 一张图片放在某个位置, 光有坐标还不够(一个面上会有无穷个点), 还得有图片的中心, 也就是图片上的哪个点该放在那个位置(范围`0 ~ 1`)
+    * &lt;Loop/&gt;: 循环动画, 播放这个动画会自动循环
+    * &lt;Anim/&gt;: 普通动画, 播放结束后停止
+        * id: 动画 id,
+        * path: 动画素材相对于素材文件夹路径的路径
+        * delay: 动画一帧的持续时间
+        * frames: 指定哪些帧来组成动画(动画命名规则一般是`booster00``booster01` ... `boosterXX`, 你看一眼官图素材就全懂了)
+            * 显式指定: `0 1 2 3 4` 表示从第 0 帧到第 4 帧
+            * 指定范围: `0-4` 表示从第 0 帧到第 4 帧
+        * goto: 播放完动画后跳到哪个动画, 如果写了多个 id, 则可以写上数字表示对应跳转的概率有多大, 如下面的 `badelineBoost` 的 `goto="idle:10,flash:2,blink` (你可能会注意到 `booster` 并没有 `goto`, 因为上面的例子是我编的, 只是方便理解而已^_^)
+
 
 ## 自定义 `Sprites.xml`
 

@@ -20,7 +20,7 @@
 我们以 `Celeste/Content/Dialog/Simplified Chinese.txt` 下的 `Main Menu` 部分为例(找不到可以`Ctrl + F`搜索), 看看这是不是和你游戏开始界面上显示的一样呢(左边是`key`, 右边是
 `对应语言的文本`)
 
- ```title="Simplified Chinese.txt"
+ ```ini title="Simplified Chinese.txt"
   # Main Menu
   MENU_DEBUG=		~调试~
   MENU_BEGIN=		攀登
@@ -32,7 +32,7 @@
 
 ## 编写 Dialog
 
-知道原理后我们就可以添加新的`key`来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的), 在使用上我们只需要写好对话, 在地图里放个触发对话的Trigger, 然后填入对应的
+知道原理后我们就可以添加新的`key`来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的, 如 [FunnyDialog](https://www.bilibili.com/video/BV1Pz421i7SZ)), 在使用上我们只需要写好对话, 在地图里放个触发对话的Trigger, 然后填入对应的
 `key`就好了
 
 首先在你Mod根目录下创建一个Dialog**文件夹**形成类似`Celeste/Mods/你的mod名/Dialog/`的目录结构
@@ -59,7 +59,7 @@
 * [教程 by Everest](https://github.com/EverestAPI/Resources/wiki/map-metadata#map-name)
 * [教程 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=174)
 
-最简单粗暴识别哪些东西是键名的方法就是那一串东西是不是被大括号`{}`或者中括号`[]`包着, 所以照抄就好了, 例如
+最简单粗暴识别哪些东西是键名的方法就是那一串东西是不是被大括号`{}`或者中括号`[]`包着(因为蔚蓝会把无法识别的键用括号包着显示出来), 所以照抄就好了, 例如
 
 ![localization](../assets/mappings/dialog/localization/localization0.png){style="width: 200px; title="123"}
 ![localization](../assets/mappings/dialog/localization/localization3.png){style="width: 200px; title="123"}
@@ -70,7 +70,7 @@
 ![localization](../assets/mappings/dialog/localization/localization2.png){style="width: 450px; title="123"}
 ![localization](../assets/mappings/dialog/localization/localization5.png){style="width: 300px; title="123"}
 
-``` title="Simplified Chinese.txt"
+```ini title="Simplified Chinese.txt"
 Lucky_Tutorial=教程小标题
 Lucky_Tutorial_CelesteWikiTutorial=教程主标题
 poem_Lucky_Tutorial_CelesteWikiTutorial_A=你好, 我是爱心

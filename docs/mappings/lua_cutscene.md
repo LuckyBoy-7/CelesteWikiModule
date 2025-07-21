@@ -33,9 +33,6 @@ end
 
 但实际得是这样
 
-* 因为 `say` 函数会阻塞程序(还在说话呢, 自然不会执行后面的), 所以 `say` 函数得写在 `setCameraOffset` 之后
-* 其次由于 `disableMovement` 本质上是将玩家的状态设置为 `StDummy`, 这个时候摄像机不会更新位置, 所以咋们还得给玩家设置下参数强制更新摄像机, 也就是这里的 `player.ForceCameraUpdate = true`(记得最后复原)
-
 ```lua
 function onBegin()
     disableMovement()
@@ -50,6 +47,10 @@ function onBegin()
     enableMovement()
 end
 ```
+
+* 因为 `say` 函数会阻塞程序(还在说话呢, 自然不会执行后面的), 所以 `say` 函数得写在 `setCameraOffset` 之后
+* 其次由于 `disableMovement` 本质上是将玩家的状态设置为 `StDummy`, 这个时候摄像机不会更新位置, 所以咋们还得给玩家设置下参数强制更新摄像机, 也就是这里的 `player.ForceCameraUpdate = true`(记得最后复原)
+
 
 ### 怎么在对完话后传送
 
@@ -71,7 +72,7 @@ end
 
 具体路径`gallerycollab2024_v2015\Cutscenes\cny2024\prologue\granny.lua`
 
-主要函数 [choice](https://sapcelestemod.netlify.app/extra_luacs/reference/#choice)
+关键函数 [choice](https://sapcelestemod.netlify.app/extra_luacs/reference/#choice)
 
 [示例视频](https://www.bilibili.com/video/BV17RsWeDE3Y/)
 

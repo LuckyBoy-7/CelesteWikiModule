@@ -1,6 +1,6 @@
 ## 制图引导
 * [底龙的制图引导](https://www.bilibili.com/video/BV1WwFvebEyP)
-* [本Wiki的制图引导](./start/start.md)
+* [本 Wiki 的制图引导](./start/start.md)
 
 ## 制图教程
 * [Saplonily 的制图教程](https://saplonily.top/celeste_modding_tutorial/)
