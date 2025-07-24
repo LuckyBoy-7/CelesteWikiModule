@@ -54,7 +54,21 @@
 
 * `=`左边不要有空格
 
-## 修改自己地图名称和吃心文本
+
+## 常用部分
+
+推荐下载 [VSCode](https://code.visualstudio.com/) 并安装 `Celeste Dialog Highlighter` 插件
+
+* [文字效果(抖动, 改色, 变速等)](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C)
+* [对话效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E5%AF%B9%E8%AF%9D%E6%95%88%E6%9E%9C): 翻转头像, 对话框置底, 引用等
+* [人物表情](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85)(也可以在控制台输入`portraits`来查看)
+* [添加对话emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes)
+  把你的emoji图片放到`Graphics/Atlases/Gui/emoji`目录下(`.png`格式的), 对话对应文本为`:你的图片相对路径(不带.png):`例如`:MyCelesteMod/shock:`
+* [Lua Cutscene过场动画(即配合对话的演出)](lua_cutscene.md)
+* [明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179)
+
+
+### 修改自己地图名称和吃心文本
 
 * [教程 by Everest](https://github.com/EverestAPI/Resources/wiki/map-metadata#map-name)
 * [教程 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=174)
@@ -75,18 +89,6 @@ Lucky_Tutorial=教程小标题
 Lucky_Tutorial_CelesteWikiTutorial=教程主标题
 poem_Lucky_Tutorial_CelesteWikiTutorial_A=你好, 我是爱心
 ```
-
-## 常用部分
-
-推荐下载 [VSCode](https://code.visualstudio.com/) 并安装 `Celeste Dialog Highlighter` 插件
-
-* [文字效果(抖动, 改色, 变速等)](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C)
-* [对话效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E5%AF%B9%E8%AF%9D%E6%95%88%E6%9E%9C): 翻转头像, 对话框置底, 引用等
-* [人物表情](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85)(也可以在控制台输入`portraits`来查看)
-* [添加对话emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes)
-  把你的emoji图片放到`Graphics/Atlases/Gui/emoji`目录下(`.png`格式的), 对话对应文本为`:你的图片相对路径(不带.png):`例如`:MyCelesteMod/shock:`
-* [Lua Cutscene过场动画(即配合对话的演出)](lua_cutscene.md)
-* [明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179)
 
 ### 自定义人物对话头像
 
@@ -117,7 +119,7 @@ poem_Lucky_Tutorial_CelesteWikiTutorial_A=你好, 我是爱心
 
 ![memo](../assets/mappings/dialog/entities/memo.png){style="width: 300px; title="123"}
 
-然后把官图素材从 `Graphics\Atlases\Memo` 粘贴到你的 Mod 下, 改个名, 之后在属性栏 `Paper Sprite Folder Name` 里填上文件夹名字即可(比如我这里的 `awa`), 还有就是别忘了把另两个素材给清空, 不然还是有 icon
+然后把官图素材从 `Graphics/Atlases/Memo` 粘贴到你的 Mod 下, 改个名, 之后在属性栏 `Paper Sprite Folder Name` 里填上文件夹名字即可(比如我这里的 `awa`), 还有就是别忘了把另两个素材给清空, 不然还是会有 icon
 
 ![s1](../assets/mappings/dialog/entities/s1.png){style="width: 800px; title="123"}
 
