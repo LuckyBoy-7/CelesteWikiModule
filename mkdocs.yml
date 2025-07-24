@@ -87,6 +87,7 @@ nav:
         - 开始: "mappings/start/start.md"
         - 引言: "mappings/start/introduction.md"
         - 这...是个梦吗: "mappings/start/is_that_a_dream.md"
+        - 新人必做: "mappings/start/must_do.md"
       - Loenn:
           - 下载及游戏配置: "https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/"
           - 基本概念及使用: "mappings/loenn/basic.md"
@@ -114,6 +115,10 @@ nav:
           - 滤镜: "mappings/graphics/color_grading.md"
       - Audio: "mappings/audio.md"
       - Lua Cutscene: "mappings/lua_cutscene.md"
+      - 常用 Helper:
+          - 大纲: "mappings/useful_helpers/useful_helpers.md"
+          - Eevee Helper: "mappings/useful_helpers/eevee.md"
+          - Crystaline Helper: "mappings/useful_helpers/trigger_trigger.md"
       - Collab: "https://wiki.biligame.com/celeste/%E5%90%88%E9%9B%86%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B"
       - Code: "mappings/code.md"
       - 测图: "mappings/mod_test.md"

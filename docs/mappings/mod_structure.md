@@ -61,7 +61,7 @@
 这样当别人使用 Mod 管理器下载你的 Mod 的时候也会自动下载你依赖的 Mod, 缺依赖或者版本低了 `Everest` 都会警告玩不了, 如果没问题则被依赖的 Mod 会先被加载, 总之 `Everest` 总得知道你的 Mod 需要什么 Mod 吧
 
 !!!note
-        现在 Loenn 可以自动加依赖了, 详情见顶部导航栏 `Map/Dependencies` 选项
+    现在 Loenn 可以自动加依赖了, 详情见顶部导航栏 `Map/Dependencies` 选项
 
 稍微复杂点的 `everest.yaml` 举例
 
