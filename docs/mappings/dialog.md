@@ -105,3 +105,23 @@ poem_Lucky_Tutorial_CelesteWikiTutorial_A=你好, 我是爱心
 因为蔚蓝字库里没有, 请自己按[示例](https://www.bilibili.com/video/BV1A14y1W7hr)生成([字库生成网站](https://maddie480.ovh/celeste/font-generator)), 或者你直接依赖[
 `Extended Chinese Font`](https://gamebanana.com/mods/53736)/[`Chinese Font Pack`](https://gamebanana.com/mods/493138)这个Mod, 大概率不会缺字, 但可能还是会缺
 
+## 常用 Dialog 实体/Trigger
+
+### MaxHelpingHand/CustomCh3Memo
+
+![memo_with_icon](../assets/mappings/dialog/entities/memo_with_icon.png){style="width: 800px; title="123"}
+
+#### 制作无 Icon 版本
+
+素材
+
+![memo](../assets/mappings/dialog/entities/memo.png){style="width: 300px; title="123"}
+
+然后把官图素材从 `Graphics\Atlases\Memo` 粘贴到你的 Mod 下, 改个名, 之后在属性栏 `Paper Sprite Folder Name` 里填上文件夹名字即可(比如我这里的 `awa`), 还有就是别忘了把另两个素材给清空, 不然还是有 icon
+
+![s1](../assets/mappings/dialog/entities/s1.png){style="width: 800px; title="123"}
+
+成品
+
+![memo_with_no_icon](../assets/mappings/dialog/entities/memo_with_no_icon.png){style="width: 800px; title="123"}
+
