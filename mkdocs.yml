@@ -96,6 +96,9 @@ nav:
           - 房间: "mappings/loenn/room.md"
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
           - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
+          - 常用插件:
+              - 常用插件:
+                  - Room: "mappings/loenn/plugins/room.md"
       - 常用✌️😋👍: "mappings/useful_links.md"
       - 游戏崩溃问题 😭: "mappings/game_crashes.md"
       - 提问/自学 💪: "mappings/question_and_self_study.md"
@@ -117,6 +120,7 @@ nav:
       - Lua Cutscene: "mappings/lua_cutscene.md"
       - 常用 Helper:
           - 大纲: "mappings/useful_helpers/useful_helpers.md"
+          - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
           - Eevee Helper: "mappings/useful_helpers/eevee.md"
           - Crystaline Helper: "mappings/useful_helpers/trigger_trigger.md"
       - Collab: "https://wiki.biligame.com/celeste/%E5%90%88%E9%9B%86%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B"

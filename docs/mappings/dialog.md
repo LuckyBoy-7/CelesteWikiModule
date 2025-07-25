@@ -65,7 +65,7 @@
 * [添加对话emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes)
   把你的emoji图片放到`Graphics/Atlases/Gui/emoji`目录下(`.png`格式的), 对话对应文本为`:你的图片相对路径(不带.png):`例如`:MyCelesteMod/shock:`
 * [Lua Cutscene过场动画(即配合对话的演出)](lua_cutscene.md)
-* [明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179)
+* [入场明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179), [明信片](https://saplonily.top/celeste_mod_tutorial/extra_luacs/reference/#postcard)
 
 
 ### 修改自己地图名称和吃心文本
