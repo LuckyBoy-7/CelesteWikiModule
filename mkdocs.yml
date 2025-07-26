@@ -96,14 +96,12 @@ nav:
           - 房间: "mappings/loenn/room.md"
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
           - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
-          - 常用插件:
-              - 常用插件:
-                  - Room: "mappings/loenn/plugins/room.md"
+          - 常用插件: "mappings/loenn/plugins.md"
       - 常用✌️😋👍: "mappings/useful_links.md"
       - 游戏崩溃问题 😭: "mappings/game_crashes.md"
       - 提问/自学 💪: "mappings/question_and_self_study.md"
       - 教程 👈😋: "mappings/overall.md"
-      - Mod结构: "mappings/mod_structure.md"
+      - Mod 结构: "mappings/mod_structure.md"
       - XML:
           - 大纲: "mappings/xml/xml.md"
           - 砖 XML: "mappings/xml/tilesets.md"

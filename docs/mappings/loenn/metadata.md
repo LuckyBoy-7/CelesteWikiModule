@@ -11,9 +11,18 @@
 * [元数据（摘自Everest Wiki）](https://github.com/EverestAPI/Resources/wiki/Map-Metadata)
 * [[Celeste蔚蓝]作图教程第二章-基础作图教程](https://www.bilibili.com/video/BV1ze411V7Yb/?t=126)
 
-## .meta.yaml元数据
+## .meta.yaml 元数据
 
 * [by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_5)
 * [元数据（摘自b站Wiki）](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE#.meta.yaml_%E6%96%87%E4%BB%B6)
 * [[Celeste蔚蓝]作图教程第四章-背景, 元数据, 文本教程](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=149)
 * [官图元数据](https://github.com/EverestAPI/Resources/wiki/Vanilla-Metadata)
+
+
+## Helper 提供的额外元数据
+
+* [真的大 Helper](https://gamebanana.com/mods/597196), [Wiki](https://github.com/kyfex-uwu/ReallyBigHelper/wiki/Using-ReallyBigHelper): 改章节图标
+* [Extended Camera Dynamics](https://gamebanana.com/mods/548940), [Wiki](https://github.com/Ikersfletch/ExCameraDynamics/blob/main/README.md): 改镜头大小
+* [Communal Helper](https://gamebanana.com/mods/53697), [Wiki](https://github.com/CommunalHelper/CommunalHelper/blob/db7b27060ebf64553e299fa1c98ab21534e360de/docs/Home.md#custom-textures): 改默认 Gem 材质
+* [Lucky Helper](https://gamebanana.com/mods/553921), [Wiki](https://github.com/LuckyBoy-7/LuckyHelper/blob/main/README.md#metadata): 改默认 Textbox 材质
+
