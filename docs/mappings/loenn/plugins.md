@@ -44,3 +44,17 @@
 * Replace Only: 将背景应用于特定的房间
 * Add Tags: 给你的背景打上 Tag, 一般用于 Mask
 * Replace Existing Stylegrounds: 清除掉原来的背景
+
+## Change Attributes
+
+我们常常使用这个插件来一键替换实体, 比如你摆好了刺, 但是想用自定义的刺的时候就可以用这个插件换
+
+也很容易实现各种奇异搞笑的效果, 比如 [7c, 但是刺都变成草莓](https://www.bilibili.com/video/BV1fj411b7Vt)
+
+![change_attribute_panel](../../assets/mappings/Loenn/plugins/change_attribute_panel.png){style="width: 1000px; title="123"}
+
+左上角就是插件面板
+
+Type 和 Replace With 分别表示要被替换的实体 SID, 和要替换成的实体 SID, SID 就是实体面板上面红色框起来的部分
+
+而 Allow Preserving 简单来说就是你想挑个别属性换, 还是全换, 如果你想全换, 那么就不勾选, 它会打开左中的面板, 如果你想挑着换, 那就勾选, 它会打开左下面板, 你可以勾选 Replace XXX 来替换对应属性
