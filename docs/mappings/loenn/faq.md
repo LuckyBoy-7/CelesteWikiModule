@@ -47,7 +47,7 @@ Grouped, Connected之类的前缀, 最稳的方法是直接在[所有Helper及�
 * 搜聊天记录
 * 查看对照表(左边下拉`常用`菜单, 使用`Ctrl + F`搜索)
 * 拆包(即打开对应地图文件查看)
-* 下载CelesteTAS Mod, 运行有这个实体的图, 然后按`~`打开控制台点击相应实体查看信息
+* 下载CelesteTAS Mod, 运行有这个实体的图, 然后按`~`打开控制台点击相应实体的碰撞箱查看信息
 * 用你聪明的大脑猜猜看这个实体可能叫什么
 * 问群友
 
@@ -136,3 +136,8 @@ Grouped, Connected之类的前缀, 最稳的方法是直接在[所有Helper及�
 
 这些其实就是Loenn里的各种数据(实体, 触发器等), 对着选中实体复制一下即可, 本质上和你打开属性面板看到的东西是一样的(比如这里就是`Refill`实体的属性数据), 所以你经常能看到群友在转发它们, 甚至还整出了为其添加新的属性的骚操作(我觉得原理应该是有的Helper的配置文件原本是写给`Ahorn`的, 但是迁移到`Loenn`的时候缺失了部分属性, 所以mapper们就通过"编辑文本"的方式复原了它本来的面貌) 
 
+## 如何获取实体 Type 名
+
+下载 Celeste TAS Mod, 运行有这个实体的图, 然后按 `~` 打开控制台点击相应实体的碰撞箱, 在左上角查看相应信息, 比如草莓的 Type 就是 `Celeste.Strawberry`, 但是大部分 Helper 支持简写, 所以一般都是写 `Strawberry` 就够了
+
+![entity_type](../../assets/mappings/Loenn/faq/entity_type.png){style="width: 1000px; title="123"}

@@ -14,7 +14,7 @@
 * [Lönn 101 - Installing Lönn [Celeste Map Editor Tutorial] by Lost in Nowhere](https://www.youtube.com/watch?v=_1WWLDJhO3k&list=PL6zs9BBf3ArgrYqIB6mSAjuaKolU6q1Q-&index=1)
 
 ## 常用 Mod 教程
-* [Eevee Helper 教程 by AfterDawn]()(群文件)
+* [Eevee Helper 教程 by AfterDawn](../assets/mappings/useful_helpers/eevee/AfterDawn的eevee教程.docx)(群里有更新的)
 
 ## 制图心得
 * [【蔚蓝】《对准导论》](https://www.bilibili.com/video/BV1UP411w7d2)
