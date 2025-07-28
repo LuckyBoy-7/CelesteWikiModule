@@ -7,28 +7,34 @@
 ## 参考
 
 * [Eevee Helper 文档](https://gamebanana.com/mods/53765)
+* [Eevee Helper Github](https://github.com/CommunalHelper/EeveeHelper)
 * [AfterDawn的eevee教程](../../assets/mappings/useful_helpers/eevee/AfterDawn的eevee教程.docx)(群文件里有更新版本)
 
 > 感谢 AD 的大力支持😘
 
 ## 介绍
 
-简单来说 Eevee Helper 为我们提供了一些实体, 我们可以用他们方便地修改实体基础属性, 如位置, 深度大小, 是否可抛接, 是否可见, 是否激活等, 哪怕玩家不会写代码, 使用 Eevee Helper 搭配 flag 就能对一些实体做到简单的功能拓展, 正是因为它简单实用, 但又需要点代码思维, 有的人为之着迷，有的人谈之色变, 所以我将在这里跟大家共同面对这个久仰大名的 Helper -- EEVEE
+MC 之于红石, 正如蔚蓝之于 Eevee
 
-## 使用
+Eevee Helper 为我们提供了一些实体, 我们可以用他们方便地修改实体基础属性, 如位置, 深度大小, 是否可抛接, 是否可见, 是否激活等, 哪怕玩家不会写代码, 使用 Eevee Helper 搭配 flag 就能对一些实体做到简单的功能拓展, 正是因为它简单实用, 但又需要点代码思维, 有的人为之着迷，有的人谈之色变, 所以我将在这里跟大家共同面对这个久仰大名的 Helper -- EEVEE
 
-### 基本概念
+## 基本概念
 
 首先要提出**容器**的概念: Eevee 实体会框选一部分区域(像 Trigger 一样), 这被称为容器, Eevee 实体会对容器内的对象进行操作, 知道了容器是如何挑选对象, 装载/卸载对象的, 我们就能举一反三, 快速上手各种不同实体(你可以把容器想象成一张清单, Eevee 把要处理的对象记在这张清单上, 不处理了就把名字划掉)
 
 而接下来要讲的则是Eevee 实体都有的, 容器的属性, 这是 Eevee 实体的**底**~层逻辑(大声
 
-#### 容器如何筛选对象
+### 容器如何筛选对象
 
-* Blacklist: 黑名单(由一系列以逗号分隔的[实体 Type](../loenn/faq.md#type) 组成), 在黑名单中的实体不允许被添加到容器中, 如果留空则会拉黑一些默认实体, 比如前景砖和玩家(我强烈建议不要理会这些默认值, 老老实实手动填 type 就好了)
-* Whitelist: 白名单(由一系列以逗号分隔的[实体 Type](../loenn/faq.md#type) 组成), 在白名单中的实体允许被添加到容器中, 如果留空则会在白名单中加入一些默认实体, 比如和绿泡泡和圆刺
+* Blacklist: 黑名单(由一系列以逗号分隔的[实体 Type](../loenn/faq.md#type) 组成, 逗号后面不能有空格), 在黑名单中的实体不允许被添加到容器中, 如果留空则会拉黑一些默认实体, 比如前景砖和玩家(我强烈建议不要理会这些默认值, 老老实实手动填 type 就好了, 不仅清晰, 而且不用特意去记默认值都是什么)
+* Whitelist: 白名单(由一系列以逗号分隔的[实体 Type](../loenn/faq.md#type) 组成), 在白名单中的实体允许被添加到容器中, 如果留空则会在白名单中加入一些默认实体, 比如和绿泡泡和圆刺(当然你可以粗暴的填入 all 来将所有实体添加到白名单中)
 
-#### 容器选择对象的时机和条件
+#### [筛选同类实体中的特定对象](https://www.bilibili.com/video/BV1bw8EzfErU/)
+
+如果你在实体 Type 后加上冒号和数字形如 `Strawberry:1`, 那么在这里白名单将作用于 Eevee 遍历到的第一个草莓, 其他数字同理
+
+
+### 容器选择对象的时机和条件
 
 * Contain Mode([可以搭配视频感受下](https://www.bilibili.com/video/BV1kR8jzyExm)): 
     * 一次更新:
@@ -43,18 +49,18 @@
     * 当 ContainFlag 不为空, 且 Contain Mode 为一次更新类型时, ContainFlag 将表示为一个`使用开关`, 也就是表示容器是否生效, 但它仍然会影响容器添加实体的操作, 也就是上述的更新操作(你可以观看[视频](https://www.bilibili.com/video/BV1kR8jzyEhv)来理解这个过程)
     * 当 ContainFlag 不为空, 且 Contain Mode 为多次更新类型时, ContainFlag 将表示为一个`更新开关`, 也就是表示容器是否会保持更新, 比如 FlagChanged 在有 flag 的时候会更新一次容器, Always 则是在有 flag 时一直更新容器
 
-#### 容器的宽容
+### 容器的宽容
 
 * Force Standard Behavior: 说人话就是要不要兼容, 如果勾选则会在某些操作时统一使用一个行为, 如果不勾选则会适配, 比如在[视频](https://www.bilibili.com/video/BV1kR8jzyEwV)中我们把水搬走的时候如果不做适配就会出问题, 但有时候不做适配也会有奇异搞笑的效果
   
-#### 容器的范围
+### 容器的范围
 
 * Ignore Container Bounds: 你可以简单理解为容器范围变成了房间大小(容器撑满了房间)
 
 
-### Modifier
+## Modifier
 
-#### Depth Modifier
+### Depth Modifier
 
 ![depth_modifier_panel](../../assets/mappings/useful_helpers/eevee/depth_modifier_panel.png){style="width: 800px; title="123"}
 
@@ -67,9 +73,9 @@
 
 * [尘埃绕着行星转的效果](https://www.bilibili.com/video/BV1rR8jzyEQa): 搭配后续提到的 `Attached Container` 食用
 
-### Container
+## Container
 
-#### Attached Container
+### Attached Container
 
 ![attached_container_panel](../../assets/mappings/useful_helpers/eevee/attached_container_panel.png){style="width: 800px; title="123"}
 
@@ -78,4 +84,8 @@
 * Attached To: 填 Entity Type, 表示可以作为父节点的实体
 * Reletive Attach X/Y: 子节点离父节点的相对位置, 如果留空则使用一开始加入容器时的相对位置
 * [Destroyable](https://www.bilibili.com/video/BV11U8jzUEAZ/): 如果父节点被销毁, 那么容器内对象是否跟着被销毁
-* 剩下的属性你自己看吧(, 反正你只要知道这个实体是用来绑定的就行了, 其他属性无非就是绑定的姿势不一样罢了
+* Fit Contained: 当容器内对象主动移动时, 容器是否要自动调整大小
+* Ignore Anchors: 是否忽略锚点, 有的实体位置会基于空间中的一个锚点, 比如弹球, 所以你可以禁用此项来适配这种情况, 虽然也能用来做些[有趣的效果](https://www.bilibili.com/video/BV1XJ8JzKEsk/)
+* Restrict To Node: 在你添加节点时生效, 勾选时你必须将节点放在你要依附的实体上才能生效, 反之它会在房间内找个离节点(没有节点就是离容器中心)最近的符合 Attach To 白名单条件的实体当父节点
+* Match Collidable/Visible: 容器内的对象的可碰撞性和可见性是否随着父节点变化而变化
+* Only X/Y: 如果父节点是斜着动的, 那么此选项会限制容器在某个方向上的运动
