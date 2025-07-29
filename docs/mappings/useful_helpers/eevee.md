@@ -73,6 +73,31 @@ Eevee Helper 为我们提供了一些实体, 我们可以用他们方便地修�
 
 * [尘埃绕着行星转的效果](https://www.bilibili.com/video/BV1rR8jzyEQa): 搭配后续提到的 `Attached Container` 食用
 
+### Flag Toggle Modifier
+
+![flag_toggle_modifier](../../assets/mappings/useful_helpers/eevee/flag_toggle_modifier.png){style="width: 800px; title="123"}
+
+基本上就是根据 Flag 改
+
+* 实体是否更新逻辑
+* 实体是否可碰撞
+* 实体是否可见
+
+### Global Modifier
+
+![global_modifier](../../assets/mappings/useful_helpers/eevee/global_modifier.png){style="width: 800px; title="123"}
+
+全局化对应实体, 使其能在各个房间内被加载而不被销毁
+
+你可以观看[视频](https://www.bilibili.com/video/BV1Jk8Qz6EWC/)来感受该实体和各选项的作用
+
+* Whitelist: 与前面的白名单不同, 这里填的是对象的 ID, 也就是属性栏上面那串数字(因为 Global Modifier 是作用于对特定实体的, 所以填 Entity Type 没用)
+* Frozen Update: 全局化实体是否能在 Froze 状态下更新, 这个 Froze 指的并不是冻结帧, 而是游戏定义的 Frozen 场景, 比如吃心的时候
+* Pause Update: 全局化实体是否能在 Pause 状态下更新, 一般指暂停界面
+* Transition Update: 全局化实体是否能在切板状态下更新
+
+
+
 ## Container
 
 ### Attached Container
@@ -89,3 +114,21 @@ Eevee Helper 为我们提供了一些实体, 我们可以用他们方便地修�
 * Restrict To Node: 在你添加节点时生效, 勾选时你必须将节点放在你要依附的实体上才能生效, 反之它会在房间内找个离节点(没有节点就是离容器中心)最近的符合 Attach To 白名单条件的实体当父节点
 * Match Collidable/Visible: 容器内的对象的可碰撞性和可见性是否随着父节点变化而变化
 * Only X/Y: 如果父节点是斜着动的, 那么此选项会限制容器在某个方向上的运动
+
+### Flag Gate Container(Flag Mover)
+
+![flag_gate_container_panel](../../assets/mappings/useful_helpers/eevee/flag_gate_container_panel.png){style="width: 800px; title="123"}
+
+你可以简单把它理解成 Attached Container 和 Flag Switch Gate 的组合, ~~那好像没什么好介绍的欸~~
+
+* Static Fit: 简单来说如果你开起了 Fit Contained, 那么如果容器内的实体位置发生变化, 硬币门在移动时会补偿这些变化, 所以你会看到容器歪歪扭扭的过去了, 此时如果开启 Static Fit, 则容器会强制沿着路线移动, 你可以观看[视频](https://www.bilibili.com/video/BV1wj8DzzE5k/)来感受区别
+* [Easing](https://easings.net/): 将均匀变化的时间映射到不均匀变化的运动上, 达到各种先快后慢, 先慢后快之类的效果 
+* 其他基本上都是讲过的或者看名字就知道功能的这里就不讲了(
+
+这个实体可以用来做(看你想象力)
+
+* [压扁机关](https://www.bilibili.com/video/BV1YB8XzAEbn/)
+* 实体突然出现, 改变位置之类的
+
+###
+
