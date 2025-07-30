@@ -13,7 +13,7 @@
 
 这样就不会出现跟群友讨论了半天发现自己没对应 Helper 的窘境了
 
-[UDAllHelper](https://celeste.weg.fan/submissions/detail/125868576364965704/all-helpers-in-one), 下载这个 Mod 并放到你的 Mods 文件夹下, 这样后续它会为你补全你所需要的所有 Helper, 本质上它就是依赖了所有 Helper, 详情见[Dependencies](../mod_structure.md#dependencies)
+[UD All Helper](https://celeste.weg.fan/submissions/detail/125868576364965704/all-helpers-in-one), 下载这个 Mod 并放到你的 Mods 文件夹下, 这样后续它会为你补全你所需要的所有 Helper, 本质上它就是依赖了所有 Helper, 详情见[Dependencies](../mod_structure.md#dependencies)
 
 
 ## [了解 Mod 结构, Everest 处理文件的逻辑](../mod_structure.md#everest)

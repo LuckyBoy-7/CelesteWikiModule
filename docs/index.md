@@ -10,7 +10,7 @@
 > 
 > **感谢**每一位对蔚蓝社区做出了贡献的人
 
-为了避免你制图真的找不到入口, 这里放个[传送门](mappings/overall.md), 还有你可能需要的[其他Wiki](general/wiki.md)或是[各式社区](general/community.md)的链接
+为了避免你制图真的找不到入口, 这里放个[传送门](mappings/overall.md), 还有你可能需要的[其他 Wiki](general/wiki.md)或是[各式社区](general/community.md)的链接
 
 
 
