@@ -20,7 +20,7 @@
 * [【蔚蓝】《对准导论》](https://www.bilibili.com/video/BV1UP411w7d2)
 * [[Celeste蔚蓝 | 制图 | 硬核] 制图高阶教程——复用篇 by zzm](https://www.bilibili.com/video/BV17Y411R7jA/)
 * [splee的作图指南(中翻)]()(群文件里下)
-* [可能是写给新人的GP建议 by Shynnie](群文件里下)()
+* [可能是写给新人的GP建议 by Shynnie]()(群文件里下)
 * [Celeste (goopvendor's thoughts on mapping)](https://docs.google.com/document/d/182rHbY0aYmMoVH9ffMRyKwDRlBU5qG3PyJXHJfghDkA/edit?tab=t.0)
 * [Celeste Mapping: Obscure Tips & Tricks by tobyaaa](https://docs.google.com/document/d/1t2_mr7VNGJ7q4BfsvfrZ9Se5g449Ppjxlsy_rozPMRo/edit?tab=t.0)
 
