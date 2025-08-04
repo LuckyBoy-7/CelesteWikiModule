@@ -5,13 +5,13 @@
 > 万物是如何运动的？是 eevee 框动着世界变化。
 
 ## 参考
-* [Crystaline Helper 文档](https://gamebanana.com/mods/53765)
-* [Crystaline Helper Github](https://github.com/CommunalHelper/CrystallineHelper)
+* [Crystalline Helper 文档](https://gamebanana.com/mods/53765)
+* [Crystalline Helper Github](https://github.com/CommunalHelper/CrystallineHelper)
 * [Trigger Trigger 简单教程 by Shynnie]()(群文件)
 
 ## Trigger Trigger
 
-虽然标题是 Crystaline Helper, 但讲的是 Trigger Trigger(什
+虽然标题是 Crystalline Helper, 但讲的是 Trigger Trigger(什
 
 顾名思义, Trigger Trigger(简称 tt) 就是触发 Trigger 的 Trigger
 
