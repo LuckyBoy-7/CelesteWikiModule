@@ -1,3 +1,5 @@
+> 本来想着要不自己整个皮肤做个教程, 但后来感觉还是没有必要, 真有做皮肤的毅力还没有捣鼓的毅力吗, 不过也先放放, 到时候有空再说(
+
 # 皮肤制作
 
 ## 参考
@@ -6,6 +8,7 @@
 * [蔚蓝皮肤制作教程-星夜祈梦](https://www.bilibili.com/video/BV1YpYueREPt)
     * [文字版](../../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf)
 * [Skin Mod Helper README](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md)
+* [Skin Mod Helper Plus README](https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md)
 * [蔚蓝科技之自制皮肤mod教程](https://www.bilibili.com/video/BV1Uv4y1K751)
 
 如果你已经看过了 [Sprites.xml](../xml/sprites_xml.md) 的引导, 那么改 Madeline 皮肤这事儿应该不难理解
@@ -74,3 +77,7 @@
 ### Badeline 随从对应的贴图路径是什么
 
 Graphics/Atlases/Gameplay/characters/badeline/jumpSlowXX.png
+
+## 怎么做双马尾
+
+把 `hair00` 改成中间镂空的形式, 画出来就是双马尾(, 具体可以参考[芙莉莲皮肤](https://www.bilibili.com/video/BV1HC411H7CR/)
