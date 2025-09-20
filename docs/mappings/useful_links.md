@@ -14,11 +14,19 @@
 * [【蔚蓝社区资源简单查询渠道】](https://maddie480.ovh/celeste/asset-drive)
 
 ## 查表
+
+### Entity
+
 * [官图实体一览(b站 Wiki)](https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93)
 * [官图实体和 Trigger 一览(Everest Wiki)](https://github.com/EverestAPI/Resources/wiki/Entity-and-Trigger-Documentation)
-* [玩家自定义实体一览](https://maddie480.ovh/celeste/custom-entity-catalog)(所有实体, 别再问为什么Loenn里搜不到了, 因为你没有对应 Helper)
+* [常用实体](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e6380a3b79aeae7964cda29&pm=s)
+* [玩家自定义实体一览](https://maddie480.ovh/celeste/custom-entity-catalog)
+
+### Audio
 * [官图 Audio Event ID 一览](https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump)
 * [砖块音效 Id 一览](./xml/tile_sounds.md)
+
+### Misc
 * [常用 Helper 文档](https://github.com/EverestAPI/Resources/wiki/Helper-Manuals)
 * [所有 Mod 的依赖关系](https://maddie480.ovh/celeste/mod_dependency_graph.yaml)
 

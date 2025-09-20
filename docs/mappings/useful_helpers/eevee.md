@@ -9,6 +9,7 @@
 * [Eevee Helper 文档](https://gamebanana.com/mods/53765)
 * [Eevee Helper Github](https://github.com/CommunalHelper/EeveeHelper)
 * [AfterDawn 的 eevee 教程](../../assets/mappings/useful_helpers/eevee/AfterDawn的eevee教程.docx)(群文件里有更新版本)
+* [底龙 的 eevee 教程](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e6380f4bcd1c7002f2e692e&pm=s)
 
 > 感谢 AD 的大力支持😘
 

@@ -143,3 +143,6 @@ Grouped, Connected之类的前缀, 最稳的方法是直接在[所有Helper及�
 ![entity_type](../../assets/mappings/Loenn/faq/entity_type.png){style="width: 1000px; title="123"}
 
 如果信息刷屏了, 你可以在控制台输入 clear 来清除它们
+
+
+## [常见 Helper 问题](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e638075b776eeb404fda8b3&pm=s)

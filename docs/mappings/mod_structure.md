@@ -9,6 +9,7 @@
 * [【Celeste蔚蓝】二代作图教程 1-5 基础路径](https://www.bilibili.com/video/BV1394y1C7Fy)
 * [Mod结构 by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/mod_structure/)
 * [Mod Structure Tutorial by Snip](https://gist.github.com/SnipUndercover/7ca0051ed649a32aac46ae2a9e034e37)
+* [Mod 结构 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63807cb0fbcc838765ab5b&pm=s)
 
 你可能需要下载[官图素材](./useful_links.md)来更好的了解蔚蓝素材的结构
 
