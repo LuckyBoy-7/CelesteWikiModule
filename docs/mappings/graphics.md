@@ -3,6 +3,7 @@
 * [官图素材资源](./useful_links.md)
 * [UnderDragon’s Repository 2.5](https://gamebanana.com/mods/427729)
 * [Spooooky's Asset Pack](https://gamebanana.com/mods/427729)
+* [Asset Drive Browser](https://maddie480.ovh/celeste/asset-drive): 更方便的浏览社区资源盘
 
 ## 自定义界面
 

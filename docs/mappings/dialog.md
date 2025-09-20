@@ -104,9 +104,10 @@ poem_Lucky_Tutorial_CelesteWikiTutorial_A=你好, 我是爱心
 
 使用 LuckyHelper/Crystal Heart Dialog Controller 实体为单个心设置文本
 
-## 工具
+## 常用工具
 
-* [Dialog 图形化界面编辑工具]()(群文件, 施工ing)
+* [Dialog 图形化界面编辑工具 by Saplonily]()(群文件, 施工ing)
+* [字库生成器](https://maddie480.ovh/celeste/font-generator)
 
 ## FAQ
 
