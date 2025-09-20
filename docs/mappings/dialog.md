@@ -34,7 +34,7 @@
 ## 编写 Dialog
 
 知道原理后我们就可以添加新的`key`来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的, 如 [FunnyDialog](https://www.bilibili.com/video/BV1Pz421i7SZ)), 在使用上我们只需要写好对话, 在地图里放个触发对话的Trigger, 然后填入对应的
-`key`就好了
+`key` 就好了
 
 首先在你Mod根目录下创建一个Dialog**文件夹**形成类似`Celeste/Mods/你的mod名/Dialog/`的目录结构
 
@@ -68,6 +68,7 @@
   把你的emoji图片放到`Graphics/Atlases/Gui/emoji`目录下(`.png`格式的), 对话对应文本为`:你的图片相对路径(不带.png):`例如`:MyCelesteMod/shock:`
 * [Lua Cutscene过场动画](lua_cutscene.md): 即搭配对话的演出
 * [入场明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179), [游戏中明信片](https://saplonily.top/celeste_mod_tutorial/extra_luacs/reference/#postcard)
+* [替换人物头像](./xml/xml.md#portraitsxml)
 
 
 ### 修改自己地图名称和吃心文本
@@ -91,18 +92,6 @@ Lucky_Tutorial=教程小标题
 Lucky_Tutorial_CelesteWikiTutorial=教程主标题
 poem_Lucky_Tutorial_CelesteWikiTutorial_A=你好, 我是爱心
 ```
-
-### 自定义人物对话头像
-
-* [by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Portraits)
-* [[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)](https://www.bilibili.com/video/BV1cP4y1m7B2)
-* [素材替换](./graphics/replace_assets.md)
-
-### 单独修改吃心文本
-
-吃心文本默认用一样的
-
-使用 LuckyHelper/Crystal Heart Dialog Controller 实体为单个心设置文本
 
 ## 常用工具
 
