@@ -26,3 +26,6 @@
 * [Communal Helper](https://gamebanana.com/mods/53697), [Wiki](https://github.com/CommunalHelper/CommunalHelper/blob/db7b27060ebf64553e299fa1c98ab21534e360de/docs/Home.md#custom-textures): 改默认 Gem 材质
 * [Lucky Helper](https://gamebanana.com/mods/553921), [Wiki](https://github.com/LuckyBoy-7/LuckyHelper/blob/main/README.md#metadata): 改默认 Textbox 材质
 
+## 常用
+
+* [设置选关界面图标](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE#overworld)

@@ -83,6 +83,7 @@ nav:
           - 推荐Mod: "mods/common/recommended_mods.md"
       - 工具: "mods/tools.md"
   - 制图:
+      - 教程 👈😋: "mappings/overall.md"
       - 入门:
         - 开始: "mappings/start/start.md"
         - 引言: "mappings/start/introduction.md"
@@ -100,7 +101,6 @@ nav:
       - 常用✌️😋👍: "mappings/useful_links.md"
       - 游戏崩溃问题 😭: "mappings/game_crashes.md"
       - 提问/自学 💪: "mappings/question_and_self_study.md"
-      - 教程 👈😋: "mappings/overall.md"
       - Mod 结构: "mappings/mod_structure.md"
       - XML:
           - 大纲: "mappings/xml/xml.md"
