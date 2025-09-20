@@ -31,15 +31,10 @@
 * [所有 Mod 的依赖关系](https://maddie480.ovh/celeste/mod_dependency_graph.yaml)
 
 ## 工具
-* [存档点图片生成器](http://postcard.leo60228.space/mask/)
-* [字库生成器](https://maddie480.ovh/celeste/font-generator)
-* [文件结构检查 / Celeste Mod Structure Verifier](https://maddie480.ovh/celeste/mod-structure-verifier)
-* [Dialog 图形化界面编辑工具]()(群文件)
-* [[音频类] Fmod Bank Tools（Mod 音乐解压工具）]()(群文件)
+
 * [ZipsVerifier]()(群文件): 检查 `.zip` 文件是否损坏(放到 Mods 文件夹下使用)
 * [BinaryXML.v2]()(群文件): 将地图 `.bin` 文件转化为 `.xml` 格式, 将 `.bin` 文件拖入 `.exe` 即可
 * [Celeste Map Tree Viewer](https://maddie480.ovh/celeste/map-tree-viewer): 将 map 的 `.bin` 转化为人类更易读的 `.json`
-* [Asset Drive Browser](https://maddie480.ovh/celeste/asset-drive): 更方便的浏览社区资源盘
 * [Celeste Custom Map Idea Generator](https://perchance.org/9g0j9vtp81): 制图灵感生成器, 随机选取实体/房间大小/房间形状/危险物/难度, 限定自己作图的范围, 以挖掘更多可能
 * [Celeste Map Prompt: Gameplay Style](https://perchance.org/f20z04yqdz): GP 灵感生成器
 * [Celeste Mod Deco Theme](https://perchance.org/67j9crx882): Deco 灵感生成器
