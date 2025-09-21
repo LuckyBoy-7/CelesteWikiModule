@@ -147,7 +147,7 @@
 
 1. 把官图的 `Sprites.xml` 粘过来放自己 Mod 里(路径`Celeste/Content/Graphics/Sprites.xml`)
 2. 记得改名或者套文件夹(如果你不知道这意味着什么, 请看[这里](../mod_structure.md#everest))
-3. 之后修改官图配置或者额外写自己的配置即可
-4. 在 Loenn 元数据中选择自己的 `Sprites.xml` 即可
+3. 之后就可以开始修改官图配置或者额外写自己的配置
+4. 最后在 Loenn 元数据中选择自己的 `Sprites.xml` 即可
    ![loenn_xml_config](../../assets/mappings/xml/loenn_xml_config.png)
 

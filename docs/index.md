@@ -4,9 +4,9 @@
 > 
 > 如果你有更好的建议或者要帮忙补充内容欢迎在 [Github](https://github.com/LuckyBoy-7/CelesteWikiModule) 上提 issue 和 pr , 或者在 QQ: 3079351998 上找我, 感激不尽🥰
 > 
-> **感谢**`Myn`, `Sap`, `SDBnkaf`, `Black_Ice`, `无`, `AfterDawn`, `底龙`, `xxuurruuii`对 Wiki 提供的帮助,  非常抱歉我可能落了一些人, 但我仍然**非常感谢**你们
+> **感谢** `Myn`, `Sap`, `SDBnkaf`, `Black_Ice`, `无`, `AfterDawn`, `底龙`, `xxuurruuii` 对 Wiki 提供的帮助,  非常抱歉我可能落了一些人, 但我仍然**非常感谢**你们
 > 
-> **感谢**`Sap`给 Wiki 提供了一个温暖的家😭
+> **感谢** `Sap` 给 Wiki 提供了一个温暖的家😭
 > 
 > **感谢**每一位对蔚蓝社区做出了贡献的人
 
