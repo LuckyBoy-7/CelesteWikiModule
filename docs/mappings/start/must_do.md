@@ -31,6 +31,13 @@
 
 但其实当你写多了, 看多了就会知道, "哦, 这图片在官图里是这个路径, 那我也这么摆", "哦, 这个属性注释写着要放到 xxx 文件夹下, 那我放就好了", "哦, 居然没有注释, 看示例我猜应该是放在这个文件夹下" 诸如此类
 
+## 简单认识下 Trigger
+
+实体的话基本上官图那些已经足够你入门了, 所以这里可以先简单看下有什么 Trigger
+
+* [常用 Trigger by 电箱](https://www.bilibili.com/video/BV1Gr4y197Tg)
+* [常用 Trigger by Breaker-K](https://www.bilibili.com/video/BV1eZW5zVE4t)
+
 ## 了解实用操作
 
 * 有时候你发现游戏的热更新失效了, 可以使用 `Ctrl + F5` 快速重启游戏

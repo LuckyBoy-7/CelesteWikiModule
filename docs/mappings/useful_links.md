@@ -7,9 +7,9 @@
 
 建议群文件里翻翻
 
+* [官图素材资源](https://drive.google.com/open?id=1ITwCI2uJ7YflAG0OwBR4uOUEJBjwTCet)(制图群群文件里也有, 叫 `[图像类] Celeste Graphics Dump v1400`)
 * [Gamebanana 香蕉网](https://gamebanana.com/mods/cats/6800)（国外蔚蓝 Mod 托管平台）
 * [国内 Mod 镜像](https://celeste.weg.fan/)（或者直接在 Celemod 上找）
-* [官图素材资源](https://drive.google.com/open?id=1ITwCI2uJ7YflAG0OwBR4uOUEJBjwTCet)(制图群群文件里也有, 叫`[图像类] Celeste Graphics Dump v1400`)
 * [【蔚蓝社区作图美术资源共享】](https://drive.google.com/drive/folders/1-Bb2gaw_7Qf0ITbEC-sQDbOugUJ9h1HE?usp=sharing)
 * [【蔚蓝社区资源简单查询渠道】](https://maddie480.ovh/celeste/asset-drive)
 

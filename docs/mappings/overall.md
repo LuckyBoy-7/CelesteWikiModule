@@ -38,7 +38,11 @@
 ## 常用 Mod 教程
 
 * [Eevee Helper 教程 by AfterDawn](../assets/mappings/useful_helpers/eevee/AfterDawn的eevee教程.docx)(群里有更新的)
-* [常用 trigger 教程 by Breaker-K](https://www.bilibili.com/video/BV1eZW5zVE4t)
+
+## 常用 Trigger 介绍
+
+* [常用 Trigger by 电箱](https://www.bilibili.com/video/BV1Gr4y197Tg)
+* [常用 Trigger by Breaker-K](https://www.bilibili.com/video/BV1eZW5zVE4t)
 
 ## 制图心得
 
