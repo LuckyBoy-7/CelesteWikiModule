@@ -81,7 +81,7 @@ end
 --获取蔚蓝命名空间(c#)
 local celeste= require("#Celeste")
 
---获取蔚蓝GFX 静态类c#）
+--获取蔚蓝GFX 静态类c#)
 local gfx = require("#Celeste.GFX")
 
 function onTalk()

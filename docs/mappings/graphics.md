@@ -1,6 +1,6 @@
 ## 资源
 
-* [官图素材资源](./useful_links.md)
+* [官图素材资源](./useful_links.md#_1)
 * [UnderDragon’s Repository 2.5](https://gamebanana.com/mods/427729)
 * [Spooooky's Asset Pack](https://gamebanana.com/mods/427729)
 * [Asset Drive Browser](https://maddie480.ovh/celeste/asset-drive): 更方便的浏览社区资源盘
@@ -18,15 +18,15 @@
 
 * [自定义结束界面 by Everest](https://github.com/EverestAPI/Resources/wiki/Chapter-Complete-Screen)
 * [自定义结束界面 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=154)
-* 使用`XaphanHelper/Custom End Screen Controller`, 放在你结束关卡的房间里即可(Myn 力推)
+* 使用 `XaphanHelper/Custom End Screen Controller`, 放在你结束关卡的房间里即可(Myn 力推)
 
 ## [自制皮肤](./graphics/skin.md)
 
 ## Decal
 
 * [Decal](https://wiki.biligame.com/celeste/Decal)
-* [废话deco教程]()(群文件里下)
-* [jpyx258的deco轮椅]()(群文件里下)
+* [废话 deco 教程]()(群文件里下)
+* [jpyx258 的 deco 轮椅]()(群文件里下)
 
 ### 心得
 
@@ -43,7 +43,7 @@
 * [celeste地图制作指南(装饰, decals)(适合新手, 有配图)](https://www.bilibili.com/read/cv18389517/)
 * [摘自Everest Wiki(描述详细, 且提供了自定义decalregistry的教程)](https://github.com/EverestAPI/Resources/wiki/Decal-Registry)
 
-## [替换官图素材](./graphics/replace_assets.md)
+## [替换素材](./graphics/replace_assets.md)
 
 ## [自定义瓦片(Tileset)](./xml/tilesets.md)
 
