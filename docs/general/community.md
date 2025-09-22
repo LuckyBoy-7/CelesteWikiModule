@@ -13,5 +13,5 @@
     * 蔚蓝 Coder 群：550358997
     * 蔚蓝速通群：1065056142
     * 蔚蓝 Bingo 群：798819063
-    * cn hist群：887608009（需有cnhist认可的hist通关）
+    * cn hist群：887608009(需有cnhist认可的hist通关)
     * [MiaoNet论坛](https://celeste.centralteam.cn/)

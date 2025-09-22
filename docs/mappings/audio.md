@@ -14,6 +14,6 @@
 
 ## 常用工具
 
-* [[音频类] Fmod Bank Tools（Mod 音乐解压工具）]()(群文件)
+* [[音频类] Fmod Bank Tools(Mod 音乐解压工具)]()(群文件)
 * [FMOD 下载](https://www.fmod.com/download)
 * [FMOD/Celeste Documentation and EULA](https://www.fmod.com/docs/2.03/studio/appendix-a-celeste.html)
