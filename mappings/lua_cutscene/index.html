@@ -2145,16 +2145,16 @@
   <h1>Lua Cutscene</h1>
 
 <ul>
-<li><a href="https://sapcelestemod.netlify.app/extra_luacs/begin/">Saplonily 的 LuaCutscenes 教程</a></li>
+<li><a href="https://sapcelestemod.netlify.app/extra_luacs/begin/" target="_blank">Saplonily 的 LuaCutscenes 教程</a></li>
 <li>motonine的LuaCutscene教程(群文件里)</li>
-<li><a href="https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html">Lua Cutscenes 文档</a></li>
-<li><a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes">Prismatic Helper 文档</a></li>
-<li><a href="https://uddrg.notion.site/Text-Dialog-2737f4f27e6380419593c9bedbe01795#2737f4f27e6380788771c5a9a78c3a39">Prismatic Helper 指令 by 底龙</a></li>
-<li><a href="https://github.com/EverestAPI/ModResources/wiki/Lua-Cutscenes-Recipe-Book">Lua Cutscenes Recipe Book by Everest Wiki</a></li>
-<li><a href="https://medium.com/@crumpledmemes/lua-cutscenes-without-lua-experience-3c2d87804e20">Lua Cutscenes without Lua Experience by Gamation</a></li>
+<li><a href="https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html" target="_blank">Lua Cutscenes 文档</a></li>
+<li><a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes" target="_blank">Prismatic Helper 文档</a></li>
+<li><a href="https://uddrg.notion.site/Text-Dialog-2737f4f27e6380419593c9bedbe01795#2737f4f27e6380788771c5a9a78c3a39" target="_blank">Prismatic Helper 指令 by 底龙</a></li>
+<li><a href="https://github.com/EverestAPI/ModResources/wiki/Lua-Cutscenes-Recipe-Book" target="_blank">Lua Cutscenes Recipe Book by Everest Wiki</a></li>
+<li><a href="https://medium.com/@crumpledmemes/lua-cutscenes-without-lua-experience-3c2d87804e20" target="_blank">Lua Cutscenes without Lua Experience by Gamation</a></li>
 </ul>
-<p>由于蔚蓝是用 <code>C#</code> 编程语言编写制作的, 而官方的剧情都是硬编码的, 导致玩家写剧情的门槛太高, 所以就出现了 <a href="https://gamebanana.com/mods/53678">Lua Cutscenes</a> 这样的 helper 来用 <code>Lua</code> 这种简单的编程语言来对接 <code>C#</code>, 即我们可以编写简单的 <code>Lua</code> 脚本来使用官方代码中的各种跟剧情相关的函数</p>
-<p>还有 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes">Prismatic Helper</a> 这种 Helper(简称 ph), 主要是嵌入 Dialog 中使用的</p>
+<p>由于蔚蓝是用 <code>C#</code> 编程语言编写制作的, 而官方的剧情都是硬编码的, 导致玩家写剧情的门槛太高, 所以就出现了 <a href="https://gamebanana.com/mods/53678" target="_blank">Lua Cutscenes</a> 这样的 helper 来用 <code>Lua</code> 这种简单的编程语言来对接 <code>C#</code>, 即我们可以编写简单的 <code>Lua</code> 脚本来使用官方代码中的各种跟剧情相关的函数</p>
+<p>还有 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes" target="_blank">Prismatic Helper</a> 这种 Helper(简称 ph), 主要是嵌入 Dialog 中使用的</p>
 <div class="admonition 注意事项">
 <p class="admonition-title">注意事项</p>
 <p>因为 Lua Cutscenes 本质也是个 Mod, 所以记得开(, 问就是踩过坑</p>
@@ -2213,23 +2213,23 @@
 </ul>
 <h3 id="_2">怎么在对完话后传送</h3>
 <ul>
-<li>写 <a href="https://sapcelestemod.netlify.app/extra_luacs/reference/#teleportto">lua</a></li>
-<li>使用 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#goto-x--0-y--0">Prismatic Helper</a>, <code>{ph_trigger goto x坐标 y坐标}</code></li>
+<li>写 <a href="https://sapcelestemod.netlify.app/extra_luacs/reference/#teleportto" target="_blank">lua</a></li>
+<li>使用 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#goto-x--0-y--0" target="_blank">Prismatic Helper</a>, <code>{ph_trigger goto x坐标 y坐标}</code></li>
 </ul>
 <p>坐标可以按 <code>~</code> 打开控制台查看当前鼠标位置</p>
 <h3 id="badeline">怎么让 Badeline 出来</h3>
 <ul>
-<li>详情见 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#baddy_split-xoffset--0-yoffset--y-faceplayer--true">Prismatic Helper 文档</a>, 写 Dialog 即可,  下面画游的例子中也有提及(翻 Dialog)</li>
+<li>详情见 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#baddy_split-xoffset--0-yoffset--y-faceplayer--true" target="_blank">Prismatic Helper 文档</a>, 写 Dialog 即可,  下面画游的例子中也有提及(翻 Dialog)</li>
 <li>使用 DJ Map Helper 的 Talk To Badeline Trigger</li>
 </ul>
 <h3 id="_3">有选择的对话怎么做</h3>
 <p>写 <code>lua</code></p>
 <blockquote>
-<p>Myn: 可以抄一下<a href="https://gamebanana.com/mods/494348">画游</a>序章的</p>
+<p>Myn: 可以抄一下<a href="https://gamebanana.com/mods/494348" target="_blank">画游</a>序章的</p>
 </blockquote>
 <p>具体路径<code>gallerycollab2024_v2015\Cutscenes\cny2024\prologue\granny.lua</code></p>
-<p>关键函数 <a href="https://sapcelestemod.netlify.app/extra_luacs/reference/#choice">choice</a></p>
-<p><a href="https://www.bilibili.com/video/BV17RsWeDE3Y/">示例视频</a></p>
+<p>关键函数 <a href="https://sapcelestemod.netlify.app/extra_luacs/reference/#choice" target="_blank">choice</a></p>
+<p><a href="https://www.bilibili.com/video/BV17RsWeDE3Y/" target="_blank">示例视频</a></p>
 <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>

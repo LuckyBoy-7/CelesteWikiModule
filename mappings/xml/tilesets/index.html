@@ -2387,11 +2387,11 @@
 <h1 id="tileset">自定义瓦片(Tileset)</h1>
 <p>你可能需要先了解一下什么是<a href="../xml/">XML</a></p>
 <ul>
-<li><a href="https://www.bilibili.com/video/BV1kV4y137Mn/?spm_id_from=333.788&amp;vd_source=217bacbee37820b5bf3ed2f4fb8f6c94">摘自电箱教程</a></li>
-<li><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets">摘自 Everest Wiki</a></li>
-<li><a href="https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference">瓦片集格式参考</a></li>
+<li><a href="https://www.bilibili.com/video/BV1kV4y137Mn/?spm_id_from=333.788&vd_source=217bacbee37820b5bf3ed2f4fb8f6c94" target="_blank">摘自电箱教程</a></li>
+<li><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets" target="_blank">摘自 Everest Wiki</a></li>
+<li><a href="https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference" target="_blank">瓦片集格式参考</a></li>
 <li><a href="../../../assets/mappings/xml/tileset/%E8%87%AA%E5%88%B6tiles%E6%95%99%E7%A8%8B%5B23.12.17%E6%9B%B4%E6%96%B0%20%E4%BD%9C%E8%80%85motonine%5D.txt">motonine 的自制 tiles 教程</a></li>
-<li><a href="https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63805e903ce64c7725f62b&amp;pm=s">Tileset 教程 by 底龙</a>, <a href="https://www.bilibili.com/video/BV1Eu4y1L78Y">底龙的自定义tiles教程</a>, <a href="https://www.bilibili.com/video/BV1t94y1c7ZT">非官方模板的tiles应用</a></li>
+<li><a href="https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63805e903ce64c7725f62b&pm=s" target="_blank">Tileset 教程 by 底龙</a>, <a href="https://www.bilibili.com/video/BV1Eu4y1L78Y" target="_blank">底龙的自定义tiles教程</a>, <a href="https://www.bilibili.com/video/BV1t94y1c7ZT" target="_blank">非官方模板的tiles应用</a></li>
 </ul>
 <h2 id="tile">Tile</h2>
 <p>Tile, 即<strong>瓦片</strong></p>
@@ -2424,7 +2424,7 @@
 <p>如果我们把所有的砖通知一遍, 那是不是就不用我们自己一个个挑素材啦, 而这正是 <code>ForegroundTiles.xml</code> 和 Loenn(Celeste 也干了) 在做的事, <code>ForegroundTiles.xml</code> 制定了一套规则, 而 Loenn 使用这些规则告诉每个砖该如何绘制(所以如果我们要做自定义砖的话, 我们要自己写<code>ForegroundTiles.xml</code>, 而且得在 Loenn 元数据里选)</p>
 <h3 id="foregroundtilesxml_1">ForegroundTiles.xml 属性</h3>
 <p>下面我们来简单介绍一下<code>ForegroundTiles.xml</code> 中相对重要的属性</p>
-<p>更多属性请参考<a href="https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference">Everest Wiki</a></p>
+<p>更多属性请参考<a href="https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference" target="_blank">Everest Wiki</a></p>
 <ul>
 <li><code>id</code>: 就是类似身份证一样的东西, 唯一标识符, 不能重复... 所以如果你加新的砖模板要更换 <code>id</code>, 可以用英文字母, 也可以用汉字(笑</li>
 <li><code>path</code>: 指明了 tileset 对应的素材位置, 路径相对于<code>Gameplay/tilesets</code> 文件夹, 例如上面提到的 <code>cement</code> 对应的 <code>path</code> 就是 <code>cement</code> </li>
@@ -2483,11 +2483,11 @@
 <li>直接对原版素材改色, 然后把官图的<code>ForegroundTiles.xml</code> copy 一份, 在新的那份中添加一个自己的 Tileset节点, 之后在Loenn元数据里选择这个新的<code>xml</code>即可 </li>
 <li>照着原版的 template 砖改 </li>
 <li>自己写一个<code>ForegroundTiles.xml</code></li>
-<li>抄/借别人的<code>ForegroundTiles.xml</code>, 比如<a href="https://gamebanana.com/mods/474010">Spooooky素材包</a>, 详情见<a href="https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8">各种Spooooky砖</a>(里面会自带 xml 的)</li>
+<li>抄/借别人的<code>ForegroundTiles.xml</code>, 比如<a href="https://gamebanana.com/mods/474010" target="_blank">Spooooky素材包</a>, 详情见<a href="https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8" target="_blank">各种Spooooky砖</a>(里面会自带 xml 的)</li>
 </ul>
 <h2 id="foregroundtilesxml_2">使用别人自定义的 <code>ForegroundTiles.xml</code></h2>
 <p>如果你觉得你的模板更好, 欢迎投稿😋</p>
-<h3 id="foregroundtilesxml-by-0x0ade"><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets"><code>ForegroundTiles.xml</code> by 0x0ade</a></h3>
+<h3 id="foregroundtilesxml-by-0x0ade"><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets" target="_blank"><code>ForegroundTiles.xml</code> by 0x0ade</a></h3>
 <figure>
 <p><img alt="tileset" src="../../../assets/mappings/xml/tileset/0x0ade_tileset_template.png" style="width: 600px; image-rendering: pixelated; title=123" />
   </p>
@@ -2664,8 +2664,8 @@
 <span class="w">    </span><span class="nt">&lt;set</span><span class="w"> </span><span class="na">mask=</span><span class="s">&quot;center&quot;</span><span class="w"> </span><span class="na">tiles=</span><span class="s">&quot;7,7; 8,7; 7,8; 8,8&quot;</span><span class="nt">/&gt;</span>
 <span class="w">  </span><span class="nt">&lt;/Tileset&gt;</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="foregroundtilesxml-by"><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets"><code>ForegroundTiles.xml</code> by ...</a></h3>
-<p>常用在<a href="https://gamebanana.com/mods/474010">Spooooky素材包</a>中, 详情见<a href="https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8">各种Spooooky砖</a>(里面会自带 xml 的)</p>
+<h3 id="foregroundtilesxml-by"><a href="https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets" target="_blank"><code>ForegroundTiles.xml</code> by ...</a></h3>
+<p>常用在<a href="https://gamebanana.com/mods/474010" target="_blank">Spooooky素材包</a>中, 详情见<a href="https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8" target="_blank">各种Spooooky砖</a>(里面会自带 xml 的)</p>
 <figure>
 <p><img alt="tileset" src="../../../assets/mappings/xml/tileset/Guide_Alternate.jpeg" style="width: 800px; image-rendering: pixelated; title=123" />
   </p>
