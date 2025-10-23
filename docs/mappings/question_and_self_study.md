@@ -9,9 +9,9 @@
 学校的老师教会了我们不懂就要问, 但是你是否想过你可以向电脑, 向搜索引擎, 向 AI 提问呢, 你要意识到问题是可以靠自己解决的, 而且解决问题带来的爽感不亚于实现功能, 所以你要有自学的意识,
 只有当这个问题的难度真的超过了你所能处理的极限和搜索引擎的极限或是所需的时间精力成本过大, 这个时候才需要向群友提问
 
-* 建议使用正常的浏览器(比如 <a href="https://www.microsoft.com/zh-cn/edge/download" target="_blank">Edge</a>), 正常的搜索引擎(比如 <a href="https://cn.bing.com" target="_blank">bing</a>), 正常的搜索工具(比如 <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a>, <a href="https://chatgpt.com/" target="_blank">ChatGPT</a> 这类 AI), 如果你还在使用<a href="https://browser.360.cn/" target="_blank">360安全浏览器</a>在<a href="https://www.baidu.com" target="_blank">百度</a>搜索, 向各种来路不明的 AI 提问, 那我只能说ごたこう多幸をいのり祈ります
+* 建议使用正常的浏览器(比如 [Edge](https://www.microsoft.com/zh-cn/edge/download)), 正常的搜索引擎(比如 [bing](https://cn.bing.com)), 正常的搜索工具(比如 [DeepSeek](https://chat.deepseek.com/), [ChatGPT](https://chatgpt.com/) 这类 AI), 如果你还在使用[360安全浏览器](https://browser.360.cn/)在[百度](https://www.baidu.com)搜索, 向各种来路不明的 AI 提问, 那我只能说ごたこう多幸をいのり祈ります
 * 建议善用`Ctrl + F`搜索和网页上方的全局搜索: 帮你快速在网页/文件中定位想要的内容
-* 建议善用翻译软件(比如<a href="https://fanyi.youdao.com/download-Windows" target="_blank">有道翻译</a>), 遇到不会的单词时第一反应应该是查而不是问
+* 建议善用翻译软件(比如[有道翻译](https://fanyi.youdao.com/download-Windows)), 遇到不会的单词时第一反应应该是查而不是问
 
 ### "翻墙"
 
@@ -19,19 +19,19 @@
 所以就立了一道墙,阻隔了双方的通信,
 但是 ... 流淌在我们血液里的 ... 只有对知识的渴求🖐️😭🤚, 所以你还翻不翻? 你死都得翻😡, 但在此之前你需要了解一些基本的网络知识
 
-* <a href="https://www.bilibili.com/video/BV1DD4y127r4/" target="_blank">【硬核科普】IP地址是什么东西？IPV6和IPV4有什么区别？公网IP和私有IP又是什么？</a>
-* <a href="https://www.bilibili.com/video/BV1Rp4y1a7xQ" target="_blank">【硬核科普】能上QQ但是打不开网页？详解DNS服务，DNS解析，DNS劫持和污染</a>
+* [【硬核科普】IP地址是什么东西？IPV6和IPV4有什么区别？公网IP和私有IP又是什么？](https://www.bilibili.com/video/BV1DD4y127r4/)
+* [【硬核科普】能上QQ但是打不开网页？详解DNS服务，DNS解析，DNS劫持和污染](https://www.bilibili.com/video/BV1Rp4y1a7xQ)
 
-然后就可以大致了解翻墙的<a href="https://iamwsll.cn/article/45" target="_blank">原理</a>
+然后就可以大致了解翻墙的[原理](https://iamwsll.cn/article/45)
 
 不过像 `Github` 这种的属于半墙不墙, 偶尔裸连能上, 主要是因为 DNS 污染等问题, 用一些简单的工具就能搞定, 比如 `FastGithub`, `Steam++`, `steamcommunity 302` 等等
 
 至于怎么真翻, 原理大概就是找个能访问的国外代理服务器, 它帮你访问你���Ҫ�¨2�ѧϰ��来无法访问的网站, 然后把数据���给你, 所以当你�����发现要钱的时候也别觉得太坑���, 毕竟性质跟中国电信/移动差不多, 不过需求不大可以���买按流量计费的���, 接下来推荐几个好�的���Ҫ�¨比如2�ѧϰ��适合¨2�ѧϰ��ϰ��适合���ϰ���ϰ��, 就只能说这么多了(希望别被和谐  
 
 
-## <a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E5%A3%B0%E6%98%8E" target="_blank">提问</a>
+## [提问](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E5%A3%B0%E6%98%8E)
 
-当你能清晰的描述自己的问题的时候, 这往往意味着你对这个问题有了较为清楚的认识, 不仅方便别人后续的回答, 更多的情况是自己在准备提问资料的过程中顺便就把问题解决了
+当你能清晰的描述自己的问题的时候, 这往往意味着你对这个问题有了较为清楚的认识, 不仅方便别人后续的回答, 更多的情况是自己在准备提问资料的过程中理清了思绪顺便就把问题解决了
 
 那么如何提问呢, 只需要如下要素就会有大佬来帮你了🥰
 
@@ -44,8 +44,8 @@
     * 口头描述: 不管是需求还是游戏崩了都请描述清晰点
     * 录个视频
     * 截图(很多时候发文件比发截图还有用, 尤其是对截图截一半的人来说😡)
-        * 下载 <a href="https://zh.snipaste.com/" target="_blank">Snipaste</a> 这个软件
-        * 用 <a href="https://im.qq.com/index/" target="_blank">QQ</a> 截屏
+        * 下载 [Snipaste](https://zh.snipaste.com/) 这个软件
+        * 用 [QQ](https://im.qq.com/index/) 截屏
         * `Shift + Win徽标键 + S`截屏
     * [log.txt](./game_crashes.md): 存放了游戏的调试信息, 方便在游戏崩溃时向群友求助, 但你还是需要做相应的描述, 请看[VCR](#_8) 
 * 谦卑的语气: 请问...你好...
@@ -62,10 +62,13 @@
 ![ask1](../assets/images/TheArtOfQuestioning1.jpg){ width="600" }
 ![ask2](../assets/images/TheArtOfQuestioning2.jpg){ width="600" }
 
-### <a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E4%B8%8D%E8%AF%A5%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98" target="_blank">小剧场</a>
+### [小剧场](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E4%B8%8D%E8%AF%A5%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98)
 
-> 碎碎念: 提问真的有那么难吗, 你把你遇到什么问题说明白了, 然后别人向你问话的时候及时回复, 然后语气温和一点不就好了? 怎么这么多人都这么变态的, 我突然意识到当你见多了牛鬼蛇神, 准备开始吐槽的时候是真的会被气笑, 因为我现在就真的被气笑了, 那种无法改变现状的无力与希望大家都会问问题的期盼交织在一起, 但转念又想起了自己见过的种种, 然后嘴角开始露出微笑, 最后控制不住的大笑, 不管你制图水平如何, 人品怎么样, 不会问问题就是不会问问题, 你们要是一直保持这么个吊儿郎当的状态只会劣币驱逐良币, 你这问题爱谁帮谁帮😡, 所以我在网上都不会跟别人保持多近的距离, 帮忙也只是善心大发罢了, 很多人根本不值得自己的付出!
-> 有的人虽然半天才回你, 但是只要聊起来人家就不会突然消失! 有的人虽然若隐若现, 但是他有事会跟你说! 有的虽然没礼貌, 但是问题问的很清楚! 有的人虽然啥都不懂, 但是他提问的时候准备了很多资料! 多说无益, 自行体会😡
+<details>
+<summary>碎碎念(别看)</summary>
+提问真的有那么难吗, 你把你遇到什么问题说明白了, 然后别人向你问话的时候及时回复, 然后语气温和一点不就好了? 怎么这么多人都这么变态的, 我突然意识到当你见多了牛鬼蛇神, 准备开始吐槽的时候是真的会被气笑, 因为我现在就真的被气笑了, 那种无法改变现状的无力与希望大家都会问问题的期盼交织在一起, 但转念又想起了自己见过的种种, 然后嘴角开始露出微笑, 最后控制不住的大笑, 不管你制图水平如何, 人品怎么样, 不会问问题就是不会问问题, 你们要是一直保持这么个吊儿郎当的状态只会劣币驱逐良币, 你这问题爱谁帮谁帮😡, 
+有的人虽然半天才回你, 但是只要聊起来人家就不会突然消失! 有的人虽然若隐若现, 但是他有事会跟你说! 有的人虽然没礼貌, 但是问题问的很清楚! 有的人虽然啥都不懂, 但是他提问的时候准备了很多资料! 天啊, 朋友, 虽然我们素未谋面, 但是我真的好想帮助你啊, 求你了, 让自己变得好被帮助一点好吗, 朋友😭
+</details>
 
 写爽了😋
 
@@ -239,7 +242,7 @@ A: xxxx 怎么弄
 ```
 
 
-### <a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E5%A5%BD%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A0%A2%E9%97%AE%E9%A2%98" target="_blank">好问题与蠢问题</a>
+### [好问题与蠢问题](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E5%A5%BD%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A0%A2%E9%97%AE%E9%A2%98)
 
 虽然我不是提问大师, 但大部分时候你能做到提供详细的信息就已经很 ok 了(
 
