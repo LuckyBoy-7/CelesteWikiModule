@@ -1,4 +1,4 @@
-> 翻译自 [Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Everest-Install-Issues)
+> 翻译自 <a href="https://github.com/EverestAPI/Resources/wiki/Everest-Install-Issues" target="_blank">Everest Wiki</a>
 
 Everest 和 Mod 的下载安装问题及解决方案
 
@@ -40,7 +40,7 @@ Everest 对蔚蓝做的修改只会作用于最新版的蔚蓝, 因为维护各�
 
 ## System.UnauthorizedAccessException: Access to the path '...' is denied.
 
-你需要更改文件读写权限, 请看[第三方教程](https://www.thewindowsclub.com/change-files-and-folders-permissions-in-windows-10)(如果能自己在网上找到解决办法那更好了, 实在不行再找群友)
+你需要更改文件读写权限, 请看<a href="https://www.thewindowsclub.com/change-files-and-folders-permissions-in-windows-10" target="_blank">第三方教程</a>(如果能自己在网上找到解决办法那更好了, 实在不行再找群友)
 
 ## Unexpected version of MonoMod patcher
 
@@ -48,4 +48,4 @@ Everest 对蔚蓝做的修改只会作用于最新版的蔚蓝, 因为维护各�
 
 ## 还报错?
 
-来 [Celeste Discord :link:](https://discord.gg/celeste) 的 `#modding_help` 频道或者[Q群](https://qm.qq.com/q/pbx4eqW8dG) 并附上 Olympus 的`log-sharp` 文件, 群友会出手
+来 <a href="https://discord.gg/celeste" target="_blank">Celeste Discord :link:</a> 的 `#modding_help` 频道或者<a href="https://qm.qq.com/q/pbx4eqW8dG" target="_blank">Q群</a> 并附上 Olympus 的`log-sharp` 文件, 群友会出手

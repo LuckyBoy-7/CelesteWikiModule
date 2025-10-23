@@ -2,5 +2,5 @@
 >
 > 让我们为所有的创作者献上最崇高的敬意 (持续收录大家的投稿ing)
 
-* [梦游创作历程及心得](https://www.bilibili.com/read/cv17735691/?spm_id_from=333.999.0.0)
-* [画游简介-附带些个人看法](https://www.bilibili.com/read/cv36225004/)
+* <a href="https://www.bilibili.com/read/cv17735691/?spm_id_from=333.999.0.0" target="_blank">梦游创作历程及心得</a>
+* <a href="https://www.bilibili.com/read/cv36225004/" target="_blank">画游简介-附带些个人看法</a>

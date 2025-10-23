@@ -4,12 +4,12 @@
 >
 > 又由于我毕竟不是搞科研的, 所以有些可能无法提供详细的数据(而且有些细节真的是说都说不完, 而且也没必要)
 
-* [b站 wiki高级技巧说明](https://wiki.biligame.com/celeste/%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7)
-* [全国首发!(?) 带你详解蔚蓝逆天技巧大串烧Alaska 你会的你不会的都在这里!](https://www.bilibili.com/video/BV1oV411L7Kp)
-* [奇怪的望远镜小寄巧(和原理解释)](https://www.bilibili.com/video/BV1vZ421N7Ps)
-* [Celeste Tech](https://celeste.ink/wiki/Tech)
-* [Celeste TAS Tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws)
-* [狼狼赞专栏](https://space.bilibili.com/361792051/article)
+* <a href="https://wiki.biligame.com/celeste/%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7" target="_blank">b站 wiki高级技巧说明</a>
+* <a href="https://www.bilibili.com/video/BV1oV411L7Kp" target="_blank">全国首发!(?) 带你详解蔚蓝逆天技巧大串烧Alaska 你会的你不会的都在这里!</a>
+* <a href="https://www.bilibili.com/video/BV1vZ421N7Ps" target="_blank">奇怪的望远镜小寄巧(和原理解释)</a>
+* <a href="https://celeste.ink/wiki/Tech" target="_blank">Celeste Tech</a>
+* <a href="https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws" target="_blank">Celeste TAS Tech</a>
+* <a href="https://space.bilibili.com/361792051/article" target="_blank">狼狼赞专栏</a>
 * [Celeste 机制详解 (第 0 版) by 反向钟](../../assets/general/mechanics/Celeste%20机制详解%20(第%200%20版).pdf)
 
 ## 前置知识
@@ -69,9 +69,9 @@ const int StIntroThinkForABit = 25; // 9a Intro
 * 站姿普通碰撞箱大小: (`8px x 11px`), 伤害碰撞箱大小: (`8px x 9px`),
 * 蹲姿普通碰撞箱大小: (`8px x 6px`), 伤害碰撞箱大小: (`8px x 4px`)(这也是`dd` `退出羽毛状态后穿单向板`等一些机制的基础)
 
-### [亚像素](https://www.bilibili.com/opus/919762384568975396)
+### <a href="https://www.bilibili.com/opus/919762384568975396" target="_blank">亚像素</a>
 
-### [对准导论](https://www.bilibili.com/video/BV1UP411w7d2)
+### <a href="https://www.bilibili.com/video/BV1UP411w7d2" target="_blank">对准导论</a>
 
 ### 游戏帧率
 
@@ -110,7 +110,7 @@ const int StIntroThinkForABit = 25; // 9a Intro
 你在会动的`Solid`上会获得`10f`计时器, 如果你在这期间跳, 冲刺你就可以继承对应`Solid`的速度(相当于吃到`Solid`给你的`LiftBoost`, 一般被称为机关加速),
 由于`LiftBoost`在被使用后计时器没有被清空, 所以你可以在某些操作下吃到成吨的`LiftBoost`(起飞)
 
-### [Stun, 挂机118小时取消2/3圆刺加载](https://www.bilibili.com/video/BV1Sj41167Xv)
+### <a href="https://www.bilibili.com/video/BV1Sj41167Xv" target="_blank">Stun, 挂机118小时取消2/3圆刺加载</a>
 
 ### 人物持续阻挡节奏块, 节奏块会周期性上移(bug, 特性)
 
@@ -237,13 +237,13 @@ protected bool TrySquishWiggle(CollisionData data, int wiggleX = 3, int wiggleY 
 
 所以比如说像swap块移速过大时, 玩家在上面是可能在一帧内穿过砖块的)这同时也是player被kevin挤压可以穿过单向板(单向板不是实心的)的原因之一
 
-#### [例子](https://www.bilibili.com/video/BV1oV411L7Kp/?share_source=copy_web&vd_source=88291083a8b9233d0006bb44b0331137&t=1280)
+#### <a href="https://www.bilibili.com/video/BV1oV411L7Kp/?share_source=copy_web&vd_source=88291083a8b9233d0006bb44b0331137&t=1280" target="_blank">例子</a>
 
 swap块是往左上移动的, 首先swap块水平移动, 把player推向墙边, 由于修正, player会进入蹲姿然后向下修正出去, 然后取消蹲姿, 然后swap块竖直移动, 带动player往上移动,
 由于player撞顶(上面有砖),
 触发修正, 修正1失败, 修正2成功, 于是player就从上面出来了, 至于为什么没有取消蹲姿, 因为在第二步就已经修正成功跳出来了
 
-### [偷泡泡状态](https://www.bilibili.com/video/BV1oJ4m1M7YA)
+### <a href="https://www.bilibili.com/video/BV1oJ4m1M7YA" target="_blank">偷泡泡状态</a>
 
 首先要知道启动泡泡本质上就是冲刺, 只不过冲刺时会判断之前有没有进过泡泡, 没有就普通冲刺, 有就普通冲刺、启动泡泡并遗忘这个泡泡,
 但如果进入泡泡后被胖头鱼或者新浪等打断进入`StLaunch`状态(所以本质还是状态被打断),
@@ -279,7 +279,7 @@ swap块是往左上移动的, 首先swap块水平移动, 把player推向墙边, 
 - 各种无冲技巧, 例如`dcb`, `2f cp`等
 - 咖啡, 因为有的咖啡跳满容错高, 有的只能跳满才能操作
 - 速通, 一般会绑个左右抓跳方便rcb
-- 简化操作, 例如[反丢](https://www.bilibili.com/opus/905695842667593749)
+- 简化操作, 例如<a href="https://www.bilibili.com/opus/905695842667593749" target="_blank">反丢</a>
 
 ### 镜头垂直锁定
 
@@ -308,7 +308,7 @@ swap块是往左上移动的, 首先swap块水平移动, 把player推向墙边, 
 
 ### cp = ceiling pop
 
-[这里直接放狼哥cp那一栏的链接](https://www.bilibili.com/read/cv33425228/)
+<a href="https://www.bilibili.com/read/cv33425228/" target="_blank">这里直接放狼哥cp那一栏的链接</a>
 
 ### cb = corner boost(抓角加速)
 
@@ -317,7 +317,7 @@ swap块是往左上移动的, 首先swap块水平移动, 把player推向墙边, 
 ### rcb = reversed cb
 
 比如你的速度向右但是你可以向左墙抓跳吃到`-40px/s`的水平速度, 虽然目前看是速度损失的, 但是你可以吃到`LiftBoost`带给你的速度, 它还可以打断你的冲刺,
-这在[5b速通新路线](https://www.bilibili.com/video/BV1wEW5ehE4a/?t=26)里用到了, 大概就是中性跳, 左抓跳(rcb), 右上冲, 左抓跳(rcb), 吃到3次机关加速而且抓跳打断了冲刺,
+这在<a href="https://www.bilibili.com/video/BV1wEW5ehE4a/?t=26" target="_blank">5b速通新路线</a>里用到了, 大概就是中性跳, 左抓跳(rcb), 右上冲, 左抓跳(rcb), 吃到3次机关加速而且抓跳打断了冲刺,
 至于第二个冲刺有没有吃到机关加速就不清楚了, 反正大概是这么飞起来的
 
 ### dcb = double cb(双cb)
@@ -359,7 +359,7 @@ swap块是往左上移动的, 首先swap块水平移动, 把player推向墙边, 
 
 </details>
 
-### [7jump](https://www.bilibili.com/video/BV19zvCeZE3U) (想想当初什么都不懂的时候看7jump都觉得开了)
+### <a href="https://www.bilibili.com/video/BV19zvCeZE3U" target="_blank">7jump</a> (想想当初什么都不懂的时候看7jump都觉得开了)
 
 亚像素 + 满的的水平速度(`90px/s`) + dcb
 
@@ -461,11 +461,11 @@ swap块是往左上移动的, 首先swap块水平移动, 把player推向墙边, 
 
 对准跳满即可(绑两个跳键)
 
-### [5格咖啡](https://www.bilibili.com/video/BV1n4421U7Wc)
+### <a href="https://www.bilibili.com/video/BV1n4421U7Wc" target="_blank">5格咖啡</a>
 
 关键在于亚像素的调整和双踢墙(保留初始速度的同时起步位置更靠右)
 
-### [6格咖啡](https://www.bilibili.com/video/BV1acvCeREWG)
+### <a href="https://www.bilibili.com/video/BV1acvCeREWG" target="_blank">6格咖啡</a>
 
 吓死了, 看不懂, 大概感觉是亚像素 + 蹲姿 + 中性抓跳保留垂直速度顺便保留蹲姿
 
@@ -567,7 +567,7 @@ aaaap***
 
 ### 抓刺跳(我也不知道叫什么, 感觉这个挺合适)
 
-参考[Dashless+](https://www.bilibili.com/video/BV1dyWCeNEhJ/?t=363)这一面
+参考<a href="https://www.bilibili.com/video/BV1dyWCeNEhJ/?t=363" target="_blank">Dashless+</a>这一面
 
 首先要知道如下几个机制
 
@@ -577,7 +577,7 @@ aaaap***
 
 所以原理就是你在下落的时候抓到墙, 但是y方向的速度/5后依然够你下移1px移出刺的范围, 所以你没死, 同时保留了抓墙状态, 可以往另一个方向跳
 
-### cp(ceiling pop) [无对准cp手操教学](https://www.bilibili.com/read/cv33425228)
+### cp(ceiling pop) <a href="https://www.bilibili.com/read/cv33425228" target="_blank">无对准cp手操教学</a>
 
 #### Q: 为什么cp调整的时候有时会听到两次抓墙的声音, 而且为什么听到`1`次对应竖直亚像素`0 ~ 0.75`, 听到`2`次对应`0.75 ~ 1`
 
@@ -590,10 +590,10 @@ aaaap***
 
 ### gwoost
 
-* [狼哥解释](https://www.bilibili.com/video/BV1bSeUeYE1X/)
+* <a href="https://www.bilibili.com/video/BV1bSeUeYE1X/" target="_blank">狼哥解释</a>
 * 简单理解就是偷体力获得的`130px/s`的速度, 结合落地后的狼跳跳的更远
 
-### [Cornerslip](https://www.bilibili.com/video/BV15w4m1k7P2)
+### <a href="https://www.bilibili.com/video/BV15w4m1k7P2" target="_blank">Cornerslip</a>
 
 首先要知道player的移动是根据当前速度先移动水平方向再移动竖直方向
 
@@ -652,7 +652,7 @@ aaaap***
 
 ### db = dashbounce
 
-见[狼哥解释](https://www.bilibili.com/video/BV1Zb421Y7UX/), 已经讲得非常清楚了
+见<a href="https://www.bilibili.com/video/BV1Zb421Y7UX/" target="_blank">狼哥解释</a>, 已经讲得非常清楚了
 
 ### Climbhop Cancel
 
@@ -665,7 +665,7 @@ aaaap***
 
 ## Entity Tech
 
-### [泡泡retention](https://www.bilibili.com/video/BV1Fu41137NH)
+### <a href="https://www.bilibili.com/video/BV1Fu41137NH" target="_blank">泡泡retention</a>
 
 进入泡泡速度归零, 但retention会返还速度, 所以可以用来提前触发某些东西(比如硬币)
 
@@ -717,7 +717,7 @@ aaaap***
 
 ## QA
 
-### [为什么这里吃到了416加速](https://www.bilibili.com/video/BV1fKvkeaEqk)
+### <a href="https://www.bilibili.com/video/BV1fKvkeaEqk" target="_blank">为什么这里吃到了416加速</a>
 
 胖头鱼正常情况爆炸提供水平速度`280`, 超级弹提供`280 * 1.2 = 336`, 这里由于你抓取后胖头鱼爆炸了, 游戏会强制你扔出胖头鱼(本质上胖头鱼不是爆炸消失了, 而是爆炸后隐藏了,
 但你还抓着), 由于此时你面朝左边, 你又吃到了一个反丢加速`336 + 80 = 416`, 于是你就飞起来啦, 但, 这里记录主要还有个原因——"
@@ -729,7 +729,7 @@ aaaap***
 
 先上图
 
-![ReasonForStuckOnSceneTransition](https://github.com/LuckyBoy-7/CelesteWiki/blob/main/Images/Mechanism/ReasonForStuckOnSceneTransition.jpg)
+!<a href="https://github.com/LuckyBoy-7/CelesteWiki/blob/main/Images/Mechanism/ReasonForStuckOnSceneTransition.jpg" target="_blank">ReasonForStuckOnSceneTransition</a>
 
 黄框为当前场景范围, 黑框为当前场景往外扩`4px`范围, 橙框是隔壁场景脚下的砖块, 绿红那个就是player的碰撞箱, 天蓝色是player的position位置,
 原理：左右切场景时游戏会先将当前场景向外padding `4px`, 然后将player向左(右)移动直到position移出场景, 但由于player position不在正中间, 导致隔壁若只有一格(`8px`),

@@ -13,7 +13,7 @@
 
 这样就不会出现跟群友讨论了半天发现自己没对应 Helper 的窘境了
 
-[UD All Helper](https://celeste.weg.fan/submissions/detail/125868576364965704/all-helpers-in-one): 下载这个 Mod 并放到你的 Mods 文件夹下, 这样后续它会为你补全你所需要的所有 Helper, 本质上它就是依赖了所有 Helper, 详情见 [Dependencies](../mod_structure.md#dependencies)
+<a href="https://celeste.weg.fan/submissions/detail/125868576364965704/all-helpers-in-one" target="_blank">UD All Helper</a>: 下载这个 Mod 并放到你的 Mods 文件夹下, 这样后续它会为你补全你所需要的所有 Helper, 本质上它就是依赖了所有 Helper, 详情见 [Dependencies](../mod_structure.md#dependencies)
 
 ## 打开调试模式
 
@@ -35,8 +35,8 @@
 
 实体的话基本上官图那些已经足够你入门了, 所以这里可以先简单看下有什么 Trigger
 
-* [常用 Trigger by 电箱](https://www.bilibili.com/video/BV1Gr4y197Tg)
-* [常用 Trigger by Breaker-K](https://www.bilibili.com/video/BV1eZW5zVE4t)
+* <a href="https://www.bilibili.com/video/BV1Gr4y197Tg" target="_blank">常用 Trigger by 电箱</a>
+* <a href="https://www.bilibili.com/video/BV1eZW5zVE4t" target="_blank">常用 Trigger by Breaker-K</a>
 
 ## 了解实用操作
 

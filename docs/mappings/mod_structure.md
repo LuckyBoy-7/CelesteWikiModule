@@ -1,13 +1,13 @@
 ## 引用
 
-* [everest.yaml](https://github.com/EverestAPI/Resources/wiki/everest.yaml-Setup)
-* [Mod结构(摘自b站 Wiki)](https://wiki.biligame.com/celeste/Mod%E7%BB%93%E6%9E%84)
-* [Mod结构(摘自Everest Wiki)](https://github.com/EverestAPI/Resources/wiki/Mod-Structure)
-* [【Celeste蔚蓝】作图教程第一章-路径](https://www.bilibili.com/video/BV1tR4y1X7wu)
-* [【Celeste蔚蓝】二代作图教程 1-5 基础路径](https://www.bilibili.com/video/BV1394y1C7Fy)
-* [Mod结构 by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/mod_structure/)
-* [Mod Structure Tutorial by Snip](https://gist.github.com/SnipUndercover/7ca0051ed649a32aac46ae2a9e034e37)
-* [Mod 结构 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63807cb0fbcc838765ab5b&pm=s)
+* <a href="https://github.com/EverestAPI/Resources/wiki/everest.yaml-Setup" target="_blank">everest.yaml</a>
+* <a href="https://wiki.biligame.com/celeste/Mod%E7%BB%93%E6%9E%84" target="_blank">Mod结构(摘自b站 Wiki)</a>
+* <a href="https://github.com/EverestAPI/Resources/wiki/Mod-Structure" target="_blank">Mod结构(摘自Everest Wiki)</a>
+* <a href="https://www.bilibili.com/video/BV1tR4y1X7wu" target="_blank">【Celeste蔚蓝】作图教程第一章-路径</a>
+* <a href="https://www.bilibili.com/video/BV1394y1C7Fy" target="_blank">【Celeste蔚蓝】二代作图教程 1-5 基础路径</a>
+* <a href="https://saplonily.top/celeste_modding_tutorial/mapping/mod_structure/" target="_blank">Mod结构 by Saplonily</a>
+* <a href="https://gist.github.com/SnipUndercover/7ca0051ed649a32aac46ae2a9e034e37" target="_blank">Mod Structure Tutorial by Snip</a>
+* <a href="https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63807cb0fbcc838765ab5b&pm=s" target="_blank">Mod 结构 by 底龙</a>
 
 本篇会讲解一个 Mod 的结构大概是怎么样的, Everest 是如何加载我们的 Mod 的
 
@@ -153,16 +153,16 @@
 
 ### 录制像 9a 凌波微步那样的残影
 
-* [录制残影 1](https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93#Ghost_Player_Playback)
-* [录制残影 2](https://github.com/EverestAPI/Resources/wiki/Mod-Structure#adding-custom-tutorial-ghosts)
+* <a href="https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93#Ghost_Player_Playback" target="_blank">录制残影 1</a>
+* <a href="https://github.com/EverestAPI/Resources/wiki/Mod-Structure#adding-custom-tutorial-ghosts" target="_blank">录制残影 2</a>
 
 ### 在Loenn里显示游戏内人物的实时尾迹
 
-下载 [`Aurora's Loenn Plugin` 插件](https://gamebanana.com/tools/12572)(本质上也是个Mod, 所以Mod怎么下它也怎么下), 在Loenn上方导航栏点击打开 `View -> Show Player Sihouette [Aurora's Loenn Plugin]`, 在游戏内随便走走(记得开 Mod),
+下载 <a href="https://gamebanana.com/tools/12572" target="_blank">`Aurora's Loenn Plugin` 插件</a>(本质上也是个Mod, 所以Mod怎么下它也怎么下), 在Loenn上方导航栏点击打开 `View -> Show Player Sihouette [Aurora's Loenn Plugin]`, 在游戏内随便走走(记得开 Mod),
 返回 Loenn 即可, 如果需要清空尾迹, 则点击 `View -> Clear Player Sihouette [Aurora's Loenn Plugin]`, 或者使用 `Shift + C` 快捷键
 
 
-## [了解 `Everest` 处理这些文件的逻辑](https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders)
+## <a href="https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders" target="_blank">了解 `Everest` 处理这些文件的逻辑</a>
 
 `Everest` 在加载 Mod 资源的时候会把里面的资源(比如 `Maps, Dialog, Audio, Graphics`等)
 连带官图的整合到一起, 做好合并工作后 Everest 就可以集中处理这些资源了
@@ -206,7 +206,7 @@ b=哎哟
 c=你干嘛
 ```
 
-我们可以通过这个性质更改官图文本, 比如 [FunnyDialog](https://www.bilibili.com/video/BV1Pz421i7SZ) 的应用
+我们可以通过这个性质更改官图文本, 比如 <a href="https://www.bilibili.com/video/BV1Pz421i7SZ" target="_blank">FunnyDialog</a> 的应用
 
 ### 以 Sprites.xml 为例
 
@@ -246,7 +246,7 @@ c=你干嘛
 </Sprites>
 ```
 
-当然我没说这是错的, 只要你把 ID 名字取长一点就能降低覆盖风险, 比如很多 Helper 作者如果要给自己的某些实体加自定义皮肤, 又想让皮肤可以配置, 一般都是用这种[方法](https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3232)
+当然我没说这是错的, 只要你把 ID 名字取长一点就能降低覆盖风险, 比如很多 Helper 作者如果要给自己的某些实体加自定义皮肤, 又想让皮肤可以配置, 一般都是用这种<a href="https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3232" target="_blank">方法</a>
 
 然后还有第二种方法, 就是你把上面写的 `Sprites.xml` 移动到 `Mods/MyMod/Graphics/MyMod/Sprites.xml` 这个路径下(放哪儿都可以, 只要不撞路径不发生覆盖就行), 然后在 Loenn 元数据里选择这个 XML 即可, 这表示只有在运行这张图的时候才会用这个 XML 覆盖官图的 XML, 这样就不会污染其他 Mod 了
 
@@ -291,19 +291,19 @@ c=你干嘛
 
 ## 常见问题
 
-### [如何自定义 ABC 面](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#bc)
+### <a href="https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#bc" target="_blank">如何自定义 ABC 面</a>
 
 在 `.bin` 文件 后面加 `-大写字母` 即可, 如 `FirstMap-A.bin`, ``SecondMap-B.bin``
 
-#### [如何自定义 DEF 面](https://gamebanana.com/mods/166210)
+#### <a href="https://gamebanana.com/mods/166210" target="_blank">如何自定义 DEF 面</a>
 
-### [如何自定义多章节地图顺序](https://saplonily.top/celeste_modding_tutorial/mapping/mod_structure/#bin)
+### <a href="https://saplonily.top/celeste_modding_tutorial/mapping/mod_structure/#bin" target="_blank">如何自定义多章节地图顺序</a>
 
 在 `.bin` 文件 前加 `数字-` 即可, 如 `0-FirstMap.bin`, ``1-SecondMap.bin``
 
 ### 如何设置存档点(章节)的插图
 
-[电箱教程](https://www.bilibili.com/video/BV1A14y1W7hr)或者冬菜教程 ([存档点图片生成器](http://postcard.leo60228.space/mask/))
+<a href="https://www.bilibili.com/video/BV1A14y1W7hr" target="_blank">电箱教程</a>或者冬菜教程 (<a href="http://postcard.leo60228.space/mask/" target="_blank">存档点图片生成器</a>)
 
 
 比如你的地图路径是 <code>Mods/CelesteWikiTutorial/Maps/<font color="green">TestMap/awa</font>.bin</code>, 那你就在 <code>Mods/CelesteWikiTutorial/Graphics/Atlases/<font color="red">Checkpoints</font>/<font color="green">TestMap/awa</font>/A/</code> 里放存档点图片即可(字母 `A` 表示 `A` 面)
@@ -313,7 +313,7 @@ c=你干嘛
 
 ## 常用工具
 
-* [文件结构检查 / Celeste Mod Structure Verifier](https://maddie480.ovh/celeste/mod-structure-verifier)
+* <a href="https://maddie480.ovh/celeste/mod-structure-verifier" target="_blank">文件结构检查 / Celeste Mod Structure Verifier</a>
 
 ## 常见错误
 

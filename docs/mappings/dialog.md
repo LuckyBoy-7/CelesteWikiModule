@@ -1,14 +1,14 @@
 ## 引用
 
-* [Dialog 教程 by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_7)
-* [Dialog 教程 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e6380419593c9bedbe01795&pm=s)
-* [B站 Wiki 的 Dialog 教程](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B)
-* [Everest Wiki 的 Dialog 教程](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue)
+* <a href="https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_7" target="_blank">Dialog 教程 by Saplonily</a>
+* <a href="https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e6380419593c9bedbe01795&pm=s" target="_blank">Dialog 教程 by 底龙</a>
+* <a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B" target="_blank">B站 Wiki 的 Dialog 教程</a>
+* <a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue" target="_blank">Everest Wiki 的 Dialog 教程</a>
 * [[Celeste蔚蓝]作图教程第四章-背景, 元数据, 文本教程](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=158)
 
 ## 什么是 Dialog
 
-顾名思义就是游戏中一切跟文本有关的东西, [主要包括](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E6%9C%AC%E4%BD%BF%E7%94%A8)
+顾名思义就是游戏中一切跟文本有关的东西, <a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E6%9C%AC%E4%BD%BF%E7%94%A8" target="_blank">主要包括</a>
 
 * 对话(人物对话文本)
 * UI(例如开始界面的文本, Mod选项界面的文本, 暂停界面的文本, 选关界面的文本, 明信片等)
@@ -33,12 +33,12 @@
 
 ## 编写 Dialog
 
-知道原理后我们就可以添加新的`key`来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的, 如 [FunnyDialog](https://www.bilibili.com/video/BV1Pz421i7SZ)), 在使用上我们只需要写好对话, 在地图里放个触发对话的Trigger, 然后填入对应的
+知道原理后我们就可以添加新的`key`来生成我们需要的文本, 甚至是替换官图文本(同名的key后加载的的会覆盖先加载的, 如 <a href="https://www.bilibili.com/video/BV1Pz421i7SZ" target="_blank">FunnyDialog</a>), 在使用上我们只需要写好对话, 在地图里放个触发对话的Trigger, 然后填入对应的
 `key` 就好了
 
 首先在你Mod根目录下创建一个Dialog**文件夹**形成类似`Celeste/Mods/你的mod名/Dialog/`的目录结构
 
-接着你就可以创建[各种语言的`.txt`](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file)
+接着你就可以创建<a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file" target="_blank">各种语言的`.txt`</a>
 文件来做不同语言的翻译和添加文本的工作, 但一般加英文 `English.txt` (必备)跟中文 `Simplified Chinese.txt` 就够了
 
 写好对应的文本后在对应Trigger中填入对应`id/key`即可
@@ -58,23 +58,23 @@
 
 ## 常用部分
 
-推荐下载 [VSCode](https://code.visualstudio.com/) 并安装 `Celeste Dialog Highlighter` 插件
+推荐下载 <a href="https://code.visualstudio.com/" target="_blank">VSCode</a> 并安装 `Celeste Dialog Highlighter` 插件
 
-* [文本汉化](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_8): 图名, 吃心文本, 明信片, remix
-* [文字效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C): 抖动, 改色, 变速等
-* [对话效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E5%AF%B9%E8%AF%9D%E6%95%88%E6%9E%9C): 翻转头像, 对话框置底, 引用等
-* [人物表情](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85)(也可以在控制台输入`portraits`来查看)
-* [添加对话emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes)
+* <a href="https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_8" target="_blank">文本汉化</a>: 图名, 吃心文本, 明信片, remix
+* <a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C" target="_blank">文字效果</a>: 抖动, 改色, 变速等
+* <a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E5%AF%B9%E8%AF%9D%E6%95%88%E6%9E%9C" target="_blank">对话效果</a>: 翻转头像, 对话框置底, 引用等
+* <a href="https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85" target="_blank">人物表情</a>(也可以在控制台输入`portraits`来查看)
+* <a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes" target="_blank">添加对话emoji</a>
   把你的emoji图片放到`Graphics/Atlases/Gui/emoji`目录下(`.png`格式的), 对话对应文本为`:你的图片相对路径(不带.png):`例如`:MyCelesteMod/shock:`
 * [Lua Cutscene过场动画](lua_cutscene.md): 即搭配对话的演出
-* [入场明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179), [游戏中明信片](https://saplonily.top/celeste_mod_tutorial/extra_luacs/reference/#postcard)
+* <a href="https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179" target="_blank">入场明信片</a>, <a href="https://saplonily.top/celeste_mod_tutorial/extra_luacs/reference/#postcard" target="_blank">游戏中明信片</a>
 * [替换人物头像](./xml/xml.md#portraitsxml)
 
 
 ### 修改自己地图名称和吃心文本
 
-* [教程 by Everest](https://github.com/EverestAPI/Resources/wiki/map-metadata#map-name)
-* [教程 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=174)
+* <a href="https://github.com/EverestAPI/Resources/wiki/map-metadata#map-name" target="_blank">教程 by Everest</a>
+* <a href="https://www.bilibili.com/video/BV1Av4y1D7a8/?t=174" target="_blank">教程 by 电箱</a>
 
 最简单粗暴识别哪些东西是键名的方法就是那一串东西是不是被大括号`{}`或者中括号`[]`包着(因为蔚蓝会把无法识别的键用括号包着显示出来), 所以照抄就好了, 例如
 
@@ -96,14 +96,14 @@ poem_Lucky_Tutorial_CelesteWikiTutorial_A=你好, 我是爱心
 ## 常用工具
 
 * [Dialog 图形化界面编辑工具 by Saplonily]()(群文件, 施工ing)
-* [字库生成器](https://maddie480.ovh/celeste/font-generator)
+* <a href="https://maddie480.ovh/celeste/font-generator" target="_blank">字库生成器</a>
 
 ## FAQ
 
-### [为什么我文本缺字了](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading)
+### <a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading" target="_blank">为什么我文本缺字了</a>
 
-因为蔚蓝字库里没有, 请自己按[示例](https://www.bilibili.com/video/BV1A14y1W7hr)生成([字库生成网站](https://maddie480.ovh/celeste/font-generator)), 或者你直接依赖[
-`Extended Chinese Font`](https://gamebanana.com/mods/53736)/[`Chinese Font Pack`](https://gamebanana.com/mods/493138)这个Mod, 大概率不会缺字, 但可能还是会缺
+因为蔚蓝字库里没有, 请自己按<a href="https://www.bilibili.com/video/BV1A14y1W7hr" target="_blank">示例</a>生成(<a href="https://maddie480.ovh/celeste/font-generator" target="_blank">字库生成网站</a>), 或者你直接依赖<a href="https://gamebanana.com/mods/53736" target="_blank">
+`Extended Chinese Font`</a>/<a href="https://gamebanana.com/mods/493138" target="_blank">`Chinese Font Pack`</a>这个Mod, 大概率不会缺字, 但可能还是会缺
 
 ## 常用 Dialog 实体/Trigger
 
