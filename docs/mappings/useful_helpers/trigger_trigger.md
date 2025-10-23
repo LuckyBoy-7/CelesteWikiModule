@@ -5,8 +5,8 @@
 > 万物是如何运动的？是 eevee 框动着世界变化。
 
 ## 参考
-* [Crystalline Helper 文档](https://gamebanana.com/mods/53765)
-* [Crystalline Helper Github](https://github.com/CommunalHelper/CrystallineHelper)
+* <a href="https://gamebanana.com/mods/53765" target="_blank">Crystalline Helper 文档</a>
+* <a href="https://github.com/CommunalHelper/CrystallineHelper" target="_blank">Crystalline Helper Github</a>
 * [Trigger Trigger 简单教程 by Shynnie]()(群文件)
 
 ## Trigger Trigger

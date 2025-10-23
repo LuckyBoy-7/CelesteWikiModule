@@ -40,7 +40,7 @@
 
 * 代码 `Code`: `Coders` 写的各种 Helper
 * 美术 `Graphics`: 游戏中你看得见的几乎都是, 就是一张张 `.png` 图片
-* 音乐音效 `Audio`: BGM, [玛德琳音](https://www.bilibili.com/video/BV1vrFieDEak)等等
+* 音乐音效 `Audio`: BGM, <a href="https://www.bilibili.com/video/BV1vrFieDEak" target="_blank">玛德琳音</a>等等
 * 文本 `Dialog`: 对话, 文本本地化/汉化
 * 过场 `Lua Cutscenes`: 游戏中各种剧情的演绎
 * 残影 `Tutorials`: 9a 凌波教程
@@ -56,7 +56,7 @@
 
 显然, 不是所有人都有能力去修改核心程序的, 这不仅需要门槛, 而且大家各改各的容易造成混乱, 所以需要一个中间商来制定一套规则, 只要大伙儿都遵循这套规则, 做出来的东西就方便传播和使用
 
-这就是 [Everest Mod 加载器](https://github.com/EverestAPI/Everest)在干的事, 它修改了游戏的核心程序并在此基础上添加了更丰富的内容, 我们无需关心资源是怎么读取的,
+这就是 <a href="https://github.com/EverestAPI/Everest" target="_blank">Everest Mod 加载器</a>在干的事, 它修改了游戏的核心程序并在此基础上添加了更丰富的内容, 我们无需关心资源是怎么读取的,
 只需要按它规定的把我们的 Mod 放到 `.../Steam/steamapps/common/Celeste/Mods/` 文件夹下, 然后把上文说的所谓的游戏资源也按它[规定的格式](../mod_structure.md)放在自己的 Mod 里该放的位置,
 理论上你的 Mod 就能被正确的加载并运行
 
@@ -64,11 +64,11 @@
 
 ![why_everest](../../assets/images/why_everest.png){width=500}
 
-### 下载 [Olympus](https://everestapi.github.io/) 或 [Celemod](https://www.bilibili.com/video/BV1Hx4y1z7L5) 并安装 Everest
+### 下载 <a href="https://everestapi.github.io/" target="_blank">Olympus</a> 或 <a href="https://www.bilibili.com/video/BV1Hx4y1z7L5" target="_blank">Celemod</a> 并安装 Everest
 
 简单来说这俩就是 Mod 管理器, 方便我们下载和更新 `Everest`, 启用和禁用 Mod, 下载安装 Mod, 设置 Mod 预设等等, 这里推荐小白用 `Celemod`
 
-### 下载 [Loenn](https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/)(或者群文件里下)
+### 下载 <a href="https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/" target="_blank">Loenn</a>(或者群文件里下)
 
 `Loenn` 被称作制图器, 它的前辈是 `Ahorn`, 它为作图提供了图形化界面, 让我们制作 `Map` 这个游戏内容方便不少, 要知道, 前文提及的 `Code, Graphics, Audio, Dialog, Lua Cutscenes` 都是为了 `Map`
 服务的, 所以 `Loenn` 可以说是制图的核心,
@@ -84,7 +84,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 ### 随便捣鼓下 Loenn 并保存生成 `.bin` 地图文件
 
-可以自己捣鼓或者阅读下[【Celeste蔚蓝】二代作图教程 1-1 Loenn的使用](https://www.bilibili.com/video/BV1b24y157zW) 和[【Celeste蔚蓝】二代作图教程 2-1 基础trigger](https://www.bilibili.com/video/BV1Gr4y197Tg)
+可以自己捣鼓或者阅读下<a href="https://www.bilibili.com/video/BV1b24y157zW" target="_blank">【Celeste蔚蓝】二代作图教程 1-1 Loenn的使用</a> 和<a href="https://www.bilibili.com/video/BV1Gr4y197Tg" target="_blank">【Celeste蔚蓝】二代作图教程 2-1 基础trigger</a>
 
 或者你很急的话可按照如下操作光速出图:
 
@@ -113,7 +113,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 * 下载 `CelesteTas` 这个 Mod, 在游戏内按 `Ctrl + B` 就能查看 Entity 和 Trigger 的碰撞箱, 方便制图
 * 下载[官图图片素材](../useful_links.md), 以后肯定用得上
 * 上网了解下什么是相对路径和绝对路径, 当使用自定义实体替换贴图的时候填写的路径几乎都是相对路径, 一般都是相对于官图素材里 `Gameplay` 里的一些文件夹的路径
-* 了解[啥是 Flag](https://www.bilibili.com/video/BV1p44y1S79A), 简单来说就是带名字的开关, 我们一般使用某个实体或者 Trigger 触发某个 flag, 以触发对应 flag 实体(例如 `FlagSwitchGate`),
+* 了解<a href="https://www.bilibili.com/video/BV1p44y1S79A" target="_blank">啥是 Flag</a>, 简单来说就是带名字的开关, 我们一般使用某个实体或者 Trigger 触发某个 flag, 以触发对应 flag 实体(例如 `FlagSwitchGate`),
   做到一对一的交互
 * 了解[啥是 XML](../xml/xml.md), 方便你以后改各种 `XML`
 * 碰到问题时可以查看 [Loenn 常见问题](../loenn/faq.md)
@@ -123,7 +123,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 此时你会发现你地图的名字还没有取, 吃心文本等显示的都是一些被括号包裹键名如`{XXX_Tutorial_CelesteWikiTutorial}`, 这就需要你自己去配置对应的内容
 
-#### [设置选关界面图标](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE#overworld)
+#### <a href="https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE#overworld" target="_blank">设置选关界面图标</a>
 
 #### 修改地图的[元数据Metadata](../loenn/metadata.md)
 
@@ -132,16 +132,16 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 #### 设置存档点(章节)的插图
 
-[看电箱教程](https://www.bilibili.com/video/BV1A14y1W7hr)或者冬菜教程
+<a href="https://www.bilibili.com/video/BV1A14y1W7hr" target="_blank">看电箱教程</a>或者冬菜教程
 
 #### 为游戏添加更多自定义实体丰富内容
 
 你可以通过如下渠道下载别的Helper来拓展更多的功能(可能是扩展Loenn的, 也可能是扩展游戏的), 或者一些素材包(本质上也是Mod), 一般下个草莓酱大部分Helper就不缺了😋
 
 * 使用`Olympus`或者`Celemod`
-* [香蕉网](https://gamebanana.com/mods/games/6460), 登不上可以挂梯子或者尝试[替换Google CDN](https://www.bilibili.com/opus/959792914272092167)来连接,
-  或者直接使用[WEG的镜像网站](https://celeste.weg.fan/)
-* 制图群群文件(制图群QQ: [633125440](https://qm.qq.com/q/XG1hPIMKQg))
+* <a href="https://gamebanana.com/mods/games/6460" target="_blank">香蕉网</a>, 登不上可以挂梯子或者尝试<a href="https://www.bilibili.com/opus/959792914272092167" target="_blank">替换Google CDN</a>来连接,
+  或者直接使用<a href="https://celeste.weg.fan/" target="_blank">WEG的镜像网站</a>
+* 制图群群文件(制图群QQ: <a href="https://qm.qq.com/q/XG1hPIMKQg" target="_blank">633125440</a>)
 
 常见问题([解决方案](../loenn/faq.md)):
 
@@ -159,7 +159,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 ### 怎么修改房间属性
 
-详情见[房间属性](https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7)
+详情见<a href="https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7" target="_blank">房间属性</a>
 
 详情见[Metadata](../loenn/metadata.md)
 

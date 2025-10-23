@@ -34,7 +34,7 @@ theme:
 plugins:
   - search:
       separator: '[\s\u200b\-]'
-      
+
 extra_css:
   - css/content.css
 

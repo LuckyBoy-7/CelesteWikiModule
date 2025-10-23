@@ -10,21 +10,21 @@
 
 原来移动房间需要按 `Alt + 方向键`, 现在你可以用鼠标拖动/创建房间了
 
-## [styleground preview](https://gamebanana.com/tools/11768)
+## <a href="https://gamebanana.com/tools/11768" target="_blank">styleground preview</a>
 
 ![styleground_plugin_panel](../../assets/mappings/Loenn/plugins/styleground_plugin_panel.png){style="width: 500px; title="123"}
 
 方便我们在 Loenn 里查看 Parallax 背景在游戏中的实际效果
 
-## [Entity Brush](https://gamebanana.com/tools/10691)
+## <a href="https://gamebanana.com/tools/10691" target="_blank">Entity Brush</a>
 
 按鼠标中键选取实体, 接着像刷砖块一样刷实体
 
-## [Teleporter](https://gamebanana.com/tools/11768)
+## <a href="https://gamebanana.com/tools/11768" target="_blank">Teleporter</a>
 
 点击地图上的某个位置传送过去, 类似 F6 的功能
 
-## [Copy / Paste Stylegrounds](https://gamebanana.com/tools/11768)
+## <a href="https://gamebanana.com/tools/11768" target="_blank">Copy / Paste Stylegrounds</a>
 
 在 Scripts 一栏找到这两项
 
@@ -49,7 +49,7 @@
 
 我们常常使用这个插件来一键替换实体, 比如你摆好了刺, 但是想用自定义的刺的时候就可以用这个插件换
 
-也很容易实现各种奇异搞笑的效果, 比如 [7c, 但是刺都变成草莓](https://www.bilibili.com/video/BV1fj411b7Vt)
+也很容易实现各种奇异搞笑的效果, 比如 <a href="https://www.bilibili.com/video/BV1fj411b7Vt" target="_blank">7c, 但是刺都变成草莓</a>
 
 ![change_attribute_panel](../../assets/mappings/Loenn/plugins/change_attribute_panel.png){style="width: 1000px; title="123"}
 

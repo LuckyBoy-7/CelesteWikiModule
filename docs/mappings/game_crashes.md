@@ -10,12 +10,12 @@
 
 ## 解决方案
 
-* [解决方案 1](https://saplonily.top/celeste_common_issues/index.html)
-* [解决方案 2](https://github.com/EverestAPI/Resources/wiki/Common-Crashes)
+* <a href="https://saplonily.top/celeste_common_issues/index.html" target="_blank">解决方案 1</a>
+* <a href="https://github.com/EverestAPI/Resources/wiki/Common-Crashes" target="_blank">解决方案 2</a>
 
 你可以先尝试自己解决, 如果解决方案没有提及, 那么你可以
 
-* 在 [Celeste Discord](https://discord.gg/6qjaePQ) 中搜索 log.txt 中的关键词
+* 在 <a href="https://discord.gg/6qjaePQ" target="_blank">Celeste Discord</a> 中搜索 log.txt 中的关键词
 * 向群友发送 `log.txt`, 并作简单的描述, 请[学会提问](./question_and_self_study.md)
 * 祈祷
 

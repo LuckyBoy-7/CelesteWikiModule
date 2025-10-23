@@ -18,7 +18,7 @@
 从左到右 16 个块存储 B(用二维的图片存储三维的颜色信息), 所以你会发现第一个块只有红绿, 越往右蓝的成分就越多, 而滤镜就是你把对应像素的颜色改掉, 然后游戏中的对应颜色也会被改成你修改后的颜色, 而这里的 `none.png` 贴图正好对应不改色, 所以接下来介绍基于 `none.png` 滤镜的制作
 
 
-### [滤镜制作](https://www.bilibili.com/video/BV1WW7czqEPi)
+### <a href="https://www.bilibili.com/video/BV1WW7czqEPi" target="_blank">滤镜制作</a>
 
 这里本来想贴 WEG 录的视频的, 但是太久远了没找到, 只能仿照录一个了
 
@@ -26,9 +26,9 @@
 
 视频中演示的是改 HSV, 如果你改 RGB 啥的原理也是一样的
 
-这里有个一[网站](https://colorgrade-visualiser.modded-celeste.com/)给出了一些官图画面方便你查看滤镜效果, 复制你的滤镜在网站内 `Ctrl + V` 即可
+这里有个一<a href="https://colorgrade-visualiser.modded-celeste.com/" target="_blank">网站</a>给出了一些官图画面方便你查看滤镜效果, 复制你的滤镜在网站内 `Ctrl + V` 即可
 
-如果你觉得这还是太吃操作了, 建议你使用[滤镜生成工具 / Celeste Colorgrade Generator](https://lostinnowhere314.github.io/celeste-colorgrade-gen/): 生成完毕将图像另存为即可, 但我感觉还是感觉像 WEG 这样调符合直觉一点
+如果你觉得这还是太吃操作了, 建议你使用<a href="https://lostinnowhere314.github.io/celeste-colorgrade-gen/" target="_blank">滤镜生成工具 / Celeste Colorgrade Generator</a>: 生成完毕将图像另存为即可, 但我感觉还是感觉像 WEG 这样调符合直觉一点
 
 
 
