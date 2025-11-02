@@ -17,3 +17,30 @@
 * [[音频类] Fmod Bank Tools(Mod 音乐解压工具)]()(群文件)
 * [FMOD 下载](https://www.fmod.com/download){:target="_blank"}
 * [FMOD/Celeste Documentation and EULA](https://www.fmod.com/docs/2.03/studio/appendix-a-celeste.html){:target="_blank"}
+
+
+## FAQ
+
+### 如何自定义明信片的音效
+
+简单来说, 明信片的音效使用了
+
+* event:/ui/main/postcard_ch{loenn 里设置的内容}_in
+* event:/ui/main/postcard_ch{loenn 里设置的内容}_out
+
+例如
+
+* event:/ui/main/postcard_ch1_in
+* event:/ui/main/postcard_ch2_in
+* event:/ui/main/postcard_ch3_in
+* event:/ui/main/postcard_csides_in
+
+所以聪明的你已经猜到要怎么做了吧, 在 fmod 里创建一个类似格式的 event, 然后把数字改成对应的字符串, 比如像这样: event:/ui/main/postcard_ch{自己定义的字符串}_in, 之后再 loenn 里填上大括号里的内容就行了, 
+当然为了防止跟别人撞名字名字还得取长一点, 手段跟套文件夹大同小异, ~~不过改明信片音效的人真的很少~~
+
+当然为了丰富内容, 顺便填充点图片, 这里附上 NaCline 的研究成果
+
+![postcard](../assets/mappings/audio/postcard/postcard_audio0.png){style="width: 300px;"}
+![postcard](../assets/mappings/audio/postcard/postcard_audio1.png){style="width: 300px;"}
+![postcard](../assets/mappings/audio/postcard/postcard_audio2.png){style="width: 300px;"}
+![postcard](../assets/mappings/audio/postcard/postcard_audio3.png){style="width: 600px;"}
