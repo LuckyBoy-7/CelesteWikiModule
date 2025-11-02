@@ -3762,7 +3762,7 @@
 <li>判断结束</li>
 </ol>
 <p>所以比如说像swap块移速过大时, 玩家在上面是可能在一帧内穿过砖块的)这同时也是player被kevin挤压可以穿过单向板(单向板不是实心的)的原因之一</p>
-<h4 id="_10"><a href="https://www.bilibili.com/video/BV1oV411L7Kp/?share_source=copy_web&vd_source=88291083a8b9233d0006bb44b0331137&t=1280" target="_blank">例子</a></h4>
+<h4 id="_10"><a href="https://www.bilibili.com/video/BV1oV411L7Kp/?share_source=copy_web&amp;vd_source=88291083a8b9233d0006bb44b0331137&amp;t=1280" target="_blank">例子</a></h4>
 <p>swap块是往左上移动的, 首先swap块水平移动, 把player推向墙边, 由于修正, player会进入蹲姿然后向下修正出去, 然后取消蹲姿, 然后swap块竖直移动, 带动player往上移动,
 由于player撞顶(上面有砖),
 触发修正, 修正1失败, 修正2成功, 于是player就从上面出来了, 至于为什么没有取消蹲姿, 因为在第二步就已经修正成功跳出来了</p>
@@ -4275,7 +4275,7 @@ aaaap***
 再更新player减速为<code>412.67</code>"</p>
 <h3 id="_23">为什么左右切板时如果只有一格空间左边会卡死, 右边则没事</h3>
 <p>先上图</p>
-<p>!<a href="https://github.com/LuckyBoy-7/CelesteWiki/blob/main/Images/Mechanism/ReasonForStuckOnSceneTransition.jpg" target="_blank">ReasonForStuckOnSceneTransition</a></p>
+<p><img alt="ReasonForStuckOnSceneTransition" src="https://github.com/LuckyBoy-7/CelesteWiki/blob/main/Images/Mechanism/ReasonForStuckOnSceneTransition.jpg" target="_blank" /></p>
 <p>黄框为当前场景范围, 黑框为当前场景往外扩<code>4px</code>范围, 橙框是隔壁场景脚下的砖块, 绿红那个就是player的碰撞箱, 天蓝色是player的position位置,
 原理：左右切场景时游戏会先将当前场景向外padding <code>4px</code>, 然后将player向左(右)移动直到position移出场景, 但由于player position不在正中间, 导致隔壁若只有一格(<code>8px</code>),
 左边会卡住, 右边则正常, 如果到达不了指定位置, 那么持续一段时间后游戏会重载当前关卡.</p>
