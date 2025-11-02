@@ -1,14 +1,14 @@
-* <a href="https://sapcelestemod.netlify.app/extra_luacs/begin/" target="_blank">Saplonily 的 LuaCutscenes 教程</a>
+* [Saplonily 的 LuaCutscenes 教程](https://sapcelestemod.netlify.app/extra_luacs/begin/){:target="_blank"}
 * motonine的LuaCutscene教程(群文件里)
-* <a href="https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html" target="_blank">Lua Cutscenes 文档</a>
-* <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes" target="_blank">Prismatic Helper 文档</a>
-* <a href="https://uddrg.notion.site/Text-Dialog-2737f4f27e6380419593c9bedbe01795#2737f4f27e6380788771c5a9a78c3a39" target="_blank">Prismatic Helper 指令 by 底龙</a>
-* <a href="https://github.com/EverestAPI/ModResources/wiki/Lua-Cutscenes-Recipe-Book" target="_blank">Lua Cutscenes Recipe Book by Everest Wiki</a>
-* <a href="https://medium.com/@crumpledmemes/lua-cutscenes-without-lua-experience-3c2d87804e20" target="_blank">Lua Cutscenes without Lua Experience by Gamation</a>
+* [Lua Cutscenes 文档](https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html){:target="_blank"}
+* [Prismatic Helper 文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes){:target="_blank"}
+* [Prismatic Helper 指令 by 底龙](https://uddrg.notion.site/Text-Dialog-2737f4f27e6380419593c9bedbe01795#2737f4f27e6380788771c5a9a78c3a39){:target="_blank"}
+* [Lua Cutscenes Recipe Book by Everest Wiki](https://github.com/EverestAPI/ModResources/wiki/Lua-Cutscenes-Recipe-Book){:target="_blank"}
+* [Lua Cutscenes without Lua Experience by Gamation](https://medium.com/@crumpledmemes/lua-cutscenes-without-lua-experience-3c2d87804e20){:target="_blank"}
 
-由于蔚蓝是用 `C#` 编程语言编写制作的, 而官方的剧情都是硬编码的, 导致玩家写剧情的门槛太高, 所以就出现了 <a href="https://gamebanana.com/mods/53678" target="_blank">Lua Cutscenes</a> 这样的 helper 来用 `Lua` 这种简单的编程语言来对接 `C#`, 即我们可以编写简单的 `Lua` 脚本来使用官方代码中的各种跟剧情相关的函数
+由于蔚蓝是用 `C#` 编程语言编写制作的, 而官方的剧情都是硬编码的, 导致玩家写剧情的门槛太高, 所以就出现了 [Lua Cutscenes](https://gamebanana.com/mods/53678){:target="_blank"} 这样的 helper 来用 `Lua` 这种简单的编程语言来对接 `C#`, 即我们可以编写简单的 `Lua` 脚本来使用官方代码中的各种跟剧情相关的函数
 
-还有 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes" target="_blank">Prismatic Helper</a> 这种 Helper(简称 ph), 主要是嵌入 Dialog 中使用的
+还有 [Prismatic Helper](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes){:target="_blank"} 这种 Helper(简称 ph), 主要是嵌入 Dialog 中使用的
 
 !!! 注意事项
     因为 Lua Cutscenes 本质也是个 Mod, 所以记得开(, 问就是踩过坑
@@ -55,27 +55,27 @@ end
 
 ### 怎么在对完话后传送
 
-* 写 <a href="https://sapcelestemod.netlify.app/extra_luacs/reference/#teleportto" target="_blank">lua</a>
-* 使用 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#goto-x--0-y--0" target="_blank">Prismatic Helper</a>, `{ph_trigger goto x坐标 y坐标}`
+* 写 [lua](https://sapcelestemod.netlify.app/extra_luacs/reference/#teleportto){:target="_blank"}
+* 使用 [Prismatic Helper](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#goto-x--0-y--0){:target="_blank"}, `{ph_trigger goto x坐标 y坐标}`
 
 坐标可以按 `~` 打开控制台查看当前鼠标位置
 
 ### 怎么让 Badeline 出来
 
-* 详情见 <a href="https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#baddy_split-xoffset--0-yoffset--y-faceplayer--true" target="_blank">Prismatic Helper 文档</a>, 写 Dialog 即可,  下面画游的例子中也有提及(翻 Dialog)
+* 详情见 [Prismatic Helper 文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#baddy_split-xoffset--0-yoffset--y-faceplayer--true){:target="_blank"}, 写 Dialog 即可,  下面画游的例子中也有提及(翻 Dialog)
 * 使用 DJ Map Helper 的 Talk To Badeline Trigger
 
 ### 有选择的对话怎么做
 
 写 `lua`
 
-> Myn: 可以抄一下<a href="https://gamebanana.com/mods/494348" target="_blank">画游</a>序章的
+> Myn: 可以抄一下[画游](https://gamebanana.com/mods/494348){:target="_blank"}序章的
 
 具体路径`gallerycollab2024_v2015\Cutscenes\cny2024\prologue\granny.lua`
 
-关键函数 <a href="https://sapcelestemod.netlify.app/extra_luacs/reference/#choice" target="_blank">choice</a>
+关键函数 [choice](https://sapcelestemod.netlify.app/extra_luacs/reference/#choice){:target="_blank"}
 
-<a href="https://www.bilibili.com/video/BV17RsWeDE3Y/" target="_blank">示例视频</a>
+[示例视频](https://www.bilibili.com/video/BV17RsWeDE3Y/){:target="_blank"}
 
 ```lua
 --获取蔚蓝命名空间(c#)

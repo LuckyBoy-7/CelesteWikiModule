@@ -4,11 +4,11 @@
 
 ## 参考:
 
-* <a href="https://github.com/EverestAPI/Resources/wiki/Replacing-A-Texture" target="_blank">正常替换</a>
-* <a href="https://github.com/EverestAPI/Resources/wiki/Reskinning-Entities" target="_blank">高级替换</a>
+* [正常替换](https://github.com/EverestAPI/Resources/wiki/Replacing-A-Texture){:target="_blank"}
+* [高级替换](https://github.com/EverestAPI/Resources/wiki/Reskinning-Entities){:target="_blank"}
 * [[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)](https://www.bilibili.com/video/BV1cP4y1m7B2)
 * 冬菜教程
-* <a href="https://www.bilibili.com/video/BV1uUHYzLEu5/" target="_blank">替换素材 by 底龙</a>
+* [替换素材 by 底龙](https://www.bilibili.com/video/BV1uUHYzLEu5/){:target="_blank"}
 
 ## 暴力替换
 
@@ -17,7 +17,7 @@
 我们的素材都存在 <code>../Steam/steamapps/common/Celeste/<font color="red">Mods/MyMod/</font><font color="green">Graphics/Atlases/</font></code> 里, 那么怎么换就不用我多说了吧: 直接照着[解包素材](../useful_links.md#_1)在同路径放个同名图片把官图的覆盖了就好了
 这种方法可以更换蔚蓝中几乎所有非程序生成的素材, 唯一不好的点就是"这会污染其他 Mod", 因为这么做的影响是全局的
 
-暴力替换的适用范围仅限于做着玩/小范围传播, 对于以前<a href="https://www.bilibili.com/video/BV1uUHYzLEu5/?t=4104" target="_blank">没皮肤 Mod 的时期</a>大家可能还会使用暴力替换, 但是在有了 Skin Mod Helper (Plus) 之后咋们就可以自由切换皮肤了, 贴图这些都变成了可以配置的东西, 也就不需要那么"暴力"了
+暴力替换的适用范围仅限于做着玩/小范围传播, 对于以前[没皮肤 Mod 的时期](https://www.bilibili.com/video/BV1uUHYzLEu5/?t=4104){:target="_blank"}大家可能还会使用暴力替换, 但是在有了 Skin Mod Helper (Plus) 之后咋们就可以自由切换皮肤了, 贴图这些都变成了可以配置的东西, 也就不需要那么"暴力"了
 
 ## 使用自定义实体
 
@@ -44,7 +44,7 @@
 对于如上的内容, 蔚蓝会通过 player 这个标签加载 path(相对于`Gameplay 文件夹`)中的素材, 再根据 `...` 中的配置来组合出游戏中的一个动画对象
 
 听不懂也没关系, 不是我喜欢的 `Sprites.xml` 直接不看,
-咋们[自己整一个](../xml/sprites_xml.md#spritesxml_2), 然后把配置里的路径改一下就好了, 这种方法不会影响别人的图, 还是比较推荐的做法(不过有的实体不一定会有对应配置, 视情况而定), 还有些皮肤也是<a href="https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3232" target="_blank">类似的换法</a>,
+咋们[自己整一个](../xml/sprites_xml.md#spritesxml_2), 然后把配置里的路径改一下就好了, 这种方法不会影响别人的图, 还是比较推荐的做法(不过有的实体不一定会有对应配置, 视情况而定), 还有些皮肤也是[类似的换法](https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3232){:target="_blank"},
 不过只要你理解了 [Sprites.xml 的覆盖原理](../mod_structure.md#spritesxml)就可以随便换了, 所以我也不再赘述了
 
 
@@ -55,9 +55,9 @@
 
 ### Helper 提供的额外元数据
 
-* <a href="https://gamebanana.com/mods/597196" target="_blank">真的大 Helper</a>, <a href="https://github.com/kyfex-uwu/ReallyBigHelper/wiki/Using-ReallyBigHelper" target="_blank">Wiki</a>: 改章节图标
-* <a href="https://gamebanana.com/mods/53697" target="_blank">Communal Helper</a>, <a href="https://github.com/CommunalHelper/CommunalHelper/blob/db7b27060ebf64553e299fa1c98ab21534e360de/docs/Home.md#custom-textures" target="_blank">Wiki</a>: 改默认 Gem 材质
-* <a href="https://gamebanana.com/mods/553921" target="_blank">Lucky Helper</a>, <a href="https://github.com/LuckyBoy-7/LuckyHelper/blob/main/README.md#metadata" target="_blank">Wiki</a>: 改默认 Textbox 材质
+* [真的大 Helper](https://gamebanana.com/mods/597196){:target="_blank"}, [Wiki](https://github.com/kyfex-uwu/ReallyBigHelper/wiki/Using-ReallyBigHelper){:target="_blank"}: 改章节图标
+* [Communal Helper](https://gamebanana.com/mods/53697){:target="_blank"}, [Wiki](https://github.com/CommunalHelper/CommunalHelper/blob/db7b27060ebf64553e299fa1c98ab21534e360de/docs/Home.md#custom-textures){:target="_blank"}: 改默认 Gem 材质
+* [Lucky Helper](https://gamebanana.com/mods/553921){:target="_blank"}, [Wiki](https://github.com/LuckyBoy-7/LuckyHelper/blob/main/README.md#metadata){:target="_blank"}: 改默认 Textbox 材质
 
 
 ## 自己写 Code
