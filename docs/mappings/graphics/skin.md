@@ -2,20 +2,20 @@
 
 ## 参考
 
-* <a href="https://kuksattu.github.io/celeste/skinmod-template/" target="_blank">模板</a>
-* <a href="https://www.bilibili.com/video/BV1YpYueREPt" target="_blank">蔚蓝皮肤制作教程-星夜祈梦</a>
+* [模板](https://kuksattu.github.io/celeste/skinmod-template/){:target="_blank"}
+* [蔚蓝皮肤制作教程-星夜祈梦](https://www.bilibili.com/video/BV1YpYueREPt){:target="_blank"}
     * [文字版](../../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf)
-* <a href="https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md" target="_blank">Skin Mod Helper README</a>
-* <a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md" target="_blank">Skin Mod Helper Plus README</a>
-* <a href="https://www.bilibili.com/video/BV1Uv4y1K751" target="_blank">蔚蓝科技之自制皮肤mod教程</a>
+* [Skin Mod Helper README](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md){:target="_blank"}
+* [Skin Mod Helper Plus README](https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md){:target="_blank"}
+* [蔚蓝科技之自制皮肤mod教程](https://www.bilibili.com/video/BV1Uv4y1K751){:target="_blank"}
 
 如果你已经看过了 [Sprites.xml](../xml/sprites_xml.md) 的引导, 那么改 Madeline 皮肤这事儿应该不难理解: 无非就是改贴图, 改 Sprites.xml, 但是这样皮肤只会作用于单图, 而不是随时能使用/切换的皮肤
 
 所以你还得下载 Skin Mod Helper(SMH)/Skin Mod Helper Plus(SMH+) 相关 Helper, 并根据他们指定的规则做相应配置
 
-比如你可以下载 <a href="https://gamebanana.com/mods/473796" target="_blank">Skin Mod Helper Plus(SMH+)</a>, 下载任意<a href="https://kuksattu.github.io/celeste/skinmod-template/" target="_blank">模板</a>丢 Mods 里, 然后你改改图片直接就能用了
+比如你可以下载 [Skin Mod Helper Plus(SMH+)](https://gamebanana.com/mods/473796){:target="_blank"}, 下载任意[模板](https://kuksattu.github.io/celeste/skinmod-template/){:target="_blank"}丢 Mods 里, 然后你改改图片直接就能用了
 
-相对进阶的由于其他教程和 <a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md" target="_blank">SMH+ 的文档</a>相对来说讲的已经够详细了, 还有一堆 Mod 可以抄, 这里就简单补充一些说明就好了
+相对进阶的由于其他教程和 [SMH+ 的文档](https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md){:target="_blank"}相对来说讲的已经够详细了, 还有一堆 Mod 可以抄, 这里就简单补充一些说明就好了
 
 ## Sprites.xml 中 &lt;player&gt; 内部的特殊标签 &lt;Metadata&gt;&lt;/Metadata&gt;
 
@@ -49,7 +49,7 @@
 
 ### hair
 
-首先你可以简单了解下蔚蓝的头发是怎么绘制的, 这里举一个相近的<a href="https://www.bilibili.com/video/BV1dy421v7o1" target="_blank">例子</a>, 蔚蓝差不多就是这么干的(在这基础上会加个刘海, 具体看`player`素材里的
+首先你可以简单了解下蔚蓝的头发是怎么绘制的, 这里举一个相近的[例子](https://www.bilibili.com/video/BV1dy421v7o1){:target="_blank"}, 蔚蓝差不多就是这么干的(在这基础上会加个刘海, 具体看`player`素材里的
 `bangs00`)
 
 这里的刘海相当于上面例子中的头节点, 其他部分就是一个个圆形
@@ -77,19 +77,19 @@ Graphics/Atlases/Gameplay/characters/badeline/jumpSlowXX.png
 
 ### 怎么做双马尾
 
-把 `hair00` 改成中间镂空的形式, 画出来就是双马尾(太有想象力了), 具体可以参考<a href="https://www.bilibili.com/video/BV1HC411H7CR/" target="_blank">芙莉莲皮肤</a>
+把 `hair00` 改成中间镂空的形式, 画出来就是双马尾(太有想象力了), 具体可以参考[芙莉莲皮肤](https://www.bilibili.com/video/BV1HC411H7CR/){:target="_blank"}
 
 ### 怎么做尾巴
 
-我一开始以为是把头发<a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/skinconfig/HairConfig.md" target="_blank">弄小点</a>偏移到 Madeline 屁股后面做的,
-但我看 <a href="https://gamebanana.com/mods/522004" target="_blank">Foxeline</a> 和 <a href="https://gamebanana.com/mods/251793" target="_blank">Cateline</a> 好像都是自己写代码的(
+我一开始以为是把头发[弄小点](https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/skinconfig/HairConfig.md){:target="_blank"}偏移到 Madeline 屁股后面做的,
+但我看 [Foxeline](https://gamebanana.com/mods/522004){:target="_blank"} 和 [Cateline](https://gamebanana.com/mods/251793){:target="_blank"} 好像都是自己写代码的(
 
 ### 怎么在冲刺的时候更改皮肤具体区域的颜色
 
 你需要先理解一下 [ColorGrading](./color_grading.md)
 
 然后我们就可以使用一张图片来配置皮肤某些位置在不同冲次数下的颜色,
-配置方式参考 <a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/skinconfig/ColorGrade.md" target="_blank">SMH+ 文档</a>
+配置方式参考 [SMH+ 文档](https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/skinconfig/ColorGrade.md){:target="_blank"}
 
 你只需要把文件名改成对应的冲次数(具体配置看上面链接, 或者抄其他皮肤 Mod), 把对应颜色 A 换成你想要的颜色 B,
 这样 SMH+ 就可以通过这个配置来设置, 使你在这个冲次数下你皮肤中的颜色 A 变成颜色 B

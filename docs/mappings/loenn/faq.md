@@ -1,10 +1,10 @@
-## <a href="https://wiki.biligame.com/celeste/Loenn#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" target="_blank">b站 Wiki 常见问题解决方案</a>
+## [b站 Wiki 常见问题解决方案](https://wiki.biligame.com/celeste/Loenn#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98){:target="_blank"}
 
-## <a href="https://github.com/EverestAPI/Resources/wiki/Mapping-FAQ" target="_blank">Everest Wiki 常见问题解决方案</a>
+## [Everest Wiki 常见问题解决方案](https://github.com/EverestAPI/Resources/wiki/Mapping-FAQ){:target="_blank"}
 
-## <a href="https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e638075b776eeb404fda8b3&pm=s" target="_blank">常见 Helper 问题 by 底龙</a>
+## [常见 Helper 问题 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e638075b776eeb404fda8b3&pm=s){:target="_blank"}
 
-## <a href="https://discord.com/channels/403698615446536203/953393160464269402" target="_blank">Discord 问答区</a>
+## [Discord 问答区](https://discord.com/channels/403698615446536203/953393160464269402){:target="_blank"}
 
 你能问出的问题别人大概率也问过了, 可以在问答区和和全局搜索区(右上角)试着搜搜看
 
@@ -41,7 +41,7 @@ Loenn 里右键对象
 ## 如何找到 xxx 官图实体的 plus 版
 
 理论上你直接输入这个实体的名字就会跳出来了(所以这个 QA 好像不是很有必要写, 但真的会有人会找不到😂, 或者可能缺 helper), 一般名字会在原来的基础上加上 Custom,
-Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://maddie480.ovh/celeste/custom-entity-catalog" target="_blank">所有Helper及其对应实体</a>里搜关键词即可
+Grouped, Connected 之类的前缀, 最稳的方法是直接在[所有Helper及其对应实体](https://maddie480.ovh/celeste/custom-entity-catalog){:target="_blank"}里搜关键词即可
 
 ## xxx 这个实体叫什么
 
@@ -76,7 +76,7 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 * 搜搜聊天记录
 * 凭直觉试试, 到游戏里看看变化
 * 鼠标移到属性上可能会显示详细的描述(俗称注释)
-* 到香蕉网上搜对应的 helper, 运气好的话, 它的界面上会提供 wiki 链接, 里面会有更加详细的描述(<a href="https://maddie480.ovh/celeste/custom-entity-catalog" target="_blank">所有Helper及其对应实体</a>)
+* 到香蕉网上搜对应的 helper, 运气好的话, 它的界面上会提供 wiki 链接, 里面会有更加详细的描述([所有Helper及其对应实体](https://maddie480.ovh/celeste/custom-entity-catalog){:target="_blank"})
 * 如果你会 code, 有时直接看源码也不失为一种好办法(不是
 * 还不行就请教群友
 
@@ -112,7 +112,7 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 
 如果没告诉你, 那看看这个栏目有无默认值, 有默认值就可以很方便的推导出这个路径是相对什么文件夹的
 
-如果还没有, 那么可以在对应 Helper 的 香蕉网 / Github 上查看有无相应文档(在<a href="https://maddie480.ovh/celeste/custom-entity-catalog" target="_blank">所有实体列表</a>上搜索更方便)
+如果还没有, 那么可以在对应 Helper 的 香蕉网 / Github 上查看有无相应文档(在[所有实体列表](https://maddie480.ovh/celeste/custom-entity-catalog){:target="_blank"}上搜索更方便)
 
 如果都没有, 要么就是作者觉得填的东西非常符合直觉所以没加注释, 要么就是懒, 问群友还是搞不懂的话就算了吧, ~~不过真的有这样的实体吗~~
 
@@ -171,7 +171,7 @@ Bounce Helper 的 Bounce Move Block 属性长这样, 你想改它贴图但是发
 }
 ```
 
-在翻看<a href="https://github.com/FlynnSC/BounceHelper/blob/d52a0b2b97e1014fc132110373492694fdf27f1a/Source/Entities/BounceMoveBlock.cs#L280" target="_blank">源码</a>后你会发现, 他使用到了 `spritePath` 这个属性, 默认值为 `objects/BounceHelper/bounceMoveBlock`
+在翻看[源码](https://github.com/FlynnSC/BounceHelper/blob/d52a0b2b97e1014fc132110373492694fdf27f1a/Source/Entities/BounceMoveBlock.cs#L280){:target="_blank"}后你会发现, 他使用到了 `spritePath` 这个属性, 默认值为 `objects/BounceHelper/bounceMoveBlock`
 
 ```csharp
 data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")

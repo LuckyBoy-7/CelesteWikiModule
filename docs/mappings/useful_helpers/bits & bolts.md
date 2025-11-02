@@ -2,8 +2,8 @@
 
 ## 参考
 
-* <a href="https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e638181a309e1ece7e52714&pm=s" target="_blank">底龙教程</a>
-* <a href="https://codeberg.org/micycle/libbitsbolts/src/branch/main/Docs/index.md" target="_blank">bits & bolts 文档</a>
+* [底龙教程](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e638181a309e1ece7e52714&pm=s){:target="_blank"}
+* [bits & bolts 文档](https://codeberg.org/micycle/libbitsbolts/src/branch/main/Docs/index.md){:target="_blank"}
 
 ### bb_global 全局房间
 

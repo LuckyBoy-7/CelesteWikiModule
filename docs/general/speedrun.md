@@ -1,1 +1,1 @@
-* <a href="https://www.speedrun.com/celeste" target="_blank">速通网站</a>
+* [速通网站](https://www.speedrun.com/celeste){:target="_blank"}
