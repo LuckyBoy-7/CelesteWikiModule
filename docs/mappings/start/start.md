@@ -155,38 +155,38 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 ### 怎么改背景
 
-详情见[Stylegrounds](../loenn/stylegrounds.md)
+详情见 [Stylegrounds](../loenn/stylegrounds.md)
 
 ### 怎么修改房间属性
 
 详情见[房间属性](https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7){:target="_blank"}
 
-详情见[Metadata](../loenn/metadata.md)
+详情见 [Metadata](../loenn/metadata.md)
 
 ### 怎么改对话, 地图名字等
 
-详情见[Dialog](../dialog.md)
+详情见 [Dialog](../dialog.md)
 
 ### 怎么做皮肤, 改贴图等
 
-详情见[Graphics](../graphics.md)
+详情见 [Graphics](../graphics.md)
 
 ### 怎么运镜
 
-详情见[Camera](../camera.md)
+详情见 [Camera](../camera.md)
 
 ### 怎么写音乐音效等
 
-详情见[Audio](../audio.md)
+详情见 [Audio](../audio.md)
 
 ### 怎么写过场动画等
 
-详情见[LuaCutscene](../lua_cutscene.md)
+详情见 [LuaCutscene](../lua_cutscene.md)
 
-### 怎么写自定义Entity和Trigger
+### 怎么写自定义 Entity 和 Trigger
 
-详情见[Code](../code.md)
+详情见 [Code](../code.md)
 
-### 怎么发布我的Mod, 又该注意些什么
+### 怎么发布我的 Mod, 又该注意些什么
 
-详情见[发布Mod](../publish_mod.md)
+详情见[发布 Mod](../publish_mod.md)

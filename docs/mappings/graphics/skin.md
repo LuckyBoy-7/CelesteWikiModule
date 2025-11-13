@@ -62,14 +62,22 @@
 `hair` 的格式类似 `a,b|c,d|...|g,h|`, 它被 `|` 分隔成一个个组, 每个组对应了动画的一帧, 按顺序排列, 比如 `idle` 动画占 8 帧, 所以下面配置有 8 组,
 每个组有两个数被 `,` 分隔, 表示刘海相对于 Madeline 头顶的某个位置的 x/y 偏移(要是不设置 Madeline 的头就掉了), 因为官方已经提前调好刘海的大概位置了, 所以你只需要微调 x/y 即可(
 这也是为什么这些数字都很小的原因),
-有些分组形如 `a,b:c`, 这里的 `c` 范围为`0~2`(不填默认为 `0`), 表示 Madeline 的刘海朝向(具体看`player`素材里的`bangs00` `bangs01` `bangs02` `bangs03`), 比如像 `idleA` 动画中的
+有些分组形如 `a,b:c`, 这里的 `c` 范围为`0~2`(不填默认为 `0`), 表示 Madeline 的刘海朝向(具体看`player`素材里的`bangs00` `bangs01` `bangs02`), 比如像 `idleA` 动画中的
 Madeline 会左看看右看看, 这就得修改刘海的朝向
 
 ### carry
 
 `carry` 的格式类似 `a,b,c,d,...,l,m,n`, 它被 `,` 分隔成一个个组, 每个组对应了动画的一帧, 表示对应帧抓取物 y 方向的偏移(不然抓取物一直僵在一个高度很不自然)
 
+#### Prevent Skin-Mod Gameplay Changes
+
+因为更改 carry 会影响游戏的运行机制(比如改矮了被扔到最高点的时候可能会碰不到硬币), 所以就有了 Celeste TAS 中的一个选项, 可以强制皮肤使用原版特性
+
 ## FAQ
+
+### 如何自定义头发
+
+参考 [HairConfig.yaml](https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/skinconfig/HairConfig.md)
 
 ### Badeline 随从对应的贴图路径是什么
 
