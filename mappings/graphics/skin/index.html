@@ -1706,6 +1706,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="carry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prevent-skin-mod-gameplay-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prevent Skin-Mod Gameplay Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1724,6 +1739,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何自定义头发
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#badeline" class="md-nav__link">
     <span class="md-ellipsis">
       Badeline 随从对应的贴图路径是什么
@@ -1733,7 +1757,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       怎么做双马尾
     </span>
@@ -1742,7 +1766,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       怎么做尾巴
     </span>
@@ -1751,7 +1775,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       怎么在冲刺的时候更改皮肤具体区域的颜色
     </span>
@@ -2157,6 +2181,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="carry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prevent-skin-mod-gameplay-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prevent Skin-Mod Gameplay Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -2175,6 +2214,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何自定义头发
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#badeline" class="md-nav__link">
     <span class="md-ellipsis">
       Badeline 随从对应的贴图路径是什么
@@ -2184,7 +2232,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       怎么做双马尾
     </span>
@@ -2193,7 +2241,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       怎么做尾巴
     </span>
@@ -2202,7 +2250,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       怎么在冲刺的时候更改皮肤具体区域的颜色
     </span>
@@ -2303,19 +2351,23 @@
 <p><code>hair</code> 的格式类似 <code>a,b|c,d|...|g,h|</code>, 它被 <code>|</code> 分隔成一个个组, 每个组对应了动画的一帧, 按顺序排列, 比如 <code>idle</code> 动画占 8 帧, 所以下面配置有 8 组,
 每个组有两个数被 <code>,</code> 分隔, 表示刘海相对于 Madeline 头顶的某个位置的 x/y 偏移(要是不设置 Madeline 的头就掉了), 因为官方已经提前调好刘海的大概位置了, 所以你只需要微调 x/y 即可(
 这也是为什么这些数字都很小的原因),
-有些分组形如 <code>a,b:c</code>, 这里的 <code>c</code> 范围为<code>0~2</code>(不填默认为 <code>0</code>), 表示 Madeline 的刘海朝向(具体看<code>player</code>素材里的<code>bangs00</code> <code>bangs01</code> <code>bangs02</code> <code>bangs03</code>), 比如像 <code>idleA</code> 动画中的
+有些分组形如 <code>a,b:c</code>, 这里的 <code>c</code> 范围为<code>0~2</code>(不填默认为 <code>0</code>), 表示 Madeline 的刘海朝向(具体看<code>player</code>素材里的<code>bangs00</code> <code>bangs01</code> <code>bangs02</code>), 比如像 <code>idleA</code> 动画中的
 Madeline 会左看看右看看, 这就得修改刘海的朝向</p>
 <h3 id="carry">carry</h3>
 <p><code>carry</code> 的格式类似 <code>a,b,c,d,...,l,m,n</code>, 它被 <code>,</code> 分隔成一个个组, 每个组对应了动画的一帧, 表示对应帧抓取物 y 方向的偏移(不然抓取物一直僵在一个高度很不自然)</p>
+<h4 id="prevent-skin-mod-gameplay-changes">Prevent Skin-Mod Gameplay Changes</h4>
+<p>因为更改 carry 会影响游戏的运行机制(比如改矮了被扔到最高点的时候可能会碰不到硬币), 所以就有了 Celeste TAS 中的一个选项, 可以强制皮肤使用原版特性</p>
 <h2 id="faq">FAQ</h2>
+<h3 id="_3">如何自定义头发</h3>
+<p>参考 <a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/skinconfig/HairConfig.md">HairConfig.yaml</a></p>
 <h3 id="badeline">Badeline 随从对应的贴图路径是什么</h3>
 <p>Graphics/Atlases/Gameplay/characters/badeline/jumpSlowXX.png</p>
-<h3 id="_3">怎么做双马尾</h3>
+<h3 id="_4">怎么做双马尾</h3>
 <p>把 <code>hair00</code> 改成中间镂空的形式, 画出来就是双马尾(太有想象力了), 具体可以参考<a href="https://www.bilibili.com/video/BV1HC411H7CR/" target="_blank">芙莉莲皮肤</a></p>
-<h3 id="_4">怎么做尾巴</h3>
+<h3 id="_5">怎么做尾巴</h3>
 <p>我一开始以为是把头发<a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/skinconfig/HairConfig.md" target="_blank">弄小点</a>偏移到 Madeline 屁股后面做的,
 但我看 <a href="https://gamebanana.com/mods/522004" target="_blank">Foxeline</a> 和 <a href="https://gamebanana.com/mods/251793" target="_blank">Cateline</a> 好像都是自己写代码的(</p>
-<h3 id="_5">怎么在冲刺的时候更改皮肤具体区域的颜色</h3>
+<h3 id="_6">怎么在冲刺的时候更改皮肤具体区域的颜色</h3>
 <p>你需要先理解一下 <a href="../color_grading/">ColorGrading</a></p>
 <p>然后我们就可以使用一张图片来配置皮肤某些位置在不同冲次数下的颜色,
 配置方式参考 <a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/skinconfig/ColorGrade.md" target="_blank">SMH+ 文档</a></p>
