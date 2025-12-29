@@ -118,7 +118,7 @@ Eevee Helper 为我们提供了一系列实体, 我们可以用它们方便地�
 让容器内实体依附/绑定于某一个实体, 随其移动, 仿佛粘在它身上一样(可以不贴着), 这个实体后续我将称其为父节点
 
 * Attached To: 填 Entity Type, 表示可以作为父节点的实体
-* Reletive Attach X/Y: 子节点离父节点的相对位置, 如果留空则使用一开始加入容器时的相对位置
+* Relative Attach X/Y: 子节点离父节点的相对位置, 如果留空则使用一开始加入容器时的相对位置
 * [Destroyable](https://www.bilibili.com/video/BV11U8jzUEAZ/){:target="_blank"}: 如果父节点被销毁, 那么容器内对象是否跟着被销毁
 * Fit Contained: 当容器内对象主动移动时, 容器是否要自动调整大小
 * Ignore Anchors: 是否忽略锚点, 有的实体的运动会基于空间中的一个锚点, 比如弹球, 所以容器会在移动对象的同时移动锚点, 如果你不想对锚点进行操作可开启此项, 虽然也能用来做些[有趣的效果](https://www.bilibili.com/video/BV1XJ8JzKEsk/){:target="_blank"}
