@@ -169,7 +169,7 @@
 
 对于大部分文件来说同路径会整个文件被覆盖, 比如图片 A 和图片 B 同路径会相互覆盖, A 先加载, 那最后活着的图片就是 B, B 先加载, 那最后活着的图片就是 A
 
-而对 `Dialog` 里的文件和 `.xml`, 音频, 等文件来说是内容部分覆盖
+而对 `Dialog` 里的文件和 `.xml`, 音频(`event:`)等文件来说是内容部分覆盖
 
 当你理解了上面提到的这些, Mod 中的很多东西就会立即变得清晰明了, 比如:
 
@@ -206,7 +206,7 @@ b=哎哟
 c=你干嘛
 ```
 
-我们可以通过这个性质更改官图文本, 比如 [FunnyDialog](https://www.bilibili.com/video/BV1Pz421i7SZ){:target="_blank"} 的应用
+我们可以通过这个性质更改官图/Mod 文本, 比如 [FunnyDialog](https://www.bilibili.com/video/BV1Pz421i7SZ){:target="_blank"} 的应用
 
 ### 以 Sprites.xml 为例
 
@@ -248,7 +248,10 @@ c=你干嘛
 
 当然我没说这是错的, 只要你把 ID 名字取长一点就能降低覆盖风险, 比如很多 Helper 作者如果要给自己的某些实体加自定义皮肤, 又想让皮肤可以配置, 一般都是用这种[方法](https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3232){:target="_blank"}
 
-然后还有第二种方法, 就是你把上面写的 `Sprites.xml` 移动到 `Mods/MyMod/Graphics/MyMod/Sprites.xml` 这个路径下(放哪儿都可以, 只要不撞路径不发生覆盖就行), 然后在 Loenn 元数据里选择这个 XML 即可, 这表示只有在运行这张图的时候才会用这个 XML 覆盖官图的 XML, 这样就不会污染其他 Mod 了
+然后还有第二种方法, 就是你把上面写的 `Sprites.xml` 移动到 `Mods/MyMod/Graphics/MyMod/Sprites.xml` 这个路径下(放哪儿都可以, 只要不撞路径不发生覆盖就行), 然后在 Loenn 元数据里选择这个 XML 即可, 这表示只有在运行这张图的时候才会用这个 XML 覆盖官图的 XML(如果是 Helper 自定义的 xml 那这种方法无效, 只能同路径覆盖), 这样就不会污染其他 Mod 了
+
+!!! 注意
+    xml 的内容覆盖范围只包括 `Mod/Graphics/Sprite.xml.xml`, `Mod/Graphics/SpritesGui.xml`, `Mod/Graphics/Portraits.xml`, `Mod/DecalRegistry.xml`, 如果是 Helper 自定义的 xml, 那么同路径会发生完全覆盖 
 
 ### 以 Maps 等直接覆盖的资源为例
 
@@ -256,7 +259,7 @@ c=你干嘛
 
 * 📁Celeste
     - 📁Mods
-        - 📁HisMod
+        - 📁OtherMod
             - 📄everest.yaml
             - 📁Maps 
                 - 📄MyFirstMap.bin
