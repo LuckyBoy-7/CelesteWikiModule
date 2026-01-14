@@ -111,8 +111,17 @@ nav:
       - Camera: "mappings/camera.md"
       - Graphics:
           - 大纲: "mappings/graphics.md"
-          - 替换素材/贴图: "mappings/graphics/replace_assets.md"
-          - 皮肤制作: "mappings/graphics/skin.md"
+          - 素材替换: "mappings/graphics/replace_assets.md"
+          - 皮肤制作:
+              - 大纲: "mappings/graphics/skin.md"
+              - Skin Mod Helper: "mappings/graphics/SMH.md"
+              - Skin Mod Helper Plus:
+                  - 大纲: "mappings/graphics/SMHP.md"
+                  - SkinModHelperConfig: "mappings/graphics/SMHP_SkinConfig.md"
+                  - ColorGrades: "mappings/graphics/SMHP_ColorGrades.md"
+                  - HairConfig: "mappings/graphics/SMHP_HairConfig.md"
+                  - CharacterConfig: "mappings/graphics/SMHP_CharacterConfig.md"
+                  - Trigger 使用部分: "mappings/graphics/SMHP_trigger.md"
           - 滤镜: "mappings/graphics/color_grading.md"
       - Audio: "mappings/audio.md"
       - Lua Cutscene: "mappings/lua_cutscene.md"
