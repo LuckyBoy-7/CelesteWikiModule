@@ -37,12 +37,10 @@ Graphics/Atlases/</font></code> 里,
 
 > 偷偷在找图片 A 的时候替换成找图片 B 不就好了
 
-你可能需要查看[游戏源码](https://github.com/TheCyndaquilDecompilers/Celeste_Decompiled/blob/main/Celeste/Refill.cs#L33) 或 Mod 源码来替换, 不过大部分时候只需要填图片的路径就行了
-
 通过代码手段将硬编码的路径导向自定义的路径:
 
-* 可以使用 LuckyHelper 的 AtlasPathReplacer 实体: 在 Loenn 中配置
-* 可以使用 [LocalizationHelper](https://gamebanana.com/mods/644851)([镜像](https://celeste.weg.fan/submissions/detail/488461972699636480/localizationhelper)): 不同语言下可以使用不同的替换方式, 在 `.json` 文件中配置(由于作者暂无支持替换所有路径的[打算](https://github.com/Vireth4114/LocalizationHelper/issues/1), 所以目前只能作用于自定义路径的贴图)
+* 可以使用 [hELPER](../useful_helpers/hELPER.md) 的 Sprite Replace Trigger
+* 可以使用 [LocalizationHelper](https://gamebanana.com/mods/644851)([镜像](https://celeste.weg.fan/submissions/detail/488461972699636480/localizationhelper)): 不同语言下可以使用不同的替换方式, 在 `.json` 文件中配置
 
 ### 重新生成
 

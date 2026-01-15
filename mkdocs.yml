@@ -125,12 +125,13 @@ nav:
           - 滤镜: "mappings/graphics/color_grading.md"
       - Audio: "mappings/audio.md"
       - Lua Cutscene: "mappings/lua_cutscene.md"
-      - 常用 Helper:
+      - 实用 Helper:
           - 大纲: "mappings/useful_helpers/useful_helpers.md"
           - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
           - Eevee Helper: "mappings/useful_helpers/eevee.md"
           - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
           - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
+          - hELPER: "mappings/useful_helpers/hELPER.md"
       - Collab: "mappings/collab.md"
       - Code: "mappings/code.md"
       - 测图: "mappings/mod_test.md"
