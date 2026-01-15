@@ -1476,6 +1476,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何获取实体 ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何获取实体名字
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#xml-by" class="md-nav__link">
     <span class="md-ellipsis">
       砖瓦 XML 核对清单 by 底龙
@@ -2292,7 +2310,7 @@
             
   
   <span class="md-ellipsis">
-    常用 Helper
+    实用 Helper
     
   </span>
   
@@ -2303,7 +2321,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_14_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_14">
             <span class="md-nav__icon md-icon"></span>
-            常用 Helper
+            实用 Helper
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2407,6 +2425,28 @@
   
   <span class="md-ellipsis">
     bits & bolts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_helpers/hELPER/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    hELPER
     
   </span>
   
@@ -2815,6 +2855,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何获取实体 ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何获取实体名字
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#xml-by" class="md-nav__link">
     <span class="md-ellipsis">
       砖瓦 XML 核对清单 by 底龙
@@ -2997,7 +3055,7 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <div class="language-csharp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">data</span><span class="p">.</span><span class="n">Attr</span><span class="p">(</span><span class="s">&quot;spritePath&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;objects/BounceHelper/bounceMoveBlock&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p>所以如果我们要加贴图的话自己偷偷把属性加上就好了, 之后换贴图就跟普通的换法如出一辙了</p>
-<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3015,19 +3073,19 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <span class="normal">16</span>
 <span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="err">_edi</span><span class="kc">t</span><span class="err">orLayer</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">        </span><span class="err">_</span><span class="kc">fr</span><span class="err">omLayer</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;entities&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="err">_id</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span>
-<span class="w">        </span><span class="err">_</span><span class="kc">na</span><span class="err">me</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;BounceHelper/BounceMoveBlock&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="err">ac</span><span class="kc">t</span><span class="err">iva</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">Flag</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="err">direc</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;Right&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="err">heigh</span><span class="kc">t</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span>
-<span class="w">        </span><span class="err">o</span><span class="kc">ne</span><span class="err">Use</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">        </span><span class="err">speed</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span>
-<span class="w">        </span><span class="err">wid</span><span class="kc">t</span><span class="err">h</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span>
-<span class="w">        </span><span class="err">x</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">1384</span><span class="p">,</span>
-<span class="w">        </span><span class="err">y</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">336</span><span class="p">,</span>
-<span class="w">        </span><span class="err">spri</span><span class="kc">te</span><span class="err">Pa</span><span class="kc">t</span><span class="err">h=</span><span class="s2">&quot;objects/BounceHelper/bounceMoveBlock&quot;</span>
+<span class="w">        </span><span class="nv">_editorLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_fromLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;entities&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;BounceHelper/BounceMoveBlock&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">activationFlag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Right&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">oneUse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1384</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">336</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">spritePath</span><span class="o">=</span><span class="s2">&quot;objects/BounceHelper/bounceMoveBlock&quot;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
@@ -3036,6 +3094,13 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 所以一般都是写 <code>Strawberry</code> 就够了</p>
 <p><img 123_="123&quot;" alt="entity_type" src="../../../assets/mappings/Loenn/faq/entity_type.png" style="width: 1000px; title=" /></p>
 <p>如果信息刷屏了, 你可以在控制台输入 clear 来清除它们</p>
+<h2 id="id">如何获取实体 ID</h2>
+<p>属性面板上的数字就是</p>
+<p><img 123_="123&quot;" alt="entity_id" src="../../../assets/mappings/Loenn/faq/entity_id.png" style="width: 1000px; title=" /></p>
+<p><a id="enity-name"></a></p>
+<h2 id="_15">如何获取实体名字</h2>
+<p>属性面板上的名字就是</p>
+<p><img 123_="123&quot;" alt="entity_name" src="../../../assets/mappings/Loenn/faq/entity_name.png" style="width: 1000px; title=" /></p>
 <h2 id="xml-by">砖瓦 XML 核对清单 by 底龙</h2>
 <ol>
 <li>XML 是否应用进地图(Metadata 里是否已经设置好 XML), 前景砖(ForegroundTiles.xml)后景砖(BackgroundTiles.xml)是否对应</li>
