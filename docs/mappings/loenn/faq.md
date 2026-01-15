@@ -179,7 +179,7 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
 
 所以如果我们要加贴图的话自己偷偷把属性加上就好了, 之后换贴图就跟普通的换法如出一辙了
 
-```json
+```lua
 {
     {
         _editorLayer = 0,
@@ -208,6 +208,20 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
 ![entity_type](../../assets/mappings/Loenn/faq/entity_type.png){style="width: 1000px; title="123"}
 
 如果信息刷屏了, 你可以在控制台输入 clear 来清除它们
+
+## 如何获取实体 ID
+
+属性面板上的数字就是
+
+![entity_id](../../assets/mappings/Loenn/faq/entity_id.png){style="width: 1000px; title="123"}
+
+<a id="enity-name"></a>
+## 如何获取实体名字
+
+属性面板上的名字就是
+
+![entity_name](../../assets/mappings/Loenn/faq/entity_name.png){style="width: 1000px; title="123"}
+
 
 ## 砖瓦 XML 核对清单 by 底龙
 

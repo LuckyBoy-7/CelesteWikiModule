@@ -102,7 +102,7 @@ Eevee Helper 为我们提供了一系列实体, 我们可以用它们方便地�
 
 你可以观看[视频](https://www.bilibili.com/video/BV1Jk8Qz6EWC/){:target="_blank"}来感受该实体和各选项的作用
 
-* Whitelist: 与前面的白名单不同, 这里填的是对象的 ID, 也就是属性栏上面那串数字(因为 Global Modifier 是作用于对特定实体的, 所以填 Entity Type 没用)
+* Whitelist: 与前面的白名单不同, 这里填的是[实体 ID](../loenn/faq.md#id)(因为 Global Modifier 是作用于对特定实体的, 所以填 Entity Type 没用)
 * Frozen Update: 全局化实体是否能在 Frozen 状态下更新, 这个 Frozen 指的并不是冻结帧, 而是游戏定义的 Frozen 场景, 比如吃心的时候
 * Pause Update: 全局化实体是否能在 Pause 状态下更新, 一般指暂停界面
 * Transition Update: 全局化实体是否能在切板状态下更新
