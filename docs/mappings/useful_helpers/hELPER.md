@@ -24,6 +24,9 @@ hELPER 会找到你要替换对象使用的所有图片的公共路径, 并把�
 * ...
 * <font color==#00dd00>collectables/strawberry/Wiki/</font>wow/normal52.png`
 
+!!! 注意
+    如果路径前面加个 `$` 符号, 则表示这是个 `Sprites.xml` 里对应动画组的 ID, 比如 `$custom_booster` 表示用自定义的 ID `custom_booster` 生成新的动画来替代原来的, 这样我们就只用专注于 XML 怎么写, 而不用特别捣鼓路径了
+
 ### Target IDs
 
 事实上哪怕我们不填额外的东西, 把素材路径配置好, 把要改的实体用 Trigger 框上就已经可以改了

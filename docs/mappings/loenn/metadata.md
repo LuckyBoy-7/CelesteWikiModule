@@ -18,6 +18,9 @@
 * [[Celeste蔚蓝]作图教程第四章-背景, 元数据, 文本教程](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=149)
 * [官图元数据](https://github.com/EverestAPI/Resources/wiki/Vanilla-Metadata){:target="_blank"}
 
+由于官图的元数据是硬编码的(只作用于特定的 1a, 2a 之类的), 所以你会发现如果直接把官图地图粘出来改有些地方还是会有细微差别, 
+此时你可以把上面的官图元数据填到你对应地图的 `.meta.yaml` 里来达到和官图一样的效果(~~虽然官图里还有一大堆其他硬编码的东西啦~~)
+
 
 ## Helper 提供的额外元数据
 

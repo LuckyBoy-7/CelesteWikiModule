@@ -222,6 +222,15 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
 
 ![entity_name](../../assets/mappings/Loenn/faq/entity_name.png){style="width: 1000px; title="123"}
 
+<a id="map-sid"></a>
+## 如何获取地图对应的 SID
+
+SID, 即 a string ID of the area, 是一个区域的唯一标识符, 由于官图地图顺序固定, 所以可以直接通过数字找到对应的 area, 但是 Mod 图随开随关, 顺序可变, 所以我们需要 SID 来唯一标识一个地图, 
+即从 `Maps/` 文件夹开始到地图的路径, 比如我这里是 `Maps/Lucky_boy/0/FirstMap.bin`, 对应 SID 为 `Lucky_boy/0/FirstMap`,
+如果你感兴趣每个 area 具体都存了什么, 可以到 `Celeste/Saves/0.celeste` 存档文件中查看
+
+![map_sid](../../assets/mappings/Loenn/faq/map_sid.png){style="width: 1000px; title="123"}
+
 
 ## 砖瓦 XML 核对清单 by 底龙
 

@@ -39,14 +39,14 @@ Graphics/Atlases/</font></code> 里,
 
 通过代码手段将硬编码的路径导向自定义的路径:
 
-* 可以使用 [hELPER](../useful_helpers/hELPER.md) 的 Sprite Replace Trigger
 * 可以使用 [LocalizationHelper](https://gamebanana.com/mods/644851)([镜像](https://celeste.weg.fan/submissions/detail/488461972699636480/localizationhelper)): 不同语言下可以使用不同的替换方式, 在 `.json` 文件中配置
 
 ### 重新生成
 
 > 偷偷在你生成图片/动画对象后我把他删了换成自己的不就好了
 
-通过代码手段重新生成一次图片/动画: 可以使用 GameHelper 的 EntityRespriter 实体(稍微有点复杂)
+* 可以使用 [hELPER](../useful_helpers/hELPER.md) 的 Sprite Replace Trigger
+* 可以使用 GameHelper 的 EntityRespriter 实体(稍微有点复杂)
 
 ## 对于官图的 `Sprites.xml`
 

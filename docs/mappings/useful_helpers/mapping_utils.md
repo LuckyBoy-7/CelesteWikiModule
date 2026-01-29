@@ -1,14 +1,14 @@
+# [Mapping Utils](https://gamebanana.com/mods/454074)
+
 > 调试神器
 
 开启 Mod 后在游戏内按 `小键盘数字 3`(可在设置内更改) 打开面板, 点击/左右拖动可修改数值, 按 `TAB 键` 可以修改具体数值
 
-同时记得打开显示光标的设置, 按住左上角小箭头可拖动面板 
+同时记得打开显示光标的设置(可能需要重启), 按住左上角小箭头可拖动面板
 
 ![cursor_panel](../../assets/mappings/useful_helpers/mapping_utils/cursor_setting.png){style="width: 800px; title="123"}
 
-
 ## 主要功能
-
 
 ### Metadata
 
@@ -51,6 +51,17 @@
 
 飞天遁地
 
+### Particles
+
+![particles](../../assets/mappings/useful_helpers/mapping_utils/particles.png){style="width: 400px; title="123"}
+
+可以在这个面板方便的调试 particle 的各种属性, 这样后续在用一些 `ParticleEmitter` 之类的实体填属性的时候会方便一点
+
+### GC
+
+查看 GC 相关的信息, 但是这块不太懂(~~就先润了~~)
+
 ### Hooks
 
-如果你写了 [Code Mod](../code.md), 并且用了 il 钩子, 那么你可以用 Mapping Utils 这个功能来查看实际钩完后 il 指令长什么样, 不过还是推荐通过[打印](https://github.com/LozenChen/TAS-Helper/blob/ec8ec86bc110d1c5cd89dec7b01676514542c4e2/Source/Utils/HookHelper.cs#L447){:target="_blank"}来查看, 我已经碰到好几次神秘 bug 了(
+如果你写了 [Code Mod](../code.md), 并且用了 il 钩子, 那么你可以用 Mapping Utils 这个功能来查看实际钩完后 il 指令长什么样,
+不过还是推荐通过[打印](https://github.com/LozenChen/TAS-Helper/blob/ec8ec86bc110d1c5cd89dec7b01676514542c4e2/Source/Utils/HookHelper.cs#L447){:target="_blank"}来查看, 这样最保险

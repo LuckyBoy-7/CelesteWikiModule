@@ -9,7 +9,8 @@
 
 来做 coder 吧!
 
-## [Saplonily的代码教程(必看😋)](https://saplonily.top/celeste_mod_tutorial/){:target="_blank"}
-### [Saplonily的代码教程github](https://github.com/Saplonily/CelesteModTutorial){:target="_blank"}
+## [Saplonily 的代码教程(必看😋)](https://saplonily.top/celeste_modding_tutorial/code_modding/){:target="_blank"}([legacy](https://saplonily.top/celeste_mod_tutorial/){:target="_blank"})
 
-## [Everest Wiki的代码教程](https://github.com/EverestAPI/Resources/wiki/%5BGuide%5D-Getting-started-in-code-modding-from-0){:target="_blank"}
+[Saplonily 的代码教程 github](https://github.com/CelesteCNCoders/CelesteModdingTutorial){:target="_blank"}([legacy](https://github.com/Saplonily/CelesteModTutorial){:target="_blank"})
+
+## [Everest Wiki 的代码教程](https://github.com/EverestAPI/Resources/wiki/%5BGuide%5D-Getting-started-in-code-modding-from-0){:target="_blank"}

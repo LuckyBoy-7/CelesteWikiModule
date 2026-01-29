@@ -36,6 +36,7 @@ HairAttrWithDashes:
   - Dashes: 0
     Color: "44c5ff"
     Length: 6
+    Scale: "1, 0.25"
     SegmentAttrs:
       - Segment: 0
         Color: "63dbff"
@@ -59,6 +60,7 @@ HairAttrWithDashes:
   - Dashes: 1
     Length: 6
     Color: "ff87bf"
+    Scale: "1, 0.25"
     SegmentAttrs:
       - Segment: 0
         Color: "b21d38"
@@ -74,7 +76,7 @@ HairAttrWithDashes:
         Color: "e05671"
       - Segment: 6
         Color: "e05671"
-
+        
       - Segment: "Outline"
         Color: "ff0000"
       - Segment: "Flash"
@@ -82,6 +84,7 @@ HairAttrWithDashes:
   - Dashes: 2
     Length: 6
     Color: "b1ea38"
+    Scale: "1, 0.25"
     SegmentAttrs:
       - Segment: 0
         Color: "d221bf"
@@ -104,7 +107,6 @@ HairOrigin: 5, 5
 BangsOrigin: 5, 5
 HairFlash: true
 HairFloatingDashCount: 0
-
 ```
 
 ### HairAttrWithDashes
@@ -113,7 +115,7 @@ HairFloatingDashCount: 0
 
 * Color: 填十六进制 RGB
 * Length: 表明这个冲次数下头发应该有多少段
-* Scale: 表明头发的缩放, 官图是根据当前头发段在在所有头发段中的相对位置(即第几段)从 `0.25 ~ 0.75` 中插值出一个缩放, 所以我们可以改变这个值的范围比如填入 `0, 1`
+* Scale: 表明头发的缩放, 官图是根据当前头发段在在所有头发段中的相对位置(即第几段)从 `1 ~ 0.25` 中插值出一个缩放, 所以我们可以改变这个值的范围比如填入 `1.2, 0.2`
 
 如果冲刺数设置为 -1, 可以设置羽毛状态下的头发, 不过我们得把 evil 的头发先加回来
 
@@ -151,7 +153,7 @@ HairAttrWithDashes:
 ```
 
 * Color: 如果填入 16 进制 RGB 那就使用该颜色, 如果留空, 则显示上一级设置的颜色(也就是 **Dashes** 那一级), 如果填入 `orig`, 则表示使用原版游戏此时对应的颜色
-* Scale: 直接填入对应缩放即可
+* Scale: 直接填入对应缩放即可(但是你得先在 Dash 那一层级设置好缩放范围这里的设置才能覆盖生效)
 * Segment: 如果填入数字则表示对应段数, 如果填入特殊标识则表示当前冲次数下的对应状态(而不是对应某一段), 如
     * Trail: 表示当前冲次数下的冲刺尾迹部分设置
     * DashPtcl: 表示当前冲次数下的冲刺粒子部分设置

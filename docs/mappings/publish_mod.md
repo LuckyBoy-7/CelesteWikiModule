@@ -10,8 +10,12 @@
 ### 登陆
 
 #### 登陆失败
-登不上可以挂梯子或者尝试[替换Google CDN](https://www.bilibili.com/opus/959792914272092167){:target="_blank"}来连接
+登不上可以挂梯子或者尝试[替换 Google CDN](https://www.bilibili.com/opus/959792914272092167){:target="_blank"} 来连接
 
 #### 注册失败
 
 可以试试 QQ 邮箱, [参考](https://tieba.baidu.com/p/8879322824){:target="_blank"}, 我说 QQ 邮箱是对的😭
+
+
+!!! 抱抱
+    如果没什么人玩也不要灰心喵, 想想是宣传不够到位, 还是图的质量本身有所欠缺, 等以后有经验了再杀回来, 搓出更好的图😡! 不要忘了自己的初心鸭😭, 加油喵, heart ❤

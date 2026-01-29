@@ -58,3 +58,15 @@
 Type 和 Replace With 分别表示要被替换的实体 SID, 和要替换成的实体 SID, SID 就是实体面板上面红色框起来的部分
 
 而 Allow Preserving 简单来说就是你想挑个别属性换, 还是全换, 如果你想全换, 那么就不勾选, 它会打开左中的面板, 如果你想挑着换, 那就勾选, 它会打开左下面板, 你可以勾选 Replace XXX 来替换对应属性
+
+## [Font Loenn Plugin](https://gamebanana.com/tools/21571)
+
+你可能需要一个美化字体的插件让解包的体验更加舒畅, 因为更多时候解包是为了看有什么, 而不是具体哪个 Trigger 放在了哪里
+
+![font_loenn_plugin_bad_example](../../assets/mappings/Loenn/plugins/font_loenn_plugin_bad_example.png){style="width: 600px; title="123"}
+![font_loenn_plugin_example](../../assets/mappings/Loenn/plugins/font_loenn_plugin_example.png){style="width: 600px; title="123"}
+
+## [Flip Room](https://gamebanana.com/mods/553921)
+
+可以用来简单的翻转房间内的砖和实体
+

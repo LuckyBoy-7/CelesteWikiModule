@@ -177,11 +177,11 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 ### 怎么写音乐音效等
 
-详情见 [Audio](../audio.md)
+详情见 [Audio](../audio/audio.md)
 
 ### 怎么写过场动画等
 
-详情见 [LuaCutscene](../lua_cutscene.md)
+详情见 [LuaCutscene](../lua/lua_cutscene.md)
 
 ### 怎么写自定义 Entity 和 Trigger
 

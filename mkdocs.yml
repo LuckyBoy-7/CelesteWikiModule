@@ -97,7 +97,7 @@ nav:
           - 房间: "mappings/loenn/room.md"
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
           - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
-          - 常用插件: "mappings/loenn/plugins.md"
+          - 实用插件: "mappings/loenn/plugins.md"
       - 常用✌️😋👍: "mappings/useful_links.md"
       - 游戏崩溃问题 😭: "mappings/game_crashes.md"
       - 提问/自学 💪: "mappings/question_and_self_study.md"
@@ -106,7 +106,7 @@ nav:
           - 大纲: "mappings/xml/xml.md"
           - 砖 XML: "mappings/xml/tilesets.md"
           - 动画 XML: "mappings/xml/sprites_xml.md"
-          - Tile Sound Id: "mappings/xml/tile_sounds.md"
+          - 对话贴图 XML: "mappings/xml/portraits_xml.md"
       - Dialog: "mappings/dialog.md"
       - Camera: "mappings/camera.md"
       - Graphics:
@@ -123,8 +123,20 @@ nav:
                   - CharacterConfig: "mappings/graphics/SMHP_CharacterConfig.md"
                   - Trigger 使用部分: "mappings/graphics/SMHP_trigger.md"
           - 滤镜: "mappings/graphics/color_grading.md"
-      - Audio: "mappings/audio.md"
-      - Lua Cutscene: "mappings/lua_cutscene.md"
+      - Audio:
+          - 大纲: "mappings/audio/audio.md"
+          - Tile Sound Id: "mappings/audio/tile_sounds.md"
+      - Lua Cutscene:
+          - 大纲: "mappings/lua/lua_cutscene.md"
+          - 机制库: "mappings/lua/mechanism.md"
+          - 传送: "mappings/lua/teleport.md"
+          - 文本: "mappings/lua/text.md"
+          - 示例:
+              - 大纲: "mappings/lua/examples/intro.md"
+              - Journeys of a Bygone Wanderer: "mappings/lua/examples/journeys_of_a_bygone_wanderer.md"
+              - The Solar Express: "mappings/lua/examples/the_solar_express.md"
+              - Gallery Collab: "mappings/lua/examples/gallery.md"
+              - WELCOME TO MEGALOPHOBIA: "mappings/lua/examples/megalophobia.md"
       - 实用 Helper:
           - 大纲: "mappings/useful_helpers/useful_helpers.md"
           - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
@@ -132,6 +144,8 @@ nav:
           - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
           - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
           - hELPER: "mappings/useful_helpers/hELPER.md"
+#      - 别点:
+#          - 蔚蓝制图小测😱: "mappings/quiz.md"
       - Collab: "mappings/collab.md"
       - Code: "mappings/code.md"
       - 测图: "mappings/mod_test.md"
