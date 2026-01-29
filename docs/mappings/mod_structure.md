@@ -147,7 +147,7 @@
 
 ## Audio
 
-放音频资源的, [详情见](./audio.md)
+放音频资源的, [详情见](./audio/audio.md)
 
 ## Tutorials
 

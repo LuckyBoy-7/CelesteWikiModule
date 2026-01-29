@@ -24,16 +24,17 @@
 
 ### Audio
 * [官图 Audio Event ID 一览](https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump){:target="_blank"}
-* [砖块音效 Id 一览](./xml/tile_sounds.md)
+* [砖块音效 Id 一览](./audio/tile_sounds.md)
 
 ### Misc
 * [常用 Helper 文档](https://github.com/EverestAPI/Resources/wiki/Helper-Manuals){:target="_blank"}
 * [所有 Mod 的依赖关系](https://maddie480.ovh/celeste/mod_dependency_graph.yaml){:target="_blank"}
 
+<a id="tools"></a>
 ## 工具
 
 * [ZipsVerifier]()(群文件): 检查 `.zip` 文件是否损坏(放到 Mods 文件夹下使用)
-* [BinaryXML.v2]()(群文件): 将地图 `.bin` 文件转化为 `.xml` 格式, 将 `.bin` 文件拖入 `.exe` 即可
+* [BinaryXML.v2]()(群文件): 将地图 `.bin` 文件转化为 `.xml` 格式, 将 `.bin` 文件拖入 `.exe` 即可(你可能会在各种属性前看到各种奇奇怪怪的数字, 那是为了标注属性类型用的, 你可以忽略不看)
 * [Celeste Map Tree Viewer](https://maddie480.ovh/celeste/map-tree-viewer){:target="_blank"}: 将 map 的 `.bin` 转化为人类更易读的 `.json`
 * [Celeste Custom Map Idea Generator](https://perchance.org/9g0j9vtp81){:target="_blank"}: 制图灵感生成器, 随机选取实体/房间大小/房间形状/危险物/难度, 限定自己作图的范围, 以挖掘更多可能
 * [Celeste Map Prompt: Gameplay Style](https://perchance.org/f20z04yqdz){:target="_blank"}: GP 灵感生成器

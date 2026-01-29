@@ -158,7 +158,7 @@ ParticleModify:
 
 ### ColorGradingAfterColored
 
-简单来说原来的滤镜换算方式为先通过率静贴图做一个映射, 然后把映射后的颜色乘以原动画的底色(比如 player 底色一般为白色, player hair 底色就是 hair 本身对应的颜色),
+简单来说原来的滤镜换算方式为先通过滤镜贴图做一个映射, 然后把映射后的颜色乘以原动画的底色(比如 player 底色一般为白色, player hair 底色就是 hair 本身对应的颜色),
 这导致如果你的滤镜贴图把原颜色转化为了灰色, 会使得角色只有身体变黑了, 但是头发还是有颜色, `ColorGradingAfterColored` 这个选项就是用来解决这个问题的, 设置为 `true` 后,
 计算方式就会变为先乘上底色再做映射
 

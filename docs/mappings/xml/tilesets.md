@@ -67,7 +67,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 * `tiles`: 对应素材的哪些单元(一个单元占`8px * 8px`的大小并且坐标从左上(0, 0)位置开始算, (1, 0)表示第二列第一行对应的单元格, 是的没错, 从 0 开始, 从列开始算!)  
 * `ignores`: 需要忽略的 tileset 对应的 id, 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` (常用于制作 tile 分层的效果, 让画面的层次更丰富)
 * `copy`: 需要拷贝配置(即内部的`set`节点)的 tileset 对应的 id, 这样我们就可以只写一个 template(模板) 然后复用了, 当然我们可以继续写`set`节点来覆盖拷贝过来的一部分配置  
-* `sound`: Everest 添加的额外配置, 表示玩家踩上去什么声音, 写在`set`节点里, 如`<set ... sound="1"/>`, 具体数字对应的声音可以看[对照表](./tile_sounds.md)
+* `sound`: Everest 添加的额外配置, 表示玩家踩上去什么声音, 写在`set`节点里, 如`<set ... sound="1"/>`, 具体数字对应的声音可以看[对照表](../audio/tile_sounds.md)
 
 
 ```xml title="Celeste\Content\Graphics\ForegroundTiles.xml"

@@ -22,6 +22,11 @@
 一开始皮肤 Mod 还没有出现的时候自然只能暴力替换, 可以参考 [Niko 皮肤(latest version-Solo 版本)](https://gamebanana.com/mods/251814), 但是皮肤切换什么的就比较麻烦了, 而且能实现的功能有限,
 后来有了 [Skin Mod Helper](SMH.md), 提供了基础的皮肤切换/修改冲刺颜色的功能, 再到了后来就有了更高级的 [Skin Mod Helper Plus](SMHP.md)
 
+
+## 皮肤绘制方面
+
+* [蔚蓝皮肤制作的一些指导 by 文顂](https://www.bilibili.com/video/BV1Axr9B8ECE/)
+
 ## FAQ
 
 ### 如何更改刘海随动画变化时的朝向以及头发的偏移
