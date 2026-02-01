@@ -76,7 +76,8 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在[所有Helper及�
 * 搜搜聊天记录
 * 凭直觉试试, 到游戏里看看变化
 * 鼠标移到属性上可能会显示详细的描述(俗称注释)
-* 到香蕉网上搜对应的 helper, 运气好的话, 它的界面上会提供 wiki 链接, 里面会有更加详细的描述([所有Helper及其对应实体](https://maddie480.ovh/celeste/custom-entity-catalog){:target="_blank"})
+* 到香蕉网上搜对应的 helper, 运气好的话, 它的界面上会提供 wiki 链接, 里面会有更加详细的描述([所有Helper及其对应实体](https://maddie480.ovh/celeste/custom-entity-catalog){:target="_
+  blank"})
 * 如果你会 code, 有时直接看源码也不失为一种好办法(不是
 * 还不行就请教群友
 
@@ -124,7 +125,7 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在[所有Helper及�
 
 我们有时能看到群友在互相转发如下所示的东西
 
-```ini
+```lua
 {
     {
         _editorLayer = 0,
@@ -139,20 +140,20 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在[所有Helper及�
 }
 ```
 
-这些其实就是 Loenn 里各种实体, 触发器, 背景的数据, 对着选中实体复制一下粘到 `.txt` 里你就懂了, 本质上和你打开属性面板看到的东西是一样的(比如上面这个就是 `Refill` 实体的属性数据), 
+这些其实就是 Loenn 里各种实体, 触发器, 背景的数据, 对着选中实体复制一下粘到 `.txt` 里你就懂了, 本质上和你打开属性面板看到的东西是一样的(比如上面这个就是 `Refill` 实体的属性数据),
 所以你经常能看到群友在转发它们, 使得这些实体可以在大家的 loenn 里相互传播
-
 
 ### 添加隐藏数据😱
 
-在此基础上 mapper 们甚至还整出了为其添加新的属性的骚操作(原理就是有的 Helper 的配置文件缺失了部分属性, 但是在代码中仍然有用到那个属性(如果找到了属性就用属性的值, 没找到就用默认值)), 所以如果你偷偷在数据后面加对应的属性说不定可以实现一些"隐藏功能", 至于为什么 Helper 作者把属性删了, 
+在此基础上 mapper 们甚至还整出了为其添加新的属性的骚操作(原理就是有的 Helper 的配置文件缺失了部分属性, 但是在代码中仍然有用到那个属性(如果找到了属性就用属性的值,
+没找到就用默认值)), 所以如果你偷偷在数据后面加对应的属性说不定可以实现一些"隐藏功能", 至于为什么 Helper 作者把属性删了,
 估计是不小心的, 也有可能是觉得对应属性没什么人用, 加了容易增加实体学习成本之类的
 
 #### 举例
 
 Bounce Helper 的 Bounce Move Block 属性长这样, 你想改它贴图但是发现好像改不了
 
-```json
+```lua
 {
     {
         _editorLayer = 0,
@@ -171,7 +172,8 @@ Bounce Helper 的 Bounce Move Block 属性长这样, 你想改它贴图但是发
 }
 ```
 
-在翻看[源码](https://github.com/FlynnSC/BounceHelper/blob/d52a0b2b97e1014fc132110373492694fdf27f1a/Source/Entities/BounceMoveBlock.cs#L280){:target="_blank"}后你会发现, 他使用到了 `spritePath` 这个属性, 默认值为 `objects/BounceHelper/bounceMoveBlock`
+在翻看[源码](https://github.com/FlynnSC/BounceHelper/blob/d52a0b2b97e1014fc132110373492694fdf27f1a/Source/Entities/BounceMoveBlock.cs#L280){:target="_blank"}后你会发现, 他使用到了
+`spritePath` 这个属性, 默认值为 `objects/BounceHelper/bounceMoveBlock`
 
 ```csharp
 data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
@@ -194,11 +196,10 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
         width = 48,
         x = 1384,
         y = 336,
-        spritePath="objects/BounceHelper/bounceMoveBlock"
+        spritePath = "objects/BounceHelper/bounceMoveBlock"
     }
 }
 ```
-
 
 ## 如何获取实体 Type 名
 
@@ -216,6 +217,7 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
 ![entity_id](../../assets/mappings/Loenn/faq/entity_id.png){style="width: 1000px; title="123"}
 
 <a id="enity-name"></a>
+
 ## 如何获取实体名字
 
 属性面板上的名字就是
@@ -223,14 +225,46 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
 ![entity_name](../../assets/mappings/Loenn/faq/entity_name.png){style="width: 1000px; title="123"}
 
 <a id="map-sid"></a>
+
 ## 如何获取地图对应的 SID
 
-SID, 即 a string ID of the area, 是一个区域的唯一标识符, 由于官图地图顺序固定, 所以可以直接通过数字找到对应的 area, 但是 Mod 图随开随关, 顺序可变, 所以我们需要 SID 来唯一标识一个地图, 
+SID, 即 a string ID of the area, 是一个区域的唯一标识符, 由于官图地图顺序固定, 所以可以直接通过数字找到对应的 area, 但是 Mod 图随开随关, 顺序可变, 所以我们需要 SID 来唯一标识一个地图,
 即从 `Maps/` 文件夹开始到地图的路径, 比如我这里是 `Maps/Lucky_boy/0/FirstMap.bin`, 对应 SID 为 `Lucky_boy/0/FirstMap`,
 如果你感兴趣每个 area 具体都存了什么, 可以到 `Celeste/Saves/0.celeste` 存档文件中查看
 
 ![map_sid](../../assets/mappings/Loenn/faq/map_sid.png){style="width: 1000px; title="123"}
 
+<a id="coordinates"></a>
+
+## 如何获取各种坐标信息
+
+当然在讲坐标之前你得先知道蔚蓝的坐标系是 x 轴朝右, y 轴朝下的, 所以 y 增大视觉上反而是在往下走, y 减小视觉上反而是在往上走, 就像这样
+
+![coordinates_example](../../assets/mappings/Loenn/faq/coordinates_example.png){style="width: 1000px; title="123"}
+
+按下波浪键 `~` 打开控制台, 左上角的信息面板里会显示各种坐标信息
+
+![coordinates](../../assets/mappings/Loenn/faq/coordinates.png){style="width: 1000px; title="123"}
+
+这里有五种坐标, 分别为:
+
+* screen: 屏幕坐标, 表示当前鼠标位置(即黄色十字光标位置)离屏幕左上角的相对距离
+* world: 世界坐标, 表示当前鼠标位置离世界原点坐标的相对距离(世界原点是游戏中的一个虚拟坐标概念, 游戏总需要一个原点来方便定位)
+* level: 房间坐标, 表示当前鼠标位置离当前房间左上角坐标的相对距离
+* level, /8: 表示 level 的值整除 8
+* level, snap: 表示 level 的值整除 8 再乘 8(即红色十字光标离房间左上角的相对距离)
+
+所以 screen, world 和 level 是比较重要的信息, 常常在各种传送, 移动函数中被使用, 而后两个只是帮你省去了运算过程
+
+**一步到位获取玩家位置(需要启用 CelesteTAS):**
+
+在游戏里双击 `Ctrl` 打开 TAS 信息面板, 第一行的 `Pos` 属性对应的就是玩家的世界坐标
+
+
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>当然你也可以按住 `Ctrl` 再点击对应实体然后在信息面板里找到对应位置信息(会在对应位置处显示一个小蓝点), 只不过 player 的信息比较重要所以 TAS 就默认把它显示出来了</p>
+</div>
 
 ## 砖瓦 XML 核对清单 by 底龙
 

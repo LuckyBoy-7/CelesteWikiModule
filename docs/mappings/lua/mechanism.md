@@ -37,15 +37,12 @@ end
 
 ```
 
-### 使用
-
-[//]: # (todo: 讲解往场景中添加实体, 实体中添加 Coroutine, 往 Coroutine 里添加协程函数)
-由于
 
 ## ForceCameraUpdate
 
-由于 `disableMovement` 本质上是将玩家的状态设置为 `StDummy`, 这个时候摄像机不会自动更新位置(只能通过在 lua 代码中手动更改相机, 或者调用 `zoom` 等函数),
-所以如果你需要将玩家的相机强制设置为自动跟随, 使其受 `Camera Target Trigger` 等相机 Trigger 的作用, 你需要将该属性设置为 true, 即 `player.ForceCameraUpdate = true`
+使用 `disableMovement` 禁用移动时, 本质上是将玩家切换到了 `StDummy` 状态, 这会同步关闭 `player.ForceCameraUpdate`, 导致相机无法自动更新位置(因为大多数的剧情都要手动控制相机, 所以如果不禁用相机自动更新会导致这俩逻辑打架)
+
+如果你的场景不需要通过 Lua 脚本手动控制相机位移和缩放, 而是希望相机继续维持常规的自动跟随逻辑(受各种相机 Trigger 的作用), 那么将该属性设置为 `true` 即可:
 
 ```lua
 function onBegin()

@@ -129,6 +129,7 @@ nav:
       - Lua Cutscene:
           - 大纲: "mappings/lua/lua_cutscene.md"
           - 机制库: "mappings/lua/mechanism.md"
+          - Lua Cutscenes 词典: "mappings/lua/lua_cutscene_handbook.md"
           - 传送: "mappings/lua/teleport.md"
           - 文本: "mappings/lua/text.md"
           - 示例:
@@ -144,8 +145,8 @@ nav:
           - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
           - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
           - hELPER: "mappings/useful_helpers/hELPER.md"
-#      - 别点:
-#          - 蔚蓝制图小测😱: "mappings/quiz.md"
+      - 别点:
+          - 蔚蓝制图小测😱: "mappings/quiz.md"
       - Collab: "mappings/collab.md"
       - Code: "mappings/code.md"
       - 测图: "mappings/mod_test.md"
