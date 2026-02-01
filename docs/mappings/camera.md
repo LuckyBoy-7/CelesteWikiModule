@@ -1,4 +1,4 @@
-* [冰激凌的镜头教程](https://wiki.biligame.com/celeste/%E9%95%9C%E5%A4%B4){:target="_blank"}, 搬运自[蔚蓝 Celeste Mod 地图镜头优化教程](https://www.bilibili.com/read/cv21284247){:target="_blank"}
+* [冰激凌的镜头教程](https://wiki.biligame.com/celeste/%E9%95%9C%E5%A4%B4){:target="_blank"}
 * [bits-像素的镜头教程](../assets/mappings/camera/镜头教程-bits.docx)
 * [星夜祈梦的镜头教程](https://www.bilibili.com/video/av113689092953564){:target="_blank"}
 * [Everest Wiki 的镜头教程](https://github.com/EverestAPI/Resources/wiki/Camera){:target="_blank"}
@@ -13,9 +13,11 @@
 
 ![custom_playback_watchtower](../assets/mappings/camera/custom_playback_watchtower.png){style="width: 700px; title="123"}
 
+<a id="excamera"></a>
+
 ### 使用拓展镜头
 
-首先下载并启用[拓展镜头](https://gamebanana.com/mods/548940), 在自己地图旁边创建一个同名的 `.meta.yaml` 元数据文件, 并填入以下信息
+首先下载并启用[拓展镜头(Extended Camera Dynamics)](https://gamebanana.com/mods/548940), 在自己地图旁边创建一个同名的 `.meta.yaml` 元数据文件, 并填入以下信息
 
 ```yaml title="Mods/LuckyTestMap/Maps/Lucky_boy/0/FirstMap.meta.yaml"
 ExCameraMetaData:

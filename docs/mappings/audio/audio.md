@@ -21,11 +21,120 @@
 * [FMOD 下载](https://www.fmod.com/download){:target="_blank"}
 * [FMOD/Celeste Documentation and EULA](https://www.fmod.com/docs/2.03/studio/appendix-a-celeste.html){:target="_blank"}
 
-> fmod 之所以叫中间件是因为制作者可以提前在 fmod 中做好一些预设/效果, 用各种参数控制各种效果的变化/切换, 这样之后在游戏里就可以通过简单的设置来达到比较好的效果,
-> 而无需设计一个非常复杂的音频播放系统, 换句话说如果你只需要放个音效, 改改音量, 改改音高什么的则完全不需要 fmod, 如果你要做各种过渡,
-> 各种细微的变化, 那么用 fmod 能省不少事(~~应该吧~~)
+
+
+## 常见参数
+
+fmod 之所以叫中间件是因为制作者可以提前在 fmod 中做好一些预设/效果, 用各种参数控制各种效果的变化/切换, 这样之后在游戏里就可以通过简单的设置来达到比较好的效果,
+而无需设计一个非常复杂的音频播放系统, 换句话说如果你只需要放个音效, 改改音量, 改改音高什么的则完全不需要 fmod, 如果你要做各种过渡,
+各种细微的变化, 那么用 fmod 能省不少事
+
+所以你可能意识到了下面要介绍的参数本质上都是一样的, 只是官方以不同的方式使用了他们, 或者说: 以不同的方式在 fmod 中作了配置
+
+<a id="fade"></a>
+
+### fade
+
+表示背景音乐的音量(当然如果你没有给对应的 `event` 添加 `fade` 参数, 那么这个参数自然也影响不到音乐, 官方的音乐同理)
+
+例如
+
+```lua
+local Audio = require("#Celeste.Audio")
+
+function onBegin()
+    disableMovement()
+
+    playMusic("event:/music/lvl6/main")
+
+    wait(3)
+    setFade(0)
+    wait(5)
+    setFade(1)
+    wait(3)
+
+    enableMovement()
+end
+
+function setFade(fade)
+    Audio.SetMusicParam("fade", fade)
+end
+
+```
+<div class="admonition info">
+    <p class="admonition-title">提示</p>
+    <p>你可以模仿这个例子去设置任意的自定义参数, Lua Cutscenes 只是给你提供了<a href="https://github.com/Cruor/LuaCutscenes/blob/master/LuaCutscenes/Assets/LuaCutscenes/helper_functions.lua" target="_blank">常用的函数</a>, 但你能做的更多</p>
+</div>
+
+
+
+<a id="progress"></a>
+
+### progress
+
+主要用于 8a 高潮段中的递进效果
+
+> 如果你感兴趣的话可以在 `fmod` 中搜索 `progress` 参数具体被哪些 `event` 使用了
+
+例如
+
+```lua
+function onBegin()
+    disableMovement()
+    playMusic("event:/music/lvl9/main")
+    wait(5)
+
+    jump()
+    setMusicProgression(2)
+    wait(5)
+
+    jump()
+    setMusicProgression(3)
+    wait(5)
+
+    jump()
+    setMusicProgression(4)
+    enableMovement()
+end
+
+```
+
+<a id="layer"></a>
+
+### layer
+
+官方会在有些 `event` 里放很多个音轨, 并用 `layer1`, `layer2`, `layer3`, `...` 等参数来分别控制他们的音量 
+
+例如
+
+```lua
+function onBegin()
+    disableMovement()
+
+    playMusic("event:/music/lvl6/main")
+
+    -- 设置 layer1 参数为 0
+    setMusicLayer(1, 0)
+    setMusicLayer(2, 0)
+    setMusicLayer(3, 0)
+    wait(3)
+    -- 设置 layer1 参数为 1
+    setMusicLayer(1, 1)
+    wait(3)
+    setMusicLayer(2, 1)
+    wait(3)
+    setMusicLayer(3, 1)
+    wait(3)
+
+    enableMovement()
+end
+```
+
+
 
 ## FAQ
+
+<a id="postcard"></a>
 
 ### 如何自定义明信片的音效
 
@@ -41,7 +150,7 @@
 * event:/ui/main/postcard_ch3_in
 * event:/ui/main/postcard_csides_in
 
-所以聪明的你已经猜到要怎么做了吧, 在 fmod 里创建一个类似格式的 event, 然后把数字改成对应的字符串, 比如像这样: event:/ui/main/postcard_ch{自己定义的字符串}_in, 之后再 loenn
+所以聪明的你已经猜到要怎么做了吧, 在 fmod 里创建一个类似格式的 event, 然后把数字改成对应的字符串, 比如像这样: `event:/ui/main/postcard_ch{自己定义的字符串}_in`, 之后在 loenn
 里填上大括号里的内容就行了,
 当然为了防止跟别人撞名字名字还得取长一点, 手段跟套文件夹大同小异, ~~不过改明信片音效的人真的很少~~
 
@@ -101,6 +210,7 @@
 如果你研究了一下 fmod 你可能已经发现了, 游戏通过设置 `dialogue_portrait` 参数为各种正数以达到使用不同音频的效果, 而这个数字则是由下面这几个设置决定的
 
 ```xml
+
 <sfxs>
     <normal index="1"/>
     <laugh index="2"/>
@@ -108,7 +218,7 @@
 </sfxs>
 ```
 
-换句话说, 我们在 dialog 里使用 `[granny normal]` 来访问到 granny 的音频 `event:/char/dialogue/granny`, 游戏通过 normal 找到其对应的索引 `1`, 
+换句话说, 我们在 dialog 里使用 `[granny normal]` 来访问到 granny 的音频 `event:/char/dialogue/granny`, 游戏通过 normal 找到其对应的索引 `1`,
 并将 fmod 中的 `dialogue_portrait` 参数设置为 1, 这样 fmod 在播放的时候就会通过对应过渡自动跳到对应片段(顺带一提右边还有注释可以看)
 
 ![postcard](../../assets/mappings/audio/speak/portrait_speak_transition.png){style="width: 1000px;"}

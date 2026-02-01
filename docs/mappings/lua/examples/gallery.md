@@ -3,7 +3,7 @@
 * [【蔚蓝/Celeste】画游心门 画界·万花筒 金草莓](https://www.bilibili.com/video/BV1bttheAEZ6/)
 * [地图](https://gamebanana.com/mods/494348)
 
-## [心门 f1 到 f2 衔接](https://www.bilibili.com/video/BV1bttheAEZ6/?t=812)
+## [心门 f2 到 f1 衔接](https://www.bilibili.com/video/BV1bttheAEZ6/?t=812)
 
 房间名: GCHeartSide_e5_intro
 

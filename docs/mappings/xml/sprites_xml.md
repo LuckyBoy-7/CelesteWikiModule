@@ -77,6 +77,8 @@
 
 ![booster_pop](../../assets/mappings/xml/sprites_xml/booster_animation_statemachine.png){style="width: 800px;}
 
+<a id="xml"></a>
+
 ## Sprites.xml
 
 `Sprites.xml`是蔚蓝用来配置动画和动画状态机的配置文件
