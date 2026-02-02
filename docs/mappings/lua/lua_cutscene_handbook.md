@@ -8,12 +8,15 @@
 Lua Cutscenes 是一个十分有用的 helper, 让我们能够便捷地通过编写 lua 脚本在 Celeste 中实现剧情演出, 或者实现其他你能想到的功能, 本词典旨在收录常用 lua
 cutscenes 函数语句并详细说明其用法, 方便 mapper 查阅和学习使用
 
-关于 Lua Cutscenes 的基础使用方法和 lua 语言基础知识,
-推荐学习 [Saplonily 的 LuaCutscenes 教程](https://saplonily.top/celeste_modding_tutorial/code_modding/extra/lua_cutscene/begin/), Lua剧情简易教程(by
-motonine)(群文件), [w3cschool 的 lua 语言教程](https://www.w3cschool.cn/lua/)
+本词典参考了 
 
-本词典参考了 [Saplonily 的 LuaCutscenes 教程](https://saplonily.top/celeste_modding_tutorial/code_modding/extra/lua_cutscene/begin/), [Lua Cutscenes文档](https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html),
-从 0 开始的 lua 入门教程 by Gamation(群文件), Cutscene FAQ, [w3cschool 的 lua 语言教程](https://www.w3cschool.cn/lua/), 非常感谢以上教程对本词典的帮助
+* [Saplonily 的 LuaCutscenes 教程](https://saplonily.top/celeste_modding_tutorial/code_modding/extra/lua_cutscene/begin/)
+* [Lua Cutscenes 文档](https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html)
+* Lua 剧情简易教程(by motonine)(群文件)
+* 从 0 开始的 lua 入门教程 by Gamation(群文件)
+* [w3cschool 的 lua 语言教程](https://www.w3cschool.cn/lua/)
+
+非常感谢以上教程对本词典的帮助, 也推荐大家从中学习
 
 ## 1. 基础功能
 

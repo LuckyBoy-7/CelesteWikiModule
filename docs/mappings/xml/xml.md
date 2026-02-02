@@ -19,7 +19,7 @@
 
 * SpritesGui.xml
 
-* ### Portraits.xml
+* [Portraits.xml](portraits_xml.md)
     * [by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Portraits){:target="_blank"}
     * [[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)](https://www.bilibili.com/video/BV1cP4y1m7B2)
     * [素材替换](../graphics/replace_assets.md)

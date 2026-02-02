@@ -6,7 +6,7 @@
 
 ## 单选题(总分 100 ![strawberry](../assets/mappings/quiz/1/strawberry.png){style="width: 40px; image-rendering: pixelated; vertical-align: middle;"}, 一题 5 ![strawberry](../assets/mappings/quiz/1/strawberry.png){style="width: 40px; image-rendering: pixelated; vertical-align: middle;"})
 
-### 1. 使用 Bird Path 时, 我们需要额外小心放置的节点数量, 算上头节点跟子节点, 总共需要多少个游戏才不会崩溃?
+### 1. 使用 `Bird Path` 时, 我们需要额外小心放置的节点数量, 算上头节点跟子节点, 总共需要多少个游戏才不会崩溃?
 
 <table>
 <tr>
@@ -28,7 +28,7 @@
 </tr>
 </table>
 
-### 3. 当你放置了红绿灯 A, 并在它的上面叠了一个红绿灯 B, 你在他俩上面放了一个刺, 刺会吸附到?
+### 3. 当你放置了`红绿灯 A`, 并在它的上面叠了一个`红绿灯 B`, 你在他俩上面放了一个刺, 刺会吸附到?
 
 <table>
 <tr>
@@ -39,7 +39,7 @@
 </tr>
 </table>
 
-### 4. 当使用 parallax 背景并设置了 flag 和 fade In, 开启 flag 后背景会淡入, 但如果此时关闭了 flag 会发生?
+### 4. 当使用 `parallax` 背景并设置了 `flag` 和 `fade In`, 开启 `flag` 后背景会淡入, 但如果此时关闭了 `flag` 会发生?
 
 <table>
 <tr>
@@ -61,7 +61,7 @@
 </tr>
 </table>
 
-### 6. 中华古诗词是中国优秀传统文化之一, 在优质国产地图《万家灯火》中存在以下贴图元素, 呈现了诗句: “奔流到海不复回”, 但图示 decal 摆放并不规范, 请问应该按照以下哪个 loenn 快捷键顺序调整 decal 位置, 使其合乎中国传统诗句的阅读顺序?
+### 6. 中华古诗词是中国优秀传统文化之一, 在优质国产地图《万家灯火》中存在以下贴图元素, 呈现了诗句: “奔流到海不复回”, 但图示 `decal` 摆放并不规范, 请问应该按照以下哪个 `loenn` 快捷键顺序调整 `decal` 位置, 使其合乎中国传统诗句的阅读顺序?
 
 <figure markdown>
   ![decal_wrong](../assets/mappings/quiz/1/decal_wrong.png){style="width: 300px; image-rendering: pixelated; title=123"}
@@ -77,7 +77,7 @@
 </tr>
 </table>
 
-### 7. 我在 Loenn 中放置了一个实体并保存了, 但是游戏中并没有出现我的实体, 原因几乎不可能是?
+### 7. 我在 `Loenn` 中放置了一个实体并保存了, 但是游戏中并没有出现我的实体, 原因几乎不可能是?
 
 <table>
 <tr>
@@ -92,7 +92,7 @@
 </tr>
 </table>
 
-### 8. 在 Loenn 中找不到对应 Helper 实体的原因几乎不可能是?
+### 8. 在 `Loenn` 中找不到对应 `Helper` 实体的原因几乎不可能是?
 
 <table>
 <tr>
@@ -105,7 +105,7 @@
 </tr>
 </table>
 
-### 9. 在打包完 Mod 准备发布后, 别人发现游戏里找不到你的图的原因几乎不可能是?
+### 9. 在打包完 `Mod` 准备发布后, 别人发现游戏里找不到你的图的原因几乎不可能是?
 
 <table>
 <tr>
@@ -129,7 +129,31 @@
 <td>D. 没更新 Everest, 老旧的 bug</td>
 <td>E. 实体使用方式错误</td>
 <td>F. Mapper play 的一环</td>
-<td>G. 我编不下去了</td>
+<td>G. 加拿大人往你的电脑里安装了大炮!</td>
+</tr>
+</table>
+
+### 9. 我们常常在蔚蓝音乐相关的知识中听说过 `layer` 这种概念, 请问在下列房间选项中, `Music Layer` 的含义是什么?
+
+![music_layer](../assets/mappings/quiz/1/music_layer.png){style="width: 900px;"}
+
+<table>
+<tr>
+<td>A. 是否禁用或启用对应的音轨</td>
+<td>B. 是否将 fmod 里对应 event 的 layer 参数设置为 0 或 1</td>
+<td>C. 是否将对应的音轨的音量设置为 0 或 1</td>
+<td>D. 是否禁用或启用 fmod 里对应 event 的 layer 参数</td>
+</tr>
+</table>
+
+### 10.我们常常使用 `changeRespawnTrigger` 来更改玩家的复活位置, 防止玩家在通关当前房间后不小心死亡导致重新打, 那么它的作用是?
+
+<table>
+<tr>
+<td>A. 将玩家的复活位置设置到节点位置</td>
+<td>B. 将玩家的复活位置设置到离节点最近的重生点位置</td>
+<td>C. 将玩家的复活位置设置到离节点最远的重生点位置</td>
+<td>D. 将玩家的复活位置设置到节点覆盖的重生点对应的位置, 如果节点位置没有重生点, 则不设置复活位置</td>
 </tr>
 </table>
 
