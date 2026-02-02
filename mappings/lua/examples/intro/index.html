@@ -2086,6 +2086,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lua_cutscene_handbook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Cutscenes 词典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../teleport/" class="md-nav__link">
         
   
@@ -2139,10 +2161,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_13_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_13_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6_13_5" id="__nav_6_13_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_13_6" id="__nav_6_13_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2154,8 +2176,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_13_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_13_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_13_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_13_6">
             <span class="md-nav__icon md-icon"></span>
             示例
           </label>
@@ -2676,6 +2698,15 @@
   <a href="#_35" class="md-nav__link">
     <span class="md-ellipsis">
       有选择的对话
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      连续对话
     </span>
   </a>
   
@@ -3593,6 +3624,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      连续对话
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3862,7 +3902,8 @@ A: 在 <code>Map -&gt; Stylegrounds</code> 里设置对应的 Logo, 并使用 <c
 <h4 id="_24">使用蒙版</h4>
 <ul>
 <li>B: 比如烈冕号这里的裂隙前的粒子特效, 本质上是黑洞改了个色然后蒙上一层 <code>StylegroundMask</code>, 参考<a href="https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=822">视频链接</a></li>
-<li>C: 使用 <code>PrismaticHelper/StylegroundsPanel</code>, 使用其他房间的背景并以自身作为蒙版, 不过体感上跟用 <code>StylegroundMask</code> 可能差不多, 这个在背景多起来后可能会方便点, 参考<a href="https://www.bilibili.com/video/BV1bttheAEZ6/?t=821">视频链接</a></li>
+<li>C: 使用 <code>PrismaticHelper/StylegroundsPanel</code>, 使用其他房间的背景并以自身作为蒙版, 不过体感上跟用 <code>StylegroundMask</code> 可能差不多, 这个在背景多起来后可能会方便点,
+  参考<a href="https://www.bilibili.com/video/BV1bttheAEZ6/?t=821">视频链接</a></li>
 </ul>
 <p>使用蒙版的方式非常的简单啊, 给你想加蒙版的 <code>Styleground</code> 加上对应 tag <code>mask_{xxx}</code>, 之后你在房间里放一个 <code>StyleMaskHelper/StylegroundMask</code>,
 在里面 tag 属性里填上 <code>xxx</code> 即可, 还可以用 flag 控制该实体的显隐(顺带一提他的 fade 取的位置是根据相机位置来的)</p>
@@ -3995,7 +4036,8 @@ A: 在 <code>Map -&gt; Stylegrounds</code> 里设置对应的 Logo, 并使用 <c
 
 </details>
 
-<p>再看一个烈冕号的<a href="https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=115" target="_blank">例子</a>或者<a href="https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=709" target="_blank">例子</a>或者<a href="https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1049" target="_blank">例子</a>, 这是
+<p>再看一个烈冕号的<a href="https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=115" target="_blank">例子</a>或者<a href="https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=709">例子</a>{:target="_blank"
+}或者<a href="https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1049" target="_blank">例子</a>, 这是
 choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前需要对话过对话 A, 我们就得写一些 if else(当然 choice 本身是很朴素的, 关键是我们代码怎么写能让它实现更丰富的效果)</p>
 <details>
 <summary>conductorConversation.lua</summary>
@@ -4091,8 +4133,9 @@ choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前�
 
 <p>所以为了统一这些用法, 简化逻辑, 我写了一个辅助类来帮大家方便的添加这些选项(vibe coding😋)</p>
 <details>
-<summary>dialogue_manager.lua</summary>
-<div class="language-lua highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Mods/LuckyTestMap/Cutscenes/LuckyHelper/dialogue_manager.lua</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<summary>dialog_choice_helper.lua</summary>
+
+<div class="language-lua highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Mods/LuckyTestMap/Cutscenes/LuckyHelper/dialog_choice_helper.lua</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
 <span class="normal">  2</span>
 <span class="normal">  3</span>
 <span class="normal">  4</span>
@@ -4198,60 +4241,59 @@ choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前�
 <span class="normal">104</span>
 <span class="normal">105</span>
 <span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">-- 对话选项类</span>
-<span class="nv">DialogOption</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="normal">107</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">-- 对话选项类</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">DialogOption</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
 <span class="nv">DialogOption</span><span class="p">.</span><span class="py">__index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">DialogOption</span>
 
 <span class="kr">function</span><span class="w"> </span><span class="nc">DialogOption</span><span class="p">:</span><span class="nf">new</span><span class="p">(</span><span class="nv">askString</span><span class="p">,</span><span class="w"> </span><span class="nv">sayString</span><span class="p">,</span><span class="w"> </span><span class="nv">prerequisites</span><span class="p">,</span><span class="w"> </span><span class="nv">alwaysAlive</span><span class="p">,</span><span class="w"> </span><span class="nv">callback</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="nv">ask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">askString</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 问的字符串</span>
-<span class="nv">say</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">sayString</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 回答的字符串</span>
-<span class="nv">prerequisites</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">prerequisites</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="c1">-- 前置条件table（flag列表）</span>
-<span class="nv">alwaysAlive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">alwaysAlive</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 表示是否在任意时候都显示(当然前置条件得先满足)</span>
-<span class="nv">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">callback</span><span class="w"> </span><span class="c1">-- 选择对话时调用的函数</span>
-<span class="p">}</span>
-<span class="nb">setmetatable</span><span class="p">(</span><span class="nv">obj</span><span class="p">,</span><span class="w"> </span><span class="nv">DialogOption</span><span class="p">)</span>
-<span class="kr">return</span><span class="w"> </span><span class="nv">obj</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">ask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">askString</span><span class="p">,</span><span class="w">                     </span><span class="c1">-- 问的字符串</span>
+<span class="w">        </span><span class="nv">say</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">sayString</span><span class="p">,</span><span class="w">                     </span><span class="c1">-- 回答的字符串</span>
+<span class="w">        </span><span class="nv">prerequisites</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">prerequisites</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="c1">-- 前置条件table（flag列表）</span>
+<span class="w">        </span><span class="nv">alwaysAlive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">alwaysAlive</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">   </span><span class="c1">-- 表示是否在任意时候都显示(当然前置条件得先满足)</span>
+<span class="w">        </span><span class="nv">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">callback</span><span class="w">   </span><span class="c1">-- 选择对话时调用的函数</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nb">setmetatable</span><span class="p">(</span><span class="nv">obj</span><span class="p">,</span><span class="w"> </span><span class="nv">DialogOption</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">obj</span>
 <span class="kr">end</span>
 
 <span class="c1">-- 检查前置条件是否满足</span>
 <span class="kr">function</span><span class="w"> </span><span class="nc">DialogOption</span><span class="p">:</span><span class="nf">checkPrerequisites</span><span class="p">()</span>
-<span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="w"> </span><span class="nv">flagName</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">self</span><span class="p">.</span><span class="py">prerequisites</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
-<span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nf">getFlag</span><span class="p">(</span><span class="nv">flagName</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
-<span class="kr">return</span><span class="w"> </span><span class="kc">false</span>
-<span class="kr">end</span>
-<span class="kr">end</span>
-<span class="kr">return</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="w"> </span><span class="nv">flagName</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">self</span><span class="p">.</span><span class="py">prerequisites</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
+<span class="w">        </span><span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nf">getFlag</span><span class="p">(</span><span class="nv">flagName</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">            </span><span class="kr">return</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">        </span><span class="kr">end</span>
+<span class="w">    </span><span class="kr">end</span>
+<span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="kc">true</span>
 <span class="kr">end</span>
 
 <span class="c1">-- 获取对应的flag名称（根据ask字符串生成）</span>
 <span class="kr">function</span><span class="w"> </span><span class="nc">DialogOption</span><span class="p">:</span><span class="nf">getFlagName</span><span class="p">()</span>
-<span class="kr">return</span><span class="w"> </span><span class="nv">self</span><span class="p">.</span><span class="py">ask</span><span class="w"> </span><span class="c1">-- 或者可以自定义命名规则</span>
+<span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">self</span><span class="p">.</span><span class="py">ask</span><span class="w"> </span><span class="c1">-- 或者可以自定义命名规则</span>
 <span class="kr">end</span>
 
 <span class="c1">-- 对话管理器类</span>
-<span class="nv">DialogManager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
-<span class="nv">DialogManager</span><span class="p">.</span><span class="py">__index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">DialogManager</span>
+<span class="nv">dialogChoiceHelper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="nv">dialogChoiceHelper</span><span class="p">.</span><span class="py">__index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">dialogChoiceHelper</span>
 
-<span class="kr">function</span><span class="w"> </span><span class="nc">DialogManager</span><span class="p">:</span><span class="nf">new</span><span class="p">()</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="nv">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="c1">-- 存储所有对话选项</span>
-<span class="p">}</span>
-<span class="nb">setmetatable</span><span class="p">(</span><span class="nv">obj</span><span class="p">,</span><span class="w"> </span><span class="nv">DialogManager</span><span class="p">)</span>
-<span class="kr">return</span><span class="w"> </span><span class="nv">obj</span>
+<span class="kr">function</span><span class="w"> </span><span class="nc">dialogChoiceHelper</span><span class="p">:</span><span class="nf">new</span><span class="p">()</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="c1">-- 存储所有对话选项</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nb">setmetatable</span><span class="p">(</span><span class="nv">obj</span><span class="p">,</span><span class="w"> </span><span class="nv">dialogChoiceHelper</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">obj</span>
 <span class="kr">end</span>
 
 <span class="c1">-- 添加对话选项</span>
-<span class="kr">function</span><span class="w"> </span><span class="nc">DialogManager</span><span class="p">:</span><span class="nf">addOption</span><span class="p">(</span><span class="nv">askString</span><span class="p">,</span><span class="w"> </span><span class="nv">sayString</span><span class="p">,</span><span class="w"> </span><span class="nv">prerequisites</span><span class="p">,</span><span class="w"> </span><span class="nv">alwaysAlive</span><span class="p">,</span><span class="w"> </span><span class="nv">callback</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">option</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">DialogOption</span><span class="p">:</span><span class="nf">new</span><span class="p">(</span><span class="nv">askString</span><span class="p">,</span><span class="w"> </span><span class="nv">sayString</span><span class="p">,</span><span class="w"> </span><span class="nv">prerequisites</span><span class="p">,</span><span class="w"> </span><span class="nv">alwaysAlive</span><span class="p">,</span><span class="w"> </span><span class="nv">callback</span><span class="p">)</span>
-<span class="nb">table.insert</span><span class="p">(</span><span class="nv">self</span><span class="p">.</span><span class="py">options</span><span class="p">,</span><span class="w"> </span><span class="nv">option</span><span class="p">)</span>
+<span class="kr">function</span><span class="w"> </span><span class="nc">dialogChoiceHelper</span><span class="p">:</span><span class="nf">addOption</span><span class="p">(</span><span class="nv">askString</span><span class="p">,</span><span class="w"> </span><span class="nv">sayString</span><span class="p">,</span><span class="w"> </span><span class="nv">prerequisites</span><span class="p">,</span><span class="w"> </span><span class="nv">alwaysAlive</span><span class="p">,</span><span class="w"> </span><span class="nv">callback</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">option</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">DialogOption</span><span class="p">:</span><span class="nf">new</span><span class="p">(</span><span class="nv">askString</span><span class="p">,</span><span class="w"> </span><span class="nv">sayString</span><span class="p">,</span><span class="w"> </span><span class="nv">prerequisites</span><span class="p">,</span><span class="w"> </span><span class="nv">alwaysAlive</span><span class="p">,</span><span class="w"> </span><span class="nv">callback</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">table.insert</span><span class="p">(</span><span class="nv">self</span><span class="p">.</span><span class="py">options</span><span class="p">,</span><span class="w"> </span><span class="nv">option</span><span class="p">)</span>
 <span class="kr">end</span>
 
 <span class="c1">-- 获取当前可用的对话选项</span>
-<span class="kr">function</span><span class="w"> </span><span class="nc">DialogManager</span><span class="p">:</span><span class="nf">getAvailableOptions</span><span class="p">()</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">available</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">askStrings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="kr">function</span><span class="w"> </span><span class="nc">dialogChoiceHelper</span><span class="p">:</span><span class="nf">getAvailableOptions</span><span class="p">()</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">available</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">askStrings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
 
 <span class="w">    </span><span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="w"> </span><span class="nv">option</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">self</span><span class="p">.</span><span class="py">options</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">        </span><span class="kd">local</span><span class="w"> </span><span class="nv">flagName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">option</span><span class="p">:</span><span class="nf">getFlagName</span><span class="p">()</span>
@@ -4263,18 +4305,17 @@ choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前�
 <span class="w">    </span><span class="kr">end</span>
 
 <span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">available</span><span class="p">,</span><span class="w"> </span><span class="nv">askStrings</span>
-
 <span class="kr">end</span>
 
 <span class="c1">-- 获取当前可用的对话选项</span>
-<span class="kr">function</span><span class="w"> </span><span class="nc">DialogManager</span><span class="p">.</span><span class="nf">setTestFlag</span><span class="p">()</span>
-<span class="nf">setFlag</span><span class="p">(</span><span class="s2">&quot;DialogManager&#39;s Test Flag QWQ!&quot;</span><span class="p">)</span>
+<span class="kr">function</span><span class="w"> </span><span class="nc">dialogChoiceHelper</span><span class="p">.</span><span class="nf">setTestFlag</span><span class="p">()</span>
+<span class="w">    </span><span class="nf">setFlag</span><span class="p">(</span><span class="s2">&quot;dialogChoiceHelper&#39;s Test Flag QWQ!&quot;</span><span class="p">)</span>
 <span class="kr">end</span>
 
 <span class="c1">-- 执行对话循环</span>
-<span class="kr">function</span><span class="w"> </span><span class="nc">DialogManager</span><span class="p">:</span><span class="nf">run</span><span class="p">(</span><span class="nv">exitOption</span><span class="p">)</span>
-<span class="kr">repeat</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">availableOptions</span><span class="p">,</span><span class="w"> </span><span class="nv">askStrings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">self</span><span class="p">:</span><span class="nf">getAvailableOptions</span><span class="p">()</span>
+<span class="kr">function</span><span class="w"> </span><span class="nc">dialogChoiceHelper</span><span class="p">:</span><span class="nf">run</span><span class="p">(</span><span class="nv">exitOption</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">repeat</span>
+<span class="w">        </span><span class="kd">local</span><span class="w"> </span><span class="nv">availableOptions</span><span class="p">,</span><span class="w"> </span><span class="nv">askStrings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">self</span><span class="p">:</span><span class="nf">getAvailableOptions</span><span class="p">()</span>
 
 <span class="w">        </span><span class="kr">if</span><span class="w"> </span><span class="nv">exitOption</span><span class="w"> </span><span class="o">~=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">            </span><span class="c1">-- 添加退出选项</span>
@@ -4295,6 +4336,7 @@ choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前�
 <span class="w">            </span><span class="kr">end</span>
 <span class="w">        </span><span class="kr">end</span>
 
+
 <span class="w">        </span><span class="kd">local</span><span class="w"> </span><span class="nv">selectedOption</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">availableOptions</span><span class="p">[</span><span class="nv">result</span><span class="p">]</span>
 <span class="w">        </span><span class="kr">if</span><span class="w"> </span><span class="nv">selectedOption</span><span class="p">.</span><span class="py">callback</span><span class="w"> </span><span class="o">~=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">            </span><span class="nv">selectedOption</span><span class="p">.</span><span class="nf">callback</span><span class="p">()</span>
@@ -4303,12 +4345,10 @@ choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前�
 <span class="w">        </span><span class="nf">say</span><span class="p">(</span><span class="nv">selectedOption</span><span class="p">.</span><span class="py">say</span><span class="p">)</span>
 <span class="w">        </span><span class="nf">setFlag</span><span class="p">(</span><span class="nv">selectedOption</span><span class="p">:</span><span class="nf">getFlagName</span><span class="p">())</span>
 <span class="w">    </span><span class="kr">until</span><span class="w"> </span><span class="kc">false</span>
-
 <span class="kr">end</span>
 
-<span class="kr">return</span><span class="w"> </span><span class="nv">DialogManager</span>
+<span class="kr">return</span><span class="w"> </span><span class="nv">dialogChoiceHelper</span>
 </code></pre></div></td></tr></table></div>
-
 
 </details>
 
@@ -4357,40 +4397,40 @@ choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前�
 <span class="normal">42</span>
 <span class="normal">43</span>
 <span class="normal">44</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">-- 从你的 Mod 根目录开始导入这个辅助类(别忘了在旁边新建一个 lua 脚本把辅助类的代码粘过去)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">DialogManager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">loadCelesteAsset</span><span class="p">(</span><span class="s2">&quot;Cutscenes/LuckyHelper/dialogue_manager&quot;</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">dialogChoiceHelper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">loadCelesteAsset</span><span class="p">(</span><span class="s2">&quot;Cutscenes/LuckyHelper/dialog_choice_helper&quot;</span><span class="p">)</span>
 
 <span class="c1">-- lua talker 的函数入口, 还有一个是 onEnd</span>
 <span class="kr">function</span><span class="w"> </span><span class="nf">onTalk</span><span class="p">()</span>
 <span class="w">    </span><span class="nf">disableMovement</span><span class="p">()</span>
 
 <span class="w">    </span><span class="c1">-- 新建对话管理器</span>
-<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">conductor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">DialogManager</span><span class="p">:</span><span class="nf">new</span><span class="p">()</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">conductor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">dialogChoiceHelper</span><span class="p">:</span><span class="nf">new</span><span class="p">()</span>
 
 <span class="w">    </span><span class="c1">-- 添加对话选项</span>
 <span class="w">    </span><span class="nv">conductor</span><span class="p">:</span><span class="nf">addOption</span><span class="p">(</span>
-<span class="w">        </span><span class="s2">&quot;A_ask&quot;</span><span class="p">,</span><span class="w">    </span><span class="c1">-- 问题对应的 dialog key</span>
-<span class="w">        </span><span class="s2">&quot;A_answer&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 回答对应的 dialog key</span>
-<span class="w">        </span><span class="p">{},</span><span class="w">         </span><span class="c1">-- 前置条件: 填对应问题的 dialog key</span>
-<span class="w">        </span><span class="kc">true</span><span class="p">,</span><span class="w">       </span><span class="c1">-- 是否常驻: 在满足前置条件的情况下是否问过了还能问, 不填默认为 false</span>
-<span class="w">        </span><span class="nv">DialogManager</span><span class="p">.</span><span class="py">setTestFlag</span><span class="w">  </span><span class="c1">--在选择完对应对话后, 调用一个函数(这里填入函数名即可), 比如这里你选择 A 对话后会输出一个测试 flag</span>
+<span class="w">            </span><span class="s2">&quot;A_ask&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 问题对应的 dialog key</span>
+<span class="w">            </span><span class="s2">&quot;A_answer&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 回答对应的 dialog key</span>
+<span class="w">            </span><span class="p">{},</span><span class="w"> </span><span class="c1">-- 前置条件: 填对应问题的 dialog key</span>
+<span class="w">            </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 是否常驻: 在满足前置条件的情况下是否问过了还能问, 不填默认为 false</span>
+<span class="w">            </span><span class="nv">dialogChoiceHelper</span><span class="p">.</span><span class="py">setTestFlag</span><span class="w">  </span><span class="c1">--在选择完对应对话后, 调用一个函数(这里填入函数名即可), 比如这里你选择 A 对话后会输出一个测试 flag</span>
 <span class="w">    </span><span class="p">)</span>
 
 <span class="w">    </span><span class="nv">conductor</span><span class="p">:</span><span class="nf">addOption</span><span class="p">(</span>
-<span class="w">        </span><span class="s2">&quot;B_ask&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;B_answer&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="p">{}</span><span class="w"> </span><span class="c1">-- 无前置条件</span>
+<span class="w">            </span><span class="s2">&quot;B_ask&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;B_answer&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">{}</span><span class="w"> </span><span class="c1">-- 无前置条件</span>
 <span class="w">    </span><span class="p">)</span>
 
 <span class="w">    </span><span class="nv">conductor</span><span class="p">:</span><span class="nf">addOption</span><span class="p">(</span>
-<span class="w">        </span><span class="s2">&quot;C_ask&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;C_answer&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;A_ask&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">-- 需要对话 A 完成</span>
+<span class="w">            </span><span class="s2">&quot;C_ask&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;C_answer&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;A_ask&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">-- 需要对话 A 完成</span>
 <span class="w">    </span><span class="p">)</span>
 
 <span class="w">    </span><span class="nv">conductor</span><span class="p">:</span><span class="nf">addOption</span><span class="p">(</span>
-<span class="w">        </span><span class="s2">&quot;D_ask&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;D_answer&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;A_ask&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;B_ask&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;C_ask&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">-- 需要前三个对话完成</span>
+<span class="w">            </span><span class="s2">&quot;D_ask&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;D_answer&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;A_ask&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;B_ask&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;C_ask&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">-- 需要前三个对话完成</span>
 <span class="w">    </span><span class="p">)</span>
 
 
@@ -4401,6 +4441,148 @@ choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前�
 <span class="w">    </span><span class="nf">enableMovement</span><span class="p">()</span>
 <span class="kr">end</span>
 </code></pre></div></td></tr></table></div>
+<h4 id="_36">连续对话</h4>
+<p>有时我们可能需要<a href="https://www.bilibili.com/video/BV1Dp4y1D7QR/?t=234">跟一个人物进行多次对话</a>, 搭配上一些 lua 函数, 但是如果自己写 flag 去判断的话还是略嫌麻烦, 所以这里也提供一个辅助类来实现</p>
+<details>
+<summary>dialog_sequence_helper.lua</summary>
+
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nv">dialogSequenceHelper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="nv">dialogSequenceHelper</span><span class="p">.</span><span class="py">__index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">dialogSequenceHelper</span>
+
+<span class="kr">function</span><span class="w"> </span><span class="nc">dialogSequenceHelper</span><span class="p">:</span><span class="nf">new</span><span class="p">()</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nb">setmetatable</span><span class="p">(</span><span class="nv">obj</span><span class="p">,</span><span class="w"> </span><span class="nv">dialogSequenceHelper</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">obj</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span><span class="w"> </span><span class="nc">dialogSequenceHelper</span><span class="p">:</span><span class="nf">addItem</span><span class="p">(</span><span class="nv">dialogKeyOrCallback</span><span class="p">,</span><span class="w"> </span><span class="nv">id</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">table.insert</span><span class="p">(</span><span class="nv">self</span><span class="p">.</span><span class="py">options</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">dialogKeyOrCallback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">dialogKeyOrCallback</span><span class="p">,</span><span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="p">})</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span><span class="w"> </span><span class="nc">dialogSequenceHelper</span><span class="p">:</span><span class="nf">run</span><span class="p">()</span>
+<span class="w">    </span><span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">pairs</span><span class="p">(</span><span class="nv">self</span><span class="p">.</span><span class="py">options</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
+<span class="w">        </span><span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nf">getFlag</span><span class="p">(</span><span class="nv">value</span><span class="p">.</span><span class="py">id</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">            </span><span class="kr">if</span><span class="w"> </span><span class="nb">type</span><span class="p">(</span><span class="nv">value</span><span class="p">.</span><span class="py">dialogKeyOrCallback</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">                </span><span class="nf">say</span><span class="p">(</span><span class="nv">value</span><span class="p">.</span><span class="py">dialogKeyOrCallback</span><span class="p">)</span>
+<span class="w">            </span><span class="kr">else</span>
+<span class="w">                </span><span class="nv">value</span><span class="p">.</span><span class="nf">dialogKeyOrCallback</span><span class="p">()</span>
+<span class="w">            </span><span class="kr">end</span>
+<span class="w">            </span><span class="nf">setFlag</span><span class="p">(</span><span class="nv">value</span><span class="p">.</span><span class="py">id</span><span class="p">)</span>
+<span class="w">            </span><span class="kr">break</span>
+<span class="w">        </span><span class="kr">end</span>
+<span class="w">    </span><span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span><span class="w"> </span><span class="nv">dialogSequenceHelper</span>
+</code></pre></div></td></tr></table></div>
+
+</details>
+
+<p>使用方式如下, 效果是我们交互一次触发 <code>dialogA</code>, 再交互一次触发 <code>dialogB</code>, 再交互一次会触发对应函数</p>
+<div class="language-lua highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Mods/LuckyTestMap/Cutscenes/LuckyHelper/Test.lua</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">dialogSequenceHelper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">loadCelesteAsset</span><span class="p">(</span><span class="s2">&quot;Cutscenes/LuckyHelper/dialog_sequence_helper&quot;</span><span class="p">)</span>
+
+<span class="kr">function</span><span class="w"> </span><span class="nf">onTalk</span><span class="p">()</span>
+<span class="w">    </span><span class="nf">disableMovement</span><span class="p">()</span>
+
+<span class="w">    </span><span class="c1">-- 新建对话管理器</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">sequence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">dialogSequenceHelper</span><span class="p">:</span><span class="nf">new</span><span class="p">()</span>
+
+<span class="w">    </span><span class="c1">-- 添加对话选项</span>
+<span class="w">    </span><span class="nv">sequence</span><span class="p">:</span><span class="nf">addItem</span><span class="p">(</span>
+<span class="w">            </span><span class="s2">&quot;dialogA&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 填 dialog key, 或者一个函数</span>
+<span class="w">            </span><span class="s2">&quot;A&quot;</span><span class="w">        </span><span class="c1">-- id, 用来设置 flag, 方便我们后续判断要不要继续这个对话</span>
+<span class="w">    </span><span class="p">)</span>
+
+<span class="w">    </span><span class="nv">sequence</span><span class="p">:</span><span class="nf">addItem</span><span class="p">(</span>
+<span class="w">            </span><span class="s2">&quot;dialogB&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;B&quot;</span>
+<span class="w">    </span><span class="p">)</span>
+
+<span class="w">    </span><span class="nv">sequence</span><span class="p">:</span><span class="nf">addItem</span><span class="p">(</span>
+<span class="w">            </span><span class="kr">function</span><span class="p">()</span>
+<span class="w">                </span><span class="nf">say</span><span class="p">(</span><span class="s2">&quot;awa&quot;</span><span class="p">)</span>
+<span class="w">                </span><span class="nf">wait</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="nf">say</span><span class="p">(</span><span class="s2">&quot;qwq&quot;</span><span class="p">)</span>
+<span class="w">                </span><span class="nf">setFlag</span><span class="p">(</span><span class="s2">&quot;talkEnd&quot;</span><span class="p">)</span><span class="w">  </span><span class="c1">-- 搭配外部 controller 使用, 为了让交互图标隐藏</span>
+<span class="w">            </span><span class="kr">end</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;C&quot;</span>
+<span class="w">    </span><span class="p">)</span>
+
+<span class="w">    </span><span class="c1">-- 运行</span>
+<span class="w">    </span><span class="nv">sequence</span><span class="p">:</span><span class="nf">run</span><span class="p">()</span>
+
+<span class="w">    </span><span class="nf">enableMovement</span><span class="p">()</span>
+<span class="kr">end</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>你可能注意到了哪怕你能说的话都说完了 lua taker 也不会自动关闭交互图标, 所以推荐使用 <code>LuckyHelper/TalkComponentController</code> 包裹住交互图标, 并在 <code>hideIfFlag</code> 一栏填入对应 <code>flag</code>(比如这里的 <code>talkEnd</code>), 这样就可以达成说完话交互图标也不会弹出来的效果了</p>
+</div>
+
 <h3 id="flag_2">Flag</h3>
 <h4 id="flag_3">在玩家重生时设置 flag</h4>
 <p>使用 <code>MaxHelpingHand/SetFlagOnSpawnController</code> 即可, 如果用 trigger 在 player 重生的时候设置可能会导致一些更新上的时序问题, 而且摆起来也麻烦</p>

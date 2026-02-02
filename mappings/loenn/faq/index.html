@@ -1503,6 +1503,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何获取各种坐标信息
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#xml-by" class="md-nav__link">
     <span class="md-ellipsis">
       砖瓦 XML 核对清单 by 底龙
@@ -2429,6 +2438,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lua/lua_cutscene_handbook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Cutscenes 词典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lua/teleport/" class="md-nav__link">
         
   
@@ -2480,10 +2511,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_13_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_13_6" >
         
           
-          <label class="md-nav__link" for="__nav_6_13_5" id="__nav_6_13_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_13_6" id="__nav_6_13_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2495,8 +2526,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_13_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_13_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_13_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_13_6">
             <span class="md-nav__icon md-icon"></span>
             示例
           </label>
@@ -3221,6 +3252,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何获取各种坐标信息
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#xml-by" class="md-nav__link">
     <span class="md-ellipsis">
       砖瓦 XML 核对清单 by 底龙
@@ -3307,7 +3347,8 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <li>搜搜聊天记录</li>
 <li>凭直觉试试, 到游戏里看看变化</li>
 <li>鼠标移到属性上可能会显示详细的描述(俗称注释)</li>
-<li>到香蕉网上搜对应的 helper, 运气好的话, 它的界面上会提供 wiki 链接, 里面会有更加详细的描述(<a href="https://maddie480.ovh/celeste/custom-entity-catalog" target="_blank">所有Helper及其对应实体</a>)</li>
+<li>到香蕉网上搜对应的 helper, 运气好的话, 它的界面上会提供 wiki 链接, 里面会有更加详细的描述(<a href="https://maddie480.ovh/celeste/custom-entity-catalog">所有Helper及其对应实体</a>{:target="_
+  blank"})</li>
 <li>如果你会 code, 有时直接看源码也不失为一种好办法(不是</li>
 <li>还不行就请教群友</li>
 </ul>
@@ -3336,7 +3377,7 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <p>看看斜杠是不是反了, 要用正斜杠 <code>/</code> 而不是反斜杠 <code>\</code>, <del>一般偷懒直接从文件资源管理器里复制过来的路径都是反斜杠</del></p>
 <h2 id="loenn">Loenn 数据</h2>
 <p>我们有时能看到群友在互相转发如下所示的东西</p>
-<div class="language-ini highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3347,27 +3388,28 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="na">{</span>
-<span class="w">    </span><span class="na">{</span>
-<span class="w">        </span><span class="na">_editorLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0,</span>
-<span class="w">        </span><span class="na">_fromLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;entities&quot;</span><span class="na">,</span>
-<span class="w">        </span><span class="na">_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">160,</span>
-<span class="w">        </span><span class="na">_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;refill&quot;</span><span class="na">,</span>
-<span class="w">        </span><span class="na">oneUse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">false,</span>
-<span class="w">        </span><span class="na">twoDash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">false,</span>
-<span class="w">        </span><span class="na">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1536,</span>
-<span class="w">        </span><span class="na">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">552</span>
-<span class="w">    </span><span class="na">}</span>
-<span class="na">}</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">_editorLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_fromLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;entities&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">160</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;refill&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">oneUse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">twoDash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1536</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">552</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>这些其实就是 Loenn 里各种实体, 触发器, 背景的数据, 对着选中实体复制一下粘到 <code>.txt</code> 里你就懂了, 本质上和你打开属性面板看到的东西是一样的(比如上面这个就是 <code>Refill</code> 实体的属性数据), 
+<p>这些其实就是 Loenn 里各种实体, 触发器, 背景的数据, 对着选中实体复制一下粘到 <code>.txt</code> 里你就懂了, 本质上和你打开属性面板看到的东西是一样的(比如上面这个就是 <code>Refill</code> 实体的属性数据),
 所以你经常能看到群友在转发它们, 使得这些实体可以在大家的 loenn 里相互传播</p>
 <h3 id="_13">添加隐藏数据😱</h3>
-<p>在此基础上 mapper 们甚至还整出了为其添加新的属性的骚操作(原理就是有的 Helper 的配置文件缺失了部分属性, 但是在代码中仍然有用到那个属性(如果找到了属性就用属性的值, 没找到就用默认值)), 所以如果你偷偷在数据后面加对应的属性说不定可以实现一些"隐藏功能", 至于为什么 Helper 作者把属性删了, 
+<p>在此基础上 mapper 们甚至还整出了为其添加新的属性的骚操作(原理就是有的 Helper 的配置文件缺失了部分属性, 但是在代码中仍然有用到那个属性(如果找到了属性就用属性的值,
+没找到就用默认值)), 所以如果你偷偷在数据后面加对应的属性说不定可以实现一些"隐藏功能", 至于为什么 Helper 作者把属性删了,
 估计是不小心的, 也有可能是觉得对应属性没什么人用, 加了容易增加实体学习成本之类的</p>
 <h4 id="_14">举例</h4>
 <p>Bounce Helper 的 Bounce Move Block 属性长这样, 你想改它贴图但是发现好像改不了</p>
-<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3384,22 +3426,23 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <span class="normal">15</span>
 <span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="err">_edi</span><span class="kc">t</span><span class="err">orLayer</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">        </span><span class="err">_</span><span class="kc">fr</span><span class="err">omLayer</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;entities&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="err">_id</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span>
-<span class="w">        </span><span class="err">_</span><span class="kc">na</span><span class="err">me</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;BounceHelper/BounceMoveBlock&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="err">ac</span><span class="kc">t</span><span class="err">iva</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">Flag</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="err">direc</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;Right&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="err">heigh</span><span class="kc">t</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span>
-<span class="w">        </span><span class="err">o</span><span class="kc">ne</span><span class="err">Use</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">        </span><span class="err">speed</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span>
-<span class="w">        </span><span class="err">wid</span><span class="kc">t</span><span class="err">h</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span>
-<span class="w">        </span><span class="err">x</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">1384</span><span class="p">,</span>
-<span class="w">        </span><span class="err">y</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">336</span>
+<span class="w">        </span><span class="nv">_editorLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_fromLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;entities&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">350</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;BounceHelper/BounceMoveBlock&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">activationFlag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Right&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">oneUse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1384</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">336</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>在翻看<a href="https://github.com/FlynnSC/BounceHelper/blob/d52a0b2b97e1014fc132110373492694fdf27f1a/Source/Entities/BounceMoveBlock.cs#L280" target="_blank">源码</a>后你会发现, 他使用到了 <code>spritePath</code> 这个属性, 默认值为 <code>objects/BounceHelper/bounceMoveBlock</code></p>
+<p>在翻看<a href="https://github.com/FlynnSC/BounceHelper/blob/d52a0b2b97e1014fc132110373492694fdf27f1a/Source/Entities/BounceMoveBlock.cs#L280" target="_blank">源码</a>后你会发现, 他使用到了
+<code>spritePath</code> 这个属性, 默认值为 <code>objects/BounceHelper/bounceMoveBlock</code></p>
 <div class="language-csharp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">data</span><span class="p">.</span><span class="n">Attr</span><span class="p">(</span><span class="s">&quot;spritePath&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;objects/BounceHelper/bounceMoveBlock&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p>所以如果我们要加贴图的话自己偷偷把属性加上就好了, 之后换贴图就跟普通的换法如出一辙了</p>
@@ -3433,7 +3476,7 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <span class="w">        </span><span class="nv">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span>
 <span class="w">        </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1384</span><span class="p">,</span>
 <span class="w">        </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">336</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">spritePath</span><span class="o">=</span><span class="s2">&quot;objects/BounceHelper/bounceMoveBlock&quot;</span>
+<span class="w">        </span><span class="nv">spritePath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;objects/BounceHelper/bounceMoveBlock&quot;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
@@ -3451,10 +3494,32 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <p><img 123_="123&quot;" alt="entity_name" src="../../../assets/mappings/Loenn/faq/entity_name.png" style="width: 1000px; title=" /></p>
 <p><a id="map-sid"></a></p>
 <h2 id="sid">如何获取地图对应的 SID</h2>
-<p>SID, 即 a string ID of the area, 是一个区域的唯一标识符, 由于官图地图顺序固定, 所以可以直接通过数字找到对应的 area, 但是 Mod 图随开随关, 顺序可变, 所以我们需要 SID 来唯一标识一个地图, 
+<p>SID, 即 a string ID of the area, 是一个区域的唯一标识符, 由于官图地图顺序固定, 所以可以直接通过数字找到对应的 area, 但是 Mod 图随开随关, 顺序可变, 所以我们需要 SID 来唯一标识一个地图,
 即从 <code>Maps/</code> 文件夹开始到地图的路径, 比如我这里是 <code>Maps/Lucky_boy/0/FirstMap.bin</code>, 对应 SID 为 <code>Lucky_boy/0/FirstMap</code>,
 如果你感兴趣每个 area 具体都存了什么, 可以到 <code>Celeste/Saves/0.celeste</code> 存档文件中查看</p>
 <p><img 123_="123&quot;" alt="map_sid" src="../../../assets/mappings/Loenn/faq/map_sid.png" style="width: 1000px; title=" /></p>
+<p><a id="coordinates"></a></p>
+<h2 id="_16">如何获取各种坐标信息</h2>
+<p>当然在讲坐标之前你得先知道蔚蓝的坐标系是 x 轴朝右, y 轴朝下的, 所以 y 增大视觉上反而是在往下走, y 减小视觉上反而是在往上走, 就像这样</p>
+<p><img 123_="123&quot;" alt="coordinates_example" src="../../../assets/mappings/Loenn/faq/coordinates_example.png" style="width: 1000px; title=" /></p>
+<p>按下波浪键 <code>~</code> 打开控制台, 左上角的信息面板里会显示各种坐标信息</p>
+<p><img 123_="123&quot;" alt="coordinates" src="../../../assets/mappings/Loenn/faq/coordinates.png" style="width: 1000px; title=" /></p>
+<p>这里有五种坐标, 分别为:</p>
+<ul>
+<li>screen: 屏幕坐标, 表示当前鼠标位置(即黄色十字光标位置)离屏幕左上角的相对距离</li>
+<li>world: 世界坐标, 表示当前鼠标位置离世界原点坐标的相对距离(世界原点是游戏中的一个虚拟坐标概念, 游戏总需要一个原点来方便定位)</li>
+<li>level: 房间坐标, 表示当前鼠标位置离当前房间左上角坐标的相对距离</li>
+<li>level, /8: 表示 level 的值整除 8</li>
+<li>level, snap: 表示 level 的值整除 8 再乘 8(即红色十字光标离房间左上角的相对距离)</li>
+</ul>
+<p>所以 screen, world 和 level 是比较重要的信息, 常常在各种传送, 移动函数中被使用, 而后两个只是帮你省去了运算过程</p>
+<p><strong>一步到位获取玩家位置(需要启用 CelesteTAS):</strong></p>
+<p>在游戏里双击 <code>Ctrl</code> 打开 TAS 信息面板, 第一行的 <code>Pos</code> 属性对应的就是玩家的世界坐标</p>
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>当然你也可以按住 `Ctrl` 再点击对应实体然后在信息面板里找到对应位置信息(会在对应位置处显示一个小蓝点), 只不过 player 的信息比较重要所以 TAS 就默认把它显示出来了</p>
+</div>
+
 <h2 id="xml-by">砖瓦 XML 核对清单 by 底龙</h2>
 <ol>
 <li>XML 是否应用进地图(Metadata 里是否已经设置好 XML), 前景砖(ForegroundTiles.xml)后景砖(BackgroundTiles.xml)是否对应</li>

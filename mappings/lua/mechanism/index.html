@@ -12,7 +12,7 @@
         <link rel="prev" href="../lua_cutscene/">
       
       
-        <link rel="next" href="../teleport/">
+        <link rel="next" href="../lua_cutscene_handbook/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -2135,15 +2135,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2180,6 +2171,28 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lua_cutscene_handbook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Cutscenes 词典
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2243,10 +2256,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_13_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_13_6" >
         
           
-          <label class="md-nav__link" for="__nav_6_13_5" id="__nav_6_13_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_13_6" id="__nav_6_13_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2258,8 +2271,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_13_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_13_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_13_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_13_6">
             <span class="md-nav__icon md-icon"></span>
             示例
           </label>
@@ -2714,15 +2727,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2821,11 +2825,9 @@
 <span class="w">    </span><span class="nf">say</span><span class="p">(</span><span class="s2">&quot;xxx&quot;</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="_4">使用</h3>
-<p>由于</p>
 <h2 id="forcecameraupdate">ForceCameraUpdate</h2>
-<p>由于 <code>disableMovement</code> 本质上是将玩家的状态设置为 <code>StDummy</code>, 这个时候摄像机不会自动更新位置(只能通过在 lua 代码中手动更改相机, 或者调用 <code>zoom</code> 等函数),
-所以如果你需要将玩家的相机强制设置为自动跟随, 使其受 <code>Camera Target Trigger</code> 等相机 Trigger 的作用, 你需要将该属性设置为 true, 即 <code>player.ForceCameraUpdate = true</code></p>
+<p>使用 <code>disableMovement</code> 禁用移动时, 本质上是将玩家切换到了 <code>StDummy</code> 状态, 这会同步关闭 <code>player.ForceCameraUpdate</code>, 导致相机无法自动更新位置(因为大多数的剧情都要手动控制相机, 所以如果不禁用相机自动更新会导致这俩逻辑打架)</p>
+<p>如果你的场景不需要通过 Lua 脚本手动控制相机位移和缩放, 而是希望相机继续维持常规的自动跟随逻辑(受各种相机 Trigger 的作用), 那么将该属性设置为 <code>true</code> 即可:</p>
 <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
