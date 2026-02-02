@@ -261,7 +261,8 @@ SJ2021_SOLOIINI_CABLOGENTRY =
 #### 使用蒙版
 
 * B: 比如烈冕号这里的裂隙前的粒子特效, 本质上是黑洞改了个色然后蒙上一层 `StylegroundMask`, 参考[视频链接](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=822)
-* C: 使用 `PrismaticHelper/StylegroundsPanel`, 使用其他房间的背景并以自身作为蒙版, 不过体感上跟用 `StylegroundMask` 可能差不多, 这个在背景多起来后可能会方便点, 参考[视频链接](https://www.bilibili.com/video/BV1bttheAEZ6/?t=821)
+* C: 使用 `PrismaticHelper/StylegroundsPanel`, 使用其他房间的背景并以自身作为蒙版, 不过体感上跟用 `StylegroundMask` 可能差不多, 这个在背景多起来后可能会方便点,
+  参考[视频链接](https://www.bilibili.com/video/BV1bttheAEZ6/?t=821)
 
 使用蒙版的方式非常的简单啊, 给你想加蒙版的 `Styleground` 加上对应 tag `mask_{xxx}`, 之后你在房间里放一个 `StyleMaskHelper/StylegroundMask`,
 在里面 tag 属性里填上 `xxx` 即可, 还可以用 flag 控制该实体的显隐(顺带一提他的 fade 取的位置是根据相机位置来的)
@@ -388,7 +389,8 @@ end
 
 </details>
 
-再看一个烈冕号的[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=115){:target="_blank"}或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=709){:target="_blank"}或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1049){:target="_blank"}, 这是
+再看一个烈冕号的[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=115){:target="_blank"}或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=709){:target="_blank"
+}或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1049){:target="_blank"}, 这是
 choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前需要对话过对话 A, 我们就得写一些 if else(当然 choice 本身是很朴素的, 关键是我们代码怎么写能让它实现更丰富的效果)
 
 <details>
@@ -447,61 +449,62 @@ end
 所以为了统一这些用法, 简化逻辑, 我写了一个辅助类来帮大家方便的添加这些选项(vibe coding😋)
 
 <details>
-<summary>dialogue_manager.lua</summary>
-```lua title="Mods/LuckyTestMap/Cutscenes/LuckyHelper/dialogue_manager.lua"
+<summary>dialog_choice_helper.lua</summary>
+
+```lua title="Mods/LuckyTestMap/Cutscenes/LuckyHelper/dialog_choice_helper.lua"
 -- 对话选项类
-DialogOption = {}
+local DialogOption = {}
 DialogOption.__index = DialogOption
 
 function DialogOption:new(askString, sayString, prerequisites, alwaysAlive, callback)
-local obj = {
-ask = askString, -- 问的字符串
-say = sayString, -- 回答的字符串
-prerequisites = prerequisites or {}, -- 前置条件table（flag列表）
-alwaysAlive = alwaysAlive or false, -- 表示是否在任意时候都显示(当然前置条件得先满足)
-callback = callback -- 选择对话时调用的函数
-}
-setmetatable(obj, DialogOption)
-return obj
+    local obj = {
+        ask = askString,                     -- 问的字符串
+        say = sayString,                     -- 回答的字符串
+        prerequisites = prerequisites or {}, -- 前置条件table（flag列表）
+        alwaysAlive = alwaysAlive or false,   -- 表示是否在任意时候都显示(当然前置条件得先满足)
+        callback = callback   -- 选择对话时调用的函数
+    }
+    setmetatable(obj, DialogOption)
+    return obj
 end
 
 -- 检查前置条件是否满足
 function DialogOption:checkPrerequisites()
-for _, flagName in ipairs(self.prerequisites) do
-if not getFlag(flagName) then
-return false
-end
-end
-return true
+    for _, flagName in ipairs(self.prerequisites) do
+        if not getFlag(flagName) then
+            return false
+        end
+    end
+    return true
 end
 
 -- 获取对应的flag名称（根据ask字符串生成）
 function DialogOption:getFlagName()
-return self.ask -- 或者可以自定义命名规则
+    return self.ask -- 或者可以自定义命名规则
 end
 
 -- 对话管理器类
-DialogManager = {}
-DialogManager.__index = DialogManager
+dialogChoiceHelper = {}
+dialogChoiceHelper.__index = dialogChoiceHelper
 
-function DialogManager:new()
-local obj = {
-options = {} -- 存储所有对话选项
-}
-setmetatable(obj, DialogManager)
-return obj
+function dialogChoiceHelper:new()
+    local obj = {
+        options = {} -- 存储所有对话选项
+    }
+    setmetatable(obj, dialogChoiceHelper)
+    return obj
 end
 
 -- 添加对话选项
-function DialogManager:addOption(askString, sayString, prerequisites, alwaysAlive, callback)
-local option = DialogOption:new(askString, sayString, prerequisites, alwaysAlive, callback)
-table.insert(self.options, option)
+function dialogChoiceHelper:addOption(askString, sayString, prerequisites, alwaysAlive, callback)
+    local option = DialogOption:new(askString, sayString, prerequisites, alwaysAlive, callback)
+    table.insert(self.options, option)
 end
 
 -- 获取当前可用的对话选项
-function DialogManager:getAvailableOptions()
-local available = {}
-local askStrings = {}
+function dialogChoiceHelper:getAvailableOptions()
+    local available = {}
+    local askStrings = {}
 
     for _, option in ipairs(self.options) do
         local flagName = option:getFlagName()
@@ -513,18 +516,17 @@ local askStrings = {}
     end
 
     return available, askStrings
-
 end
 
 -- 获取当前可用的对话选项
-function DialogManager.setTestFlag()
-setFlag("DialogManager's Test Flag QWQ!")
+function dialogChoiceHelper.setTestFlag()
+    setFlag("dialogChoiceHelper's Test Flag QWQ!")
 end
 
 -- 执行对话循环
-function DialogManager:run(exitOption)
-repeat
-local availableOptions, askStrings = self:getAvailableOptions()
+function dialogChoiceHelper:run(exitOption)
+    repeat
+        local availableOptions, askStrings = self:getAvailableOptions()
 
         if exitOption ~= nil then
             -- 添加退出选项
@@ -545,6 +547,7 @@ local availableOptions, askStrings = self:getAvailableOptions()
             end
         end
 
+
         local selectedOption = availableOptions[result]
         if selectedOption.callback ~= nil then
             selectedOption.callback()
@@ -553,13 +556,11 @@ local availableOptions, askStrings = self:getAvailableOptions()
         say(selectedOption.say)
         setFlag(selectedOption:getFlagName())
     until false
-
 end
 
-return DialogManager
+return dialogChoiceHelper
 
 ```
-
 
 </details>
 
@@ -567,40 +568,40 @@ return DialogManager
 
 ```lua title="Mods/LuckyTestMap/Cutscenes/LuckyHelper/Test.lua"
 -- 从你的 Mod 根目录开始导入这个辅助类(别忘了在旁边新建一个 lua 脚本把辅助类的代码粘过去)
-local DialogManager = loadCelesteAsset("Cutscenes/LuckyHelper/dialogue_manager")
+local dialogChoiceHelper = loadCelesteAsset("Cutscenes/LuckyHelper/dialog_choice_helper")
 
 -- lua talker 的函数入口, 还有一个是 onEnd
 function onTalk()
     disableMovement()
 
     -- 新建对话管理器
-    local conductor = DialogManager:new()
+    local conductor = dialogChoiceHelper:new()
 
     -- 添加对话选项
     conductor:addOption(
-        "A_ask",    -- 问题对应的 dialog key
-        "A_answer", -- 回答对应的 dialog key
-        {},         -- 前置条件: 填对应问题的 dialog key
-        true,       -- 是否常驻: 在满足前置条件的情况下是否问过了还能问, 不填默认为 false
-        DialogManager.setTestFlag  --在选择完对应对话后, 调用一个函数(这里填入函数名即可), 比如这里你选择 A 对话后会输出一个测试 flag
+            "A_ask", -- 问题对应的 dialog key
+            "A_answer", -- 回答对应的 dialog key
+            {}, -- 前置条件: 填对应问题的 dialog key
+            true, -- 是否常驻: 在满足前置条件的情况下是否问过了还能问, 不填默认为 false
+            dialogChoiceHelper.setTestFlag  --在选择完对应对话后, 调用一个函数(这里填入函数名即可), 比如这里你选择 A 对话后会输出一个测试 flag
     )
 
     conductor:addOption(
-        "B_ask",
-        "B_answer",
-        {} -- 无前置条件
+            "B_ask",
+            "B_answer",
+            {} -- 无前置条件
     )
 
     conductor:addOption(
-        "C_ask",
-        "C_answer",
-        { "A_ask" } -- 需要对话 A 完成
+            "C_ask",
+            "C_answer",
+            { "A_ask" } -- 需要对话 A 完成
     )
 
     conductor:addOption(
-        "D_ask",
-        "D_answer",
-        { "A_ask", "B_ask", "C_ask" } -- 需要前三个对话完成
+            "D_ask",
+            "D_answer",
+            { "A_ask", "B_ask", "C_ask" } -- 需要前三个对话完成
     )
 
 
@@ -611,6 +612,93 @@ function onTalk()
     enableMovement()
 end
 ```
+
+#### 连续对话
+
+有时我们可能需要[跟一个人物进行多次对话](https://www.bilibili.com/video/BV1Dp4y1D7QR/?t=234), 搭配上一些 lua 函数, 但是如果自己写 flag 去判断的话还是略嫌麻烦, 所以这里也提供一个辅助类来实现
+
+<details>
+<summary>dialog_sequence_helper.lua</summary>
+
+```lua 
+dialogSequenceHelper = {}
+dialogSequenceHelper.__index = dialogSequenceHelper
+
+function dialogSequenceHelper:new()
+    local obj = {
+        options = {}
+    }
+    setmetatable(obj, dialogSequenceHelper)
+    return obj
+end
+
+function dialogSequenceHelper:addItem(dialogKeyOrCallback, id)
+    table.insert(self.options, { dialogKeyOrCallback = dialogKeyOrCallback, id = id })
+end
+
+function dialogSequenceHelper:run()
+    for _, value in pairs(self.options) do
+        if not getFlag(value.id) then
+            if type(value.dialogKeyOrCallback) == "string" then
+                say(value.dialogKeyOrCallback)
+            else
+                value.dialogKeyOrCallback()
+            end
+            setFlag(value.id)
+            break
+        end
+    end
+end
+
+return dialogSequenceHelper
+```
+
+</details>
+
+使用方式如下, 效果是我们交互一次触发 `dialogA`, 再交互一次触发 `dialogB`, 再交互一次会触发对应函数
+
+```lua title="Mods/LuckyTestMap/Cutscenes/LuckyHelper/Test.lua"
+local dialogSequenceHelper = loadCelesteAsset("Cutscenes/LuckyHelper/dialog_sequence_helper")
+
+function onTalk()
+    disableMovement()
+
+    -- 新建对话管理器
+    local sequence = dialogSequenceHelper:new()
+
+    -- 添加对话选项
+    sequence:addItem(
+            "dialogA", -- 填 dialog key, 或者一个函数
+            "A"        -- id, 用来设置 flag, 方便我们后续判断要不要继续这个对话
+    )
+
+    sequence:addItem(
+            "dialogB",
+            "B"
+    )
+
+    sequence:addItem(
+            function()
+                say("awa")
+                wait(1)
+                say("qwq")
+                setFlag("talkEnd")  -- 搭配外部 controller 使用, 为了让交互图标隐藏
+            end,
+            "C"
+    )
+
+    -- 运行
+    sequence:run()
+
+    enableMovement()
+end
+
+```
+
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>你可能注意到了哪怕你能说的话都说完了 lua taker 也不会自动关闭交互图标, 所以推荐使用 <code>LuckyHelper/TalkComponentController</code> 包裹住交互图标, 并在 <code>hideIfFlag</code> 一栏填入对应 <code>flag</code>(比如这里的 <code>talkEnd</code>), 这样就可以达成说完话交互图标也不会弹出来的效果了</p>
+</div>
 
 ### Flag
 
