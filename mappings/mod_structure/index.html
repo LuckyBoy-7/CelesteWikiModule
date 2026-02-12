@@ -1518,18 +1518,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#9a" class="md-nav__link">
+  <a href="#loenn" class="md-nav__link">
     <span class="md-ellipsis">
-      录制像 9a 凌波微步那样的残影
+      在 Loenn 里显示游戏内人物运动的实时轨迹
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#loenn" class="md-nav__link">
+  <a href="#9a" class="md-nav__link">
     <span class="md-ellipsis">
-      在Loenn里显示游戏内人物的实时尾迹
+      录制像 9a 凌波微步那样的残影
     </span>
   </a>
   
@@ -2824,8 +2824,74 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_15" id="__nav_6_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    别点
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_15">
+            <span class="md-nav__icon md-icon"></span>
+            别点
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../collab/" class="md-nav__link">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    蔚蓝制图小测😱
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collab/collab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3068,18 +3134,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#9a" class="md-nav__link">
+  <a href="#loenn" class="md-nav__link">
     <span class="md-ellipsis">
-      录制像 9a 凌波微步那样的残影
+      在 Loenn 里显示游戏内人物运动的实时轨迹
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#loenn" class="md-nav__link">
+  <a href="#9a" class="md-nav__link">
     <span class="md-ellipsis">
-      在Loenn里显示游戏内人物的实时尾迹
+      录制像 9a 凌波微步那样的残影
     </span>
   </a>
   
@@ -3271,8 +3337,8 @@
 </ul>
 <p>本篇会讲解一个 Mod 的结构大概是怎么样的, Everest 是如何加载我们的 Mod 的</p>
 <p>你可能需要下载<a href="../useful_links/">官图素材</a>来更好的了解蔚蓝素材的结构</p>
-<p>如果你很急, 那么你在 Loenn 里作好图之后可以直接把 <code>.bin</code> 文件丢在蔚蓝根目录的 Mods(一般应该运行过一次 <code>Everest</code> 应该就有了)文件夹下, 此时打开游戏理论上你就能看到你作的图了,
-但是这样你的 Mod 会被当作 <code>Uncategorized 未分类的</code>, 因为 <code>Everest</code> 只知道这有一张图, 但是其他啥也不知道, 所以你才需要学习 Mod 结构告诉 <code>Everest</code> 你的 Mod 长啥样,
+<p>如果你很急, 那么你在 Loenn 里作好图之后可以直接把 <code>.bin</code> 文件丢在蔚蓝根目录的 Mods(一般应该运行过一次 Everest 应该就有了)文件夹下, 此时打开游戏理论上你就能看到你作的图了,
+但是这样你的 Mod 会被当作 <code>Uncategorized 未分类的</code>, 因为 Everest 只知道这有一张图, 但是其他啥也不知道, 所以你才需要学习 Mod 结构告诉 Everest 你的 Mod 长啥样,
 一个比较标准的 Mod 大概长下面这个样子(你可以直接搭配着游戏本体结构 <code>../Steam/steamapps/common/Celeste/Content/</code> 或者其他 Mod 结构一起看)</p>
 <ul>
 <li>📁 Celeste<ul>
@@ -3335,7 +3401,7 @@
 <p>下面开始逐一介绍</p>
 <h2 id="everestyaml">everest.yaml</h2>
 <p>它是一个 <code>.yaml</code> 格式的文件, 你可以简单把它当作有一定格式规范的 <code>.txt</code>, 你可以用记事本打开编辑,
-至于它的作用, 当然就是用来告诉 <code>Everest</code> 有关你这 Mod 的所有信息, 所以下面举例来解释里面各个参数代表的含义</p>
+至于它的作用, 当然就是用来告诉 Everest 有关你这 Mod 的所有信息, 所以下面举例来解释里面各个参数代表的含义</p>
 <p>首先这是最精简的 <code>everest.yaml</code> 格式</p>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -3348,7 +3414,7 @@
 <span class="w">      </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.4000.0</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="name">Name</h3>
-<p>你的 Mod 的名字, 用英文, <code>Everest</code> 总得知道你 Mod 叫什么吧</p>
+<p>你的 Mod 的名字, 用英文, Everest 总得知道你 Mod 叫什么吧</p>
 <h3 id="version">Version</h3>
 <p>你的 Mod 的版本号, 你每次更新 Mod 的时候都要调整这些数字, 这被称为版本迭代, 一次更新对应一个版本, 这样才不会出现同一个版本有两个不同 Mod 的尴尬情况, 而且这可能导致其他人无法及时更新对应的 Mod</p>
 <h4 id="_2">举例</h4>
@@ -3357,7 +3423,7 @@
 给自己的图又加了几面, 这时候版本号应该是 <code>1.1.0</code>, 第五天 bro 你做了个草莓酱(或者不开玩笑的话就是你把整张图重做/翻新了), 这时候版本号应该是 <code>2.0.0</code>, 大概是这样没错(, 反正你不用特别在意自己写的对不对, 关键是更新前后版本号是递增的即可</p>
 <h3 id="dependencies">Dependencies</h3>
 <p>你的 Mod 的依赖, 即你这个 Mod 使用了哪些 Mod 的东西, 可能是 Code(也就是别人写的各种各样的实体, 即所谓的 Helper, 也是 Mod), 也可能是美术素材(有的 bro 会依赖草莓酱💀),
-这样当别人使用 Mod 管理器下载你的 Mod 的时候也会自动下载你依赖的 Mod, 缺依赖或者版本低了 <code>Everest</code> 都会警告玩不了, 如果没问题则被依赖的 Mod 会先被加载, 总之 <code>Everest</code> 总得知道你的 Mod 需要什么 Mod 吧</p>
+这样当别人使用 Mod 管理器下载你的 Mod 的时候也会自动下载你依赖的 Mod, 缺依赖或者版本低了 Everest 都会警告玩不了, 如果没问题则被依赖的 Mod 会先被加载, 总之 Everest 总得知道你的 Mod 需要什么 Mod 吧</p>
 <div class="admonition 提示">
 <p class="admonition-title">提示</p>
 <p>现在 Loenn 可以自动加依赖了, 详情见顶部导航栏 <code>Map/Dependencies</code> 选项</p>
@@ -3404,7 +3470,7 @@
 <span class="w">      </span><span class="nt">Version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="dll">DLL</h3>
-<p>你编译出来的 DLL 的位置, 如果你会 Code, 写了自定义实体或者别的什么功能, <code>Everest</code> 总得知道你 DLL 在哪儿吧</p>
+<p>你编译出来的 DLL 的位置, 如果你会 Code, 写了自定义实体或者别的什么功能, Everest 总得知道你 DLL 在哪儿吧</p>
 <h3 id="optionaldependencies">OptionalDependencies</h3>
 <p>跟 <code>Dependencies</code> 同理, 就是多了 <code>Optional 可选的</code>, 也就是说这个依赖缺了/没开也能玩, 但如果开了, 那依赖的版本不能低于 <code>OptionalDependencies</code> 里写的版本(跟 <code>Dependencies</code> 同理), 且在你的 Mod 加载之前加载, </p>
 <p>你就把它想象成 <code>Dependencies</code>, 但是缺了依赖也没事就行</p>
@@ -3451,16 +3517,14 @@
 <h2 id="audio">Audio</h2>
 <p>放音频资源的, <a href="../audio/audio/">详情见</a></p>
 <h2 id="tutorials">Tutorials</h2>
+<h3 id="loenn"><a href="../loenn/plugins/#ghost">在 Loenn 里显示游戏内人物运动的实时轨迹</a></h3>
 <h3 id="9a">录制像 9a 凌波微步那样的残影</h3>
 <ul>
 <li><a href="https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93#Ghost_Player_Playback" target="_blank">录制残影 1</a></li>
 <li><a href="https://github.com/EverestAPI/Resources/wiki/Mod-Structure#adding-custom-tutorial-ghosts" target="_blank">录制残影 2</a></li>
 </ul>
-<h3 id="loenn">在Loenn里显示游戏内人物的实时尾迹</h3>
-<p>下载 <a href="https://gamebanana.com/tools/12572" target="_blank"><code>Aurora's Loenn Plugin</code> 插件</a>(本质上也是个Mod, 所以Mod怎么下它也怎么下), 在Loenn上方导航栏点击打开 <code>View -&gt; Show Player Sihouette [Aurora's Loenn Plugin]</code>, 在游戏内随便走走(记得开 Mod),
-返回 Loenn 即可, 如果需要清空尾迹, 则点击 <code>View -&gt; Clear Player Sihouette [Aurora's Loenn Plugin]</code>, 或者使用 <code>Shift + C</code> 快捷键</p>
-<h2 id="everest"><a href="https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders" target="_blank">了解 <code>Everest</code> 处理这些文件的逻辑</a></h2>
-<p><code>Everest</code> 在加载 Mod 资源的时候会把里面的资源(比如 <code>Maps, Dialog, Audio, Graphics</code>等)
+<h2 id="everest"><a href="https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders" target="_blank">了解 Everest 处理这些文件的逻辑</a></h2>
+<p>Everest 在加载 Mod 资源的时候会把里面的资源(比如 <code>Maps, Dialog, Audio, Graphics</code>等)
 连带官图的整合到一起, 做好合并工作后 Everest 就可以集中处理这些资源了</p>
 <p>对于大部分文件来说同路径会整个文件被覆盖, 比如图片 A 和图片 B 同路径会相互覆盖, A 先加载, 那最后活着的图片就是 B, B 先加载, 那最后活着的图片就是 A</p>
 <p>而对 <code>Dialog</code> 里的文件和 <code>.xml</code>, 音频(<code>event:</code>)等文件来说是内容部分覆盖</p>

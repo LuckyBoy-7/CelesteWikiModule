@@ -1765,10 +1765,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="工具">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#faq" class="md-nav__link">
     <span class="md-ellipsis">
       FAQ
@@ -1796,8 +1795,12 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#decal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decal 像素错位
+    </span>
+  </a>
   
 </li>
         
@@ -2709,8 +2712,74 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_15" id="__nav_6_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    别点
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_15">
+            <span class="md-nav__icon md-icon"></span>
+            别点
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../collab/" class="md-nav__link">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    蔚蓝制图小测😱
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collab/collab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2964,10 +3033,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="工具">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#faq" class="md-nav__link">
     <span class="md-ellipsis">
       FAQ
@@ -2995,8 +3063,12 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#decal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decal 像素错位
+    </span>
+  </a>
   
 </li>
         
@@ -3063,11 +3135,15 @@
 </ul>
 <h2 id="decalregistry">DecalRegistry</h2>
 <p>你可能需要了解一下什么是<a href="../xml/xml/">XML</a></p>
+<p>简单来说官方通过硬编码路径来为一些 decal 添加额外的效果, 比如官方会为以 <code>7-summit/cloud_</code> 为前缀(路径从 <code>Gameplay/decals/</code> 开始)的所有云都添加一定的视差, 所以你会发现你 decal 摆出来马上就有额外效果了</p>
+<p>Everest 也提供了一种方式让你使用上面的效果也就是使用 <code>DecalRegistry.xml</code>, 你填上你需要影响的 decal 对应的路径, 之后在内部加上各种效果并填入对应参数即可</p>
 <ul>
 <li><a href="https://wiki.biligame.com/celeste/DecalRegistry" target="_blank">摘自b站 Wiki(描述不详细, 但很全, 含helper自定义的decalregistry内容)</a></li>
 <li><a href="https://www.bilibili.com/read/cv18389517/" target="_blank">celeste地图制作指南(装饰, decals)(适合新手, 有配图)</a></li>
 <li><a href="https://github.com/EverestAPI/Resources/wiki/Decal-Registry" target="_blank">摘自Everest Wiki(描述详细, 且提供了自定义decalregistry的教程)</a></li>
 </ul>
+<p>在你熟悉 DecalRegistry 后, 你可能会有发现如果要给各种图片加上类似的效果就会很头疼, 因为效果都差不多, 但是路径得写好几次, 
+所以 <code>LuckyHelper/DecalWithCombinedRegistry</code> 提供了一种<strong>组合</strong>的方式, 此时你可以把 <code>path</code> 当作对应的<strong>效果组</strong>, 之后直接在实体里填入需要的效果即可, 这些效果也可以反复使用 </p>
 <h2 id="_7"><a href="replace_assets/">替换素材</a></h2>
 <h2 id="tileset"><a href="../xml/tilesets/">自定义瓦片(Tileset)</a></h2>
 <h2 id="_8"><a href="color_grading/">滤镜制作</a></h2>
@@ -3090,10 +3166,10 @@
 <li><a href="https://meodai.github.io/poline/" target="_blank">更科学的颜色调色盘</a>: 调整左侧设置和右侧锚点即可在下方粘贴各颜色编号</li>
 <li><a href="https://cssgradient.io/" target="_blank">渐变色调色盘</a></li>
 </ul>
-<h3 id="faq">FAQ</h3>
-<h4 id="_12">怎么设置存档点(章节)的插图</h4>
+<h2 id="faq">FAQ</h2>
+<h3 id="_12">怎么设置存档点(章节)的插图</h3>
 <p><a href="https://www.bilibili.com/video/BV1A14y1W7hr" target="_blank">看电箱教程</a>或者冬菜教程</p>
-<h4 id="_13">怎样获取精美的美术素材</h4>
+<h3 id="_13">怎样获取精美的美术素材</h3>
 <ol>
 <li>自己画</li>
 <li>利用生成器自动生成</li>
@@ -3107,6 +3183,14 @@
 <li>这些素材文件中有些是香蕉网的mod, 可直接取用而有些则要解压取用。可以通过Celemod/Olympus搜索mod名区分, 搜不到=需解压。</li>
 <li>在解压取用的文件中, 如果有则请先阅读readme.txt/docx.了解格式和原作者的取用限制。并请严格按其规则执行。如果没有明确规定或只有“give a credit”, 请在地图明显处或香蕉网界面设置其为素材提供者。</li>
 </ol>
+<h3 id="decal_1"><code>Decal</code> 像素错位</h3>
+<ul>
+<li>请检查 <code>decal</code> 画布大小是否为偶数, 奇数可能会导致这种问题</li>
+<li>如果把 <code>decal</code> 的 <code>Scale</code> 调整为不是 <code>2</code> 的幂的数值, 也可能会导致像素分布不均匀</li>
+</ul>
+<blockquote>
+<p>如果想让 <code>decal</code> 贴近 Loenn 里面的网格一些, 画布大小最好能被 <code>16</code> 整除</p>
+</blockquote>
 
 
 

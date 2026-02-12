@@ -2619,8 +2619,74 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_15" id="__nav_6_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    别点
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_15">
+            <span class="md-nav__icon md-icon"></span>
+            别点
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../collab/" class="md-nav__link">
+      <a href="../../quiz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    蔚蓝制图小测😱
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collab/collab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2861,11 +2927,13 @@
 <li><a href="https://www.youtube.com/watch?v=orPDzqDGlfE" target="_blank">How to FMOD Celeste like a chad by Thegur90</a></li>
 </ul>
 <h2 id="_1">心得</h2>
+<!-- @formatter:off -->
 <ul>
-<li><a href="https://medium.com/@kuraine/a-little-bit-about-celestes-synths-and-some-bonus-piano-461f62605ea1" target="_blank">A Little Bit About Celeste’s Synths (And Some Bonus Piano)</a></li>
-<li><a href="https://medium.com/@kuraine/a-bit-about-percussion-in-celeste-and-some-tangents-along-the-way-e8d3f3fb2272">A Bit About Percussion in Celeste, And Some Tangents Along the Way</a>{:
-  target="_blank"}</li>
+<li><a href="https://medium.com/@kuraine/a-little-bit-about-celestes-synths-and-some-bonus-piano-461f62605ea1" target="_blank">A Little Bit About Celeste's Synths (And Some Bonus Piano)</a></li>
+<li><a href="https://medium.com/@kuraine/a-bit-about-percussion-in-celeste-and-some-tangents-along-the-way-e8d3f3fb2272" target="_blank">A Bit About Percussion in Celeste, And Some Tangents Along the Way</a></li>
 </ul>
+<!-- @formatter:on -->
+
 <h2 id="_2">常用工具</h2>
 <ul>
 <li><a href="">[音频类] Fmod Bank Tools(Mod 音乐解压工具)</a>(群文件)</li>
@@ -2967,7 +3035,7 @@
 </code></pre></div></td></tr></table></div>
 <p><a id="layer"></a></p>
 <h3 id="layer">layer</h3>
-<p>官方会在有些 <code>event</code> 里放很多个音轨, 并用 <code>layer1</code>, <code>layer2</code>, <code>layer3</code>, <code>...</code> 等参数来分别控制他们的音量 </p>
+<p>官方会在有些 <code>event</code> 里放很多个音轨, 并用 <code>layer1</code>, <code>layer2</code>, <code>layer3</code>, <code>...</code> 等参数来分别控制他们的音量</p>
 <p>例如</p>
 <div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -3033,7 +3101,7 @@
 <img alt="postcard" src="../../../assets/mappings/audio/postcard/postcard_audio2.png" style="width: 300px;" />
 <img alt="postcard" src="../../../assets/mappings/audio/postcard/postcard_audio3.png" style="width: 600px;" /></p>
 <p><a id="speak"></a></p>
-<h3 id="_5">如何修改人物对话音效</h3>
+<h3 id="_5"><a href="https://github.com/EverestAPI/Resources/wiki/Advanced-Custom-Audio#adding-portrait-custom-sounds">如何修改人物对话音效</a></h3>
 <p>如果你看过蔚蓝 fmod 工程文件中 <code>char/dialogue/</code> 目录下的 events,
 你就会发现蔚蓝实现人物对话音效的方式是通过不断在各种短音效中跳转来跳转去, 所以我们要做的基本上就是修改音频, 之后在 <code>Portraits.xml</code> 里做好设置即可</p>
 <p>比如这里就是把 granny 的音频粘出来降个调(<del>至于为什么不选其他角色那是因为太卡了</del>), 之后重复基本操作即可(把 event 加到 bank, build bank, export guids)</p>
