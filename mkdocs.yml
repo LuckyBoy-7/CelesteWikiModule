@@ -145,8 +145,11 @@ nav:
           - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
           - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
           - hELPER: "mappings/useful_helpers/hELPER.md"
-      - 别点:
-          - 蔚蓝制图小测😱: "mappings/quiz.md"
+      - 蔚蓝制图小测:
+          - 第一届蔚蓝制图小测😱: "mappings/quiz.md"
+          - 题库:
+              - 判断题: "mappings/quiz/true_or_false_questions.md"
+              - 填空题: "mappings/quiz/blank_filling_questions.md"
       - Collab: "mappings/collab/collab.md"
       - Code: "mappings/code.md"
       - 测图: "mappings/mod_test.md"

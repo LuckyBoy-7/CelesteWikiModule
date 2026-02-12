@@ -228,7 +228,7 @@
 
 ## 二. 填空题(总分 42 ![strawberry](../assets/mappings/quiz/1/strawberry.png){style="width: 40px; image-rendering: pixelated; vertical-align: middle;"}, 一题 3 ![strawberry](../assets/mappings/quiz/1/strawberry.png){style="width: 40px; image-rendering: pixelated; vertical-align: middle;"})
 
-### 1. 蔚蓝的 `log.txt` 存放在 `______` 路径下
+### 1. 蔚蓝的 `log.txt` 存放在 `______` 路径下(Windows 系统, Steam 版蔚蓝)
 
 ### 2. 蔚蓝的 Mod 加载器叫 `______`, 蔚蓝的 Mod 管理器有 `______`, `______`
 
@@ -250,7 +250,7 @@
 
 ### 11. 地图背景的循环由 `______` 和 `______` 属性控制
 
-### 12. 请默写灰砖的英文名 `______`
+### 12. 请默写 1a 灰砖的英文名 `______`
 
 ### 13. 当你使用 bits & bolts 提供的全局房间功能时, 全局房间的房间名必须包含前缀 `______`
 
@@ -300,7 +300,7 @@
 
 ### 21. 当你把两个月亮块放在一起, 它们会连起来, 但本质还是两个月亮块, 所以如果此时提着 TheoCrystal 刚好碰到它俩的交界处, 可能导致意外的挤死
 
-### 22. 水平移动的平台不会给你提供机关加速
+### 22. 4a 里水平移动的平台不会给你提供机关加速
 
 ### 23. 我们在 7a 最后上升段会经过不断倒数的记录点 Summit Checkpoint, 触发它们只是视觉效果, 它们并不会自动帮我们把重生点刷新到最近的
 
