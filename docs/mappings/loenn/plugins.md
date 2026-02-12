@@ -10,6 +10,20 @@
 
 原来移动房间需要按 `Alt + 方向键`, 现在你可以用鼠标拖动/创建房间了
 
+<a id="ghost"></a>
+
+## [Aurora's Loenn Plugin](https://gamebanana.com/tools/12572){:target="_blank"}
+
+可以在 Loenn 里显示游戏内人物运动的实时轨迹
+
+
+在 Loenn 上方导航栏点击打开 `View -> Show Player Sihouette [Aurora's Loenn Plugin]`, 在游戏内随便走走,
+返回 Loenn 即可, 如果需要清空尾迹, 则点击 `View -> Clear Player Sihouette [Aurora's Loenn Plugin]`, 或者使用 `Shift + C` 快捷键
+
+> 该 Mod 需要在游戏内启用, 因为得把游戏里位置相关的数据送出来
+
+![ghost](../../assets/mappings/Loenn/plugins/ghost.png){style="width: 500px; title="123"}
+
 ## [styleground preview](https://gamebanana.com/tools/11768){:target="_blank"}
 
 ![styleground_plugin_panel](../../assets/mappings/Loenn/plugins/styleground_plugin_panel.png){style="width: 500px; title="123"}
@@ -61,7 +75,7 @@ Type 和 Replace With 分别表示要被替换的实体 SID, 和要替换成的�
 
 ## [Font Loenn Plugin](https://gamebanana.com/tools/21571)
 
-你可能需要一个美化字体的插件让解包的体验更加舒畅, 因为更多时候解包是为了看有什么, 而不是具体哪个 Trigger 放在了哪里
+你可能需要一个美化字体的插件让解包的体验更加舒畅
 
 ![font_loenn_plugin_bad_example](../../assets/mappings/Loenn/plugins/font_loenn_plugin_bad_example.png){style="width: 600px; title="123"}
 ![font_loenn_plugin_example](../../assets/mappings/Loenn/plugins/font_loenn_plugin_example.png){style="width: 600px; title="123"}

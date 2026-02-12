@@ -48,18 +48,18 @@
 
 ## 常用部分
 
-推荐下载 [VSCode](https://code.visualstudio.com/){:target="_blank"} 并安装 `Celeste Dialog Highlighter` 插件
+推荐下载 [VSCode](https://code.visualstudio.com/){:target="_blank"} 并安装 **Celeste Dialog Highlighter** 插件
 
 * [文本汉化](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_8){:target="_blank"}: 图名, 吃心文本, 明信片, remix
 * [文字效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C){:target="_blank"}: 抖动, 改色, 变速等
 * [对话效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E5%AF%B9%E8%AF%9D%E6%95%88%E6%9E%9C){:target="_blank"}: 翻转头像, 对话框置底, 引用等
-* [人物表情](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85){:target="_blank"}(也可以在控制台输入`portraits`来查看)
+* [人物表情](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85){:target="_blank"}(也可以在控制台输入 `portraits` 来查看)
 * [添加对话 emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes){:target="_blank"}
-  把你的 emoji 图片放到 `Graphics/Atlases/Gui/emoji` 目录下(`.png`格式的), 对话对应文本为 `:你的图片相对路径(不带.png):`, 例如`:MyCelesteMod/shock:`
+  把你的 emoji 图片放到 `Graphics/Atlases/Gui/emoji` 目录下(`.png` 格式), 对话对应文本为 `:你的图片相对路径(不带.png):`, 例如`:MyCelesteMod/shock:`
 * [Lua Cutscene过场动画](lua/lua_cutscene.md): 即搭配对话的演出
-* [入场明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179){:target="_blank"}, [游戏中明信片](https://saplonily.top/celeste_mod_tutorial/extra_luacs/reference/#postcard){:
-  target="_blank"}
-* [替换人物头像](./xml/xml.md#portraitsxml)
+* [入场明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179){:target="_blank"},
+  [游戏中明信片](https://saplonily.top/celeste_mod_tutorial/extra_luacs/reference/#postcard){:target="_blank"}
+* [替换人物头像](./xml/portraits_xml.md)
 
 ### 修改自己地图名称和吃心文本
 

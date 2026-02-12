@@ -64,7 +64,7 @@ ColorGradingAfterColored: false
 
 ### IdleColdOptions
 
-在寒冷状态下(其实只要核心模式不是 Hot 就行), 我们可以为配置角色更多的 idle 动画, 并赋予一定的权重, 比如下方 ABC 对应于 `idleA`, `idleB`, `idleC`, 右边是对应的权重, 如果要加配置, 往下继续写即可
+在寒冷状态下(其实只要核心模式不是 `Hot` 就行), 我们可以为角色配置更多的 `idle` 动画, 并赋予一定的权重, 比如下方 ABC 对应于 `idleA`, `idleB`, `idleC`, 右边是对应的权重, 如果要加配置, 往下继续写即可
 
 ```yaml
 IdleColdOptions:
@@ -75,7 +75,7 @@ IdleColdOptions:
 
 ### IdleColdOptions
 
-在炎热状态下, 我们可以为配置角色更多的 idle 动画, 并赋予一定的权重, 配置方式同上
+在炎热状态下, 我们可以为配置角色更多的 `idle` 动画, 并赋予一定的权重, 配置方式同上
 
 ```yaml
 IdleWarmOptions:
