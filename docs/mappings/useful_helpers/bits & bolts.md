@@ -5,7 +5,7 @@
 * [底龙教程](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e638181a309e1ece7e52714&pm=s){:target="_blank"}
 * [bits & bolts 文档](https://codeberg.org/micycle/libbitsbolts/src/branch/main/Docs/index.md){:target="_blank"}
 
-### bb_global 全局房间
+### _bb_global 全局房间
 
 简单来说, 我们有时需要在房间内放一个类似 controller 的实体, 这种实体不需要 player 接触即可生效, 但是如果我们想要使它一直作用于我们的地图就得每个房间都放一个, 非常麻烦, 这时我们就可以使用 `bits & bolts` 自带的全局房间的功能
 

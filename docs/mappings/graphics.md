@@ -39,9 +39,17 @@
 
 你可能需要了解一下什么是[XML](./xml/xml.md)
 
+简单来说官方通过硬编码路径来为一些 decal 添加额外的效果, 比如官方会为以 `7-summit/cloud_` 为前缀(路径从 `Gameplay/decals/` 开始)的所有云都添加一定的视差, 所以你会发现你 decal 摆出来马上就有额外效果了
+
+Everest 也提供了一种方式让你使用上面的效果也就是使用 `DecalRegistry.xml`, 你填上你需要影响的 decal 对应的路径, 之后在内部加上各种效果并填入对应参数即可
+
 * [摘自b站 Wiki(描述不详细, 但很全, 含helper自定义的decalregistry内容)](https://wiki.biligame.com/celeste/DecalRegistry){:target="_blank"}
 * [celeste地图制作指南(装饰, decals)(适合新手, 有配图)](https://www.bilibili.com/read/cv18389517/){:target="_blank"}
 * [摘自Everest Wiki(描述详细, 且提供了自定义decalregistry的教程)](https://github.com/EverestAPI/Resources/wiki/Decal-Registry){:target="_blank"}
+
+在你熟悉 DecalRegistry 后, 你可能会有发现如果要给各种图片加上类似的效果就会很头疼, 因为效果都差不多, 但是路径得写好几次, 
+所以 `LuckyHelper/DecalWithCombinedRegistry` 提供了一种**组合**的方式, 此时你可以把 `path` 当作对应的**效果组**, 之后直接在实体里填入需要的效果即可, 这些效果也可以反复使用 
+
 
 ## [替换素材](./graphics/replace_assets.md)
 
@@ -68,13 +76,13 @@
 * [更科学的颜色调色盘](https://meodai.github.io/poline/){:target="_blank"}: 调整左侧设置和右侧锚点即可在下方粘贴各颜色编号
 * [渐变色调色盘](https://cssgradient.io/){:target="_blank"}
 
-### FAQ
+## FAQ
 
-#### 怎么设置存档点(章节)的插图
+### 怎么设置存档点(章节)的插图
 
 [看电箱教程](https://www.bilibili.com/video/BV1A14y1W7hr){:target="_blank"}或者冬菜教程
 
-#### 怎样获取精美的美术素材
+### 怎样获取精美的美术素材
 
 1. 自己画
 2. 利用生成器自动生成
@@ -87,3 +95,10 @@
 
 1. 这些素材文件中有些是香蕉网的mod, 可直接取用而有些则要解压取用。可以通过Celemod/Olympus搜索mod名区分, 搜不到=需解压。
 2. 在解压取用的文件中, 如果有则请先阅读readme.txt/docx.了解格式和原作者的取用限制。并请严格按其规则执行。如果没有明确规定或只有“give a credit”, 请在地图明显处或香蕉网界面设置其为素材提供者。
+
+### `Decal` 像素错位
+
+* 请检查 `decal` 画布大小是否为偶数, 奇数可能会导致这种问题
+* 如果把 `decal` 的 `Scale` 调整为不是 `2` 的幂的数值, 也可能会导致像素分布不均匀
+
+> 如果想让 `decal` 贴近 Loenn 里面的网格一些, 画布大小最好能被 `16` 整除

@@ -5,6 +5,7 @@
     * [聊天 1 群 QQ: 551960835](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=dLqbCsCscTFUIvSFbP6HHDP_M7VSYWoU&authKey=uBYikAno0UWPQZrn8yxBCqDuRhB1hQQt3R8CzKi45MV2HKtc%2FF%2FiduBdP96EsQKL&noverify=0&group_code=551960835){:target="_blank"}
     * [聊天 2 群 QQ: 962344157](https://qm.qq.com/q/kWinGZ4ere){:target="_blank"}
     * [群服聊天群 QQ: 565265554](https://qm.qq.com/q/BVwSMQ3gJO){:target="_blank"}
+    * [群服+ 聊天群 QQ: 1053172171](https://qm.qq.com/q/6ji7EgorMA){:target="_blank"}
     * 蔚蓝 TAS 群：961380353
     * 蔚蓝炼金群：120405775
     * 蔚蓝制图群：633125440

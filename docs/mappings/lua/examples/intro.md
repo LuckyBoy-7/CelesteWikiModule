@@ -344,8 +344,6 @@ end
 
 B: 使用 Trigger Trigger 的 Holdable Entered 模式即可, 参考[视频](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1111)
 
-#### 有选择的对话
-
 ### 对话
 
 <a id="choice"></a>
@@ -389,8 +387,8 @@ end
 
 </details>
 
-再看一个烈冕号的[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=115){:target="_blank"}或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=709){:target="_blank"
-}或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1049){:target="_blank"}, 这是
+再看一个烈冕号的[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=115){:target="_blank"}, 
+[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=709){:target="_blank"}或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1049){:target="_blank"}, 这是
 choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前需要对话过对话 A, 我们就得写一些 if else(当然 choice 本身是很朴素的, 关键是我们代码怎么写能让它实现更丰富的效果)
 
 <details>
@@ -615,7 +613,7 @@ end
 
 #### 连续对话
 
-有时我们可能需要[跟一个人物进行多次对话](https://www.bilibili.com/video/BV1Dp4y1D7QR/?t=234), 搭配上一些 lua 函数, 但是如果自己写 flag 去判断的话还是略嫌麻烦, 所以这里也提供一个辅助类来实现
+有时我们可能需要[跟一个人物进行多次对话](https://www.bilibili.com/video/BV1Dp4y1D7QR/?t=234), 搭配上一些 lua 函数, 但是如果自己写 flag 去判断的话还是略显麻烦, 所以这里也提供一个辅助类来实现
 
 <details>
 <summary>dialog_sequence_helper.lua</summary>

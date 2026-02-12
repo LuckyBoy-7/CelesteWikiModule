@@ -227,7 +227,7 @@ Madeline's mom = Anny
 由于 SMH -> SMH+ 确实多了很多东西, 有些东西的组织也不太一样, 这里做个小总结让大家更好的理解(~~其实是因为我自己也研究的有点晕需要组织一下语言~~)
 
 * 如果要做皮肤一定要有配置, 配置一定要有一个独特的 ID [`SkinName`](#skinname)
-* 如果写了很多配置, 想要给配置分个组, 请搭配 [`Mod`](#mod) 食用
+* 如果写了很多配置, 想要给配置分个组, 请搭配 [Mod](#mod) 食用
 * 如果要翻译当前配置在设置中显示的名字, 请搭配 [`SkinDialogKey`](#skindialogkey) 食用
 * 如果要做人物的皮肤, 请搭配 [`Player_List`](#player_list) 和 [`Character_ID`](#character_id) 食用
     * 如果人物皮肤要附带其他**除人物皮肤之外的人物相关**的皮肤 , 请搭配 [`OtherSprite_Path`](#othersprite_path) 食用

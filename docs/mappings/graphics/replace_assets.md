@@ -27,8 +27,8 @@
 > 别整那些有的没的, 直接把官图素材覆盖了不就不用捣鼓路径了?
 
 如果你已经知道了 Everest 在合并 Mod 和官图资源时同路径文件会发生覆盖,
-那么替换素材这件事就是非常直观的, 因为官图图片素材都存在 <code>../Steam/steamapps/common/Celeste/<font color="red">Content/</font><font color="green">
-Graphics/Atlases/</font></code> 里,
+那么替换素材这件事就是非常直观的, 
+因为官图图片素材都存在 <code>../Steam/steamapps/common/Celeste/<font color="red">Content/</font><font color="green">Graphics/Atlases/</font></code> 里,
 我们的素材都存在 <code>../Steam/steamapps/common/Celeste/<font color="red">Mods/MyMod/</font><font color="green">Graphics/Atlases/</font></code> 里, 那么怎么换就不用我多说了吧:
 直接照着[解包素材](../useful_links.md#_1)在同路径放个同名图片把官图的覆盖了就好了,
 这种方法可以更换蔚蓝中几乎所有非程序生成的素材, 唯一不好的点就是"这会污染其他 Mod", 因为这么做的影响是全局的 (暴力替换的适用范围仅限于做着玩/小范围传播)

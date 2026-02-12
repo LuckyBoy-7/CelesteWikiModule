@@ -13,16 +13,16 @@
 hELPER 会找到你要替换对象使用的所有图片的公共路径, 并把这个路径替换成你填入的, 比如你要替换草莓, 草莓对应的图片路径为
 
 * <font color=#00dd00>collectables/strawberry/</font>normal00.png
-* <font color==#00dd00>collectables/strawberry/</font>normal01.png`
+* <font color==#00dd00>collectables/strawberry/</font>normal01.png
 * ...
-* <font color==#00dd00>collectables/strawberry/</font>wow/normal52.png`
+* <font color==#00dd00>collectables/strawberry/</font>wow/normal52.png
 
 他们的公共路径为 `collectables/strawberry/`, 替换后游戏就会读取你自定义路径下的贴图(虽然你自定义路径定到哪里都可以啦)
 
 * <font color==#00dd00>collectables/strawberry/Wiki/</font>normal00.png
-* <font color==#00dd00>collectables/strawberry/Wiki/</font>normal01.png`
+* <font color==#00dd00>collectables/strawberry/Wiki/</font>normal01.png
 * ...
-* <font color==#00dd00>collectables/strawberry/Wiki/</font>wow/normal52.png`
+* <font color==#00dd00>collectables/strawberry/Wiki/</font>wow/normal52.png
 
 !!! 注意
     如果路径前面加个 `$` 符号, 则表示这是个 `Sprites.xml` 里对应动画组的 ID, 比如 `$custom_booster` 表示用自定义的 ID `custom_booster` 生成新的动画来替代原来的, 这样我们就只用专注于 XML 怎么写, 而不用特别捣鼓路径了

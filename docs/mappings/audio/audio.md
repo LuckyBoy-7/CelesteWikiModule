@@ -11,17 +11,16 @@
 
 ## 心得
 
-* [A Little Bit About Celeste’s Synths (And Some Bonus Piano)](https://medium.com/@kuraine/a-little-bit-about-celestes-synths-and-some-bonus-piano-461f62605ea1){:target="_blank"}
-* [A Bit About Percussion in Celeste, And Some Tangents Along the Way](https://medium.com/@kuraine/a-bit-about-percussion-in-celeste-and-some-tangents-along-the-way-e8d3f3fb2272){:
-  target="_blank"}
+<!-- @formatter:off -->
+* [A Little Bit About Celeste's Synths (And Some Bonus Piano)](https://medium.com/@kuraine/a-little-bit-about-celestes-synths-and-some-bonus-piano-461f62605ea1){:target="_blank"}
+* [A Bit About Percussion in Celeste, And Some Tangents Along the Way](https://medium.com/@kuraine/a-bit-about-percussion-in-celeste-and-some-tangents-along-the-way-e8d3f3fb2272){:target="_blank"}
+<!-- @formatter:on -->
 
 ## 常用工具
 
 * [[音频类] Fmod Bank Tools(Mod 音乐解压工具)]()(群文件)
 * [FMOD 下载](https://www.fmod.com/download){:target="_blank"}
 * [FMOD/Celeste Documentation and EULA](https://www.fmod.com/docs/2.03/studio/appendix-a-celeste.html){:target="_blank"}
-
-
 
 ## 常见参数
 
@@ -61,6 +60,7 @@ function setFade(fade)
 end
 
 ```
+
 <div class="admonition info">
     <p class="admonition-title">提示</p>
     <p>你可以模仿这个例子去设置任意的自定义参数, Lua Cutscenes 只是给你提供了<a href="https://github.com/Cruor/LuaCutscenes/blob/master/LuaCutscenes/Assets/LuaCutscenes/helper_functions.lua" target="_blank">常用的函数</a>, 但你能做的更多</p>
@@ -103,7 +103,7 @@ end
 
 ### layer
 
-官方会在有些 `event` 里放很多个音轨, 并用 `layer1`, `layer2`, `layer3`, `...` 等参数来分别控制他们的音量 
+官方会在有些 `event` 里放很多个音轨, 并用 `layer1`, `layer2`, `layer3`, `...` 等参数来分别控制他们的音量
 
 例如
 
@@ -129,8 +129,6 @@ function onBegin()
     enableMovement()
 end
 ```
-
-
 
 ## FAQ
 
@@ -163,7 +161,7 @@ end
 
 <a id="speak"></a>
 
-### 如何修改人物对话音效
+### [如何修改人物对话音效](https://github.com/EverestAPI/Resources/wiki/Advanced-Custom-Audio#adding-portrait-custom-sounds)
 
 如果你看过蔚蓝 fmod 工程文件中 `char/dialogue/` 目录下的 events,
 你就会发现蔚蓝实现人物对话音效的方式是通过不断在各种短音效中跳转来跳转去, 所以我们要做的基本上就是修改音频, 之后在 `Portraits.xml` 里做好设置即可

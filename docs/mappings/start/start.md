@@ -66,13 +66,13 @@
 
 ### 下载 [Olympus](https://everestapi.github.io/){:target="_blank"} 或 [Celemod](https://www.bilibili.com/video/BV1Hx4y1z7L5){:target="_blank"} 并安装 Everest
 
-简单来说这俩就是 Mod 管理器, 方便我们下载和更新 `Everest`, 启用和禁用 Mod, 下载安装 Mod, 设置 Mod 预设等等, 这里推荐小白用 `Celemod`
+简单来说这俩就是 Mod 管理器, 方便我们下载和更新 Everest, 启用和禁用 Mod, 下载安装 Mod, 设置 Mod 预设等等, 这里推荐小白用 `Celemod`
 
 ### 下载 [Loenn](https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/){:target="_blank"}(或者群文件里下)
 
-`Loenn` 被称作制图器, 它的前辈是 `Ahorn`, 它为作图提供了图形化界面, 让我们制作 `Map` 这个游戏内容方便不少, 要知道, 前文提及的 `Code, Graphics, Audio, Dialog, Lua Cutscenes` 都是为了 `Map`
-服务的, 所以 `Loenn` 可以说是制图的核心,
-如果你现在什么 Mod 都没下, 那么你在 `Loenn` 右侧栏目里看到的一切全都是原版官图的内容, 而如果你下了, 往往你能看到各种带 `[xxx resources pack]` `[xxx Helper]` `[Everest]` 标签的条目, 这些就是其他 Mod 提供的一些资源, 用就完事了
+Loenn 被称作制图器, 它的前辈是 `Ahorn`, 它为作图提供了图形化界面, 让我们制作 `Map` 这个游戏内容方便不少, 要知道, 前文提及的 `Code, Graphics, Audio, Dialog, Lua Cutscenes` 都是为了 `Map`
+服务的, 所以 Loenn 可以说是制图的核心,
+如果你现在什么 Mod 都没下, 那么你在 Loenn 右侧栏目里看到的一切全都是原版官图的内容, 而如果你下了, 往往你能看到各种带 `[xxx resources pack]` `[xxx Helper]` `[Everest]` 标签的条目, 这些就是其他 Mod 提供的一些资源, 用就完事了
 
 #### 注意事项
 
@@ -80,7 +80,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 ## 小试牛刀
 
-理论上, 现在你应该已经了解了什么是 `Mod`, 什么是 `Everest`, 下载好 `Celemod` 和 `Loenn` 并且 `Loenn` 能正常启动了
+理论上, 现在你应该已经了解了什么是 Mod, 什么是 Everest, 下载好 `Celemod` 和 Loenn 并且 Loenn 能正常启动了
 
 ### 随便捣鼓下 Loenn 并保存生成 `.bin` 地图文件
 
@@ -99,7 +99,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 ### [了解 Mod 的结构](../mod_structure.md)
 
-我们需要遵循前文所提到的 `Everest` 所定的规范, 即我们的 Mod 里应该有哪些东西, 层次是怎样的, 这样我们的 Mod 才能被正确加载, 而且方便传播和学习(大家文件结构都长差不多, 学习成本就会很低), 俗称拆包
+我们需要遵循前文所提到的 Everest 所定的规范, 即我们的 Mod 里应该有哪些东西, 层次是怎样的, 这样我们的 Mod 才能被正确加载, 而且方便传播和学习(大家文件结构都长差不多, 学习成本就会很低), 俗称拆包
 
 ### 丰富地图内容
 

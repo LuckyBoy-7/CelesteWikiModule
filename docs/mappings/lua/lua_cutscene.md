@@ -1,3 +1,5 @@
+参考
+
 * [Saplonily 的 LuaCutscenes 教程](https://sapcelestemod.netlify.app/extra_luacs/begin/){:target="_blank"}
 * [Lua Cutscenes 词典 by Nacline]()(制图群群文件)
 * motonine 的 LuaCutscene 教程(群文件里)
@@ -8,12 +10,12 @@
 * [Lua Cutscenes Recipe Book by Everest Wiki](https://github.com/EverestAPI/ModResources/wiki/Lua-Cutscenes-Recipe-Book){:target="_blank"}
 * [Lua Cutscenes without Lua Experience by Gamation](https://medium.com/@crumpledmemes/lua-cutscenes-without-lua-experience-3c2d87804e20){:target="_blank"}
 
-由于蔚蓝是用 `C#` 编程语言编写制作的, 而官方的剧情都是硬编码的, 导致玩家写剧情的门槛太高, 所以就出现了 [Lua Cutscenes](https://gamebanana.com/mods/53678){:target="_blank"} 这样的
+由于蔚蓝是用 `C#` 编程语言编写制作的, 而官方的剧情都是硬编码的(直接在代码里写好), 导致玩家写剧情的门槛太高, 所以就出现了 [Lua Cutscenes](https://gamebanana.com/mods/53678){:target="_blank"} 这样的
 helper 来用 `Lua` 这种简单的编程语言来对接 `C#`, 即我们可以编写简单的 `Lua` 脚本来使用官方代码中的各种跟剧情相关的函数
 
 还有 [Prismatic Helper](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes){:target="_blank"} 这种 Helper(简称 ph), 主要是嵌入 Dialog 中使用的
 
-在侧边栏里你可以找到一些剧情的拆解示例, 如果你有拆包也无法理解的剧情, 随时欢迎投稿 awa
+> 在侧边栏里你可以找到一些剧情的拆解示例, 如果你有拆包也无法理解的剧情, 随时欢迎投稿 awa
 
 !!! 注意事项
     因为 Lua Cutscenes, Prismatic Helper 都是 Mod, 所以别忘了开
