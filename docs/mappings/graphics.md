@@ -27,6 +27,7 @@
 * [Decal](https://wiki.biligame.com/celeste/Decal){:target="_blank"}
 * [废话 deco 教程]()(群文件里下)
 * [jpyx258 的 deco 轮椅]()(群文件里下)
+* [静态/动态 Decal 使用 by 底龙](https://uddrg.notion.site/Decal-2787f4f27e638051a265e8b708adbe03)
 
 ### 心得
 
@@ -43,9 +44,10 @@
 
 Everest 也提供了一种方式让你使用上面的效果也就是使用 `DecalRegistry.xml`, 你填上你需要影响的 decal 对应的路径, 之后在内部加上各种效果并填入对应参数即可
 
-* [摘自b站 Wiki(描述不详细, 但很全, 含helper自定义的decalregistry内容)](https://wiki.biligame.com/celeste/DecalRegistry){:target="_blank"}
-* [celeste地图制作指南(装饰, decals)(适合新手, 有配图)](https://www.bilibili.com/read/cv18389517/){:target="_blank"}
-* [摘自Everest Wiki(描述详细, 且提供了自定义decalregistry的教程)](https://github.com/EverestAPI/Resources/wiki/Decal-Registry){:target="_blank"}
+* [摘自b站 Wiki(描述不详细, 但很全, 含 helper 自定义的 DecalRegistry 内容)](https://wiki.biligame.com/celeste/DecalRegistry){:target="_blank"}
+* [celeste 地图制作指南(装饰, decals)(适合新手, 有配图)](https://www.bilibili.com/read/cv18389517/){:target="_blank"}
+* [摘自 Everest Wiki(描述详细, 且提供了自定义 DecalRegistry 的教程)](https://github.com/EverestAPI/Resources/wiki/Decal-Registry){:target="_blank"}
+* [DecalRegistry 使用 by 底龙](https://uddrg.notion.site/Decal-2787f4f27e638051a265e8b708adbe03){:target="_blank"}
 
 在你熟悉 DecalRegistry 后, 你可能会有发现如果要给各种图片加上类似的效果就会很头疼, 因为效果都差不多, 但是路径得写好几次, 
 所以 `LuckyHelper/DecalWithCombinedRegistry` 提供了一种**组合**的方式, 此时你可以把 `path` 当作对应的**效果组**, 之后直接在实体里填入需要的效果即可, 这些效果也可以反复使用 
