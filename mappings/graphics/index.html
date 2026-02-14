@@ -3212,6 +3212,7 @@
 <li><a href="https://wiki.biligame.com/celeste/Decal" target="_blank">Decal</a></li>
 <li><a href="">废话 deco 教程</a>(群文件里下)</li>
 <li><a href="">jpyx258 的 deco 轮椅</a>(群文件里下)</li>
+<li><a href="https://uddrg.notion.site/Decal-2787f4f27e638051a265e8b708adbe03">静态/动态 Decal 使用 by 底龙</a></li>
 </ul>
 <h3 id="_6">心得</h3>
 <blockquote>
@@ -3226,9 +3227,10 @@
 <p>简单来说官方通过硬编码路径来为一些 decal 添加额外的效果, 比如官方会为以 <code>7-summit/cloud_</code> 为前缀(路径从 <code>Gameplay/decals/</code> 开始)的所有云都添加一定的视差, 所以你会发现你 decal 摆出来马上就有额外效果了</p>
 <p>Everest 也提供了一种方式让你使用上面的效果也就是使用 <code>DecalRegistry.xml</code>, 你填上你需要影响的 decal 对应的路径, 之后在内部加上各种效果并填入对应参数即可</p>
 <ul>
-<li><a href="https://wiki.biligame.com/celeste/DecalRegistry" target="_blank">摘自b站 Wiki(描述不详细, 但很全, 含helper自定义的decalregistry内容)</a></li>
-<li><a href="https://www.bilibili.com/read/cv18389517/" target="_blank">celeste地图制作指南(装饰, decals)(适合新手, 有配图)</a></li>
-<li><a href="https://github.com/EverestAPI/Resources/wiki/Decal-Registry" target="_blank">摘自Everest Wiki(描述详细, 且提供了自定义decalregistry的教程)</a></li>
+<li><a href="https://wiki.biligame.com/celeste/DecalRegistry" target="_blank">摘自b站 Wiki(描述不详细, 但很全, 含 helper 自定义的 DecalRegistry 内容)</a></li>
+<li><a href="https://www.bilibili.com/read/cv18389517/" target="_blank">celeste 地图制作指南(装饰, decals)(适合新手, 有配图)</a></li>
+<li><a href="https://github.com/EverestAPI/Resources/wiki/Decal-Registry" target="_blank">摘自 Everest Wiki(描述详细, 且提供了自定义 DecalRegistry 的教程)</a></li>
+<li><a href="https://uddrg.notion.site/Decal-2787f4f27e638051a265e8b708adbe03" target="_blank">DecalRegistry 使用 by 底龙</a></li>
 </ul>
 <p>在你熟悉 DecalRegistry 后, 你可能会有发现如果要给各种图片加上类似的效果就会很头疼, 因为效果都差不多, 但是路径得写好几次, 
 所以 <code>LuckyHelper/DecalWithCombinedRegistry</code> 提供了一种<strong>组合</strong>的方式, 此时你可以把 <code>path</code> 当作对应的<strong>效果组</strong>, 之后直接在实体里填入需要的效果即可, 这些效果也可以反复使用 </p>
