@@ -8,12 +8,10 @@
 
 ## VivHelper/Teleport Trigger
 
-> 神秘, 一开始只在 Loenn 里搜到了 Custom Instant Teleport Trigger, 感觉不太像(因为说是 old 版本), 但是又找不到别的传送 trigger 了, 结果刚才搜的时候又给我蹦出来了😑, 不过果然是新版, 每个选项几乎都是字面意思
-
 ![viv_teleport_trigger](../../assets/mappings/lua/teleport/viv_teleport_trigger.png){style="width: 700px; title="123"}
 
-用法基本上就是: 放个 VivHelper/Teleport Trigger, 把要传送到的房间对应的名字 `Room Name` 填上, 然后在对应房间里放个 VivHelper/TeleportTarget, 把两个 Trigger 的 `Target ID` 填成一样的, 
-这样当玩家进入 VivHelper/Teleport Trigger 时就会被传送到对应房间里的对应位置了
+用法基本上就是: 放个 `VivHelper/TeleportTrigger`, 把要传送到的房间对应的名字 `Room Name` 填上, 然后在对应房间里放个 `VivHelper/TeleportTarget`, 把两个 Trigger 的 `Target ID` 填成一样的, 
+这样当玩家进入 `VivHelper/TeleportTrigger` 时就会被传送到对应房间里的对应位置了
 
 
 ## VivHelper/Custom Instant Teleport Trigger

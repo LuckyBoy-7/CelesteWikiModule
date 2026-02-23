@@ -27,12 +27,12 @@
 
 ## 编写 Dialog
 
-首先在你Mod根目录下创建一个Dialog**文件夹**形成类似 `Celeste/Mods/你的mod名/Dialog/` 的目录结构
+首先在你 Mod 根目录下创建一个 Dialog **文件夹**形成类似 `Celeste/Mods/你的mod名/Dialog/` 的目录结构
 
-接着你就可以创建[各种语言的`.txt`](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file){:target="_blank"}
+接着你就可以在该目录下创建[各种语言的`.txt`](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file){:target="_blank"}
 文件来做不同语言的翻译和添加文本的工作, 但一般加英文 `English.txt` (必备)跟中文 `Simplified Chinese.txt` 就够了
 
-写好对应的文本后在对应Trigger中填入对应 `id/key` 即可
+写好对应的文本后在对应 Trigger 中填入对应 `id/key` 即可
 
 ### 常用对话 Trigger
 
@@ -45,6 +45,7 @@
 ### 注意事项
 
 * `=`左边不要有空格
+* 如果你开着游戏新建了文件和文件夹可能导致热更失效, 这也是很多时候 key 填对了但是没对话的原因, 建议按住 `Ctrl + F5` 快速重启游戏看看是🐖了还是热更坏了
 
 ## 常用部分
 
@@ -78,9 +79,9 @@
 ![localization](../assets/mappings/dialog/localization/localization5.png){style="width: 300px; title="123"}
 
 ```ini title="Simplified Chinese.txt"
-Lucky_Tutorial = 教程小标题
-Lucky_Tutorial_CelesteWikiTutorial = 教程主标题
-poem_Lucky_Tutorial_CelesteWikiTutorial_A = 你好, 我是爱心
+Lucky_Tutorial= 教程小标题
+Lucky_Tutorial_CelesteWikiTutorial= 教程主标题
+poem_Lucky_Tutorial_CelesteWikiTutorial_A= 你好, 我是爱心
 ```
 
 ## 常用工具
