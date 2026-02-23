@@ -3129,10 +3129,10 @@
 如 <a href="https://www.bilibili.com/video/BV1Pz421i7SZ" target="_blank">FunnyDialog</a>), 在使用上我们只需要写好对话, 在地图里放个触发对话的Trigger, 然后填入对应的
 <code>key</code> 就好了</p>
 <h2 id="dialog_1">编写 Dialog</h2>
-<p>首先在你Mod根目录下创建一个Dialog<strong>文件夹</strong>形成类似 <code>Celeste/Mods/你的mod名/Dialog/</code> 的目录结构</p>
-<p>接着你就可以创建<a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file" target="_blank">各种语言的<code>.txt</code></a>
+<p>首先在你 Mod 根目录下创建一个 Dialog <strong>文件夹</strong>形成类似 <code>Celeste/Mods/你的mod名/Dialog/</code> 的目录结构</p>
+<p>接着你就可以在该目录下创建<a href="https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#setting-up-the-dialogue-file" target="_blank">各种语言的<code>.txt</code></a>
 文件来做不同语言的翻译和添加文本的工作, 但一般加英文 <code>English.txt</code> (必备)跟中文 <code>Simplified Chinese.txt</code> 就够了</p>
-<p>写好对应的文本后在对应Trigger中填入对应 <code>id/key</code> 即可</p>
+<p>写好对应的文本后在对应 Trigger 中填入对应 <code>id/key</code> 即可</p>
 <h3 id="trigger">常用对话 Trigger</h3>
 <p>如果要添加自定义文本键名一定要长~, 不然很可能和别人重了出问题, 一般建议是 <code>作者名_图名_键名</code></p>
 <ul>
@@ -3143,6 +3143,7 @@
 <h3 id="_2">注意事项</h3>
 <ul>
 <li><code>=</code>左边不要有空格</li>
+<li>如果你开着游戏新建了文件和文件夹可能导致热更失效, 这也是很多时候 key 填对了但是没对话的原因, 建议按住 <code>Ctrl + F5</code> 快速重启游戏看看是🐖了还是热更坏了</li>
 </ul>
 <h2 id="_3">常用部分</h2>
 <p>推荐下载 <a href="https://code.visualstudio.com/" target="_blank">VSCode</a> 并安装 <strong>Celeste Dialog Highlighter</strong> 插件</p>
@@ -3172,9 +3173,9 @@
 <img 123_="123&quot;" alt="localization" src="../../assets/mappings/dialog/localization/localization5.png" style="width: 300px; title=" /></p>
 <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Simplified Chinese.txt</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="na">Lucky_Tutorial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">教程小标题</span>
-<span class="na">Lucky_Tutorial_CelesteWikiTutorial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">教程主标题</span>
-<span class="na">poem_Lucky_Tutorial_CelesteWikiTutorial_A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">你好, 我是爱心</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="na">Lucky_Tutorial</span><span class="o">=</span><span class="w"> </span><span class="s">教程小标题</span>
+<span class="na">Lucky_Tutorial_CelesteWikiTutorial</span><span class="o">=</span><span class="w"> </span><span class="s">教程主标题</span>
+<span class="na">poem_Lucky_Tutorial_CelesteWikiTutorial_A</span><span class="o">=</span><span class="w"> </span><span class="s">你好, 我是爱心</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="_5">常用工具</h2>
 <ul>
