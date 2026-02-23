@@ -27,10 +27,11 @@
 
 接下来我会讲解不同的技巧以及他们的出处, 但是为了简洁, 这里就以字母来指代地图名了, 如
 
-* A: Journeys of a Bygone Wanderer
-* B: The Solar Express(烈冕号)
-* C: Gallery Collab(画游)
-* D: WELCOME TO MEGALOPHOBIA 的 STAFF ROLL
+* A: [Journeys of a Bygone Wanderer](https://www.bilibili.com/video/BV1SbWSe6EAT/)
+* B: [The Solar Express(烈冕号)](https://www.bilibili.com/video/BV1Lx4y1F7wy)
+* C: [Gallery Collab(画游心门)](https://www.bilibili.com/video/BV14j421S7Zs/)
+* D: [WELCOME TO MEGALOPHOBIA](https://www.bilibili.com/video/BV1Pp5qzPEtL/)
+* E: [寻年城](https://www.bilibili.com/video/BV1shfHBmEpj)
 
 ### 运动
 
@@ -68,6 +69,12 @@ walkTo(15408, true) -- 第二个参数表示是否倒着播放动画, 同时水�
 
 A: 通过使用 Lua Cutscene 让 player 向右行走, 按序接触 [UI Text](../text.md#ui-text)
 
+<a id="scroll-text"></a>
+
+#### 滚动文本
+
+E: 使用硬币门让玩家从上往下运动, 看起来就像[字从下往上滚动](https://www.bilibili.com/video/BV1shfHBmEpj/?p=2&t=1093)(这里文本使用了 `DBBHelper/AlignedText`)
+
 ### 视效
 
 <a id="black-background"></a>
@@ -75,7 +82,7 @@ A: 通过使用 Lua Cutscene 让 player 向右行走, 按序接触 [UI Text](../
 #### 黑色背景
 
 * A: 啥背景都不加不就是黑色的了🤓☝️
-* A: 整个黑色的图片
+* A: 整个黑色的图片(decal 啥的都行)
 
 <a id="hide-player"></a>
 
