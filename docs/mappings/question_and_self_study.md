@@ -60,8 +60,8 @@
 * 复盘: 如果你解决了问题, 请告诉大家问题出在哪儿了, 这不仅降低了其他人踩坑的几率, 也满足了大家的好奇心, 如果没解决问题, 也可以留下一句类似 `还是没整明白, 我再研究下` 的话, 这样别人好歹知道这个问题进行到什么程度了, 对你也会留下一个好的印象
 
 
-![ask1](../assets/images/TheArtOfQuestioning1.jpg){ width="600" }
-![ask2](../assets/images/TheArtOfQuestioning2.jpg){ width="600" }
+![ask1](../assets/mappings/question_and_self_study/00.jpg){ width="600" }
+![ask2](../assets/mappings/question_and_self_study/01.jpg){ width="600" }
 
 ### [小剧场](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E4%B8%8D%E8%AF%A5%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98)
 

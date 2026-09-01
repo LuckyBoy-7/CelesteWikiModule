@@ -17,5 +17,5 @@
 11. 现在创建一张地图名字叫做 MyMap, 地图的作者叫做 MapAuthor, 那么根据社区默认规则, 这个 Mod 的装饰物文件应该放在【[`Graphics/Atlases/Gameplay/decals/MyMap/MapAuthor/`](../mod_structure.md) 文件夹内】(从 Graphics 文件夹开始向后完整书写)
 12. 可以使用【[maddie480.ovh](https://maddie480.ovh/) 上的 [Font Generator](https://maddie480.ovh/celeste/font-generator)】对自己的地图字库进行补全
 13. 在 Loenn 的背景管理器中想要增加一层普通的背景(正常的背景贴图制作), 应该在背景管理器中找到【Parallax】, 然后再点击 New 按钮创建
-14. 装饰物的动画运动实在是不符合需求, 可以通过【修改本地文件帧数】和【使用 [Decal Registry](../graphics.md#decalregistry)】两种方法对装饰物本身进行直接修改
+14. 装饰物的动画运动实在是不符合需求, 可以通过【修改本地文件帧数】和【使用 [Decal Registry](../graphics/graphics.md#decalregistry)】两种方法对装饰物本身进行直接修改
 15. 地图的背景循环属性由【`Scroll X`】和【`Scroll Y`】控制

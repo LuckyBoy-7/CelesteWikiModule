@@ -62,7 +62,7 @@
 
 如果我们把 Celeste 跟民间制作的 Mod 加载器(Celeste0, Celeste1, Everest等)看作一个个节点, 则可以画出如下的思维导图(因为蔚蓝相对小众所以一种 Mod 加载器已经满足需求了, 不然像 MC 这种就会有 Forge, Fabric 之类的五花八门的 Mod 加载器)
 
-![why_everest](../../assets/images/why_everest.png){width=500}
+![why_everest](../../assets/mappings/start/why_everest.png){width=500}
 
 ### 下载 [Olympus](https://everestapi.github.io/){:target="_blank"} 或 [Celemod](https://www.bilibili.com/video/BV1Hx4y1z7L5){:target="_blank"} 并安装 Everest
 
@@ -169,7 +169,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 ### 怎么做皮肤, 改贴图等
 
-详情见 [Graphics](../graphics.md)
+详情见 [Graphics](../graphics/graphics.md)
 
 ### 怎么运镜
 
