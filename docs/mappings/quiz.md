@@ -477,7 +477,7 @@ B
 #### 3
 
 1. Gameplay: 通关当前地图所需的技巧, 常常泛指广义上的操作, 即操作的衔接流畅程度, 组合丰富程度, 实体复用程度等等
-2. Decoration: 指游戏内的装饰, 常常泛指各种 [背景 Stylegrounds](loenn/stylegrounds.md), [decal](graphics.md#decal), 光效等视觉上的**装修**要素
+2. Decoration: 指游戏内的装饰, 常常泛指各种 [背景 Stylegrounds](loenn/stylegrounds.md), [decal](graphics/graphics.md#decal), 光效等视觉上的**装修**要素
 
 #### 4
 
@@ -613,7 +613,7 @@ Sublime 只是文本编辑器而已, 你用记事本也是一样的
 
 F
 
-具体原因[参考](graphics.md#decalregistry)
+具体原因[参考](graphics/graphics.md#decalregistry)
 
 #### 14
 
@@ -682,6 +682,8 @@ T
 T
 
 代码里没写(即答
+
+> 如果你要机关加速的话, 使用一些类似 `VortexHelper/AttachedJumpThru` 的自定义实体, 它们可能会顺带修复这些问题
 
 ![no_liftboost](../assets/mappings/quiz/1/no_liftboost.png){style="width: 400px;"}
 

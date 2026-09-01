@@ -53,6 +53,7 @@
 * [Celeste Map Tree Viewer](https://maddie480.ovh/celeste/map-tree-viewer){:target="_blank"}: 将 map 的 `.bin` 转化为人类更易读的 `.json`
 * [Celeste Custom Map Idea Generator](https://perchance.org/9g0j9vtp81){:target="_blank"}: 制图灵感生成器, 随机选取实体/房间大小/房间形状/危险物/难度, 限定自己作图的范围, 以挖掘更多可能
 * [Celeste Map Prompt: Gameplay Style](https://perchance.org/f20z04yqdz){:target="_blank"}: GP 灵感生成器
+* [CelesteBarinstrom](https://sunsetquasar.github.io/CelesteBrainstorm/){:target="_blank"}: 头脑风暴器
 * [Celeste Mod Deco Theme](https://perchance.org/67j9crx882){:target="_blank"}: Deco 灵感生成器
 * [XML Validator](https://codebeautify.org/xmlvalidator){:target="_blank"}: XML 合法检查器, 还是下[插件](./xml/xml.md)方便点
 

@@ -35,6 +35,6 @@
 因为很多原版的配置都是写在代码里的(俗称**硬编码**), 所以 Everest 为我们提供了 `.meta.yaml` 配置文件以修改原版更多配置
 
 
-## [DecalRegistry.xml](../graphics.md#decalregistry)
+## [DecalRegistry.xml](../graphics/graphics.md#decalregistry)
 
 因为很多原版 Decal 的额外效果都是硬编码的(比如摆放官图的云朵素材可能就会莫名带上 Parallax 的效果), 所以 Everest 为我们提供了 `DecalRegistry.xml` 配置文件让我们也能给自己的 Decal 加上有趣的效果

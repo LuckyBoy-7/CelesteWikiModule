@@ -11,11 +11,10 @@
 
 本篇会讲解一个 Mod 的结构大概是怎么样的, Everest 是如何加载我们的 Mod 的
 
-你可能需要下载[官图素材](./useful_links.md)来更好的了解蔚蓝素材的结构
+如果你很急, 那么你在 Loenn 里作好图之后可以直接把保存后的 `.bin` 文件丢在蔚蓝根目录的 Mods 文件夹下, 此时打开游戏理论上你就能看到你作的图了,
+但是这样你的 Mod 会被视作 `Uncategorized 未分类的`, 因为 Everest 只知道这有一张图, 但是其他啥也不知道, 所以你才需要学习 Mod 结构告诉 Everest 你的 Mod 长啥样
 
-如果你很急, 那么你在 Loenn 里作好图之后可以直接把 `.bin` 文件丢在蔚蓝根目录的 Mods(一般应该运行过一次 Everest 应该就有了)文件夹下, 此时打开游戏理论上你就能看到你作的图了,
-但是这样你的 Mod 会被当作 `Uncategorized 未分类的`, 因为 Everest 只知道这有一张图, 但是其他啥也不知道, 所以你才需要学习 Mod 结构告诉 Everest 你的 Mod 长啥样,
-一个比较标准的 Mod 大概长下面这个样子(你可以直接搭配着游戏本体结构 `../Steam/steamapps/common/Celeste/Content/` 或者其他 Mod 结构一起看)
+一个比较标准的 Mod 大概长下面这个样子
 
 * 📁 Celeste
     - 📁 Mods
@@ -26,7 +25,15 @@
             - 📁 Graphics
             - 📁 Audio
             - 📁 Tutorials
-          
+
+首先我们需要一个文件夹来存放我们的地图, 素材和其他的各种数据, 后续我们会将它们[打包](#pack)并[上传至香蕉网](publish_mod.md)以供别人游玩, 这里的 MyMod 只是一个占位符, 你想取什么名字都可以
+
+以下列出了几个在 Mod 里经常出现的文件(夹), 你可以参考一下
+
+> 你可以直接搭配着游戏本体结构 `../Steam/steamapps/common/Celeste/Content/` 或者其他 Mod 结构一起看
+> 
+> 你可能需要先下载好[官图图片解包素材](./useful_links.md)以了解 Graphics 文件夹中文件的具体结构
+ 
 | 文件/文件夹       | 是否必须 | 作用             |
 |:-------------|:-----|:---------------|
 | everest.yaml | √    | 这是Mod的身份证      |
@@ -143,7 +150,7 @@
 
 ## Graphics
 
-放图片资源的, [详情见](./graphics.md)
+放图片资源的, [详情见](./graphics/graphics.md)
 
 ## Audio
 
@@ -151,13 +158,7 @@
 
 ## Tutorials
 
-### [在 Loenn 里显示游戏内人物运动的实时轨迹](loenn/plugins.md#ghost)
-
-
-### 录制像 9a 凌波微步那样的残影
-
-* [录制残影 1](https://wiki.biligame.com/celeste/%E5%AE%9E%E4%BD%93/%E5%AE%98%E5%9B%BE%E5%AE%9E%E4%BD%93#Ghost_Player_Playback){:target="_blank"}
-* [录制残影 2](https://github.com/EverestAPI/Resources/wiki/Mod-Structure#adding-custom-tutorial-ghosts){:target="_blank"}
+放残影的, [详情见](./ghost_player_playback.md)
 
 
 ## [了解 Everest 处理这些文件的逻辑](https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders){:target="_blank"}
@@ -317,6 +318,8 @@ c=你干嘛
 * [文件结构检查 / Celeste Mod Structure Verifier](https://maddie480.ovh/celeste/mod-structure-verifier){:target="_blank"}
 
 ## 常见错误
+
+<a id="pack"></a>
 
 ### Mod 打包问题
 

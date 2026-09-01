@@ -1,6 +1,6 @@
 ## 资源
 
-* [官图素材资源](./useful_links.md#_1)
+* [官图素材资源](../useful_links.md#_1)
 * [UnderDragon’s Repository 2.5](https://gamebanana.com/mods/427729){:target="_blank"}
 * [Spooooky's Asset Pack](https://gamebanana.com/mods/427729){:target="_blank"}
 * [Asset Drive Browser](https://maddie480.ovh/celeste/asset-drive){:target="_blank"}: 更方便的浏览社区资源盘
@@ -13,6 +13,7 @@
 
 * [自定义开始界面(包括山体建模等) by Everest](https://github.com/EverestAPI/Resources/wiki/Overworld-Customisation){:target="_blank"}
 * [自定义开始界面 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=154){:target="_blank"}
+* [从零开始的蔚蓝山体建模 by crylone](https://www.bilibili.com/video/BV15V3n65EmY){:target="_blank"}
 
 ### 结束
 
@@ -20,7 +21,7 @@
 * [自定义结束界面 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=154){:target="_blank"}
 * 使用 `XaphanHelper/Custom End Screen Controller`, 放在你结束关卡的房间里即可(Myn 力推)
 
-## [自制皮肤](./graphics/skin.md)
+## [自制皮肤](skin.md)
 
 ## Decal
 
@@ -33,12 +34,12 @@
 
 > KaileyTheAlien: I remember when I found that room in Paint on my first playthrough and just stood there crying for like 10-15 minutes
 
-* [春暮Q 中翻 - Donker's Deco Guide](../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx), [原文](https://docs.google.com/document/d/1ebzZTL7eX21M0FJR2IAUPCCGxnDUscZdRW8GiGl8Yus/edit?tab=t.0){:target="_blank"}
+* [春暮Q 中翻 - Donker's Deco Guide](../../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx), [原文](https://docs.google.com/document/d/1ebzZTL7eX21M0FJR2IAUPCCGxnDUscZdRW8GiGl8Yus/edit?tab=t.0){:target="_blank"}
 * [Creating Atmosphere in Celeste Mods by ricky06](https://www.youtube.com/watch?v=n5iHuXW8TyY){:target="_blank"}
 
 ## DecalRegistry
 
-你可能需要了解一下什么是[XML](./xml/xml.md)
+你可能需要了解一下什么是[XML](../xml/xml.md)
 
 简单来说官方通过硬编码路径来为一些 decal 添加额外的效果, 比如官方会为以 `7-summit/cloud_` 为前缀(路径从 `Gameplay/decals/` 开始)的所有云都添加一定的视差, 所以你会发现你 decal 摆出来马上就有额外效果了
 
@@ -53,11 +54,11 @@ Everest 也提供了一种方式让你使用上面的效果也就是使用 `Deca
 所以 `LuckyHelper/DecalWithCombinedRegistry` 提供了一种**组合**的方式, 此时你可以把 `path` 当作对应的**效果组**, 之后直接在实体里填入需要的效果即可, 这些效果也可以反复使用 
 
 
-## [替换素材](./graphics/replace_assets.md)
+## [替换素材](replace_assets.md)
 
-## [自定义瓦片(Tileset)](./xml/tilesets.md)
+## [自定义瓦片(Tileset)](../xml/tilesets.md)
 
-## [滤镜制作](./graphics/color_grading.md)
+## [滤镜制作](color_grading.md)
 
 ## 杂
 
@@ -77,6 +78,7 @@ Everest 也提供了一种方式让你使用上面的效果也就是使用 `Deca
 * [宇宙背景生成器](https://deep-fold.itch.io/space-background-generator){:target="_blank"}
 * [更科学的颜色调色盘](https://meodai.github.io/poline/){:target="_blank"}: 调整左侧设置和右侧锚点即可在下方粘贴各颜色编号
 * [渐变色调色盘](https://cssgradient.io/){:target="_blank"}
+* [Spooooky 各种素材路径复制](https://spo0o0ky.github.io/SpooookyAssetPackBrowser/){:target="_blank"}
 
 ## FAQ
 
