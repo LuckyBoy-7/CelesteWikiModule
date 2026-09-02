@@ -119,7 +119,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 * 碰到问题时可以查看 [Loenn 常见问题](../loenn/faq.md)
 * 不会就抄别人的 Mod, 抄多了就会了
 
-#### [本地化/汉化你的地图](../dialog.md#_4)
+#### [本地化/汉化你的地图](../dialog/dialog.md#_4)
 
 此时你会发现你地图的名字还没有取, 吃心文本等显示的都是一些被括号包裹键名如`{XXX_Tutorial_CelesteWikiTutorial}`, 这就需要你自己去配置对应的内容
 
@@ -165,7 +165,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 ### 怎么改对话, 地图名字等
 
-详情见 [Dialog](../dialog.md)
+详情见 [Dialog](../dialog/dialog.md)
 
 ### 怎么做皮肤, 改贴图等
 

@@ -1,8 +1,15 @@
 .md-grid {
-    max-width: 70rem;
+    max-width: 72rem;
 }
 [data-md-color-scheme="slate"] {
     --md-primary-fg-color: #04040c;
     --md-default-bg-color: #13131a;
     --md-hue: 225;
+}
+
+/* navigation.sections 的 section 标题 */
+li.md-nav__item.md-nav__item--section.md-nav__item--nested > label.md-nav__link span.md-ellipsis {
+    color: #d8d8dc;
+    font-weight: 600;
+    font-size: 20px;
 }

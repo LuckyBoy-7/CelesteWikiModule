@@ -516,9 +516,9 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 </Data>
 ```
 
-然后我们在 ForegroundTiles.xml 给想生草的砖加个 `sprites` 属性即可, 名字就填 `awa_top_a`
+然后我们在 ForegroundTiles.xml 给想生草的砖加个 `sprites` 属性即可, 名字就填我们定义好的 `awa_top_a`
 
-```xml title="Celeste\Mods\CelesteWikiTutorial\Graphics\PureColorForegroundTiles.xml"
+```xml title="Celeste\Mods\CelesteWikiTutorial\Graphics\PureColorForegroundTiles.xml" hl_lines="6"
 
 <Data>
   <Tileset id="A" path="awa">
