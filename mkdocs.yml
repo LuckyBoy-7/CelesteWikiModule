@@ -9,6 +9,7 @@ theme:
   features:
     - content.code.copy
     - content.tabs.link
+    - navigation.sections
 
   palette:
     # Palette toggle for automatic mode
@@ -61,6 +62,8 @@ nav:
   - 首页: "index.md"
   - Wiki: "general/wiki.md"
   - 社区: "general/community.md"
+  - 活动:
+      - 糖游: "activity/candy.md"
   - 常规:
       - 游戏官网: "https://www.celestegame.com/"
       - 常规:
@@ -75,13 +78,12 @@ nav:
       - 炼金: "general/deathless.md"
       - TAS: "general/tas.md"
   - Mods:
-      - Mod下载: "mods/download.md"
+      - Mod 入门: "mods/start.md"
       - 常规:
-          - Everest下载问题: "mods/common/everest_install_issues.md"
+          - Everest 下载问题: "mods/common/everest_install_issues.md"
           - 游戏崩溃问题: "https://saplonily.top/celeste_common_issues/index.html"
           - 调试模式: "https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F"
           - 推荐Mod: "mods/common/recommended_mods.md"
-      - 工具: "mods/tools.md"
   - 制图:
       - 教程 👈😋: "mappings/overall.md"
       - 入门:
@@ -104,10 +106,14 @@ nav:
       - Mod 结构: "mappings/mod_structure.md"
       - XML:
           - 大纲: "mappings/xml/xml.md"
+          - XML 基础: "mappings/xml/basics.md"
           - 砖 XML: "mappings/xml/tilesets.md"
           - 动画 XML: "mappings/xml/sprites_xml.md"
           - 对话贴图 XML: "mappings/xml/portraits_xml.md"
-      - Dialog: "mappings/dialog.md"
+      - Dialog:
+          - 大纲: "mappings/dialog/dialog.md"
+          - 本地化/翻译: "mappings/dialog/localization.md"
+          - 对话: "mappings/dialog/talk.md"
       - Camera: "mappings/camera.md"
       - 残影: "mappings/ghost_player_playback.md"
       - Graphics:
@@ -152,7 +158,10 @@ nav:
           - 题库:
               - 判断题: "mappings/quiz/true_or_false_questions.md"
               - 填空题: "mappings/quiz/blank_filling_questions.md"
-      - Collab: "mappings/collab/collab.md"
+      - Collab:
+          - 大纲: "mappings/collab/collab.md"
+          - 文本规范: "mappings/collab/dialog.md"
+          - Mini 水晶之心: "mappings/collab/miniheart_hd.md"
       - Code: "mappings/code.md"
       - 测图: "mappings/mod_test.md"
       - 发布 Mod: "mappings/publish_mod.md"

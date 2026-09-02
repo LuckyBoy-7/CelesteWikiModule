@@ -303,7 +303,7 @@ function onBegin()
 end
 ```
 
-## 二. [对话和文本](../dialog.md)
+## 二. [对话和文本](../dialog/dialog.md)
 
 ### 1. 一般对话
 

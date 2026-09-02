@@ -4,7 +4,7 @@
 > 
 > 如果你有更好的建议或者要帮忙补充内容欢迎在 [Github](https://github.com/LuckyBoy-7/CelesteWikiModule){:target="_blank"} 上提 issue 和 pr , 或者在 QQ: 3079351998 上找我, 感激不尽🥰
 > 
-> **感谢** `Myn`, `Sap`, `SDBnkaf`, `Black_Ice`, `无`, `AfterDawn`, `底龙`, `xxuurruuii`, `AppleSheep`, 
+> **感谢** `Myn`, `Saplonily`, `SDBnkaf`, `Black_Ice`, `无`, `AfterDawn`, `底龙`, `xxuurruuii`, `AppleSheep`, 
 > `NaCline`, `Voidsd`, `WEGFan`, `icbm`, `忘记过去`, `OldmanG`, `浣熊`, `云雀`, `Harmonine`, `crylone`, `ShadowRo`,
 > `I2170l`, 对 Wiki 提供的帮助,  非常抱歉我可能落了一些人, 但我仍然**非常感谢**你们
 > 

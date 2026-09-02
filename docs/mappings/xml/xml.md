@@ -1,6 +1,6 @@
 # XML
 
-如果你还不知道什么是 XML 可以看[这里](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/){:target="_blank"}
+如果你还不知道什么是 XML 可以先看看[XML 基础教程](basics.md)
 
 推荐下载 [VSCode](https://code.visualstudio.com/){:target="_blank"} 并安装 `XML` 插件, 不要再对着纯色的文本文档看半天 XML 不知道哪儿出问题了(小声
 
