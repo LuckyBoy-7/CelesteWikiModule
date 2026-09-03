@@ -1,0 +1,5940 @@
+<!DOCTYPE html><html lang="zh" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../decals/">
+      
+      
+        <link rel="next" href="../entity_depth/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>DecalRegistry - Celeste Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/content.css">
+    
+      <link rel="stylesheet" href="../../../javascripts/katex/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#decalregistryxml" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Celeste Wiki" class="md-header__button md-logo" aria-label="Celeste Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Celeste Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DecalRegistry
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LuckyBoy-7/CelesteWikiModule" title="前往仓库" class="md-source" data-md-component="source" target="_blank" rel="noopener">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Celeste Wiki" class="md-nav__button md-logo" aria-label="Celeste Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    Celeste Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LuckyBoy-7/CelesteWikiModule" title="前往仓库" class="md-source" data-md-component="source" target="_blank" rel="noopener">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/wiki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/community/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    社区
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    活动
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    活动
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1">
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    群服活动
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    群服活动
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://bbs.celemiao.com/d/471-miaonet-she-qu-any-fen-duan-su-tong-jie-li-huo-dong" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Any% 分段速通接力活动
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2">
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    制图活动
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    制图活动
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../activity/candy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    糖游
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2">
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    制图接力
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    制图接力
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../activity/mappings/relay/8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第八届蔚蓝制图合作【余烬山脊】
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常规
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    常规
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.celestegame.com/" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    游戏官网
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2">
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常规
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    常规
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/vanilla_issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原版常见问题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/basic_terms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基本术语补充
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    游戏机制和技巧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/easter_eggs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    彩蛋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/common/tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技巧和攻略向教程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/lookup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    查阅
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://maddie480.ovh/celeste/olympus-news" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    新闻
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/speedrun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    速通
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/deathless/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    炼金
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/tas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mods/start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mod 入门
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2">
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    联机 Mod
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    联机 Mod
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://bbs.celemiao.com/d/357-wei-lan-lian-ji-qun-fu-miaonet-xiao-bai-shi-yong-zhi-nan" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蔚蓝联机群服小白入门指南
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://bbs.celemiao.com/d/531-wei-lan-miaonet-qun-fu-lian-ji-shang-shou-zhi-nan-052-alpha" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蔚蓝联机群服上手指南
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mods/common/recommended_mods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    推荐 Mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4">
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常规
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    常规
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mods/common/everest_install_issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Everest 下载问题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://saplonily.top/celeste_common_issues/index.html" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    游戏崩溃问题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    调试模式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    制图
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    制图
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    教程 👈😋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2">
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    入门
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    入门
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    开始
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/is_that_a_dream/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    这...是个梦吗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/must_do/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    新人必做
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3">
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loenn
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Loenn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    下载及游戏配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基本概念及使用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/loenn_first_encountered_issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    初见问题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常见问题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/room/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    房间
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/metadata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    元数据(Map -&gt; Metadata)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/stylegrounds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    背景(Map -&gt; Stylegrounds)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loenn/plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    实用插件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常用✌️😋👍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game_crashes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    游戏崩溃问题 😭
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../question_and_self_study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提问/自学 💪
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mod_structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mod 结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8">
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XML
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    XML
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xml/xml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xml/basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XML 基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xml/tilesets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    砖 XML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xml/sprites_xml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    动画 XML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xml/portraits_xml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对话贴图 XML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_9">
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dialog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dialog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dialog/dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dialog/localization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    本地化/翻译
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dialog/talk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对话
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../camera/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Camera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ghost_player_playback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    残影
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Graphics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Graphics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DecalRegistry
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DecalRegistry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#decalregistryxml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DecalRegistry.xml 的设置
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decal 属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decal 属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animation-animationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        animation 和 animationSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        banner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floaty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        floaty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        smoke
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parallax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sound
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        bloom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#light" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        light
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lightocclude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        lightOcclude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        overlay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomizeframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        randomizeFrame
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreswap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        coreSwap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flagswap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flagSwap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mirror" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mirror
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staticmover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        staticMover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scared" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scared
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        solid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adams-add-ons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由Adam’s Add-Ons提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由Adam’s Add-Ons提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rotate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oscillate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        oscillate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        aim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pendulum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pendulum
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        randomize
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wobble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        wobble
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depthchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depthChange
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playerattach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        playerAttach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cameraattach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cameraAttach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debris-static-mover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        debris (一般和Static Mover属性一起用)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animateonflag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        animateOnFlag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouseattach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mouseAttach
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frost-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由 Frost Helper 提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由 Frost Helper 提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rainbow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rainbow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jungle-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由 Jungle Helper 提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由 Jungle Helper 提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rainbow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rainbow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xaphan-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由 Xaphan Helper 提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由 Xaphan Helper 提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flagshide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flagsHide
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kosei-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由 Kosei Helper 提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由 Kosei Helper 提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        trail
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_depth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    实体深度表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../replace_assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    素材替换
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12_6">
+        
+          
+          <label class="md-nav__link" for="__nav_7_12_6" id="__nav_7_12_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    皮肤制作
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_12_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    皮肤制作
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMH/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skin Mod Helper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12_6_3">
+        
+          
+          <label class="md-nav__link" for="__nav_7_12_6_3" id="__nav_7_12_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skin Mod Helper Plus
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_12_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Skin Mod Helper Plus
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMHP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMHP_SkinConfig/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SkinModHelperConfig
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMHP_ColorGrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ColorGrades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMHP_HairConfig/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HairConfig
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMHP_CharacterConfig/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CharacterConfig
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMHP_trigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigger 使用部分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../color_grading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    滤镜
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_13">
+        
+          
+          <label class="md-nav__link" for="__nav_7_13" id="__nav_7_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Audio
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audio/audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audio/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    播放问题排查
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audio/tile_sounds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tile Sound Id 表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_14">
+        
+          
+          <label class="md-nav__link" for="__nav_7_14" id="__nav_7_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lua Cutscene
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lua Cutscene
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/lua_cutscene/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/mechanism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    机制库
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/lua_cutscene_handbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lua Cutscenes 词典
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/teleport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    传送
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/text/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_14_6">
+        
+          
+          <label class="md-nav__link" for="__nav_7_14_6" id="__nav_7_14_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    示例
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_14_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_14_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    示例
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/examples/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/examples/journeys_of_a_bygone_wanderer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Journeys of a Bygone Wanderer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/examples/the_solar_express/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Solar Express
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/examples/gallery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gallery Collab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lua/examples/megalophobia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WELCOME TO MEGALOPHOBIA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_15">
+        
+          
+          <label class="md-nav__link" for="__nav_7_15" id="__nav_7_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    实用 Helper
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    实用 Helper
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_helpers/useful_helpers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_helpers/mapping_utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapping Utils
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_helpers/eevee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eevee Helper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_helpers/trigger_trigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crystalline Helper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_helpers/bits%20%26%20bolts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    bits &amp; bolts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful_helpers/hELPER/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hELPER
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_16">
+        
+          
+          <label class="md-nav__link" for="__nav_7_16" id="__nav_7_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蔚蓝制图小测
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    蔚蓝制图小测
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一届蔚蓝制图小测😱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_16_2">
+        
+          
+          <label class="md-nav__link" for="__nav_7_16_2" id="__nav_7_16_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题库
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_16_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_16_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    题库
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quiz/true_or_false_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    判断题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quiz/blank_filling_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    填空题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_17">
+        
+          
+          <label class="md-nav__link" for="__nav_7_17" id="__nav_7_17_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collab
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_17">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collab
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collab/collab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collab/dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文本规范
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collab/miniheart_hd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini 水晶之心贴图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mod_test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    测图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../publish_mod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    发布 Mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#decalregistryxml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DecalRegistry.xml 的设置
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decal 属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decal 属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animation-animationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        animation 和 animationSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        banner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floaty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        floaty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        smoke
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parallax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sound
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        bloom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#light" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        light
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lightocclude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        lightOcclude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        overlay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomizeframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        randomizeFrame
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreswap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        coreSwap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flagswap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flagSwap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mirror" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mirror
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staticmover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        staticMover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scared" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scared
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        solid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adams-add-ons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由Adam’s Add-Ons提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由Adam’s Add-Ons提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rotate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oscillate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        oscillate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        aim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pendulum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pendulum
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        randomize
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wobble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        wobble
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depthchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depthChange
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playerattach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        playerAttach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cameraattach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cameraAttach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debris-static-mover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        debris (一般和Static Mover属性一起用)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animateonflag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        animateOnFlag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouseattach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mouseAttach
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frost-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由 Frost Helper 提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由 Frost Helper 提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rainbow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rainbow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jungle-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由 Jungle Helper 提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由 Jungle Helper 提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rainbow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rainbow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xaphan-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由 Xaphan Helper 提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由 Xaphan Helper 提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flagshide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flagsHide
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kosei-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由 Kosei Helper 提供的属性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="由 Kosei Helper 提供的属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        trail
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>DecalRegistry</h1>
+
+<p>参考/引用</p>
+<ul>
+<li><a href="https://wiki.biligame.com/celeste/DecalRegistry" target="_blank" rel="noopener">摘自b站 Wiki (描述不详细, 但很全, 含 helper 自定义的 DecalRegistry 内容)</a></li>
+<li><a href="https://www.bilibili.com/read/cv18389517/" target="_blank" rel="noopener">celeste 地图制作指南 (装饰, decals)(适合新手, 有配图)</a></li>
+<li><a href="https://github.com/EverestAPI/Resources/wiki/Decal-Registry" target="_blank" rel="noopener">摘自 Everest Wiki (描述详细, 且提供了自定义 DecalRegistry 的教程)</a></li>
+<li><a href="https://uddrg.notion.site/Decal-2787f4f27e638051a265e8b708adbe03" target="_blank" rel="noopener">DecalRegistry 使用 by 底龙</a></li>
+</ul>
+<p>如果你有留意过原版的 Decal, 可能会发现一些 Decal 放置后就自带特殊效果, 无需额外设置.</p>
+<p>这是因为官方会通过代码中的硬编码路径规则, 自动为特定的 Decal 添加效果. 例如:</p>
+<ul>
+<li><code>Gameplay/decals/7-summit/cloud_*</code> 下的云 Decal 自动获得视差效果</li>
+<li><code>0-prologue/house</code> 房子自动获得烟囱冒烟效果</li>
+<li><code>10-farewell/cliffside</code> 等很多 9a 的 Decal 自动获得浮动效果 (像月亮块一样)</li>
+</ul>
+<p>官方硬编码是爽了, 但是 Mapper 就无法直接让自己的 Decal 享受这些预设效果了.</p>
+<p>因此, Everest 提供了 <code>DecalRegistry.xml</code> 这一配置文件, 将这些原本写死在代码中的 Decal 效果开放为配置项. Mapper 只需要在其中注册对应的 Decal 路径, 就可以使用这些效果.</p>
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>
+    DecalRegistry.xml 与砖块的 XML 不同, DecalRegistry.xml 的应用范围是你整个 mod 项目, 而不是单个章节, 
+    因此你一旦设置好一个 decal 属性, 你在你的 mod 中的任何章节使用它的属性都会生效, 不能实现在一个章节中它有特效一个章节中它没有特效.
+    </p>
+</div>
+
+<h2 id="decalregistryxml">DecalRegistry.xml 的设置</h2>
+<p>你可能需要了解一下什么是<a href="../../xml/basics/">XML</a></p>
+<p>首先, 在你的项目根文件夹 (<code>蔚蓝本体/Mods/你的项目</code>)中, 创建一个 DecalRegistry.xml (可以先创建一个 <code>.txt</code> 文本文档, 然后再重命名), 像这样</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="00" src="../../../assets/mappings/graphics/decal_registry/00.png"></a></p>
+<p>打开它, 在其中输入</p>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;decals&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!--这个decals与/decals构成一个容器--&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!--里面是容器内容--&gt;</span>
+<span class="nt">&lt;/decals&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>在上述容器中, 我们可以对装饰物添加属性, 针对每一个装饰物, 我们需要先建立一个 decal 容器:</p>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;decal</span><span class="w"> </span><span class="na">path=</span><span class="s">""</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!--里面是decal属性--&gt;</span>
+<span class="nt">&lt;/decal&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>这样, 基本结构就已经设置好了, 也就是说你的 DecalRegistry.xml 的完整结构应该是类似于:</p>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;decals&gt;</span>
+<span class="w">    </span><span class="nt">&lt;decal</span><span class="w"> </span><span class="na">path=</span><span class="s">"decal路径A"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="cm">&lt;!--里面是decal属性--&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/decal&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;decal</span><span class="w"> </span><span class="na">path=</span><span class="s">"decal路径B"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="cm">&lt;!--里面是decal属性--&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/decal&gt;</span>
+
+<span class="w">    </span>...
+<span class="nt">&lt;/decals&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>现在, 我们来介绍每一个单独的 Decal 属性</p>
+<h2 id="decal">Decal 属性</h2>
+<h3 id="animation-animationspeed">animation 和 animationSpeed</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;animation</span><span class="w"> </span><span class="na">frames=</span><span class="s">"帧数"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;animationSpeed</span><span class="w"> </span><span class="na">value=</span><span class="s">"整数"</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- value 单位为帧/秒. --&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>动画控制器, 可以控制你的 decal 动画播放. </p>
+<p>frames 中的帧数对应动画的数字序号, 假设你的动画有 60 帧, 你的文件命名应当是 <code>name00.png</code> 一直到 <code>name59.png</code>, 而这里面每一帧的序号就分别是0到59.</p>
+<p>frames 书写是每个数字使用英文逗号隔开, 同时可以使用如下符号:</p>
+<ul>
+<li>m-n: 表示从序号为 m 的帧播放到序号为 n 的帧.</li>
+<li>m*n: 表示将序号为 m 的帧播放 n 次. </li>
+</ul>
+<p>例如对于 <code>1, 2, 4-6, 3*2</code> 的展开就是 <code>1, 2, 4, 5, 6, 3, 3</code></p>
+<h3 id="banner">banner</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;banner</span><span class="w"> </span><span class="na">speed=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">amplitude=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">sliceSize=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">sliceSinIncrement=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">easeDown=</span><span class="s">"true 或者 false"</span><span class="w"> </span><span class="na">offset=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">onlyIfWindy=</span><span class="s">"true 或者 false"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>相当于按 sliceSize 间距横着将图片切分成若干份, 之后每一段会随正弦函数摆动, 常用于小草等装饰物的随风摆动</p>
+<p>拟合函数图像 <span class="arithmatex">\(f(x) = \mathrm{amplitude} \times \sin(\mathrm{sliceSinIncrement} \times \mathrm{speed} + \mathrm{offset})\)</span></p>
+<h3 id="floaty">floaty</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;floaty/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>让装饰物可以有上下漂浮的效果</p>
+<h3 id="smoke">smoke</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;smoke</span><span class="w"> </span><span class="na">offsetX=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">offsetY=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">inbg=</span><span class="s">"true 或者 false"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>offsetX 和 offsetY 都是基于装饰的画布中心来计算的</p>
+<h3 id="parallax">parallax</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;parallax</span><span class="w"> </span><span class="na">amount=</span><span class="s">"小数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>这个参数可以让装饰有视差, 和 bg 一样, amount 参数可正可负的, 相当于 bg 从 <code>scroll=1</code> 开始计算</p>
+<h3 id="sound">sound</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;sound</span><span class="w"> </span><span class="na">event=</span><span class="s">""</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>event 里面填 event 名字</p>
+<h3 id="bloom">bloom</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;bloom</span><span class="w"> </span><span class="na">offsetX=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">offsetY=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">alpha=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">radius=</span><span class="s">"小数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>发光 offset 从画布中心开始计算</p>
+<h3 id="light">light</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;light</span><span class="w"> </span><span class="na">offsetX=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">offsetY=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">color=</span><span class="s">"hex"</span><span class="w"> </span><span class="na">alpha=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">startFade=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">endFade=</span><span class="s">"整数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="01" src="../../../assets/mappings/graphics/decal_registry/01.png"></a></p>
+<h3 id="lightocclude">lightOcclude</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;lightOcclude</span><span class="w"> </span><span class="na">x=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">y=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">width=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">height=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">alpha=</span><span class="s">"小数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>阻挡光线的区域</p>
+<h3 id="overlay">overlay</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;overlay/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>相当于把 decal 作为 Tile(不受缩放影响) 替换掉 decal 对应位置的 Tile, 
+比如把你的 decal 放在 Dash Block 上, Dash Block 身上的部分区域就会被替换(建议 decal 长宽为 8px 倍数)</p>
+<p>使用上感觉不如用 <code>staticMover</code> 或者 Eevee Helper 直接把 decal 粘在对象上</p>
+<h3 id="scale">scale</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;scale</span><span class="w"> </span><span class="na">multiplyX=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">multiplyY=</span><span class="s">"小数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>装饰放缩</p>
+<h3 id="randomizeframe">randomizeFrame</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;randomizeFrame/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>装饰会从随机的一帧开始</p>
+<h3 id="coreswap">coreSwap</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;coreSwap</span><span class="w"> </span><span class="na">coldPath=</span><span class="s">""</span><span class="w"> </span><span class="na">hotPath=</span><span class="s">""</span><span class="nt">/&gt;</span><span class="w"> </span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="flagswap">flagSwap</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;flagSwap</span><span class="w"> </span><span class="na">flag=</span><span class="s">""</span><span class="w"> </span><span class="na">offPath=</span><span class="s">""</span><span class="w"> </span><span class="na">onPath=</span><span class="s">""</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>path 从 Gameplay 往后填写</p>
+<h3 id="mirror">mirror</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;mirror</span><span class="w"> </span><span class="na">keepOffsetsClose=</span><span class="s">"true 或者 false"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>给装饰添加一个镜面反射效果, <code>decals/modname/mytexture.png</code> 对应的镜面贴图是 <code>mirrormasks/modname/mytexture.png</code> 用彩色图像来定义镜面的远近</p>
+<ul>
+<li>红色值表示 X 方向偏移</li>
+<li>绿色值 Y 方向偏移 </li>
+</ul>
+<p>白色(颜色值为 255)表示最近, 黑色(颜色值为 0)表示最远</p>
+<h3 id="staticmover">staticMover</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;staticMover</span><span class="w"> </span><span class="na">x=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">y=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">width=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">height=</span><span class="s">"整数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>将装饰连接在实体的判定箱上, <a href="../../loenn/faq/#_16">Y 方向向下</a></p>
+<h3 id="scared">scared</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;scared</span><span class="w"> </span><span class="na">hideRange=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">showRange=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">hideFrames=</span><span class="s">"帧数"</span><span class="w"> </span><span class="na">showFrames=</span><span class="s">"帧数"</span><span class="w"> </span><span class="na">idleFrames=</span><span class="s">"帧数"</span><span class="w"> </span><span class="na">hiddenFrames=</span><span class="s">"帧数"</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w"> </span>
+</code></pre></div></td></tr></tbody></table></div>
+<ul>
+<li>hideRange: 当玩家距离 decal 小于该值时, decal 进入 hide 状态并播放 hide 动画, 使用 hiddenFrames 里的帧序列</li>
+<li>showRange: 当玩家距离 decal 大于该值时, decal 进入 show 状态并播放 show 动画, 使用 showFrames 里的帧序列</li>
+</ul>
+<p>其他情况正常播放 idleFrames 里的帧序列</p>
+<h3 id="solid">solid</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;solid</span><span class="w"> </span><span class="na">x=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">y=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">width=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">height=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">index=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">blockWaterfalls=</span><span class="s">"true 或者 false"</span><span class="w"> </span><span class="na">safe=</span><span class="s">"true 或者 false"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>给装饰加一个可以交互的碰撞箱, 但是不能和 container 起作用</p>
+<ul>
+<li>x 和 y 从装饰中间开始计算, Y 方向向下</li>
+<li>index 是<a href="../../audio/tile_sounds/">交互的材质音效</a></li>
+<li>safe 用于判定草莓能否被收集 </li>
+</ul>
+<h3 id="depth">depth</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;depth</span><span class="w"> </span><span class="na">value=</span><span class="s">"整数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>可以规定<a href="../entity_depth/">装饰的层级</a></p>
+<h2 id="adams-add-ons">由Adam’s Add-Ons提供的属性</h2>
+<h3 id="rotate">rotate</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.rotate</span><span class="w"> </span><span class="na">speed=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">addX=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">addY=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">addWind=</span><span class="s">"小数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<ul>
+<li>rotate 允许装饰物围绕其自身中心旋转 </li>
+<li>speed 控制旋转速度 </li>
+<li>addX 与 addY 允许装饰沿轴进行位移运动 </li>
+<li>addWind 允许装饰按倍率受风的影响被吹动</li>
+</ul>
+<h3 id="oscillate"><a href="https://gist.github.com/AdamKorinek/7e27d288701db5a0df095f756f0f8e9a#oscillate-adamsaddonsoscillate" target="_blank" rel="noopener">oscillate</a></h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.oscillate</span><span class="w"> </span><span class="na">speed=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">offset=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">backPath=</span><span class="s">"decals/路径"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<ul>
+<li>oscillate 允许装饰沿 Y 坐标轴进行转动, 像立体旋转一样</li>
+<li>speed 定义旋转速度, offset 定义位差</li>
+<li>backPath 表示旋转时背面对应的图片路径(相对于 <code>decals</code> 文件夹), 不填默认跟正面用的一样</li>
+</ul>
+<p>举例: 你的装饰文件如果放在 <code>Celeste/Mods/yourMap/Graphics/Atlases/Gameplay/decals/yourName/yourMap</code> 文件夹内, 
+文件名叫做 <code>flower.png</code> 此处的写法就应该是: <code>yourName/yourMap/flower</code></p>
+<h3 id="aim">aim</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.aim/&gt;</span>
+<span class="nt">&lt;adamsaddons.aim</span><span class="w"> </span><span class="na">theo=</span><span class="s">"true 或者 false"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<ul>
+<li>aim 会让装饰朝向玩家所在的方向</li>
+<li>theo 参数控制是否响应 theo 水晶所在的方向</li>
+</ul>
+<h3 id="pendulum">pendulum</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.pendulum</span><span class="w"> </span><span class="na">speed=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">offset=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">angle=</span><span class="s">"整数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>pendulum 允许装饰像钟摆一样摆动 </p>
+<ul>
+<li>speed 定义摆动速度</li>
+<li>offset 定义起始位差</li>
+<li>angle 定义摆动角度</li>
+</ul>
+<h3 id="shake">shake</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.shake/&gt;</span>
+<span class="nt">&lt;adamsaddons.shake</span><span class="w"> </span><span class="na">delay=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">height=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">width=</span><span class="s">"整数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>shake 会使得装饰随机“颤抖” </p>
+<ul>
+<li>width 与 height 控制随机颤抖的区域大小</li>
+<li>delay 是出现颤抖的间隔</li>
+</ul>
+<h3 id="move">move</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.move</span><span class="w"> </span><span class="na">amount=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">width=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">height=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">locked=</span><span class="s">"true 或者 false"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>move 本质是让装饰相对于所在的位置发生偏离, 但是结合前文 <code>adamsaddons.rotate</code> 一起就可以做出类似于风车一样的效果,
+由于 rotate 会使得装饰本身也产生旋转, 因此可以在此用 locked 参数锁定旋转, width 与 height 就是装饰相对于装饰所在点产生的位移</p>
+<h3 id="randomize">randomize</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.randomize</span><span class="w"> </span><span class="na">frame=</span><span class="s">"true false"</span><span class="w"> </span><span class="na">flipX=</span><span class="s">"true false"</span><span class="w"> </span><span class="na">flipY=</span><span class="s">"true false"</span><span class="w"> </span><span class="na">rotations=</span><span class="s">"整数"</span><span class="w"> </span><span class="na">colors=</span><span class="s">""</span><span class="w"> </span><span class="na">shrink=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">chance=</span><span class="s">"小数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>randomize 可以将你的装饰随机化变换! </p>
+<ul>
+<li>frame 应用于你的装饰原本是一个动画序列的情况, 它将会取消装饰的动画播放, 转而变成随机从这些帧数里面挑一张展示</li>
+<li>flipX 与 flipY 决定随机处理装饰时是否会让他出现上下或者左右翻转</li>
+<li>rotations 的整数表示这个装饰将会以几个不同的角度出现, 比如 <code>rotations="4"</code>, 则这个装饰在地图中可能以旋转 <code>0, 90, 180, 270</code> 度的形态随机出现 </li>
+<li>colors 中填入的是若干 hex 颜色代码, 如 <code>colors="ffffff,ff0000,00ff00,0000ff"</code>, 等同于“白, 红, 绿, 蓝”, 不同颜色的 hex 代码用英文逗号隔开 </li>
+<li>shrink 表示随机处理装饰的时候其最小放缩的倍数, 设置完成后在地图中装饰会以 <code>shrink ~ 1</code> 倍随机大小出现在地图中 </li>
+<li>chance 决定随机处理装饰的概率, 比如 <code>chance="0.25"</code>, 则地图中约有四分之一的装饰可能会被随机化处理</li>
+</ul>
+<h3 id="fade">fade</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.fade</span><span class="w"> </span><span class="na">alphaFrom=</span><span class="s">"小数"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;adamsaddons.fade</span><span class="w"> </span><span class="na">alphaFrom=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">alphaTo=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">randomize=</span><span class="s">"布尔值"</span><span class="w"> </span><span class="na">speed=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">offset=</span><span class="s">"小数"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>fade 属性可以让装饰以匀速不透明度进行闪烁 </p>
+<ul>
+<li>alphaFrom 为起始不透明度</li>
+<li>alphaTo 为终止不透明度</li>
+<li>randomize 将其随机化 offset 表示起始位差</li>
+</ul>
+<h3 id="wobble">wobble</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.wobble</span><span class="w"> </span><span class="na">width=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">height=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">speed=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">offset=</span><span class="s">"小数"</span><span class="w"> </span><span class="na">randomize=</span><span class="s">"布尔值"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>wobble 会让装饰产生像原版泡泡一样的鼓动效果 </p>
+<p>width 和 height 控制的是在对应方向的挤压变形倍率 如 <code>width="0.25"</code> 时,
+宽度就会在 <code>75%-125%</code> 之间鼓动, height 同理</p>
+<h3 id="depthchange">depthChange</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.depthChange</span><span class="w"> </span><span class="na">depthFrom=</span><span class="s">"-100"</span><span class="w"> </span><span class="na">depthTo=</span><span class="s">"100"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;adamsaddons.depthChange</span><span class="w"> </span><span class="na">depthFrom=</span><span class="s">"250"</span><span class="w"> </span><span class="na">depthTo=</span><span class="s">"500"</span><span class="w"> </span><span class="na">speed=</span><span class="s">"0.5"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;adamsaddons.depthChange</span><span class="w"> </span><span class="na">depthFrom=</span><span class="s">"100"</span><span class="w"> </span><span class="na">depthTo=</span><span class="s">"-100"</span><span class="w"> </span><span class="na">relativeX=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="playerattach">playerAttach</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.playerAttach/&gt;</span>
+<span class="nt">&lt;adamsaddons.playerAttach</span><span class="w"> </span><span class="na">offsetX=</span><span class="s">"5"</span><span class="w"> </span><span class="na">offsetY=</span><span class="s">"-8"</span><span class="w"> </span><span class="na">facing=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;adamsaddons.playerAttach</span><span class="w"> </span><span class="na">hairOffset=</span><span class="s">"true"</span><span class="w"> </span><span class="na">copyScale=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;adamsaddons.playerAttach</span><span class="w"> </span><span class="na">flag=</span><span class="s">"attach_flag"</span><span class="w"> </span><span class="na">preSpawn=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="cameraattach">cameraAttach</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.cameraAttach/&gt;</span>
+<span class="nt">&lt;adamsaddons.cameraAttach</span><span class="w"> </span><span class="na">offsetX=</span><span class="s">"-8"</span><span class="w"> </span><span class="na">offsetY=</span><span class="s">"-8"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;adamsaddons.playerAttach</span><span class="w"> </span><span class="na">flag=</span><span class="s">"attach_flag"</span><span class="w"> </span><span class="na">preSpawn=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="debris-static-mover">debris (一般和Static Mover属性一起用)</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.debris</span><span class="w"> </span><span class="na">path=</span><span class="s">"相对于 Gameplay 的路径"</span><span class="w"> </span><span class="na">sound=</span><span class="s">"碎片落地的声音 id"</span><span class="w"> </span><span class="na">fromPlayer=</span><span class="s">"true"</span><span class="w"> </span><span class="na">fromBadeline=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="02" src="../../../assets/mappings/graphics/decal_registry/02.png"></a></p>
+<h3 id="global">global</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.global</span><span class="w"> </span><span class="na">transitionUpdate=</span><span class="s">"true"</span><span class="w"> </span><span class="na">frozenUpdate=</span><span class="s">"true"</span><span class="w"> </span><span class="na">pauseUpdate=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>让装饰物既便在玩家离开房间的状态下也能持续刷新, 类似于全局 decal 的效果</p>
+<ul>
+<li>transitionUpdate 是否在房间过渡阶段刷新</li>
+<li>frozenUpdate 是否在冻结帧刷新 </li>
+<li>pauseUpdate 是否在游戏暂停时刷新</li>
+</ul>
+<h3 id="animateonflag"><strong>animateOnFlag</strong></h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.animateOnFlag</span><span class="w"> </span><span class="na">flag=</span><span class="s">"flag 名字"</span><span class="w"> </span><span class="na">singleFrame=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>让 decal 在特定 flag 激活时才会播放动画 (控制动画播放)</p>
+<ul>
+<li>singleFrame: 每当 flag 激活一次, decal 才会前进一帧</li>
+</ul>
+<h3 id="mouseattach"><strong>mouseAttach</strong></h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;adamsaddons.mouseAttach/&gt;</span>
+<span class="nt">&lt;adamsaddons.mouseAttach</span><span class="w"> </span><span class="na">offsetX=</span><span class="s">"-8"</span><span class="w"> </span><span class="na">offsetY=</span><span class="s">"-8"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;adamsaddons.mouseAttach</span><span class="w"> </span><span class="na">flag=</span><span class="s">"flag名字"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>字面意思, 将 decal 粘在鼠标上</p>
+<ul>
+<li>offsetX 和 offsetY 设置 decal 的偏移量 </li>
+<li>flag 属性存在时需要 flag 才会将装饰物粘到鼠标上</li>
+</ul>
+<h2 id="frost-helper">由 Frost Helper 提供的属性</h2>
+<h3 id="rainbow">rainbow</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;frosthelper.rainbow/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>让 decal 进行彩虹变化, 可以被能改变彩虹刺颜色的实体改变变化的颜色.</p>
+<h2 id="jungle-helper">由 Jungle Helper 提供的属性</h2>
+<h3 id="rainbow_1">rainbow</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;jungleHelper_rainbow/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>让 decal 进行彩虹变化, 可以被能改变彩虹刺颜色的实体改变变化的颜色.</p>
+<h2 id="xaphan-helper">由 Xaphan Helper 提供的属性</h2>
+<h3 id="flagshide">flagsHide</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;XaphanHelper_flagsHide</span><span class="w"> </span><span class="na">flags=</span><span class="s">"flag1,flag2,..."</span><span class="w"> </span><span class="na">room=</span><span class="s">"room name"</span><span class="w"> </span><span class="na">inverted=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>默认情况下 flags 中只要存在一个这个 decal 就会被隐藏</p>
+<h2 id="kosei-helper">由 Kosei Helper 提供的属性</h2>
+<h3 id="kill">kill</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;koseihelper.kill</span><span class="w"> </span><span class="na">offsetX=</span><span class="s">"0"</span><span class="w"> </span><span class="na">offsetY=</span><span class="s">"8"</span><span class="w"> </span><span class="na">width=</span><span class="s">"16"</span><span class="w"> </span><span class="na">height=</span><span class="s">"16"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>装饰会刺杀玩家</p>
+<h3 id="moving">moving</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;koseihelper.moving</span><span class="w"> </span><span class="na">ySpeed=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;koseihelper.moving</span><span class="w"> </span><span class="na">xSpeed=</span><span class="s">"1"</span><span class="w"> </span><span class="na">moveWithWind=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;koseihelper.moving</span><span class="w"> </span><span class="na">ySpeed=</span><span class="s">"-1"</span><span class="w"> </span><span class="na">collideWithSolids=</span><span class="s">"true"</span><span class="w"> </span><span class="na">width=</span><span class="s">"16"</span><span class="w"> </span><span class="na">height=</span><span class="s">"16"</span><span class="w"> </span><span class="na">offsetX=</span><span class="s">"-8"</span><span class="w"> </span><span class="na">offsetY=</span><span class="s">"-8"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>装饰运动</p>
+<h3 id="trail">trail</h3>
+<div class="language-xml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;koseihelper.trail</span><span class="w"> </span><span class="na">color=</span><span class="s">"f94a4a"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;koseihelper.trail</span><span class="w"> </span><span class="na">duration=</span><span class="s">"0.75"</span><span class="w"> </span><span class="na">spawnInterval=</span><span class="s">"0.15"</span><span class="w"> </span><span class="na">color=</span><span class="s">"ffffff22"</span><span class="nt">/&gt;</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>装饰运动 + 轨迹</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "content.tabs.link", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/katex/katex.min.js"></script>
+      
+        <script src="../../../javascripts/katex/auto-render.min.js"></script>
+      
+        <script src="../../../javascripts/katex/katex.js"></script>
+      
+        <script src="../../../assets/external/unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
