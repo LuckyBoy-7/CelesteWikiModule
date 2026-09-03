@@ -247,7 +247,7 @@ B: 使用 `Communal/SolarElevator`(移植自草莓酱) 即可, 参考[视频链�
 
 <a id="emoji"></a>
 
-#### [使用 Emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes){:target="_blank"}
+#### [使用 Emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes)
 
 B: 参考[视频链接](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=544)
 
@@ -357,10 +357,10 @@ B: 使用 Trigger Trigger 的 Holdable Entered 模式即可, 参考[视频](http
 
 #### 有选择的对话
 
-由于本质上就是使用 [choice](https://sapcelestemod.netlify.app/extra_luacs/reference/#choice){:target="_blank"} 然后就完事了, 但是如果你想做些高级的功能,
+由于本质上就是使用 [choice](https://sapcelestemod.netlify.app/extra_luacs/reference/#choice) 然后就完事了, 但是如果你想做些高级的功能,
 比如每个对话需要什么前置对话(说完 A 才能说 B 这种), 所以这里提供一个辅助类来帮你完成这件事
 
-首先看一个画游序章的[例子](https://www.bilibili.com/video/BV17RsWeDE3Y/){:target="_blank"}(搭配了 `LuaCutscnes/Lua Talker`), 这是 choice 的一种比较常见的用法: 列出一系列选项,
+首先看一个画游序章的[例子](https://www.bilibili.com/video/BV17RsWeDE3Y/)(搭配了 `LuaCutscnes/Lua Talker`), 这是 choice 的一种比较常见的用法: 列出一系列选项,
 想选哪个选哪个
 
 <details>
@@ -394,8 +394,8 @@ end
 
 </details>
 
-再看一个烈冕号的[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=115){:target="_blank"}, 
-[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=709){:target="_blank"}或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1049){:target="_blank"}, 这是
+再看一个烈冕号的[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=115), 
+[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=709)或者[例子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=1049), 这是
 choice 的一种比较高级的用法, 如果我们想要弹出对话 B 之前需要对话过对话 A, 我们就得写一些 if else(当然 choice 本身是很朴素的, 关键是我们代码怎么写能让它实现更丰富的效果)
 
 <details>

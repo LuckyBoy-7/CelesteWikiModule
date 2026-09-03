@@ -28,7 +28,7 @@ Hi!
 ```
 
 由于我们在这里只讲对话的定义, 因此对于 `人物`, `头像位置`, 和 `表情` 所对应的部分应该用什么替换,
-这里直接给出[对照表](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85){:target="_blank"}
+这里直接给出[对照表](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85)
 
 * 关于人物 ID 如果想要进一步自定义的话可以参考[portrait_madeline 栏目](../xml/portraits_xml.md#portrait_madeline)
 * 关于人物表情如果想要进一步自定义的话可以参考[音效原理 (sfxs 栏目)](../xml/portraits_xml.md#sfxs)和[动画原理 (Animations 栏目)](../xml/portraits_xml.md#animations)
@@ -111,7 +111,7 @@ I feel like I feel that I feel like I should I dunno{n}I don't really know I don
 ## Prismatic Helper 指令
 
 Prismatic 作为一个常见的过场 Helper, 它为 mapper 提供了许多的 Dialog 形式的指令, 十分方便使用, 这里将可用指令也简单讲解一下,
-如有疑问可以查看[原文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md){:target="_blank"}
+如有疑问可以查看[原文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md)
 
 Prismatic 的使用方法与前文对话指令一致, 指令格式分以下三种:
 
@@ -200,7 +200,7 @@ camera_zoom n t easer
 camera_zoom_back t
 ```
 
-将镜头缩放, n 为缩放倍数, t 为缩放过程用时, easer 为[缓动函数](https://easings.net/zh-cn){:target="_blank"}
+将镜头缩放, n 为缩放倍数, t 为缩放过程用时, easer 为[缓动函数](https://easings.net/zh-cn)
 
 camera_zoom_back 将镜头还原, t 为过程用时
 
@@ -215,9 +215,9 @@ camera_pan x y t easer
 camera_pan_to x y t easer
 ```
 
-移动镜头, 向右 x 像素, 向下 y 像素, 用时 t, easer 为[缓动函数](https://easings.net/zh-cn){:target="_blank"}
+移动镜头, 向右 x 像素, 向下 y 像素, 用时 t, easer 为[缓动函数](https://easings.net/zh-cn)
 
-camera_pan_to 表示将镜头移动到坐标 (x,y) 而不是移动距离, 用时 t, easer 为[缓动函数](https://easings.net/zh-cn){:target="_blank"}
+camera_pan_to 表示将镜头移动到坐标 (x,y) 而不是移动距离, 用时 t, easer 为[缓动函数](https://easings.net/zh-cn)
 
 x 和 y 为整数, t 为小数
 

@@ -2,9 +2,9 @@
 
 参考
 
-* [Skin Mod Helper 香蕉网](https://gamebanana.com/mods/166543){:target="_blank"}
-* [Skin Mod Helper README](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md){:target="_blank"}
-* [常见问题](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md#part-4-troubleshooting){:target="_blank"}
+* [Skin Mod Helper 香蕉网](https://gamebanana.com/mods/166543)
+* [Skin Mod Helper README](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md)
+* [常见问题](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md#part-4-troubleshooting)
 * [Theo 皮肤](https://gamebanana.com/mods/251813)
 * [Ralsei 皮肤](https://gamebanana.com/mods/385893)
 

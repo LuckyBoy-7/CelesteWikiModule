@@ -33,7 +33,7 @@ x 方向(从左上角开始)存储 R, 用 y 方向存储 G,
   <figcaption>路径: Graphics/ColorGrading/{UniquePath}/dash1.png</figcaption>
 </figure>
 
-### [屏幕滤镜制作](https://www.bilibili.com/video/BV1WW7czqEPi){:target="_blank"}
+### [屏幕滤镜制作](https://www.bilibili.com/video/BV1WW7czqEPi)
 
 这里本来想贴 WEG 录的视频的, 但是太久远了没找到, 只能仿照录一个了
 
@@ -41,9 +41,9 @@ x 方向(从左上角开始)存储 R, 用 y 方向存储 G,
 
 视频中演示的是改 HSV, 如果你改 RGB 啥的原理也是一样的
 
-这里有个一[网站](https://colorgrade-visualiser.modded-celeste.com/){:target="_blank"}给出了一些官图画面方便你查看滤镜效果, 复制你的滤镜在网站内 `Ctrl + V` 即可
+这里有个一[网站](https://colorgrade-visualiser.modded-celeste.com/)给出了一些官图画面方便你查看滤镜效果, 复制你的滤镜在网站内 `Ctrl + V` 即可
 
-如果你觉得这还是太吃操作了, 建议你使用[滤镜生成工具 / Celeste Colorgrade Generator](https://lostinnowhere314.github.io/celeste-colorgrade-gen/){:target="_blank"}: 生成完毕将图像另存为即可,
+如果你觉得这还是太吃操作了, 建议你使用[滤镜生成工具 / Celeste Colorgrade Generator](https://lostinnowhere314.github.io/celeste-colorgrade-gen/): 生成完毕将图像另存为即可,
 但我感觉还是感觉像 WEG 这样调符合直觉一点
 
 

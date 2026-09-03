@@ -2,11 +2,11 @@
 
 你可能需要先了解一下什么是[XML](xml.md)
 
-* [摘自电箱教程](https://www.bilibili.com/video/BV1kV4y137Mn/?spm_id_from=333.788&vd_source=217bacbee37820b5bf3ed2f4fb8f6c94){:target="_blank"}
-* [摘自 Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets){:target="_blank"}
-* [瓦片集格式参考](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference){:target="_blank"}
+* [摘自电箱教程](https://www.bilibili.com/video/BV1kV4y137Mn/?spm_id_from=333.788&vd_source=217bacbee37820b5bf3ed2f4fb8f6c94)
+* [摘自 Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
+* [瓦片集格式参考](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 * [motonine 的自制 tiles 教程](../../assets/mappings/xml/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
-* [Tileset 教程 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63805e903ce64c7725f62b&pm=s){:target="_blank"}, [底龙的自定义tiles教程](https://www.bilibili.com/video/BV1Eu4y1L78Y){:target="_blank"}, [非官方模板的tiles应用](https://www.bilibili.com/video/BV1t94y1c7ZT){:target="_blank"}
+* [Tileset 教程 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63805e903ce64c7725f62b&pm=s), [底龙的自定义tiles教程](https://www.bilibili.com/video/BV1Eu4y1L78Y), [非官方模板的tiles应用](https://www.bilibili.com/video/BV1t94y1c7ZT)
 
 ## Tile
 
@@ -60,7 +60,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 ### ForegroundTiles.xml 属性
 下面我们来简单介绍一下`ForegroundTiles.xml` 中相对重要的属性
 
-更多属性请参考[Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference){:target="_blank"}
+更多属性请参考[Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 
 * `id`: 就是类似身份证一样的东西, 唯一标识符, 不能重复... 所以如果你加新的砖模板要更换 `id`, 可以用英文字母, 也可以用汉字(笑
 * `path`: 指明了 tileset 对应的素材位置, 路径相对于`Gameplay/tilesets` 文件夹, 例如上面提到的 `cement` 对应的 `path` 就是 `cement` 
@@ -101,14 +101,14 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 * 直接对原版素材改色, 然后把官图的`ForegroundTiles.xml` copy 一份, 在新的那份中添加一个自己的 Tileset节点, 之后在Loenn元数据里选择这个新的`xml`即可 
 * 照着原版的 template 砖改 
 * 自己写一个`ForegroundTiles.xml`
-* 抄/借别人的`ForegroundTiles.xml`, 比如[Spooooky素材包](https://gamebanana.com/mods/474010){:target="_blank"}, 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8){:target="_blank"}(里面会自带 xml 的)
+* 抄/借别人的`ForegroundTiles.xml`, 比如[Spooooky素材包](https://gamebanana.com/mods/474010), 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)(里面会自带 xml 的)
 
 
 ## 使用别人自定义的 `ForegroundTiles.xml`
 
 如果你觉得你的模板更好, 欢迎投稿😋
 
-### [`ForegroundTiles.xml` by 0x0ade](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets){:target="_blank"}
+### [`ForegroundTiles.xml` by 0x0ade](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 
 <figure markdown>
   ![tileset](../../assets/mappings/xml/tileset/0x0ade_tileset_template.png){style="width: 600px; image-rendering: pixelated; title=123"}
@@ -205,9 +205,9 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
     <set mask="center" tiles="7,7; 8,7; 7,8; 8,8"/>
   </Tileset>
 ```
-### [`ForegroundTiles.xml` by ...](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets){:target="_blank"}
+### [`ForegroundTiles.xml` by ...](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 
-常用在[Spooooky素材包](https://gamebanana.com/mods/474010){:target="_blank"}中, 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8){:target="_blank"}(里面会自带 xml 的)
+常用在[Spooooky素材包](https://gamebanana.com/mods/474010)中, 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)(里面会自带 xml 的)
 
 <figure markdown>
   ![tileset](../../assets/mappings/xml/tileset/Guide_Alternate.jpeg){style="width: 800px; image-rendering: pixelated; title=123"}
