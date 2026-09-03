@@ -7,7 +7,7 @@
 我们在讲 `Sprites.xml` 之前先简单介绍下什么是动画
 
 简单来说就是利用人类的视觉残留现象通过连续的相近的画面给人一种 "动" 的感觉,
-比较贴近现实的是[翻页动画](https://search.bilibili.com/all?vt=16694194&keyword=%E7%BF%BB%E9%A1%B5%E5%8A%A8%E7%94%BB){:target="_blank"}
+比较贴近现实的是[翻页动画](https://search.bilibili.com/all?vt=16694194&keyword=%E7%BF%BB%E9%A1%B5%E5%8A%A8%E7%94%BB)
 
 但是在计算机动画中比较常见的是 `帧动画` 和 `骨骼动画`
 
@@ -35,7 +35,7 @@
 
 我们将一张图片分解成若干网格, 再用"骨骼"来控制一部分网格, 这样当我们旋转骨骼的时候, 网格也会跟着形变, 这样我们就可以用一张图片来做动画了
 
-具体可以看看[相关视频](https://www.bilibili.com/video/BV1kK4y1t79f/?vd_source=88291083a8b9233d0006bb44b0331137&t=135){:target="_blank"}
+具体可以看看[相关视频](https://www.bilibili.com/video/BV1kK4y1t79f/?vd_source=88291083a8b9233d0006bb44b0331137&t=135)
 
 ## 动画状态机
 
@@ -181,7 +181,7 @@
 
 **hair**
 
-首先你可以简单了解下蔚蓝的头发是怎么绘制的, 这里举一个相近的[例子](https://www.bilibili.com/video/BV1dy421v7o1){:target="_blank"}, 蔚蓝差不多就是这么干的(在这基础上会加个刘海, 具体看
+首先你可以简单了解下蔚蓝的头发是怎么绘制的, 这里举一个相近的[例子](https://www.bilibili.com/video/BV1dy421v7o1), 蔚蓝差不多就是这么干的(在这基础上会加个刘海, 具体看
 `player`素材里的
 `bangs00`)
 

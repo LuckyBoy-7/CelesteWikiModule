@@ -1,6 +1,6 @@
 其他资料
 
-* [XML 简单介绍 by Saplonily](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/){:target="_blank"}
+* [XML 简单介绍 by Saplonily](https://saplonily.top/celeste_mod_tutorial/other/xml-speedrun/)
 
 嘿, 各位好, 这里是底龙, 蔚蓝制图中有一个非常常见的, 基本绕不开的东西, 叫做XML, 不管你是在地图添加砖块, 还是在给自己的实体换皮, 几乎总是能遇到它.
 

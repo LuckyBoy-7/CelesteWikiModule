@@ -4,11 +4,11 @@
 
 ## 参考
 
-* [正常替换](https://github.com/EverestAPI/Resources/wiki/Replacing-A-Texture){:target="_blank"}
-* [高级替换](https://github.com/EverestAPI/Resources/wiki/Reskinning-Entities){:target="_blank"}
+* [正常替换](https://github.com/EverestAPI/Resources/wiki/Replacing-A-Texture)
+* [高级替换](https://github.com/EverestAPI/Resources/wiki/Reskinning-Entities)
 * [[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)](https://www.bilibili.com/video/BV1cP4y1m7B2)
 * 冬菜教程
-* [替换素材 by 底龙](https://www.bilibili.com/video/BV1uUHYzLEu5/){:target="_blank"}
+* [替换素材 by 底龙](https://www.bilibili.com/video/BV1uUHYzLEu5/)
 
 由于图片是最常见最需要被替换的资源, 所以本章主要围绕图片展开
 

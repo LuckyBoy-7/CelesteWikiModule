@@ -35,6 +35,9 @@ plugins:
   - glightbox
   - search:
       separator: '[\s\u200b\-]'
+  - privacy:
+      links_attr_map:
+        target: _blank
 
 extra_css:
   - css/content.css
@@ -63,7 +66,12 @@ nav:
   - Wiki: "general/wiki.md"
   - 社区: "general/community.md"
   - 活动:
-      - 糖游: "activity/candy.md"
+      - 群服活动: 
+          - Any% 分段速通接力活动: "https://bbs.celemiao.com/d/471-miaonet-she-qu-any-fen-duan-su-tong-jie-li-huo-dong"
+          - ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng"
+          - ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang"
+      - 制图活动:
+          - 糖游: "activity/candy.md"
   - 常规:
       - 游戏官网: "https://www.celestegame.com/"
       - 常规:

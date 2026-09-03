@@ -280,7 +280,7 @@
 
 ### 11. 发布 Mod 时, 我们需要将` everest.yaml` 层级的文件打包到 `.zip` 中, 而不是 `Mods/` 文件夹下自己的 Mod
 
-### 12. 我们必须使用 [Sublime](https://www.sublimetext.com/){:target="_blank"} 文本编辑器来打开 `everest.yaml`
+### 12. 我们必须使用 [Sublime](https://www.sublimetext.com/) 文本编辑器来打开 `everest.yaml`
 
 ### 13. 在原版中, 官方通过 `DecalRegistry.xml` 来为 decal 添加其他额外的效果, 比如给云添加了视差, 给烟囱添加了烟雾, 给 Dash Block 添加了裂纹
 
@@ -470,9 +470,9 @@ B
 
 #### 2
 
-1. [Everest](https://github.com/EverestAPI/Everest){:target="_blank"}
-2. [Olympus](https://gamebanana.com/tools/download/6449){:target="_blank"}
-3. [Celemod](https://www.bilibili.com/video/BV1Hx4y1z7L5/){:target="_blank"}
+1. [Everest](https://github.com/EverestAPI/Everest)
+2. [Olympus](https://gamebanana.com/tools/download/6449)
+3. [Celemod](https://www.bilibili.com/video/BV1Hx4y1z7L5/)
 
 #### 3
 
@@ -492,7 +492,7 @@ B
 #### 6
 
 1. 按键盘上的波浪键 `~`
-2. 下载并启用 [Celeste TAS](https://gamebanana.com/tools/6715){:target="_blank"}, 按下 `Ctrl + B`
+2. 下载并启用 [Celeste TAS](https://gamebanana.com/tools/6715), 按下 `Ctrl + B`
 
 #### 7
 

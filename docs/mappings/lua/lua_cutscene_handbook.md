@@ -162,7 +162,7 @@ player.DummyGravity = true
 setPlayerState(state)
 ```
 
-state 中填写玩家状态的名称或数字代码([点击此处查询有哪些状态](https://saplonily.top/celeste_modding_tutorial/code_modding/wiki/component/statemachine/){:target="_blank"})
+state 中填写玩家状态的名称或数字代码([点击此处查询有哪些状态](https://saplonily.top/celeste_modding_tutorial/code_modding/wiki/component/statemachine/))
 
 例如将玩家状态设置为冲刺 `const int StDash = 2`, 你会发现玛德琳进行了一次冲刺:
 
@@ -441,7 +441,7 @@ postcard(dialog, sfxIn, sfxOut)
 - `sfxIn`: 明信片淡入和淡出时的音效的 ID
 - `sfxOut`: 明信片淡出时的音效, 填写音效的 `event` 路径, 这一项是可选参数(这个音效只会在明信片淡出时响起, 且和 `sfxIn` 互斥, , 即当这个音效存在时 `sfxIn` 的音效不会出现)
 
-**如何设置明信片音效([如何自定义明信片音效](../audio/audio.md#postcard){:target="_blank"}):**
+**如何设置明信片音效([如何自定义明信片音效](../audio/audio.md#postcard)):**
 
 在 Loenn 地图元数据设置内找到 `Postcard Sound ID`, 官图默认的可以直接填写的 ID 有 `1, 2, 3, 4, 5, 6 和 Cside`, 分别为第一到六章的明信片音效和C面解锁的明信片音效
 
@@ -576,7 +576,7 @@ jump()
 player.Sprite:Play(sprite)
 ```
 
-sprite 为动画名称, 在 [`Sprites.xml`](../xml/sprites_xml.md#xml){:target="_blank"} 中配置, 我们可以使用不同的动画 `id` 来播放不同的动画(如蹲下, 向上看, 晕倒, 睡觉)
+sprite 为动画名称, 在 [`Sprites.xml`](../xml/sprites_xml.md#xml) 中配置, 我们可以使用不同的动画 `id` 来播放不同的动画(如蹲下, 向上看, 晕倒, 睡觉)
 
 ```xml
 
@@ -658,7 +658,7 @@ end
 
 ## 四. 传送
 
-传送需要有一个目标位置, 而目标位置可以用一个坐标来表示, 如果你不知道如何获取坐标, 可以看[这里](../loenn/faq.md#coordinates){:target="_blank"}
+传送需要有一个目标位置, 而目标位置可以用一个坐标来表示, 如果你不知道如何获取坐标, 可以看[这里](../loenn/faq.md#coordinates)
 
 <div class="admonition note">
     <p class="admonition-title">注意</p>
@@ -835,7 +835,7 @@ getBloomStrength()
 
 获取当前场景的 `bloom`
 
-### 3. [滤镜(ColorGrade)](../graphics/color_grading.md){:target="_blank"}
+### 3. [滤镜(ColorGrade)](../graphics/color_grading.md)
 
 **函数签名:**
 
@@ -877,7 +877,7 @@ playMusic(event, progress)
 **参数说明:**
 
 * `event`: 表示要播放的音乐对应的 `event` 路径(可以在 FMOD 中鼠标右键复制路径), 或是直接使用 Loenn 地图或房间属性里那些自带的原版音乐名字(用别名访问)
-* `progress`: 表示音乐 event 对应的 [`progress` 参数](../audio/audio.md#progress){:target="_blank"}(可选)
+* `progress`: 表示音乐 event 对应的 [`progress` 参数](../audio/audio.md#progress)(可选)
 
 例如:
 
@@ -941,7 +941,7 @@ end
 setMusicLayer(layer, value)
 ```
 
-设置音乐的 [`layer`](../audio/audio.md#layer){:target="_blank"} 参数的值
+设置音乐的 [`layer`](../audio/audio.md#layer) 参数的值
 
 例如:
 
@@ -983,7 +983,7 @@ playSound("event:/MyMap/MySound")
 player.ForceCameraUpdate = true
 ```
 
-开启镜头更新, 若没有开启的话[无法改变镜头](mechanism.md#forcecameraupdate){:target="_blank"}!
+开启镜头更新, 若没有开启的话[无法改变镜头](mechanism.md#forcecameraupdate)!
 
 ```lua
 setCameraOffset(x, y)
@@ -1151,7 +1151,7 @@ coroutine.yield(celeste.CutsceneEntity.CameraTo(vector2(40, 0), 2))
 
 表示在 `2` 秒内将镜头坐标移动到 `(40, 0)`
 
-### 2. 调用[扩展镜头](../camera.md#excamera){:target="_blank"}
+### 2. 调用[扩展镜头](../camera.md#excamera)
 
 除了原版的镜头外, 也可以调用 `扩展镜头(Extended Camera Dynamics)` 的代码来实现镜头缩放, 特别是在地图需要使用扩展镜头, 而扩展镜头会影响原版镜头代码的情况下
 

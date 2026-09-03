@@ -64,4 +64,4 @@
 ### Hooks
 
 如果你写了 [Code Mod](../code.md), 并且用了 il 钩子, 那么你可以用 Mapping Utils 这个功能来查看实际钩完后 il 指令长什么样,
-不过还是推荐通过[打印](https://github.com/LozenChen/TAS-Helper/blob/ec8ec86bc110d1c5cd89dec7b01676514542c4e2/Source/Utils/HookHelper.cs#L447){:target="_blank"}来查看, 这样最保险
+不过还是推荐通过[打印](https://github.com/LozenChen/TAS-Helper/blob/ec8ec86bc110d1c5cd89dec7b01676514542c4e2/Source/Utils/HookHelper.cs#L447)来查看, 这样最保险

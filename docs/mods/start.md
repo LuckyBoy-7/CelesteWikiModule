@@ -1,8 +1,8 @@
 参考
 
-* [Mod安装教程(视频)](https://www.bilibili.com/video/BV1WU4y1E7Y5){:target="_blank"}
-* [Mod安装教程(CelesteMiaoServer.Wiki)](https://celestenyaserver.github.io/CelesteMiaoServer.Wiki/#/zh-cn/Celeste/Mods/Everest_and_mod){:target="_blank"}
-* [Mod安装教程(专栏)](https://www.bilibili.com/read/cv17241217/){:target="_blank"}
+* [Mod安装教程(视频)](https://www.bilibili.com/video/BV1WU4y1E7Y5)
+* [Mod安装教程(CelesteMiaoServer.Wiki)](https://celestenyaserver.github.io/CelesteMiaoServer.Wiki/#/zh-cn/Celeste/Mods/Everest_and_mod)
+* [Mod安装教程(专栏)](https://www.bilibili.com/read/cv17241217/)
 
 
 
@@ -45,8 +45,8 @@
 
 目前蔚蓝圈中主流的 Mod 管理器有以下两种, 大家自行选择即可
 
-* 国内的: [Celemod](https://www.bilibili.com/video/BV1Hx4y1z7L5){:target="_blank"}
-* 国外的: [Olympus](https://everestapi.github.io/){:target="_blank"}
+* 国内的: [Celemod](https://www.bilibili.com/video/BV1Hx4y1z7L5)
+* 国外的: [Olympus](https://everestapi.github.io/)
 
 ## Mod 搜索渠道
 
@@ -61,5 +61,5 @@
 Mod 的更新目前有三种方式
 
 1. 使用 Mod 管理器
-2. 游戏内更新(由于 Everest 提供的游戏内更新方式是连上香蕉网的, 所以国内玩家想要更改这种行为连上 WEGFan 的镜像的话需要安装 [ChinaMirror](https://celeste.weg.fan/submissions/detail/2464697282266787/celeste-mod-china-mirror){:target="_blank"} 这个 Mod) 
+2. 游戏内更新(由于 Everest 提供的游戏内更新方式是连上香蕉网的, 所以国内玩家想要更改这种行为连上 WEGFan 的镜像的话需要安装 [ChinaMirror](https://celeste.weg.fan/submissions/detail/2464697282266787/celeste-mod-china-mirror) 这个 Mod) 
 3. 自己通过任意方式找到最新的 Mod 资源, 并在 `Celeste/Mods/` 文件夹里将老版 Mod 替换即可
