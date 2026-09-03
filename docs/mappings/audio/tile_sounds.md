@@ -2,165 +2,100 @@
 
 ## 中文
 
-0.无
-
-1.沥青路(序章车后边的道路)
-
-2.车
-
-3.土
-
-4.雪
-
-5.木头
-
-6.桥
-
-7.钢梁
-
-8.砖
-
-9.traffic block
-
-10.(unused)
-
-11.未启用时的果冻
-
-12.启用时的果冻
-
-13.山庄木头
-
-14.山庄房顶
-
-15.山庄移动板
-
-16.山庄地窖砖
-
-17.山庄衣物
-
-18.山庄箱子
-
-19.山庄书
-
-20.resort forcefield
-
-21.山庄清理杂物开关
-
-22.山庄电梯
-
-23.山脊雪
-
-24.(unused)
-
-25.枯草
-
-26.(unused)
-
-27.山脊白块
-
-28.缆车
-
-29.(unused)
-
-30.(unused)
-
-31.(unused)
-
-32.玻璃
-
-33.草
-
-34.(unused)
-
-35.节奏块
-
-36.核心冰块
-
-37.核心岩石
-
-38.(unused)
-
-39.(unused)
-
-40.故障块
-
-41.(unused)
-
-42.网吧(凌波微步. ppt那个房子)
-
-43.云
-
-44.月亮块
-
+<ol start="0">
+    <li>无</li>
+    <li>沥青路(序章车后边的道路)</li>
+    <li>车</li>
+    <li>土</li>
+    <li>雪</li>
+    <li>木头</li>
+    <li>桥</li>
+    <li>钢梁</li>
+    <li>砖</li>
+    <li>traffic block</li>
+    <li>(unused)</li>
+    <li>未启用时的果冻</li>
+    <li>启用时的果冻</li>
+    <li>山庄木头</li>
+    <li>山庄房顶</li>
+    <li>山庄移动板</li>
+    <li>山庄地窖砖</li>
+    <li>山庄衣物</li>
+    <li>山庄箱子</li>
+    <li>山庄书</li>
+    <li>resort forcefield</li>
+    <li>山庄清理杂物开关</li>
+    <li>山庄电梯</li>
+    <li>山脊雪</li>
+    <li>(unused)</li>
+    <li>枯草</li>
+    <li>(unused)</li>
+    <li>山脊白块</li>
+    <li>缆车</li>
+    <li>(unused)</li>
+    <li>(unused)</li>
+    <li>(unused)</li>
+    <li>玻璃</li>
+    <li>草</li>
+    <li>(unused)</li>
+    <li>节奏块</li>
+    <li>核心冰块</li>
+    <li>核心岩石</li>
+    <li>(unused)</li>
+    <li>(unused)</li>
+    <li>故障块</li>
+    <li>(unused)</li>
+    <li>网吧(凌波微步 ppt 那个房子)</li>
+    <li>云</li>
+    <li>月亮块</li>
+</ol>
 
 ## 英文
 
-0.null
-
-1.asphalt
-
-2.car
-
-3.dirt (used in tilesets: dirt, core)
-
-4.snow (used in tilesets: snow, summit)
-
-5.wood
-
-6.bridge
-
-7.girder (used in tileset: girder)
-
-8.brick (used in tilesets: tower, stone, cement, rock, woodStoneEdges, poolEdges, templeA, templeB, cliffsideAlt, reflection, summitNoSnow)
-
-9.traffic block
-
-11.dreamblock inactive
-
-12.dreamblock active
-
-13.resort wood (used in tileset: wood)
-
-14.resort roof
-
-15.resort platforms
-
-16.resort basement
-
-17.resort laundry
-
-18.resort boxes
-
-19.resort books
-
-20.resort forcefield
-
-21.resort clutterswitch
-
-22.resort elevator
-
-23.cliffside snow (used in tileset: cliffside)
-
-25.cliffside grass (used in tileset: deadgrass)
-
-27.cliffside whiteblock
-
-28.gondola
-
-32.glass
-
-33.grass (used in tileset: grass)
-
-35.cassette block
-
-36.core ice
-
-37.core rock
-
-40.glitch (used in tileset: scifi)
-
-42.internet café
-
-43.cloud
-
-44.moon (used in tileset: lostlevels)
+<ol start="0">
+    <li>null</li>
+    <li>asphalt</li>
+    <li>car</li>
+    <li>dirt(used in tilesets: dirt, core)</li>
+    <li>snow(used in tilesets: snow, summit)</li>
+    <li>wood</li>
+    <li>bridge</li>
+    <li>girder(used in tileset: girder)</li>
+    <li>brick(used in tilesets: tower, stone, cement, rock, woodStoneEdges, poolEdges, templeA, templeB, cliffsideAlt, reflection, summitNoSnow)</li>
+    <li>traffic block</li>
+    <li>(unused)</li>
+    <li>dreamblock inactive</li>
+    <li>dreamblock active</li>
+    <li>resort wood(used in tileset: wood)</li>
+    <li>resort roof</li>
+    <li>resort platforms</li>
+    <li>resort basement</li>
+    <li>resort laundry</li>
+    <li>resort boxes</li>
+    <li>resort books</li>
+    <li>resort forcefield</li>
+    <li>resort clutterswitch</li>
+    <li>resort elevator</li>
+    <li>cliffside snow(used in tileset: cliffside)</li>
+    <li>(unused)</li>
+    <li>cliffside grass(used in tileset: deadgrass)</li>
+    <li>(unused)</li>
+    <li>cliffside whiteblock</li>
+    <li>gondola</li>
+    <li>(unused)</li>
+    <li>(unused)</li>
+    <li>(unused)</li>
+    <li>glass</li>
+    <li>grass(used in tileset: grass)</li>
+    <li>(unused)</li>
+    <li>cassette block</li>
+    <li>core ice</li>
+    <li>core rock</li>
+    <li>(unused)</li>
+    <li>(unused)</li>
+    <li>glitch(used in tileset: scifi)</li>
+    <li>(unused)</li>
+    <li>internet café</li>
+    <li>cloud</li>
+    <li>moon(used in tileset: lostlevels)</li>
+</ol>

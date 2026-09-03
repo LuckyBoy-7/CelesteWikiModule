@@ -56,6 +56,15 @@
 * [Gamebanana](https://gamebanana.com/mods/games/6460): 几乎所有的 Modder 制作完 Mod 都会上传到香蕉网上
 * [香蕉网镜像](https://celeste.weg.fan/): 方便国内玩家使用, 由 WEGFan 提供
 
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>
+    几乎所有的 Mod 制作者都是在用爱发电, 尽管目的可能各有不同, 但是他们的劳动成果最终还是以某种形式让你免费享受到了, 
+    所以不管你觉得一个 Mod 做得有多烂, 都请保持最基本的尊重, 这样大家才能一起不断进步共同维护一个更好的社区
+    </p>
+</div>
+
+
 ## Mod 更新
 
 Mod 的更新目前有三种方式
@@ -63,3 +72,4 @@ Mod 的更新目前有三种方式
 1. 使用 Mod 管理器
 2. 游戏内更新(由于 Everest 提供的游戏内更新方式是连上香蕉网的, 所以国内玩家想要更改这种行为连上 WEGFan 的镜像的话需要安装 [ChinaMirror](https://celeste.weg.fan/submissions/detail/2464697282266787/celeste-mod-china-mirror) 这个 Mod) 
 3. 自己通过任意方式找到最新的 Mod 资源, 并在 `Celeste/Mods/` 文件夹里将老版 Mod 替换即可
+

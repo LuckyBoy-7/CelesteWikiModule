@@ -276,3 +276,17 @@ SID, 即 a string ID of the area, 是一个区域的唯一标识符, 由于官�
 6. `<Tileset id="" path="">` 中的 `path` 部分是否填写正确, 不要多了或者少了 `/`
 7. 同一种砖换砖材质时尽可能保持 `id` 相同
 8. 有时你使用了错误的模板在 loenn 里画好砖后, 之后又使用了正确的模板, 那么得在 loenn 里重新涂一次砖
+
+## 如何在编辑器中查找依赖实体/trigger 的放置位置
+
+在 Loenn 中找到 Maps-Dependency, 可以查看你当前地图的依赖列表, 而每个依赖项的左侧有一个小箭头, 点一下会展开依赖的列表, 
+里面显示当前地图用到了这个依赖的所有东西, 实体和 trigger 旁边会有一个房间坐标, 
+你在对应的房间里面按波浪键 `~` 打开 Loenn 的坐标显示器在房间里找就可以找到对应的实体/trigger, 对于需要查找不知道放哪里去了的实体而言非常好用
+
+## 6A 的 Starjump 是怎么实现的
+
+使用 `Star Jump Block` + `Star Climb Graphics Controller [Everest]`
+
+## 让水母消失的实体是什么
+
+Seeker Barrier
