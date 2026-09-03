@@ -41,6 +41,12 @@ plugins:
 
 extra_css:
   - css/content.css
+  - javascripts/katex/katex.min.css
+
+extra_javascript:
+  - javascripts/katex/katex.min.js
+  - javascripts/katex/auto-render.min.js
+  - javascripts/katex/katex.js 
 
 markdown_extensions:
   - admonition # 警告
@@ -60,6 +66,8 @@ markdown_extensions:
   - pymdownx.highlight: # 语法高亮
       pygments_lang_class: true
       linenums: true
+  - pymdownx.arithmatex: # 数学表达式
+      generic: true
 
 nav:
   - 首页: "index.md"
@@ -72,6 +80,8 @@ nav:
           - ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang"
       - 制图活动:
           - 糖游: "activity/candy.md"
+          - 制图接力:
+              - 第八届蔚蓝制图合作【余烬山脊】: "activity/mappings/relay/8.md"
   - 常规:
       - 游戏官网: "https://www.celestegame.com/"
       - 常规:
@@ -87,11 +97,14 @@ nav:
       - TAS: "general/tas.md"
   - Mods:
       - Mod 入门: "mods/start.md"
+      - 联机 Mod:
+          - 蔚蓝联机群服小白入门指南: "https://bbs.celemiao.com/d/357-wei-lan-lian-ji-qun-fu-miaonet-xiao-bai-shi-yong-zhi-nan"
+          - 蔚蓝联机群服上手指南: "https://bbs.celemiao.com/d/531-wei-lan-miaonet-qun-fu-lian-ji-shang-shou-zhi-nan-052-alpha"
+      - 推荐 Mod: "mods/common/recommended_mods.md"
       - 常规:
           - Everest 下载问题: "mods/common/everest_install_issues.md"
           - 游戏崩溃问题: "https://saplonily.top/celeste_common_issues/index.html"
           - 调试模式: "https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F"
-          - 推荐Mod: "mods/common/recommended_mods.md"
   - 制图:
       - 教程 👈😋: "mappings/overall.md"
       - 入门:
@@ -126,6 +139,9 @@ nav:
       - 残影: "mappings/ghost_player_playback.md"
       - Graphics:
           - 大纲: "mappings/graphics/graphics.md"
+          - Decals: "mappings/graphics/decals.md"
+          - DecalRegistry: "mappings/graphics/decal_registry.md"
+          - 实体深度表: "mappings/graphics/entity_depth.md"
           - 素材替换: "mappings/graphics/replace_assets.md"
           - 皮肤制作:
               - 大纲: "mappings/graphics/skin.md"
@@ -141,7 +157,7 @@ nav:
       - Audio:
           - 大纲: "mappings/audio/audio.md"
           - 播放问题排查: "mappings/audio/troubleshooting.md"
-          - Tile Sound Id: "mappings/audio/tile_sounds.md"
+          - Tile Sound Id 表: "mappings/audio/tile_sounds.md"
       - Lua Cutscene:
           - 大纲: "mappings/lua/lua_cutscene.md"
           - 机制库: "mappings/lua/mechanism.md"
@@ -169,7 +185,7 @@ nav:
       - Collab:
           - 大纲: "mappings/collab/collab.md"
           - 文本规范: "mappings/collab/dialog.md"
-          - Mini 水晶之心: "mappings/collab/miniheart_hd.md"
+          - Mini 水晶之心贴图: "mappings/collab/miniheart_hd.md"
       - Code: "mappings/code.md"
       - 测图: "mappings/mod_test.md"
       - 发布 Mod: "mappings/publish_mod.md"

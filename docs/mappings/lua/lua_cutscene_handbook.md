@@ -1,6 +1,7 @@
 摘抄/整合自
 
 * [Lua Cutscenes 词典 by Nacline]()(制图群群文件)
+* UnderDragon’s Partial Wiki
 * ...
 
 ## 前言
@@ -320,7 +321,7 @@ dialog 里填写对话键名
 ```ini
 CH0_GRANNY =
 [MADELINE left normal]
-夫人, 请问一下。
+夫人, 请问一下. 
 
 [MADELINE left normal]
 前面的牌子损坏了...{n}这是{+mountain}路吗？
@@ -1113,7 +1114,7 @@ end
 
 function onEnd(level, wasSkipped)
     if wasSkipped then
-        -- 如果跳过剧情, 则立即复原镜头。这是个非协程函数, 很适合用在这种地方
+        -- 如果跳过剧情, 则立即复原镜头. 这是个非协程函数, 很适合用在这种地方
         level:ResetZoom()
         endCutscene()
         enableMovement()
@@ -1313,4 +1314,22 @@ while (i <= 5 or forceUpdateOnce) do
 
     i = i + 1
 end
+```
+
+
+## 九. 获取关卡信息
+
+有些时候我们需要针对当前关卡的一些信息配置参数, 比如前面提到的 walkTo, 它用的是绝对坐标, 也就是所谓的“世界坐标”, 
+但是我们作图测试的时候, 有时候会移动房间, 或者改变房间大小, 这样的话坐标就全部改变了, 那么这种时候往往利用关卡信息来作为基础会更方便. 
+
+例如我想让玩家走到相对于房间左侧 64 像素的位置, 就可以这么写(其他方位同理)
+
+```lua
+local level = getLevel()  -- 获取关卡信息
+local up = level.Bounds.Top  -- 获取关卡上方 y 坐标
+local left = level.Bounds.Left  -- 获取关卡左方 x 坐标
+local down = level.Bounds.Bottom  -- 获取关卡下方 y 坐标
+local right = level.Bounds.Right  -- 获取关卡右方 x 坐标
+
+walkTo(left + 64)
 ```

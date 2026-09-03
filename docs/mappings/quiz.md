@@ -613,7 +613,7 @@ Sublime 只是文本编辑器而已, 你用记事本也是一样的
 
 F
 
-具体原因[参考](graphics/graphics.md#decalregistry)
+具体原因[参考](graphics/decal_registry.md)
 
 #### 14
 
