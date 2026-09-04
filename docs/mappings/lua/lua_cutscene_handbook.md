@@ -442,7 +442,7 @@ postcard(dialog, sfxIn, sfxOut)
 - `sfxIn`: 明信片淡入和淡出时的音效的 ID
 - `sfxOut`: 明信片淡出时的音效, 填写音效的 `event` 路径, 这一项是可选参数(这个音效只会在明信片淡出时响起, 且和 `sfxIn` 互斥, , 即当这个音效存在时 `sfxIn` 的音效不会出现)
 
-**如何设置明信片音效([如何自定义明信片音效](../audio/audio.md#postcard)):**
+**如何设置明信片音效([如何自定义明信片音效](../audio/faq.md#postcard)):**
 
 在 Loenn 地图元数据设置内找到 `Postcard Sound ID`, 官图默认的可以直接填写的 ID 有 `1, 2, 3, 4, 5, 6 和 Cside`, 分别为第一到六章的明信片音效和C面解锁的明信片音效
 
@@ -878,7 +878,7 @@ playMusic(event, progress)
 **参数说明:**
 
 * `event`: 表示要播放的音乐对应的 `event` 路径(可以在 FMOD 中鼠标右键复制路径), 或是直接使用 Loenn 地图或房间属性里那些自带的原版音乐名字(用别名访问)
-* `progress`: 表示音乐 event 对应的 [`progress` 参数](../audio/audio.md#progress)(可选)
+* `progress`: 表示音乐 event 对应的 [`progress` 参数](../audio/params.md#progress)(可选)
 
 例如:
 
@@ -942,7 +942,7 @@ end
 setMusicLayer(layer, value)
 ```
 
-设置音乐的 [`layer`](../audio/audio.md#layer) 参数的值
+设置音乐的 [`layer`](../audio/params.md#layer) 参数的值
 
 例如:
 

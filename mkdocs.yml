@@ -82,6 +82,7 @@ nav:
           - 糖游: "activity/candy.md"
           - 制图接力:
               - 第八届蔚蓝制图合作【余烬山脊】: "activity/mappings/relay/8.md"
+          - 国外制图活动: "https://discord.com/channels/403698615446536203/1302747608359501895"
   - 常规:
       - 游戏官网: "https://www.celestegame.com/"
       - 常规:
@@ -157,7 +158,9 @@ nav:
       - Audio:
           - 大纲: "mappings/audio/audio.md"
           - 播放问题排查: "mappings/audio/troubleshooting.md"
+          - 常见参数: "mappings/audio/params.md"
           - Tile Sound Id 表: "mappings/audio/tile_sounds.md"
+          - 常见问题: "mappings/audio/faq.md"
       - Lua Cutscene:
           - 大纲: "mappings/lua/lua_cutscene.md"
           - 机制库: "mappings/lua/mechanism.md"

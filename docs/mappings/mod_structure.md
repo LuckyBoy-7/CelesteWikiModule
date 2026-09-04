@@ -174,6 +174,7 @@
 
 放残影的, [详情见](./ghost_player_playback.md)
 
+<a id="conflict"></a>
 
 ## [了解 Everest 处理这些文件的逻辑](https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders)
 

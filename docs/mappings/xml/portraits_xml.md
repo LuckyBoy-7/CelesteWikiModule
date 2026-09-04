@@ -98,7 +98,7 @@
 
 我们要指定动画素材对应的路径, 路径从 `Graphics/Atlases/Portraits/` 开始算, 比如这里的 `madeline/`
 
-### [sfx](../audio/audio.md#speak)
+### [sfx](../audio/faq.md#speak)
 
 填入我们自定义的人物音频对应的 event 路径(从 `event:/char/dialouge/` 开始), 比如这里游戏就是通过 `madeline` 找到 fmod 中的
 `event:/char/dialouge/madeline`
@@ -117,7 +117,7 @@
 
 开启 `BrokemiaHelper` 后, 添加此选项可以让人物角色不显示头像, 这在[烈冕号的牌子](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=543)中用到了
 
-### [sfxs](../audio/audio.md#speak)
+### [sfxs](../audio/faq.md#speak)
 
 ```xml
 
@@ -137,7 +137,7 @@
 </sfxs>
 ```
 
-游戏会通过上面提到的情绪名在这里找到应该使用的声音索引, 具体原理参考[链接](../audio/audio.md#speak), 大部分时候我们只是改, 而不用自己加, 所以这块不用理解的很清楚
+游戏会通过上面提到的情绪名在这里找到应该使用的声音索引, 具体原理参考[链接](../audio/faq.md#speak), 大部分时候我们只是改, 而不用自己加, 所以这块不用理解的很清楚
 
 ### Animations
 
