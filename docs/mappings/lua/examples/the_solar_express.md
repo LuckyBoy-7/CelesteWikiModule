@@ -31,7 +31,7 @@ function onBegin()
     disableRetry()
     disableMovement()
     walkTo(15324, false, 0.9, false)
-    -- 应该是自己在 flmod 做过配置了
+    -- 应该是自己在 fmod 做过配置了
     celeste.Audio.SetMusicParam("dialog", 1.0)
     celeste.Audio.SetMusicParam("kick", 0.0)
     say("SJ2021_SOLOIINI_SPECTACLE_A")

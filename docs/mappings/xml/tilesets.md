@@ -207,7 +207,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 ```
 ### [`ForegroundTiles.xml` by ...](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 
-常用在[Spooooky素材包](https://gamebanana.com/mods/474010)中, 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)(里面会自带 xml 的)
+常用在[Spooooky素材包](https://gamebanana.com/mods/474010)中, 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)(里面会自带 xml 的, 或者在[网站](https://spo0o0ky.github.io/SpooookyAssetPackBrowser/)上直接复制)
 
 <figure markdown>
   ![tileset](../../assets/mappings/xml/tileset/Guide_Alternate.jpeg){style="width: 800px; image-rendering: pixelated; title=123"}
