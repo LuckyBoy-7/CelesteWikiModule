@@ -698,6 +698,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://discord.com/channels/403698615446536203/1302747608359501895" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    国外制图活动
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3219,6 +3247,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../audio/params/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常见参数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../audio/tile_sounds/" class="md-nav__link">
         
   
@@ -3227,6 +3283,34 @@
     
   
     Tile Sound Id 表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audio/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常见问题
   
 
     
@@ -6446,7 +6530,7 @@ cutscenes 函数语句并详细说明其用法, 方便 mapper 查阅和学习使
 <li><code>sfxIn</code>: 明信片淡入和淡出时的音效的 ID</li>
 <li><code>sfxOut</code>: 明信片淡出时的音效, 填写音效的 <code>event</code> 路径, 这一项是可选参数(这个音效只会在明信片淡出时响起, 且和 <code>sfxIn</code> 互斥, , 即当这个音效存在时 <code>sfxIn</code> 的音效不会出现)</li>
 </ul>
-<p><strong>如何设置明信片音效(<a href="../../audio/audio/#postcard">如何自定义明信片音效</a>):</strong></p>
+<p><strong>如何设置明信片音效(<a href="../../audio/faq/#postcard">如何自定义明信片音效</a>):</strong></p>
 <p>在 Loenn 地图元数据设置内找到 <code>Postcard Sound ID</code>, 官图默认的可以直接填写的 ID 有 <code>1, 2, 3, 4, 5, 6 和 Cside</code>, 分别为第一到六章的明信片音效和C面解锁的明信片音效</p>
 <p>例如:</p>
 <div class="language-lua highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nf">postcard</span><span class="p">(</span><span class="s2">"testcard"</span><span class="p">,</span><span class="w"> </span><span class="s2">"MySoundID"</span><span class="p">)</span>
@@ -6745,7 +6829,7 @@ cutscenes 函数语句并详细说明其用法, 方便 mapper 查阅和学习使
 <p><strong>参数说明:</strong></p>
 <ul>
 <li><code>event</code>: 表示要播放的音乐对应的 <code>event</code> 路径(可以在 FMOD 中鼠标右键复制路径), 或是直接使用 Loenn 地图或房间属性里那些自带的原版音乐名字(用别名访问)</li>
-<li><code>progress</code>: 表示音乐 event 对应的 <a href="../../audio/audio/#progress"><code>progress</code> 参数</a>(可选)</li>
+<li><code>progress</code>: 表示音乐 event 对应的 <a href="../../audio/params/#progress"><code>progress</code> 参数</a>(可选)</li>
 </ul>
 <p>例如:</p>
 <div class="language-lua highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nf">playMusic</span><span class="p">(</span><span class="s2">"event:/MyMap/MyMusic"</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
@@ -6781,7 +6865,7 @@ cutscenes 函数语句并详细说明其用法, 方便 mapper 查阅和学习使
 <h4 id="setmusiclayer">setMusicLayer</h4>
 <div class="language-lua highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nf">setMusicLayer</span><span class="p">(</span><span class="nv">layer</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="p">)</span>
 </code></pre></div></td></tr></tbody></table></div>
-<p>设置音乐的 <a href="../../audio/audio/#layer"><code>layer</code></a> 参数的值</p>
+<p>设置音乐的 <a href="../../audio/params/#layer"><code>layer</code></a> 参数的值</p>
 <p>例如:</p>
 <div class="language-lua highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nf">setMusicLayer</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div></td></tr></tbody></table></div>
