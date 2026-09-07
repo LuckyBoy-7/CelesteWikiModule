@@ -132,7 +132,8 @@ Bank 是 Events 的集合, 经过格式化和压缩后可在游戏中使用(类�
 
 然后你就可以在 Loenn 里随意使用你制作的 event 了!
 
-比如现在我们在元数据里添加全局音乐 `evet:/Test/music_evnet`(`event:/` + event 路径), 然后重新开始章节就可以听到我们添加的音乐了!
+比如现在我们在元数据里添加全局音乐 `evet:/Test/music_evnet`(`event:/` + event 路径), 然后 `Ctrl + F5` 重启游戏, 
+重新开始章节就可以听到我们添加的音乐了!
 
 ![04](../../assets/mappings/audio/basics/04.png)
 

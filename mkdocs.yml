@@ -6,11 +6,13 @@ theme:
   language: zh
   logo: assets/images/favicon.png
   font: false
+  custom_dir: overrides
   features:
     - content.code.copy
     - content.tabs.link
     - navigation.sections
-
+    - navigation.instant
+    
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -47,6 +49,7 @@ extra_javascript:
   - javascripts/katex/katex.min.js
   - javascripts/katex/auto-render.min.js
   - javascripts/katex/katex.js 
+  - javascripts/announcement.js 
 
 markdown_extensions:
   - admonition # 警告
