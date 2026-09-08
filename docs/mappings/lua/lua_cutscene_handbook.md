@@ -974,7 +974,7 @@ playSound("event:/MyMap/MySound")
 
 表示播放路径为 `event:/MyMap/MySound` 的音效
 
-## 七. [镜头](../camera.md)
+## 七. [镜头](../camera/camera.md)
 
 ### 1. 原版镜头
 
@@ -1152,7 +1152,7 @@ coroutine.yield(celeste.CutsceneEntity.CameraTo(vector2(40, 0), 2))
 
 表示在 `2` 秒内将镜头坐标移动到 `(40, 0)`
 
-### 2. 调用[扩展镜头](../camera.md#excamera)
+### 2. 调用[扩展镜头](../camera/faq.md#excamera)
 
 除了原版的镜头外, 也可以调用 `扩展镜头(Extended Camera Dynamics)` 的代码来实现镜头缩放, 特别是在地图需要使用扩展镜头, 而扩展镜头会影响原版镜头代码的情况下
 

@@ -5,7 +5,7 @@
 * [电箱的 Audio 教程](https://www.bilibili.com/video/BV19t4y1M7y4)
 * 冬菜的Audio教程(群文件里)
 * [使用参数控制场景过渡时的音频渐变 by DeepBlueBerry](https://www.bilibili.com/video/BV175hNzTENj)
-* [使用 Transition 改善你的音乐循环效果 by 春姆Q](https://www.bilibili.com/video/BV1X94y1j7Kt)
+* [使用 Transition 改善你的音乐循环效果 by 春暮Q](https://www.bilibili.com/video/BV1X94y1j7Kt)
 * [Everest Wiki的Audio教程](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Audio)
     * [Everest Wiki的进阶Audio教程](https://github.com/EverestAPI/Resources/wiki/Advanced-Custom-Audio)
 * [(Ahorn Tutorials) Custom Music and FMOD by iamdadbod](https://www.youtube.com/watch?v=FfTsBFaxz_M&list=PLBP5_qAilzbjr7DGxatTQbPfftY3LiVA4&index=16)

@@ -6,17 +6,18 @@
 
 ## errorLog.txt
 
-保存了游戏崩溃的原因, 个人理解算是 `log.txt` 的子集, 位于蔚蓝根目录 `.../Steam/steamapps/common/Celeste/` 下 
+是 `log.txt` 的子集, 保存了游戏崩溃的原因, 位于蔚蓝根目录 `.../Steam/steamapps/common/Celeste/` 下 
 
 ## 解决方案
 
 * [解决方案 1](https://saplonily.top/celeste_common_issues/index.html)
 * [解决方案 2](https://github.com/EverestAPI/Resources/wiki/Common-Crashes)
 
-你可以先尝试自己解决, 如果解决方案没有提及, 那么你可以
+你可以先尝试自己解决问题, 如果解决方案没有提及, 那么你可以
 
-* 在 [Celeste Discord](https://discord.gg/6qjaePQ) 中搜索 log.txt 中的关键词
 * 向群友发送 `log.txt`, 并作简单的描述, 请[学会提问](./question_and_self_study.md)
+* 将 `log.txt` 发送给任意 AI 寻求参考建议
+* 在 [Celeste Discord](https://discord.gg/6qjaePQ) 中搜索 `log.txt` 中的关键词
 * 祈祷
 
 !!! 报错小贴士

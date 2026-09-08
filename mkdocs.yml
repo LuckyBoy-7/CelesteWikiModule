@@ -50,6 +50,8 @@ extra_javascript:
   - javascripts/katex/auto-render.min.js
   - javascripts/katex/katex.js 
   - javascripts/announcement.js 
+  - javascripts/nav-expand.js 
+  - javascripts/banner.js 
 
 markdown_extensions:
   - admonition # 警告
@@ -77,6 +79,7 @@ nav:
   - Wiki: "general/wiki.md"
   - 社区: "general/community.md"
   - 活动:
+      - Olympus News: "https://maddie480.ovh/celeste/olympus-news"
       - 群服活动: 
           - Any% 分段速通接力活动: "https://bbs.celemiao.com/d/471-miaonet-she-qu-any-fen-duan-su-tong-jie-li-huo-dong"
           - ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng"
@@ -88,6 +91,7 @@ nav:
           - 国外制图活动: "https://discord.com/channels/403698615446536203/1302747608359501895"
   - 常规:
       - 游戏官网: "https://www.celestegame.com/"
+      - 官图速览: "https://berrycamp.github.io/"
       - 常规:
           - 原版常见问题: "general/common/vanilla_issues.md"
           - 基本术语补充: "general/common/basic_terms.md"
@@ -95,20 +99,17 @@ nav:
           - 彩蛋: "general/common/easter_eggs.md"
           - 技巧和攻略向教程: "general/common/tutorials.md"
       - 查阅: "general/lookup.md"
-      - 新闻: "https://maddie480.ovh/celeste/olympus-news"
       - 速通: "general/speedrun.md"
       - 炼金: "general/deathless.md"
       - TAS: "general/tas.md"
   - Mods:
       - Mod 入门: "mods/start.md"
+      - 提问/自学 💪: "mods/question_and_self_study.md"
+      - 游戏崩溃问题 😭: "mods/game_crashes.md"
       - 联机 Mod:
           - 蔚蓝联机群服小白入门指南: "https://bbs.celemiao.com/d/357-wei-lan-lian-ji-qun-fu-miaonet-xiao-bai-shi-yong-zhi-nan"
           - 蔚蓝联机群服上手指南: "https://bbs.celemiao.com/d/531-wei-lan-miaonet-qun-fu-lian-ji-shang-shou-zhi-nan-052-alpha"
       - 推荐 Mod: "mods/common/recommended_mods.md"
-      - 常规:
-          - Everest 下载问题: "mods/common/everest_install_issues.md"
-          - 游戏崩溃问题: "https://saplonily.top/celeste_common_issues/index.html"
-          - 调试模式: "https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F"
   - 制图:
       - 教程 👈😋: "mappings/overall.md"
       - 入门:
@@ -125,73 +126,81 @@ nav:
           - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
           - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
           - 实用插件: "mappings/loenn/plugins.md"
-      - 常用✌️😋👍: "mappings/useful_links.md"
-      - 游戏崩溃问题 😭: "mappings/game_crashes.md"
-      - 提问/自学 💪: "mappings/question_and_self_study.md"
-      - Mod 结构: "mappings/mod_structure.md"
-      - XML:
-          - 大纲: "mappings/xml/xml.md"
-          - XML 基础: "mappings/xml/basics.md"
-          - 砖 XML: "mappings/xml/tilesets.md"
-          - 动画 XML: "mappings/xml/sprites_xml.md"
-          - 对话贴图 XML: "mappings/xml/portraits_xml.md"
-      - Dialog:
-          - 大纲: "mappings/dialog/dialog.md"
-          - 本地化/翻译: "mappings/dialog/localization.md"
-          - 对话: "mappings/dialog/talk.md"
-      - Camera: "mappings/camera.md"
-      - 残影: "mappings/ghost_player_playback.md"
-      - Graphics:
-          - 大纲: "mappings/graphics/graphics.md"
-          - Decals: "mappings/graphics/decals.md"
-          - DecalRegistry: "mappings/graphics/decal_registry.md"
-          - 实体深度表: "mappings/graphics/entity_depth.md"
-          - 素材替换: "mappings/graphics/replace_assets.md"
-          - 皮肤制作:
-              - 大纲: "mappings/graphics/skin.md"
-              - Skin Mod Helper: "mappings/graphics/SMH.md"
-              - Skin Mod Helper Plus:
-                  - 大纲: "mappings/graphics/SMHP.md"
-                  - SkinModHelperConfig: "mappings/graphics/SMHP_SkinConfig.md"
-                  - ColorGrades: "mappings/graphics/SMHP_ColorGrades.md"
-                  - HairConfig: "mappings/graphics/SMHP_HairConfig.md"
-                  - CharacterConfig: "mappings/graphics/SMHP_CharacterConfig.md"
-                  - Trigger 使用部分: "mappings/graphics/SMHP_trigger.md"
-          - 滤镜: "mappings/graphics/color_grading.md"
-      - Audio:
-          - 大纲: "mappings/audio/audio.md"
-          - 播放问题排查: "mappings/audio/troubleshooting.md"
-          - 常见参数: "mappings/audio/params.md"
-          - Tile Sound Id 表: "mappings/audio/tile_sounds.md"
-          - 常见问题: "mappings/audio/faq.md"
-      - Lua Cutscene:
-          - 大纲: "mappings/lua/lua_cutscene.md"
-          - 机制库: "mappings/lua/mechanism.md"
-          - Lua Cutscenes 词典: "mappings/lua/lua_cutscene_handbook.md"
-          - 传送: "mappings/lua/teleport.md"
-          - 文本: "mappings/lua/text.md"
-          - 示例:
-              - 大纲: "mappings/lua/examples/intro.md"
-              - Journeys of a Bygone Wanderer: "mappings/lua/examples/journeys_of_a_bygone_wanderer.md"
-              - The Solar Express: "mappings/lua/examples/the_solar_express.md"
-              - Gallery Collab: "mappings/lua/examples/gallery.md"
-              - WELCOME TO MEGALOPHOBIA: "mappings/lua/examples/megalophobia.md"
-      - 实用 Helper:
-          - 大纲: "mappings/useful_helpers/useful_helpers.md"
-          - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
-          - Eevee Helper: "mappings/useful_helpers/eevee.md"
-          - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
-          - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
-          - hELPER: "mappings/useful_helpers/hELPER.md"
-      - 蔚蓝制图小测:
-          - 第一届蔚蓝制图小测😱: "mappings/quiz.md"
-          - 题库:
-              - 判断题: "mappings/quiz/true_or_false_questions.md"
-              - 填空题: "mappings/quiz/blank_filling_questions.md"
-      - Collab:
-          - 大纲: "mappings/collab/collab.md"
-          - 文本规范: "mappings/collab/dialog.md"
-          - Mini 水晶之心贴图: "mappings/collab/miniheart_hd.md"
-      - Code: "mappings/code.md"
-      - 测图: "mappings/mod_test.md"
-      - 发布 Mod: "mappings/publish_mod.md"
+      - 基础: 
+          - Mod 结构: "mappings/mod_structure.md"
+          - 残影: "mappings/ghost_player_playback.md"
+          - XML:
+              - 大纲: "mappings/xml/xml.md"
+              - XML 基础: "mappings/xml/basics.md"
+              - 砖 XML: "mappings/xml/tilesets.md"
+              - 动画 XML: "mappings/xml/sprites_xml.md"
+              - 对话贴图 XML: "mappings/xml/portraits_xml.md"
+          - Dialog:
+              - 大纲: "mappings/dialog/dialog.md"
+              - 本地化/翻译: "mappings/dialog/localization.md"
+              - 对话: "mappings/dialog/talk.md"
+          - Camera:
+              - 大纲: "mappings/camera/camera.md"
+              - 常见问题: "mappings/camera/faq.md"
+          - Graphics:
+              - 大纲: "mappings/graphics/graphics.md"
+              - Decals: "mappings/graphics/decals.md"
+              - DecalRegistry: "mappings/graphics/decal_registry.md"
+              - 实体深度表: "mappings/graphics/entity_depth.md"
+              - 素材替换: "mappings/graphics/replace_assets.md"
+              - 皮肤制作:
+                  - 大纲: "mappings/graphics/skin.md"
+                  - Skin Mod Helper: "mappings/graphics/SMH.md"
+                  - Skin Mod Helper Plus:
+                      - 大纲: "mappings/graphics/SMHP.md"
+                      - SkinModHelperConfig: "mappings/graphics/SMHP_SkinConfig.md"
+                      - ColorGrades: "mappings/graphics/SMHP_ColorGrades.md"
+                      - HairConfig: "mappings/graphics/SMHP_HairConfig.md"
+                      - CharacterConfig: "mappings/graphics/SMHP_CharacterConfig.md"
+                      - Trigger 使用部分: "mappings/graphics/SMHP_trigger.md"
+              - 滤镜: "mappings/graphics/color_grading.md"
+          - Audio:
+              - 大纲: "mappings/audio/audio.md"
+              - 播放问题排查: "mappings/audio/troubleshooting.md"
+              - 常见参数: "mappings/audio/params.md"
+              - Tile Sound Id 表: "mappings/audio/tile_sounds.md"
+              - 蔚蓝 Event 路径表: "https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump"
+              - 常见问题: "mappings/audio/faq.md"
+          - 剧情:
+              - Lua Cutscene:
+                  - 大纲: "mappings/lua/lua_cutscene.md"
+                  - 常见问题: "mappings/lua/faq.md"
+                  - 机制库: "mappings/lua/mechanism.md"
+                  - C# 交互: "https://saplonily.top/celeste_modding_tutorial/code_modding/extra/lua_cutscene/cs_access/"
+                  - Lua Cutscenes 词典: "mappings/lua/lua_cutscene_handbook.md"
+              - 传送: "mappings/lua/teleport.md"
+              - 文本: "mappings/lua/text.md"
+              - 案例:
+                  - 大纲: "mappings/lua/examples/intro.md"
+                  - Journeys of a Bygone Wanderer: "mappings/lua/examples/journeys_of_a_bygone_wanderer.md"
+                  - The Solar Express: "mappings/lua/examples/the_solar_express.md"
+                  - Gallery Collab: "mappings/lua/examples/gallery.md"
+                  - WELCOME TO MEGALOPHOBIA: "mappings/lua/examples/megalophobia.md"
+      - 进阶:
+          - Collab:
+              - 大纲: "mappings/collab/collab.md"
+              - 文本规范: "mappings/collab/dialog.md"
+              - Mini 水晶之心贴图: "mappings/collab/miniheart_hd.md"
+          - Code: "mappings/code.md"
+      - 收尾阶段:
+          - 测图: "mappings/mod_test.md"
+          - 发布 Mod: "mappings/publish_mod.md"
+      - 其他:
+          - 链接汇总: "mappings/useful_links.md"
+          - 实用 Helper:
+              - 大纲: "mappings/useful_helpers/useful_helpers.md"
+              - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
+              - Eevee Helper: "mappings/useful_helpers/eevee.md"
+              - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
+              - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
+              - hELPER: "mappings/useful_helpers/hELPER.md"
+          - 蔚蓝制图小测:
+              - 第一届蔚蓝制图小测😱: "mappings/quiz.md"
+              - 题库:
+                  - 判断题: "mappings/quiz/true_or_false_questions.md"
+                  - 填空题: "mappings/quiz/blank_filling_questions.md"

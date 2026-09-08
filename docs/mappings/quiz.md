@@ -466,7 +466,7 @@ B
 
 #### 1
 
-[`Celeste/log.txt`](game_crashes.md)
+[`Celeste/log.txt`](../mods/game_crashes.md)
 
 #### 2
 
@@ -542,7 +542,7 @@ F
 
 F
 
-我们需要额外在 .meta.yaml 中填入以下内容, [参考](camera.md#excamera)
+我们需要额外在 .meta.yaml 中填入以下内容, [参考](./camera/faq.md#excamera)
 
 yaml
 ExCameraMetaData:

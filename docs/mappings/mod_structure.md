@@ -264,10 +264,10 @@ c=你干嘛
 
 当然我没说这是错的, 只要你把 ID 名字取长一点就能降低覆盖风险, 比如很多 Helper 作者如果要给自己的某些实体加自定义皮肤, 又想让皮肤可以配置, 一般都是用这种[方法](https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3232)
 
-然后还有第二种方法, 就是你把上面写的 `Sprites.xml` 移动到 `Mods/MyMod/Graphics/MyMod/Sprites.xml` 这个路径下(放哪儿都可以, 只要不撞路径不发生覆盖就行), 然后在 Loenn 元数据里选择这个 XML 即可, 这表示只有在运行这张图的时候才会用这个 XML 覆盖官图的 XML(如果是 Helper 自定义的 xml 那这种方法无效, 只能同路径覆盖), 这样就不会污染其他 Mod 了
+然后还有第二种方法, 就是你把上面写的 `Sprites.xml` 移动到 `Mods/MyMod/Graphics/MyMod/Sprites.xml` 这个路径下(放哪儿都可以, 只要不撞路径不发生覆盖就行), 然后在 Loenn 元数据里选择这个 XML 即可, 这表示只有在运行这张图的时候才会用这个 XML 覆盖官图的 XML, 这样就不会污染其他 Mod 了
 
 !!! 注意
-    xml 的内容覆盖范围只包括 `Mod/Graphics/Sprite.xml.xml`, `Mod/Graphics/SpritesGui.xml`, `Mod/Graphics/Portraits.xml`, `Mod/DecalRegistry.xml`, 如果是 Helper 自定义的 xml, 那么同路径会发生完全覆盖 
+    xml 的内容覆盖范围只包括 `Mod/Graphics/Sprite.xml`, `Mod/Graphics/SpritesGui.xml`, `Mod/Graphics/Portraits.xml`, `Mod/DecalRegistry.xml`, 如果是 Helper 自定义的 xml, 那么同路径会发生完全覆盖 
 
 ### 以 Maps 等直接覆盖的资源为例
 
@@ -329,6 +329,15 @@ c=你干嘛
 
 初始存档点(也就是一开始默认进入的房间)对应的图片命名为 `start`, 其他图片改成章节存档点房间的名称即可
 
+### 为什么我照着教程做没效果啊
+
+> 重启解决 99% 的问题
+
+新放置的文件可能无法被及时加载, 所以请 Ctrl + F5 重启让文件被正确加载, 
+不过一般如果已经有对应文件但只是做了修改或者替换一般还是能被正确热重载的
+
+
+
 
 ## 常用工具
 
@@ -340,7 +349,7 @@ c=你干嘛
 
 ### Mod 打包问题
 
-当你发布你的 Mod 的时候你要把你 Mods 里 `Maps` 同级的文件打包到一个 `.zip` 文件里, 而不是把你的整个 Mod 打包成 `.zip`
+当你发布你的 Mod 的时候你要把你 Mods 里 `Maps` 同级的所有文件打包到一个 `.zip` 文件里, 而不是把你的整个 Mod 打包成 `.zip`
 
 例如这样是对的
 
