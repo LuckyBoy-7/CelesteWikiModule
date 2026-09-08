@@ -290,3 +290,9 @@ SID, 即 a string ID of the area, 是一个区域的唯一标识符, 由于官�
 ## 让水母消失的实体是什么
 
 Seeker Barrier
+
+<a id="hitbox"></a>
+## 如何判断 Trigger 是否加载
+
+* 按 `~` 打开控制台, 看看有没有 Trigger 框, 没有就是没加载
+* 或者下载 CelesteTAS 按 Ctrl + B 打开碰撞箱观察

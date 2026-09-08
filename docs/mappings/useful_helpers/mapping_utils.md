@@ -19,7 +19,7 @@
 * Darkness Alpha: 你可以理解为暗的地方有多暗, 范围 `[0, 1]`
 * Darkness Color: 你可以理解为暗的地方偏什么颜色
 * ColorGrade: [滤镜](../graphics/color_grading.md)
-* Camera Offset: [镜头偏移](../camera.md)
+* Camera Offset: [镜头偏移](../camera/camera.md)
 
 然后你就可以做各种黑黑的, 蓝蓝的, 红红的, 绿绿的效果了😋
 

@@ -37,6 +37,10 @@
 然后呢, 由于蔚蓝的圈子比较小, 所以不像 MC 那样有 Forge, Fabric, NeoForge, Quilt 等那么多种类的 Mod 加载器, 
 在蔚蓝我们目前只有一种主流的 Mod 加载器, 即 [Everest](https://gamebanana.com/tools/6449)
 
+### [Everest 下载问题](./common/everest_install_issues.md)
+
+如果你在下载 Everest 时遇到问题, 可以参考上面的链接. 不过目前通常使用 Mod 管理器下载, 可以先暂时跳过这里
+
 ## Mod (加载器)管理器
 
 现在我们已经知道什么是 Mod, 什么是 Mod 加载器了, 但是对玩家来说安装和管理 Mod 还是太吃操作了, 于是 Mod 管理器诞生了, 
@@ -72,4 +76,14 @@ Mod 的更新目前有三种方式
 1. 使用 Mod 管理器
 2. 游戏内更新(由于 Everest 提供的游戏内更新方式是连上香蕉网的, 所以国内玩家想要更改这种行为连上 WEGFan 的镜像的话需要安装 [ChinaMirror](https://celeste.weg.fan/submissions/detail/2464697282266787/celeste-mod-china-mirror) 这个 Mod) 
 3. 自己通过任意方式找到最新的 Mod 资源, 并在 `Celeste/Mods/` 文件夹里将老版 Mod 替换即可
+
+## 调试模式
+
+* [调试模式 by b 站 wiki](https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F)
+* [调试模式 by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/)
+
+请打开调试模式以享受更好的游戏体验
+
+
+
 

@@ -21,6 +21,29 @@ const announcements = [
         text: "~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~",
         url: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong",
         target: "_blank"
+    },
+    {
+        text: "❤孤单一人怎么办❤",
+        url: "https://bbs.celemiao.com/d/357-wei-lan-lian-ji-qun-fu-miaonet-xiao-bai-shi-yong-zhi-nan",
+        target: "_blank"
+    },
+    {
+        text: "第一届蔚蓝制图小测😱",
+        url: "/mappings/quiz/",
+    },
+    {
+        text: "🍬糖糖的游🍬",
+        url: "/activity/candy/",
+    },
+    {
+        text: "看看外国友人在聊些什么👀",
+        url: "https://discord.gg/6qjaePQ",
+        target: "_blank"
+    },
+    {
+        text: "在? 来点建议?",
+        url: "https://wj.qq.com/s2/27815131/jx6r/",
+        target: "_blank"
     }
 ];
 
@@ -42,6 +65,10 @@ function getRandomAnnouncement() {
 
     currentIndex = index;
     return announcements[index];
+}
+
+function getLastAnnouncement() {
+    return announcements[announcements.length - 1];
 }
 
 function setAnnouncement(link, announcement) {
@@ -128,7 +155,8 @@ function startAnnouncement() {
     }
 
     // 第一次消息
-    const first = getRandomAnnouncement();
+    // const first = getRandomAnnouncement();
+    const first = getLastAnnouncement();
     setAnnouncement(links[0], first);
 
     // 第一个 link 在中央
