@@ -1,11 +1,11 @@
 const announcements = [
     {
         text: "这里似乎有些奇怪的蔚蓝群",
-        url: "/general/community/",
+        url: "/celeste_wiki/general/community/",
     },
     {
         text: "这里似乎有些奇怪的 Wiki",
-        url: "/general/wiki/",
+        url: "/celeste_wiki/general/wiki/",
     },
     {
         text: "Any% 分段速通接力活动",
@@ -29,11 +29,11 @@ const announcements = [
     },
     {
         text: "第一届蔚蓝制图小测😱",
-        url: "/mappings/quiz/",
+        url: "/celeste_wiki/mappings/quiz/",
     },
     {
         text: "🍬糖糖的游🍬",
-        url: "/activity/candy/",
+        url: "/celeste_wiki/activity/candy/",
     },
     {
         text: "看看外国友人在聊些什么👀",
