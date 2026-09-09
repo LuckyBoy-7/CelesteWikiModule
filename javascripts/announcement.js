@@ -41,6 +41,41 @@ const announcements = [
         target: "_blank"
     },
     {
+        text: "发布 Mod 前的最后一次机会",
+        url: "/celeste_wiki/mappings/mod_test/",
+    },
+    {
+        text: "你再学不会问问题我可要攻击你了😡",
+        url: "/celeste_wiki/mods/question_and_self_study/",
+    },
+    {
+        text: "你应该知道我旁边这个东西可以用来全局搜索吧😱",
+    },
+    {
+        text: "制图不难的, 求你了, 来玩下吧😭",
+        url: "/celeste_wiki/mappings/overall/",
+    },
+    {
+        text: "时间是不会停下来等人的, 可是你要因为这个而停滞不前吗",
+        url: "/celeste_wiki/general/speedrun/",
+    },
+    {
+        text: "猫有九条命, 那你呢",
+        url: "/celeste_wiki/general/deathless/",
+    },
+    {
+        text: "精准而优雅, 没有一帧是多余的",
+        url: "/celeste_wiki/general/tas/",
+    },
+    {
+        text: "我游戏崩了怎么办啊大佬😭",
+        url: "/celeste_wiki/mods/game_crashes/",
+    },
+    {
+        text: "5/6/7/8/9 jump 都是啥啊, 吓哭了😱",
+        url: "/celeste_wiki/general/common/mechanics/",
+    },
+    {
         text: "在? 来点建议?",
         url: "https://wj.qq.com/s2/27815131/jx6r/",
         target: "_blank"
@@ -73,12 +108,17 @@ function getLastAnnouncement() {
 
 function setAnnouncement(link, announcement) {
     link.textContent = announcement.text;
-    link.href = announcement.url;
 
     if (announcement.target) {
         link.target = announcement.target;
     } else {
         link.removeAttribute("target");
+    }
+
+    if (announcement.url) {
+        link.href = announcement.url;
+    } else {
+        link.removeAttribute("href");
     }
 }
 
