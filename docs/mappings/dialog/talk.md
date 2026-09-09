@@ -10,7 +10,7 @@ UnderDragon_FirstDemo_Intro=
 Hi!
 ```
 
-没错, 这就是一个简单的对话, 如果你在地图中调用了这个 ID 的对话 (比如使用了 Dialog Trigger), 就会有一只 Madeline 一脸开心的表情对你说 Hi!
+没错, 这就是一个简单的对话, 如果你在地图中调用了这个 ID 的对话 (比如使用了 `Dialog Cutscene Trigger [Everest]`), 就会有一只 Madeline 一脸开心的表情对你说 Hi!
 
 以下是对话的基本形式:
 
