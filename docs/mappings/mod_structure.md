@@ -178,27 +178,76 @@
 
 ## [了解 Everest 处理这些文件的逻辑](https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders)
 
-Everest 在加载 Mod 资源的时候会把里面的资源(比如 `Maps, Dialog, Audio, Graphics`等)
-连带官图的整合到一起, 做好合并工作后 Everest 就可以集中处理这些资源了
+在开始了解这一概念之前, 请先在制图群(QQ: 633125440)群文件里下载好官图图片素材, 
+叫做 `[图像类] Celeste Graphics Dump v1400`, 它的结构如下:
 
-对于大部分文件来说同路径会整个文件被覆盖, 比如图片 A 和图片 B 同路径会相互覆盖, A 先加载, 那最后活着的图片就是 B, B 先加载, 那最后活着的图片就是 A
+* 📁 <font color=green>[图像类] Celeste Graphics Dump v1400</font>
+    * 📁 Gameplay
+    * 📁 Gui
+    * 📁 Portraits
+    * 📁 ...
 
-而对 `Dialog` 里的文件和 `.xml`, 音频(`event:`)等文件来说是内容部分覆盖
+此时你可以观察一下你蔚蓝根目录, 它的的结构如下
+
+* 📁 Celeste
+    * 📁 <font color="orange">Content</font>
+        * 📁 Graphics
+            * 📁 <font color=green>Atlases</font> (对应官图解包素材根目录)
+                * 📁 Gameplay
+                * 📁 Gui
+                * 📁 Portraits
+                * 📁 ...
+
+你会发现, 欸, 这里的 `Atlases` 不就对应官图解包后的素材吗
+
+这时你再对照你自己的 Mod 结构看看, 你就会发现...
+
+* 📁 Mods
+    * 📁 <font color="orange">你的 Mod</font>
+        * 📁 Graphics
+            * 📁 <font color=green>Atlases</font>
+                * 📁 Gameplay
+                * 📁 Gui
+                * 📁 Portraits
+                * 📁 ...
+
+这也太像了吧, 简直完全一样啊!
+
+事实也确实如此, Everest 会先从 <font color="orange">Content</font> 目录开始加载原版资源, 
+然后再从 <font color="orange">你的 Mod </font> 目录开始加载你的资源, 所以对于相同路径的内容会发生完全覆盖, 
+即你放置的素材会覆盖官图的
+
+所以做蔚蓝 Mod 的一个通用心法就是: 虽然我在做 Mod, 但是可以想象自己就是蔚蓝制作组在开发蔚蓝, 
+我们放置的文件路径跟官图的完全一样, 没有任何问题, 因为放了之后也会覆盖掉官图对应位置的素材,
+从某种意义上来说这就像是我们将那个素材更换掉了, 但其实是覆盖掉了
+
+除了 `Graphics` 外, 其他类型的 Mod 资源也是同理, 比如 `Maps`,  `Dialog`,  `Audio`, `Tutorials` 等, 
+做好合并覆盖工作后 Everest 就可以集中处理这些资源了
+
+### 外部覆盖和内部覆盖
+
+对于大部分文件来说同路径会发生外部覆盖, 比如图片 A 和图片 B 同路径会相互覆盖, A 先加载, 那最后活着的图片就是 B, B 先加载, 那最后活着的图片就是 A,
+这里是整个文件都被替换掉了, 所以叫做外部覆盖
+
+但是对于 `Dialog` 里的文件和 `.xml`, `.bank` 等文件来说是内部覆盖, 因为里面的内容才是本体, 比如
+
+* 在 `Dialog` 文件夹中大家都放了 `English.txt`, 总不能只用你的 dialog 或者我的 dialog, 所以其实都会被加载,
+而其中的 `Dialog ID` 会相互覆盖
+* 对 `.xml` 来说则是里面的标签名相互覆盖
+* 对 `.bank` 来说则是里面的 `event` 路径相互覆盖
 
 当你理解了上面提到的这些, Mod 中的很多东西就会立即变得清晰明了, 比如:
 
 * 为什么别人的素材我能用, 因为合并完都是一个东西
-* 为什么要加依赖, 因为能在 Loenn 里使用是因为你有这个 Mod, 而打包出去别人用的时候别人可能没有对应 Mod
+* 为什么要加依赖, 因为能在 Loenn 里使用是因为你有这个 Mod 而且启用了, 而打包出去别人用的时候别人可能没有对应 Mod 或者没开
 * 为什么文件夹要套多层, 为什么 Dialog 的 key 要写的很长, 为什么 Fmod 里 bank 中的 event 也要套路径, 因为合并完可能发生覆盖
 
-> 所以你可能意识到了作者名 + 项目名的套文件夹规范本质上只是用尽可能少的文件夹保证 Mod 素材不冲突, 所以其实你完全可以取一个比较特殊的不容易撞的文件夹名只套一层即可
+> 所以你可能意识到了作者名 + 项目名的套文件夹规范, 作者名_项目名_Dialog_ID 的 Dialog ID 规范, 作者名/项目名/.../event 的 event 路径规范等等,
+> 本质上只是用尽可能少的文件夹保证 Mod 素材不冲突, 所以其实你完全可以取一个比较特殊的不容易撞的名字只套一层即可
 
 因为怕大家还是听不懂, 所以接下来将简单做个说明
 
 ### 以 Dialog 为例
-
-!!! note "注意"
-    因为大家 Dialog 都写在一个位置, Dialog 是 100% 会撞路径的, 所以我们只需要关注覆盖的方式即可
 
 如果别人写了
 
@@ -214,7 +263,7 @@ b=哎哟
 c=你干嘛
 ```
 
-因为你这里的 `b` 跟别人的同路径, 所以如果此时别人 Mod 先加载, 则最后会变成下面这样, 这意味着别人的图会加载到错误的对话(所以我们平常都说键名要长, 例如 `MyName_MyMod_A_01_intro`)
+因为你这里的 `b` 跟别人的同路径, 所以如果此时别人 Mod 先加载, 则最后会变成下面这样, 这意味着别人的图会加载到错误的对话
 
 ```ini
 a=我的天
@@ -226,7 +275,7 @@ c=你干嘛
 
 ### 以 Sprites.xml 为例
 
-```xml title="假设这是官图 Sprites.xml"
+```xml title="假设这是官图 Sprites.xml" hl_lines="2"
 
 <Sprites>
     <a path="a" start="a">
@@ -238,38 +287,42 @@ c=你干嘛
 
 如果你写了
 
-```xml title=" 路径: Mods/MyMod/Graphics/Sprites.xml"
+```xml title=" 路径: Mods/MyMod/Graphics/Sprites.xml" hl_lines="2"
 
 <Sprites>
     <a path="b" start="b">
     </a>
-    <c path="d" start="d">
+    <c path="c" start="c">
     </c>
 </Sprites>
 ```
 
 那么恭喜你, 所有玩家开启你的 Mod 之后, 合并后的 `Sprites.xml` 都会变成下面这样
 
-```xml
+```xml hl_lines="2"
 
 <Sprites>
     <a path="b" start="b">
     </a>
     <b path="b" start="b">
     </b>
-    <c path="d" start="d">
+    <c path="c" start="c">
     </c>
 </Sprites>
 ```
 
-当然我没说这是错的, 只要你把 ID 名字取长一点就能降低覆盖风险, 比如很多 Helper 作者如果要给自己的某些实体加自定义皮肤, 又想让皮肤可以配置, 一般都是用这种[方法](https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3232)
+不过反过来说, 如果你知道了覆盖是如何运作的, 那么只要你把标签名字取特殊一点就基本能保证不会发生覆盖和污染了, 
+比如很多 Helper 作者如果要给自己的某些实体加自定义皮肤, 又想让皮肤可以配置, 一般都是用[这种方法](https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3232),
+之后你自己要更换皮肤的话把配置抄过来改下标签名就好了
 
-然后还有第二种方法, 就是你把上面写的 `Sprites.xml` 移动到 `Mods/MyMod/Graphics/MyMod/Sprites.xml` 这个路径下(放哪儿都可以, 只要不撞路径不发生覆盖就行), 然后在 Loenn 元数据里选择这个 XML 即可, 这表示只有在运行这张图的时候才会用这个 XML 覆盖官图的 XML, 这样就不会污染其他 Mod 了
+避免路径污染还有第二种方法, 就是你把上面写的 `Sprites.xml` 移动到一个特殊路径下(不发生外部覆盖即可), 
+比如 `Mods/MyMod/Graphics/MyMod/Sprites.xml`, 然后在 Loenn 元数据里的 `Sprites.xml` 栏目选择这个 XML 即可, 
+这表示只有在运行这张图的时候才会用这个 XML 覆盖官图的 `Sprites.xml`, 这样自然就不会污染其他 Mod 了
 
 !!! 注意
-    xml 的内容覆盖范围只包括 `Mod/Graphics/Sprite.xml`, `Mod/Graphics/SpritesGui.xml`, `Mod/Graphics/Portraits.xml`, `Mod/DecalRegistry.xml`, 如果是 Helper 自定义的 xml, 那么同路径会发生完全覆盖 
+    xml 的内部覆盖作用范围只包括 `Mod/Graphics/Sprite.xml`, `Mod/Graphics/SpritesGui.xml`, `Mod/Graphics/Portraits.xml`, `Mod/DecalRegistry.xml`, 如果是 Helper 自定义的 xml, 那么同路径会发生外部覆盖 
 
-### 以 Maps 等直接覆盖的资源为例
+### 以 Maps 为例
 
 比如你和它的 Mod 都长这样, 你俩有个人的图就加载不出来了, 如果贴图也重名重路径了, 你的图可能会加载到错误的素材
 
@@ -284,7 +337,7 @@ c=你干嘛
             - 📁Maps 
                 - 📄MyFirstMap.bin
 
-所以我们添加自定义的资源时文件路径要多套几层, 目的就是为了不和官图也不和其他人的 Mod 重名(写 Dialog 的 key 的时候也是同理), 一般来说两层足矣, 所以地图结构一般是
+所以我们添加自定义的资源时文件路径要多套几层, 目的就是为了不和官图也不和其他人的 Mod 重名, 一般来说两层足矣, 所以地图结构一般是
 `Maps/{作者名}/{地图集名字}/{地图}.bin`, 基本上就是如下图所示
 
 * 📁Celeste
