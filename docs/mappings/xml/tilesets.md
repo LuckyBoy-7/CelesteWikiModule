@@ -1,74 +1,74 @@
 # 自定义瓦片(Tileset)
 
-你可能需要先了解一下什么是[XML](xml.md)
+参考/整合
 
+* [Tileset 教程 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63805e903ce64c7725f62b&pm=s), [底龙的自定义tiles教程](https://www.bilibili.com/video/BV1Eu4y1L78Y), [非官方模板的tiles应用](https://www.bilibili.com/video/BV1t94y1c7ZT)
 * [摘自电箱教程](https://www.bilibili.com/video/BV1kV4y137Mn/?spm_id_from=333.788&vd_source=217bacbee37820b5bf3ed2f4fb8f6c94)
 * [摘自 Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 * [瓦片集格式参考](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 * [motonine 的自制 tiles 教程](../../assets/mappings/xml/tileset/自制tiles教程%5B23.12.17更新%20作者motonine%5D.txt)
-* [Tileset 教程 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e63805e903ce64c7725f62b&pm=s), [底龙的自定义tiles教程](https://www.bilibili.com/video/BV1Eu4y1L78Y), [非官方模板的tiles应用](https://www.bilibili.com/video/BV1t94y1c7ZT)
+
+
+你可能需要先了解一下什么是 [XML](./basics.md)
 
 ## Tile
 
-Tile, 即**瓦片**
+> Tile 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
-想想我们在贴地面瓷砖或是在房顶摆瓦片的时候, 操作是不是就像在 Loenn 里拿着砖在那儿涂涂画画呢
+Tile, 即**瓦片**, 对应到游戏就是里面一块一块的前景砖, 这些砖块大小为 `8px * 8px`, 将他们拼接起来就形成了我们日常看到的地形和背景
 
-### 热知识
+![tileset_explanation0](../../assets/mappings/xml/tileset/tileset_explanation0.png)
 
-我们在 Loenn 里涂的砖是永远不会被卸载的, 也就是不存在进房间的时候加载对应区域的砖, 离开房间的时候卸载, 所以像 Filler 这种进不去的房间, 里面的砖也会在我们切板的时候被看到
+
+<div class="admonition note">
+    <p class="admonition-title">热知识</p>
+    <p>
+    我们在 Loenn 里涂的砖是永远不会被卸载的, 也就是不存在进房间的时候加载对应区域的砖, 离开房间的时候卸载, 所以像 Filler 这种进不去的房间, 里面的砖也会在我们切板的时候被看到
+    </p>
+</div>
+
 
 ## Tileset
 
-Tileset, 即 Tile set, **瓦片集**
+Tileset, 即 Tile-set, **瓦片-集**
 
-表示各种瓦片的集合, 就像我们在 Loenn 里涂砖的时候, 不可能所有的砖都一个样, 每个砖的样式会随着周围砖的摆放和清除而变化
+表示各种瓦片的素材集合, 当你绘制 Tile 的时候, 就可以从集合里选出 `8px * 8px` 的素材来使用(后文将其称为一个**素材单元**),
+我们以 cement tileset 为例, 就像下面这样
 
-Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖 
-
-我们游戏中的砖主要由一块块 `8px * 8px` 大小的碰撞箱和贴图组成(后文将其称为一个**单元**)
-
-
-<figure markdown>
-  ![tileset](../../assets/mappings/xml/tileset/cement.png){style="width: 150px; image-rendering: pixelated; title=123"}
-  <figcaption>路径: Celeste\Graphics\Atlases\Gameplay\tilesets\cement.png</figcaption>
+<figure style="display: flex; gap: 1rem;">
+  <div>
+    <img src="/celeste_wiki/assets/mappings/xml/tileset/cement.png" alt="tileset" style="width: 150px; image-rendering: pixelated;">   
+    <figcaption>路径: Celeste\Graphics\Atlases\Gameplay\tilesets\cement.png</figcaption>
+  </div>
+  <div>
+    <img src="/celeste_wiki/assets/mappings/xml/tileset/cement_cell.png" alt="tileset" style="width: 153px; image-rendering: pixelated;">   
+    <figcaption>里面的一格格素材单元</figcaption>
+  </div>
 </figure>
 
-我们以 cement tileset 为例, 我们会发现它正是由一个个 `8px * 8px` 单元的贴图块组成, 游戏里的砖的贴图正是从这里面**切**出来的
 
-![tileset_explanation0](../../assets/mappings/xml/tileset/tileset_explanation0.png)
 ![tileset_explanation1](../../assets/mappings/xml/tileset/tileset_explanation1.png)
 
-当然如果我们把 CelesteTAS 的简化图形看开了, 碰撞箱看的更清楚
+但事实上真的是这么做的吗, 要是我们手动选择素材单元, 涂 100 个 Tile 难道要手动到 tileset 里找 100 次素材单元? 那眼睛都要挑花了,
+所以显然不是也不应该这么做
 
-![tileset_explanation1](../../assets/mappings/xml/tileset/tileset_explanation2.png)
+仔细回想一下你会发现, 你在 Loenn 里涂砖的时候, 每个砖的样式其实会随着周围砖的摆放/清除而变化, 这是怎么做到的?
 
+## 规则
 
-## ForegroundTiles.xml
-
-现在我们搞清楚了砖是什么, 素材从哪儿来, 现在该开始摆砖了, 但你可能开始头疼起来, 这么一种砖就有这么多个单元, 要一个个选吗, 不仅费事, 还容易选错,
-所以这时我们就要指定一套**规则**, 比如看下面这个 `3px * 3px` 大小的自定义砖
+以下面这个 `3 * 3` 大小的自定义砖为例
 
 ![tileset](../../assets/mappings/xml/tileset/3by3_tileset.png){style="width: 150px; image-rendering: pixelated; title=123"}
 
-* 如果我告诉中间的砖: 嘿, 兄弟, 你要是看见周围都有砖的话, 你就把自己的的贴图改成素材第 i 行, 第 j 列单元对应的素材
-* 如果我告诉正右边的砖: 兄弟...你好..., 你要是看见上下都有砖, 而且左边也有砖的话, 你就把自己的的贴图改成素材第 m 行, 第 n 列单元对应的素材
+* 如果我告诉中间的砖: 嘿, 兄弟, 你要是看见周围都有砖的话, 你就把自己的的贴图改成 tileset 中第 i 行, 第 j 列的素材单元
+* 如果我告诉正右边的砖: 嘿, 兄弟, 你要是看见周围都有砖, 但是左边没砖的话, 你就把自己的的贴图改成 tileset 中第 m 行, 第 n 列的素材单元
 
-如果我们把所有的砖通知一遍, 那是不是就不用我们自己一个个挑素材啦, 而这正是 `ForegroundTiles.xml` 和 Loenn(Celeste 也干了) 在做的事, `ForegroundTiles.xml` 制定了一套规则, 而 Loenn 使用这些规则告诉每个砖该如何绘制(所以如果我们要做自定义砖的话, 我们要自己写`ForegroundTiles.xml`, 而且得在 Loenn 元数据里选)
+如果我们把所有的砖通知一遍, 那是不是就不用我们自己一个个挑素材啦, 事实也正是如此, 蔚蓝和 Loenn 都是通过这种方法渲染正确的素材单元的,
+而这个规则则是通过 `ForegroundTiles.xml` 来配置的, 所以接下来讲解 `ForegroundTiles.xml`
 
+## ForegroundTiles.xml 属性
 
-### ForegroundTiles.xml 属性
-下面我们来简单介绍一下`ForegroundTiles.xml` 中相对重要的属性
-
-更多属性请参考[Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
-
-* `id`: 就是类似身份证一样的东西, 唯一标识符, 不能重复... 所以如果你加新的砖模板要更换 `id`, 可以用英文字母, 也可以用单个汉字
-* `path`: 指明了 tileset 对应的素材位置, 路径相对于`Gameplay/tilesets` 文件夹, 例如上面提到的 `cement` 对应的 `path` 就是 `cement` 
-* `mask`: 也就是上文提到的**规则**, 表示对应位置砖周围的情况, 去掉 `-` 分三行排列刚好是个 `3 x 3` 的块, 块中间的位置对应当前砖的位置, 然后我们需要在这个九宫格内填规则, `0` 表示无砖, `1` 表示有砖, `x` 表示任意, 因为九宫格的中间对应当前砖, 所以永远填 `1`, 如果不写规则直接填`padding`则表示最外层的里面一层(例如对于`4 x 4`的块, 它的`padding`在`3 x 3`位置), 如果不写规则直接填`center`, 则表示剩下的没有被考虑的所有情况(一般来说就是指比`padding`还要里面的), 一个单元就是通过这样的规则来判断自己要选择什么贴图的  
-* `tiles`: 对应素材的哪些单元(一个单元占`8px * 8px`的大小并且坐标从左上(0, 0)位置开始算, (1, 0)表示第二列第一行对应的单元格, 是的没错, 从 0 开始, 从列开始算!)  
-* `ignores`: 需要忽略的 tileset 对应的 id, 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` (常用于制作 tile 分层的效果, 让画面的层次更丰富)
-* `copy`: 需要拷贝配置(即内部的`set`节点)的 tileset 对应的 id, 这样我们就可以只写一个 template(模板) 然后复用了, 当然我们可以继续写`set`节点来覆盖拷贝过来的一部分配置  
-* `sound`: Everest 添加的额外配置, 表示玩家踩上去什么声音, 写在`set`节点里, 如`<set ... sound="1"/>`, 具体数字对应的声音可以看[对照表](../audio/tile_sounds.md)
+游戏中的每一种不同的砖都对应 `ForegroundTiles.xml` 中的一种样式 `<Tileset></Tileset>`, 像下面这样,
 
 
 ```xml title="Celeste\Content\Graphics\ForegroundTiles.xml"
@@ -96,17 +96,78 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 </Data>
 ```
 
-好了, 现在你已经完全懂了, 你可以
 
-* 直接对原版素材改色, 然后把官图的`ForegroundTiles.xml` copy 一份, 在新的那份中添加一个自己的 Tileset节点, 之后在Loenn元数据里选择这个新的`xml`即可 
-* 照着原版的 template 砖改 
-* 自己写一个`ForegroundTiles.xml`
-* 抄/借别人的`ForegroundTiles.xml`, 比如[Spooooky素材包](https://gamebanana.com/mods/474010), 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)(里面会自带 xml 的)
+下面我们先来简单介绍一下 `<Tileset></Tileset>` 中相对重要的属性
+
+> 更多属性请参考 [Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
+
+* `id`: 单个特殊字符(可以用英文字母, 也可以用单个汉字), 你可以理解为你的 tileset 的槽位或是别名, 游戏需要通过 id 找到你的 tileset, 所以显然 id 不能重复 
+* `path`: 指明了 tileset 对应的素材位置, 路径相对于 `Gameplay/tilesets` 文件夹, 例如上面提到的 `cement` 对应的 `path` 就是 `cement`
+* `sound`: Everest 添加的额外配置, 表示玩家踩上去什么声音, 写在 `set` 节点里, 如 `<set ... sound="1"/>`, 具体数字对应的声音可以看[对照表](../audio/tile_sounds.md)
+
+现在你已经知道游戏是如何找到你的 tileset 素材了, 那么上文提到的规则呢, 这是由 `<set></set>` 节点决定的
+
+`<set></set>` 节点由 `<Tileset></Tileset>` 包含着, 一条 `<set></set>` 对应一个规则, 它的属性有:
+
+* `mask`: 也就是上文提到的**规则**, 表示对应位置砖周围的情况, 它有三种写法
+    - `xxx-x1x-xxx`: 去掉 `-` 分三行排列刚好是个 `3 x 3` 的块, 块中间的位置对应当前砖的位置, 然后我们需要在这个九宫格内填规则, `0` 表示无砖, `1` 表示有砖, `x` 表示任意, 因为九宫格的中间对应当前砖, 所以永远填 `1`,
+    - `padding`: 表示最外层的里面一层(例如对于 `4 x 4` 的块, 它的 `padding` 对应 `3 x 3` 那一圈的位置),
+    - `center`: 表示剩下的没有被考虑的所有情况(一般来说就是指比 `padding` 还要里面的)
+* `tiles`: 对应素材单元的坐标集合(格式为 `(第 x 列, 第 y 行)`, 列从左往右数, 行从上往下数, 位置从 0 开始)
+
+<figure>
+    <img src="/celeste_wiki/assets/mappings/xml/tileset/cement_cell_index.png" alt="tileset" style="width: 153px; image-rendering: pixelated;">   
+    <figcaption>比如这里涂白的单元格坐标为 (3, 1)</figcaption>
+</figure>
+
+一个单元格通过询问 mask 找到适合的 `<set></set>`, 然后从它的 `tiles` 属性中随机抽一个来用, 以实现自然的变化感
+
+现在我们知道了规则是如何配置的, 那么让我们反过来看 `<Tileset></Tileset>` 中剩下的几个属性吧
+
+* `copy`: 需要拷贝配置(即内部的 `<set></set>` 节点)的 tileset 对应的 id, 这样我们就可以只写一个 template (模板) 然后复用了, 当然我们可以继续写 `<set></set>` 节点来覆盖拷贝过来的一部分配置
+* `ignores`: 需要忽略的 tileset 对应的 id, 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` (常用于制作 tile 分层的效果, 让画面的层次更丰富)
 
 
-## 使用别人自定义的 `ForegroundTiles.xml`
+## 使用官图的 `ForegroundTiles.xml`
 
-如果你觉得你的模板更好, 欢迎投稿😋
+好了, 现在你已经完全懂 `ForegroundTiles.xml` 里的都是啥了, 自己加个 `<Tileset></Tileset>` 还不是随随便便?
+
+接下来举例最简单的一种自定义砖块的情况, 即官图砖改色, 这里使用 `tileset/snow.png` 来作演示
+
+先随便改个颜色
+
+<figure>
+    <img src="/celeste_wiki/assets/mappings/xml/tileset/colored_snow.png" alt="tileset" style="width: 153px; image-rendering: pixelated;">   
+    <figcaption>路径: Graphics/Atlases/Gameplay/tilesets/WikiTest/colored_snow</figcaption>
+</figure>
+
+然后找到官图的 `ForegroundTiles.xml` (在 `Celeste/Content/Graphics/` 下), 粘贴到自己的路径下比如 `Graphics/{作者名}/{项目名}/`(也就是要[套文件夹](../mod_structure.md#everest)),
+随后照猫画虎的在后面填上跟 snow tileset 类似的配置, 然后改改 id, 改改素材路径就好了
+
+```xml hl_lines="10"
+<Data>
+  <Tileset id="z" path="template">
+    ...
+  </Tileset>
+  
+  ...
+  
+  <Tileset id="3" copy="z" path="snow"/>
+  
+  <Tileset id="A" copy="z" path="WikiTest/colored_snow"/>
+</Data>
+```
+
+最后在 Loenn 的元数据中使用这个配置, 并且 Ctrl + F5 刷新 Loenn, Ctrl + F5 重启游戏即可
+
+![loenn_metadata_foreground_tile](../../assets/mappings/xml/tileset/loenn_metadata_foreground_tile.png)
+
+![colored_res](../../assets/mappings/xml/tileset/colored_res.png)
+
+
+## 使用别人的 `ForegroundTiles.xml`
+
+由于官图的 `ForegroundTiles.xml` 配置过于简单, 各个 Tile 之间没有明确的联系, 导致画砖效率低下, 于是大伙儿写出了更优的配置来方便画砖
 
 ### [`ForegroundTiles.xml` by 0x0ade](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 
@@ -207,7 +268,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 ```
 ### [`ForegroundTiles.xml` by ...](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 
-常用在[Spooooky素材包](https://gamebanana.com/mods/474010)中, 详情见[各种Spooooky砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)(里面会自带 xml 的, 或者在[网站](https://spo0o0ky.github.io/SpooookyAssetPackBrowser/)上直接复制)
+常用在 [Spooooky 素材包](https://gamebanana.com/mods/474010)中, 详情见[各种 Spooooky 砖](https://gist.github.com/Spo0o0ky/1fb2a35efda40ab7e19e403c5328aad8)(里面会自带 xml 的, 或者在[网站](https://spo0o0ky.github.io/SpooookyAssetPackBrowser/)上直接复制)
 
 <figure markdown>
   ![tileset](../../assets/mappings/xml/tileset/Guide_Alternate.jpeg){style="width: 800px; image-rendering: pixelated; title=123"}
@@ -326,15 +387,18 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 ```
 
 
-## 自定义 ForegroundTiles.xml
+## 自定义 `ForegroundTiles.xml`
 
-虽说你可以直接改色或者抄, 我还是撸了一份样例来帮助大家理解/自制 ForegroundTiles.xml(丐版制作耗时不超过 4 节水课)
+虽说你可以直接改色或者抄, 我还是撸了一份样例来帮助大家理解/自制` ForegroundTiles.xml`
 
-我们这次将制作纯色砖, 为的是便于理解点和线之间的关系, 而且无需为一种规则的单元画多种样式(绝对不是我懒
+我们这次将制作纯色砖, 为的是便于理解点和线之间的关系, 而且无需为一种规则的单元画多种样式, ~~绝对不是我懒~~
+
+> 制作耗时不超过 4 节水课, 不难的(小声
 
 ### 借用 xml
 
-首先你肯定得有xml才能写吧, 简单点就是直接从官图文件(路径: `Celeste\Content\Graphics\ForegroundTiles.xml`)里复制粘贴出来, 不然就自己建一个, 之后放在自己的mod里, 随便取什么名字, 放哪儿都行(但要记得之前提过的重名问题, 需要套文件夹来降低风险)
+首先你肯定得有 xml 才能写吧, 简单点就是直接从官图文件(路径: `Celeste\Content\Graphics\ForegroundTiles.xml`)里复制粘贴出来, 
+不然就自己建一个, 之后放在自己的 mod 里, 随便取什么名字, 放哪儿都行(但要记得之前提过的重名问题, 需要套文件夹来降低风险)
 
 这里仿照官图就直接塞 Graphics 文件夹里了, 就像这样
 
@@ -377,7 +441,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 虽然写配置在准备素材之后, 但实际操作上我们是边写配置边画的
 
-对于一个单元, 它只会由点和线组成, 最多 4 个点, 4 条边, 最少 0 个点, 0 条边, 所以我们可以分类讨论穷举所有情况
+对于一个素材单元来说, 它的关键部分只会由点和线组成, 最多 4 个点, 4 条边, 最少 0 个点, 0 条边, 所以我们可以分类讨论穷举所有情况
 
 我们用绿色/蓝色来表示规则里对应的砖, 红色只是为了方便理解对应的情况
 
@@ -479,6 +543,11 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
     <!-- 4 个点, 0 条边 -->
     <set mask="010-111-010" tiles="8,13"/>
 
+    <!-- 4 个点, 1 条边(不存在) -->
+    <!-- 4 个点, 2 条边(不存在) -->
+    <!-- 4 个点, 3 条边(不存在) -->
+    <!-- 4 个点, 4 条边(不存在) -->
+
   </Tileset>
 
   <!-- 好像得至少写一个带 copy 的节点 Loenn 才会显示-->
@@ -491,7 +560,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 ![loenn_xml_config](../../assets/mappings/xml/loenn_xml_config.png)
 
-然后`Ctrl + F5`刷新 Loenn, 随便涂涂画画即可
+然后 `Ctrl + F5` 刷新 Loenn, 随便涂涂画画即可
 
 ### 成果展示
 
@@ -499,7 +568,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 
 ![custom_tileset_showcase](../../assets/mappings/xml/tileset/custom_tileset_showcase.png)
 
-## 自定义 AnimatedTiles.xml
+## 自定义 `AnimatedTiles.xml`
 
 为了完整性这里再提一嘴 `AnimatedTiles.xml`
 
@@ -516,7 +585,7 @@ Tileset 分为前景砖和背景砖, 这里我们主要讨论前景砖
 </Data>
 ```
 
-然后我们在 ForegroundTiles.xml 给想生草的砖加个 `sprites` 属性即可, 名字就填我们定义好的 `awa_top_a`
+然后我们在 `ForegroundTiles.xml` 给想生草的砖加个 `sprites` 属性即可, 名字就填我们定义好的 `awa_top_a`
 
 ```xml title="Celeste\Mods\CelesteWikiTutorial\Graphics\PureColorForegroundTiles.xml" hl_lines="6"
 
