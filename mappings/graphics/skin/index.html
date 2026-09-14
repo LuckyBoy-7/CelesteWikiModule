@@ -5041,22 +5041,25 @@
 <h1 id="_1">皮肤制作</h1>
 <h2 id="_2">参考</h2>
 <ul>
-<li><a href="https://www.bilibili.com/video/BV1YpYueREPt" target="_blank" rel="noopener">蔚蓝皮肤制作教程-星夜祈梦</a><ul>
-<li><a href="../../../assets/mappings/graphics/skin/%E8%94%9A%E8%93%9D%E7%9A%AE%E8%82%A4%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B-%E6%98%9F%E5%A4%9C%E7%A5%88%E6%A2%A6.pdf">文字版</a></li>
-</ul>
-</li>
+<li><a href="https://www.bilibili.com/video/BV1YpYueREPt" target="_blank" rel="noopener">蔚蓝皮肤制作教程-星夜祈梦</a>, <a href="../../../assets/mappings/graphics/skin/%E8%94%9A%E8%93%9D%E7%9A%AE%E8%82%A4%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B-%E6%98%9F%E5%A4%9C%E7%A5%88%E6%A2%A6.pdf">文字版</a></li>
 <li><a href="https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md" target="_blank" rel="noopener">Skin Mod Helper README</a></li>
 <li><a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md" target="_blank" rel="noopener">Skin Mod Helper Plus README</a></li>
-<li><a href="https://www.bilibili.com/video/BV1Uv4y1K751" target="_blank" rel="noopener">蔚蓝科技之自制皮肤mod教程</a></li>
+<li><a href="https://www.bilibili.com/video/BV1Uv4y1K751" target="_blank" rel="noopener">蔚蓝科技之自制皮肤 mod 教程</a></li>
 </ul>
+<blockquote>
 <p>如果你只是想修改素材贴图而不是可以随意切换的皮肤, 请参考<a href="../replace_assets/">素材替换</a></p>
-<p>如果你已经看过了 <a href="../../xml/sprites_xml/">Sprites.xml</a> 的引导, 那么改 Madeline 皮肤这事儿应该不难理解: 无非就是改贴图, 改 Sprites.xml, 但是这样皮肤只会作用于单图, 而不是随时能使用/切换的皮肤</p>
-<p>所以你还得下载 Skin Mod Helper(SMH)/Skin Mod Helper Plus(SMH+) 相关 Helper, 并根据他们指定的规则做相应配置</p>
-<p>比如你可以下载 <a href="https://gamebanana.com/mods/473796" target="_blank" rel="noopener">Skin Mod Helper Plus(SMH+)</a>, 下载任意<a href="https://kuksattu.github.io/celeste/skinmod-template/" target="_blank" rel="noopener">模板</a>丢 Mods 里, 然后你改改图片直接就能用了</p>
-<p>相对进阶的由于其他教程和 <a href="https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md" target="_blank" rel="noopener">SMH+ 的文档</a>相对来说讲的已经够详细了, 还有一堆 Mod 可以抄,
-这里就简单补充一些说明就好了(别忘了下载<a href="../../useful_links/#_1">解包素材</a>对照着理解)</p>
-<p>一开始皮肤 Mod 还没有出现的时候自然只能暴力替换, 可以参考 <a href="https://gamebanana.com/mods/251814" target="_blank" rel="noopener">Niko 皮肤(latest version-Solo 版本)</a>, 但是皮肤切换什么的就比较麻烦了, 而且能实现的功能有限,
-后来有了 <a href="../SMH/">Skin Mod Helper</a>, 提供了基础的皮肤切换/修改冲刺颜色的功能, 再到了后来就有了更高级的 <a href="../SMHP/">Skin Mod Helper Plus</a>, 此时我们几乎就能改皮肤的方方面面了</p>
+</blockquote>
+<p>了解 <a href="../../mod_structure/">Mod 结构</a>有助于你理解皮肤制作</p>
+<p>如果只是做一个皮肤那非常简单, 把官图<a href="../../useful_links/#_1">解包素材</a>放到你的 Mod 里, 修改贴图即可(可以参考 <a href="https://gamebanana.com/mods/251814" target="_blank" rel="noopener">Niko 皮肤(latest version-Solo 版本)</a>), 
+因为你的素材会<a href="../../mod_structure/#everest">覆盖</a>官图的素材, 但是这样就把复杂度丢给了玩家, 如果有多个皮肤 Mod, 
+玩家还需要处理他们的加载顺序, 或者是频繁将皮肤 Mod 拖入/拖出 Mods 文件夹, 所以更通用的做法是使用一个皮肤管理器</p>
+<p>目前有两种常用的皮肤管理器 Mod:</p>
+<ul>
+<li><a href="../SMH/">Skin Mod Helper</a>: 提供了基础的皮肤切换/修改冲刺颜色的功能</li>
+<li><a href="../SMHP/">Skin Mod Helper Plus</a>: SMH 的更高级的版本(兼容 SMH), 此时我们几乎就能改皮肤的方方面面了</li>
+</ul>
+<p>如果你想要制作可供管理的皮肤, 只需要按照对应皮肤管理器 Mod 的规范去配置你的皮肤即可,
+图方便的话可以下载 Kuksattu 提供的 <a href="https://kuksattu.github.io/celeste/skinmod-template/" target="_blank" rel="noopener">SMHP 模板</a>, 然后你改改图片直接就能用了</p>
 <h2 id="_3">皮肤绘制方面</h2>
 <ul>
 <li><a href="https://www.bilibili.com/video/BV1Axr9B8ECE/" target="_blank" rel="noopener">蔚蓝皮肤制作的一些指导 by 文顂</a></li>
