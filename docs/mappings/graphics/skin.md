@@ -2,25 +2,26 @@
 
 ## 参考
 
-* [蔚蓝皮肤制作教程-星夜祈梦](https://www.bilibili.com/video/BV1YpYueREPt)
-    * [文字版](../../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf)
+* [蔚蓝皮肤制作教程-星夜祈梦](https://www.bilibili.com/video/BV1YpYueREPt), [文字版](../../assets/mappings/graphics/skin/蔚蓝皮肤制作教程-星夜祈梦.pdf)
 * [Skin Mod Helper README](https://github.com/bigkahuna443/SkinModHelper/blob/dev/docs/guide/README.md)
 * [Skin Mod Helper Plus README](https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md)
-* [蔚蓝科技之自制皮肤mod教程](https://www.bilibili.com/video/BV1Uv4y1K751)
+* [蔚蓝科技之自制皮肤 mod 教程](https://www.bilibili.com/video/BV1Uv4y1K751)
 
-如果你只是想修改素材贴图而不是可以随意切换的皮肤, 请参考[素材替换](../graphics/replace_assets.md)
+> 如果你只是想修改素材贴图而不是可以随意切换的皮肤, 请参考[素材替换](../graphics/replace_assets.md)
 
-如果你已经看过了 [Sprites.xml](../xml/sprites_xml.md) 的引导, 那么改 Madeline 皮肤这事儿应该不难理解: 无非就是改贴图, 改 Sprites.xml, 但是这样皮肤只会作用于单图, 而不是随时能使用/切换的皮肤
+了解 [Mod 结构](../mod_structure.md)有助于你理解皮肤制作
 
-所以你还得下载 Skin Mod Helper(SMH)/Skin Mod Helper Plus(SMH+) 相关 Helper, 并根据他们指定的规则做相应配置
+如果只是做一个皮肤那非常简单, 把官图[解包素材](../useful_links.md#_1)放到你的 Mod 里, 修改贴图即可(可以参考 [Niko 皮肤(latest version-Solo 版本)](https://gamebanana.com/mods/251814)), 
+因为你的素材会[覆盖](../mod_structure.md#everest)官图的素材, 但是这样就把复杂度丢给了玩家, 如果有多个皮肤 Mod, 
+玩家还需要处理他们的加载顺序, 或者是频繁将皮肤 Mod 拖入/拖出 Mods 文件夹, 所以更通用的做法是使用一个皮肤管理器
 
-比如你可以下载 [Skin Mod Helper Plus(SMH+)](https://gamebanana.com/mods/473796), 下载任意[模板](https://kuksattu.github.io/celeste/skinmod-template/)丢 Mods 里, 然后你改改图片直接就能用了
+目前有两种常用的皮肤管理器 Mod:
 
-相对进阶的由于其他教程和 [SMH+ 的文档](https://github.com/AAA1459/SkinModHelper/blob/release/docs/guide/README.md)相对来说讲的已经够详细了, 还有一堆 Mod 可以抄,
-这里就简单补充一些说明就好了(别忘了下载[解包素材](../useful_links.md#_1)对照着理解)
+* [Skin Mod Helper](SMH.md): 提供了基础的皮肤切换/修改冲刺颜色的功能
+* [Skin Mod Helper Plus](SMHP.md): SMH 的更高级的版本(兼容 SMH), 此时我们几乎就能改皮肤的方方面面了
 
-一开始皮肤 Mod 还没有出现的时候自然只能暴力替换, 可以参考 [Niko 皮肤(latest version-Solo 版本)](https://gamebanana.com/mods/251814), 但是皮肤切换什么的就比较麻烦了, 而且能实现的功能有限,
-后来有了 [Skin Mod Helper](SMH.md), 提供了基础的皮肤切换/修改冲刺颜色的功能, 再到了后来就有了更高级的 [Skin Mod Helper Plus](SMHP.md), 此时我们几乎就能改皮肤的方方面面了
+如果你想要制作可供管理的皮肤, 只需要按照对应皮肤管理器 Mod 的规范去配置你的皮肤即可,
+图方便的话可以下载 Kuksattu 提供的 [SMHP 模板](https://kuksattu.github.io/celeste/skinmod-template/), 然后你改改图片直接就能用了
 
 
 ## 皮肤绘制方面

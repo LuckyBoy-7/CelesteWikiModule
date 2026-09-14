@@ -1,7 +1,5 @@
 > 如果你需要在 Loenn 里显示游戏内人物运动的实时轨迹, 请使用[插件](loenn/plugins.md#ghost)
 
-### Ghost Player Playback
-
 残影, 是用于在地图内对玩家进行路线引导的实体, 比如官图第九章玩家学习凌波微步的时候, 咖啡馆的旁边就会生成这个残影. 在这里我们不提残影对于操作的引导, 因为相较之下有更合适的实体可以引导玩家操作. 
 
 ## 残影录制
@@ -19,7 +17,7 @@
 5. 录制完成后, 前往游戏程序 Celeste.exe 所在的文件夹
 6. 和 Celeste.exe 同层的位置会出现一个 Playbacks 文件夹, 在这个文件夹中可以找到录制完成的文件(格式为 `*.bin`)
 7. 将 bin 文件放到 `Mods/你的 Mod/Tutorials` 文件夹中并进行改名, 如 `xxx_wavedash.bin`
-8. 在游戏中放置题述实体, 并在 Tutorial 一栏填入你的文件名, 不带尾缀, 如 xxx_wavedash
+8. 在游戏中放置 `Ghost Player Playback` 实体, 并在 Tutorial 一栏填入你的文件名, 不带尾缀, 如 xxx_wavedash
 9. 保存, 进入游戏即可
 
 <div class="admonition note">
@@ -38,7 +36,7 @@
 7. 找到 `Content/Tutorials/CustomPlaybacks` 文件夹
 8. 找到 `latestCustomRecording.bin` 文件
 9. 将该文件改名并放到 `Mods/你的地图文件夹/Tutorials` 文件夹中, 如 `xxx_wavedash.bin`
-10. 在游戏中放置题述实体, 并在 Tutorial 一栏填入你的文件名, 不带尾缀, 如 xxx_wavedash
+10. 在游戏中放置 `Ghost Player Playback` 实体, 并在 Tutorial 一栏填入你的文件名, 不带尾缀, 如 xxx_wavedash
 11. 保存, 进入游戏即可
 
 <div class="admonition note">
