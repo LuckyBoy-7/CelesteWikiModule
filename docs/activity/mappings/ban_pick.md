@@ -37,9 +37,9 @@ Ban & Pick 部分, 分为 AB 两组, 根据抽签决定 AB 组划分, 然后:
 3. A 组再 ban 一个 helper
 > ban 指的是双方都不允许使用该helper
 4. B 组 force pick 一个 helper
-5. A组 force pick 一个 helper
+5. A 组 force pick 一个 helper
 > force pick 是指被选中的 helper 内容必须在 AB 两组的 gp 中均占重要地位
-6. 最后, 两边同时 pick 一个helper
+6. 最后, 两边同时 pick 一个 helper
 > pick 的 helper 内容必须在一方的 gp 中占据重要地位
 
 <div class="admonition note">

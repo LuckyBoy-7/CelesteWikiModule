@@ -9,16 +9,16 @@
 
 
 <div class="banner">
-    <img src="../../assets/activity/mappings/candy/bluet1.png">
-    <img src="../../assets/activity/mappings/candy/bluet2.png">
-    <img src="../../assets/activity/mappings/candy/dizer1.png">
-    <img src="../../assets/activity/mappings/candy/kexinluo1.jpg">
-    <img src="../../assets/activity/mappings/candy/kexinluo2.jpg">
-    <img src="../../assets/activity/mappings/candy/sdaft1.png">
-    <img src="../../assets/activity/mappings/candy/syn1.jpg">
-    <img src="../../assets/activity/mappings/candy/syn2.jpg">
-    <img src="../../assets/activity/mappings/candy/syn3.jpg">
-    <img src="../../assets/activity/mappings/candy/taosu.jpg">
+    <img src="../../../assets/activity/mappings/candy/bluet1.png">
+    <img src="../../../assets/activity/mappings/candy/bluet2.png">
+    <img src="../../../assets/activity/mappings/candy/dizer1.png">
+    <img src="../../../assets/activity/mappings/candy/kexinluo1.jpg">
+    <img src="../../../assets/activity/mappings/candy/kexinluo2.jpg">
+    <img src="../../../assets/activity/mappings/candy/sdaft1.png">
+    <img src="../../../assets/activity/mappings/candy/syn1.jpg">
+    <img src="../../../assets/activity/mappings/candy/syn2.jpg">
+    <img src="../../../assets/activity/mappings/candy/syn3.jpg">
+    <img src="../../../assets/activity/mappings/candy/taosu.jpg">
 </div>
 
 > Host有话说: 
