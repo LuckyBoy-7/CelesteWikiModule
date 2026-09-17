@@ -18,6 +18,13 @@
 * [by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_5)
 * [元数据 (摘自 b 站 Wiki)](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE#.meta.yaml_%E6%96%87%E4%BB%B6)
 * [[Celeste蔚蓝] 作图教程第四章 - 背景, 元数据, 文本教程](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=149)
+* [额外元数据 by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Map-Metadata)
+
+包含
+
+* [自定义明星片](https://github.com/EverestAPI/Resources/wiki/Map-Metadata#postcards)
+* [自定义开场动画](https://github.com/EverestAPI/Resources/wiki/Map-Metadata#loading-vignette): 像定义结束插图动画一样
+* [自定义主世界配置(山体, icon 等)](https://github.com/EverestAPI/Resources/wiki/Overworld-Customisation)
 
 
 ### [官图元数据](https://github.com/EverestAPI/Resources/wiki/Vanilla-Metadata)

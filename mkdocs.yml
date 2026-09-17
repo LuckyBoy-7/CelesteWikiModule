@@ -86,7 +86,8 @@ nav:
           - ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng"
           - ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang"
       - 制图活动:
-          - 糖游: "activity/candy.md"
+          - Ban & Pick 竞赛: "activity/mappings/ban_pick.md"
+          - 糖游: "activity/mappings/candy.md"
           - 制图接力:
               - 第八届蔚蓝制图合作【余烬山脊】: "activity/mappings/relay/8.md"
           - 国外制图活动: "https://discord.com/channels/403698615446536203/1302747608359501895"
