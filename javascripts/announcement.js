@@ -33,7 +33,7 @@ const announcements = [
     },
     {
         text: "🍬糖糖的游🍬",
-        url: "/celeste_wiki/activity/candy/",
+        url: "/celeste_wiki/activity/mappings/candy/",
     },
     {
         text: "看看外国友人在聊些什么👀",
@@ -79,6 +79,10 @@ const announcements = [
         text: "在? 来点建议?",
         url: "https://wj.qq.com/s2/27815131/jx6r/",
         target: "_blank"
+    },
+    {
+        text: "🟥 BP Contest 🟩",
+        url: "/celeste_wiki/activity/mappings/ban_pick/",
     }
 ];
 
