@@ -85,9 +85,9 @@ maddiehelpinghand_chapternumber_UnderDragon_MapDemos_FirstDemo= 章节零一
 
 ```plaintext
 # 这是A面“开始”: 
-UnderDragon_MapDemos_FirstDemo_A_start= A面走起！
+UnderDragon_MapDemos_FirstDemo_A_start= A 面走起！
 # 这是B面“开始”: 
-UnderDragon_MapDemos_FirstDemo_B_start= B面坐牢！
+UnderDragon_MapDemos_FirstDemo_B_start= B 面坐牢！
 ```
 
 ### ABC 面的“攀登”字样
@@ -100,8 +100,8 @@ UnderDragon_MapDemos_FirstDemo_B_start= B面坐牢！
 
 ```plaintext
 chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo=点击开始爬
-chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo_B=还有B面? 
-chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo_C=甚至还有C面? 
+chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo_B=还有 B 面? 
+chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo_C=甚至还有 C 面? 
 ```
 
 ### 吃心结束语
@@ -114,14 +114,14 @@ poem_UnderDragon_MapDemos_FirstDemo_A= A面拿心！
 
 ### 进图明信片
 
-A面: `章节名 ID` 接 `_postcard`
+A 面: `章节名 ID` 接 `_postcard`
 
-非A面: `章节名 ID` 接 `_b(或者_c等)` 接 `_postcard`
+非 A 面: `章节名 ID` 接 `_b (或者 _c 等)` 接 `_postcard`
 
 ```plaintext
-UnderDragon_MapDemos_FirstDemo_postcard= A面注意事项
-UnderDragon_MapDemos_FirstDemo_b_postcard= B面注意事项
-UnderDragon_MapDemos_FirstDemo_c_postcard= C面注意事项
+UnderDragon_MapDemos_FirstDemo_postcard= A 面注意事项
+UnderDragon_MapDemos_FirstDemo_b_postcard= B 面注意事项
+UnderDragon_MapDemos_FirstDemo_c_postcard= C 面注意事项
 ```
 
 ### 混音作者
