@@ -28,15 +28,15 @@ const announcements = [
         target: "_blank"
     },
     {
-        text: "第一届蔚蓝制图小测😱",
+        text: "第一届蔚蓝制图小测 😱",
         url: "/celeste_wiki/mappings/quiz/",
     },
     {
-        text: "🍬糖糖的游🍬",
+        text: "🍬 糖糖的游 🍬",
         url: "/celeste_wiki/activity/mappings/candy/",
     },
     {
-        text: "看看外国友人在聊些什么👀",
+        text: "看看外国友人在聊些什么 👀",
         url: "https://discord.gg/6qjaePQ",
         target: "_blank"
     },
@@ -45,14 +45,14 @@ const announcements = [
         url: "/celeste_wiki/mappings/mod_test/",
     },
     {
-        text: "你再学不会问问题我可要攻击你了😡",
+        text: "你再学不会问问题我可要攻击你了 😡",
         url: "/celeste_wiki/mods/question_and_self_study/",
     },
     {
-        text: "你应该知道我旁边这个东西可以用来全局搜索吧😱",
+        text: "你应该知道我旁边这个东西可以用来全局搜索吧 😱",
     },
     {
-        text: "制图不难的, 求你了, 来玩下吧😭",
+        text: "制图不难的, 求你了, 来玩下吧 😭",
         url: "/celeste_wiki/mappings/overall/",
     },
     {
@@ -68,11 +68,11 @@ const announcements = [
         url: "/celeste_wiki/general/tas/",
     },
     {
-        text: "我游戏崩了怎么办啊大佬😭",
+        text: "我游戏崩了怎么办啊大佬 😭",
         url: "/celeste_wiki/mods/game_crashes/",
     },
     {
-        text: "5/6/7/8/9 jump 都是啥啊, 吓哭了😱",
+        text: "5/6/7/8/9 jump 都是啥啊, 吓哭了 😱",
         url: "/celeste_wiki/general/common/mechanics/",
     },
     {

@@ -373,23 +373,12 @@ c=你干嘛
 
 在 `.bin` 文件 前加 `数字-` 即可, 如 `0-FirstMap.bin`, ``1-SecondMap.bin``
 
-### 如何设置存档点(章节)的插图
-
-[电箱教程](https://www.bilibili.com/video/BV1A14y1W7hr)或者冬菜教程 ([存档点图片生成器](http://postcard.leo60228.space/mask/))
-
-
-比如你的地图路径是 <code>Mods/CelesteWikiTutorial/Maps/<font color="green">TestMap/awa</font>.bin</code>, 那你就在 <code>Mods/CelesteWikiTutorial/Graphics/Atlases/<font color="red">Checkpoints</font>/<font color="green">TestMap/awa</font>/A/</code> 里放存档点图片即可(字母 `A` 表示 `A` 面)
-
-初始存档点(也就是一开始默认进入的房间)对应的图片命名为 `start`, 其他图片改成章节存档点房间的名称即可
-
 ### 为什么我照着教程做没效果啊
 
 > 重启解决 99% 的问题
 
 新放置的文件可能无法被及时加载, 所以请 Ctrl + F5 重启让文件被正确加载, 
 不过一般如果已经有对应文件但只是做了修改或者替换一般还是能被正确热重载的
-
-
 
 
 ## 常用工具

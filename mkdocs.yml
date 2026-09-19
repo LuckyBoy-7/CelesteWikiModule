@@ -96,21 +96,22 @@ nav:
       - 官图速览: "https://berrycamp.github.io/"
       - 常规:
           - 原版常见问题: "general/common/vanilla_issues.md"
-          - 基本术语补充: "general/common/basic_terms.md"
           - 游戏机制和技巧: "general/common/mechanics.md"
           - 彩蛋: "general/common/easter_eggs.md"
           - 技巧和攻略向教程: "general/common/tutorials.md"
       - 查阅: "general/lookup.md"
       - 速通: "general/speedrun.md"
-      - 炼金: "general/deathless.md"
+      - 炼金&nbsp;<img src="/celeste_wiki/assets/mappings/quiz/1/goldenberry.gif"/>: "general/deathless.md"
       - TAS: "general/tas.md"
   - Mods:
       - Mod 入门: "mods/start.md"
+      - 蔚蓝相关术语: "mods/term.md"
       - 提问/自学 💪: "mods/question_and_self_study.md"
       - 游戏崩溃问题 😭: "mods/game_crashes.md"
       - 联机 Mod:
           - 蔚蓝联机群服小白入门指南: "https://bbs.celemiao.com/d/357-wei-lan-lian-ji-qun-fu-miaonet-xiao-bai-shi-yong-zhi-nan"
           - 蔚蓝联机群服上手指南: "https://bbs.celemiao.com/d/531-wei-lan-miaonet-qun-fu-lian-ji-shang-shou-zhi-nan-052-alpha"
+      - 推荐地图: "https://docs.qq.com/smartsheet/DTktZWHpRd29wU0N1?tab=BB08J2&viewId=vUQPXH"
       - 推荐 Mod: "mods/common/recommended_mods.md"
   - 制图:
       - 教程 👈😋: "mappings/overall.md"
@@ -129,7 +130,7 @@ nav:
           - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
           - 实用插件: "mappings/loenn/plugins.md"
       - 基础: 
-          - Mod 结构: "mappings/mod_structure.md"
+          - Mod 结构 🧩: "mappings/mod_structure.md"
           - 残影: "mappings/ghost_player_playback.md"
           - XML:
               - 大纲: "mappings/xml/xml.md"

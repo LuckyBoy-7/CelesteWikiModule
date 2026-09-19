@@ -56,3 +56,9 @@ li.md-nav__item.md-nav__item--section.md-nav__item--nested > label.md-nav__link 
     object-fit: cover;
 }
 
+
+/* 侧边栏炼金部分 */
+.md-ellipsis:has(img[src*="goldenberry.gif"]) {
+    display: inline-flex;
+    align-items: center;   /* 让文字和图片垂直居中 */
+}
