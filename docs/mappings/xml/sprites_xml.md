@@ -59,7 +59,7 @@
 
 #### 玩家刚进绿泡泡时的状态(`inside`)
 
-> 在写这个引导之前我从来没有注意过绿泡泡里面有个Madline😱
+> 在写这个引导之前我从来没有注意过绿泡泡里面有个Madeline😱
 
 ![booster_inside](../../assets/mappings/xml/sprites_xml/booster/booster_inside_gif.gif){style="width: 150px; image-rendering: pixelated; title=123"}
 
