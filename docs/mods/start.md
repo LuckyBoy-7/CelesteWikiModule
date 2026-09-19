@@ -77,6 +77,8 @@ Mod 的更新目前有三种方式
 2. 游戏内更新(由于 Everest 提供的游戏内更新方式是连上香蕉网的, 所以国内玩家想要更改这种行为连上 WEGFan 的镜像的话需要安装 [ChinaMirror](https://celeste.weg.fan/submissions/detail/2464697282266787/celeste-mod-china-mirror) 这个 Mod) 
 3. 自己通过任意方式找到最新的 Mod 资源, 并在 `Celeste/Mods/` 文件夹里将老版 Mod 替换即可
 
+<a id="debug"></a>
+
 ## 调试模式
 
 * [调试模式 by b 站 wiki](https://wiki.biligame.com/celeste/%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F)

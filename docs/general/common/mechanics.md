@@ -4,6 +4,8 @@
 >
 > 又由于我毕竟不是搞科研的, 所以有些可能无法提供详细的数据(而且有些细节真的是说都说不完, 而且也没必要)
 
+其他资料
+
 * [b站 wiki 高级技巧说明](https://wiki.biligame.com/celeste/%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7)
 * [全国首发!(?) 带你详解蔚蓝逆天技巧大串烧 Alaska 你会的你不会的都在这里!](https://www.bilibili.com/video/BV1oV411L7Kp)
 * [奇怪的望远镜小寄巧(和原理解释)](https://www.bilibili.com/video/BV1vZ421N7Ps)
