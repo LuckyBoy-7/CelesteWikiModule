@@ -5568,7 +5568,10 @@
 <p>本篇会讲解一个 Mod 的结构大概是怎么样的, Everest 是如何加载我们的 Mod 的</p>
 <p>如果你很急, 那么你在 Loenn 里作好图之后可以直接把保存后的 <code>.bin</code> 文件丢在蔚蓝根目录的 Mods 文件夹下, 此时打开游戏理论上你就能看到你作的图了,
 但是这样你的 Mod 会被视作 <code>Uncategorized 未分类的</code>, 因为 Everest 只知道这有一张图, 但是其他啥也不知道, 所以你才需要学习 Mod 结构告诉 Everest 你的 Mod 长啥样</p>
-<p>一个比较标准的 Mod 大概长下面这个样子(用 <code>{}</code> 包裹的部分都是占位符, 你想取什么名字都可以)</p>
+<p>一个比较标准的 Mod 大概长下面这个样子</p>
+<blockquote>
+<p>用 <code>{}</code> 包裹的部分都是占位符, 你想取什么名字都可以, 至于其他的文件夹, 请保持名字大小写和示例的一致</p>
+</blockquote>
 <ul>
 <li>📁 Celeste<ul>
 <li>📁 Mods<ul>
@@ -6022,6 +6025,9 @@
 <p><a id="pack"></a></p>
 <h3 id="mod">Mod 打包问题</h3>
 <p>当你发布你的 Mod 的时候你要把你 Mods 里 <code>Maps</code> 同级的所有文件打包到一个 <code>.zip</code> 文件里, 而不是把你的整个 Mod 打包成 <code>.zip</code></p>
+<blockquote>
+<p>同时也不要打包成 <code>.rar</code> 之类的格式, Everest 只认 <code>.zip</code> 格式或是普通文件夹</p>
+</blockquote>
 <p>例如这样是对的</p>
 <ul>
 <li>📁你的 Mod.zip<ul>
