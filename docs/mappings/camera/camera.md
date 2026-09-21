@@ -1,3 +1,6 @@
+## 教程
+
+* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单](https://www.bilibili.com/video/BV1mmha6EErZ/)
 * [冰激凌的镜头教程](https://wiki.biligame.com/celeste/%E9%95%9C%E5%A4%B4)
 * [bits-像素的镜头教程](../../assets/mappings/camera/镜头教程-bits.docx)
 * [星夜祈梦的镜头教程(视频)](https://www.bilibili.com/video/av113689092953564)
