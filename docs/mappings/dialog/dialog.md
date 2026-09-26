@@ -1,17 +1,18 @@
-## 引用
+引用/参考/其他资料
 
 * [Dialog 教程 by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_7)
 * [Dialog 教程 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e6380419593c9bedbe01795&pm=s)
 * [B站 Wiki 的 Dialog 教程](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B)
 * [Everest Wiki 的 Dialog 教程](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue)
 * [[Celeste蔚蓝]作图教程第四章-背景, 元数据, 文本教程](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=158)
+* [【Celeste/蔚蓝】自定义文本教程](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=158)
 
 ## 什么是 Dialog
 
 顾名思义就是游戏中一切跟文本有关的东西, [主要包括](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
 * 对话(人物对话文本)
-* UI(例如开始界面的文本, Mod选项界面的文本, 暂停界面的文本, 选关界面的文本, 明信片等)
+* UI(例如开始界面的文本, Mod 选项界面的文本, 暂停界面的文本, 选关界面的文本, 明信片等)
 
 这么多文字必定要存放在某个地方, 不同的语言也要做不同的区分, 那么官方的做法是什么呢
 
