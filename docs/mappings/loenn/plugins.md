@@ -60,7 +60,7 @@
 * Add Tags: 给你的背景打上 Tag, 一般用于 Mask
 * Replace Existing Stylegrounds: 清除掉原来的背景
 
-## Change Attributes
+## [Change Attributes](https://gamebanana.com/tools/8050)
 
 我们常常使用这个插件来一键替换实体, 比如你摆好了刺, 但是想用自定义的刺的时候就可以用这个插件换
 

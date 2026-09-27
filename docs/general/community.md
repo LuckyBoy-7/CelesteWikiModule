@@ -21,8 +21,9 @@
 * [群服聊天群: 565265554](https://qm.qq.com/q/BVwSMQ3gJO)
 * 群服聊天群二群: 1036842305
 * [群服+ 聊天群: 1053172171](https://qm.qq.com/q/4B3YqrNkqs)
-* 团建通知群: 1031616883
 * [MiaoNet 论坛](https://bbs.celemiao.com/)
+* 团建通知群: 1031616883
+* [蔚蓝活动群: 869049716](https://qm.qq.com/q/cmsLt1YEhi)
 
 ### 制图相关(Modding)
 

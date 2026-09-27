@@ -9,16 +9,16 @@
 
 
 <div class="banner">
-    <img src="../../../assets/activity/mappings/candy/bluet1.png">
-    <img src="../../../assets/activity/mappings/candy/bluet2.png">
-    <img src="../../../assets/activity/mappings/candy/dizer1.png">
-    <img src="../../../assets/activity/mappings/candy/kexinluo1.jpg">
-    <img src="../../../assets/activity/mappings/candy/kexinluo2.jpg">
-    <img src="../../../assets/activity/mappings/candy/sdaft1.png">
-    <img src="../../../assets/activity/mappings/candy/syn1.jpg">
-    <img src="../../../assets/activity/mappings/candy/syn2.jpg">
-    <img src="../../../assets/activity/mappings/candy/syn3.jpg">
-    <img src="../../../assets/activity/mappings/candy/taosu.jpg">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/bluet1.png">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/bluet2.png">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/dizer1.png">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/kexinluo1.jpg">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/kexinluo2.jpg">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/sdaft1.png">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/syn1.jpg">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/syn2.jpg">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/syn3.jpg">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/taosu.jpg">
 </div>
 
 > Host有话说: 

@@ -25,7 +25,7 @@ bp 之后各组需要共同制作一张 `≥ 2*人数` 面的地图, 然后由�
 
 获得优胜的小组全员可以获得自定义群头衔的奖励, 希望大家积极参与, 良性竞争 OwO
 
-![qq](../../assets/activity/mappings/ban_pick/00.jpg)
+![qq](../../../assets/activity/mappings/contest/ban_pick/00.jpg)
 
 
 具体规则: 

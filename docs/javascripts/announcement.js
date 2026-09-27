@@ -33,7 +33,7 @@ const announcements = [
     },
     {
         text: "🍬 糖糖的游 🍬",
-        url: "/celeste_wiki/activity/mappings/candy/",
+        url: "/celeste_wiki/activity/mappings/collab/candy/",
     },
     {
         text: "看看外国友人在聊些什么 👀",
@@ -82,7 +82,15 @@ const announcements = [
     },
     {
         text: "🟥 BP Contest 🟩",
-        url: "/celeste_wiki/activity/mappings/ban_pick/",
+        url: "/celeste_wiki/activity/mappings/contest/ban_pick/",
+    },
+    {
+        text: "制图接力汇总",
+        url: "/celeste_wiki/activity/mappings/relay/relay/",
+    },
+    {
+        text: "2026 国庆活动",
+        url: "/celeste_wiki/activity/general/national_day2026/",
     }
 ];
 
