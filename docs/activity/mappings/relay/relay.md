@@ -202,15 +202,12 @@
 ### 参赛人员
 
 * shadowRo
-* Main Improvements
 * AfterDawn_Cxwg
 * NaCline
-* CN Celeste Modding Team Flag
 * DAWEWE
 * Runmo
 * I2170l
 * Kurose_Karasu
-* oh he made 2 rooms!
 * ShiroN_L
 * azure__bluet
 * RikiUwU
