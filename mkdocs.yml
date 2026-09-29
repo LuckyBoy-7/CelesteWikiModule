@@ -130,32 +130,23 @@ nav:
           - 基本概念及使用: "mappings/loenn/basic.md"
           - 初见问题: "mappings/loenn/loenn_first_encountered_issues.md"
           - 常见问题: "mappings/loenn/faq.md"
-          - 房间 (Room): "mappings/loenn/room.md"
-          - 元数据 (Map -> Metadata): "mappings/loenn/metadata.md"
-          - 背景 (Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
           - 实用插件: "mappings/loenn/plugins.md"
       - 基础: 
           - Mod 结构 🧩: "mappings/mod_structure.md"
-          - 残影: "mappings/ghost_player_playback.md"
-          - XML:
-              - 大纲: "mappings/xml/xml.md"
-              - XML 基础: "mappings/xml/basics.md"
-              - 砖 XML: "mappings/xml/tilesets.md"
-              - 动画 XML: "mappings/xml/sprites_xml.md"
-              - 对话贴图 XML: "mappings/xml/portraits_xml.md"
+          - 房间: "mappings/loenn/room.md"
+          - 元数据: "mappings/loenn/metadata.md"
+          - 背景: "mappings/loenn/stylegrounds.md"
           - Dialog:
               - 大纲: "mappings/dialog/dialog.md"
               - 本地化/翻译: "mappings/dialog/localization.md"
               - 对话: "mappings/dialog/talk.md"
-          - Camera:
-              - 大纲: "mappings/camera/camera.md"
-              - 常见问题: "mappings/camera/faq.md"
           - Graphics:
               - 大纲: "mappings/graphics/graphics.md"
+              - 素材替换: "mappings/graphics/replace_assets.md"
+              - 滤镜: "mappings/graphics/color_grading.md"
               - Decals: "mappings/graphics/decals.md"
               - DecalRegistry: "mappings/graphics/decal_registry.md"
               - 实体深度表: "mappings/graphics/entity_depth.md"
-              - 素材替换: "mappings/graphics/replace_assets.md"
               - 皮肤制作:
                   - 大纲: "mappings/graphics/skin.md"
                   - Skin Mod Helper: "mappings/graphics/SMH.md"
@@ -166,7 +157,9 @@ nav:
                       - HairConfig: "mappings/graphics/SMHP_HairConfig.md"
                       - CharacterConfig: "mappings/graphics/SMHP_CharacterConfig.md"
                       - Trigger 使用部分: "mappings/graphics/SMHP_trigger.md"
-              - 滤镜: "mappings/graphics/color_grading.md"
+          - Camera:
+              - 大纲: "mappings/camera/camera.md"
+              - 常见问题: "mappings/camera/faq.md"
           - Audio:
               - 大纲: "mappings/audio/audio.md"
               - 播放问题排查: "mappings/audio/troubleshooting.md"
@@ -174,6 +167,13 @@ nav:
               - Tile Sound Id 表: "mappings/audio/tile_sounds.md"
               - 蔚蓝 Event 路径表: "https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump"
               - 常见问题: "mappings/audio/faq.md"
+          - XML:
+              - 大纲: "mappings/xml/xml.md"
+              - XML 基础: "mappings/xml/basics.md"
+              - 砖 XML: "mappings/xml/tilesets.md"
+              - 动画 XML: "mappings/xml/sprites_xml.md"
+              - 对话贴图 XML: "mappings/xml/portraits_xml.md"
+          - 残影: "mappings/ghost_player_playback.md"
           - 剧情:
               - Lua Cutscene:
                   - 大纲: "mappings/lua/lua_cutscene.md"

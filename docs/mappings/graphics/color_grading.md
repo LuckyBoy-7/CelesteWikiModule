@@ -40,6 +40,17 @@
   <figcaption>路径: Celeste\Content\Graphics\ColorGrading\templevoid.png</figcaption>
 </figure>
 
+### 位置
+
+* 📁 Mods
+    - 📁 你的 Mod
+        - 📁 Graphics
+            - 📁 ColorGrading
+                - 📁 {套文件夹}
+                    - 📄 滤镜贴图.png
+
+滤镜贴图仿照官图放置在 `Graphics/ColorGrading/` 文件夹下即可, 记得[套文件夹](../mod_structure.md#everest)
+
 ### 使用
 
 * 正常游玩/挑选滤镜: 开启[拓展异变](https://gamebanana.com/mods/53650), 游戏内 `Esc -> 拓展异变 -> 视觉 -> 色调`

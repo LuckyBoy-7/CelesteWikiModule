@@ -27,7 +27,7 @@
 
 ### 制图相关(Modding)
 
-* 蔚蓝制图群: 633125440
+* [蔚蓝制图群: 633125440](https://qm.qq.com/q/XG1hPIMKQg)
 * [蔚蓝测图群: 347556890](https://qm.qq.com/q/2E4hAceV4Q)
 * 蔚蓝美术群: 431501471
 * [蔚蓝 Coder 群: 550358997](https://qm.qq.com/q/KWhmGbPfYy)

@@ -28,7 +28,7 @@
 
 * [电箱的 1 代制图教程](https://www.bilibili.com/video/BV1tR4y1X7wu), [电箱的 2 代制图教程](https://www.bilibili.com/video/av354525627)
 * [Saplonily 的制图教程](https://saplonily.top/celeste_modding_tutorial/)
-* [冬菜的制图教程](../assets/mappings/overall/mod制作教程%5B冬菜%5D.pdf)
+* [冬菜的制图教程](../assets/mappings/overall/dong_cai.pdf)
 * [底龙的制图教程](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9)
 * [b站 Wiki 的制图教程](https://wiki.biligame.com/celeste/%E9%A6%96%E9%A1%B5)
 * [Everest Wiki的制图教程](https://github.com/EverestAPI/Resources/wiki)
@@ -50,8 +50,8 @@
 
 * [【蔚蓝】《对准导论》](https://www.bilibili.com/video/BV1UP411w7d2)
 * [[Celeste蔚蓝 | 制图 | 硬核] 制图高阶教程——复用篇 by zzm](https://www.bilibili.com/video/BV17Y411R7jA/)
-* [splee的作图指南(中翻)]()(群文件里下)
-* [可能是写给新人的GP建议 by Shynnie]()(群文件里下)
+* [splee 的作图指南 (中翻) by 春暮Q](../assets/mappings/overall/splee的作图指南（中翻）.docx)
+* [可能是写给新人的 GP 建议 by Shynnie](../assets/mappings/overall/可能是写给新人的GP建议.docx)
 * [Celeste (goopvendor's thoughts on mapping)](https://docs.google.com/document/d/182rHbY0aYmMoVH9ffMRyKwDRlBU5qG3PyJXHJfghDkA/edit?tab=t.0)
 * [Celeste Mapping: Obscure Tips & Tricks by tobyaaa](https://docs.google.com/document/d/1t2_mr7VNGJ7q4BfsvfrZ9Se5g449Ppjxlsy_rozPMRo/edit?tab=t.0)
 

@@ -1,6 +1,6 @@
 摘抄/整合自
 
-* [Lua Cutscenes 词典 by Nacline]()(制图群群文件)
+* [Lua Cutscenes 词典 by Nacline](../../assets/mappings/lua/basics/Lua%20Cutscenes词典.docx)
 * UnderDragon’s Partial Wiki
 * ...
 
@@ -13,8 +13,8 @@ cutscenes 函数语句并详细说明其用法, 方便 mapper 查阅和学习使
 
 * [Saplonily 的 LuaCutscenes 教程](https://saplonily.top/celeste_modding_tutorial/code_modding/extra/lua_cutscene/begin/)
 * [Lua Cutscenes 文档](https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html)
-* Lua 剧情简易教程(by motonine)(群文件)
-* 从 0 开始的 lua 入门教程 by Gamation(群文件)
+* [Lua 剧情简易教程 by motonine](../../assets/mappings/lua/basics/motonine.png)
+* [从 0 开始的 lua 入门教程 by Gamation](../../assets/mappings/lua/basics/gamation.pdf)
 * [w3cschool 的 lua 语言教程](https://www.w3cschool.cn/lua/)
 
 非常感谢以上教程对本词典的帮助, 也推荐大家从中学习

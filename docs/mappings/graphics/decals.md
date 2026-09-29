@@ -1,14 +1,14 @@
 参考/引用
 
-* [Decal](https://wiki.biligame.com/celeste/Decal)
-* [废话 deco 教程]()(群文件里下)
-* [jpyx258 的 deco 轮椅]()(群文件里下)
+* [Decal by b wiki](https://wiki.biligame.com/celeste/Decal)
 * [静态/动态 Decal 使用 by 底龙](https://uddrg.notion.site/Decal-2787f4f27e638051a265e8b708adbe03)
 
 心得
 
 > KaileyTheAlien: I remember when I found that room in Paint on my first playthrough and just stood there crying for like 10-15 minutes
 
+* [废话 deco 教程 by Myn](../../assets/mappings/graphics/decals/deco_tutorial1.txt)
+* [jpyx258 的 deco 轮椅](../../assets/mappings/graphics/decals/deco_tutorial2.docx)
 * [春暮Q 中翻 - Donker's Deco Guide](../../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx), [原文](https://docs.google.com/document/d/1ebzZTL7eX21M0FJR2IAUPCCGxnDUscZdRW8GiGl8Yus/edit?tab=t.0)
 * [Creating Atmosphere in Celeste Mods by ricky06](https://www.youtube.com/watch?v=n5iHuXW8TyY)
 

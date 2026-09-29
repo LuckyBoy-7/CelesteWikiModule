@@ -5,7 +5,7 @@
 
 ## 资源
 
-建议群文件里翻翻
+> 如果有没提及的建议群文件里翻翻
 
 * [官图素材资源](https://drive.google.com/open?id=1ITwCI2uJ7YflAG0OwBR4uOUEJBjwTCet)(制图群群文件里也有, 叫 `[图像类] Celeste Graphics Dump v1400`)
 * [Gamebanana 香蕉网](https://gamebanana.com/mods/cats/6800)(国外蔚蓝 Mod 托管平台)
@@ -47,8 +47,8 @@
 
 ## 工具
 
-* [ZipsVerifier]()(群文件): 检查 `.zip` 文件是否损坏(放到 Mods 文件夹下使用)
-* [BinaryXML.v2]()(群文件): 将地图 `.bin` 文件转化为 `.xml` 格式, 将 `.bin` 文件拖入 `.exe` 即可(你可能会在各种属性前看到各种奇奇怪怪的数字, 那是为了标注属性类型用的,
+* [ZipsVerifier](../assets/mappings/useful_links/ZipsVerifier%20v1.1.1.exe): 检查 `.zip` 文件是否损坏(放到 Mods 文件夹下使用)
+* [BinaryXML.v2](../assets/mappings/useful_links/BinaryXML_v2.zip): 将地图 `.bin` 文件转化为 `.xml` 格式, 将 `.bin` 文件拖入 `.exe` 即可(你可能会在各种属性前看到各种奇奇怪怪的数字, 那是为了标注属性类型用的,
   你可以忽略不看)
 * [Celeste Map Tree Viewer](https://maddie480.ovh/celeste/map-tree-viewer): 将 map 的 `.bin` 转化为人类更易读的 `.json`
 * [Celeste Custom Map Idea Generator](https://perchance.org/9g0j9vtp81): 制图灵感生成器, 随机选取实体/房间大小/房间形状/危险物/难度, 限定自己作图的范围, 以挖掘更多可能

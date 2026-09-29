@@ -1,8 +1,8 @@
-参考
+参考/整合/摘抄
 
 * [Saplonily 的 LuaCutscenes 教程](https://sapcelestemod.netlify.app/extra_luacs/begin/)
-* [Lua Cutscenes 词典 by Nacline]()(制图群群文件)
-* motonine 的 LuaCutscene 教程 (群文件里)
+* [Lua Cutscenes 词典 by Nacline](../../assets/mappings/lua/basics/Lua%20Cutscenes词典.docx)
+* [motonine 的 LuaCutscene 教程](../../assets/mappings/lua/basics/motonine.png)
 * [Lua Cutscenes 文档](https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html)
 * [Lua Cutscenes 函数源码](https://github.com/Cruor/LuaCutscenes/blob/master/LuaCutscenes/Assets/LuaCutscenes/helper_functions.lua)
 * [Prismatic Helper 文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes)

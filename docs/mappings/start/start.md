@@ -1,9 +1,14 @@
 > sam 在捣鼓 Dialog 百思不得其解拼尽全力无法战胜后表示: 我以后一定要做一个更加详细易懂的教程
 >
-> 我听到这句话后感觉天都塌了, 我们的教程不能被 sam 所理解, 那一定是写的还不够清晰易懂, 感谢 sam 旁敲侧击, 我马上就改😭
+> 我听到这句话后感觉天都塌了, 我们的教程不能被 sam 所理解, 那一定是写的还不够清晰易懂, 感谢 sam 旁敲侧击, 我马上就改😭 
+
+---
+
+> [制图群QQ: 633125440](https://qm.qq.com/q/XG1hPIMKQg)
 
 !!! note
     本文使用的环境为 Windows 11, Celeste 为 Steam 版本
+
 
 请先阅读[引言](./introduction.md), 不管你是做着玩的还是想做出东西的, 制图都值得你认真对待,
 在那之后制图一定会成为你[独特的回忆](is_that_a_dream.md)
@@ -68,7 +73,9 @@
 
 简单来说这俩就是 Mod 管理器, 方便我们下载和更新 Everest, 启用和禁用 Mod, 下载安装 Mod, 设置 Mod 预设等等, 这里推荐小白用 `Celemod`
 
-### 下载 [Loenn](https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/)(或者群文件里下)
+### 下载 [Loenn](https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/)
+
+> 或者群文件里下
 
 Loenn 被称作制图器, 它的前辈是 `Ahorn`, 它为作图提供了图形化界面, 让我们制作 `Map` 这个游戏内容方便不少, 要知道, 前文提及的 `Code, Graphics, Audio, Dialog, Lua Cutscenes` 都是为了 `Map`
 服务的, 所以 Loenn 可以说是制图的核心,
@@ -136,12 +143,13 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 #### 为游戏添加更多自定义实体丰富内容
 
-你可以通过如下渠道下载别的Helper来拓展更多的功能(可能是扩展Loenn的, 也可能是扩展游戏的), 或者一些素材包(本质上也是Mod), 一般下个草莓酱大部分Helper就不缺了😋
+你可以通过如下渠道下载别的 Helper 来拓展更多的功能(可能是扩展 Loenn 的, 也可能是扩展游戏的), 
+或者一些素材包(本质上也是 Mod), 一般玩过草莓酱大部分 Helper 就不缺了😋
 
-* 使用`Olympus`或者`Celemod`
-* [香蕉网](https://gamebanana.com/mods/games/6460), 登不上可以挂梯子或者尝试[替换Google CDN](https://www.bilibili.com/opus/959792914272092167)来连接,
+* 使用 `Olympus` 或者 `Celemod`
+* [香蕉网](https://gamebanana.com/mods/games/6460), 登不上可以挂梯子或者尝试[替换 Google CDN](https://www.bilibili.com/opus/959792914272092167)来连接,
   或者直接使用[WEG的镜像网站](https://celeste.weg.fan/)
-* 制图群群文件(制图群QQ: [633125440](https://qm.qq.com/q/XG1hPIMKQg))
+* 制图群群文件
 
 常见问题([解决方案](../loenn/faq.md)):
 

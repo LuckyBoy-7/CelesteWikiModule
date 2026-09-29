@@ -4,7 +4,7 @@
 
 * [【Celeste引导】香蕉网投稿 & Celeste国区工作室引导](https://www.bilibili.com/video/BV1NFpoeSEKt)
 * [电箱教程](https://www.bilibili.com/video/BV1sK411o79u)
-* [香蕉网传图教程[rifs]]()(群文件里下)
+* [香蕉网传图教程[rifs]](../assets/mappings/publish_mod/rifs.docx)
 * [Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Uploading-Mods)
 
 ## 登陆[香蕉网](https://gamebanana.com/games/6460)
