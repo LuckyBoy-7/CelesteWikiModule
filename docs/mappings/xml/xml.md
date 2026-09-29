@@ -28,7 +28,7 @@
 
 官图结束背景对应的配置, 这一部分被 `meta.yaml` 配置收容, 所以你随便看看就好
 
-## [.meta.yaml](../loenn/metadata.md)
+## [.meta.yaml](../metadata/loenn_metadata.md)
 
 详情见[Everest](https://github.com/EverestAPI/Resources/wiki/Map-Metadata#setting-up-a-metayaml-file)
 

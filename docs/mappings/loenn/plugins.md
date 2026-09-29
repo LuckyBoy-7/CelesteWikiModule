@@ -17,7 +17,6 @@
 
 可以在 Loenn 里显示游戏内人物运动的实时轨迹
 
-
 在 Loenn 上方导航栏点击打开 `View -> Show Player Sihouette [Aurora's Loenn Plugin]`, 在游戏内随便走走,
 返回 Loenn 即可, 如果需要清空尾迹, 则点击 `View -> Clear Player Sihouette [Aurora's Loenn Plugin]`, 或者使用 `Shift + C` 快捷键
 

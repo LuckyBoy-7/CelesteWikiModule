@@ -132,7 +132,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 #### [设置选关界面图标](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE#overworld)
 
-#### 修改地图的[元数据Metadata](../loenn/metadata.md)
+#### 修改地图的[元数据 Metadata](../metadata/loenn_metadata.md)
 
 - 游戏外: 修改章节等各种图标
 - 游戏内: bgm, 核心模式, 擦除方式, 入场方式, 滤镜, 泛光, 冲刺模式, 添加自定义xml, 吃心结算, 结算背景图等
@@ -169,7 +169,7 @@ Loenn 初次打开就报错的[解决方案](../loenn/loenn_first_encountered_is
 
 详情见[房间属性](https://wiki.biligame.com/celeste/%E6%88%BF%E9%97%B4%E5%B1%9E%E6%80%A7)
 
-详情见 [Metadata](../loenn/metadata.md)
+详情见 [Metadata](../metadata/loenn_metadata.md)
 
 ### 怎么改对话, 地图名字等
 

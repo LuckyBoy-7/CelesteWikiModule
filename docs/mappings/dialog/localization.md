@@ -112,6 +112,8 @@ chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo_C=甚至还有 C 面?
 poem_UnderDragon_MapDemos_FirstDemo_A= A面拿心！
 ```
 
+<a id="postcard"></a>
+
 ### 进图明信片
 
 A 面: `章节名 ID` 接 `_postcard`

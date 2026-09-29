@@ -164,3 +164,41 @@ function onBegin()
     enableMovement()
 end
 ```
+
+<a id="sixteenth_note"></a>
+
+## sixteenth_note
+
+蔚蓝实现磁带面音乐的方式是不断递增 `sixteenth_note` 参数, 然后在不同的数值位置播放对应的短音效
+
+![sixteenth_note](../../assets/mappings/audio/params/sixteenth_note.png)
+
+例如
+
+<audio controls>
+    <source src="/celeste_wiki/assets/mappings/audio/params/sixteenth_note.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+```lua
+local Audio = require("#Celeste.Audio")
+
+function onBegin()
+    disableMovement()
+    playMusic("event:/music/cassette/01_forsaken_city")
+
+    wait(3)
+    -- 逐一播放每一拍
+    for i = 0, 256 do
+        setSixteenthNote(i)
+        wait(0.2)
+    end
+
+    enableMovement()
+end
+
+
+function setSixteenthNote(note)
+    Audio.SetMusicParam("sixteenth_note", note)
+end
+```

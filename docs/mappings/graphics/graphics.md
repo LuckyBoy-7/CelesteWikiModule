@@ -2,7 +2,7 @@
 
 * 官图素材资源: 请在制图群 (QQ: 633125440)群文件里下载, 叫做 `[图像类] Celeste Graphics Dump v1400`
 * [UnderDragon’s Repository 2.5](https://gamebanana.com/mods/427729): 素材包
-* [Spooooky's Asset Pack](https://gamebanana.com/mods/427729): 素材包
+* [Spooooky's Asset Pack](https://gamebanana.com/mods/474010): 素材包 ([路径粘贴](https://spo0o0ky.github.io/SpooookyAssetPackBrowser/))
 * [Asset Drive Browser](https://maddie480.ovh/celeste/asset-drive): 更方便的浏览社区资源盘
 
 ## 游戏开始前

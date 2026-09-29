@@ -568,6 +568,8 @@ Tileset, 即 Tile-set, **瓦片-集**
 
 ![custom_tileset_showcase](../../assets/mappings/xml/tileset/custom_tileset_showcase.png)
 
+<a id="animated"></a>
+
 ## 自定义 `AnimatedTiles.xml`
 
 为了完整性这里再提一嘴 `AnimatedTiles.xml`

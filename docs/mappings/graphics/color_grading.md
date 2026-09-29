@@ -54,7 +54,7 @@
 ### 使用
 
 * 正常游玩/挑选滤镜: 开启[拓展异变](https://gamebanana.com/mods/53650), 游戏内 `Esc -> 拓展异变 -> 视觉 -> 色调`
-* 作图全局设置: 在 [Loenn 元数据](../loenn/metadata.md)里修改 `Colour Grade` 滤镜贴图设置即可
+* 作图全局设置: 在 [Loenn 元数据](../metadata/loenn_metadata.md)里修改 `Colour Grade` 滤镜贴图设置即可
 * 作图游戏内修改: 使用[拓展异变](https://gamebanana.com/mods/53650)提供的 `Extended Variant (Color Grading) Trigger`, 或是带渐变切换的滤镜效果 `Color Grade Fade [Maddie's Helping Hand]` 即可
 
 <div class="admonition note">
