@@ -1,6 +1,8 @@
 下面要介绍的参数本质上都是一样的, 只是官方以不同的方式使用了他们, 例如, 
 官方使用了某个参数来调整音乐音量, 起作用的是参数本身, 只不过这个参数恰好叫 fade 而已
 
+例子将以 Lua Cutscenes 作为演示, 你使用 Trigger 也能达到一样的效果
+
 
 <a id="fade"></a>
 
@@ -10,18 +12,23 @@
 
 例如
 
+<audio controls>
+    <source src="/celeste_wiki/assets/mappings/audio/params/fade.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
 ```lua
 local Audio = require("#Celeste.Audio")
 
 function onBegin()
     disableMovement()
 
-    playMusic("event:/music/lvl6/main")
-
-    wait(3)
-    setFade(0)
-    wait(5)
     setFade(1)
+    playMusic("event:/music/lvl6/main")  -- 先随便放个音乐
+    wait(5)
+    setFade(0)  -- 音乐淡出
+    wait(2)
+    setFade(1)  -- 音乐淡入
     wait(3)
 
     enableMovement()
@@ -44,11 +51,62 @@ end
 
 ## progress
 
-主要用于 8a 高潮段中的递进效果
+主要用于
+
+* 7a 每上升 500m 音乐里会多一种乐器声
+* 8a 高潮段中的递进效果
 
 > 如果你感兴趣的话可以在 `fmod` 中搜索 `progress` 参数具体被哪些 `event` 使用了
 
 例如
+
+<audio controls>
+    <source src="/celeste_wiki/assets/mappings/audio/params/progress_7.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+```lua
+local Audio = require("#Celeste.Audio")
+function onBegin()
+    disableMovement()
+    playMusic("event:/music/lvl7/main")
+
+    wait(3)
+    -- 由于不同 progress 在循环节前都差不多, 所以我们从循环节后 40s 开始播放, 单位为毫秒 ms
+    Audio.CurrentMusicEventInstance:setTimelinePosition(40 * 1000)
+    setMusicProgression(0)
+    jump()
+    wait(5)
+
+    jump()
+    setMusicProgression(1)
+    wait(5)
+
+    jump()
+    setMusicProgression(2)
+    wait(5)
+
+    jump()
+    setMusicProgression(3)
+    wait(5)
+    
+    jump()
+    setMusicProgression(4)
+    wait(5)
+    
+    jump()
+    setMusicProgression(5)
+    wait(5)
+    enableMovement()
+end
+
+
+```
+
+<audio controls>
+    <source src="/celeste_wiki/assets/mappings/audio/params/progress_8.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
 
 ```lua
 function onBegin()
@@ -79,6 +137,11 @@ end
 
 例如
 
+<audio controls>
+    <source src="/celeste_wiki/assets/mappings/audio/params/layer.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
 ```lua
 function onBegin()
     disableMovement()
@@ -89,14 +152,14 @@ function onBegin()
     setMusicLayer(1, 0)
     setMusicLayer(2, 0)
     setMusicLayer(3, 0)
-    wait(3)
+    wait(10)
     -- 设置 layer1 参数为 1
     setMusicLayer(1, 1)
-    wait(3)
+    wait(10)
     setMusicLayer(2, 1)
-    wait(3)
+    wait(10)
     setMusicLayer(3, 1)
-    wait(3)
+    wait(10)
 
     enableMovement()
 end

@@ -130,9 +130,9 @@ nav:
           - 基本概念及使用: "mappings/loenn/basic.md"
           - 初见问题: "mappings/loenn/loenn_first_encountered_issues.md"
           - 常见问题: "mappings/loenn/faq.md"
-          - 房间: "mappings/loenn/room.md"
-          - 元数据(Map -> Metadata): "mappings/loenn/metadata.md"
-          - 背景(Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
+          - 房间 (Room): "mappings/loenn/room.md"
+          - 元数据 (Map -> Metadata): "mappings/loenn/metadata.md"
+          - 背景 (Map -> Stylegrounds): "mappings/loenn/stylegrounds.md"
           - 实用插件: "mappings/loenn/plugins.md"
       - 基础: 
           - Mod 结构 🧩: "mappings/mod_structure.md"
