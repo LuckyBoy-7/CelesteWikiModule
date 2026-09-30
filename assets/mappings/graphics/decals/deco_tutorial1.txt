@@ -1,0 +1,86 @@
+	1.确定地图风格：
+		(1)先确定好做啥样的地图，最好不要一上来就什么牛鬼蛇神都放进去开趴（特别是一开始tile的选取
+
+	2.叠背景：背景就像是地图的打底裤，一个好的、顺眼、美丽、舒服、优雅的背景不仅能让你的地图穿着舒服，而且能提升mapper的生产力（制图玄学）。
+		(1)善用背景改色：让背景更好地契合你的地图；
+		(2)多调背景视差：钉死在镜头背后 或者 完全不跟着镜头动的背景 一般效果是不好的；
+		(3)叠背景别小气：背景想叠多少叠多少，单单的一个孤零零的背景会孤独地哭泣qwq；
+		(4)重视背景alpha：高级背景必备，要多调；
+		(5)多叠mist（特色白雾） 和 purplesunset（蔚蓝特色彩虹色）：必要的时候应该改这些东西的alpha和颜色（一般都是有必要的
+
+	3.调泛光、亮度：
+		(1)你非常需要得一种不调泛光和亮度就会死的病，上帝给你的bloom和light fade一定要好好临幸（或者在元数据里改）
+
+			“低 亮 度！高 泛 光！”
+								永不过时。
+						（但如果你有一个特亮的背景请就最好不要高泛光了）
+
+	4.改tile：
+		(1)tile看着不顺眼就改色，改色不顺眼就换材质，不会画画就去偷————没有偷不到的想要素材！（“偷”素材请移步蔚蓝素材包，并不是真的直接去别人的地图里偷；换tile请出门右转看群文件里的教程）；
+		(2)一个tile最好不应该从开头死用到结尾，多个合适tile合理混用是好文明（纯色图除外）；
+		(3)别只叠前景tile；
+		(4)tile放太规整不好，放太凌乱也不好，应该有一定的地形变化。
+
+	5.放decal：
+		(1)decal看着放就好；
+		(2)好好放前景decal，这就是未来神图。
+			(chatgpt教你“好好放”：考虑到游戏玩家的视角和路径，使deco元素不会阻碍游戏玩家的行动，并且能够增加游戏的美感。)
+		(3)Decal Registry————给你炫酷的decal效果:https://github.com/everestapi/resources/wiki/Decal-Registry
+
+	6.叠特效：
+		(1)特效多叠、细叠、精叠，直接放个特效就甩手润，效果可能不会很好。最好多看看多改改每个特效的各个属性。
+		(2)万能特效：dust
+					godrays
+					stars
+					dream stars
+					snow
+					Contort Helper High Resolution Particle Backdrop [ContortHelper]（懒人专用自动高级purplesunset）
+					（上面特效最好是custom的，官图特效自定义性不高）
+
+	7.上滤镜：
+		(1)上个滤镜是改变地图整体感觉的最直接方法————建议是打开拓展异变挨个换滤镜看看哪个滤镜最适合自己的地图。
+	
+
+	deco小tips：
+
+	1.摆刺：
+		(1)伟大的万能官图摆刺法：
+			第五章————朴实高效派：围着tile摆刺；
+			第六章————实用摆刺派：放刺，然后把刺围起来的洞洞全填满；
+			第七章————实用进阶派：放fg decal挡住塞满了的一坨坨刺；
+			第九章————总之好看派：长条条，挨紧紧，大洞洞，伸枝枝；
+		(2)好刺都是按着ctrl摆出来的；
+		(3)不想摆刺请用电网(需要的可以用Lightning Color [Frost Helper]给电网换色)；
+		(4)成为文明mapper你我他，请用Rainbow Spinner Color Controller [Maddie's Helping Hand] 改圆刺颜色。
+
+
+	2.用拓展异变：
+		(1)用拓展异变把你的地图调得更好看，然后在地图里放上一个个拓展异变trigger对应你更改过的视觉属性。
+
+	3.bloom color trigger：
+		(1)改泛光颜色。求求，用用，谢谢_(:3」∠)_
+
+	4.光效：
+		(1)ContortHelper的Light Source系列，生成隐形光圈，神器；不宜叠多，会卡会瞎；
+		(2)Arbitrary Bloom [Frost Helper]：定点泛光区域。
+
+
+	5.万能常用实体装饰物：
+		(1)Custom Big Waterfall [Femto Helper]：可换色，改视差以及透明度的超级瀑布；
+		(2)Water和waterfall [Pandora's Box]：可换色的水；
+		(2)wire和cobweb：线类实体，可换色，好用；
+		(3)custom Flagline [Flaglines And Such]：可换色第四章晾衣线；
+		(4)custom Flutterbird [Frost Helper]：可换色小鸟；
+		(5)Floating Debris [Maddie's Helping Hand]：可换材质的漂浮小石头；
+		(6)custom Moon Creature [Femto Helper]：什么都能改的第九章会动精子（？；
+		(7)Star Climb Graphics Controller：给你炫酷的star jump block；
+		(8)Pettable Cat [HonlyHelper]：有可爱猫猫的地图就事神图。
+
+	6.改玛德琳自身光照颜色：
+		(1)Madeline Spotlight Modifier Trigger [ContortHelper]：很酷，不多说什么😎
+
+
+
+
+
+

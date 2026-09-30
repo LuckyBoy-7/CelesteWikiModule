@@ -91,6 +91,10 @@ const announcements = [
     {
         text: "2026 国庆活动",
         url: "/celeste_wiki/activity/general/national_day2026/",
+    },
+    {
+        text: "Climb Up Contest",
+        url: "/celeste_wiki/activity/mappings/contest/climb_up/",
     }
 ];
 
