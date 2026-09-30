@@ -167,7 +167,7 @@ end
 
 <a id="sixteenth_note"></a>
 
-## sixteenth_note
+## [sixteenth_note](https://github.com/EverestAPI/Resources/wiki/Cassette-Music)
 
 蔚蓝实现磁带面音乐的方式是不断递增 `sixteenth_note` 参数, 然后在不同的数值位置播放对应的短音效
 
@@ -188,8 +188,8 @@ function onBegin()
     playMusic("event:/music/cassette/01_forsaken_city")
 
     wait(3)
-    -- 逐一播放每一拍
-    for i = 0, 256 do
+    -- 逐一播放每一拍, 从 1 开始
+    for i = 1, 256 do
         setSixteenthNote(i)
         wait(0.2)
     end

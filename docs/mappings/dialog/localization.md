@@ -45,7 +45,7 @@
 
 然后就可以开始写 dialog 了, 这里我们选择 `English.txt`(请保证游戏语言和对应文本文件对应), 然后照着占位符把 dialog id 抄上并翻译即可
 
-```plaintext title="路径: Mods/MapDemos/Dialog/English.txt"
+```ini title="路径: Mods/MapDemos/Dialog/English.txt"
 UnderDragon_MapDemos= Map Demos
 UnderDragon_MapDemos_FirstDemo= First Demo
 ```
@@ -67,7 +67,7 @@ UnderDragon_MapDemos_FirstDemo= First Demo
 
 它对应的 ID 是在 `章节名字 ID` 后面接下划线, 再接 `房间名(如果有空格转为下划线)`
 
-```plaintext
+```ini
 UnderDragon_MapDemos_FirstDemo_First_Checkpoint= Section 1
 ```
 
@@ -77,13 +77,13 @@ UnderDragon_MapDemos_FirstDemo_First_Checkpoint= Section 1
 
 `maddiehelpinghand_chapternumber_` 接 `章节 ID`
 
-```plaintext
+```ini
 maddiehelpinghand_chapternumber_UnderDragon_MapDemos_FirstDemo= 章节零一
 ```
 
 ### 章节“开始”字样
 
-```plaintext
+```ini
 # 这是A面“开始”: 
 UnderDragon_MapDemos_FirstDemo_A_start= A 面走起！
 # 这是B面“开始”: 
@@ -98,7 +98,7 @@ UnderDragon_MapDemos_FirstDemo_B_start= B 面坐牢！
 
 如果有 B 面或者 C 面, 需要在后面接一个 `_B` 或者 `_C`
 
-```plaintext
+```ini
 chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo=点击开始爬
 chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo_B=还有 B 面? 
 chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo_C=甚至还有 C 面? 
@@ -108,7 +108,7 @@ chroniahelper_climbtext_UnderDragon_MapDemos_FirstDemo_C=甚至还有 C 面?
 
 `poem_` 接 `章节名 ID` 接 `_A`(或者 `_B`, 看 AB 面)
 
-```plaintext
+```ini
 poem_UnderDragon_MapDemos_FirstDemo_A= A面拿心！
 ```
 
@@ -120,7 +120,7 @@ A 面: `章节名 ID` 接 `_postcard`
 
 非 A 面: `章节名 ID` 接 `_b (或者 _c 等)` 接 `_postcard`
 
-```plaintext
+```ini
 UnderDragon_MapDemos_FirstDemo_postcard= A 面注意事项
 UnderDragon_MapDemos_FirstDemo_b_postcard= B 面注意事项
 UnderDragon_MapDemos_FirstDemo_c_postcard= C 面注意事项
@@ -134,7 +134,7 @@ remix 名字: `章节名 ID` 接 `_remix`
 
 remix 作者: `章节名 ID` 接 `_remix_artist`
 
-```plaintext
+```ini
 UnderDragon_MapDemos_FirstDemo_remix= Exciting Remix
 UnderDragon_MapDemos_FirstDemo_remix_artist= 某个作者
 ```

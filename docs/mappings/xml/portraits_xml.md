@@ -1,5 +1,10 @@
 # Portraits.xml
 
+参考/摘抄/整合
+
+* [Custom Portraits by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Custom-Portraits)
+* [[Celeste蔚蓝]作图教程第五章 B 面 - 自定义对话人物与实体贴图修改 (xml 进阶篇) by 电箱](https://www.bilibili.com/video/BV1cP4y1m7B2)
+
 `Portraits.xml` 主要定义了在对话过程中, 我们该如何显示我们的人物表情, 并搭配 [Dialog](../dialog/dialog.md) 发出对应的音效, 接下来开始讲解
 
 首先可以看看 `Portraits.xml` 的基本结构, 这里以 Madeline 为例

@@ -1,6 +1,6 @@
 参考/引用
 
-* [Decal by b wiki](https://wiki.biligame.com/celeste/Decal)
+* [Decal by b 站 Wiki](https://wiki.biligame.com/celeste/Decal)
 * [静态/动态 Decal 使用 by 底龙](https://uddrg.notion.site/Decal-2787f4f27e638051a265e8b708adbe03)
 
 心得

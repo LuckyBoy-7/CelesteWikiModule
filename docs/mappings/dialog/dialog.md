@@ -42,7 +42,7 @@
 
 如果你把文本书写成类似于这样的形式:
 
-```plaintext
+```
 ID1=
     键
     值能换
@@ -69,6 +69,14 @@ ID2=写到一半允许
 
 学好了本地化, 这里我们再来讲讲[游戏内对话](talk.md)
 
+
+## [补充字库](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading)
+
+你在写 Dialog 的过程中可能会出现有些字显示不出来的情况, 因为蔚蓝字库里没有,
+所以请自己按[示例](https://www.bilibili.com/video/BV1A14y1W7hr/?t=38)生成字库 ([字库生成网站](https://maddie480.ovh/celeste/font-generator)),
+
+或者你可以偷懒依赖 [`Extended Chinese Font`](https://gamebanana.com/mods/53736)/[`Chinese Font Pack`](https://gamebanana.com/mods/493138) 使用他们的字库, ~~虽然可能还是会缺~~
+
 ## 常用部分
 
 推荐下载 [VSCode](https://code.visualstudio.com/) 并安装 **Celeste Dialog Highlighter** 插件
@@ -76,12 +84,11 @@ ID2=写到一半允许
 * [文本汉化](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_8): 图名, 吃心文本, 明信片, remix
 * [文字效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C): 抖动, 改色, 变速等
 * [对话效果](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E5%AF%B9%E8%AF%9D%E6%95%88%E6%9E%9C): 翻转头像, 对话框置底, 引用等
-* [人物表情](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85)(也可以在控制台输入 `portraits` 来查看)
-* [添加对话 emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes)
-  把你的 emoji 图片放到 `Graphics/Atlases/Gui/emoji` 目录下(`.png` 格式), 对话对应文本为 `:你的图片相对路径(不带.png):`, 例如`:MyCelesteMod/shock:`
+* [人物表情](https://wiki.biligame.com/celeste/%E6%96%87%E6%9C%AC%E6%95%99%E7%A8%8B#%E4%BA%BA%E7%89%A9%E8%A1%A8%E6%83%85) (也可以在控制台输入 `portraits` 来查看)
+* [添加对话 emoji](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-emotes): 把你的 emoji 图片放到 `Graphics/Atlases/Gui/emoji` 目录下(`.png` 格式), 
+对话对应文本为 `:你的图片相对路径(不带.png):`, 例如`:MyCelesteMod/shock:`
 * [Lua Cutscene过场动画](../lua/lua_cutscene.md): 即搭配对话的演出
-* [入场明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179),
-  [游戏中明信片](https://saplonily.top/celeste_mod_tutorial/extra_luacs/reference/#postcard)
+* [入场明信片](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=179), [游戏内明信片](https://saplonily.top/celeste_mod_tutorial/extra_luacs/reference/#postcard)
 * [替换人物头像](../xml/portraits_xml.md)
 
 
@@ -90,14 +97,6 @@ ID2=写到一半允许
 * [Dialog 图形化界面编辑工具 by Saplonily]()(群文件, 施工ing)
 * [字库生成器](https://maddie480.ovh/celeste/font-generator)
 
-## FAQ
-
-### [为什么我文本缺字了](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Dialogue#custom-font-loading)
-
-因为蔚蓝字库里没有,
-请自己按[示例](https://www.bilibili.com/video/BV1A14y1W7hr)生成([字库生成网站](https://maddie480.ovh/celeste/font-generator)),
-或者你直接依赖 [`Extended Chinese Font`](https://gamebanana.com/mods/53736)/[`Chinese Font Pack`](https://gamebanana.com/mods/493138)这个Mod,
-大概率不会缺字(~~虽然可能还是会缺~~)
 
 ## 常用 Dialog 实体/Trigger
 

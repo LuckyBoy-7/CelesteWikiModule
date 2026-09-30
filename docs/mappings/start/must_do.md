@@ -19,11 +19,11 @@
 
 在 Mod 设置中打开调试模式, 这样你就可以用 `F6` 打开调试地图并且按 `~` 开启控制台了
 
-## [了解 Mod 结构, Everest 处理文件的逻辑](../mod_structure.md#everest)
+## [了解 Mod 结构, Everest 处理文件的逻辑](../mod_structure.md#conflict)
 
 其实当你了解了 Everest 处理文件的逻辑, 你就可以像蔚蓝开发者对待蔚蓝本体一样对待自己的 Mod, 很多要填路径的地方也会清晰明了
 
-我经常能在群里看到群友在[替换贴图](../graphics/replace_assets.md)或是套文件夹时询问跟路径相关的问题:
+我经常能在群里看到群友在[替换贴图](../graphics/replace_assets/replace_assets.md)或是套文件夹时询问跟路径相关的问题:
 
 * 为啥要套文件夹
 * 原来这样素材会覆盖的吗

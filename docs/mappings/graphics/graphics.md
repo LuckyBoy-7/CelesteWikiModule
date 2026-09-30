@@ -1,6 +1,6 @@
 资源
 
-* 官图素材资源: 请在制图群 (QQ: 633125440)群文件里下载, 叫做 `[图像类] Celeste Graphics Dump v1400`
+* 官图素材资源: 请在制图群 ([QQ: 633125440](https://qm.qq.com/q/XG1hPIMKQg))群文件里下载, 叫做 `[图像类] Celeste Graphics Dump v1400`
 * [UnderDragon’s Repository 2.5](https://gamebanana.com/mods/427729): 素材包
 * [Spooooky's Asset Pack](https://gamebanana.com/mods/474010): 素材包 ([路径粘贴](https://spo0o0ky.github.io/SpooookyAssetPackBrowser/))
 * [Asset Drive Browser](https://maddie480.ovh/celeste/asset-drive): 更方便的浏览社区资源盘
@@ -9,40 +9,35 @@
 
 ### 自定义开始界面
 
-* [自定义开始界面 (包括山体建模等) by Everest](https://github.com/EverestAPI/Resources/wiki/Overworld-Customisation)
-* [自定义开始界面 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=154)
-* [b wiki](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE#.meta.yaml_%E6%96%87%E4%BB%B6)
-* [从零开始的蔚蓝山体建模 by crylone](https://www.bilibili.com/video/BV15V3n65EmY)
+* [基础](../metadata/loenn_metadata.md#overworld)
+* [进阶](./replace_assets/level_select.md)
+* [高级](../metadata/extra_metadata.md#mountain)
 
 ### 设置存档点 (章节)的插图
 
-> 可参考[电箱教程](https://www.bilibili.com/video/BV1A14y1W7hr)或者冬菜教程 ([存档点图片生成器](http://postcard.leo60228.space/mask/))
+> 可参考[电箱教程](https://www.bilibili.com/video/BV1A14y1W7hr)或者[冬菜教程](../../assets/mappings/overall/dong_cai.pdf) ([存档点图片生成器](http://postcard.leo60228.space/mask/))
 
 比如你的地图路径是 <code>Mods/CelesteWikiTutorial/Maps/<font color="green">TestMap/awa</font>.bin</code>, 那你就在 <code>
 Mods/CelesteWikiTutorial/Graphics/Atlases/<font color="red">Checkpoints</font>/<font color="green">TestMap/awa</font>/A/</code> 里放存档点图片即可 (字母 `A` 表示 `A` 面)
 
 初始存档点 (也就是一开始默认进入的房间)对应的图片命名为 `start`, 其他图片改成章节存档点房间的名称即可
 
+## 游戏开始时
+
+* [自定义明信片贴图](./replace_assets/others.md#postcard)
+* [入场动画](../metadata/extra_metadata.md#loadingvignettescreen)
+
 ## 游戏进行时
 
-### [替换素材](replace_assets.md)
+* [替换素材](./replace_assets/replace_assets.md)
+* [滤镜](color_grading.md)
+* [自定义瓦片 (Tileset)](../xml/tilesets.md)
+* [Decal / DecalRegistry](decals.md)
+* [自制皮肤](skin.md)
 
-### [自定义瓦片 (Tileset)](../xml/tilesets.md)
+## 游戏结束时
 
-### [Decal/DecalRegistry](decals.md)
-
-### [滤镜制作](color_grading.md)
-
-### [自制皮肤](skin.md)
-
-## 游戏结束后
-
-### 自定义结束界面
-
-* [自定义结束界面 by Everest](https://github.com/EverestAPI/Resources/wiki/Chapter-Complete-Screen)
-* [自定义结束界面 by 电箱](https://www.bilibili.com/video/BV1Av4y1D7a8/?t=154)
-* [b wiki](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE#.meta.yaml_%E6%96%87%E4%BB%B6)
-* 使用 `XaphanHelper/Custom End Screen Controller`, 放在你结束关卡的房间里即可 (Myn 力推)
+* [自定义结束界面](../metadata/extra_metadata.md#completescreen)
 
 ## 其他
 

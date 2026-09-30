@@ -1,13 +1,14 @@
 参考/引用
 
 * [春暮Q 的 Audio 教程](https://wiki.biligame.com/celeste/%E9%9F%B3%E4%B9%90)
-* [1分钟教你用最简单无脑的方式为蔚蓝 Mod 添加音乐](https://www.bilibili.com/video/BV1KoV6zCESd/)
+* [1 分钟教你用最简单无脑的方式为蔚蓝 Mod 添加音乐](https://www.bilibili.com/video/BV1KoV6zCESd/)
 * [电箱的 Audio 教程](https://www.bilibili.com/video/BV19t4y1M7y4)
 * [冬菜的 Audio 教程](../../assets/mappings/overall/dong_cai.pdf)
 * [使用参数控制场景过渡时的音频渐变 by DeepBlueBerry](https://www.bilibili.com/video/BV175hNzTENj)
 * [使用 Transition 改善你的音乐循环效果 by 春暮Q](https://www.bilibili.com/video/BV1X94y1j7Kt)
-* [Everest Wiki的Audio教程](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Audio)
-    * [Everest Wiki的进阶Audio教程](https://github.com/EverestAPI/Resources/wiki/Advanced-Custom-Audio)
+* [Everest Wiki的 Audio 教程](https://github.com/EverestAPI/Resources/wiki/Adding-Custom-Audio)
+* [Everest Wiki的进阶 Audio 教程](https://github.com/EverestAPI/Resources/wiki/Advanced-Custom-Audio)
+* [磁带音乐 by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Cassette-Music)
 * [(Ahorn Tutorials) Custom Music and FMOD by iamdadbod](https://www.youtube.com/watch?v=FfTsBFaxz_M&list=PLBP5_qAilzbjr7DGxatTQbPfftY3LiVA4&index=16)
 * [How to FMOD Celeste like a chad by Thegur90](https://www.youtube.com/watch?v=orPDzqDGlfE)
 

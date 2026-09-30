@@ -49,7 +49,7 @@
                 - 📁 {套文件夹}
                     - 📄 滤镜贴图.png
 
-滤镜贴图仿照官图放置在 `Graphics/ColorGrading/` 文件夹下即可, 记得[套文件夹](../mod_structure.md#everest)
+滤镜贴图仿照官图放置在 `Graphics/ColorGrading/` 文件夹下即可, 记得[套文件夹](../mod_structure.md#conflict)
 
 ### 使用
 

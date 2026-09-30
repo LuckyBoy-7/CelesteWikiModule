@@ -669,7 +669,7 @@ T
 
 T
 
-你可以使用 [`Sprites.xml`](xml/sprites_xml.md#xml) 来更换大部分原版实体的材质, 更详细的换肤教程[请看](graphics/replace_assets.md)
+你可以使用 [`Sprites.xml`](xml/sprites_xml.md#xml) 来更换大部分原版实体的材质, 更详细的换肤教程[请看](graphics/replace_assets/replace_assets.md)
 
 #### 21
 

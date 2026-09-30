@@ -19,7 +19,7 @@
 下面讲解常见的剧情制作方式, 如果你想要更为细致的剧情操作, 比如在对话过程中加入操作, 
 可以使用 Prismatic Helper 等 Helper 的 [Dialog 指令](../dialog/talk.md#prismatic-helper)
 
-首先在你的 Mod 下放置新创建的空 lua 文件以供后续使用, 记得[套文件夹](../mod_structure.md#everest)
+首先在你的 Mod 下放置新创建的空 lua 文件以供后续使用, 记得[套文件夹](../mod_structure.md#conflict)
 
 - 📁 Mods
     - 📁 你的 Mod

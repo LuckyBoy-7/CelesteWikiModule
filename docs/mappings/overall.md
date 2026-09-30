@@ -1,4 +1,4 @@
-> 蔚蓝制图群: 633125440
+> [蔚蓝制图群: 633125440](https://qm.qq.com/q/XG1hPIMKQg)
 > 
 > [底龙的制图引导](https://www.bilibili.com/video/BV1WwFvebEyP)
 >

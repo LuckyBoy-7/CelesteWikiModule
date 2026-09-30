@@ -4,7 +4,7 @@
 
 比如
 
-```plaintext
+```ini
 UnderDragon_FirstDemo_Intro=
 [madeline left normal]
 Hi!
@@ -14,7 +14,7 @@ Hi!
 
 以下是对话的基本形式:
 
-```plaintext
+```ini
 某个 Dialog ID=
 [人物ID 头像位置 表情]
 第一句话
@@ -35,13 +35,13 @@ Hi!
 
 这个部分比较复杂, 用的时候需要多处比对, 所以需要自己理解 `人物`, `头像位置`, 和 `表情` 所对应的用法, 比如 madeline 头像在左边一脸分心的表情, 就是
 
-```plaintext
+```ini
 [madeline left distracted]
 ```
 
 theo 头像在右边一脸欢呼的表情就是
 
-```plaintext
+```ini
 [theo right yolo]
 ```
 
@@ -91,7 +91,7 @@ blank"}
 
 使用举例:
 
-```plaintext
+```ini
 UnderDragon_FirstDemo_Intro=
 [madeline left distracted]
 Hello? {0.3}Anyone there?

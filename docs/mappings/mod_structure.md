@@ -180,10 +180,10 @@
 
 ## [了解 Everest 处理这些文件的逻辑](https://github.com/EverestAPI/Resources/wiki/FAQ#why-do-i-have-to-include-my-nickname-and-modname-in-my-folders)
 
-在开始了解这一概念之前, 请先在制图群(QQ: 633125440)群文件里下载好官图图片素材, 
+在开始了解这一概念之前, 请先在制图群([QQ: 633125440](https://qm.qq.com/q/XG1hPIMKQg)))群文件里下载好官图图片素材, 
 叫做 `[图像类] Celeste Graphics Dump v1400`, 它的结构如下:
 
-* 📁 <font color=green>[图像类] Celeste Graphics Dump v1400</font>
+* 📁 <font color="#38e04e">[图像类] Celeste Graphics Dump v1400</font>
     * 📁 Gameplay
     * 📁 Gui
     * 📁 Portraits
@@ -194,7 +194,7 @@
 * 📁 Celeste
     * 📁 <font color="orange">Content</font>
         * 📁 Graphics
-            * 📁 <font color=green>Atlases</font> (对应官图解包素材根目录)
+            * 📁 <font color="#38e04e">Atlases</font> (对应官图解包素材根目录)
                 * 📁 Gameplay
                 * 📁 Gui
                 * 📁 Portraits
@@ -207,7 +207,7 @@
 * 📁 Mods
     * 📁 <font color="orange">你的 Mod</font>
         * 📁 Graphics
-            * 📁 <font color=green>Atlases</font>
+            * 📁 <font color="#38e04e">Atlases</font>
                 * 📁 Gameplay
                 * 📁 Gui
                 * 📁 Portraits
@@ -328,34 +328,34 @@ c=你干嘛
 
 比如你和它的 Mod 都长这样, 你俩有个人的图就加载不出来了, 如果贴图也重名重路径了, 你的图可能会加载到错误的素材
 
-* 📁Celeste
-    - 📁Mods
-        - 📁OtherMod
-            - 📄everest.yaml
-            - 📁Maps 
-                - 📄MyFirstMap.bin
-        - 📁MyMod  // 你的Mod
-            - 📄everest.yaml
-            - 📁Maps 
-                - 📄MyFirstMap.bin
+* 📁 Celeste
+    - 📁 Mods
+        - 📁 OtherMod
+            - 📄 everest.yaml
+            - 📁 Maps 
+                - 📄 MyFirstMap.bin
+        - 📁 MyMod  // 你的Mod
+            - 📄 everest.yaml
+            - 📁 Maps 
+                - 📄 MyFirstMap.bin
 
 所以我们添加自定义的资源时文件路径要多套几层, 目的就是为了不和官图也不和其他人的 Mod 重名, 一般来说两层足矣, 所以地图结构一般是
 `Maps/{作者名}/{地图集名字}/{地图}.bin`, 基本上就是如下图所示
 
-* 📁Celeste
-    - 📁Mods
-        - 📁OtherMod1
-        - 📁OtherMod2
-        - 📁OtherMod3
-        - 📁MyMod  // 你的Mod
-            - 📄everest.yaml
-            - 📁Maps 
-                - 📁作者名
-                    - 📁地图集名字
-                         - 📄MyFirstMap.bin  
-                         - 📄MyFirstMap-B.bin
-                         - 📄MyFirstMap-C.bin
-                         - 📄MyFirstMap1.bin 
+* 📁 Celeste
+    - 📁 Mods
+        - 📁 OtherMod1
+        - 📁 OtherMod2
+        - 📁 OtherMod3
+        - 📁 MyMod  // 你的Mod
+            - 📄 everest.yaml
+            - 📁 Maps 
+                - 📁 作者名
+                    - 📁 地图集名字
+                         - 📄 MyFirstMap.bin  
+                         - 📄 MyFirstMap-B.bin
+                         - 📄 MyFirstMap-C.bin
+                         - 📄 MyFirstMap1.bin 
 
 #### 注意事项
 
@@ -399,15 +399,15 @@ c=你干嘛
 
 例如这样是对的
 
-- 📁你的 Mod.zip
-    - 📁Maps
-    - 📁Graphics
-    - 📄everest.yaml
+- 📁 你的 Mod.zip
+    - 📁 Maps
+    - 📁 Graphics
+    - 📄 everest.yaml
 
 这样是错的
 
-- 📁你的 Mod.zip
-    - 📁xxx
-        - 📁Maps
-        - 📁Graphics
-        - 📄everest.yaml
+- 📁 你的 Mod.zip
+    - 📁 xxx
+        - 📁 Maps
+        - 📁 Graphics
+        - 📄 everest.yaml

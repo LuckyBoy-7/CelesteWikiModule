@@ -63,6 +63,7 @@ markdown_extensions:
   - pymdownx.tilde # 下划线
   - pymdownx.tasklist # 列表
   - pymdownx.details
+  - pymdownx.keys # 按键样式
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.superfences:
@@ -87,6 +88,7 @@ nav:
           - ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang"
       - 制图活动:
           - 制图竞赛:
+              - Climb Up 竞赛: "activity/mappings/contest/climb_up.md"
               - Ban & Pick 竞赛: "activity/mappings/contest/ban_pick.md"
           - 制图合集:
               - 糖游: "activity/mappings/collab/candy.md"
@@ -137,11 +139,15 @@ nav:
           - 元数据️:
               - Loenn 元数据: "mappings/metadata/loenn_metadata.md"
               - 额外元数据: "mappings/metadata/extra_metadata.md"
+              - 官图元数据: "mappings/metadata/orig_metadata.md"
           - 背景: "mappings/loenn/stylegrounds.md"
           - 残影 👻: "mappings/ghost_player_playback.md"
           - Graphics 🎨:
               - 大纲: "mappings/graphics/graphics.md"
-              - 素材替换: "mappings/graphics/replace_assets.md"
+              - 素材替换:
+                  - 大纲: "mappings/graphics/replace_assets/replace_assets.md"
+                  - 选关界面: "mappings/graphics/replace_assets/level_select.md"
+                  - 其他: "mappings/graphics/replace_assets/others.md"
               - 滤镜: "mappings/graphics/color_grading.md"
               - Decals: "mappings/graphics/decals.md"
               - DecalRegistry: "mappings/graphics/decal_registry.md"

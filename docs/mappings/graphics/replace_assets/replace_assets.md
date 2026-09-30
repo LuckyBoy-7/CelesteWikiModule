@@ -18,7 +18,7 @@
 2. 通过 `Sprites.xml` 配置文件加载图片/动画
 
 在丰富的 Helper 生态下我们又多了无数种方式(都自己写代码了想怎么加载怎么加载), 接下来逐一介绍具体替换方式,
-不过在此之前你最好了解下 [Everest 处理 Mod 资源的逻辑](../mod_structure.md#everest), 这有助于你理解替换素材背后的机制
+不过在此之前你最好了解下 [Everest 处理 Mod 资源的逻辑](../../mod_structure.md#conflict), 这有助于你理解替换素材背后的机制
 
 ## 对于硬编码的路径
 
@@ -30,7 +30,7 @@
 那么替换素材这件事就是非常直观的, 
 因为官图图片素材都存在 <code>../Steam/steamapps/common/Celeste/<font color="red">Content/</font><font color="green">Graphics/Atlases/</font></code> 里,
 我们的素材都存在 <code>../Steam/steamapps/common/Celeste/<font color="red">Mods/MyMod/</font><font color="green">Graphics/Atlases/</font></code> 里, 那么怎么换就不用我多说了吧:
-直接照着[解包素材](../useful_links.md#_1)在同路径放个同名图片把官图的覆盖了就好了,
+直接照着[解包素材](../../useful_links.md#_1)在同路径放个同名图片把官图的覆盖了就好了,
 这种方法可以更换蔚蓝中几乎所有非程序生成的素材, 唯一不好的点就是"这会污染其他 Mod", 因为这么做的影响是全局的 (暴力替换的适用范围仅限于做着玩/小范围传播)
 
 ### 替换路径(不常用)
@@ -45,12 +45,12 @@
 
 > 偷偷在你生成图片/动画对象后我把他删了换成自己的不就好了
 
-* 可以使用 [hELPER](../useful_helpers/hELPER.md) 的 Sprite Replace Trigger
+* 可以使用 [hELPER](../../useful_helpers/hELPER.md) 的 Sprite Replace Trigger
 * 可以使用 GameHelper 的 EntityRespriter 实体(稍微有点复杂)
 
 ## 对于官图的 `Sprites.xml`(常用)
 
-你可能需要先了解一下什么是 [XML](../xml/xml.md)
+你可能需要先了解一下什么是 [XML](../../xml/xml.md)
 
 ```xml title="Content/Graphics/Sprites.xml"
 
@@ -63,9 +63,9 @@
 
 简单来说 `Sprites.xml` 是蔚蓝的一个管理所有动画的配置文件, 对于如上的内容, 蔚蓝会通过 player 这个标签加载 path(相对于`Gameplay 文件夹`)中的素材, 再根据 `...` 中的配置来组合出游戏中的一个动画对象
 
-如果你想替换官图 `Sprites.xml` 中某部分的配置(比如这里的图片根路径 `path`), 你只需要把自己[自定义的 `Sprites.xml`](../xml/sprites_xml.md#spritesxml_2) 放在`Mods/MyMod/Graphics/MyMod/Sprites.xml` 下(只要不跟官图 xml 撞路径即可), 然后在 Loenn 元数据中指定这个 XML 即可, 这样在运行这张图时就会用这个 XML 覆盖官图的 XML, 就不会污染其他 Mod 了
+如果你想替换官图 `Sprites.xml` 中某部分的配置(比如这里的图片根路径 `path`), 你只需要把自己[自定义的 `Sprites.xml`](../../xml/sprites_xml.md#spritesxml_2) 放在`Mods/MyMod/Graphics/MyMod/Sprites.xml` 下(只要不跟官图 xml 撞路径即可), 然后在 Loenn 元数据中指定这个 XML 即可, 这样在运行这张图时就会用这个 XML 覆盖官图的 XML, 就不会污染其他 Mod 了
 
-那为啥路径那么重要呢, 什么时候可以同路径, 什么时候要在 Loenn 中选呢, 如果你好奇的话, 可以了解下 [Sprites.xml 的覆盖原理](../mod_structure.md#spritesxml)
+那为啥路径那么重要呢, 什么时候可以同路径, 什么时候要在 Loenn 中选呢, 如果你好奇的话, 可以了解下 [Sprites.xml 的覆盖原理](../../mod_structure.md#spritesxml)
 
 ## Helper 提供的手段
 
@@ -75,7 +75,7 @@
 
 一般就是那些以 Custom, Reskinable 之类的词为前缀的扩展实体, 显然 Helper 作者都帮我们写好了, 我们照着注释把要填的填上就好了, 一般都是填
 
-* 图片路径, 一般相对与 gameplay 或者原贴图所在文件夹([不知道路径填什么](../loenn/faq.md#_11))
+* 图片路径, 一般相对与 gameplay 或者原贴图所在文件夹([不知道路径填什么](../../loenn/faq.md#_11))
 * Sprites XML ID
 * 或者作者自定义的表达式
 * 等等

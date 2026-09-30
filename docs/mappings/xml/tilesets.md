@@ -66,6 +66,19 @@ Tileset, 即 Tile-set, **瓦片-集**
 如果我们把所有的砖通知一遍, 那是不是就不用我们自己一个个挑素材啦, 事实也正是如此, 蔚蓝和 Loenn 都是通过这种方法渲染正确的素材单元的,
 而这个规则则是通过 `ForegroundTiles.xml` 来配置的, 所以接下来讲解 `ForegroundTiles.xml`
 
+## 随机性
+
+每个规则 (位置)对应多种同类贴图, 这样在绘制的时候就可以从中选择一个以实现细微的变化
+
+<figure>
+    <img src="/celeste_wiki/assets/mappings/xml/tileset/random.png" alt="tileset" style="height: 200px; image-rendering: pixelated;">   
+    <figcaption>比如都是 5 x 5, 但是样式会有细微差别</figcaption>
+</figure>
+
+这里的随机是由随机种子 seed 决定的
+
+如果你想要让两个房间 Tile 对应的随机种子相同, 你可以在两个房间各放一个 `Tile Seed Controller [Fancy Tile Entities]` 实体
+
 ## ForegroundTiles.xml 属性
 
 游戏中的每一种不同的砖都对应 `ForegroundTiles.xml` 中的一种样式 `<Tileset></Tileset>`, 像下面这样,
@@ -141,7 +154,7 @@ Tileset, 即 Tile-set, **瓦片-集**
     <figcaption>路径: Graphics/Atlases/Gameplay/tilesets/WikiTest/colored_snow</figcaption>
 </figure>
 
-然后找到官图的 `ForegroundTiles.xml` (在 `Celeste/Content/Graphics/` 下), 粘贴到自己的路径下比如 `Graphics/{作者名}/{项目名}/`(也就是要[套文件夹](../mod_structure.md#everest)),
+然后找到官图的 `ForegroundTiles.xml` (在 `Celeste/Content/Graphics/` 下), 粘贴到自己的路径下比如 `Graphics/{作者名}/{项目名}/`(也就是要[套文件夹](../mod_structure.md#conflict)),
 随后照猫画虎的在后面填上跟 snow tileset 类似的配置, 然后改改 id, 改改素材路径就好了
 
 ```xml hl_lines="10"
@@ -556,7 +569,7 @@ Tileset, 即 Tile-set, **瓦片-集**
 ```
 ### 在 Loenn 元数据中选择配置
 
-记得 `ForegroundTiles.xml` 改名或者套文件夹(如果你不知道这意味着什么, 请看[这里](../mod_structure.md#everest))
+记得 `ForegroundTiles.xml` 改名或者套文件夹(如果你不知道这意味着什么, 请看[这里](../mod_structure.md#conflict))
 
 ![loenn_xml_config](../../assets/mappings/xml/loenn_xml_config.png)
 

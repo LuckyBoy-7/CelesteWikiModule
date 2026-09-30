@@ -123,7 +123,7 @@ Neuro_Skin_Badeline_As_Evil= Badeline as Evil Neuro
 那是因为他们不修改玩家的皮肤, 改的是其他实体的皮肤)
 
 同时你也发现了, 这个时候我们的 `Sprites.xml` 跟官图的同路径不会有影响, 因为我们使用的名字是特殊的, 不太可能发生覆盖(如果你不知道这意味着什么,
-请看[这里](../mod_structure.md#everest))
+请看[这里](../mod_structure.md#conflict))
 
 ```xml title="NeuroSkin/Graphics/Sprites.xml" hl_lines="2 5 8 11"
 

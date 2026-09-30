@@ -1,8 +1,9 @@
 参考/整合/摘抄/引用
 
-* [元数据教程 by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_3)
-* [元数据(摘自 b 站 Wiki)](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE)
-* [元数据(摘自 Everest Wiki)](https://github.com/EverestAPI/Resources/wiki/Map-Metadata)
+* [元数据 by Saplonily](https://saplonily.top/celeste_modding_tutorial/mapping/room_meta_text/#_3)
+* [元数据 by b 站 Wiki](https://wiki.biligame.com/celeste/%E5%85%83%E6%95%B0%E6%8D%AE)
+* [元数据 by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Map-Metadata)
+* [磁带音乐 by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Cassette-Music)
 * [[Celeste 蔚蓝] 作图教程第二章 - 基础作图教程 by 电箱](https://www.bilibili.com/video/BV1ze411V7Yb/?t=126)
 
 ## Loenn 元数据
@@ -81,7 +82,7 @@
 - `Seeker Slowdown`: 是否启用新浪靠近玩家时的一系列效果
 - `Theo In Booster`: 是否允许玩家在泡泡内时依然持有抓取物 (Theo 水晶, 水母等)
 - `Dreaming`: 主要决定 `Stars` 这个 [`Styleground`](../loenn/stylegrounds.md) 的星星特效是流动的还是静止的 (需重新开始章节)
-- `Override A-Side Meta`: 是否覆盖 A 面的元数据, 因为 ABC 面共享 A 面元数据以及 [`.meta.yaml`](./extra_metadata.md) 文件
+- `Override A-Side Meta`: 是否覆盖 A 面的元数据, 因为 A/B/C 面共享 A 面元数据以及 [`.meta.yaml`](./extra_metadata.md) 文件
 - `Interlude`: 表示这章是否只是一个“过场”, 例如官图/草莓酱的序章/尾声, 完成关卡后会不带结算图直接返回主界面, 且不计死亡数, 不带 B/C 面, 选关页面里也不会显示这是第几章
 
 ### Overworld
@@ -145,7 +146,7 @@
             - 📁 Atlases
                 - 📁 Gui
                     - 📁 areas
-                        - 📁 [{套文件夹}](../mod_structure.md#everest)
+                        - 📁 [{套文件夹}](../mod_structure.md#conflict)
                             - 📄 chap1.png
                             - 📄 chap1_back.png
 
@@ -186,7 +187,7 @@
 - [`Portraits XML`](../xml/portraits_xml.md): 对话人物动画/音效 XML 配置
 - [`Sprites XML`](../xml/sprites_xml.md): 实体贴图 XML 配置
 
-### Music
+### [Music](https://github.com/EverestAPI/Resources/wiki/Cassette-Music)
 
 ![music](../../assets/mappings/metadata/loenn/music.png)
 
@@ -202,7 +203,7 @@
 </audio>
 
 - `Max Beats`: 通过 [`sixteenth_note` 参数](../audio/params.md#sixteenth_note) 我们知道了上述音乐中的最短的音对应一个十六分音符, 每个节奏面由若干十六分音符的拍子组成, `Max Beats` 就表示一个音乐对应的总拍子数
-- `Beats Per Tick`: Tick 是音乐中的拍手声 clap, 这里表示多少拍后播放一次拍手声, 默认四拍对应一次 clap
+- `Beats Per Tick`: Tick 是音乐中的拍手音效 clap, 这里表示多少拍后播放一次拍手声, 默认四拍对应一次 clap (可以降低音乐音量感受一下)
 - `Ticks Per Swap`: 表示每多少次拍手声后改变一次节奏块的亮暗状态, 默认两次 clap 变一次状态
 - `Leading Beats`: 游戏会在 `Leading Beats` 拍后开始播放拍的声音, 并把已经亮起的节奏块作为默认值重新开始进行数拍切换节奏块循环, 不会出现进拍后节奏块突然切换这种情况, 所以如果你想让磁带音乐立刻播放将该选项设置为 0 即可
 - `Beat Index Offset`: 上面我们提到一个节奏音乐有 `Max Beats` 拍, 从第 0 拍开始, 所以 `Beat Index Offset` 表示从 `Beat Index Offset` 拍开始
