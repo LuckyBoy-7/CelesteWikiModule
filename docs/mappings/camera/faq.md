@@ -8,7 +8,9 @@
 
 ## 如何使用拓展镜头
 
-首先下载并启用[拓展镜头(Extended Camera Dynamics)](https://gamebanana.com/mods/548940), 然后在自己地图旁边创建一个与地图同名的 `.meta.yaml` 元数据文件, 并填入以下信息
+首先下载并启用[拓展镜头 Extended Camera Dynamics](https://gamebanana.com/mods/548940), 然后在自己地图旁边创建一个与地图同名的 [`.meta.yaml` 元数据文件](../metadata/extra_metadata.md), 并填入[以下信息](https://github.com/Ikersfletch/ExCameraDynamics#tutorial-for-map-makers)
+
+> 可能需要重启游戏生效 (可以按 ++ctrl++ + ++f5++ 快速重启)
 
 ```yaml title="Mods/LuckyTestMap/Maps/Lucky_boy/0/FirstMap.meta.yaml"
 ExCameraMetaData:
@@ -16,7 +18,7 @@ ExCameraMetaData:
     RestingZoomFactor: 1.0
 ```
 
-之后直接在游戏中使用 `Camera Zoom` 等 Trigger 即可
+之后直接在游戏中使用 [`Camera Zoom`](./camera.md#camera-zoom) 等 Trigger 即可
 
 ![excamera_dynamics](../../assets/mappings/camera/excamera_dynamics.png){style="width: 700px; title="123"}
 

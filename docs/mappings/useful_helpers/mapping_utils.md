@@ -23,9 +23,11 @@
 
 然后你就可以做各种黑黑的, 蓝蓝的, 红红的, 绿绿的效果了😋
 
-![dark](../../assets/mappings/useful_helpers/mapping_utils/dark.png){style="width: 1000px; title="123"}
-![blue](../../assets/mappings/useful_helpers/mapping_utils/blue.png){style="width: 1000px; title="123"}
-![red](../../assets/mappings/useful_helpers/mapping_utils/red.png){style="width: 1000px; title="123"}
+<div class="banner">
+    <img src="/celeste_wiki/assets/mappings/useful_helpers/mapping_utils/dark.png">
+    <img src="/celeste_wiki/assets/mappings/useful_helpers/mapping_utils/blue.png">
+    <img src="/celeste_wiki/assets/mappings/useful_helpers/mapping_utils/red.png">
+</div>
 
 ### [Stylegrounds](../loenn/stylegrounds.md)
 

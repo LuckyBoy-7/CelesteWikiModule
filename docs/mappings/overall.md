@@ -15,9 +15,10 @@
 > 
 > 那么...祝你制图愉快😎
 
-!!! 注意
-    侧边栏中的所有教程分为两种, 一种是啥都没写只是单纯的教程收集(可能是我不懂那方面, 也有可能是还未施工), 另一种引用了一堆教程然后下面附带了自己的一些说明, 如果你觉得写的太烂了直接看上面的引用部分就好了(相对还是很全的)
-
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>侧边栏中的所有教程分为两种, 一种是啥都没写只是单纯的教程收集(可能是我不懂那方面, 也有可能是还未施工), 另一种引用了一堆教程然后下面附带了自己的一些说明, 如果你觉得写的太烂了直接看上面的引用部分就好了 (相对还是很全的)</p>
+</div>
 
 ## 制图引导
 
@@ -29,7 +30,7 @@
 * [电箱的 1 代制图教程](https://www.bilibili.com/video/BV1tR4y1X7wu), [电箱的 2 代制图教程](https://www.bilibili.com/video/av354525627)
 * [Saplonily 的制图教程](https://saplonily.top/celeste_modding_tutorial/)
 * [冬菜的制图教程](../assets/mappings/overall/dong_cai.pdf)
-* [底龙的制图教程](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9)
+* [底龙的制图教程 - QQ](https://docs.qq.com/aio/DSGFWUm54Sk9GRGJM?p=iFoHeZMEWmxTAFH4lb0ead), [底龙的制图教程 - notion](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9)
 * [b站 Wiki 的制图教程](https://wiki.biligame.com/celeste/%E9%A6%96%E9%A1%B5)
 * [Everest Wiki的制图教程](https://github.com/EverestAPI/Resources/wiki)
 * [【蔚蓝dc社区全部教程】](https://docs.qq.com/sheet/DSHBRcE5pUWtnckJj?tab=000001)
@@ -39,7 +40,7 @@
 
 ## 常用 Mod 教程
 
-* [Eevee Helper 教程 by AfterDawn](../assets/mappings/useful_helpers/eevee/AfterDawn的eevee教程.docx)(群里有更新的)
+* [Eevee Helper 教程 by AfterDawn](../assets/mappings/useful_helpers/eevee/AfterDawn的eevee教程%20(2).docx)
 
 ## 常用 Trigger 介绍
 

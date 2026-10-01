@@ -58,6 +58,9 @@
 - `Y`: 房间纵坐标 (单位 tile, `8px`)
 - `Width`: 房间宽度 (单位 tile, `8px`)
 - `Height`: 房间高度 (单位 tile, `8px`)
+
+<a id="camera_offset"></a>
+
 - `Camera Offset X`: 房间默认的镜头横坐标偏移 (单位 `48px`)
 - `Camera Offset Y`: 房间默认的镜头纵坐标偏移 (单位 `32px`)
 - `Wind Pattern`: 房间起始刮风的类型 (见下方列表或是自己用 `Wind Pattern Trigger` 试试)
