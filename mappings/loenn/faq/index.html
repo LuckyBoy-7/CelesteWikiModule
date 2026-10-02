@@ -46,6 +46,8 @@
     
       <link rel="stylesheet" href="../../../javascripts/katex/katex.min.css">
     
+      <link rel="stylesheet" href="../../../css/celeste_log.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -5277,6 +5279,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../cmd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    控制台
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../useful_links/" class="md-nav__link">
         
   
@@ -5315,10 +5345,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3">
         
           
-          <label class="md-nav__link" for="__nav_7_7_2" id="__nav_7_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_3" id="__nav_7_7_3_label" tabindex="0">
             
   
   
@@ -5336,8 +5366,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5540,10 +5570,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_4">
         
           
-          <label class="md-nav__link" for="__nav_7_7_3" id="__nav_7_7_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_4" id="__nav_7_7_4_label" tabindex="0">
             
   
   
@@ -5561,8 +5591,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5617,10 +5647,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_4_2">
         
           
-          <label class="md-nav__link" for="__nav_7_7_3_2" id="__nav_7_7_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_4_2" id="__nav_7_7_4_2_label" tabindex="0">
             
   
   
@@ -5638,8 +5668,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_7_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_3_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_7_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_4_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -6397,11 +6427,13 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在<a href="https://
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></tbody></table></div>
+<p><a id="type"></a></p>
 <h2 id="type">如何获取实体 Type 名</h2>
 <p>下载 Celeste TAS Mod, 运行有这个实体的图, 然后按 <code>~</code> 打开控制台点击相应实体的碰撞箱, 在左上角查看相应信息, 比如草莓的 Type 就是 <code>Celeste.Strawberry</code>, 但是大部分 Helper 支持简写,
 所以一般都是写 <code>Strawberry</code> 就够了</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img 123_="123&quot;" alt="entity_type" src="../../../assets/mappings/Loenn/faq/entity_type.png" style="width: 1000px; title="></a></p>
 <p>如果信息刷屏了, 你可以在控制台输入 clear 来清除它们</p>
+<p><a id="entity-id"></a></p>
 <h2 id="id">如何获取实体 ID</h2>
 <p>属性面板上的数字就是</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img 123_="123&quot;" alt="entity_id" src="../../../assets/mappings/Loenn/faq/entity_id.png" style="width: 1000px; title="></a></p>

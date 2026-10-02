@@ -46,6 +46,8 @@
     
       <link rel="stylesheet" href="../../../javascripts/katex/katex.min.css">
     
+      <link rel="stylesheet" href="../../../css/celeste_log.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -5057,6 +5059,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../cmd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    控制台
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../useful_links/" class="md-nav__link">
         
   
@@ -5095,10 +5125,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3">
         
           
-          <label class="md-nav__link" for="__nav_7_7_2" id="__nav_7_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_3" id="__nav_7_7_3_label" tabindex="0">
             
   
   
@@ -5116,8 +5146,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5320,10 +5350,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_4">
         
           
-          <label class="md-nav__link" for="__nav_7_7_3" id="__nav_7_7_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_4" id="__nav_7_7_4_label" tabindex="0">
             
   
   
@@ -5341,8 +5371,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5397,10 +5427,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_4_2">
         
           
-          <label class="md-nav__link" for="__nav_7_7_3_2" id="__nav_7_7_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_4_2" id="__nav_7_7_4_2_label" tabindex="0">
             
   
   
@@ -5418,8 +5448,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_7_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_3_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_7_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_4_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5896,7 +5926,7 @@
 <p>现在我们知道了规则是如何配置的, 那么让我们反过来看 <code>&lt;Tileset&gt;&lt;/Tileset&gt;</code> 中剩下的几个属性吧</p>
 <ul>
 <li><code>copy</code>: 需要拷贝配置(即内部的 <code>&lt;set&gt;&lt;/set&gt;</code> 节点)的 tileset 对应的 id, 这样我们就可以只写一个 template (模板) 然后复用了, 当然我们可以继续写 <code>&lt;set&gt;&lt;/set&gt;</code> 节点来覆盖拷贝过来的一部分配置</li>
-<li><code>ignores</code>: 需要忽略的 tileset 对应的 id, 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 <code>0(无砖)</code> (常用于制作 tile 分层的效果, 让画面的层次更丰富)</li>
+<li><code>ignores</code>: 需要忽略的 tileset 对应的 <code>id</code> (填 <code>*</code> 就是 ignore 所有其他类型的砖), 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 <code>0(无砖)</code> (常用于制作 tile 分层的效果, 让画面的层次更丰富)</li>
 </ul>
 <h2 id="foregroundtilesxml_1">使用官图的 <code>ForegroundTiles.xml</code></h2>
 <p>好了, 现在你已经完全懂 <code>ForegroundTiles.xml</code> 里的都是啥了, 自己加个 <code>&lt;Tileset&gt;&lt;/Tileset&gt;</code> 还不是随随便便?</p>

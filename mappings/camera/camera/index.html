@@ -46,6 +46,8 @@
     
       <link rel="stylesheet" href="../../../javascripts/katex/katex.min.css">
     
+      <link rel="stylesheet" href="../../../css/celeste_log.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -81,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#camera-offset-trigger" class="md-skip">
           跳转至
         </a>
       
@@ -3478,10 +3480,326 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
+  <a href="#camera-offset-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Offset Trigger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Camera Offset Trigger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        教程
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smooth-camera-offset-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smooth Camera Offset Trigger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Smooth Camera Offset Trigger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#position-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Position Mode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-catchup-speed-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Catchup Speed Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-offset-border-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Offset Border Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-target-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Target Trigger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Camera Target Trigger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera-advanced-target-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Advanced Target Trigger
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flag-toggle-camera-offset-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flag Toggle Camera Offset Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zoom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zoom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zoom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eased-camera-zoom-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eased Camera Zoom Trigger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera-zoom-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Zoom Trigger
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-camera-angle-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Camera Angle Trigger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change Camera Angle Trigger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fade-camera-angle-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fade Camera Angle Trigger
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#momentum-camera-offset-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Momentum Camera Offset Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-target-corner-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Target Corner Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-target-crossfade-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Target Crossfade Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-correction-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Correction Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        World Camera
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed-adaptive-camera-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Speed Adaptive Camera Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-constraint-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Constraint Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-hard-border-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Hard Border Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-way-camera-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Way Camera Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reel-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reel Camera
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smoothie-camera-target-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smoothie Camera Target Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-entity-target-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Entity Target Controller
       
     </span>
   </a>
@@ -4865,6 +5183,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../cmd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    控制台
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../useful_links/" class="md-nav__link">
         
   
@@ -4903,10 +5249,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3">
         
           
-          <label class="md-nav__link" for="__nav_7_7_2" id="__nav_7_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_3" id="__nav_7_7_3_label" tabindex="0">
             
   
   
@@ -4924,8 +5270,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5128,10 +5474,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_4">
         
           
-          <label class="md-nav__link" for="__nav_7_7_3" id="__nav_7_7_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_4" id="__nav_7_7_4_label" tabindex="0">
             
   
   
@@ -5149,8 +5495,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5205,10 +5551,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_4_2">
         
           
-          <label class="md-nav__link" for="__nav_7_7_3_2" id="__nav_7_7_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_7_4_2" id="__nav_7_7_4_2_label" tabindex="0">
             
   
   
@@ -5226,8 +5572,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_7_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7_3_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_7_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_4_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5349,10 +5695,326 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
+  <a href="#camera-offset-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Offset Trigger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Camera Offset Trigger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        教程
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smooth-camera-offset-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smooth Camera Offset Trigger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Smooth Camera Offset Trigger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#position-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Position Mode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-catchup-speed-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Catchup Speed Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-offset-border-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Offset Border Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-target-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Target Trigger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Camera Target Trigger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera-advanced-target-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Advanced Target Trigger
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flag-toggle-camera-offset-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flag Toggle Camera Offset Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zoom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zoom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zoom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eased-camera-zoom-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eased Camera Zoom Trigger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera-zoom-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Zoom Trigger
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-camera-angle-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Camera Angle Trigger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change Camera Angle Trigger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fade-camera-angle-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fade Camera Angle Trigger
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#momentum-camera-offset-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Momentum Camera Offset Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-target-corner-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Target Corner Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-target-crossfade-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Target Crossfade Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-correction-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Correction Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        World Camera
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed-adaptive-camera-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Speed Adaptive Camera Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-constraint-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Constraint Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-hard-border-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Hard Border Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-way-camera-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Way Camera Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reel-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reel Camera
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smoothie-camera-target-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smoothie Camera Target Trigger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-entity-target-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Entity Target Controller
       
     </span>
   </a>
@@ -5381,14 +6043,395 @@
 
   <h1>大纲</h1>
 
-<h2 id="_1">教程</h2>
+<p>教程/心得</p>
 <ul>
-<li><a href="https://www.bilibili.com/video/BV1mmha6EErZ/" target="_blank" rel="noopener">NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单</a></li>
-<li><a href="https://wiki.biligame.com/celeste/%E9%95%9C%E5%A4%B4" target="_blank" rel="noopener">冰激凌的镜头教程</a></li>
-<li><a href="../../../assets/mappings/camera/%E9%95%9C%E5%A4%B4%E6%95%99%E7%A8%8B-bits.docx">bits-像素的镜头教程</a></li>
-<li><a href="https://www.bilibili.com/video/av113689092953564" target="_blank" rel="noopener">星夜祈梦的镜头教程(视频)</a></li>
-<li><a href="https://github.com/EverestAPI/Resources/wiki/Camera" target="_blank" rel="noopener">Everest Wiki 的镜头教程</a></li>
+<li><a href="https://www.bilibili.com/video/BV1mmha6EErZ/" target="_blank" rel="noopener">NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单 (视频)</a></li>
+<li><a href="https://wiki.biligame.com/celeste/%E9%95%9C%E5%A4%B4" target="_blank" rel="noopener">冰激凌的镜头教程 (文字)</a></li>
+<li><a href="../../../assets/mappings/camera/%E9%95%9C%E5%A4%B4%E6%95%99%E7%A8%8B-bits.docx">bits-像素的镜头教程 (文字)</a></li>
+<li><a href="https://www.bilibili.com/video/av113689092953564" target="_blank" rel="noopener">星夜祈梦的镜头教程 (视频)</a></li>
 <li><a href="https://medium.com/@crumpledmemes/celeste-camera-in-3-levels-of-complexity-243efd7872bc" target="_blank" rel="noopener">Celeste Camera in 3 Levels of Complexity by Gamation</a></li>
+<li><a href="https://github.com/EverestAPI/Resources/wiki/Camera" target="_blank" rel="noopener">Everest Wiki 的镜头教程</a></li>
+</ul>
+<h2 id="camera-offset-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-offset-triggers" target="_blank" rel="noopener">Camera Offset Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_offset" src="../../../assets/mappings/camera/camera/camera_offset_trigger.png"></a></p>
+<p>一般情况下, 镜头会始终以玩家为中心跟随, <code>Camera Offset</code> 则表示镜头以<strong>偏离玩家多少方向为中心跟随</strong>,
+<code>Camera Offset Trigger</code> 就是用来设置这个 <code>Camera Offset</code> 的, 比如我们将 <code>Camera X</code> 设置为 <code>1</code>,
+那么镜头中心就会向右偏移, 像下面这样</p>
+<blockquote>
+<p>你可以启用 <a href="https://gamebanana.com/tools/6715" target="_blank" rel="noopener">Celeste TAS</a>, 
+按下 <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-b">B</kbd></span> 打开碰撞箱显示, 按下 <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-n">N</kbd></span> 打开简化图形, 
+按下 <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-m">M</kbd></span> 打开镜头居中显示并使用鼠标滚轮缩放镜头或是使用鼠标右键拖动镜头 (双击鼠标右键重置)</p>
+<p>此时你就能看到图中的效果了, 其中淡蓝色的框对应实际的镜头范围, 你可以通过这种方式观察镜头的运动</p>
+</blockquote>
+<figure style="display: flex; gap: 1rem;">
+  <div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/celeste_wiki/assets/mappings/camera/camera/camera_offset_trigger_before.png" style="height: 300px;"></a>   
+    <figcaption>进入 Trigger 前</figcaption>
+  </div>
+  <div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/celeste_wiki/assets/mappings/camera/camera/camera_offset_trigger_after.png" style="height: 300px;"></a>   
+    <figcaption>进入 Trigger 后</figcaption>
+  </div>
+</figure>
+
+<p><strong>示例</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1mmha6EErZ/?t=295" target="_blank" rel="noopener">NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单</a></li>
+</ul>
+<h3 id="_1">注意事项</h3>
+<ul>
+<li>如果镜头范围超出房间外了, 游戏还是会把镜头锁在房间范围内的</li>
+<li>进入房间时, <code>Camera Offset</code> 会重置为<a href="../../loenn/room/#camera_offset">房间对应的 <code>Camera Offset</code> 的值</a></li>
+<li>蔚蓝的<a href="https://www.bilibili.com/video/BV1Mk4y1N76K/?t=158" target="_blank" rel="noopener">坐标系</a>与平时常见的平面直角坐标系相同, 
+只不过 y 轴方向向下, 所以 <code>Camera Y</code> 设置的越大镜头越往下</li>
+</ul>
+<h2 id="smooth-camera-offset-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#smooth-camera-offset-triggers" target="_blank" rel="noopener">Smooth Camera Offset Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="smooth_camera_offset" src="../../../assets/mappings/camera/camera/smooth_camera_offset.png"></a></p>
+<blockquote>
+<p>更丝滑的 <code>Camera Offset Trigger</code></p>
+</blockquote>
+<p><code>Smooth Camera Offset Trigger</code> 会根据你在 Trigger 中的相对位置来设置 <code>Camera Offset</code>,
+比如当你的 <code>Position Mode</code> 设置为 <code>LeftToRight</code> 时, 如果你在 Trigger 里偏左边的位置, 
+那么 <code>Camera Offset</code> 就会被设置为偏向 <code>Offset XFrom</code> 的值, 如果你在 Trigger 里偏右边的位置,
+那么 <code>Camera Offset</code> 就会被设置为偏向 <code>Offset XTo</code> 的值, 其他 <code>Position Mode</code> 同理</p>
+<p><strong>示例</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1mmha6EErZ/?t=431" target="_blank" rel="noopener">NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单</a></li>
+</ul>
+<h3 id="_2">注意事项</h3>
+<ul>
+<li>如果你没有正确摆放你的 <code>Smooth Camera Offset Trigger</code> 可能会导致 <code>Camera Offset</code> 被<a href="https://www.bilibili.com/video/BV1mmha6EErZ/?t=488" target="_blank" rel="noopener">错误的设置</a></li>
+<li>如果在进入 <code>Smooth Camera Offset Trigger</code> 前玩家的 <code>Camera Offset</code> 不确定, 可能导致 <code>Smooth Camera Offset Trigger</code> <a href="https://www.bilibili.com/video/BV1mmha6EErZ/?t=503" target="_blank" rel="noopener">无法确定一个合适的起始 <code>Offset From</code></a></li>
+</ul>
+<h2 id="position-mode">Position Mode</h2>
+<p>在 <a href="#smooth-camera-offset-trigger"><code>Smooth Camera Offset Trigger</code></a> 部分我们已经浅浅体验过了 <code>Position Mode</code> 的作用, 这里我们再补充说明一下</p>
+<p>游戏会根据玩家在 Trigger 内的相对位置和 <code>Position Mode</code> 的设置来计算出一个相对均匀变化的 <code>0 ~ 1</code> 的值,
+这样在后续使用中通过这个值来改变镜头的某些参数时, 具体的表现相对就会更加温和丝滑</p>
+<ul>
+<li><code>NoEffect</code>: 默认为 <code>1</code></li>
+<li><code>LeftToRight</code>: 从左到右 <code>0 ~ 1</code></li>
+<li><code>RightToLeft</code>: 从右到左 <code>0 ~ 1</code></li>
+<li><code>TopToBottom</code>: 从上到下 <code>0 ~ 1</code></li>
+<li><code>BottomToTop</code>: 从下到上 <code>0 ~ 1</code></li>
+<li><code>HorizontalCenter</code>: 从左到中间 <code>0 ~ 1</code>, 从右到中间 <code>0 ~ 1</code></li>
+<li><code>VerticalCenter</code>: 从上到中间 <code>0 ~ 1</code>, 从下到中间 <code>0 ~ 1</code></li>
+</ul>
+<h2 id="camera-catchup-speed-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-catchup-speed-triggers" target="_blank" rel="noopener">Camera Catchup Speed Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_catchup_speed" src="../../../assets/mappings/camera/camera/camera_catchup_speed.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/53687" target="_blank" rel="noopener">Maddie's Helping Hand</a></p>
+</blockquote>
+<p>相机运动计算公式 </p>
+<p><span class="arithmatex">\(camera.position = lerp(camera.position, camera.targetPosition, 1 - (0.01 / CatchupSpeed) ^ {0.0167})\)</span></p>
+<ul>
+<li><code>Catchup Speed</code>: 改变相机的跟随速度, 常用在<a href="https://www.bilibili.com/video/BV1MwdVBRE6q/?t=913" target="_blank" rel="noopener">高速场景</a></li>
+<li><code>Revert On Leave</code>: 表示 Trigger 是触碰后永久生效还是只在内部生效</li>
+</ul>
+<h2 id="camera-offset-border-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-offset-border-triggers" target="_blank" rel="noopener">Camera Offset Border Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_offset_border" src="../../../assets/mappings/camera/camera/camera_offset_border.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/53687" target="_blank" rel="noopener">Maddie's Helping Hand</a></p>
+</blockquote>
+<p>该 Trigger 常被用作 "镜头墙" 来阻挡镜头的移动</p>
+<p><strong>示例</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1mmha6EErZ/?t=239" target="_blank" rel="noopener">NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单 -- Camera Offset Border </a></li>
+<li><a href="https://www.bilibili.com/video/BV1mmha6EErZ/?t=661" target="_blank" rel="noopener">NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单 -- Flag</a></li>
+</ul>
+<p><strong>属性介绍</strong></p>
+<p><code>Top Left</code>, <code>Top Center</code>, <code>Top Right</code>, <code>Center Left</code>, <code>Inside</code>, 
+<code>Center Right</code>, <code>Bottom Left</code>, <code>Bottom Center</code>, <code>Bottom Right</code>, 表示 9 个方位, 像下面这样</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_offset_border_9" src="../../../assets/mappings/camera/camera/camera_offset_border_9.png"></a></p>
+<p>该 Trigger 会在玩家处在对应方位且对应属性勾选的情况下<strong>生效</strong></p>
+<p>当 Trigger <strong>生效</strong>且镜头跟该 Trigger <strong>有重叠</strong>时, 触发阻挡机制, 如下:</p>
+<ol>
+<li>当玩家在该 Trigger 右侧的左方, 且上述任意带 <code>Left</code> 字眼的属性勾选, 相机会向左移动直到相机右侧跟 Trigger 左侧贴合</li>
+<li>当玩家在该 Trigger 左侧的右方, 且上述任意带 <code>Right</code> 字眼的属性勾选, 相机会向右移动直到相机左侧跟 Trigger 右侧贴合</li>
+<li>当玩家在该 Trigger 上侧的下方, 且上述任意带 <code>Bottom</code> 字眼的属性勾选, 相机会向下移动直到相机上侧跟 Trigger 下侧贴合</li>
+<li>当玩家在该 Trigger 下侧的上方, 且上述任意带 <code>Top</code> 字眼的属性勾选, 相机会向上移动直到相机下侧跟 Trigger 上侧贴合</li>
+</ol>
+<p>以上规则按顺序判断, 任意一条生效后后续规则都不再执行</p>
+<p>在大多数情况下, 你只需要把对应方向的属性勾上, 把该 Trigger 视作一道阻碍镜头移动的镜头墙即可</p>
+<ul>
+<li><code>Flag</code>: 除了上述条件, Trigger 的生效还取决于场景中是否有对应 <a href="../../useful_helpers/mapping_utils/#flags">Flag</a> (留空这个选项就不生效)</li>
+<li><code>Inverted</code>: 是否反转 Flag 的效果, 如果反转那么只有当场景里没有对应 Flag 的时候 Trigger 才生效</li>
+</ul>
+<h2 id="camera-target-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-advanced-target-triggers" target="_blank" rel="noopener">Camera Target Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_target" src="../../../assets/mappings/camera/camera/camera_target.png"></a></p>
+<p>当你进入该 Trigger 时, 镜头会移动到该 Trigger 节点对应的位置</p>
+<p><strong>示例</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1mmha6EErZ/?t=95" target="_blank" rel="noopener">NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单</a></li>
+</ul>
+<p><strong>属性介绍</strong></p>
+<ul>
+<li><code>Lerp Strength</code>: 镜头移动速度, 如果数值小于 <code>1</code>, 那么在减慢镜头移动速度的情况下镜头会更偏向原来的位置而不是节点的位置, 如果数值大于等于 <code>1</code>, 那就是单纯的加快镜头移动速度</li>
+<li><a href="#position-mode"><code>Position Mode</code></a>: 与 <a href="#smooth-camera-offset-trigger">Smooth Camera Offset Trigger</a> 类似, 
+游戏会根据你在 Trigger 中的相对位置算出一个 <code>0 ~ 1</code> 的百分比值, 用于计算镜头原来的位置到 Trigger 节点位置的插值, 
+比如 <code>1</code> 对应 Trigger 节点位置, <code>0</code> 对应原位置 (相当于 Trigger 不生效)</li>
+<li><code>X Only</code>: 该 Trigger 是否只锁 X 方向</li>
+<li><code>Y Only</code>: 该 Trigger 是否只锁 Y 方向</li>
+<li><code>Delete Flag</code>: 如果房间加载时此 <a href="../../useful_helpers/mapping_utils/#flags">Flag</a> 存在, 那么该 Trigger 就不会被加载, 
+如果是加载后此 <a href="../../useful_helpers/mapping_utils/#flags">Flag</a> 存在, 
+那么只起到不让 Trigger 生效的作用, Trigger 已造成的更改并不会复原</li>
+</ul>
+<h3 id="camera-advanced-target-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-advanced-target-triggers" target="_blank" rel="noopener">Camera Advanced Target Trigger</a></h3>
+<p>与 <code>Camera Target Trigger</code> 类似, 但是可以精细调整 X/Y 方向的 <code>Lerp Strength</code> 和 <code>Position Mode</code></p>
+<h2 id="flag-toggle-camera-offset-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#flag-camera-triggers" target="_blank" rel="noopener">Flag Toggle Camera Offset Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="flag_toggle_camera_offset" src="../../../assets/mappings/camera/camera/flag_toggle_camera_offset.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/53687" target="_blank" rel="noopener">Maddie's Helping Hand</a></p>
+<p>很多其他带 Flag 的镜头 Trigger 都是类似的, 这里不会全列出来</p>
+</blockquote>
+<p><code>Camera Offset Trigger</code> 的带 <code>Flag</code> 版本 (虽然你也可以用 <a href="../../useful_helpers/eevee/#flag-toggle-modifier">Eevee 的 Flag Toggle Modifier</a> 超级拼装)</p>
+<ul>
+<li><code>Flag</code>: 当 Flag 存在时, Trigger 才启用 </li>
+<li><code>Inverted</code>: 若勾选, 则当 Flag 不存在时, Trigger 才启用</li>
+</ul>
+<h2 id="zoom"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#zoom" target="_blank" rel="noopener">Zoom</a></h2>
+<h3 id="eased-camera-zoom-trigger">Eased Camera Zoom Trigger</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="eased_camera_zoom" src="../../../assets/mappings/camera/camera/eased_camera_zoom.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/53647" target="_blank" rel="noopener">Frost Helper</a></p>
+</blockquote>
+<ul>
+<li><code>Target Zoom</code>: 镜头放大倍率, 如果要缩小镜头, 请使用 <a href="#camera-zoom-trigger">Camera Zoom</a></li>
+<li><code>Easing</code>: 镜头缩放时的<a href="https://easings.net/zh-cn" target="_blank" rel="noopener">缓动</a>, 也就是线性缩放, 还是先快后慢, 先慢后快等</li>
+<li><code>Eased Duration</code>: 镜头缩放所需时间</li>
+<li><code>Revert On Leave</code>: 表示离开 Trigger 后是否要恢复镜头缩放</li>
+<li><code>Revert Mode</code>: <ul>
+<li><code>Revert To No Zoom</code>: 表示离开 Trigger 后恢复镜头缩放至默认值</li>
+<li><code>Revert To Previous Zoom</code>: 表示离开 Trigger 后恢复镜头缩放到进入 Trigger 那一刻记录的镜头缩放值</li>
+</ul>
+</li>
+<li><code>Focus On Player</code>: 表示是否让玩家居中在镜头内 (镜头似乎会抖动)</li>
+<li><code>Disable In Photosensitive Mode</code>: 表示在玩家开启光敏模式的前提下是否禁用该 Trigger, 以避免触发光敏癫痫</li>
+</ul>
+<h3 id="camera-zoom-trigger"><a href="https://github.com/Ikersfletch/ExCameraDynamics/blob/main/README.md#camerazoomtrigger-trigger" target="_blank" rel="noopener">Camera Zoom Trigger</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_zoom" src="../../../assets/mappings/camera/camera/camera_zoom.png"></a></p>
+<blockquote>
+<p>需要先配置好<a href="../faq/#excamera">拓展镜头 Extended Camera Dynamics</a> 并启用</p>
+</blockquote>
+<ul>
+<li><code>Zoom Start</code>: 镜头缩放起始值</li>
+<li><code>Zoom End</code>: 镜头缩放结束值</li>
+<li><code>Mode</code>:<ul>
+<li><code>Start</code>: 碰到 Trigger 后就将镜头缩放设置为 <code>Zoom Start</code></li>
+<li><code>LeftToRight</code>: 类似 <a href="#position-mode">Position Mode</a>, 从左到右 <code>Zoom Start ~ Zoom End</code></li>
+<li><code>RightToLeft</code>: 类似 <a href="#position-mode">Position Mode</a>, 从右到左 <code>Zoom Start ~ Zoom End</code></li>
+<li><code>TopToBottom</code>: 类似 <a href="#position-mode">Position Mode</a>, 从上到下 <code>Zoom Start ~ Zoom End</code></li>
+<li><code>BottomToTop</code>: 类似 <a href="#position-mode">Position Mode</a>, 从下到上 <code>Zoom Start ~ Zoom End</code></li>
+</ul>
+</li>
+<li><code>Delete Flag</code>: 当 Flag 存在时, <code>Camera Zoom</code> 不再更新镜头缩放, 当然你走出去缩放还是会恢复的 (留空表示该选项不起作用)</li>
+<li><code>Is Max</code>: 表示拖动上界滑块还是下界滑块</li>
+</ul>
+<p>想象一个带一个双滑块的滑动条</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="slider00" src="../../../assets/mappings/camera/camera/slider00.png"></a></p>
+<p>默认情况下</p>
+<div class="language-yaml highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">ExCameraMetaData</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">EnableExtendedCamera</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">RestingZoomFactor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0</span><span class="w"> </span><span class="c1"># 镜头默认缩放倍率</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>中的 <code>RestingZoomFactor</code> 会作为左右滑块的初始值, 通过 <code>Camera Zoom Trigger</code> 修改滑块的位置后, 
+默认情况下拓展镜头最终的 <code>Zoom</code> 会选取上界滑块也就是右侧滑块对应的值</p>
+<p>那么这有什么作用呢, 想象一个场景, 玩家从左向右进入 <code>Camera Zoom Trigger</code>, 
+<code>Is Max</code> 取消勾选, <code>Mode</code> 为 <code>LeftToRight</code>, <code>Zoom Start</code> 为 <code>0</code>, <code>Zoom End</code> 为 <code>2</code>, 你猜会发生什么</p>
+<ol>
+<li>只有当玩家走到中间时, 镜头才会发生变化, 因为此时左侧滑块才开始推动右侧滑块, 而 <code>Zoom</code> 的值是由右侧滑块决定的</li>
+<li>当镜头发生变化, 玩家往回走时, 镜不会发生变化, 因为此时左侧滑块往左移动不影响右侧滑块, 而 <code>Zoom</code> 的值是由右侧滑块决定的</li>
+</ol>
+<p>所以起到了一个单向变化的作用</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="slider_example" src="../../../assets/mappings/camera/camera/slider_example.gif"></a></p>
+<h2 id="change-camera-angle-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#changefade-camera-angle-trigger" target="_blank" rel="noopener">Change Camera Angle Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="change_camera_angle" src="../../../assets/mappings/camera/camera/change_camera_angle.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/317098" target="_blank" rel="noopener">AvBday Helper</a></p>
+</blockquote>
+<ul>
+<li><code>Angle</code>: 以镜头左上角为支点顺时针旋转镜头 <code>Angle</code> 角度</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_angle" src="../../../assets/mappings/camera/camera/camera_angle.png"></a></p>
+<h3 id="fade-camera-angle-trigger">Fade Camera Angle Trigger</h3>
+<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1bJRXYGEJc/?t=33" target="_blank" rel="noopener">使用示例</a></p>
+</blockquote>
+<p>同 <a href="#change-camera-angle-trigger"><code>Change Camera Angle Trigger</code></a>, 但是带 <a href="#position-mode"><code>Position Mode</code></a></p>
+<h2 id="momentum-camera-offset-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#momentum-camera-offset-trigger" target="_blank" rel="noopener">Momentum Camera Offset Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="momentum_camera_offset" src="../../../assets/mappings/camera/camera/momentum_camera_offset.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/300395" target="_blank" rel="noopener">Furry Helper</a></p>
+</blockquote>
+<p>类似于 <a href="#smooth-camera-offset-trigger"><code>Smooth Camera Offset</code></a>, 
+但是 <a href="#position-mode"><code>Position Mode</code></a> 换为由速度控制 </p>
+<ul>
+<li><code>Momentum From</code>, <code>Momentum To</code>: 速度映射范围, 例如当速度小于 <code>Momentum From</code>, 游戏会使用 <code>Offset From</code>, 
+当速度大于 <code>Momentum To</code>, 游戏会使用 <code>Offset To</code>, 当速度在 <code>Momentum From</code> 到 <code>Momentum To</code> 之间时, 
+游戏也会使用 <code>Offset From</code> 到 <code>Offset To</code> 之间的一个相对值</li>
+<li><code>Momentum Mode</code>: 表示使用玩家水平速度来映射还是垂直速度来映射 (似乎没有合速度选项)</li>
+</ul>
+<h2 id="camera-target-corner-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-target-corner-trigger" target="_blank" rel="noopener">Camera Target Corner Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_target_corner" src="../../../assets/mappings/camera/camera/camera_target_corner.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/53699" target="_blank" rel="noopener">Honly Helper</a></p>
+</blockquote>
+<p>作用类似于 <a href="#camera-target-trigger"><code>Camera Target Trigger</code></a>, 
+但是 <a href="#position-mode"><code>Position Mode</code></a> 从对角开始算, 而不是水平或是垂直</p>
+<h2 id="camera-target-crossfade-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-target-crossfade-trigger" target="_blank" rel="noopener">Camera Target Crossfade Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_target_crossfade" src="../../../assets/mappings/camera/camera/camera_target_crossfade.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/53699" target="_blank" rel="noopener">Honly Helper</a></p>
+</blockquote>
+<p>作用类似于 <a href="#camera-target-trigger"><code>Camera Target Trigger</code></a>, 但是带两个 target 节点, 
+最终的实际 target 会通过 <a href="#position-mode"><code>Position Mode</code></a> 计算出来的值在两点之间插值</p>
+<h2 id="camera-correction-controller"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-correction-controller" target="_blank" rel="noopener">Camera Correction Controller</a></h2>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/522257" target="_blank" rel="noopener">Adam's Add-ons</a></p>
+</blockquote>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_correction_controller" src="../../../assets/mappings/camera/camera/camera_correction_controller.png"></a></p>
+<p>出于浮点数精度等原因, 镜头有时可能跟预期位置偏差 <code>1px</code>, 所以这个实体就是用来补偿这个偏差的 (放在房间内即可)</p>
+<h2 id="world-camera"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#world-camera" target="_blank" rel="noopener">World Camera</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="world_camera_panel" src="../../../assets/mappings/camera/camera/world_camera_panel.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/457887" target="_blank" rel="noopener">bits &amp; bolts</a></p>
+</blockquote>
+<p><code>World Camera</code> 是一个实体, 会将子节点处对应的画面渲染到主节点处, 可用 <code>Flag</code> 控制是否生效</p>
+<figure style="display: flex; gap: 1rem;">
+  <div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/celeste_wiki/assets/mappings/camera/camera/world_camera_loenn.png" style="height: 300px;"></a>   
+    <figcaption>Loenn 侧</figcaption>
+  </div>
+  <div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/celeste_wiki/assets/mappings/camera/camera/world_camera.png" style="height: 300px;"></a>   
+    <figcaption>游戏侧</figcaption>
+  </div>
+</figure>
+
+<h2 id="speed-adaptive-camera-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#speed-adaptive-camera" target="_blank" rel="noopener">Speed Adaptive Camera Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="speed_adaptive_camera" src="../../../assets/mappings/camera/camera/speed_adaptive_camera.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/507580" target="_blank" rel="noopener">Chronia Helper</a></p>
+</blockquote>
+<p>根据玩家的速度调整 <code>Camera Offset</code> </p>
+<ul>
+<li><code>Camera Mode</code>:<ul>
+<li><code>normal</code>: 该 Trigger 会控制 X/Y 方向的 <code>Camera Offset</code></li>
+<li><code>X Only</code>: 该 Trigger 只会控制 X 方向的 <code>Camera Offset</code></li>
+<li><code>Y Only</code>: 该 Trigger 只会控制 Y 方向的 <code>Camera Offset</code></li>
+</ul>
+</li>
+<li><code>Flag Control</code>:<ul>
+<li><code>disabled</code>: 不使用 <code>Flag</code> 控制该 Trigger </li>
+<li><code>flagNeeded</code>: 使用 <code>Flag</code> 控制该 Trigger 是否生效</li>
+<li><code>flagInverted</code>: 使用 <code>Inverted Flag</code>, 即反转后的 <code>Flag</code> 控制该 Trigger 是否生效</li>
+</ul>
+</li>
+<li><code>Multiplier X/Y</code>: 速度对 <code>Camera Offset</code> 影响的倍率</li>
+<li><code>Trigger Mode</code>: <ul>
+<li><code>toggle</code>: 离开 Trigger 后不会再改变 <code>Camera Offset</code></li>
+<li><code>inZone</code>: 离开 Trigger 后会将 <code>Camera Offset</code> 重置为进入时的状态</li>
+</ul>
+</li>
+<li><code>Only Once</code>: 离开 Trigger 后是否销毁该 Trigger</li>
+</ul>
+<h2 id="camera-constraint-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-constraint-trigger" target="_blank" rel="noopener">Camera Constraint Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_constraint" src="../../../assets/mappings/camera/camera/camera_constraint.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/497854" target="_blank" rel="noopener">Prog Helper</a></p>
+</blockquote>
+<p>该 Trigger 用来限制 <code>Camera Offset</code> 的上界和下界, 它的限制效果会在玩家死亡后消失 (需要重新设置), 切板之类的不会</p>
+<p>适合用在高速场景</p>
+<ul>
+<li><code>Min X</code>: <code>Camera Offset X</code> 最小能是多少</li>
+<li><code>Max X</code>: <code>Camera Offset X</code> 最大能是多少</li>
+<li><code>Min Y</code>: <code>Camera Offset Y</code> 最小能是多少</li>
+<li><code>Max Y</code>: <code>Camera Offset Y</code> 最大能是多少</li>
+<li><code>Has Min X</code>: <code>Min X</code> 是否生效</li>
+<li><code>Has Max X</code>: <code>Max X</code> 是否生效</li>
+<li><code>Has Min Y</code>: <code>Min Y</code> 是否生效</li>
+<li><code>Has Max Y</code>: <code>Max Y</code> 是否生效</li>
+<li><code>Flag</code>: 是否当 <code>Flag</code> 存在时才启用该 Trigger (需要在进入 Trigger 前设置, 在内部设置无效)</li>
+<li><code>Inverted</code>: 是否反转 <code>Flag</code> 的效果</li>
+<li><code>Only Once</code>: 是否在 Trigger 触发后销毁自己</li>
+</ul>
+<h2 id="camera-hard-border-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-hard-border" target="_blank" rel="noopener">Camera Hard Border Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_hard_border" src="../../../assets/mappings/camera/camera/camera_hard_border.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/497854" target="_blank" rel="noopener">Prog Helper</a></p>
+</blockquote>
+<p>该 Trigger 用来 "阻挡" 镜头的移动, 作用/用法类似于 <a href="#camera-offset-border-trigger"><code>Camera Offset Border Trigger</code></a>,
+但是这个 Trigger 造成的镜头阻挡是瞬间的, 而不是慢慢移动到对应位置</p>
+<h2 id="one-way-camera-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#one-way-camera-trigger" target="_blank" rel="noopener">One Way Camera Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="one_way_camera" src="../../../assets/mappings/camera/camera/one_way_camera.png"></a></p>
+<blockquote>
+<p>其实叫 <code>One-Way Camera</code>, 搜 <code>One Way</code> 搜不到</p>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/53687" target="_blank" rel="noopener">Maddie's Helping Hand</a></p>
+</blockquote>
+<p>在该 Trigger 内部时, 镜头只能往某个方向移动, 适合不怎么往返的路线, 减少镜头的晃动</p>
+<p><strong>示例</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1mmha6EErZ/?t=544" target="_blank" rel="noopener">NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单</a></li>
+</ul>
+<p><strong>属性介绍</strong></p>
+<ul>
+<li><code>Left</code>: 镜头是否能向左移动</li>
+<li><code>Right</code>: 镜头是否能向右移动</li>
+<li><code>Up</code>: 镜头是否能向上移动</li>
+<li><code>Down</code>: 镜头是否能向下移动</li>
+<li><code>Flag</code>: 当 <code>Flag</code> 存在时, 该 Trigger 才会生效 (留空表示该选项不起作用)</li>
+<li><code>Block Player</code>: 是否阻挡玩家, 当启用时<ul>
+<li>如果 <code>Left</code> 未勾选, 则在镜头左侧生成屏障</li>
+<li>如果 <code>Right</code> 未勾选, 则在镜头右侧生成屏障</li>
+<li>如果 <code>Up</code> 未勾选, 则在镜头上侧生成屏障</li>
+<li>如果 <code>Down</code> 未勾选, 则在镜头下侧生成 <code>Kill Box</code></li>
+</ul>
+</li>
+</ul>
+<p>比如如果 <code>Block Player</code> 勾选, 且只勾选 <code>Right</code>, 效果会像这样</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="one_way_camera_block_player" src="../../../assets/mappings/camera/camera/one_way_camera_block_player.png"></a></p>
+<h2 id="reel-camera"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#reel-camera" target="_blank" rel="noopener">Reel Camera</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="reel_camera" src="../../../assets/mappings/camera/camera/reel_camera.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/472134" target="_blank" rel="noopener">Saladim Helper</a></p>
+</blockquote>
+<p>当玩家触碰到该实体时, 相机会先花费 <code>Start Move Time</code> 时间移动到第一个节点, 之后经过 <code>Start Delay</code> 开始逐节点移动</p>
+<p>你可以通过设置 <code>Delay Sequence</code> 和 <code>Move Time Sequence</code> 来调整后续镜头移动前的等待时间和移动所花时间, 
+用逗号分隔且长度必须刚好等于 <code>节点数 - 1</code>, 也就是镜头会往下一个节点走, 然后停一下, 然后接着往下一个节点走,
+滚动完后返还镜头控制权</p>
+<ul>
+<li><code>Set Offset On Finished</code>: 是否在滚动结束后设置玩家的 <code>Camera Offset</code><ul>
+<li><code>Offset X</code>: <code>Camera Offset X</code> 对应的值, <a href="#camera-offset-trigger"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 48 单位  </li>
+<li><code>Offset Y</code>: <code>Camera Offset Y</code> 对应的值, <a href="#camera-offset-trigger"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 32 单位  </li>
+</ul>
+</li>
+</ul>
+<p>正常情况下, 当你触发该实体后, </p>
+<ul>
+<li>如果玩家掉落到镜头下方, 则会被杀死</li>
+<li>如果玩家超出镜头左右范围则不会被杀死且位置会被限制回镜头内, 但是开启 <code>Squash Horizontal Area</code> 后会被杀死</li>
+<li>如果玩家超出镜头上方时则不会被杀死且位置会被限制回镜头内, 但是如果镜头正在向下运动或是有向下运动的趋势时玩家会被杀死 </li>
+</ul>
+<h2 id="smoothie-camera-target-trigger"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#smoothie-camera-target-trigger" target="_blank" rel="noopener">Smoothie Camera Target Trigger</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="smoothie_camera_target" src="../../../assets/mappings/camera/camera/smoothie_camera_target.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/53683" target="_blank" rel="noopener">Sardine7 Helper</a></p>
+</blockquote>
+<p>作用与 <a href="#camera-target-trigger"><code>Camera Target Trigger</code></a> 类似, 但是可以控制 X/Y 两个维度</p>
+<h2 id="camera-entity-target-controller"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-entity-target-controller" target="_blank" rel="noopener">Camera Entity Target Controller</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_entity_target_controller" src="../../../assets/mappings/camera/camera/camera_entity_target_controller.png"></a></p>
+<blockquote>
+<p>需要下载并启用 <a href="https://gamebanana.com/mods/452041" target="_blank" rel="noopener">Game Helper</a></p>
+</blockquote>
+<p>该控制器可以用来控制镜头的跟随对象</p>
+<ul>
+<li><code>Only Type</code>: 需要跟随的对象对应的<a href="../../loenn/faq/#type">类名</a>, 比如跟随 Theo 水晶可以填写 <code>Celeste.TheoCrystal</code>, 如果有多个对象则找一个最近的跟随</li>
+<li><code>Offset X</code>: <code>Camera Offset X</code> 对应的值, <a href="#camera-offset-trigger"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 48 单位</li>
+<li><code>Offset Y</code>: <code>Camera Offset Y</code> 对应的值, <a href="#camera-offset-trigger"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 32 单位  </li>
+<li><code>Lerp</code>: 表示镜头在玩家镜头位置跟这个新的镜头位置之间的插值, 范围 <code>0 ~ 1</code> (当然你填超出范围的数也是没问题的, 因为没 <code>clamp</code>) </li>
+<li><code>Reset On False</code>: 勾选后, 当 <code>Flag</code> 不存在镜头会跟随到玩家, 当 <code>Flag</code> 存在, 镜头会跟随上述找到的对象</li>
+<li><a href="../../cmd/"><code>Debug</code></a>: 输出一些跟上述找到的对象有关的信息</li>
 </ul>
 
 
