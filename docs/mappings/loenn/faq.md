@@ -201,6 +201,8 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
 }
 ```
 
+<a id="type"></a>
+
 ## 如何获取实体 Type 名
 
 下载 Celeste TAS Mod, 运行有这个实体的图, 然后按 `~` 打开控制台点击相应实体的碰撞箱, 在左上角查看相应信息, 比如草莓的 Type 就是 `Celeste.Strawberry`, 但是大部分 Helper 支持简写,
@@ -209,6 +211,8 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
 ![entity_type](../../assets/mappings/Loenn/faq/entity_type.png){style="width: 1000px; title="123"}
 
 如果信息刷屏了, 你可以在控制台输入 clear 来清除它们
+
+<a id="entity-id"></a>
 
 ## 如何获取实体 ID
 

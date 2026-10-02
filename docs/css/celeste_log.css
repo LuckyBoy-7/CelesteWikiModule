@@ -1,0 +1,24 @@
+.celeste-log .log-time {
+    color: #888;
+}
+
+.celeste-log .log-source {
+    color: #82aaff;
+}
+
+.celeste-log .log-info {
+    color: #8bc34a;
+}
+
+.celeste-log .log-warning {
+   color: #e5a50a;
+}
+
+
+.celeste-log .log-module {
+    color: #c792ea;
+}
+
+.celeste-log .log-entity {
+    color: #ffcb6b;
+}

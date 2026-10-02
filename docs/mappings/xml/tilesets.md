@@ -138,8 +138,9 @@ Tileset, 即 Tile-set, **瓦片-集**
 现在我们知道了规则是如何配置的, 那么让我们反过来看 `<Tileset></Tileset>` 中剩下的几个属性吧
 
 * `copy`: 需要拷贝配置(即内部的 `<set></set>` 节点)的 tileset 对应的 id, 这样我们就可以只写一个 template (模板) 然后复用了, 当然我们可以继续写 `<set></set>` 节点来覆盖拷贝过来的一部分配置
-* `ignores`: 需要忽略的 tileset 对应的 id, 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` (常用于制作 tile 分层的效果, 让画面的层次更丰富)
+* `ignores`: 需要忽略的 tileset 对应的 `id` (填 `*` 就是 ignore 所有其他类型的砖), 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` (常用于制作 tile 分层的效果, 让画面的层次更丰富)
 
+[//]: # (todo: Loenn 提供的 displayName)
 
 ## 使用官图的 `ForegroundTiles.xml`
 

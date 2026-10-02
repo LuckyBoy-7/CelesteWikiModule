@@ -1,11 +1,12 @@
 参考/整合/摘抄
 
-* [Saplonily 的 LuaCutscenes 教程](https://sapcelestemod.netlify.app/extra_luacs/begin/)
-* [Lua Cutscenes 词典 by Nacline](../../assets/mappings/lua/basics/Lua%20Cutscenes词典.docx)
-* [motonine 的 LuaCutscene 教程](../../assets/mappings/lua/basics/motonine.png)
+* [Saplonily 的 Lua Cutscenes 教程](https://sapcelestemod.netlify.app/extra_luacs/begin/)
+* [底龙的 Lua Cutscenes 教程](https://docs.qq.com/aio/DSGFWUm54Sk9GRGJM?p=U54LG0jd4V7VxdnJknhg5d)
+* [motonine 的 Lua Cutscenes 教程](../../assets/mappings/lua/basics/motonine.png)
 * [Lua Cutscenes 文档](https://maddie480.ovh/lua-cutscenes-documentation/modules/helper_functions.html)
 * [Lua Cutscenes 函数源码](https://github.com/Cruor/LuaCutscenes/blob/master/LuaCutscenes/Assets/LuaCutscenes/helper_functions.lua)
 * [Prismatic Helper 文档](https://github.com/l-Luna/PrismaticHelper/blob/master/DOCUMENTATION.md#cutscenes)
+* [Lua Cutscenes 词典 by Nacline](../../assets/mappings/lua/basics/Lua%20Cutscenes词典.docx)
 * [Prismatic Helper 指令 by 底龙](https://uddrg.notion.site/Text-Dialog-2737f4f27e6380419593c9bedbe01795#2737f4f27e6380788771c5a9a78c3a39)
 * [Lua Cutscenes Recipe Book by Everest Wiki](https://github.com/EverestAPI/ModResources/wiki/Lua-Cutscenes-Recipe-Book)
 * [Lua Cutscenes without Lua Experience by Gamation](https://medium.com/@crumpledmemes/lua-cutscenes-without-lua-experience-3c2d87804e20)
@@ -107,16 +108,7 @@ end
 
 ### 更好的调试
 
-找到蔚蓝根目录下的 `everest-launch.txt` 文件, 在里面新加入一行 `--console`,  这样之后蔚蓝在启动的时候就会附带一个控制台窗口.
-
-![00](../../assets/mappings/lua/basics/00.png)
-
-如果 lua 写得不对了, 对应的报错信息也会显示在其中, 这时你就可以自己排查或者问 AI 之类的了
-
-比如如果我们在上方忘记写 `level = getLevel()` 拿到 level, 那么后面就会因为拿不到 level 而报错
-
-![00](../../assets/mappings/lua/basics/01.png)
-
+作图的问题千奇百怪, [打开控制台](../cmd.md#lua)可以看到 Lua Cutscenes 输出的调试信息, 这会方便我们排查问题
 
 ## Lua Talker
 

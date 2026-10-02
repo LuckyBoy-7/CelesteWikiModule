@@ -45,6 +45,7 @@ plugins:
 extra_css:
   - css/content.css
   - javascripts/katex/katex.min.css
+  - css/celeste_log.css
 
 extra_javascript:
   - javascripts/katex/katex.min.js
@@ -207,6 +208,7 @@ nav:
           - 测图: "mappings/mod_test.md"
           - 发布 Mod: "mappings/publish_mod.md"
       - 其他:
+          - 控制台: "mappings/cmd.md"
           - 链接汇总: "mappings/useful_links.md"
           - 实用 Helper:
               - 大纲: "mappings/useful_helpers/useful_helpers.md"

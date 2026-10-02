@@ -1,12 +1,11 @@
-## 教程
+教程/心得
 
-* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单](https://www.bilibili.com/video/BV1mmha6EErZ/)
-* [冰激凌的镜头教程](https://wiki.biligame.com/celeste/%E9%95%9C%E5%A4%B4)
-* [bits-像素的镜头教程](../../assets/mappings/camera/镜头教程-bits.docx)
-* [星夜祈梦的镜头教程(视频)](https://www.bilibili.com/video/av113689092953564)
-* [Everest Wiki 的镜头教程](https://github.com/EverestAPI/Resources/wiki/Camera)
+* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单 (视频)](https://www.bilibili.com/video/BV1mmha6EErZ/)
+* [冰激凌的镜头教程 (文字)](https://wiki.biligame.com/celeste/%E9%95%9C%E5%A4%B4)
+* [bits-像素的镜头教程 (文字)](../../assets/mappings/camera/镜头教程-bits.docx)
+* [星夜祈梦的镜头教程 (视频)](https://www.bilibili.com/video/av113689092953564)
 * [Celeste Camera in 3 Levels of Complexity by Gamation](https://medium.com/@crumpledmemes/celeste-camera-in-3-levels-of-complexity-243efd7872bc)
-
+* [Everest Wiki 的镜头教程](https://github.com/EverestAPI/Resources/wiki/Camera)
 
 
 ## [Camera Offset Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#camera-offset-triggers)
@@ -35,6 +34,10 @@
   </div>
 </figure>
 
+**示例**
+
+* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单](https://www.bilibili.com/video/BV1mmha6EErZ/?t=295)
+
 ### 注意事项
 
 * 如果镜头范围超出房间外了, 游戏还是会把镜头锁在房间范围内的
@@ -53,6 +56,10 @@
 比如当你的 `Position Mode` 设置为 `LeftToRight` 时, 如果你在 Trigger 里偏左边的位置, 
 那么 `Camera Offset` 就会被设置为偏向 `Offset XFrom` 的值, 如果你在 Trigger 里偏右边的位置,
 那么 `Camera Offset` 就会被设置为偏向 `Offset XTo` 的值, 其他 `Position Mode` 同理
+
+**示例**
+
+* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单](https://www.bilibili.com/video/BV1mmha6EErZ/?t=431)
 
 ### 注意事项
 
@@ -94,7 +101,14 @@ $camera.position = lerp(camera.position, camera.targetPosition, 1 - (0.01 / Catc
 
 > 需要下载并启用 [Maddie's Helping Hand](https://gamebanana.com/mods/53687)
 
-该 Trigger 常被用作 "镜头墙" 来阻挡镜头的移动, 以下是属性介绍
+该 Trigger 常被用作 "镜头墙" 来阻挡镜头的移动
+
+**示例**
+
+* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单 -- Camera Offset Border ](https://www.bilibili.com/video/BV1mmha6EErZ/?t=239)
+* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单 -- Flag](https://www.bilibili.com/video/BV1mmha6EErZ/?t=661)
+
+**属性介绍**
 
 `Top Left`, `Top Center`, `Top Right`, `Center Left`, `Inside`, 
 `Center Right`, `Bottom Left`, `Bottom Center`, `Bottom Right`, 表示 9 个方位, 像下面这样
@@ -123,6 +137,12 @@ $camera.position = lerp(camera.position, camera.targetPosition, 1 - (0.01 / Catc
 
 当你进入该 Trigger 时, 镜头会移动到该 Trigger 节点对应的位置
 
+**示例**
+
+* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单](https://www.bilibili.com/video/BV1mmha6EErZ/?t=95)
+
+**属性介绍**
+
 * `Lerp Strength`: 镜头移动速度, 如果数值小于 `1`, 那么在减慢镜头移动速度的情况下镜头会更偏向原来的位置而不是节点的位置, 如果数值大于等于 `1`, 那就是单纯的加快镜头移动速度
 * [`Position Mode`](#position-mode): 与 [Smooth Camera Offset Trigger](#smooth-camera-offset-trigger) 类似, 
 游戏会根据你在 Trigger 中的相对位置算出一个 `0 ~ 1` 的百分比值, 用于计算镜头原来的位置到 Trigger 节点位置的插值, 
@@ -132,6 +152,8 @@ $camera.position = lerp(camera.position, camera.targetPosition, 1 - (0.01 / Catc
 * `Delete Flag`: 如果房间加载时此 [Flag](../useful_helpers/mapping_utils.md#flags) 存在, 那么该 Trigger 就不会被加载, 
 如果是加载后此 [Flag](../useful_helpers/mapping_utils.md#flags) 存在, 
 那么只起到不让 Trigger 生效的作用, Trigger 已造成的更改并不会复原
+
+
 
 ### [Camera Advanced Target Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#camera-advanced-target-triggers)
 
@@ -166,8 +188,8 @@ $camera.position = lerp(camera.position, camera.targetPosition, 1 - (0.01 / Catc
 * `Revert Mode`: 
     * `Revert To No Zoom`: 表示离开 Trigger 后恢复镜头缩放至默认值
     * `Revert To Previous Zoom`: 表示离开 Trigger 后恢复镜头缩放到进入 Trigger 那一刻记录的镜头缩放值
-* `Focus On Player`: 表示是否让玩家剧中在镜头内 (似乎会抽搐, 建议关闭)
-* `Disable In Photosensitive Mode`: 表示在玩家开启光敏模式的前提下是否禁用该 Trigger, 以避免触发光敏癫痫 (建议关闭)
+* `Focus On Player`: 表示是否让玩家居中在镜头内 (镜头似乎会抖动)
+* `Disable In Photosensitive Mode`: 表示在玩家开启光敏模式的前提下是否禁用该 Trigger, 以避免触发光敏癫痫
 
 ### [Camera Zoom Trigger](https://github.com/Ikersfletch/ExCameraDynamics/blob/main/README.md#camerazoomtrigger-trigger)
 
@@ -183,8 +205,34 @@ $camera.position = lerp(camera.position, camera.targetPosition, 1 - (0.01 / Catc
     * `RightToLeft`: 类似 [Position Mode](#position-mode), 从右到左 `Zoom Start ~ Zoom End`
     * `TopToBottom`: 类似 [Position Mode](#position-mode), 从上到下 `Zoom Start ~ Zoom End`
     * `BottomToTop`: 类似 [Position Mode](#position-mode), 从下到上 `Zoom Start ~ Zoom End`
-* `Delete Flag`: 当 Flag 存在时, `Camera Zoom` 不再更新镜头缩放, 当然你走出去缩放还是会恢复的 (此项留空表示该选项不起作用)
-* `Is Max`: 限定了镜头缩放的上界, 当多个 `Camera Zoom` 重叠时, 该选项保证最后设置的镜头缩放 `Zoom` 不会超过当前 `Camera Zoom` 对应的值, 反之限定下界 
+* `Delete Flag`: 当 Flag 存在时, `Camera Zoom` 不再更新镜头缩放, 当然你走出去缩放还是会恢复的 (留空表示该选项不起作用)
+* `Is Max`: 表示拖动上界滑块还是下界滑块
+
+想象一个带一个双滑块的滑动条
+
+![slider00](../../assets/mappings/camera/camera/slider00.png)
+
+默认情况下
+
+```yaml
+ExCameraMetaData:
+    EnableExtendedCamera: true
+    RestingZoomFactor: 1.0 # 镜头默认缩放倍率
+```
+
+中的 `RestingZoomFactor` 会作为左右滑块的初始值, 通过 `Camera Zoom Trigger` 修改滑块的位置后, 
+默认情况下拓展镜头最终的 `Zoom` 会选取上界滑块也就是右侧滑块对应的值
+
+那么这有什么作用呢, 想象一个场景, 玩家从左向右进入 `Camera Zoom Trigger`, 
+`Is Max` 取消勾选, `Mode` 为 `LeftToRight`, `Zoom Start` 为 `0`, `Zoom End` 为 `2`, 你猜会发生什么
+
+1. 只有当玩家走到中间时, 镜头才会发生变化, 因为此时左侧滑块才开始推动右侧滑块, 而 `Zoom` 的值是由右侧滑块决定的
+2. 当镜头发生变化, 玩家往回走时, 镜不会发生变化, 因为此时左侧滑块往左移动不影响右侧滑块, 而 `Zoom` 的值是由右侧滑块决定的
+
+所以起到了一个单向变化的作用
+
+![slider_example](../../assets/mappings/camera/camera/slider_example.gif)
+
 
 ## [Change Camera Angle Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#changefade-camera-angle-trigger)
 
@@ -197,6 +245,8 @@ $camera.position = lerp(camera.position, camera.targetPosition, 1 - (0.01 / Catc
 ![camera_angle](../../assets/mappings/camera/camera/camera_angle.png)
 
 ### Fade Camera Angle Trigger
+
+> [使用示例](https://www.bilibili.com/video/BV1bJRXYGEJc/?t=33)
 
 同 [`Change Camera Angle Trigger`](#change-camera-angle-trigger), 但是带 [`Position Mode`](#position-mode)
 
@@ -215,3 +265,177 @@ $camera.position = lerp(camera.position, camera.targetPosition, 1 - (0.01 / Catc
 * `Momentum Mode`: 表示使用玩家水平速度来映射还是垂直速度来映射 (似乎没有合速度选项)
 
 ## [Camera Target Corner Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#camera-target-corner-trigger)
+
+![camera_target_corner](../../assets/mappings/camera/camera/camera_target_corner.png)
+
+> 需要下载并启用 [Honly Helper](https://gamebanana.com/mods/53699)
+
+作用类似于 [`Camera Target Trigger`](#camera-target-trigger), 
+但是 [`Position Mode`](#position-mode) 从对角开始算, 而不是水平或是垂直
+
+## [Camera Target Crossfade Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#camera-target-crossfade-trigger)
+
+![camera_target_crossfade](../../assets/mappings/camera/camera/camera_target_crossfade.png)
+
+> 需要下载并启用 [Honly Helper](https://gamebanana.com/mods/53699)
+
+作用类似于 [`Camera Target Trigger`](#camera-target-trigger), 但是带两个 target 节点, 
+最终的实际 target 会通过 [`Position Mode`](#position-mode) 计算出来的值在两点之间插值
+
+## [Camera Correction Controller](https://github.com/EverestAPI/Resources/wiki/Camera#camera-correction-controller)
+
+> 需要下载并启用 [Adam's Add-ons](https://gamebanana.com/mods/522257)
+
+![camera_correction_controller](../../assets/mappings/camera/camera/camera_correction_controller.png)
+
+出于浮点数精度等原因, 镜头有时可能跟预期位置偏差 `1px`, 所以这个实体就是用来补偿这个偏差的 (放在房间内即可)
+
+## [World Camera](https://github.com/EverestAPI/Resources/wiki/Camera#world-camera)
+
+![world_camera_panel](../../assets/mappings/camera/camera/world_camera_panel.png)
+
+> 需要下载并启用 [bits & bolts](https://gamebanana.com/mods/457887)
+
+`World Camera` 是一个实体, 会将子节点处对应的画面渲染到主节点处, 可用 `Flag` 控制是否生效
+
+<figure style="display: flex; gap: 1rem;">
+  <div>
+    <img src="/celeste_wiki/assets/mappings/camera/camera/world_camera_loenn.png" style="height: 300px;">   
+    <figcaption>Loenn 侧</figcaption>
+  </div>
+  <div>
+    <img src="/celeste_wiki/assets/mappings/camera/camera/world_camera.png" style="height: 300px;">   
+    <figcaption>游戏侧</figcaption>
+  </div>
+</figure>
+
+## [Speed Adaptive Camera Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#speed-adaptive-camera)
+
+![speed_adaptive_camera](../../assets/mappings/camera/camera/speed_adaptive_camera.png)
+
+> 需要下载并启用 [Chronia Helper](https://gamebanana.com/mods/507580)
+
+根据玩家的速度调整 `Camera Offset` 
+
+* `Camera Mode`:
+    * `normal`: 该 Trigger 会控制 X/Y 方向的 `Camera Offset`
+    * `X Only`: 该 Trigger 只会控制 X 方向的 `Camera Offset`
+    * `Y Only`: 该 Trigger 只会控制 Y 方向的 `Camera Offset`
+* `Flag Control`:
+    * `disabled`: 不使用 `Flag` 控制该 Trigger 
+    * `flagNeeded`: 使用 `Flag` 控制该 Trigger 是否生效
+    * `flagInverted`: 使用 `Inverted Flag`, 即反转后的 `Flag` 控制该 Trigger 是否生效
+* `Multiplier X/Y`: 速度对 `Camera Offset` 影响的倍率
+* `Trigger Mode`: 
+    * `toggle`: 离开 Trigger 后不会再改变 `Camera Offset`
+    * `inZone`: 离开 Trigger 后会将 `Camera Offset` 重置为进入时的状态
+* `Only Once`: 离开 Trigger 后是否销毁该 Trigger
+
+## [Camera Constraint Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#camera-constraint-trigger)
+
+![camera_constraint](../../assets/mappings/camera/camera/camera_constraint.png)
+
+> 需要下载并启用 [Prog Helper](https://gamebanana.com/mods/497854)
+
+
+该 Trigger 用来限制 `Camera Offset` 的上界和下界, 它的限制效果会在玩家死亡后消失 (需要重新设置), 切板之类的不会
+
+适合用在高速场景
+
+* `Min X`: `Camera Offset X` 最小能是多少
+* `Max X`: `Camera Offset X` 最大能是多少
+* `Min Y`: `Camera Offset Y` 最小能是多少
+* `Max Y`: `Camera Offset Y` 最大能是多少
+* `Has Min X`: `Min X` 是否生效
+* `Has Max X`: `Max X` 是否生效
+* `Has Min Y`: `Min Y` 是否生效
+* `Has Max Y`: `Max Y` 是否生效
+* `Flag`: 是否当 `Flag` 存在时才启用该 Trigger (需要在进入 Trigger 前设置, 在内部设置无效)
+* `Inverted`: 是否反转 `Flag` 的效果
+* `Only Once`: 是否在 Trigger 触发后销毁自己
+
+## [Camera Hard Border Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#camera-hard-border)
+
+![camera_hard_border](../../assets/mappings/camera/camera/camera_hard_border.png)
+
+> 需要下载并启用 [Prog Helper](https://gamebanana.com/mods/497854)
+
+该 Trigger 用来 "阻挡" 镜头的移动, 作用/用法类似于 [`Camera Offset Border Trigger`](#camera-offset-border-trigger),
+但是这个 Trigger 造成的镜头阻挡是瞬间的, 而不是慢慢移动到对应位置
+
+## [One Way Camera Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#one-way-camera-trigger)
+
+![one_way_camera](../../assets/mappings/camera/camera/one_way_camera.png)
+
+> 其实叫 `One-Way Camera`, 搜 `One Way` 搜不到
+> 
+> 需要下载并启用 [Maddie's Helping Hand](https://gamebanana.com/mods/53687)
+
+在该 Trigger 内部时, 镜头只能往某个方向移动, 适合不怎么往返的路线, 减少镜头的晃动
+
+**示例**
+
+* [NoahCrawfish: 平台跳跃游戏的镜头没你想的那么简单](https://www.bilibili.com/video/BV1mmha6EErZ/?t=544)
+
+**属性介绍**
+
+* `Left`: 镜头是否能向左移动
+* `Right`: 镜头是否能向右移动
+* `Up`: 镜头是否能向上移动
+* `Down`: 镜头是否能向下移动
+* `Flag`: 当 `Flag` 存在时, 该 Trigger 才会生效 (留空表示该选项不起作用)
+* `Block Player`: 是否阻挡玩家, 当启用时
+    * 如果 `Left` 未勾选, 则在镜头左侧生成屏障
+    * 如果 `Right` 未勾选, 则在镜头右侧生成屏障
+    * 如果 `Up` 未勾选, 则在镜头上侧生成屏障
+    * 如果 `Down` 未勾选, 则在镜头下侧生成 `Kill Box`
+
+比如如果 `Block Player` 勾选, 且只勾选 `Right`, 效果会像这样
+
+![one_way_camera_block_player](../../assets/mappings/camera/camera/one_way_camera_block_player.png)
+
+## [Reel Camera](https://github.com/EverestAPI/Resources/wiki/Camera#reel-camera)
+
+![reel_camera](../../assets/mappings/camera/camera/reel_camera.png)
+
+> 需要下载并启用 [Saladim Helper](https://gamebanana.com/mods/472134)
+
+
+当玩家触碰到该实体时, 相机会先花费 `Start Move Time` 时间移动到第一个节点, 之后经过 `Start Delay` 开始逐节点移动
+
+你可以通过设置 `Delay Sequence` 和 `Move Time Sequence` 来调整后续镜头移动前的等待时间和移动所花时间, 
+用逗号分隔且长度必须刚好等于 `节点数 - 1`, 也就是镜头会往下一个节点走, 然后停一下, 然后接着往下一个节点走,
+滚动完后返还镜头控制权
+
+* `Set Offset On Finished`: 是否在滚动结束后设置玩家的 `Camera Offset`
+    * `Offset X`: `Camera Offset X` 对应的值, [`Camera Offset Trigger`](#camera-offset-trigger) 的 `Camera Offset X` 1 单位对应这里 48 单位  
+    * `Offset Y`: `Camera Offset Y` 对应的值, [`Camera Offset Trigger`](#camera-offset-trigger) 的 `Camera Offset X` 1 单位对应这里 32 单位  
+
+正常情况下, 当你触发该实体后, 
+
+* 如果玩家掉落到镜头下方, 则会被杀死
+* 如果玩家超出镜头左右范围则不会被杀死且位置会被限制回镜头内, 但是开启 `Squash Horizontal Area` 后会被杀死
+* 如果玩家超出镜头上方时则不会被杀死且位置会被限制回镜头内, 但是如果镜头正在向下运动或是有向下运动的趋势时玩家会被杀死 
+
+## [Smoothie Camera Target Trigger](https://github.com/EverestAPI/Resources/wiki/Camera#smoothie-camera-target-trigger)
+
+![smoothie_camera_target](../../assets/mappings/camera/camera/smoothie_camera_target.png)
+
+> 需要下载并启用 [Sardine7 Helper](https://gamebanana.com/mods/53683)
+
+作用与 [`Camera Target Trigger`](#camera-target-trigger) 类似, 但是可以控制 X/Y 两个维度
+
+## [Camera Entity Target Controller](https://github.com/EverestAPI/Resources/wiki/Camera#camera-entity-target-controller)
+
+![camera_entity_target_controller](../../assets/mappings/camera/camera/camera_entity_target_controller.png)
+
+> 需要下载并启用 [Game Helper](https://gamebanana.com/mods/452041)
+
+该控制器可以用来控制镜头的跟随对象
+
+* `Only Type`: 需要跟随的对象对应的[类名](../loenn/faq.md#type), 比如跟随 Theo 水晶可以填写 `Celeste.TheoCrystal`, 如果有多个对象则找一个最近的跟随
+* `Offset X`: `Camera Offset X` 对应的值, [`Camera Offset Trigger`](#camera-offset-trigger) 的 `Camera Offset X` 1 单位对应这里 48 单位
+* `Offset Y`: `Camera Offset Y` 对应的值, [`Camera Offset Trigger`](#camera-offset-trigger) 的 `Camera Offset X` 1 单位对应这里 32 单位  
+* `Lerp`: 表示镜头在玩家镜头位置跟这个新的镜头位置之间的插值, 范围 `0 ~ 1` (当然你填超出范围的数也是没问题的, 因为没 `clamp`) 
+* `Reset On False`: 勾选后, 当 `Flag` 不存在镜头会跟随到玩家, 当 `Flag` 存在, 镜头会跟随上述找到的对象
+* [`Debug`](../cmd.md): 输出一些跟上述找到的对象有关的信息

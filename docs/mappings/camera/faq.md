@@ -15,10 +15,10 @@
 ```yaml title="Mods/LuckyTestMap/Maps/Lucky_boy/0/FirstMap.meta.yaml"
 ExCameraMetaData:
     EnableExtendedCamera: true
-    RestingZoomFactor: 1.0
+    RestingZoomFactor: 1.0 # 镜头默认缩放倍率
 ```
 
-之后直接在游戏中使用 [`Camera Zoom`](./camera.md#camera-zoom) 等 Trigger 即可
+之后直接在游戏中使用 [`Camera Zoom Trigger`](./camera.md#camera-zoom-trigger) 等 Trigger 即可
 
 ![excamera_dynamics](../../assets/mappings/camera/excamera_dynamics.png){style="width: 700px; title="123"}
 
