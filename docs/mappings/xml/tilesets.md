@@ -66,9 +66,11 @@ Tileset, 即 Tile-set, **瓦片-集**
 如果我们把所有的砖通知一遍, 那是不是就不用我们自己一个个挑素材啦, 事实也正是如此, 蔚蓝和 Loenn 都是通过这种方法渲染正确的素材单元的,
 而这个规则则是通过 `ForegroundTiles.xml` 来配置的, 所以接下来讲解 `ForegroundTiles.xml`
 
+<a id="variant"></a>
+
 ## 随机性
 
-每个规则 (位置)对应多种同类贴图, 这样在绘制的时候就可以从中选择一个以实现细微的变化
+一个单元格通过上述规则确定了自己的形态, 每种形态可能对应多个素材单元, 这样在绘制的时候就可以从中随机选择一个以实现细微的变化
 
 <figure>
     <img src="/celeste_wiki/assets/mappings/xml/tileset/random.png" alt="tileset" style="height: 200px; image-rendering: pixelated;">   
@@ -109,38 +111,79 @@ Tileset, 即 Tile-set, **瓦片-集**
 </Data>
 ```
 
-
 下面我们先来简单介绍一下 `<Tileset></Tileset>` 中相对重要的属性
 
 > 更多属性请参考 [Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Tileset-Format-Reference)
 
-* `id`: 单个特殊字符(可以用英文字母, 也可以用单个汉字), 你可以理解为你的 tileset 的槽位或是别名, 游戏需要通过 id 找到你的 tileset, 所以显然 id 不能重复 
-* `path`: 指明了 tileset 对应的素材位置, 路径相对于 `Gameplay/tilesets` 文件夹, 例如上面提到的 `cement` 对应的 `path` 就是 `cement`
-* `sound`: Everest 添加的额外配置, 表示玩家踩上去什么声音, 写在 `set` 节点里, 如 `<set ... sound="1"/>`, 具体数字对应的声音可以看[对照表](../audio/tile_sounds.md)
+### `id`
 
-现在你已经知道游戏是如何找到你的 tileset 素材了, 那么上文提到的规则呢, 这是由 `<set></set>` 节点决定的
+* 含义: Tileset 的槽位或是别名, 游戏需要通过 `id` 找到你的 Tileset, 如果 `id` 跟别的砖撞了, 游戏就无法分辨该 `id` 对应的是哪个砖
+* 格式: 单个特殊字符, 可以用英文字母, 也可以用单个汉字
+
+### `path`
+
+* 含义: Tileset 对应的素材文件相对路径
+* 格式: 从 `Gameplay/tilesets` 文件夹往下开始填, 例如上面提到的 `cement`, 路径是 `Gameplay/tilesets/cement.png`, 其对应的 `path` 就是 `cement`
+
+### `sound`
+
+> Everest 添加的额外配置
+
+* 含义: 表示玩家踩在砖上发出什么声音
+* 格式: 声音数字代号, 例如如 `<Tileset ... sound="33"></Tileset>` 表示草地的声音, 具体数字对应的声音可以查看[对照表](../audio/tile_sounds.md) 
+
+### `displayName`
+
+> Loenn 添加的额外配置
+
+你可以给你的 Tileset 自定义一个名字, 例如 `<Tileset id="A" copy="z" path="scifi" displayName="WOW"/>`
+
+---
+
+现在你已经知道游戏是如何找到你的 Tileset 素材了, 那么上文提到的规则呢, 这是由 `<set></set>` 节点决定的
 
 `<set></set>` 节点由 `<Tileset></Tileset>` 包含着, 一条 `<set></set>` 对应一个规则, 它的属性有:
 
-* `mask`: 也就是上文提到的**规则**, 表示对应位置砖周围的情况, 它有三种写法
+### `mask`
+
+* 含义: 也就是上文提到的**规则**, 表示对应位置砖周围的情况
+* 格式: 
     - `xxx-x1x-xxx`: 去掉 `-` 分三行排列刚好是个 `3 x 3` 的块, 块中间的位置对应当前砖的位置, 然后我们需要在这个九宫格内填规则, `0` 表示无砖, `1` 表示有砖, `x` 表示任意, 因为九宫格的中间对应当前砖, 所以永远填 `1`,
     - `padding`: 表示最外层的里面一层(例如对于 `4 x 4` 的块, 它的 `padding` 对应 `3 x 3` 那一圈的位置),
     - `center`: 表示剩下的没有被考虑的所有情况(一般来说就是指比 `padding` 还要里面的)
-* `tiles`: 对应素材单元的坐标集合(格式为 `(第 x 列, 第 y 行)`, 列从左往右数, 行从上往下数, 位置从 0 开始)
+
+### `tiles`
+
+* 含义: `id` 确定了砖的样式, 一个单元格通过询问 `mask` 确定了自己的形态, `tiles` 表示为这个形态添加多个[素材单元的变种](#variant), 以实现细微自然的变化感
+* 格式: `(第 x 列, 第 y 行)`, 列从左往右数, 行从上往下数, 位置从 0 开始, 如果有多个变种则用冒号分隔
 
 <figure>
     <img src="/celeste_wiki/assets/mappings/xml/tileset/cement_cell_index.png" alt="tileset" style="width: 153px; image-rendering: pixelated;">   
     <figcaption>比如这里涂白的单元格坐标为 (3, 1)</figcaption>
 </figure>
 
-一个单元格通过询问 mask 找到适合的 `<set></set>`, 然后从它的 `tiles` 属性中随机抽一个来用, 以实现自然的变化感
+---
 
 现在我们知道了规则是如何配置的, 那么让我们反过来看 `<Tileset></Tileset>` 中剩下的几个属性吧
 
-* `copy`: 需要拷贝配置(即内部的 `<set></set>` 节点)的 tileset 对应的 id, 这样我们就可以只写一个 template (模板) 然后复用了, 当然我们可以继续写 `<set></set>` 节点来覆盖拷贝过来的一部分配置
-* `ignores`: 需要忽略的 tileset 对应的 `id` (填 `*` 就是 ignore 所有其他类型的砖), 被忽略后, 周围要是有那个 tileset, 则那个位置在当前 tileset 的 mask 中会被视为空气, 即 `0(无砖)` (常用于制作 tile 分层的效果, 让画面的层次更丰富)
+### `copy`
 
-[//]: # (todo: Loenn 提供的 displayName)
+* 含义: 将某个 Tileset 内部的规则 `<set></set>` 拷贝到自己名下, 这样你就不用频繁地复制粘贴规则了, 当然我们可以继续写 `<set></set>` 来添加或是覆盖拷贝过来的规则
+* 格式: 拷贝对象 Tileset 对应的 `id`
+
+### `ignores`
+
+* 含义: 表示当前 Tileset 会忽略的其他 Tileset 有哪些, 如果当前 Tile 紧贴着到了被忽略的砖, 则被忽略的砖在当前 Tileset 的规则 `mask` 中会被视为空气, 即 `0(无砖)`, 这样当前砖就会显示出边缘, 而不是跟另一个砖相互融合, 常用于制作 Tile 分层的效果, 让画面的层次更加丰富
+* 格式: 需要忽略的 Tileset 对应的 `id`, 如果有多项则用逗号分隔, 填 `*` 就表示忽略所有其他的砖
+
+例如官图的枯草砖 `<Tileset id="l" path="deadgrass" ignores="*">` 就忽略了其他砖块, 显示出了清晰的边缘
+
+![00](../../assets/mappings/xml/tileset/00.png){style="height: 250px; image-rendering: pixelated; title=123"}
+
+如果删掉 `ignores` 就会导致两种砖块黏在一起
+
+![01](../../assets/mappings/xml/tileset/01.png){style="height: 250px; image-rendering: pixelated; title=123"}
+
 
 ## 使用官图的 `ForegroundTiles.xml`
 
@@ -155,8 +198,11 @@ Tileset, 即 Tile-set, **瓦片-集**
     <figcaption>路径: Graphics/Atlases/Gameplay/tilesets/WikiTest/colored_snow</figcaption>
 </figure>
 
-然后找到官图的 `ForegroundTiles.xml` (在 `Celeste/Content/Graphics/` 下), 粘贴到自己的路径下比如 `Graphics/{作者名}/{项目名}/`(也就是要[套文件夹](../mod_structure.md#conflict)),
-随后照猫画虎的在后面填上跟 snow tileset 类似的配置, 然后改改 id, 改改素材路径就好了
+然后找到官图的 `ForegroundTiles.xml` (在 `Celeste/Content/Graphics/` 下)
+
+将其粘贴到自己的路径下比如 `Graphics/{作者名}/{项目名}/` (也就是要[套文件夹](../mod_structure.md#conflict))
+
+随后照猫画虎的在后面填上跟 `<Tileset id="3" copy="z" path="snow"/>` 类似的配置, 然后改一个新的 `id`, 把素材路径换成自己的就好了
 
 ```xml hl_lines="10"
 <Data>
@@ -181,13 +227,13 @@ Tileset, 即 Tile-set, **瓦片-集**
 
 ## 使用别人的 `ForegroundTiles.xml`
 
-由于官图的 `ForegroundTiles.xml` 配置过于简单, 各个 Tile 之间没有明确的联系, 导致画砖效率低下, 于是大伙儿写出了更优的配置来方便画砖
+由于官图的 `ForegroundTiles.xml` 配置过于简单, 各个 Tile 之间没有明确的联系, 导致画砖/预览等操作体验都不是很好, 于是社区中的人写出了更优的配置供大家使用
 
 ### [`ForegroundTiles.xml` by 0x0ade](https://github.com/EverestAPI/Resources/wiki/Custom-Tilesets)
 
 <figure markdown>
   ![tileset](../../assets/mappings/xml/tileset/0x0ade_tileset_template.png){style="width: 600px; image-rendering: pixelated; title=123"}
-  <figcaption>tileset 模板(若要使用, 请右键另存为)</figcaption>
+  <figcaption>tileset 模板</figcaption>
 </figure>
 
 <figure markdown>
