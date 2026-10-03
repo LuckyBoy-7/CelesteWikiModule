@@ -2,84 +2,252 @@
 
 > ￥: 会找 custom 实体直接改贴图能改 80%, 会改 xml 能改 95%, 会 code 自己写实体能改 100%
 
-参考
+参考/整合/摘抄
 
-* [正常替换](https://github.com/EverestAPI/Resources/wiki/Replacing-A-Texture)
-* [高级替换](https://github.com/EverestAPI/Resources/wiki/Reskinning-Entities)
-* [[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改(xml进阶篇)](https://www.bilibili.com/video/BV1cP4y1m7B2)
-* 冬菜教程
-* [替换素材 by 底龙(视频)](https://www.bilibili.com/video/BV1uUHYzLEu5/)
+* [替换素材 by 底龙 (视频)](https://www.bilibili.com/video/BV1uUHYzLEu5/)
+* [[Celeste蔚蓝]作图教程第五章B面-自定义对话人物与实体贴图修改 (xml 进阶篇)](https://www.bilibili.com/video/BV1cP4y1m7B2)
+* [冬菜教程](../../../assets/mappings/overall/dong_cai.pdf)
+* [正常替换 by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Replacing-A-Texture)
+* [高级替换 by Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Reskinning-Entities)
 
-由于图片是最常见最需要被替换的资源, 所以本章主要围绕图片展开
+由于图片是最常见的最需要被替换的资源, 所以本章主要围绕图片展开, 并给出一些替换素材的示例以供参考
 
-总的来说, 蔚蓝有两种方式拿到对应的图片:
+不过在此之前你最好了解下 [Everest 合并 Mod 资源的逻辑](../../mod_structure.md#conflict), 这有助于你理解替换素材背后的本质
 
-1. 通过硬编码的路径直接加载图片
-2. 通过 `Sprites.xml` 配置文件加载图片/动画
 
-在丰富的 Helper 生态下我们又多了无数种方式(都自己写代码了想怎么加载怎么加载), 接下来逐一介绍具体替换方式,
-不过在此之前你最好了解下 [Everest 处理 Mod 资源的逻辑](../../mod_structure.md#conflict), 这有助于你理解替换素材背后的机制
+<a id="force"></a>
 
-## 对于硬编码的路径
+## 暴力替换 `Booster` 贴图
 
-### 暴力替换(方便, 但不泛用)
+![00](../../../assets/mappings/graphics/replace_assets/replace_assets/force/00.png)
 
-> 别整那些有的没的, 直接把官图素材覆盖了不就不用捣鼓路径了?
+首先找到 `Booster` 图片素材放哪儿了, 如下
 
-如果你已经知道了 Everest 在合并 Mod 和官图资源时同路径文件会发生覆盖,
-那么替换素材这件事就是非常直观的, 
-因为官图图片素材都存在 <code>../Steam/steamapps/common/Celeste/<font color="red">Content/</font><font color="green">Graphics/Atlases/</font></code> 里,
-我们的素材都存在 <code>../Steam/steamapps/common/Celeste/<font color="red">Mods/MyMod/</font><font color="green">Graphics/Atlases/</font></code> 里, 那么怎么换就不用我多说了吧:
-直接照着[解包素材](../../useful_links.md#_1)在同路径放个同名图片把官图的覆盖了就好了,
-这种方法可以更换蔚蓝中几乎所有非程序生成的素材, 唯一不好的点就是"这会污染其他 Mod", 因为这么做的影响是全局的 (暴力替换的适用范围仅限于做着玩/小范围传播)
+![01](../../../assets/mappings/graphics/replace_assets/replace_assets/force/01.png)
 
-### 替换路径(不常用)
+然后把素材尻到自己 Mod 的相同路径下, 并改色以方便查看效果
 
-> 偷偷在找图片 A 的时候替换成找图片 B 不就好了
+![02](../../../assets/mappings/graphics/replace_assets/replace_assets/force/02.png)
 
-通过代码手段将硬编码的路径导向自定义的路径:
+顺带一提 Windows 现在可以在资源管理器上打开多个条目了, 这方便你在不同文件夹之间来回切换
 
-* 可以使用 [LocalizationHelper](https://gamebanana.com/mods/644851)([镜像](https://celeste.weg.fan/submissions/detail/488461972699636480/localizationhelper)): 不同语言下可以使用不同的替换方式, 在 `.json` 文件中配置
+![03](../../../assets/mappings/graphics/replace_assets/replace_assets/force/03.png)
 
-### 重新生成(次常用)
+然后就完事了, 因为你的素材覆盖了官图的素材
 
-> 偷偷在你生成图片/动画对象后我把他删了换成自己的不就好了
+![04](../../../assets/mappings/graphics/replace_assets/replace_assets/force/04.png)
 
-* 可以使用 [hELPER](../../useful_helpers/hELPER.md) 的 Sprite Replace Trigger
-* 可以使用 GameHelper 的 EntityRespriter 实体(稍微有点复杂)
+我的天哪, 这简直太方便了, 但是谁能告诉我为什么所有地方的素材都被换了啊💩
 
-## 对于官图的 `Sprites.xml`(常用)
+> 如果你并不在意别人的目光, 或者只是自嗨的话那当然是怎么简单怎么来,
+> 但 Mod 生态是需要大家一起去维护的, 所以如果可以的话还是尽量不要使用暴力替换
 
-你可能需要先了解一下什么是 [XML](../../xml/xml.md)
+![05](../../../assets/mappings/graphics/replace_assets/replace_assets/force/05.png)
 
-```xml title="Content/Graphics/Sprites.xml"
+<a id="sprites_xml"></a>
+
+## 正确替换 `Booster` 贴图
+
+我们发现 `Booster` 的动画配置可以在官图的 [`Sprites.xml`](../../xml/sprites_xml.md) 中找到
+
+所以我们可以通过修改这一文件把引向官图的 `Booster` 素材路径改成自己的路径
+
+```xml title="路径: Celeste/Content/Graphics/Sprites.xml" hl_lines="3"
 
 <Sprites>
-    <player path="characters/player/" start="idle">
-        ...
-    </player>
+    <!--  其他内容  -->
+    <booster path="objects/booster/" start="loop">
+        <Justify x="0.5" y="0.5"/>
+        <Loop id="loop" path="booster" delay="0.1" frames="0-4"/>
+        <Loop id="inside" path="booster" delay="0.1" frames="5-8"/>
+        <Loop id="spin" path="booster" delay="0.06" frames="18-25"/>
+        <Anim id="pop" path="booster" delay="0.08" frames="9-17"/>
+    </booster>
 </Sprites>
 ```
 
-简单来说 `Sprites.xml` 是蔚蓝的一个管理所有动画的配置文件, 对于如上的内容, 蔚蓝会通过 player 这个标签加载 path(相对于`Gameplay 文件夹`)中的素材, 再根据 `...` 中的配置来组合出游戏中的一个动画对象
+首先我们把官图的 `Sprites.xml` 粘贴到我们自己的 Mod 中, 路径为 `你的 Mod/Graphics/{套文件夹}/Sprites.xml`, 比如这里为 `/Graphics/Wiki/Sprites.xml`
 
-如果你想替换官图 `Sprites.xml` 中某部分的配置(比如这里的图片根路径 `path`), 你只需要把自己[自定义的 `Sprites.xml`](../../xml/sprites_xml.md#spritesxml_2) 放在`Mods/MyMod/Graphics/MyMod/Sprites.xml` 下(只要不跟官图 xml 撞路径即可), 然后在 Loenn 元数据中指定这个 XML 即可, 这样在运行这张图时就会用这个 XML 覆盖官图的 XML, 就不会污染其他 Mod 了
+> 如果你并不清楚套文件夹是什么意思, 请参考[教程](../../mod_structure.md#conflict)
 
-那为啥路径那么重要呢, 什么时候可以同路径, 什么时候要在 Loenn 中选呢, 如果你好奇的话, 可以了解下 [Sprites.xml 的覆盖原理](../../mod_structure.md#spritesxml)
+![00](../../../assets/mappings/graphics/replace_assets/replace_assets/sprites_xml/00.png)
 
-## Helper 提供的手段
+然后在 [Loenn 的元数据](../../metadata/loenn_metadata.md#xml) 中选择你的 `Sprites.xml`, 表示这张地图将使用这个 `Sprites.xml` 为配置, 如下
 
-### 使用自定义实体(最常用)
+![01](../../../assets/mappings/graphics/replace_assets/replace_assets/sprites_xml/01.png)
 
-> coder 写的 Helper 里自带的实体, 功能比官图自带的实体更加强大, 一般都支持换肤功能
+然后我们把配置中的素材路径改成自己的即可
 
-一般就是那些以 Custom, Reskinable 之类的词为前缀的扩展实体, 显然 Helper 作者都帮我们写好了, 我们照着注释把要填的填上就好了, 一般都是填
+```xml title="路径: /Graphics/Wiki/Sprites.xml" hl_lines="3"
 
-* 图片路径, 一般相对与 gameplay 或者原贴图所在文件夹([不知道路径填什么](../../loenn/faq.md#_11))
-* Sprites XML ID
-* 或者作者自定义的表达式
-* 等等
+<Sprites>
+    <!--  其他内容  -->
+    <booster path="objects/Wiki/booster/" start="loop">
+        <Justify x="0.5" y="0.5"/>
+        <Loop id="loop" path="booster" delay="0.1" frames="0-4"/>
+        <Loop id="inside" path="booster" delay="0.1" frames="5-8"/>
+        <Loop id="spin" path="booster" delay="0.06" frames="18-25"/>
+        <Anim id="pop" path="booster" delay="0.08" frames="9-17"/>
+    </booster>
+</Sprites>
+```
 
-## 自己写 Code(次常用)
+![02](../../../assets/mappings/graphics/replace_assets/replace_assets/sprites_xml/02.png)
+
+于是我们就能成功替换素材而不影响官图或是其他 Mod 了
+
+![04](../../../assets/mappings/graphics/replace_assets/replace_assets/sprites_xml/04.png)
+
+![03](../../../assets/mappings/graphics/replace_assets/replace_assets/sprites_xml/03.png)
+
+<a id="helper"></a>
+
+## 替换 `Refill` 贴图
+
+如果一个实体并没有使用 `Sprites.xml` 中的配置, 而是在代码里直接使用了对应的贴图, 比如这里的 `Refill`, 那我们该怎么办呢
+
+![00](../../../assets/mappings/graphics/replace_assets/replace_assets/refill/00.png)
+
+很简单, 我不用不就是了?
+
+我们看看 Helper 有没有给我们提供一些能改皮肤的实体, 于是我们找到了 `Refill [ChroniaHelper]`
+
+![01](../../../assets/mappings/graphics/replace_assets/replace_assets/refill/01.png)
+
+接着我们按照作者的注释来放置我们的图片素材, 如下
+
+![02](../../../assets/mappings/graphics/replace_assets/replace_assets/refill/02.png)
+
+然后找到官图素材
+
+![03](../../../assets/mappings/graphics/replace_assets/replace_assets/refill/03.png)
+
+粘一份到自己的 Mod 里, [套文件夹](../../mod_structure.md#conflict)并改色
+
+![04](../../../assets/mappings/graphics/replace_assets/replace_assets/refill/04.png)
+
+然后按照注释, 填上正确路径 `objects/Wiki/refill/`
+
+![05](../../../assets/mappings/graphics/replace_assets/replace_assets/refill/05.png)
+
+即可完成换肤
+
+> 别忘了开对应 Mod, 不开我用什么啊
+
+![06](../../../assets/mappings/graphics/replace_assets/replace_assets/refill/06.png)
+
+<a id="helper_xml"></a>
+
+## 替换 `CollabUtils2/WarpPedestal` 贴图
+
+如果 Helper 实体的配置是让你填 `Sprites.xml` 中的动画组 ID 的话也是跟替换原版 XML 同理, 只需要[到 Helper 文件夹内部找到它的
+`Sprites.xml` 里的内容即可](https://www.bilibili.com/video/BV1uUHYzLEu5/?t=3387)
+
+例如 `CollabUtils2/WarpPedestal`
+
+![00](../../../assets/mappings/graphics/replace_assets/replace_assets/helper_xml/00.png)
+
+```xml title="路径: CollabUtils2/Graphics/Sprites.xml"
+
+<Sprites>
+    <!-- 其他配置 -->
+    <CollabUtils2_placeholderOrb path="CollabUtils2/placeholderorb/" start="empty">
+        <Justify x="0.5" y="0.92"/>
+        <Loop id="empty" path="placeholderorb" frames="0"/>
+        <Anim id="before_fill" path="placeholderorb" delay="1" frames="0*2" goto="fill"/>
+        <Anim id="fill" path="placeholderorb" frames="1-11" delay="0.1" goto="full"/>
+        <Loop id="full" path="placeholderorb" frames="12"/>
+    </CollabUtils2_placeholderOrb>
+</Sprites>
+
+```
+
+如果
+
+> 如果你好奇为什么 CollabUtils2 的 `Sprites.xml` 可以跟官图的 `Sprites.xml` 同路径, 可以参考[路径冲突 -- `Sprites.xml`](../../mod_structure.md#conflict_sprites_xml)
+
+之后找到对应素材后就完全跟前面的换法一样了 (尻素材, 套路径, 抄配置, 改路径, 最后在实体面板设置即可)
+
+![01](../../../assets/mappings/graphics/replace_assets/replace_assets/helper_xml/01.png)
+
+### 注意
+
+如果有些实体并没有给你开放替换皮肤的配置, 但你还是能在它的文件夹中找到相关的 `Sprites.xml`, 这说明其实还是能换的, 只不过人家没把配置开放出来而已
+
+比如肯定存在一条世界线 `CollabUtils2/WarpPedestal` 使用了 `CollabUtils2_placeholderOrb` 这个动画组 ID, 但是没在属性面板里开放
+
+> 这里只是举例说明把 `CollabUtils2/WarpPedestal` 的 `Sprite` 属性[删了](../../loenn/faq.md#loenn_data)
+
+![02](../../../assets/mappings/graphics/replace_assets/replace_assets/helper_xml/02.png)
+
+<a id="sprite_replace"></a>
+
+## 替换 `CommunalHelper/MoveSwapBlock` 贴图
+
+如果一个实体是 Helper 自定义的新实体, 但是它既没有为你提供可修改皮肤的配置, 也没有在代码里[使用 `Sprites.xml`](#sprites_xml),
+又或是使用了自定义的外部无法干预的 `Sprites.xml`, 像这里的 `CommunalHelper/MoveSwapBlock`, 那我们该怎么办呢
+
+![00](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/00.png)
+
+我们可以使用 [`Sprite Replace Trigger`](../../useful_helpers/hELPER.md) 动态的将对应实体的皮肤更换成我们自己的
+
+首先找到 `CommunalHelper/MoveSwapBlock` 用了哪些贴图
+
+![01](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/01.png)
+
+素材对应的公共路径为 `objects/CommunalHelper/moveSwapBlock/`, 我们把素材尻过来随便放在一个地方, 比如这里的 `objects/Wiki/moveSwapBlock`, 然后简单改个色方便查看换肤效果
+
+![02](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/02.png)
+
+然后在 `Sprite Replace Trigger` 中填入要换肤对象的[完全限定名](../../loenn/faq.md#type)和替换公共路径的新路径即可
+
+* `Affected Types`: `Celeste.Mod.CommunalHelper.Entities.MoveSwapBlock`
+* `Sprite Path`: `objects/Wiki/moveSwapBlock`
+
+![03](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/03.png)
+
+效果
+
+![04](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/04.png)
+
+你会发现还有一部分素材使用的是官图素材
+
+![05](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/05.png)
+
+而这部分在代码中是手动绘制的, 所以用 `Sprite Replace Trigger` 不太能改这部分, 所以我们只能暴力替换素材路径, 例如使用 `Atlas Path Replacer`
+
+我们先把官图素材尻过来简单改个色, 如下
+
+![06](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/06.png)
+
+然后把官图素材路径映射到我们的素材路径
+
+![07](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/07.png)
+
+* `objects/swapblock/block`: `objects/Wiki/moveSwapblock/orig/block`
+* `objects/swapblock/blockRed`: `objects/Wiki/moveSwapblock/orig/blockRed`
+* `objects/swapblock/target`: `objects/Wiki/moveSwapblock/orig/target`
+
+![08](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/08.png)
+
+但是你发现中间怎么还有个 `midBlockCardinal.png` 换不了, 因为这部分 `Communal Helper` 是动态修改且硬编码的, 所以我们仍然只能替换路径, 于是我们再次把这个素材尻过来
+
+![09](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/09.png)
+
+在 `Atlas Path Replacer` 里再加上一组
+
+* `objects/CommunalHelper/moveSwapBlock/midBlockCardinal`: `objects/Wiki/moveSwapblock/orig/midBlockCardinal`
+
+最终效果
+
+![10](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/10.png)
+
+## 根据语言替换贴图
+
+可以使用 [Localization Helper](https://gamebanana.com/mods/644851), 不同语言下可以使用不同的替换方式, 在 `.json` 文件中配置
+
+## 替换任意实体贴图
+
+自己写 [Code](../../code.md)🤣
 
 我又幻想了, 幻想自己写出让众人啧啧称赞的 Helper, 并且在香蕉网上收获上千 Like...

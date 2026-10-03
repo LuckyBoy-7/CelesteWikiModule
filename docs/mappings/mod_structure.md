@@ -275,6 +275,8 @@ c=你干嘛
 
 我们可以通过这个性质更改官图/Mod 文本, 比如 [FunnyDialog](https://www.bilibili.com/video/BV1Pz421i7SZ) 的应用
 
+<a id="conflict_sprites_xml"></a>
+
 ### 以 Sprites.xml 为例
 
 ```xml title="假设这是官图 Sprites.xml" hl_lines="2"
