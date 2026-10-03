@@ -5525,14 +5525,16 @@ _bb_global_myRandomGlobalName
 </code></pre></div></td></tr></tbody></table></div>
 <h4 id="_2">原理</h4>
 <p><code>bits &amp; bolts</code> 在游戏开始时会找到所有名称以 <code>_bb_global</code> 为前缀的房间并记录内部的实体, 当你进入一个新的房间加载完原来房间内的实体后, 它会额外加载之前记录的实体, 就好像这些实体被摆放在每个房间一样</p>
-<div class="admonition 注意">
-<p class="admonition-title">注意</p>
-<p>所以我想你应该明白了, 全局房间做的事只是在加载新房间的时候再加载一遍全局房间, 使得全局房间内的实体好像一直存在一样, 而不是真正意义上的不被销毁的一直存在, 所以当你发现全局房间不能使某一个实体生效, 不妨想想这个实体的运作机制是否适用于这个所谓的全局房间的机制呢</p>
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>所以我想你应该明白了, 全局房间做的事只是在加载新房间的时候再加载一遍全局房间, 使得全局房间内的实体好像一直存在一样, 而不是真正意义上的不被销毁的一直存在, 所以当你发现全局房间不能使某一个实体生效, 不妨想想这个实体的运作机制是否适用于这个所谓的全局房间的机制呢</p>
 </div>
+
 <div class="admonition warning">
-<p class="admonition-title">警告</p>
-<p><code>bits &amp; bolts</code> 会将全局房间内的实体向左下移动超过 <code>Vector2(1000000f, 1000000f)</code> 个单位, 所以如果此时你想弄个 trigger 覆盖所有房间, 你得在全局房间右上角框出一块<strong>超~</strong>大的矩形区域才行, <del>但是你为什么要这么做</del></p>
+    <p class="admonition-title">警告</p>
+    <p><code>bits &amp; bolts</code> 会将全局房间内的实体向左下移动超过 <code>Vector2(1000000f, 1000000f)</code> 个单位, 所以如果此时你想弄个 Trigger 覆盖所有房间, 你得在全局房间右上角框出一块<b>超~</b>大的矩形区域才行, 你也可以用 <code>Resize Trigger</code> 方便的调整它的大小和位置</p>
 </div>
+
 <h3 id="global-room-loader-controller">Global Room Loader Controller</h3>
 <p>如果你需要对应的全局房间只在特定房间内加载, 那么可以在对应全局房间内放置该实体, 并配置如下参数:</p>
 <ul>
