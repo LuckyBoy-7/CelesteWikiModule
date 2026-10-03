@@ -147,7 +147,6 @@ nav:
               - 大纲: "mappings/graphics/graphics.md"
               - 素材替换:
                   - 大纲: "mappings/graphics/replace_assets/replace_assets.md"
-                  - 示例: "mappings/graphics/replace_assets/example.md"
                   - 选关界面: "mappings/graphics/replace_assets/level_select.md"
                   - 其他: "mappings/graphics/replace_assets/others.md"
               - 滤镜: "mappings/graphics/color_grading.md"
