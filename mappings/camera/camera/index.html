@@ -6337,7 +6337,7 @@
 <li><a href="https://github.com/EverestAPI/Resources/wiki/Camera" target="_blank" rel="noopener">Everest Wiki 的镜头教程</a></li>
 </ul>
 <h2 id="camera-offset">Camera Offset</h2>
-<h3 id="camera-offset_1"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-offset-triggers" target="_blank" rel="noopener">Camera Offset</a></h3>
+<h3 id="camera-offset_1"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-offset" target="_blank" rel="noopener">Camera Offset</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_offset" src="../../../assets/mappings/camera/camera/camera_offset_trigger.png"></a></p>
 <p>一般情况下, 镜头会始终以玩家为中心跟随, <code>Camera Offset</code> 则表示镜头以 <strong>偏离玩家多少方向为中心跟随</strong>,
 <code>Camera Offset Trigger</code> 就是用来设置这个 <code>Camera Offset</code> 的, 比如我们将 <code>Camera X</code> 设置为 <code>1</code>, 那么镜头中心就会向右偏移, 像下面这样</p>
@@ -6368,7 +6368,7 @@
 <li>进入房间时, <code>Camera Offset</code> 会重置为<a href="../../loenn/room/#camera_offset">房间对应的 <code>Camera Offset</code> 的值</a></li>
 <li>蔚蓝的<a href="https://www.bilibili.com/video/BV1Mk4y1N76K/?t=158" target="_blank" rel="noopener">坐标系</a>与平时常见的平面直角坐标系相同, 只不过 y 轴方向向下, 所以 <code>Camera Y</code> 设置的越大镜头越往下</li>
 </ul>
-<h3 id="smooth-camera-offset"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#smooth-camera-offset-triggers" target="_blank" rel="noopener">Smooth Camera Offset</a></h3>
+<h3 id="smooth-camera-offset"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#smooth-camera-offset" target="_blank" rel="noopener">Smooth Camera Offset</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="smooth_camera_offset" src="../../../assets/mappings/camera/camera/smooth_camera_offset.png"></a></p>
 <blockquote>
 <p>更丝滑的 <code>Camera Offset Trigger</code></p>
@@ -6386,7 +6386,7 @@
   <code>Offset From</code></a></li>
 </ul>
 <h4 id="position-mode">Position Mode</h4>
-<p>在 <a href="#smooth-camera-offset-trigger"><code>Smooth Camera Offset Trigger</code></a> 部分我们已经浅浅体验过了 <code>Position Mode</code> 的作用, 这里我们再补充说明一下</p>
+<p>在 <a href="#smooth-camera-offset"><code>Smooth Camera Offset Trigger</code></a> 部分我们已经浅浅体验过了 <code>Position Mode</code> 的作用, 这里我们再补充说明一下</p>
 <p>游戏会根据玩家在 Trigger 内的相对位置和 <code>Position Mode</code> 的设置来计算出一个相对均匀变化的 <code>0 ~ 1</code> 的值, 这样在后续使用中通过这个值来改变镜头的某些参数时, 具体的表现相对就会更加温和丝滑</p>
 <ul>
 <li><code>NoEffect</code>: 默认为 <code>1</code></li>
@@ -6397,18 +6397,18 @@
 <li><code>HorizontalCenter</code>: 从左到中间 <code>0 ~ 1</code>, 从右到中间 <code>0 ~ 1</code></li>
 <li><code>VerticalCenter</code>: 从上到中间 <code>0 ~ 1</code>, 从下到中间 <code>0 ~ 1</code></li>
 </ul>
-<h3 id="momentum-camera-offset"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#momentum-camera-offset-trigger" target="_blank" rel="noopener">Momentum Camera Offset</a></h3>
+<h3 id="momentum-camera-offset"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#momentum-camera-offset" target="_blank" rel="noopener">Momentum Camera Offset</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="momentum_camera_offset" src="../../../assets/mappings/camera/camera/momentum_camera_offset.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/300395" target="_blank" rel="noopener">Furry Helper</a></p>
 </blockquote>
-<p>类似于 <a href="#smooth-camera-offset-trigger"><code>Smooth Camera Offset</code></a>, 但是 <a href="#position-mode"><code>Position Mode</code></a> 换为由速度控制</p>
+<p>类似于 <a href="#smooth-camera-offset"><code>Smooth Camera Offset</code></a>, 但是 <a href="#position-mode"><code>Position Mode</code></a> 换为由速度控制</p>
 <ul>
 <li><code>Momentum From</code>, <code>Momentum To</code>: 速度映射范围, 例如当速度小于 <code>Momentum From</code>, 游戏会使用 <code>Offset From</code>, 当速度大于 <code>Momentum To</code>, 游戏会使用 <code>Offset To</code>, 当速度在 <code>Momentum From</code>
   到 <code>Momentum To</code> 之间时, 游戏也会使用 <code>Offset From</code> 到 <code>Offset To</code> 之间的一个相对值</li>
 <li><code>Momentum Mode</code>: 表示使用玩家水平速度来映射还是垂直速度来映射 (似乎没有合速度选项)</li>
 </ul>
-<h3 id="flag-toggle-camera-offset"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#flag-camera-triggers" target="_blank" rel="noopener">Flag Toggle Camera Offset</a></h3>
+<h3 id="flag-toggle-camera-offset"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#flag-camera" target="_blank" rel="noopener">Flag Toggle Camera Offset</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="flag_toggle_camera_offset" src="../../../assets/mappings/camera/camera/flag_toggle_camera_offset.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/53687" target="_blank" rel="noopener">Maddie's Helping Hand</a></p>
@@ -6463,7 +6463,7 @@
 </li>
 </ul>
 <h2 id="camera-speed">Camera Speed</h2>
-<h3 id="camera-catchup-speed"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-catchup-speed-triggers" target="_blank" rel="noopener">Camera Catchup Speed</a></h3>
+<h3 id="camera-catchup-speed"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-catchup-speed" target="_blank" rel="noopener">Camera Catchup Speed</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_catchup_speed" src="../../../assets/mappings/camera/camera/camera_catchup_speed.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/53687" target="_blank" rel="noopener">Maddie's Helping Hand</a></p>
@@ -6475,7 +6475,7 @@
 <li><code>Revert On Leave</code>: 表示 Trigger 是触碰后永久生效还是只在内部生效</li>
 </ul>
 <h2 id="camera-border">Camera Border</h2>
-<h3 id="camera-offset-border"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-offset-border-triggers" target="_blank" rel="noopener">Camera Offset Border</a></h3>
+<h3 id="camera-offset-border"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-offset-border" target="_blank" rel="noopener">Camera Offset Border</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_offset_border" src="../../../assets/mappings/camera/camera/camera_offset_border.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/53687" target="_blank" rel="noopener">Maddie's Helping Hand</a></p>
@@ -6509,9 +6509,9 @@
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/497854" target="_blank" rel="noopener">Prog Helper</a></p>
 </blockquote>
-<p>该 Trigger 用来 "阻挡" 镜头的移动, 作用/用法类似于 <a href="#camera-offset-border-trigger"><code>Camera Offset Border Trigger</code></a>, 但是这个 Trigger 造成的镜头阻挡是瞬间的, 而不是慢慢移动到对应位置</p>
+<p>该 Trigger 用来 "阻挡" 镜头的移动, 作用/用法类似于 <a href="#camera-offset-border"><code>Camera Offset Border Trigger</code></a>, 但是这个 Trigger 造成的镜头阻挡是瞬间的, 而不是慢慢移动到对应位置</p>
 <h2 id="camera-target">Camera Target</h2>
-<h3 id="camera-target_1"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-advanced-target-triggers" target="_blank" rel="noopener">Camera Target</a></h3>
+<h3 id="camera-target_1"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-advanced-target" target="_blank" rel="noopener">Camera Target</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_target" src="../../../assets/mappings/camera/camera/camera_target.png"></a></p>
 <p>当你进入该 Trigger 时, 镜头会移动到该 Trigger 节点对应的位置</p>
 <p><strong>示例</strong></p>
@@ -6521,33 +6521,33 @@
 <p><strong>属性介绍</strong></p>
 <ul>
 <li><code>Lerp Strength</code>: 镜头移动速度, 如果数值小于 <code>1</code>, 那么在减慢镜头移动速度的情况下镜头会更偏向原来的位置而不是节点的位置, 如果数值大于等于 <code>1</code>, 那就是单纯的加快镜头移动速度</li>
-<li><a href="#position-mode"><code>Position Mode</code></a>: 与 <a href="#smooth-camera-offset-trigger">Smooth Camera Offset</a> 类似, 游戏会根据你在 Trigger 中的相对位置算出一个 <code>0 ~ 1</code> 的百分比值, 用于计算镜头原来的位置到
+<li><a href="#position-mode"><code>Position Mode</code></a>: 与 <a href="#smooth-camera-offset">Smooth Camera Offset</a> 类似, 游戏会根据你在 Trigger 中的相对位置算出一个 <code>0 ~ 1</code> 的百分比值, 用于计算镜头原来的位置到
   Trigger 节点位置的插值, 比如 <code>1</code> 对应 Trigger 节点位置, <code>0</code> 对应原位置 (相当于 Trigger 不生效)</li>
 <li><code>X Only</code>: 该 Trigger 是否只锁 X 方向</li>
 <li><code>Y Only</code>: 该 Trigger 是否只锁 Y 方向</li>
 <li><code>Delete Flag</code>: 如果房间加载时此 <a href="../../useful_helpers/mapping_utils/#flags">Flag</a> 存在, 那么该 Trigger 就不会被加载,
   如果是加载后此 <a href="../../useful_helpers/mapping_utils/#flags">Flag</a> 存在, 那么只起到不让 Trigger 生效的作用, Trigger 已造成的更改并不会复原</li>
 </ul>
-<h4 id="camera-advanced-target"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-advanced-target-triggers" target="_blank" rel="noopener">Camera Advanced Target</a></h4>
+<h4 id="camera-advanced-target"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-advanced-target" target="_blank" rel="noopener">Camera Advanced Target</a></h4>
 <p>与 <code>Camera Target Trigger</code> 类似, 但是可以精细调整 X/Y 方向的 <code>Lerp Strength</code> 和 <code>Position Mode</code></p>
-<h3 id="camera-target-corner"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-target-corner-trigger" target="_blank" rel="noopener">Camera Target Corner</a></h3>
+<h3 id="camera-target-corner"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-target-corner" target="_blank" rel="noopener">Camera Target Corner</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_target_corner" src="../../../assets/mappings/camera/camera/camera_target_corner.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/53699" target="_blank" rel="noopener">Honly Helper</a></p>
 </blockquote>
-<p>作用类似于 <a href="#camera-target-trigger"><code>Camera Target Trigger</code></a>, 但是 <a href="#position-mode"><code>Position Mode</code></a> 从对角开始算, 而不是水平或是垂直</p>
-<h3 id="camera-target-crossfade"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-target-crossfade-trigger" target="_blank" rel="noopener">Camera Target Crossfade</a></h3>
+<p>作用类似于 <a href="#camera-target"><code>Camera Target Trigger</code></a>, 但是 <a href="#position-mode"><code>Position Mode</code></a> 从对角开始算, 而不是水平或是垂直</p>
+<h3 id="camera-target-crossfade"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-target-crossfade" target="_blank" rel="noopener">Camera Target Crossfade</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_target_crossfade" src="../../../assets/mappings/camera/camera/camera_target_crossfade.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/53699" target="_blank" rel="noopener">Honly Helper</a></p>
 </blockquote>
-<p>作用类似于 <a href="#camera-target-trigger"><code>Camera Target Trigger</code></a>, 但是带两个 target 节点, 最终的实际 target 会通过 <a href="#position-mode"><code>Position Mode</code></a> 计算出来的值在两点之间插值</p>
-<h3 id="smoothie-camera-target"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#smoothie-camera-target-trigger" target="_blank" rel="noopener">Smoothie Camera Target</a></h3>
+<p>作用类似于 <a href="#camera-target"><code>Camera Target Trigger</code></a>, 但是带两个 target 节点, 最终的实际 target 会通过 <a href="#position-mode"><code>Position Mode</code></a> 计算出来的值在两点之间插值</p>
+<h3 id="smoothie-camera-target"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#smoothie-camera-target" target="_blank" rel="noopener">Smoothie Camera Target</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="smoothie_camera_target" src="../../../assets/mappings/camera/camera/smoothie_camera_target.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/53683" target="_blank" rel="noopener">Sardine7 Helper</a></p>
 </blockquote>
-<p>作用与 <a href="#camera-target-trigger"><code>Camera Target Trigger</code></a> 类似, 但是可以控制 X/Y 两个维度</p>
+<p>作用与 <a href="#camera-target"><code>Camera Target Trigger</code></a> 类似, 但是可以控制 X/Y 两个维度</p>
 <h2 id="camera-zoom"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#zoom" target="_blank" rel="noopener">Camera Zoom</a></h2>
 <h3 id="eased-camera-zoom">Eased Camera Zoom</h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="eased_camera_zoom" src="../../../assets/mappings/camera/camera/eased_camera_zoom.png"></a></p>
@@ -6555,7 +6555,7 @@
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/53647" target="_blank" rel="noopener">Frost Helper</a></p>
 </blockquote>
 <ul>
-<li><code>Target Zoom</code>: 镜头放大倍率, 如果要缩小镜头, 请使用 <a href="#camera-zoom-trigger">Camera Zoom</a></li>
+<li><code>Target Zoom</code>: 镜头放大倍率, 如果要缩小镜头, 请使用 <a href="#camera-zoom">Camera Zoom</a></li>
 <li><code>Easing</code>: 镜头缩放时的<a href="https://easings.net/zh-cn" target="_blank" rel="noopener">缓动</a>, 也就是线性缩放, 还是先快后慢, 先慢后快等</li>
 <li><code>Eased Duration</code>: 镜头缩放所需时间</li>
 <li><code>Revert On Leave</code>: 表示离开 Trigger 后是否要恢复镜头缩放</li>
@@ -6567,7 +6567,7 @@
 <li><code>Focus On Player</code>: 表示是否让玩家居中在镜头内 (镜头似乎会抖动)</li>
 <li><code>Disable In Photosensitive Mode</code>: 表示在玩家开启光敏模式的前提下是否禁用该 Trigger, 以避免触发光敏癫痫</li>
 </ul>
-<h3 id="camera-zoom_1"><a href="https://github.com/Ikersfletch/ExCameraDynamics/blob/main/README.md#camerazoomtrigger-trigger" target="_blank" rel="noopener">Camera Zoom</a></h3>
+<h3 id="camera-zoom_1"><a href="https://github.com/Ikersfletch/ExCameraDynamics/blob/main/README.md#camerazoomtrigger" target="_blank" rel="noopener">Camera Zoom</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_zoom" src="../../../assets/mappings/camera/camera/camera_zoom.png"></a></p>
 <blockquote>
 <p>需要先配置好<a href="../faq/#excamera">拓展镜头 Extended Camera Dynamics</a> 并启用</p>
@@ -6605,7 +6605,7 @@
 <p>所以起到了一个单向变化的作用</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="slider_example" src="../../../assets/mappings/camera/camera/slider_example.gif"></a></p>
 <h2 id="camera-rotate">Camera Rotate</h2>
-<h3 id="change-camera-angle"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#changefade-camera-angle-trigger" target="_blank" rel="noopener">Change Camera Angle</a></h3>
+<h3 id="change-camera-angle"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#changefade-camera-angle" target="_blank" rel="noopener">Change Camera Angle</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="change_camera_angle" src="../../../assets/mappings/camera/camera/change_camera_angle.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/317098" target="_blank" rel="noopener">AvBday Helper</a></p>
@@ -6618,7 +6618,7 @@
 <blockquote>
 <p><a href="https://www.bilibili.com/video/BV1bJRXYGEJc/?t=33" target="_blank" rel="noopener">使用示例</a></p>
 </blockquote>
-<p>同 <a href="#change-camera-angle-trigger"><code>Change Camera Angle Trigger</code></a>, 但是带 <a href="#position-mode"><code>Position Mode</code></a></p>
+<p>同 <a href="#change-camera-angle"><code>Change Camera Angle Trigger</code></a>, 但是带 <a href="#position-mode"><code>Position Mode</code></a></p>
 <h2 id="others">Others</h2>
 <h3 id="camera-correction-controller"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-correction-controller" target="_blank" rel="noopener">Camera Correction Controller</a></h3>
 <blockquote>
@@ -6643,7 +6643,7 @@
   </div>
 </figure>
 
-<h3 id="camera-constraint"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-constraint-trigger" target="_blank" rel="noopener">Camera Constraint</a></h3>
+<h3 id="camera-constraint"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#camera-constraint" target="_blank" rel="noopener">Camera Constraint</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="camera_constraint" src="../../../assets/mappings/camera/camera/camera_constraint.png"></a></p>
 <blockquote>
 <p>需要下载并启用 <a href="https://gamebanana.com/mods/497854" target="_blank" rel="noopener">Prog Helper</a></p>
@@ -6663,7 +6663,7 @@
 <li><code>Inverted</code>: 是否反转 <code>Flag</code> 的效果</li>
 <li><code>Only Once</code>: 是否在 Trigger 触发后销毁自己</li>
 </ul>
-<h3 id="one-way-camera"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#one-way-camera-trigger" target="_blank" rel="noopener">One Way Camera</a></h3>
+<h3 id="one-way-camera"><a href="https://github.com/EverestAPI/Resources/wiki/Camera#one-way-camera" target="_blank" rel="noopener">One Way Camera</a></h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="one_way_camera" src="../../../assets/mappings/camera/camera/one_way_camera.png"></a></p>
 <blockquote>
 <p>其实叫 <code>One-Way Camera</code>, 搜 <code>One Way</code> 搜不到</p>
@@ -6701,8 +6701,8 @@
 然后接着往下一个节点走, 滚动完后返还镜头控制权</p>
 <ul>
 <li><code>Set Offset On Finished</code>: 是否在滚动结束后设置玩家的 <code>Camera Offset</code><ul>
-<li><code>Offset X</code>: <code>Camera Offset X</code> 对应的值, <a href="#camera-offset-trigger"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 48 单位</li>
-<li><code>Offset Y</code>: <code>Camera Offset Y</code> 对应的值, <a href="#camera-offset-trigger"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 32 单位</li>
+<li><code>Offset X</code>: <code>Camera Offset X</code> 对应的值, <a href="#camera-offset"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 48 单位</li>
+<li><code>Offset Y</code>: <code>Camera Offset Y</code> 对应的值, <a href="#camera-offset"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 32 单位</li>
 </ul>
 </li>
 </ul>
@@ -6720,8 +6720,8 @@
 <p>该控制器可以用来控制镜头的跟随对象</p>
 <ul>
 <li><code>Only Type</code>: 需要跟随的对象对应的<a href="../../loenn/faq/#type">类名</a>, 比如跟随 Theo 水晶可以填写 <code>Celeste.TheoCrystal</code>, 如果有多个对象则找一个最近的跟随</li>
-<li><code>Offset X</code>: <code>Camera Offset X</code> 对应的值, <a href="#camera-offset-trigger"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 48 单位</li>
-<li><code>Offset Y</code>: <code>Camera Offset Y</code> 对应的值, <a href="#camera-offset-trigger"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 32 单位</li>
+<li><code>Offset X</code>: <code>Camera Offset X</code> 对应的值, <a href="#camera-offset"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 48 单位</li>
+<li><code>Offset Y</code>: <code>Camera Offset Y</code> 对应的值, <a href="#camera-offset"><code>Camera Offset Trigger</code></a> 的 <code>Camera Offset X</code> 1 单位对应这里 32 单位</li>
 <li><code>Lerp</code>: 表示镜头在玩家镜头位置跟这个新的镜头位置之间的插值, 范围 <code>0 ~ 1</code> (当然你填超出范围的数也是没问题的, 因为没 <code>clamp</code>)</li>
 <li><code>Reset On False</code>: 勾选后, 当 <code>Flag</code> 不存在镜头会跟随到玩家, 当 <code>Flag</code> 存在, 镜头会跟随上述找到的对象</li>
 <li><a href="../../cmd/"><code>Debug</code></a>: 输出一些跟上述找到的对象有关的信息</li>
