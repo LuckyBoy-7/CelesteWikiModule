@@ -86,7 +86,7 @@ Tileset, 即 Tile-set, **瓦片-集**
 游戏中的每一种不同的砖都对应 `ForegroundTiles.xml` 中的一种样式 `<Tileset></Tileset>`, 像下面这样,
 
 
-```xml title="Celeste\Content\Graphics\ForegroundTiles.xml"
+```xml title="Celeste\Content\Graphics\ForegroundTiles.xml" hl_lines="2 17 18"
 <Data>
   <Tileset id="z" path="template">
     <set mask="x0x-111-x1x" tiles="0,0;1,0;2,0;3,0"/>

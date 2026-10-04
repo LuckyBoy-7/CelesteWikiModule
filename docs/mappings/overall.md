@@ -32,9 +32,9 @@
 * [冬菜的制图教程](../assets/mappings/overall/dong_cai.pdf)
 * [底龙的制图教程 - QQ](https://docs.qq.com/aio/DSGFWUm54Sk9GRGJM?p=iFoHeZMEWmxTAFH4lb0ead), [底龙的制图教程 - notion](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9)
 * [b站 Wiki 的制图教程](https://wiki.biligame.com/celeste/%E9%A6%96%E9%A1%B5)
-* [Everest Wiki的制图教程](https://github.com/EverestAPI/Resources/wiki)
-* [【蔚蓝dc社区全部教程】](https://docs.qq.com/sheet/DSHBRcE5pUWtnckJj?tab=000001)
-* [Basics of Celeste Map Making by iamdadbod(油管)](https://www.youtube.com/watch?v=TqoQdNZ_CRA)
+* [Everest Wiki 的制图教程](https://github.com/EverestAPI/Resources/wiki)
+* [【蔚蓝 dc 社区全部教程】](https://docs.qq.com/sheet/DSHBRcE5pUWtnckJj?tab=000001)
+* [Basics of Celeste Map Making by iamdadbod (油管)](https://www.youtube.com/watch?v=TqoQdNZ_CRA)
 * [Map-Making in Celeste is Complicated. Let's Fix That (Part 1) by AverageImposter](https://www.youtube.com/watch?v=gzHQOnYHaO0)
 * [Lönn 101 - Installing Lönn [Celeste Map Editor Tutorial] by Lost in Nowhere](https://www.youtube.com/watch?v=_1WWLDJhO3k&list=PL6zs9BBf3ArgrYqIB6mSAjuaKolU6q1Q-&index=1)
 

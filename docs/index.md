@@ -16,11 +16,17 @@
 
 ## 致谢
 
-**感谢** `Myn`, `Saplonily`, `SDBnkaf`, `Black_Ice`, `无`, `AfterDawn`, `底龙`, `xxuurruuii`, `AppleSheep`, 
+**感谢** `Myn`, `Saplonily`, `电箱`, `SDBnkaf`, `Black_Ice`, `无`, `AfterDawn`, `底龙`, `xxuurruuii`, `AppleSheep`, 
 `NaCline`, `Voidsd`, `WEGFan`, `icbm`, `忘记过去`, `OldmanG`, `浣熊`, `云雀`, `Harmonine`, `crylone`, `ShadowRo`,
 `I2170l`, `Aya Kasumu`, `春暮Q`, `Isanc`, `Hero_Broom`, `Power Master`, `ye-zi`, `小豹猫awa`,
 `仲久的落叶`, `聪明空空`, `DeepSheep`, `老哈`, `Hibana`, `RNF`, 
-`ziyang_51571`, `BadwayBear` 直接或间接地给 Wiki 提供的灵感和帮助, 非常抱歉我可能落了一些人, 但我仍然**非常感谢**你们
+`ziyang_51571`, `BadwayBear`, `飛飛` 直接或间接地给 Wiki 提供的灵感和帮助, 非常抱歉我可能落了一些人, 但我仍然**非常感谢**你们
+
+**感谢**所有的教程制作者
+
+**感谢**所有的乐于助人热心解答问题的人
+
+**感谢**所有的视频/公告/链接搬运工
 
 **感谢**每一位对蔚蓝社区做出了贡献的人
 

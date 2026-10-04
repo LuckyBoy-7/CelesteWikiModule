@@ -46,6 +46,7 @@ extra_css:
   - css/content.css
   - javascripts/katex/katex.min.css
   - css/celeste_log.css
+  - css/flag_toggle.css
 
 extra_javascript:
   - javascripts/katex/katex.min.js
@@ -143,6 +144,7 @@ nav:
               - 官图元数据: "mappings/metadata/orig_metadata.md"
           - 背景: "mappings/loenn/stylegrounds.md"
           - 残影 👻: "mappings/ghost_player_playback.md"
+          - Flag 🚩: "mappings/flag/flag.md"
           - Graphics 🎨:
               - 大纲: "mappings/graphics/graphics.md"
               - 素材替换:

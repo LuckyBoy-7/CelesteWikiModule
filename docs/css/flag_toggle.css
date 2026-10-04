@@ -1,0 +1,49 @@
+.flag-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.flag-toggle input {
+    display: none;
+}
+
+.toggle-slider {
+    width: 36px;
+    height: 20px;
+    background: #aaa;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.toggle-slider::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: 2px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.flag-toggle input:checked + .toggle-slider {
+    background: #4c9ffe;
+}
+
+.flag-toggle input:checked + .toggle-slider::after {
+    transform: translateX(16px);
+}
+
+.flag-icon {
+    font-size: 18px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.flag-toggle:has(input:checked) .flag-icon {
+    opacity: 1;
+}
