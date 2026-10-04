@@ -211,7 +211,6 @@ nav:
           - 发布 Mod: "mappings/publish_mod.md"
       - 其他:
           - 控制台: "mappings/cmd.md"
-          - 链接汇总: "mappings/useful_links.md"
           - 实用 Helper:
               - 大纲: "mappings/useful_helpers/useful_helpers.md"
               - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
@@ -224,3 +223,5 @@ nav:
               - 题库:
                   - 判断题: "mappings/quiz/true_or_false_questions.md"
                   - 填空题: "mappings/quiz/blank_filling_questions.md"
+          - 玩家状态查询: "mappings/player_state.md"
+          - 链接汇总: "mappings/useful_links.md"
