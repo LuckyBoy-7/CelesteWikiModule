@@ -1,17 +1,19 @@
-> Myn:
->
-> 宇宙是如何诞生的？是 tt 触发了那个奇点
->
-> 万物是如何运动的？是 eevee 框动着世界变化
-
-## 参考
+参考
 
 * [Crystalline Helper 文档](https://gamebanana.com/mods/53765)
 * [Crystalline Helper Github](https://github.com/CommunalHelper/CrystallineHelper)
 * [Trigger Trigger 简单教程 by Shynnie](../../assets/mappings/useful_helpers/tt/tt_by_shynnie.docx)
 * [常用 Trigger by Breaker-K](https://www.bilibili.com/video/BV1eZW5zVE4t/?&t=2535)
 
-## 介绍
+---
+
+> Myn:
+>
+> 宇宙是如何诞生的？是 tt 触发了那个奇点
+>
+> 万物是如何运动的？是 eevee 框动着世界变化
+
+## Trigger Trigger 介绍
 
 顾名思义, Trigger Trigger (简称 tt)就是触发 Trigger 的 Trigger, 在不改任何配置, 只添加 tt 节点 (按 ++n++)的情况下, 我们已经能实现下面这种最基础的传递结构了
 
