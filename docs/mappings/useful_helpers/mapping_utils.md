@@ -43,6 +43,13 @@
 
 跟 flag 类似, 但是相对不常用, 主要是计数用的, 官图里最多也就是用来记记死亡数啥的, 比如 9a 最后一面死多了 badeline 会出来安慰你这种
 
+### Channels
+
+![channel](../../assets/mappings/useful_helpers/mapping_utils/channel.png)
+
+当开启 [Auspicious Helper](./auspicious.md) 时显示, 方便你调试 channel 相关的东西
+
+
 ### Profiling
 
 性能监视面板, 看看哪个实体让你的蔚蓝卡了👀
