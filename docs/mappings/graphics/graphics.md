@@ -4,6 +4,7 @@
 * [UnderDragon’s Repository 2.5](https://gamebanana.com/mods/427729): 素材包
 * [Spooooky's Asset Pack](https://gamebanana.com/mods/474010): 素材包 ([路径粘贴](https://spo0o0ky.github.io/SpooookyAssetPackBrowser/))
 * [Asset Drive Browser](https://maddie480.ovh/celeste/asset-drive): 更方便的浏览社区资源盘
+* [选关界面图标参考网站](https://game-icons.net/)
 
 ## 游戏开始前
 
