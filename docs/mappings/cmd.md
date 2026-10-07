@@ -60,3 +60,16 @@
 </code></pre>
 
 当然更多情况下你只需要按 `~` 或是用 [Celeste TAS](https://gamebanana.com/tools/6715) 按下 ++ctrl+b++ 打开碰撞箱显示, 看看碰撞箱就知道实体加载了没有
+
+<a id="ausp"></a>
+
+## 实体用法错误
+
+比如我在 [Auspicious Helper](./useful_helpers/auspicious.md#material) 写 `Pass` 的过程中不小心把 `ausp/maskedFrom` 打成了 `ausp/maskFrom`, 那么 ausp 会提醒我
+
+<pre class="celeste-log"><code><span class="log-time">(10/07/2026 20:17:33)</span> <span class="log-source">[Everest]</span> <span class="log-error">[Error]</span> <span class="log-module">[auspicioushelper]</span> Failed to fetch shader at Effects/ausp/maskFrom
+</code></pre>
+
+又或是引用了一个找不到的贴图, ausp 也会提示
+
+![00](../assets/mappings/cmd/00.png)

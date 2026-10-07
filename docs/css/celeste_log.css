@@ -15,6 +15,10 @@
 }
 
 
+.celeste-log .log-error {
+   color: #f07178;
+}
+
 .celeste-log .log-module {
     color: #c792ea;
 }

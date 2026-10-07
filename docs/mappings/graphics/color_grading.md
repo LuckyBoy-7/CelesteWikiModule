@@ -27,7 +27,7 @@
 
 <figure markdown>
   ![none](../../assets/mappings/graphics/skin/none.png){style="width: 900px; image-rendering: pixelated; title=123"}
-  <figcaption>路径: Celeste\Content\Graphics\ColorGrading\none.png</figcaption>
+  <figcaption>路径: Celeste/Content/Graphics/ColorGrading/none.png</figcaption>
 </figure>
 
 现在颜色就是坐标, 坐标就是颜色, 我只需要把对应坐标的颜色改成自己想要的, 游戏就知道你要把什么颜色换成什么颜色了
@@ -37,7 +37,7 @@
 
 <figure markdown>
   ![none](../../assets/mappings/graphics/colorgrades/templevoid.png){style="width: 900px; image-rendering: pixelated; title=123"}
-  <figcaption>路径: Celeste\Content\Graphics\ColorGrading\templevoid.png</figcaption>
+  <figcaption>路径: Celeste/Content/Graphics/ColorGrading/templevoid.png</figcaption>
 </figure>
 
 ### 位置

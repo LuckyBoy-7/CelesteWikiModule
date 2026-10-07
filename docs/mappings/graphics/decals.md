@@ -7,10 +7,10 @@
 
 > KaileyTheAlien: I remember when I found that room in Paint on my first playthrough and just stood there crying for like 10-15 minutes
 
+* [【熟肉】如何在蔚蓝mod图中营造「氛围感」？ by ricky06](https://www.bilibili.com/video/BV1ZuG66rErj/)
 * [废话 deco 教程 by Myn](../../assets/mappings/graphics/decals/deco_tutorial1.txt)
 * [jpyx258 的 deco 轮椅](../../assets/mappings/graphics/decals/deco_tutorial2.docx)
 * [春暮Q 中翻 - Donker's Deco Guide](../../assets/mappings/graphics/decals/中翻%20-%20Donker's%20Deco%20Guide.docx), [原文](https://docs.google.com/document/d/1ebzZTL7eX21M0FJR2IAUPCCGxnDUscZdRW8GiGl8Yus/edit?tab=t.0)
-* [Creating Atmosphere in Celeste Mods by ricky06](https://www.youtube.com/watch?v=n5iHuXW8TyY)
 
 Decal 装饰物文件放置位置
 

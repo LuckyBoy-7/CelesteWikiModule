@@ -5,7 +5,7 @@
 * [Auspicious Helper 香蕉网](https://gamebanana.com/mods/578559)
 * [Auspicious Helper Github 文档](https://github.com/cloudsbelow/auspicioushelper/wiki)
 
-## Template
+## [Template](https://github.com/cloudsbelow/auspicioushelper/wiki/Templates)
 
 ausp 提供了一系列模板让你非常方便的把一些对象变成另一个东西
 
@@ -92,7 +92,7 @@ ausp 提供了一系列模板让你非常方便的把一些对象变成另一个
 
 > 你可能需要知道怎么打开[控制台](../cmd.md) 或是找到 [`Log.txt`](../../mods/game_crashes.md)
 
-## Channel
+## [Channel](https://github.com/cloudsbelow/auspicioushelper/wiki/Channels)
 
 [Flag](../flag/flag.md) 只能表示有和无两种状态, 而 Channel 引入了数字, 这样我们就可以把数值绑定到对应名字的 Channel 上, 像下面这样
 
@@ -323,7 +323,7 @@ Channel, 所以我们将 awa 绑定上去, 这样该移动块后续的移动速�
 
 <a id="old-expression"></a>
 
-### [旧版表达式](https://github.com/cloudsbelow/auspicioushelper/wiki/Channels#legacy-note)
+#### [旧版表达式](https://github.com/cloudsbelow/auspicioushelper/wiki/Channels#legacy-note)
 
 你可以定义数学表达式的运算顺序, 然后用中括号 `[]` 将它们包裹起来, 比如
 
@@ -337,3 +337,193 @@ Channel, 所以我们将 awa 绑定上去, 这样该移动块后续的移动速�
 8. `[-2, abs]`
 9. `[+2]`
 
+## [Material](https://github.com/cloudsbelow/auspicioushelper/wiki/Materials-(shaders))
+
+ausp 还可以为实体和背景添加额外的视觉效果
+
+简单来说, 你需要使用 `Material Template` 来决定你要为哪些对象添加视效, 并且在 `Layer identifier` 属性处填上一个图层名字, 比如这里的 `test`
+表示将内部实体加入到对应图层的管理当中, 这样后续就可以为这些图层统一加效果了
+
+![16](../../assets/mappings/useful_helpers/auspicious/16.png)
+
+接下来我们先讲讲怎么为实体添加视觉效果
+
+### 实体
+
+首先在场景内放置一个 `Material` Controller 实体, 并在 `Identifier` 处填入你要影响的图层名, 比如这里的 `test`,
+
+![17](../../assets/mappings/useful_helpers/auspicious/17.png)
+
+然后加效果方式就是这里的 `Passes` 了, `Passes` 由多个 `Pass` 组成, 用逗号分隔, 这样你就可以对对象连续做各种效果, 比如先变亮, 再拉伸, 再旋转, 再加个滤镜等等
+
+你可以把 `Pass` 简单理解为一个预制的效果, 
+比如**变亮效果**可以是一个 `Pass`, 你要处理的对象经过变亮这一 `Pass` 的处理后就真的变亮了, 同时一个 `Pass` 可能也会需要一些参数, 
+比如变亮效果可能需要知道**具体要变亮多少**, 这可能需要填入一些参数
+
+![18](../../assets/mappings/useful_helpers/auspicious/18.png)
+
+然后我们可以先做一个简单的调色效果, 也就是名为 `ausp/tint` 的 `Pass`, 它有三个参数
+
+> 一开始的效果是 null 表示什么都不做, 虽然你可能觉得没什么用, 但是作者表示尽量不要动, 让它作为第一个 `Pass` 就行
+
+* `low`, `high`: 分别表示颜色映射区间的下界和上界, 原始颜色会被映射到这两个颜色之间
+* `sat`: 即 saturation, 表示你这个颜色映射之后需要保留多少的色彩信息, 数字越小颜色越偏黑白灰 
+
+所以最简单的例子就是 `low` 保持黑色, `high` 保持白色, `sat` 设置成零, 这样就能做灰度效果了
+
+![19](../../assets/mappings/useful_helpers/auspicious/19.png)
+
+> 如果你好奇背后的具体计算公式, 可以直接查看对应的[源码](https://github.com/cloudsbelow/auspicioushelper/tree/main/Effects/ausp/src), 
+> 比如这里的 [`ausp/tint`](https://github.com/cloudsbelow/auspicioushelper/blob/main/Effects/ausp/src/tint.fx),
+> 顺带还可以看看有几个参数, 如果[文档](https://github.com/cloudsbelow/auspicioushelper/wiki/Materials-(shaders)#specifying-passes)没提及的话
+
+### 其他 `Pass`
+
+> 你可能需要[打开控制台](../cmd.md#ausp)方便的 Debug
+
+#### `ausp/maskBy`
+
+将当前贴图作为蒙版去蒙 `槽位 1` 里的贴图 (`槽位 0` 往往对应当前贴图, 比如上方的水晶和泡泡)
+
+比如我们先随便准备一张图, 比如这里的噪声贴图 (路径为 `Atlases/Gameplay/Wiki/noise.png`)
+
+![20](../../assets/mappings/useful_helpers/auspicious/20.png)
+
+然后在 Controller 里将贴图绑定到对应槽位上, 比如这里的 `1:/Gameplay/Wiki/noise`
+
+![22](../../assets/mappings/useful_helpers/auspicious/22.png)
+
+然后填上效果后就 ok 了!
+
+![21](../../assets/mappings/useful_helpers/auspicious/21.png)
+
+#### `ausp/maskedFrom`
+
+将 `槽位 1` 里的贴图作为蒙版去蒙当前贴图, 适合用不动的画面去蒙动的画面, 所以这里讲讲背景蒙版技巧
+
+我们可以在背景的 `Only` 处填上 `%{texture_name}`, 比如这里的 `%mask_bg` 这样这个背景就会被 ausp 当作是一张贴图且可以在后续被对应贴图槽位引用
+
+![24](../../assets/mappings/useful_helpers/auspicious/24.png)
+
+然后我们配置好对应的 `Pass` 和贴图槽位即可
+
+![23](../../assets/mappings/useful_helpers/auspicious/23.png)
+
+这样我们的对象就只会显示在背景内部了!
+
+![25](../../assets/mappings/useful_helpers/auspicious/25.png)
+
+#### `ausp/invertAlpha`
+
+反转透明度, 适合用在蒙版相关的 `Pass` 链上来反转蒙版区域
+
+#### `ausp/invertColor`
+
+反色
+
+![40](../../assets/mappings/useful_helpers/auspicious/40.png)
+
+#### `ausp/tint`
+
+调色
+
+#### `ausp/static`
+
+生成随时间变化的噪声, 有 `low`, `high` 两个颜色参数, 表示暗的地方有多暗, 亮的地方有多亮 (说白了就是噪声亮度的取值范围)
+
+![26](../../assets/mappings/useful_helpers/auspicious/26.gif)
+
+#### `ausp/innerBorder` / ` ausp/outerBorder`
+
+你可以选择给对象添加内描边或是外描边, 你可以设置 `color` 参数来调整描边的颜色
+
+![27](../../assets/mappings/useful_helpers/auspicious/27.png)
+
+![28](../../assets/mappings/useful_helpers/auspicious/28.png)
+
+你还可以设置参数 `corners:true` 让斜对角也参与描边
+
+![29](../../assets/mappings/useful_helpers/auspicious/29.png)
+
+#### `ausp/blurH` / ` ausp/blurV`
+
+在水平/垂直方向上给予对象高斯模糊的效果, 可以设置 `sigma` 参数调整模糊强度 (大于 `0` 的小数)
+
+![30](../../assets/mappings/useful_helpers/auspicious/30.png)
+
+![31](../../assets/mappings/useful_helpers/auspicious/31.png)
+
+~~但是 `sigma` 调大了可能就只剩光源和粒子效果了~~
+
+![32](../../assets/mappings/useful_helpers/auspicious/32.png)
+
+#### `ausp/opacity`
+
+改变对象的不透明度, 参数为 `opacity` (`0 ~ 1`)
+
+![33](../../assets/mappings/useful_helpers/auspicious/33.png)
+
+![34](../../assets/mappings/useful_helpers/auspicious/34.png)
+
+#### `ausp/colorgrade`
+
+为对象添加[滤镜](../graphics/color_grading.md)效果, 需要在 `槽位 1` 上绑定对应滤镜贴图, 比如我们用冷滤镜为例
+
+<figure markdown>
+  ![cold](../../assets/mappings/useful_helpers/auspicious/cold.png){style="width: 900px; image-rendering: pixelated; title=123"}
+  <figcaption>路径: Graphics/ColorGrading/Wiki/cold.png</figcaption>
+</figure>
+
+![35](../../assets/mappings/useful_helpers/auspicious/35.png)
+
+![36](../../assets/mappings/useful_helpers/auspicious/36.png)
+
+#### `ausp/colorgradefade`
+
+为对象添加滤镜效果, 但是在两个滤镜之间插值, 需要在 `槽位 1` 和 `槽位 2` 上绑定对应滤镜贴图, 并用 `fade` 参数 (`0 ~ 1`)调整效果最终偏向哪个滤镜
+
+#### `ausp/compose`
+
+组合最多四张贴图 (不包含源图), 我们可以设置 `num` 参数调整组合程度
+
+* 当 `num <= 0`, 只显示源图
+* 当 `num <= 1`, 只显示源图, 非源图区域如果有 `槽位 1` 对应贴图, 则显示并设置其透明度为 `num`
+* 当 `num <= 2`, 只显示源图, 非源图区域显示 `槽位 1` 对应贴图, 其他区域, 如果有 `槽位 2` 对应贴图, 则显示并设置其透明度为 `num - 1`
+* 以此类推最后的效果就是一层叠一层
+
+比如我们再借用一下之前的 `noise.png` 贴图, 并将 `num` 设置为 `0.1` 能做个简单的带破碎感的光照效果 (虽然感觉正常用法可能是用来将某些东西按顺序 fade 出来的, 用 [Channel](#params) 控制)
+
+![37](../../assets/mappings/useful_helpers/auspicious/37.png)
+
+![38](../../assets/mappings/useful_helpers/auspicious/38.png)
+
+#### `ausp/flip`
+
+根据玩家位置翻转图像
+
+![39](../../assets/mappings/useful_helpers/auspicious/39.gif)
+
+#### `ausp/rainbowify`
+
+为对象施加彩虹效果 (类似彩虹刺)
+
+![41](../../assets/mappings/useful_helpers/auspicious/41.png)
+
+#### `ausp/selectColor`
+
+类似于颜色二值化, 参数如下
+
+* `color`: 表示一个基准值, 比这个颜色亮的颜色会变成 `falseColor`, 反之变成 `trueColor`
+* `range`: 数值越小颜色越容易变成 `falseColor`, 反之越容易变成 `trueColor`, 可用 [Channel](#params) 控制
+
+![42](../../assets/mappings/useful_helpers/auspicious/42.png)
+
+![43](../../assets/mappings/useful_helpers/auspicious/43.gif)
+
+<a id="params"></a>
+
+### 参数控制
+
+### 贴图设置
+
+### [自定义 Shader](https://github.com/cloudsbelow/auspicioushelper/wiki/Materials-(shaders)#brief-note-for-shader-writers)
