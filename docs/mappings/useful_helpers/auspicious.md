@@ -21,6 +21,10 @@ ausp 提供了一系列模板让你非常方便的把一些对象变成另一个
 
 然后就完事了!
 
+> 当然你也可以顺带框住 Decal, 需要 `Connected Container` 勾选 `Get Decals`
+> 
+> 不过需要注意并不是所有的特性都能加在某些对象上
+
 ![02](../../assets/mappings/useful_helpers/auspicious/02.png)
 
 ### 其他 Template 模板
@@ -53,7 +57,7 @@ ausp 提供了一系列模板让你非常方便的把一些对象变成另一个
 #### 运动
 
 * [`Static Mover`](https://www.bilibili.com/video/BV1ZVHp6EEcd/?t=494): 附着模板, 类似 [Eevee Helper 的 Attached Container](./eevee.md#attached-container)
-* [`Gluable`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=1016): 附着/跟随模板, 类似 [Eevee Helper 的 Attached Container](./eevee.md#attached-container)
+* [`Gluable`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=1016): 附着/跟随模板, 类似 [Eevee Helper 的 Attached Container](./eevee.md#attached-container), 可以做[接触单向板后触发机关](https://www.bilibili.com/video/BV1YNpu6gEmj/)的效果
 * [`Gate Mover`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=4): 步进模板, 主节点和子节点定义了移动的方向和距离, 每次对应 Channel 不为 0 时, 使房间内最近的 Template 向前面定义的方向移动一次
 * [`Displacer`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=95): 置换模板, 将模板整体移动到对应节点位置
 * [`Channel Mover`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=865): 移动模板, 根据 Channel 的数值在节点之间移动
@@ -64,6 +68,29 @@ ausp 提供了一系列模板让你非常方便的把一些对象变成另一个
 * [`Resetter`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=921): 重置模板, 可以销毁和生成 Template
 * [`Trigger Modifier`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=972): 触发模板, 接收到非零 Channel 后会触发可触发的模板, 比如掉落块, 易碎块之类的 (有的模板需要勾选
   `Triggerable`)
+
+#### 复制
+
+> 说到模板怎么能少得了复制模板呢
+
+创建名为 `zztemplates-{roomName}` 格式的房间后, 该房间会被作为一个模板房间被 ausp 使用, 比如 `zztemplates-test`,
+在该房间内放置一个 `Template Filler` 实体, 被框住的所有东西都会成为这个复制模板的一部分, 你需要给这个复制模板起一个名字, 比如 `refill`
+
+> 你可以为 `Template Filler` 添加节点, 表示该复制模版的中心位置在哪
+
+![11](../../assets/mappings/useful_helpers/auspicious/11.png)
+
+之后你就可以在任意模板中的 `Template` 属性里填入 `{roomName}/{templateName}`, 比如用 `test/refill` 来引用复制模板的同时为其添加对应的模板特性了
+
+![13](../../assets/mappings/useful_helpers/auspicious/13.png)
+
+![12](../../assets/mappings/useful_helpers/auspicious/12.png)
+
+* [`Template`](https://www.bilibili.com/video/BV1XnpK6aEsu/?t=1): 无额外特性的模板, 所以它的主要作用就是引用一个复制模板, 但它可以接着被 `Template Filler` 框起来成为新复制模板的一部分, 所以可以不断套娃
+* [`Template Filler Switcher`](https://www.bilibili.com/video/BV1XnpK6aEsu/?t=225): 与 `Template Filler` 类似, 但是可以随机使用一个复制模板
+* [`Evil Packed Template Room`](https://www.bilibili.com/video/BV1XnpK6aEsu/?t=308): 可以把模板数据打包到一串 Base64 编码的字符串里, 后续使用该实体就可以不需要创建模板房间了, 又由于本质上是数据, 所以你也可以粘给别的图用
+
+> 你可能需要知道怎么打开[控制台](../cmd.md) 或是找到 [`Log.txt`](../../mods/game_crashes.md)
 
 ## Channel
 
@@ -85,9 +112,26 @@ Channel, 所以我们将 awa 绑定上去, 这样该移动块后续的移动速�
     <p>Channel 对应的数值会在玩家死亡后重置, 切板不会</p>
 </div>
 
-### Trigger
-
 知道 Channel 的含义后我们就可以使用 Trigger 或者实体变着法子改变 Channel 的数值了
+
+### Entity
+
+#### Channel Approach Controller
+
+![14](../../assets/mappings/useful_helpers/auspicious/14.png)
+
+你可以让 `Out Channel` 的值以 `Amount` (可写[表达式](#advanced-expression))的速率接近 `Towards Channel` (可写[表达式](#advanced-expression)), 
+比如上述写法就对应 `awa` Channel 数值不断增大, 每秒增加 1
+
+#### Channel Clear Controller
+
+![15](../../assets/mappings/useful_helpers/auspicious/15.png)
+
+该 Controller 可以在进入房间时重置以 `Clear Prefix` 为前缀的所有 Channel, 也可以勾选 `Clear All` 以重置所有的 Channel
+
+你可以设置 `Channel` 的值为 `Value`, 也可以使用 [Advanced 高级表达式](#advanced-expression) 去设置房间里某些 Channel 的默认值
+
+### Trigger
 
 #### Channel Player Trigger
 
@@ -97,8 +141,7 @@ Channel, 所以我们将 awa 绑定上去, 这样该移动块后续的移动速�
 
 * `Channel`: 你要设置的 Channel 名字, 比如这里是 `a`
 * `Value`: 你要设置的 Channel 对应的数值
-* `Advanced`: 该 Trigger 触发后额外设置里面的内容用逗号分隔, 比如这里的 `b:3, c:(b * 2 + pow(2, 3))` 表示将 `Channel b` 设置成 `3`, 将 `Channel c` 设置成 `{Channel b} * 2 + 8` 也就是
-  `14`, 更高级的写法请参考[高级表达式](#advanced-expression)
+* `Advanced`: 该 Trigger 触发后会额外设置一些 Channel 的数值, 语法请参考[高级表达式](#advanced-expression)
 * `Action`: Trigger 触发方式
 * `Op`: 用于决定 `Value` 的计算方式
     * `set`: 表示直接将对应 Channel 设置为 `Value`, 即 `channel = Value`
@@ -132,9 +175,11 @@ Channel, 所以我们将 awa 绑定上去, 这样该移动块后续的移动速�
 
 #### Channel Math Controller Trigger
 
+> 也有对应实体版的 `Channel Math Controller`
+
 ![08](../../assets/mappings/useful_helpers/auspicious/08.png)
 
-你可以在酣畅淋漓的[少儿编程](https://cloudsbelow.neocities.org/celestestuff/visualmathcompiler) 后点击黄色方块编译拿到编码后的 Base64, 最后把它粘贴到 `Compiled Operations` 中即可
+你可以在酣畅淋漓的[少儿编程](https://cloudsbelow.neocities.org/celestestuff/visualmathcompiler)后点击黄色方块编译拿到编码后的 Base64, 最后把它粘贴到 `Compiled Operations` 中即可
 
 ![09](../../assets/mappings/useful_helpers/auspicious/09.png)
 
@@ -150,14 +195,16 @@ Channel, 所以我们将 awa 绑定上去, 这样该移动块后续的移动速�
 
 ### [高级表达式](https://github.com/cloudsbelow/auspicioushelper/wiki/Channels#channel-expressions)
 
-你可以像写代码一样写这些数学表达式, 然后用小括号 `()` 将它们包裹起来, 顺带一提你可以在名字前加上不同的符号表示访问不同的数值
+你可以像写代码一样写这些数学表达式来设置一些 Channel 的数值, 然后用小括号 `()` 将它们包裹起来, 并且你可以在名字前加上不同的符号以表示访问不同的数值
 
 * `@`: 表示访问一个 Channel 的数值, 比如 `@channelA` (虽然新的表达式似乎不需要加 `@`)
 * `$`: 表示访问一个 Flag 对应的数值, 比如 `$flagB`, Flag 启用时对应 `1`, 反之对应 `0`
 * `?`: 表示访问一个 [Slider](./mapping_utils.md#counters) 对应的数值, 比如 `?sliderC`
 * `#`: 表示访问一个 [Counter](./mapping_utils.md#counters) 对应的数值, 比如 `#counterD`
 
-> 由于可能有些运算迁移到新版表达式的时候出了点小问题得等作者修, 所以如果你实在想用可以用[旧版表达式](#old-expression), 相对老旧但是更加稳定
+比如对于 `a:2, b:($a * 2), c:(b * pow(2, 3))` (场景里有名为 `a` 的 Flag)这样的设置, `a, b, c` 对应的结果为 `2, 2, 16`
+
+
 
 #### 基本运算符
 
@@ -252,10 +299,10 @@ Channel, 所以我们将 awa 绑定上去, 这样该移动块后续的移动速�
 
 | 写法                  | 参数 | 实际功能                                       |
 |-----------------------|-----:|------------------------------------------------|
+| `pi()`                |    0 | π                                              |
 | `abs(x)`              |    1 | 绝对值                                         |
 | `ceil(x)`             |    1 | 向上取整                                       |
 | `floor(x)`            |    1 | 向下取整                                       |
-| `pi()`                |    0 | π                                              |
 | `round(x)`            |    1 | 四舍五入                                       |
 | `exp(x)`              |    1 | `e^x`                                          |
 | `ln(x)`               |    1 | 自然对数 `ln(x)`                               |
