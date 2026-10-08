@@ -4961,6 +4961,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实体用法错误
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5109,9 +5120,22 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../useful_helpers/auspicious/" class="md-nav__link">
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_2_4">
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_2_4" id="__nav_7_7_2_4_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -5125,7 +5149,135 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_7_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Auspicious Helper
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../useful_helpers/auspicious/auspicious/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大纲
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../useful_helpers/auspicious/template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template 模板
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../useful_helpers/auspicious/channel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Channel 系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../useful_helpers/auspicious/material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Material 材质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5579,6 +5731,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实体用法错误
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5642,6 +5805,14 @@
 </code></pre>
 
 <p>当然更多情况下你只需要按 <code>~</code> 或是用 <a href="https://gamebanana.com/tools/6715" target="_blank" rel="noopener">Celeste TAS</a> 按下 <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-b">B</kbd></span> 打开碰撞箱显示, 看看碰撞箱就知道实体加载了没有</p>
+<p><a id="ausp"></a></p>
+<h2 id="_4">实体用法错误</h2>
+<p>比如我在 <a href="../useful_helpers/auspicious/material/">Auspicious Helper</a> 写 <code>Pass</code> 的过程中不小心把 <code>ausp/maskedFrom</code> 打成了 <code>ausp/maskFrom</code>, 那么 ausp 会提醒我</p>
+<pre class="celeste-log"><code><span class="log-time">(10/07/2026 20:17:33)</span> <span class="log-source">[Everest]</span> <span class="log-error">[Error]</span> <span class="log-module">[auspicioushelper]</span> Failed to fetch shader at Effects/ausp/maskFrom
+</code></pre>
+
+<p>又或是引用了一个找不到的贴图, ausp 也会提示</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="00" src="../../assets/mappings/cmd/00.png"></a></p>
 
 
 
