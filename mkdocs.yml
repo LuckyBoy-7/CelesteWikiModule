@@ -215,7 +215,11 @@ nav:
               - 大纲: "mappings/useful_helpers/useful_helpers.md"
               - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
               - Eevee Helper: "mappings/useful_helpers/eevee.md"
-              - Auspicious Helper: "mappings/useful_helpers/auspicious.md"
+              - Auspicious Helper:
+                  - 大纲: "mappings/useful_helpers/auspicious/auspicious.md"
+                  - Template 模板: "mappings/useful_helpers/auspicious/template.md"
+                  - Channel 系统: "mappings/useful_helpers/auspicious/channel.md"
+                  - Material 材质: "mappings/useful_helpers/auspicious/material.md"
               - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
               - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
               - hELPER: "mappings/useful_helpers/hELPER.md"

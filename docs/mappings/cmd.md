@@ -65,7 +65,7 @@
 
 ## 实体用法错误
 
-比如我在 [Auspicious Helper](./useful_helpers/auspicious.md#material) 写 `Pass` 的过程中不小心把 `ausp/maskedFrom` 打成了 `ausp/maskFrom`, 那么 ausp 会提醒我
+比如我在 [Auspicious Helper](./useful_helpers/auspicious/material.md) 写 `Pass` 的过程中不小心把 `ausp/maskedFrom` 打成了 `ausp/maskFrom`, 那么 ausp 会提醒我
 
 <pre class="celeste-log"><code><span class="log-time">(10/07/2026 20:17:33)</span> <span class="log-source">[Everest]</span> <span class="log-error">[Error]</span> <span class="log-module">[auspicioushelper]</span> Failed to fetch shader at Effects/ausp/maskFrom
 </code></pre>

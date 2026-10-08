@@ -50,7 +50,7 @@
 
 ![channel](../../assets/mappings/useful_helpers/mapping_utils/channel.png)
 
-当开启 [Auspicious Helper](./auspicious.md) 时显示, 方便你调试 channel 相关的东西
+当开启 [Auspicious Helper](./auspicious/auspicious.md) 时显示, 方便你调试 channel 相关的东西
 
 
 ### Profiling

@@ -222,7 +222,7 @@ data.Attr("spritePath", "objects/BounceHelper/bounceMoveBlock")
 
 ![entity_id](../../assets/mappings/Loenn/faq/entity_id.png){style="width: 1000px; title="123"}
 
-<a id="enity-name"></a>
+<a id="entity-name"></a>
 
 ## 如何获取实体名字
 
