@@ -15,7 +15,9 @@ Channel, 所以我们将 `awa` 绑定上去, 这样该移动块后续的移动�
 
 <div class="admonition note">
     <p class="admonition-title">注意</p>
-    <p>Channel 对应的数值会在玩家死亡后重置, 切板不会</p>
+    <p>所有的 Channel 默认值都为 0, 当玩家死亡时, Channel 对应的数值会被重置为默认值, 当玩家切板时默认值会被设置为当前值</p>
+    <p>如果你在 Channel 名前添加下划线 <code>_</code>, 这可以让其在玩家切板后也清除, 例如 <code>_temporaryChannel</code></p>
+    <p>如果你在 Channel 名前添加 <code>SD_</code>, 这表示将其持久化保存, 哪怕你重新开始章节又或是进入别的图, 例如 <code>SD_Channel</code></p>
 </div>
 
 知道 Channel 的含义后我们就可以使用 Trigger 或者实体变着法子改变 Channel 的数值了
@@ -28,6 +30,8 @@ Channel, 所以我们将 `awa` 绑定上去, 这样该移动块后续的移动�
 
 你可以让 `Out Channel` 的值以 `Amount` (可写[表达式](#advanced-expression))的速率接近 `Towards Channel` (可写[表达式](#advanced-expression)), 比如上述写法就对应 `awa` Channel
 数值不断增大, 每秒增加 1
+
+> 如果 `Towards Channel` 留空那么 `Out Channel` 就会随着 `Amount` 无限增大或是减小
 
 ### Channel Clear Controller
 

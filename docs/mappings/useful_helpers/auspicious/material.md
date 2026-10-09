@@ -10,7 +10,7 @@ ausp 还可以为实体和背景添加额外的视觉效果
 
 ![16](../../../assets/mappings/useful_helpers/auspicious/16.png)
 
-与上述其他模板类似, 只需要用 `Connected Container` 框选需要影响的对象, 然后在框里放一个 `Material Template` 并做好 `Layer identifier` 图层配置即可, 比如这里的 `test`
+与其他[模板](./template.md)类似, 只需要用 `Connected Container` 框选需要影响的对象, 然后在框里放一个 `Material Template` 并做好 `Layer identifier` 图层配置即可, 比如这里的 `test`
 
 ### 使用 Material Applier
 
@@ -18,7 +18,7 @@ ausp 还可以为实体和背景添加额外的视觉效果
 
 * `Material Identifier`: 表示你要将对象归到哪一个效果层去管理, 比如这里的 `motion_blur`
 * `Types`: 填入你要影响的[对象的名字](../../loenn/faq.md#entity-name), 用逗号分隔, 这会直接影响同一类对象
-* `path`: 填入一些 ausp 为你预制好的对象名, 用逗号分隔, 比如玩家 `player`, 前景砖 `fg`, 背景砖 `bg` 等
+* `path`: 填入一些 ausp 为你预制好的对象名, 用逗号分隔, 比如玩家 `player`, 前景砖 `fg`, 背景砖 `bg` 等 (你也可以直接填入[对象 ID](../../loenn/faq.md#entity-id))
 
 选择好对象后, 接下来我们就先来讲讲怎么为实体图层添加视觉效果
 
@@ -216,12 +216,11 @@ ausp 还可以为实体和背景添加额外的视觉效果
 
 ### `ausp/selectColor`
 
-类似于颜色二值化, 参数如下
-
-* `color`: 表示一个基准值, 比这个颜色亮的颜色会变成 `falseColor`, 反之变成 `trueColor`
-* `range`: 数值越小颜色越容易变成 `falseColor`, 反之越容易变成 `trueColor`, 可用 [Channel](#params) 控制
-
 ![42](../../../assets/mappings/useful_helpers/auspicious/42.png)
+
+离 `color` 越近/越像 (距离小于 `range`) 的颜色会被设置为 `trueColor`, 反之则为 `falseColor`
+
+> `range` 可用 [Channel](#params) 控制
 
 ![43](../../../assets/mappings/useful_helpers/auspicious/43.gif)
 
@@ -236,8 +235,8 @@ ausp 还可以为实体和背景添加额外的视觉效果
 对于数值类型的参数, 你可以
 
 * 直接设置对应参数的数值: 比如 `opacity:1`
-* 也可以用 [Channel](./channel.md) 控:, 比如 `opacity:@alpha_channel` (需要在 Channel 名前加 `@`)
-* 也可以写表达式, 比如 `opacity:@alpha[*2]` (但似乎只支持[旧版表达式](./channel.md#old-expression))
+* 也可以用 [Channel](./channel.md) 控制:, 比如 `opacity:@alpha_channel` (需要在 Channel 名前加 `@`)
+* 也可以写表达式, 比如 `opacity:@(alpha * 2)`
 
 > 对于一些 Bool 类型比如[描边效果](#border)中的 `corners` 参数, 虽然我们也可以用 `true` 或是 `false`,
 > 但实际上只要是个非零数字都能表示 `true`, 反之 `false` 也对应于 `0`

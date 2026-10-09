@@ -4,8 +4,6 @@ ausp 提供了一系列模板让你非常方便的把一些对象变成另一个
 
 比如我们要把 `Booster` 和 `Refill` 变成果冻, 只需要用 `Connected Container` 将需要影响的对象框住
 
-> ausp 自己的模板砖不用框
-
 ![00](../../../assets/mappings/useful_helpers/auspicious/00.png)
 
 然后在框内放一个果冻模板
@@ -22,8 +20,20 @@ ausp 提供了一系列模板让你非常方便的把一些对象变成另一个
 
 ## 其它 Template 模板
 
-* [`Behavior Chain`](https://www.bilibili.com/video/BV1ZVHp6EEcd/?t=418): 组装用的模板, 默认情况下框内只能放一个模板, 如果要放多个则要用 `Behavior Chain` 组装
-  (别把子节点放在框内了)
+在了解其他模板前我们先讲讲最重要的组装模板 [`Behavior Chain`](https://www.bilibili.com/video/BV1ZVHp6EEcd/?t=418), 
+因为默认情况下一个框内只能放一个模板, 所以如果你要同时将多个模板特性添加给对应实体, 则需要将 `Behavior Chain` 放置在框内并把其他模板按顺序放置在它的子节点中 (别把子节点放在框内了)
+
+![50](../../../assets/mappings/useful_helpers/auspicious/50.png)
+
+> ausp 自己的模板砖不需要用 `Connected Container` 框起来
+
+模板放置的顺序也非常重要, 作者表示
+
+<a id="order"></a>
+
+> [cloudsbelow](https://github.com/cloudsbelow/auspicioushelper/issues/27#issuecomment-6075250110): 在行为链中, 
+> 后续的节点最终会“位于”前面的节点的内部. 因此对于 `chain > fall > moon` 与 `chain > moon > fall` 这两种不同的连接顺序, 它们的表现也是不同的. 
+> 后者会在落地后停止摆动, 因为掉落模板会从其父模板中脱离, 而前者则不会停止, 因为月亮模板仍然是掉落模板中的一个内部成员
 
 ### 状态
 
@@ -61,8 +71,43 @@ ausp 提供了一系列模板让你非常方便的把一些对象变成另一个
 
 * [`Dashhit`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=270): 冲刺碰撞交互模板
 * [`Resetter`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=921): 重置模板, 可以销毁和生成 Template
-* [`Trigger Modifier`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=972): 触发模板, 接收到非零 Channel 后会触发可触发的模板, 比如掉落块, 易碎块之类的 (有的模板需要勾选
-  `Triggerable`)
+
+#### [`Trigger Modifier`](https://www.bilibili.com/video/BV1twpc6gE3v/?t=972)
+
+![51](../../../assets/mappings/useful_helpers/auspicious/51.png)
+
+触发模板, 可以触发其他可触发的模板, 或是调整它们的触发设置 
+
+> 可触发模板一般就是你想的那样, 比如掉落块模板, 易碎块模板之类的 (有的模板需要勾选 `Triggerable`)
+
+**触发相关**
+
+* `Channel`: 接收到非零 `Channel` 后会触发可触发的模板, 一般跟其它模板搭配使用, 而且注意该模板一般顺序放更后面, 这样它才能将触发事件信息传递到父级 (因为事件的触发往往是自下而上的)
+* `Delay`: 表示延迟多少秒后触发事件
+* `Never Trigger On Awake`: 如果开启此项, 那么如果在房间刚加载的时候 Channel 条件已经满足, 也不会触发事件, 等到 Channel 数值改变之后再触发 
+* `Set Channel`: 该 Trigger 触发后会额外设置一些 Channel 的数值, 语法请参考[高级表达式](./channel.md#advanced-expression)
+* `Log`: 开启此选项后, ausp 会在你做出触发事件的时候输出对应的事件名 (需要在 Mod 设置中开启 `Debug Console Mode: LogTxtPollute`)
+
+<pre class="celeste-log"><code><span class="log-time">(10/09/2026 21:33:40)</span> <span class="log-source">[Everest]</span> <span class="log-info">[Info]</span> <span class="log-module">[AuspiciousDebug]</span> From trigger modifier: touch/HoldableHit
+<span class="log-time">(10/09/2026 21:33:43)</span> <span class="log-source">[Everest]</span> <span class="log-info">[Info]</span> <span class="log-module">[AuspiciousDebug]</span> From trigger modifier: touch/dashV/Dash
+<span class="log-time">(10/09/2026 21:33:43)</span> <span class="log-source">[Everest]</span> <span class="log-info">[Info]</span> <span class="log-module">[AuspiciousDebug]</span> From trigger modifier: touch/collideV/Dash
+<span class="log-time">(10/09/2026 21:33:43)</span> <span class="log-source">[Everest]</span> <span class="log-info">[Info]</span> <span class="log-module">[AuspiciousDebug]</span> From trigger modifier: touch/collideV/Normal
+<span class="log-time">(10/09/2026 21:33:45)</span> <span class="log-source">[Everest]</span> <span class="log-info">[Info]</span> <span class="log-module">[AuspiciousDebug]</span> From trigger modifier: touch/dashH/Dash
+<span class="log-time">(10/09/2026 21:33:45)</span> <span class="log-source">[Everest]</span> <span class="log-info">[Info]</span> <span class="log-module">[AuspiciousDebug]</span> From trigger modifier: touch/collideH/Dash
+<span class="log-time">(10/09/2026 21:33:45)</span> <span class="log-source">[Everest]</span> <span class="log-info">[Info]</span> <span class="log-module">[AuspiciousDebug]</span> From trigger modifier: touch/collideH/Normal</code></pre>
+
+* `Propagate Trigger`: 表示是否将事件继续向上传递, 如下图结构, 如果取消勾选, 那么进入果冻时就不会触发红绿灯模板, 因为事件被**挡住了** (需要禁用 `Propagate Riding`) 
+* `Block Filter`: 是否阻塞对应的触发事件, 用逗号分隔 (名字从 `Log` 输出里参考, 可以加 `*` 通配, 比如 `touch/*`), 适合在勾选 `Propagate Trigger` 后传递事件, 但是不想要传递**某些**事件的场景, 比如只填 `*` 就是全阻塞, 跟禁用 `Propagate Trigger` 同等效果
+* `Hide Trigger`: 与 `Propagate Trigger` 类似, 但是你的 hide 只会持续到下一个 `Trigger Modifier`, 然后就会继续传递触发事件了, `Propagate Trigger` 则是直接截断
+* `Skip Channel`: 当此 Channel 不为 `0`, 则事件会直接向上传递而不做其他任何操作, 相当于当前 `Trigger Modifier` 直接不存在
+
+![52](../../../assets/mappings/useful_helpers/auspicious/52.png)
+
+**触发设置相关**
+
+* `Propagate Riding`: 玩家的攀爬和站立是否会触发模板
+* `Advanced Touch Options`: 你可以添加一些玩家状态限制, 表示只有当玩家在对应状态时才能触发对应可触发模板 (你可以在下拉列表里选择对应的玩家状态, 比如只有当玩家在攀爬状态时才能触发掉落块模板)
+* `Collide With`: 填入[对象 ID](../../loenn/faq.md#entity-id), 用逗号分隔, 表示当对应对象和模板内的砖有交集时, 发送触发事件 (比如玩家抓着水母贴砖而过)
 
 ### 复制
 
