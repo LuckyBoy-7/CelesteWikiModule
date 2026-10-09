@@ -6336,13 +6336,13 @@
 <p>我们可以使用 <code>Material Template</code> 或是使用 <code>Material Applier</code> 来选择对象, 被选择的对象会被纳入 <code>Identifier</code> 图层, 后续 ausp 就可以对图层内的对象统一施加效果了</p>
 <h3 id="material-template">使用 Material Template</h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="16" src="../../../../assets/mappings/useful_helpers/auspicious/16.png"></a></p>
-<p>与上述其他模板类似, 只需要用 <code>Connected Container</code> 框选需要影响的对象, 然后在框里放一个 <code>Material Template</code> 并做好 <code>Layer identifier</code> 图层配置即可, 比如这里的 <code>test</code></p>
+<p>与其他<a href="../template/">模板</a>类似, 只需要用 <code>Connected Container</code> 框选需要影响的对象, 然后在框里放一个 <code>Material Template</code> 并做好 <code>Layer identifier</code> 图层配置即可, 比如这里的 <code>test</code></p>
 <h3 id="material-applier">使用 Material Applier</h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="45" src="../../../../assets/mappings/useful_helpers/auspicious/45.png"></a></p>
 <ul>
 <li><code>Material Identifier</code>: 表示你要将对象归到哪一个效果层去管理, 比如这里的 <code>motion_blur</code></li>
 <li><code>Types</code>: 填入你要影响的<a href="../../../loenn/faq/#entity-name">对象的名字</a>, 用逗号分隔, 这会直接影响同一类对象</li>
-<li><code>path</code>: 填入一些 ausp 为你预制好的对象名, 用逗号分隔, 比如玩家 <code>player</code>, 前景砖 <code>fg</code>, 背景砖 <code>bg</code> 等</li>
+<li><code>path</code>: 填入一些 ausp 为你预制好的对象名, 用逗号分隔, 比如玩家 <code>player</code>, 前景砖 <code>fg</code>, 背景砖 <code>bg</code> 等 (你也可以直接填入<a href="../../../loenn/faq/#entity-id">对象 ID</a>)</li>
 </ul>
 <p>选择好对象后, 接下来我们就先来讲讲怎么为实体图层添加视觉效果</p>
 <h2 id="_2">实体</h2>
@@ -6460,12 +6460,11 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="41" src="../../../../assets/mappings/useful_helpers/auspicious/41.png"></a></p>
 <hr>
 <h3 id="auspselectcolor"><code>ausp/selectColor</code></h3>
-<p>类似于颜色二值化, 参数如下</p>
-<ul>
-<li><code>color</code>: 表示一个基准值, 比这个颜色亮的颜色会变成 <code>falseColor</code>, 反之变成 <code>trueColor</code></li>
-<li><code>range</code>: 数值越小颜色越容易变成 <code>falseColor</code>, 反之越容易变成 <code>trueColor</code>, 可用 <a href="#params">Channel</a> 控制</li>
-</ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="42" src="../../../../assets/mappings/useful_helpers/auspicious/42.png"></a></p>
+<p>离 <code>color</code> 越近/越像 (距离小于 <code>range</code>) 的颜色会被设置为 <code>trueColor</code>, 反之则为 <code>falseColor</code></p>
+<blockquote>
+<p><code>range</code> 可用 <a href="#params">Channel</a> 控制</p>
+</blockquote>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="43" src="../../../../assets/mappings/useful_helpers/auspicious/43.gif"></a></p>
 <p><a id="params"></a></p>
 <h2 id="_3"><a href="https://github.com/cloudsbelow/auspicioushelper/wiki/Materials-(shaders)#specifying-parameters" target="_blank" rel="noopener">参数控制</a></h2>
@@ -6474,8 +6473,8 @@
 <p>对于数值类型的参数, 你可以</p>
 <ul>
 <li>直接设置对应参数的数值: 比如 <code>opacity:1</code></li>
-<li>也可以用 <a href="../channel/">Channel</a> 控:, 比如 <code>opacity:@alpha_channel</code> (需要在 Channel 名前加 <code>@</code>)</li>
-<li>也可以写表达式, 比如 <code>opacity:@alpha[*2]</code> (但似乎只支持<a href="../channel/#old-expression">旧版表达式</a>)</li>
+<li>也可以用 <a href="../channel/">Channel</a> 控制:, 比如 <code>opacity:@alpha_channel</code> (需要在 Channel 名前加 <code>@</code>)</li>
+<li>也可以写表达式, 比如 <code>opacity:@(alpha * 2)</code></li>
 </ul>
 <blockquote>
 <p>对于一些 Bool 类型比如<a href="#border">描边效果</a>中的 <code>corners</code> 参数, 虽然我们也可以用 <code>true</code> 或是 <code>false</code>,
