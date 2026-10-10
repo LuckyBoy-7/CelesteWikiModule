@@ -97,7 +97,7 @@ ausp 提供了一系列模板让你非常方便的把一些对象变成另一个
 <span class="log-time">(10/09/2026 21:33:45)</span> <span class="log-source">[Everest]</span> <span class="log-info">[Info]</span> <span class="log-module">[AuspiciousDebug]</span> From trigger modifier: touch/collideH/Normal</code></pre>
 
 * `Propagate Trigger`: 表示是否将事件继续向上传递, 如下图结构, 如果取消勾选, 那么进入果冻时就不会触发红绿灯模板, 因为事件被**挡住了** (需要禁用 `Propagate Riding`) 
-* `Block Filter`: 是否阻塞对应的触发事件, 用逗号分隔 (名字从 `Log` 输出里参考, 可以加 `*` 通配, 比如 `touch/*`), 适合在勾选 `Propagate Trigger` 后传递事件, 但是不想要传递**某些**事件的场景, 比如只填 `*` 就是全阻塞, 跟禁用 `Propagate Trigger` 同等效果
+* `Block Filter`: 是否阻塞对应的触发事件, 用逗号分隔 (名字从 `Log` 输出里参考, 可以加 `*` 通配, 比如 `touch/*`), 适合在勾选 `Propagate Trigger` 后传递事件, 但是不想要传递**某些**事件的场景, 比如只填 `*` 就是全阻塞, 跟禁用 `Propagate Trigger` 同等效果 (如果你写了 `*`, 又在后面加了别的触发事件, 则会反转阻塞条件, 将这个黑名单变为白名单, 相当于只让你后面填的触发事件通过)
 * `Hide Trigger`: 与 `Propagate Trigger` 类似, 但是你的 hide 只会持续到下一个 `Trigger Modifier`, 然后就会继续传递触发事件了, `Propagate Trigger` 则是直接截断
 * `Skip Channel`: 当此 Channel 不为 `0`, 则事件会直接向上传递而不做其他任何操作, 相当于当前 `Trigger Modifier` 直接不存在
 

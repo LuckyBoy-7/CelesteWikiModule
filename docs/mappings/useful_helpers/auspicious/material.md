@@ -149,7 +149,7 @@ ausp 还可以为实体和背景添加额外的视觉效果
 
 ---
 
-### `ausp/opacity`
+### [`ausp/opacity`](https://www.bilibili.com/video/BV1mApv6qE3g)
 
 改变对象的不透明度, 参数为 `opacity` (`0 ~ 1`)
 

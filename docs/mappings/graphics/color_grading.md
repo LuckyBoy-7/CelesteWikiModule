@@ -73,7 +73,7 @@
 既然滤镜本质上是替换颜色, 那么我们把不改色的 `none.png` 滤镜图片和游戏图片放一起调整即可, 
 由于滤镜贴图非常灵活, 所以其实你也可以只改贴图的一部分
 
-这里有个一[网站](https://colorgrade-visualiser.modded-celeste.com/)给出了一些官图画面方便你查看滤镜效果, 复制你的滤镜在网站内 `Ctrl + V` 即可
+这里有一个[网站](https://colorgrade-visualiser.modded-celeste.com/)给出了一些官图画面方便你查看滤镜效果, 复制你的滤镜在网站内 `Ctrl + V` 即可
 
 ### 其他工具
 

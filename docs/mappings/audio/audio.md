@@ -100,7 +100,7 @@ Event 是 FMOD 播放声音的最小单元, 它是音频的包装, 可以给音�
 
 Bank 是 Events 的集合, 经过格式化和压缩后可在游戏中使用(类似于文件之于文件夹的关系, 之后 build 出来相当于就是 `.zip` 了).
 
-在左侧的 Events 标签页下, `右键 > New Bank` 添加一个新的 Bank, 随意取一个你喜欢的名字, 这里是 `TestBank`,
+在左侧的 Banks 标签页下, `右键 > New Bank` 添加一个新的 Bank, 随意取一个你喜欢的名字, 这里是 `TestBank`,
 然后重新找到你的 event, `右键 > Assign to Bank > 你的 Bank(这里是 TestBank)`, 这样你就成功将你的 event 添加到 bank 里了!
 
 > 或者从某种意义上来说应该是 bank 引用了 event, 因为 event 可以被 assigned to 多个 bank
