@@ -5865,7 +5865,7 @@
 
 <ul>
 <li><code>Propagate Trigger</code>: 表示是否将事件继续向上传递, 如下图结构, 如果取消勾选, 那么进入果冻时就不会触发红绿灯模板, 因为事件被<strong>挡住了</strong> (需要禁用 <code>Propagate Riding</code>) </li>
-<li><code>Block Filter</code>: 是否阻塞对应的触发事件, 用逗号分隔 (名字从 <code>Log</code> 输出里参考, 可以加 <code>*</code> 通配, 比如 <code>touch/*</code>), 适合在勾选 <code>Propagate Trigger</code> 后传递事件, 但是不想要传递<strong>某些</strong>事件的场景, 比如只填 <code>*</code> 就是全阻塞, 跟禁用 <code>Propagate Trigger</code> 同等效果</li>
+<li><code>Block Filter</code>: 是否阻塞对应的触发事件, 用逗号分隔 (名字从 <code>Log</code> 输出里参考, 可以加 <code>*</code> 通配, 比如 <code>touch/*</code>), 适合在勾选 <code>Propagate Trigger</code> 后传递事件, 但是不想要传递<strong>某些</strong>事件的场景, 比如只填 <code>*</code> 就是全阻塞, 跟禁用 <code>Propagate Trigger</code> 同等效果 (如果你写了 <code>*</code>, 又在后面加了别的触发事件, 则会反转阻塞条件, 将这个黑名单变为白名单, 相当于只让你后面填的触发事件通过)</li>
 <li><code>Hide Trigger</code>: 与 <code>Propagate Trigger</code> 类似, 但是你的 hide 只会持续到下一个 <code>Trigger Modifier</code>, 然后就会继续传递触发事件了, <code>Propagate Trigger</code> 则是直接截断</li>
 <li><code>Skip Channel</code>: 当此 Channel 不为 <code>0</code>, 则事件会直接向上传递而不做其他任何操作, 相当于当前 <code>Trigger Modifier</code> 直接不存在</li>
 </ul>
