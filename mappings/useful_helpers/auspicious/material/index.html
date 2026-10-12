@@ -5547,6 +5547,67 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#shader_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        预制 Shader
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="预制 Shader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wikipurecolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wiki/pureColor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wikioffset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wiki/offset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wikiscale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wiki/scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wikirotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wiki/rotate
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6305,6 +6366,67 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#shader_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        预制 Shader
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="预制 Shader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wikipurecolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wiki/pureColor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wikioffset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wiki/offset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wikiscale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wiki/scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wikirotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wiki/rotate
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6438,7 +6560,7 @@
 <h3 id="auspcolorgradefade"><code>ausp/colorgradefade</code></h3>
 <p>为对象添加滤镜效果, 但是在两个滤镜之间插值, 需要在 <code>槽位 1</code> 和 <code>槽位 2</code> 上绑定对应滤镜贴图, 并用 <code>fade</code> 参数 (<code>0 ~ 1</code>)调整效果最终偏向哪个滤镜</p>
 <hr>
-<h3 id="auspcompose"><code>ausp/compose</code></h3>
+<h3 id="auspcompose"><a href="https://www.bilibili.com/video/BV1YapG6JEeL/" target="_blank" rel="noopener"><code>ausp/compose</code></a></h3>
 <p>组合最多四张贴图 (不包含源图), 我们可以设置 <code>num</code> 参数调整组合程度</p>
 <ul>
 <li>当 <code>num &lt;= 0</code>, 只显示源图</li>
@@ -6561,8 +6683,9 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h3 id="shader_2">编译 Shader</h3>
 <p>使用 Windows 自带的 fxc 工具编译, <code>fxc.exe /T fx_2_0 /E main /Fo {output}.cso {input}.fx</code>, 例如 <code>fxc.exe /T fx_2_0 /E main /Fo pureColor.cso pureColor.fx</code></p>
-<p>随后将 <code>.cso</code> 文件放在 <code>你的 Mod/Effects/</code> 下, 例如 <code>/Effects/Wiki/pureColor.cso</code></p>
-<p>之后你就可以在 <code>Passes</code> 里使用了!</p>
+<p>随后将 <code>.cso</code> 文件放在 <code>你的 Mod/Effects/</code> 下, 例如 <code>/Effects/Wiki/pureColor.cso</code>, 像下面这样</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="55" src="../../../../assets/mappings/useful_helpers/auspicious/55.png"></a></p>
+<p>之后你就可以在 <code>Passes</code> 里直接使用我们自定义的 Shader 了!</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="48" src="../../../../assets/mappings/useful_helpers/auspicious/48.png"></a></p>
 <p>我们用 <code>Wiki/pureColor</code> 将对象染黑, 加上一个简单的外描边, 并简单加点 <code>Bloom</code> 相关的视觉效果就已经能做到比较有意思的风格化了</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="49" src="../../../../assets/mappings/useful_helpers/auspicious/49.png"></a></p>
@@ -6575,6 +6698,124 @@
 
 <h3 id="_7"><a href="https://github.com/cloudsbelow/auspicioushelper/wiki/Materials-(shaders)#brief-note-for-shader-writers" target="_blank" rel="noopener">其他参数</a></h3>
 <p>ausp 为我们定义了一些参数方便我们访问一些游戏里的数据</p>
+<h3 id="shader_3">预制 Shader</h3>
+<blockquote>
+<p>这里补充了一些 ausp 没提供的 Shader</p>
+</blockquote>
+<h4 id="wikipurecolor"><code>Wiki/pureColor</code></h4>
+<ul>
+<li><a href="../../../../assets/mappings/useful_helpers/auspicious/shaders/pureColor.cso"><code>.cso</code></a></li>
+<li><a href="../../../../assets/mappings/useful_helpers/auspicious/shaders/src/pureColor.fx"><code>.fx</code></a></li>
+</ul>
+<p>参数为 <code>pureColor</code>, 表示讲贴图设置为纯色, 比如 <code>pureColor:#000000</code></p>
+<h4 id="wikioffset"><a href="https://www.bilibili.com/video/BV1BZp96kEjr/" target="_blank" rel="noopener"><code>Wiki/offset</code></a></h4>
+<ul>
+<li><a href="../../../../assets/mappings/useful_helpers/auspicious/shaders/offset.cso"><code>.cso</code></a></li>
+<li><a href="../../../../assets/mappings/useful_helpers/auspicious/shaders/src/offset.fx"><code>.fx</code></a></li>
+</ul>
+<p>参数为 <code>offset</code>, 表示将贴图偏移 <code>offset</code> 的距离, 比如向右偏移 <code>3px</code>, 向上偏移 <code>2px</code> 应该写成 <code>offset:[3, -2]</code></p>
+<blockquote>
+<p>Black_Ice: 可以做<a href="https://www.bilibili.com/video/BV1BZp96kEjr/" target="_blank" rel="noopener">神圣套效果</a></p>
+</blockquote>
+<div class="language-lua highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">ausp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">"#Celeste.Mod.auspicioushelper.iop.ChannelIopExp2"</span><span class="p">)</span>
+
+<span class="kr">function</span><span class="w"> </span><span class="nf">onBegin</span><span class="p">()</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">targetDist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">curDist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">while</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="kr">do</span>
+<span class="w">        </span><span class="kd">local</span><span class="w"> </span><span class="nv">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="kr">if</span><span class="w"> </span><span class="nf">getFlag</span><span class="p">(</span><span class="s2">"show"</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">            </span><span class="nv">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">targetDist</span>
+<span class="w">        </span><span class="kr">end</span>
+
+<span class="w">        </span><span class="nv">curDist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">moveTowards</span><span class="p">(</span><span class="nv">curDist</span><span class="p">,</span><span class="w"> </span><span class="nv">target</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+
+<span class="w">        </span><span class="nv">ausp</span><span class="p">.</span><span class="nf">setChannel</span><span class="p">(</span><span class="s2">"offset1_x"</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nv">curDist</span><span class="p">)</span>
+<span class="w">        </span><span class="nv">ausp</span><span class="p">.</span><span class="nf">setChannel</span><span class="p">(</span><span class="s2">"offset2_x"</span><span class="p">,</span><span class="w"> </span><span class="nv">curDist</span><span class="p">)</span>
+
+<span class="w">        </span><span class="nf">wait</span><span class="p">()</span>
+<span class="w">    </span><span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span><span class="w"> </span><span class="nf">moveTowards</span><span class="p">(</span><span class="nv">from</span><span class="p">,</span><span class="w"> </span><span class="nv">to</span><span class="p">,</span><span class="w"> </span><span class="nv">distance</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nv">from</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">        </span><span class="kr">return</span><span class="w"> </span><span class="nb">math.min</span><span class="p">(</span><span class="nv">from</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">distance</span><span class="p">,</span><span class="w"> </span><span class="nv">to</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">end</span>
+<span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nb">math.max</span><span class="p">(</span><span class="nv">from</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nv">distance</span><span class="p">,</span><span class="w"> </span><span class="nv">to</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="56" src="../../../../assets/mappings/useful_helpers/auspicious/56.gif"></a></p>
+<h4 id="wikiscale"><code>Wiki/scale</code></h4>
+<ul>
+<li><a href="../../../../assets/mappings/useful_helpers/auspicious/shaders/scale.cso"><code>.cso</code></a></li>
+<li><a href="../../../../assets/mappings/useful_helpers/auspicious/shaders/src/scale.fx"><code>.fx</code></a></li>
+</ul>
+<p>参数为 <code>scale</code>, 表示将贴图缩放 <code>scale</code> 的大小, 比如 <code>scale:[3, 3]</code> 效果像下面这样 </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="53" src="../../../../assets/mappings/useful_helpers/auspicious/53.png"></a></p>
+<p>不过我们仍要设置一个额外锚点参数 <code>worldScalePivot</code>, 因为 ausp 的画布是整个屏幕, 
+所以我们需要提供缩放支点的世界坐标, 写成类似这种形式 <code>scale:[3, 3], worldScalePivot:[@worldScalePivot_x, @worldScalePivot_y]</code>, 
+最后通过 <a href="../../../lua/lua_cutscene/">Lua Cutscenes</a> 来设置 Channel</p>
+<blockquote>
+<p>比如下方这个例子设置的是水母的位置, 注释里是玩家位置, 然后在参数里引用此动态 Channel 即可</p>
+</blockquote>
+<div class="language-lua highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">ausp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">"#Celeste.Mod.auspicioushelper.iop.ChannelIopExp2"</span><span class="p">)</span>
+
+<span class="kr">function</span><span class="w"> </span><span class="nf">onBegin</span><span class="p">()</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">jellyfish</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getAllEntities</span><span class="p">(</span><span class="s2">"Glider"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Celeste."</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="c1">-- 拿到场景里第一个加载的水母</span>
+<span class="w">    </span><span class="kr">while</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="kr">do</span>
+<span class="w">        </span><span class="c1">-- ausp.setChannel("worldScalePivot_x", player.Position.X)</span>
+<span class="w">        </span><span class="c1">-- ausp.setChannel("worldScalePivot_y", player.Position.Y)</span>
+
+<span class="w">        </span><span class="nv">ausp</span><span class="p">.</span><span class="nf">setChannel</span><span class="p">(</span><span class="s2">"worldScalePivot_x"</span><span class="p">,</span><span class="w"> </span><span class="nv">jellyfish</span><span class="p">.</span><span class="py">Position</span><span class="p">.</span><span class="py">X</span><span class="p">)</span>
+<span class="w">        </span><span class="nv">ausp</span><span class="p">.</span><span class="nf">setChannel</span><span class="p">(</span><span class="s2">"worldScalePivot_y"</span><span class="p">,</span><span class="w"> </span><span class="nv">jellyfish</span><span class="p">.</span><span class="py">Position</span><span class="p">.</span><span class="py">Y</span><span class="p">)</span>
+<span class="w">        </span><span class="nf">wait</span><span class="p">()</span>
+<span class="w">    </span><span class="kr">end</span>
+<span class="kr">end</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h4 id="wikirotate"><code>Wiki/rotate</code></h4>
+<ul>
+<li><a href="../../../../assets/mappings/useful_helpers/auspicious/shaders/rotate.cso"><code>.cso</code></a></li>
+<li><a href="../../../../assets/mappings/useful_helpers/auspicious/shaders/src/rotate.fx"><code>.fx</code></a></li>
+</ul>
+<p>参数为 <code>rotate</code>, 表示旋转程度, 比如 <code>rotate: 1</code>, 同时我们也要设置锚点 <code>worldRotatePivot</code>, 作用类似于上述 <code>Wiki/scale</code> 的 <code>worldScalePivot</code></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="54" src="../../../../assets/mappings/useful_helpers/auspicious/54.png"></a></p>
 
 
 
