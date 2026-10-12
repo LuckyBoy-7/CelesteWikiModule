@@ -180,7 +180,7 @@ ausp 还可以为实体和背景添加额外的视觉效果
 
 ---
 
-### `ausp/compose`
+### [`ausp/compose`](https://www.bilibili.com/video/BV1YapG6JEeL/)
 
 组合最多四张贴图 (不包含源图), 我们可以设置 `num` 参数调整组合程度
 
@@ -322,9 +322,11 @@ technique BasicTech {
 
 使用 Windows 自带的 fxc 工具编译, `fxc.exe /T fx_2_0 /E main /Fo {output}.cso {input}.fx`, 例如 `fxc.exe /T fx_2_0 /E main /Fo pureColor.cso pureColor.fx`
 
-随后将 `.cso` 文件放在 `你的 Mod/Effects/` 下, 例如 `/Effects/Wiki/pureColor.cso`
+随后将 `.cso` 文件放在 `你的 Mod/Effects/` 下, 例如 `/Effects/Wiki/pureColor.cso`, 像下面这样
 
-之后你就可以在 `Passes` 里使用了!
+![55](../../../assets/mappings/useful_helpers/auspicious/55.png)
+
+之后你就可以在 `Passes` 里直接使用我们自定义的 Shader 了!
 
 ![48](../../../assets/mappings/useful_helpers/auspicious/48.png)
 
@@ -342,3 +344,94 @@ technique BasicTech {
 ### [其他参数](https://github.com/cloudsbelow/auspicioushelper/wiki/Materials-(shaders)#brief-note-for-shader-writers)
 
 ausp 为我们定义了一些参数方便我们访问一些游戏里的数据
+
+### 预制 Shader
+
+> 这里补充了一些 ausp 没提供的 Shader
+
+#### `Wiki/pureColor`
+
+* [`.cso`](../../../assets/mappings/useful_helpers/auspicious/shaders/pureColor.cso)
+* [`.fx`](../../../assets/mappings/useful_helpers/auspicious/shaders/src/pureColor.fx)
+
+参数为 `pureColor`, 表示讲贴图设置为纯色, 比如 `pureColor:#000000`
+
+#### [`Wiki/offset`](https://www.bilibili.com/video/BV1BZp96kEjr/)
+
+* [`.cso`](../../../assets/mappings/useful_helpers/auspicious/shaders/offset.cso)
+* [`.fx`](../../../assets/mappings/useful_helpers/auspicious/shaders/src/offset.fx)
+
+参数为 `offset`, 表示将贴图偏移 `offset` 的距离, 比如向右偏移 `3px`, 向上偏移 `2px` 应该写成 `offset:[3, -2]`
+
+> Black_Ice: 可以做[神圣套效果](https://www.bilibili.com/video/BV1BZp96kEjr/)
+
+```lua
+local ausp = require("#Celeste.Mod.auspicioushelper.iop.ChannelIopExp2")
+
+function onBegin()
+    local targetDist = 20;
+    local curDist = 0;
+    while true do
+        local target = 0;
+        if getFlag("show") then
+            target = targetDist
+        end
+
+        curDist = moveTowards(curDist, target, 1)
+        
+        ausp.setChannel("offset1_x", -curDist)
+        ausp.setChannel("offset2_x", curDist)
+
+        wait()
+    end
+end
+
+function moveTowards(from, to, distance)
+    if from < to then
+        return math.min(from + distance, to)
+    end
+    return math.max(from - distance, to)
+end
+```
+
+![56](../../../assets/mappings/useful_helpers/auspicious/56.gif)
+
+#### `Wiki/scale`
+
+* [`.cso`](../../../assets/mappings/useful_helpers/auspicious/shaders/scale.cso)
+* [`.fx`](../../../assets/mappings/useful_helpers/auspicious/shaders/src/scale.fx)
+
+参数为 `scale`, 表示将贴图缩放 `scale` 的大小, 比如 `scale:[3, 3]` 效果像下面这样 
+
+![53](../../../assets/mappings/useful_helpers/auspicious/53.png)
+
+不过我们仍要设置一个额外锚点参数 `worldScalePivot`, 因为 ausp 的画布是整个屏幕, 
+所以我们需要提供缩放支点的世界坐标, 写成类似这种形式 `scale:[3, 3], worldScalePivot:[@worldScalePivot_x, @worldScalePivot_y]`, 
+最后通过 [Lua Cutscenes](../../lua/lua_cutscene.md) 来设置 Channel
+
+> 比如下方这个例子设置的是水母的位置, 注释里是玩家位置, 然后在参数里引用此动态 Channel 即可
+
+```lua
+local ausp = require("#Celeste.Mod.auspicioushelper.iop.ChannelIopExp2")
+
+function onBegin()
+    local jellyfish = getAllEntities("Glider", "Celeste.")[1] -- 拿到场景里第一个加载的水母
+    while true do
+        -- ausp.setChannel("worldScalePivot_x", player.Position.X)
+        -- ausp.setChannel("worldScalePivot_y", player.Position.Y)
+
+        ausp.setChannel("worldScalePivot_x", jellyfish.Position.X)
+        ausp.setChannel("worldScalePivot_y", jellyfish.Position.Y)
+        wait()
+    end
+end
+
+```
+
+#### `Wiki/rotate`
+* [`.cso`](../../../assets/mappings/useful_helpers/auspicious/shaders/rotate.cso)
+* [`.fx`](../../../assets/mappings/useful_helpers/auspicious/shaders/src/rotate.fx)
+
+参数为 `rotate`, 表示旋转程度, 比如 `rotate: 1`, 同时我们也要设置锚点 `worldRotatePivot`, 作用类似于上述 `Wiki/scale` 的 `worldScalePivot`
+
+![54](../../../assets/mappings/useful_helpers/auspicious/54.png)

@@ -246,3 +246,17 @@ Channel, 所以我们将 `awa` 绑定上去, 这样该移动块后续的移动�
 7. `[+8, -10, abs]`
 8. `[-2, abs]`
 9. `[+2]`
+
+## Lua 交互
+
+有时你可能需要使用 [Lua Cutscenes](../../lua/lua_cutscene.md) 来设置 Channel, 所以这里简单举一个例子, 更多函数请看[官方源码](https://github.com/cloudsbelow/auspicioushelper/blob/746c1305482d064c922340f427bb0b6fa6bb4a44/Source/interop/channeliop.cs#L47)
+
+```lua
+local ausp = require("#Celeste.Mod.auspicioushelper.iop.ChannelIopExp2")
+
+function onBegin()
+    ausp.setChannel("awa", 123)
+    ausp.setChannel("qwq", ausp.readChannel("awa") - 23)
+end
+
+```
