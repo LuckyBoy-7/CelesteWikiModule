@@ -17,7 +17,7 @@
 
 建议你至少掌握下内容以便开始皮肤 Mod 制作:
 
-1. 你需要知道[官图素材](../useful_links.md#_1)是怎么放的, 你才知道你的素材该放哪儿
+1. 你需要知道[官图素材](../graphics/graphics.md)是怎么放的, 你才知道你的素材该放哪儿, 可以对照着[皮肤替换章节](../graphics/replace_assets/replace_assets.md)来理解
 2. 你需要知道[官图动画](../xml/sprites_xml.md#xml)是怎么配置的, 你才知道你该怎么照着抄配置
 3. 你需要下载并启用 [Skin Mod Helper Plus](https://gamebanana.com/mods/473796) 以便使用其对应的功能
 

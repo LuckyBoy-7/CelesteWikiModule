@@ -15,6 +15,7 @@
 * 蔚蓝 Bingo 群: 798819063
 * cn hist 群: 887608009(需有 cnhist 认可的 hist 通关)
 * [优质图](https://docs.qq.com/smartsheet/DTktZWHpRd29wU0N1?tab=BB08J2&viewId=vUQPXH)收集群: 871638607
+* [拾遗图鉴](https://ccatlas.net)群: [1121371688](https://qm.qq.com/q/mBXpVLZ2W4)
 
 ### 群服联机相关
 

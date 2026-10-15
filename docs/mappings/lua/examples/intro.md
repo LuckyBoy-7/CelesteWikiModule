@@ -14,7 +14,7 @@
 
 ### 快速找到某一段文本被哪个实体使用了
 
-使用 [BinaryXML](../../useful_links.md#tools) 将地图 `.bin` 转化为 `.xml`, 之后在 Dialog 文件夹里的语言文件中找到对应的 dialog key,
+使用 [BinaryXML](../../overall.md#tools) 将地图 `.bin` 转化为 `.xml`, 之后在 Dialog 文件夹里的语言文件中找到对应的 dialog key,
 之后在 `.xml` 中搜索这个 key 即可(除非这个 key 是硬编码的, 否则这个方法通用)
 
 > 当然情况比较简单的话直接找到对应房间翻着看就行了

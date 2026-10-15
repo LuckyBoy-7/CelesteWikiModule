@@ -1,5 +1,10 @@
 # 更好的调试
 
+参考
+
+* [Everest 启动参数配置](https://github.com/EverestAPI/Resources/wiki/Command-Line-Arguments)
+* [Environment Variables](https://github.com/EverestAPI/Resources/wiki/Environment-Variables)
+
 作图的问题千奇百怪, 打开控制台可以看到 Everest / Helper 输出的调试信息, 这会方便我们排查问题
 
 ## 打开控制台

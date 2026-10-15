@@ -280,4 +280,62 @@
 ## 第八届制图接力 -- 余烬山脊
 
 * [视频预告](https://www.bilibili.com/video/BV1vvab69EWY/)
+* [视频流程](https://www.bilibili.com/video/BV1QQpn6qEvD/)
+* [香蕉网](https://gamebanana.com/mods/726584)
+
+<div class="banner">
+    <img src="/celeste_wiki/assets/activity/mappings/relay/relay/8_1.jpg">
+    <img src="/celeste_wiki/assets/activity/mappings/relay/relay/8_2.jpg">
+</div>
+
+### 主办方 Host
+
+* [Runmo](https://space.bilibili.com/1748956197)
+* [UnderDragon](https://space.bilibili.com/385549584)
+* [岚汐LanXi](https://space.bilibili.com/1413291041)
+
+### 参赛人员
+
+* Runmo
+* UnderDragon
+* Tao_Su
+* Black Ice 233
+* Arcroven
+* RikiUwU
+* Breaker-K
+* Bee_Gezi
+* sleepmouse
+* Reminiscence
+* Youner
+* F2er0r
+* blackT3A
+* azure_bluet
+* Kurose_Karasu
+* Iterator
+* I2170I
+* TrigenWolf.
+* ShiroN_L
+* Cyanus
+* hello
+
+### 装饰
+
+* Myn_Gen
+* Black Ice 233
+
+### 部分素材
+
+* UnderDragon
+* Tao_Su
+* Black Ice 233
+* Salieri
+
+### 测试
+
+* SesameSoup123
+* lilymoe
+* sui
+* ArcyFieldS
+* rainsong
+* Fa11enDu57
 

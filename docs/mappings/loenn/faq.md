@@ -1,12 +1,12 @@
-## [b站 Wiki 常见问题解决方案](https://wiki.biligame.com/celeste/Loenn#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+其他 FAQ
 
-## [Everest Wiki 常见问题解决方案](https://github.com/EverestAPI/Resources/wiki/Mapping-FAQ)
+> 你能问出的问题别人大概率也问过了, 可以在对应页面试着搜搜看
 
-## [常见 Helper 问题 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e638075b776eeb404fda8b3&pm=s)
+* [b站 Wiki 常见问题解决方案](https://wiki.biligame.com/celeste/Loenn#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+* [Everest Wiki 常见问题解决方案](https://github.com/EverestAPI/Resources/wiki/Mapping-FAQ)
+* [常见 Helper 问题 by 底龙](https://uddrg.notion.site/UnderDragon-s-Partial-Wiki-2737f4f27e63808582b3f0689163d8f9?p=2737f4f27e638075b776eeb404fda8b3&pm=s)
+* [Discord 问答区](https://discord.com/channels/403698615446536203/953393160464269402)
 
-## [Discord 问答区](https://discord.com/channels/403698615446536203/953393160464269402)
-
-你能问出的问题别人大概率也问过了, 可以在问答区和和全局搜索区(右上角)试着搜搜看
 
 ## 为什么不能切板
 
@@ -47,7 +47,7 @@ Grouped, Connected 之类的前缀, 最稳的方法是直接在[所有Helper及�
 
 ### 推荐的方式
 
-* 搭配[对照表](../useful_links.md#entity), 用你聪明的大脑猜猜看这个实体可能叫什么
+* 搭配[对照表](../overall.md#entity), 用你聪明的大脑猜猜看这个实体可能叫什么
 * 拆包(即打开对应地图文件查看)
 * 下载 CelesteTAS Mod, 运行有这个实体的图, 然后按 `~` 打开控制台点击相应实体的碰撞箱查看信息, 类似于[这样](#type)
 * 搜聊天记录

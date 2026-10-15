@@ -8,7 +8,7 @@
 2.  如果想要对原版的草莓进行材质更换, 最常见的方式是通过【[Sprites.xml](../xml/sprites_xml.md#xml)】文件
 3.  在作图时显示玩家运动轨迹所必备的制图 Mod 为【[Aurora's Loenn Plugin](../loenn/plugins.md#ghost)】
 4.  最为常见的能更改游戏内各种机制的属性, 包括但不限于速度、冲刺数、跳跃数等, 最常用的Mod为【Extended Variant Mode】
-5.  蔚蓝 Mod 制作时必需的用于对路径进行参照的素材库名字叫做【[Graphics Dump](../useful_links.md)】
+5.  蔚蓝 Mod 制作时必需的用于对路径进行参照的素材库名字叫做【[Graphics Dump](../graphics/graphics.md)】
 6.  请写出三种水母的名称(同种水母的属性变体只算为一种)：【】, 【】, 【】
 7.  在原版游戏中第一章就出现过的灰砖, 在 Loenn 的实体列表叫做【Crumble Block(Default)】
 8.  在地图中引入自定义前景地形砖, 需要通过在 Loenn 的 Metadata 中选中 Mod 内的【[ForegroundTiles.xml](../xml/tilesets.md)】文件进行

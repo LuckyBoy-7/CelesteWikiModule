@@ -11,7 +11,7 @@
 
 了解 [Mod 结构](../mod_structure.md)有助于你理解皮肤制作
 
-如果只是做一个皮肤那非常简单, 把官图[解包素材](../useful_links.md#_1)放到你的 Mod 里, 修改贴图即可(可以参考 [Niko 皮肤(latest version-Solo 版本)](https://gamebanana.com/mods/251814)), 
+如果只是做一个皮肤那非常简单, 把官图[解包素材](../graphics/graphics.md)放到你的 Mod 里, 修改贴图即可(可以参考 [Niko 皮肤(latest version-Solo 版本)](https://gamebanana.com/mods/251814)), 
 因为你的素材会[覆盖](../mod_structure.md#conflict)官图的素材, 但是这样就把复杂度丢给了玩家, 如果有多个皮肤 Mod, 
 玩家还需要处理他们的加载顺序, 或者是频繁将皮肤 Mod 拖入/拖出 Mods 文件夹, 所以更通用的做法是使用一个皮肤管理器
 

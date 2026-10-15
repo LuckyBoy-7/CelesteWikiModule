@@ -85,9 +85,9 @@ nav:
   - 活动:
       - Olympus News: "https://maddie480.ovh/celeste/olympus-news"
       - 群服活动: 
-          - Any% 分段速通接力活动: "https://bbs.celemiao.com/d/471-miaonet-she-qu-any-fen-duan-su-tong-jie-li-huo-dong"
-          - ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng"
           - ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang"
+          - ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng"
+          - Any% 分段速通接力活动: "https://bbs.celemiao.com/d/471-miaonet-she-qu-any-fen-duan-su-tong-jie-li-huo-dong"
       - 制图活动:
           - 制图竞赛:
               - Climb Up 竞赛: "activity/mappings/contest/climb_up.md"
@@ -102,39 +102,56 @@ nav:
           - 国庆 2026&nbsp;<img src="/celeste_wiki/assets/activity/general/china.png" class="china-icon"/>: "activity/general/national_day2026.md"
   - 常规:
       - 游戏官网: "https://www.celestegame.com/"
-      - 官图速览: "https://berrycamp.github.io/"
-      - 常规:
-          - 原版常见问题: "general/common/vanilla_issues.md"
-          - 游戏机制和技巧: "general/common/mechanics.md"
-          - 彩蛋: "general/common/easter_eggs.md"
-          - 技巧和攻略向教程: "general/common/tutorials.md"
-      - 查阅: "general/lookup.md"
       - 速通: "general/speedrun.md"
       - 炼金&nbsp;<img src="/celeste_wiki/assets/mappings/quiz/1/goldenberry.gif"/>: "general/deathless.md"
       - TAS: "general/tas.md"
+      - 其他:
+          - 蔚蓝相关术语: "mods/term.md"
+          - 原版常见问题: "general/common/vanilla_issues.md"
+          - 技巧和攻略向教程: "general/common/tutorials.md"
+          - 游戏机制和技巧: "general/common/mechanics.md"
+          - 查阅: "general/lookup.md"
+          - 官图速览: "https://berrycamp.github.io/"
+          - 彩蛋: "general/common/easter_eggs.md"
   - Mods:
       - Mod 入门: "mods/start.md"
-      - 蔚蓝相关术语: "mods/term.md"
       - 提问/自学 💪: "mods/question_and_self_study.md"
       - 游戏崩溃问题 😭: "mods/game_crashes.md"
-      - 联机 Mod:
-          - 蔚蓝联机群服小白入门指南: "https://bbs.celemiao.com/d/357-wei-lan-lian-ji-qun-fu-miaonet-xiao-bai-shi-yong-zhi-nan"
-          - 蔚蓝联机群服上手指南: "https://bbs.celemiao.com/d/531-wei-lan-miaonet-qun-fu-lian-ji-shang-shou-zhi-nan-052-alpha"
-      - 推荐地图: "https://docs.qq.com/smartsheet/DTktZWHpRd29wU0N1?tab=BB08J2&viewId=vUQPXH"
-      - 推荐 Mod: "mods/common/recommended_mods.md"
+      - 推荐资源:
+          - 联机 Mod:
+              - 蔚蓝联机群服小白入门指南: "https://bbs.celemiao.com/d/357-wei-lan-lian-ji-qun-fu-miaonet-xiao-bai-shi-yong-zhi-nan"
+              - 蔚蓝联机群服上手指南: "https://bbs.celemiao.com/d/531-wei-lan-miaonet-qun-fu-lian-ji-shang-shou-zhi-nan-052-alpha"
+          - 推荐地图:
+              - 优质地图推荐: "https://docs.qq.com/smartsheet/DTktZWHpRd29wU0N1?tab=BB08J2&viewId=vUQPXH"
+              - 拾遗图鉴: "https://ccatlas.net/"
+          - 推荐 Mod: "mods/common/recommended_mods.md"
   - 制图:
       - 教程 👈😋: "mappings/overall.md"
-      - 入门:
-        - 开始: "mappings/start/start.md"
-        - 引言: "mappings/start/introduction.md"
-        - 这...是个梦吗: "mappings/start/is_that_a_dream.md"
-        - 新人必做: "mappings/start/must_do.md"
       - Loenn:
           - 下载及游戏配置: "https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/"
-          - 基本概念及使用: "mappings/loenn/basic.md"
           - 初见问题: "mappings/loenn/loenn_first_encountered_issues.md"
+          - 基本概念及使用: "mappings/loenn/basic.md"
           - 常见问题: "mappings/loenn/faq.md"
           - 实用插件: "mappings/loenn/plugins.md"
+      - 实用:
+          - 控制台: "mappings/cmd.md"
+          - 实用 Helper:
+              - 大纲: "mappings/useful_helpers/useful_helpers.md"
+              - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
+              - Eevee Helper: "mappings/useful_helpers/eevee.md"
+              - Auspicious Helper:
+                  - 大纲: "mappings/useful_helpers/auspicious/auspicious.md"
+                  - Template 模板: "mappings/useful_helpers/auspicious/template.md"
+                  - Channel 系统: "mappings/useful_helpers/auspicious/channel.md"
+                  - Material 材质: "mappings/useful_helpers/auspicious/material.md"
+              - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
+              - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
+              - hELPER: "mappings/useful_helpers/hELPER.md"
+          - 查表:
+              - 实体深度表: "mappings/graphics/entity_depth.md"
+              - 玩家状态表: "mappings/player_state.md"
+              - Tile Sound Id 表: "mappings/audio/tile_sounds.md"
+              - 蔚蓝 Event 路径表: "https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump"
       - 基础: 
           - Mod 结构 🧩: "mappings/mod_structure.md"
           - 房间: "mappings/loenn/room.md"
@@ -154,7 +171,6 @@ nav:
               - 滤镜: "mappings/graphics/color_grading.md"
               - Decals: "mappings/graphics/decals.md"
               - DecalRegistry: "mappings/graphics/decal_registry.md"
-              - 实体深度表: "mappings/graphics/entity_depth.md"
               - 皮肤制作:
                   - 大纲: "mappings/graphics/skin.md"
                   - Skin Mod Helper: "mappings/graphics/SMH.md"
@@ -182,8 +198,6 @@ nav:
               - 大纲: "mappings/audio/audio.md"
               - 播放问题排查: "mappings/audio/troubleshooting.md"
               - 常见参数: "mappings/audio/params.md"
-              - Tile Sound Id 表: "mappings/audio/tile_sounds.md"
-              - 蔚蓝 Event 路径表: "https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump"
               - 常见问题: "mappings/audio/faq.md"
           - 剧情:
               - Lua Cutscene:
@@ -210,23 +224,8 @@ nav:
           - 测图: "mappings/mod_test.md"
           - 发布 Mod: "mappings/publish_mod.md"
       - 其他:
-          - 控制台: "mappings/cmd.md"
-          - 实用 Helper:
-              - 大纲: "mappings/useful_helpers/useful_helpers.md"
-              - Mapping Utils: "mappings/useful_helpers/mapping_utils.md"
-              - Eevee Helper: "mappings/useful_helpers/eevee.md"
-              - Auspicious Helper:
-                  - 大纲: "mappings/useful_helpers/auspicious/auspicious.md"
-                  - Template 模板: "mappings/useful_helpers/auspicious/template.md"
-                  - Channel 系统: "mappings/useful_helpers/auspicious/channel.md"
-                  - Material 材质: "mappings/useful_helpers/auspicious/material.md"
-              - Crystalline Helper: "mappings/useful_helpers/trigger_trigger.md"
-              - bits & bolts: "mappings/useful_helpers/bits & bolts.md"
-              - hELPER: "mappings/useful_helpers/hELPER.md"
           - 蔚蓝制图小测:
               - 第一届蔚蓝制图小测😱: "mappings/quiz.md"
               - 题库:
                   - 判断题: "mappings/quiz/true_or_false_questions.md"
                   - 填空题: "mappings/quiz/blank_filling_questions.md"
-          - 玩家状态查询: "mappings/player_state.md"
-          - 链接汇总: "mappings/useful_links.md"

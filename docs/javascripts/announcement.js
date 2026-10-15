@@ -8,11 +8,6 @@ const announcements = [
         url: "/celeste_wiki/general/wiki/",
     },
     {
-        text: "Any% 分段速通接力活动",
-        url: "https://bbs.celemiao.com/d/471-miaonet-she-qu-any-fen-duan-su-tong-jie-li-huo-dong",
-        target: "_blank"
-    },
-    {
         text: "~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~",
         url: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong",
         target: "_blank"

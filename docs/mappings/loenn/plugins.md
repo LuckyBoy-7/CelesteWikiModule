@@ -3,8 +3,6 @@
 我将在这里对一些相对简单的插件(也可能是插件的部分功能)作简短的介绍, 
 其他没提及的可在 [Everest Wiki](https://github.com/EverestAPI/Resources/wiki/Useful-Mapping-Tools) 上查看
 
-[记得先把该下的 Mod 都下了(](../start/must_do.md#helper)
-
 ## Room
 
 ![room_plugin_panel](../../assets/mappings/Loenn/plugins/room_plugin_panel.png){style="width: 150px; title="123"}

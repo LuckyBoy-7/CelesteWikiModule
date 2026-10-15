@@ -4,7 +4,6 @@
 * [所有 Helper 目录](https://maddie480.ovh/celeste/custom-entity-catalog)
 * [常用 Helper 文档](https://github.com/EverestAPI/Resources/wiki/Helper-Manuals)
 
-
 ## [Frost Helper](https://gamebanana.com/mods/53647)
 
 ### [LuaBadelineBoss](https://github.com/JaThePlayer/FrostHelper/wiki/Lua-Badeline-Boss-Starter-Guide)

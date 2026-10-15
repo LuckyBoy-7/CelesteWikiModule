@@ -14,9 +14,12 @@
 如果你很急, 那么你在 Loenn 里作好图之后可以直接把保存后的 `.bin` 文件丢在蔚蓝根目录的 Mods 文件夹下, 此时打开游戏理论上你就能看到你作的图了,
 但是这样你的 Mod 会被视作 `Uncategorized 未分类的`, 因为 Everest 只知道这有一张图, 但是其他啥也不知道, 所以你才需要学习 Mod 结构告诉 Everest 你的 Mod 长啥样
 
+首先不难理解我们需要一个文件夹来存放我们的地图, 素材和其他的各种数据, 后续我们会将它们[打包](#pack)并[上传至香蕉网](publish_mod.md)以供别人游玩,
 一个比较标准的 Mod 大概长下面这个样子
 
 > 用 `{}` 包裹的部分都是占位符, 你想取什么名字都可以, 至于其他的文件夹, 请保持名字大小写和示例的一致
+> 
+> 你可以直接搭配着游戏本体结构 `../Steam/steamapps/common/Celeste/Content/` 或者其他 Mod 结构一起看
 
 * 📁 Celeste
     - 📁 Mods
@@ -42,14 +45,8 @@
                 - 📄 {BankName}.guid.txt 
             - 📁 Tutorials
 
-首先我们需要一个文件夹来存放我们的地图, 素材和其他的各种数据, 后续我们会将它们[打包](#pack)并[上传至香蕉网](publish_mod.md)以供别人游玩
-
 以下列出了几个在 Mod 里经常出现的文件(夹), 你可以参考一下
 
-> 你可以直接搭配着游戏本体结构 `../Steam/steamapps/common/Celeste/Content/` 或者其他 Mod 结构一起看
-> 
-> 你可能需要先下载好[官图图片解包素材](./useful_links.md)以了解 Graphics 文件夹中文件的具体结构
- 
 | 文件/文件夹       | 是否必须 | 作用             |
 |:-------------|:-----|:---------------|
 | everest.yaml | √    | 这是Mod的身份证      |
@@ -101,7 +98,7 @@
 
 稍微复杂点的 `everest.yaml` 举例
 
-``` yaml
+``` yaml hl_lines="3 11"
 - Name: YourModName
   Version: 1.0.0
   DLL: Code/YourCode.dll
@@ -126,7 +123,7 @@
 
 ### DLL
 
-你编译出来的 DLL 的位置, 如果你会 Code, 写了自定义实体或者别的什么功能, Everest 总得知道你 DLL 在哪儿吧
+你编译出来的 DLL 的位置, 如果你会 [Code](./code.md), 写了自定义实体或者别的什么功能, Everest 总得知道你 DLL 在哪儿吧
 
 ### OptionalDependencies
 
@@ -136,7 +133,7 @@
 
 常用于:
 
-* 你做了一个皮肤 Mod, 但是你只想这个皮肤应用于某两张图, 我们就需要画素材或者写 .xml 去覆盖别人的东西(这就需要人家 Mod 先加载), 而且别人可能只玩其中一张图, 那么下你皮肤就不会同时把两张图下过来, 更灵活
+* 你做了一个皮肤 Mod, 但是你只想这个皮肤应用于某两张图, 我们就需要画素材或者写 `.xml` 去覆盖别人的东西(这就需要人家 Mod 先加载), 而且别人可能只玩其中一张图, 那么下你皮肤就不会同时把两张图下过来, 更灵活
 * 比如你整了个美术很好的图, 然后有一个 Helper 能让你的光效锦上添花, 但是用了之后太卡怎么办, 有的机子可能直接跑不动, 此时你可以选择将这个 Helper 作为可选依赖, 同时在入场添加一张明信片, 告知玩家`开启 xxx Helper 将获得更佳体验`
 * 你写 Code Mod 给其他 Mod 做适配的时候需要别人的 Mod 先加载
 
@@ -160,21 +157,21 @@
                 - 📄MyFirstMap-C.bin  // C 面
                 - 📄MySecondMap.bin  // 如果名字不一样地图就会被分成多个模块, 就像官图 1a, 2a ... 8a 一样
 
-## Dialog
+## [Dialog](./dialog/dialog.md)
 
-放文本资源的, [详情见](./dialog/dialog.md)
+放文本资源的
 
-## Graphics
+## [Graphics](./graphics/graphics.md)
 
-放图片资源的, [详情见](./graphics/graphics.md)
+放图片资源的
 
-## Audio
+## [Audio](./audio/audio.md)
 
-放音频资源的, [详情见](./audio/audio.md)
+放音频资源的
 
-## Tutorials
+## [Tutorials](./ghost_player_playback.md)
 
-放残影的, [详情见](./ghost_player_playback.md)
+放残影资源的
 
 <a id="conflict"></a>
 
