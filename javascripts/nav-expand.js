@@ -1,19 +1,49 @@
-const expandedSections = [
-    "基础",
-    "进阶",
-    "收尾阶段",
-    "其他",
+const expandedPaths = [
+    ["制图", "基础"],
+    ["制图", "进阶"],
+    ["制图", "收尾阶段"],
+    ["制图", "基础", "Loenn"],
 ];
+
+function getTitle(item) {
+    return item.querySelector(
+        ":scope > .md-nav__link"
+    )?.innerText.trim() ?? "";
+}
+
+function getNavPath(item) {
+    const path = [];
+
+    let current = item;
+
+    while (current) {
+        if (current.matches(".md-nav__item--nested")) {
+            path.unshift(getTitle(current));
+        }
+
+        current = current.parentElement?.closest(
+            ".md-nav__item--nested"
+        );
+    }
+
+    return path;
+}
 
 function expandSections() {
     for (const item of document.querySelectorAll(
         ".md-nav__item--nested"
     )) {
-        const title = item.innerText
-            .split("\n")[0]
-            .trim();
+        const path = getNavPath(item);
 
-        if (!expandedSections.includes(title)) {
+        const shouldExpand = expandedPaths.some(
+            expected =>
+                expected.length === path.length &&
+                expected.every(
+                    (title, index) => title === path[index]
+                )
+        );
+
+        if (!shouldExpand) {
             continue;
         }
 
