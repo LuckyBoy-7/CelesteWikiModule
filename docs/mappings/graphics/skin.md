@@ -30,6 +30,12 @@
 
 ## FAQ
 
+### 贴图缺失但是找不到哪儿缺了
+
+[Chronia Helper](https://gamebanana.com/mods/507580) 提供了查看玩家当前动画帧贴图路径的功能, 你可以在设置中将其打开
+
+![00](../../assets/mappings/graphics/skin/00.png){style="height:500px"}
+
 ### 如何更改刘海随动画变化时的朝向以及头发的偏移
 
 参考 [hair 属性](../xml/sprites_xml.md#hair)
