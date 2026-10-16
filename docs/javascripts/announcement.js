@@ -90,6 +90,11 @@ const announcements = [
     {
         text: "Climb Up Contest 🧗🏿",
         url: "/celeste_wiki/activity/mappings/contest/climb_up/",
+    },
+    {
+        text: "~ 蔚蓝拾遗图鉴第三期活动 [万家灯火] ~",
+        url: "https://bbs.celemiao.com/d/590-wei-lan-shi-yi-tu-jian-x-miaonet-di-tu-da-qia-huo-dong-season-3-mo-jia-deng-huo",
+        target: "_blank"
     }
 ];
 

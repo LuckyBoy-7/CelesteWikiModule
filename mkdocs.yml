@@ -81,12 +81,17 @@ markdown_extensions:
 nav:
   - 首页: "index.md"
   - Wiki: "general/wiki.md"
-  - 社区: "general/community.md"
-  - 活动:
+  - 社区 💭: "general/community.md"
+  - 新闻:
       - Olympus News: "https://maddie480.ovh/celeste/olympus-news"
+      - Celeste 中心广场: "https://space.bilibili.com/3691010620131512"
+      - 每周蔚闻: "https://space.bilibili.com/104247284/lists/3589526"
+  - 活动:
       - 群服活动: 
-          - ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang"
-          - ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng"
+          - 拾遗图鉴: 
+              - ~ 蔚蓝拾遗图鉴第三期活动 [万家灯火] ~: "https://bbs.celemiao.com/d/590-wei-lan-shi-yi-tu-jian-x-miaonet-di-tu-da-qia-huo-dong-season-3-mo-jia-deng-huo"
+              - ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang"
+              - ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng"
           - Any% 分段速通接力活动: "https://bbs.celemiao.com/d/471-miaonet-she-qu-any-fen-duan-su-tong-jie-li-huo-dong"
       - 制图活动:
           - 制图竞赛:
@@ -111,7 +116,7 @@ nav:
           - 技巧和攻略向教程: "general/common/tutorials.md"
           - 游戏机制和技巧: "general/common/mechanics.md"
           - 查阅: "general/lookup.md"
-          - 官图速览: "https://berrycamp.github.io/"
+          - 官图地图速览: "https://berrycamp.github.io/"
           - 彩蛋: "general/common/easter_eggs.md"
   - Mods:
       - Mod 入门: "mods/start.md"

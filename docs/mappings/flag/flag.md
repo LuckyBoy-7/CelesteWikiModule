@@ -89,6 +89,91 @@ Flag 是操控/联动所有实体的关键组成部分, 只要对应实体开放
 * 让玩家在游玩二周目/三周目的过程中感受到游戏内的细节变化
 * 让玩家在游玩你的第一张图后留下一个 Flag, 然后在第二张图里判断玩家是否游玩过你的第一张图, 以表示感谢玩家对你的支持之类的
  
+## 实用 Flag 标记
+
+### 是否携带金草莓
+
+> 需要下载并启用 [Jackal Helper](https://gamebanana.com/mods/53747)
+
+当玩家携带金草莓时, 名为 `cryoGoldenRun` 的 Flag 会保持开启
+
+![13](../../assets/mappings/flag/13.png)
+
+> 需要下载并启用 [VivHelper](https://gamebanana.com/mods/53700), 并在场景中放置 `Flag On Golden Berry Carry (Map-wide) [VivHelper]` 实体
+
+* 当玩家携带着金草莓时, 名为 `VivHelper/PlayerHasExactGoldenBerry` 的 Flag 会保持开启
+* 当玩家携带过金草莓时, 名为 `VivHelper/PlayerHasGoldenBerry` 的 Flag 会保持开启 (比如虽然是炼金流程但是金草莓可能会像 9a 那样被暂时 Detach)
+
+
+
+### 是否开启光敏模式
+
+> 需要下载并启用 [VivHelper](https://gamebanana.com/mods/53700)
+
+当玩家开启了设置中的光敏模式, 名为 `VH_Photosensitive` 的 Flag 会保持开启
+
+### 玩家是否存活
+
+> 需要下载并启用 [VivHelper](https://gamebanana.com/mods/53700)
+
+当玩家存活的时候, 名为 `VivHelper/IsPlayerAlive` 的 Flag 会保持开启
+
+### 玩家状态
+
+> 需要下载并启用 [Game Helper](https://gamebanana.com/mods/452041), 并在场景中放置 `Player State Flag [GameHelper]` 实体
+
+当玩家处在对应[状态](../player_state.md)的时候 (抓取, 冲刺等), 输出对应的 Flag
+
+> 需要下载并启用 [Maddie's Helping Hand](https://gamebanana.com/mods/53687), 并在场景中放置 `Set Flag On Action Controller [Maddie's Helping Hand]` 实体
+
+当玩家处在对应状态的时候 (低体力, 无冲, 在地面上等), 输出对应的 Flag
+
+### 鼠标点击
+
+> 需要下载并启用 [Chronia Helper](https://gamebanana.com/mods/507580), 并在场景中放置 `Set Flag On Mouse Controller [ChroniaHelper]` 实体
+
+当玩家点击/按住鼠标的某一个键时, 输出对应的 Flag
+
+### 冲刺方向
+
+> 需要下载并启用 [Adam's Add-ons](https://gamebanana.com/mods/522257), 并在场景中放置 `Dash Direction Flag Controller [Adam's Add-ons]` 实体
+
+当玩家朝某个方向冲刺时, 输出对应的 Flag
+
+### 面朝方向
+
+> 需要下载并启用 [Microlith57's Miscellaneous Mechanics](https://gamebanana.com/mods/542795), 并在场景中放置 `Player Facing to Flags Controller Controller [Microlith57's Miscellaneous Mechanics]` 实体
+
+根据玩家面朝方向输出对应的 Flag
+
+### 收集草莓
+
+> 需要下载并启用 [Kosei Helper](https://gamebanana.com/mods/556401), 并在场景中放置 `Set Flag On Berry Collection [Kosei Helper]` 实体
+
+当玩家收集草莓时输出对应的 Flag
+
+### 当前使用语言
+
+> 需要下载并启用 [Chronia Helper](https://gamebanana.com/mods/507580)
+
+根据当前玩家使用的语言开启对应的 Flag, 比如开着简体中文的时候会输出名为 `ChroniaHelper_Language_schinese` 的 Flag
+
+### 通关状态
+
+#### 通关地图
+
+> 需要下载并启用 [Maddie's Helping Hand](https://gamebanana.com/mods/53687), 并在场景中放置 `Set Flag On Completion Controller [Maddie's Helping Hand]` 实体
+
+当玩家通关过当前地图时, 输出对应的 Flag
+
+#### FC 地图
+
+> 需要下载并启用 [Maddie's Helping Hand](https://gamebanana.com/mods/53687), 并在场景中放置 `Set Flag On Full Clear Controller [Maddie's Helping Hand]` 实体
+
+当玩家 FC 过当前地图时, 输出对应的 Flag
+
+
+
 ## 常用 Flag Trigger
 
 ### `Flag [Everest]`

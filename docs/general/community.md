@@ -26,7 +26,7 @@
 * 团建通知群: 1031616883
 * [蔚蓝活动群: 869049716](https://qm.qq.com/q/cmsLt1YEhi)
 
-### 制图相关(Modding)
+### 制图相关 (Modding)
 
 * [蔚蓝制图群: 633125440](https://qm.qq.com/q/XG1hPIMKQg)
 * [蔚蓝测图群: 347556890](https://qm.qq.com/q/2E4hAceV4Q)
