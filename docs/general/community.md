@@ -32,3 +32,4 @@
 * [蔚蓝测图群: 347556890](https://qm.qq.com/q/2E4hAceV4Q)
 * 蔚蓝美术群: 431501471
 * [蔚蓝 Coder 群: 550358997](https://qm.qq.com/q/KWhmGbPfYy)
+* [蔚蓝音乐制作交流群: 659057994](https://qm.qq.com/q/Neb6h76wYq)

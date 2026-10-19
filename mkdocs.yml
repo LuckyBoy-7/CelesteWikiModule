@@ -132,6 +132,7 @@ nav:
           - 推荐 Mod: "mods/common/recommended_mods.md"
   - 制图:
       - 教程 👈😋: "mappings/overall.md"
+      - 引言: "mappings/introduction.md"
       - Loenn:
           - 下载及游戏配置: "https://saplonily.top/celeste_modding_tutorial/mapping/basic_env/"
           - 初见问题: "mappings/loenn/loenn_first_encountered_issues.md"

@@ -12,7 +12,8 @@
 ```xml hl_lines="3 6 21 23"
 <?xml version="1.0" encoding="utf-8" ?>
 <Sprites>
-    <portrait_wiki_granny path="granny/" sfx="wiki_granny" textbox="granny" glitchy="true" BrokemiaHelper_noPortrait="true">
+<!--    <portrait_wiki_granny path="granny/" sfx="wiki_granny" textbox="granny" glitchy="true" BrokemiaHelper_noPortrait="true">-->
+    <portrait_madeline path="madeline/" sfx="madeline" textbox="madeline">
         <Center/>
 
         <sfxs>

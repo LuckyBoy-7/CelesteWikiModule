@@ -6,11 +6,12 @@
 
 ## 贡献
 
-如果你要勘误或是有更好的建议甚至要帮忙补充内容
+如果 Wiki 内容有误需要勘误或是你有更好的建议甚至要帮忙补充内容
 
-* 欢迎在 [Github](https://github.com/LuckyBoy-7/CelesteWikiModule) 上提 issue 或者 pr
+* 欢迎在 [Github](https://github.com/LuckyBoy-7/CelesteWikiModule) 上提 [Issue](https://github.com/LuckyBoy-7/CelesteWikiModule/issues) 或者 [PR](https://github.com/LuckyBoy-7/CelesteWikiModule/pulls)
 * 或者填写[问卷](https://wj.qq.com/s2/27815131/jx6r/)
 * 或者在 QQ: 3079351998 上找我
+* ~~或者尽情在制图群里吐槽, 我看到的话会补上~~
 
 感激不尽🥰
 
@@ -20,7 +21,7 @@
 `NaCline`, `Voidsd`, `WEGFan`, `icbm`, `忘记过去`, `OldmanG`, `浣熊`, `云雀`, `Harmonine`, `crylone`, `ShadowRo`,
 `I2170l`, `Aya Kasumu`, `春暮Q`, `Isanc`, `Hero_Broom`, `Power Master`, `ye-zi`, `小豹猫awa`,
 `仲久的落叶`, `聪明空空`, `DeepSheep`, `老哈`, `Hibana`, `RNF`, 
-`ziyang_51571`, `BadwayBear`, `飛飛`, `Aura`, `非洲土耗`, `邪恶火师傅嘎嘎嘎嘎`, `-sWAn-LK` 直接或间接地给 Wiki 提供的灵感和帮助, 非常抱歉我可能落了一些人, 但我仍然**非常感谢**你们
+`ziyang_51571`, `BadwayBear`, `飛飛`, `Aura`, `非洲土耗`, `邪恶火师傅嘎嘎嘎嘎`, `-sWAn-LK`, `格莱西亚`, `Re_Gə_` 直接或间接地给 Wiki 提供的灵感和帮助, 非常抱歉我可能落了一些人, 但我仍然**非常感谢**你们
 
 **感谢**所有的教程制作者
 

@@ -1,24 +1,12 @@
 > [蔚蓝制图群: 633125440](https://qm.qq.com/q/XG1hPIMKQg)
 
-在开始学习制图之前, 请大家先观看一遍[底龙的制图引导](https://www.bilibili.com/video/BV1WwFvebEyP), 然后就可以直接开始作图了
+在开始学习制图之前, 请大家先观看一遍[底龙的制图引导](https://www.bilibili.com/video/BV1WwFvebEyP), 然后就可以直接开始作图了, 
+因为制图真的非常符合直觉, 缺什么就有什么, 想用什么就搜什么, 想实现什么基本上就能实现什么, 当然基础的[自学/提问](../mods/question_and_self_study.md)的素养还是要有的
 
-因为制图真的非常符合直觉, 缺什么就有什么, 想用什么就搜什么, 想实现什么基本上就能实现什么, 当然基础的[自学/提问](../mods/question_and_self_study.md)的素养还是要有的,
-你也可以看看[制图建议](#must-do), 这会减少很多制图的阻力
+在开始前你可以看看[引言](./introduction.md)以建立良好的心态和方向感, 也可以看看[制图建议](#must-do), 这会减少很多制图的阻力
 
-## 引言
-
-> 虽然是老生常谈了但我还是要在这里提一嘴
-> 
-> 想尝试作图就是想尝试作图, 喜欢作图就是喜欢作图, 不要让任何人, 任何事污染你对这件事的**感觉**
-> 
-> 不管你怀揣着怎么样的动机, 是创作欲望想要发泄, 还是认同感想要满足, 这都不会改变你对制图这件事本身的**感觉**
-> 
-> 所以等你哪天想要放弃了, 问问自己, 我是跟某个人呆在一个圈子里很讨厌呢, 是被玩家骂破防了呢, 是做的图无人问津呢, 还是我真的已经厌倦了制图这件事**本身**给我带来的**一切**了呢, 毕竟讨厌的人和恶意的玩家可以屏蔽, 图没人玩可以宣传, 只有制图这件事本身才是你应该考虑的东西
-> 
-> 当然如果只是单纯感到困难是完全正常的, 凡事皆有门槛, 不要把困难的感觉跟讨厌的感觉混为一谈, 不过如果你充满好奇并且完全没接触过制图的话, 相信我, 对未知新鲜事物的渴求会让你上瘾并且忘记前面的一切负面的
-
-* [b 站 Wiki 引言](https://wiki.biligame.com/celeste/%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC)
-* [Discord 教程合集引言](https://docs.qq.com/sheet/DSHBRcE5pUWtnckJj?tab=000002&_t=1749608615623&nlc=1&u=63af408ccdfa42feac91b9fed2efa2c3)
+另外这里还有一些你可能感兴趣的[群聊](../general/community.md)或是其他 [Wiki](../general/wiki.md), 
+如果学有余力的话也欢迎大家给 Wiki 提[建议和帮助](../index.md)哦
 
 ## 制图引导
 
@@ -119,7 +107,7 @@ Helper
 
 ### 实用 Mod
 
-* [Mapping Utils](https://gamebanana.com/mods/454074): 方便作图时调试, 可以看 Flag, 调整基本 Metadata 设置, 看各实体性能消耗等等等等
+* [Mapping Utils](../mappings/useful_helpers/mapping_utils.md): 方便作图时调试, 可以看 Flag, 调整基本 Metadata 设置, 看各实体性能消耗等等等等
 * [CelesteTAS](https://gamebanana.com/tools/6715): 可在游戏中按 `Ctrl + B` 打开碰撞箱, 方便制图, 也可以通过查看碰撞箱来判断实体的加载情况
 * [Speedrun Tool](https://gamebanana.com/tools/6597): 可以 SL (保存/加载关卡状态), 方便调试
 
