@@ -3,10 +3,8 @@
 在开始学习制图之前, 请大家先观看一遍[底龙的制图引导](https://www.bilibili.com/video/BV1WwFvebEyP), 然后就可以直接开始作图了, 
 因为制图真的非常符合直觉, 缺什么就有什么, 想用什么就搜什么, 想实现什么基本上就能实现什么, 当然基础的[自学/提问](../mods/question_and_self_study.md)的素养还是要有的
 
-在开始前你可以看看[引言](./introduction.md)以建立良好的心态和方向感, 也可以看看[制图建议](#must-do), 这会减少很多制图的阻力
-
-另外这里还有一些你可能感兴趣的[群聊](../general/community.md)或是其他 [Wiki](../general/wiki.md), 
-如果学有余力的话也欢迎大家给 Wiki 提[建议和帮助](../index.md)哦
+在开始前你可以看看[引言](./introduction.md)以建立良好的心态和方向感, 也可以看看[制图建议](#must-do), 这会减少很多制图的阻力,
+另外这里还有一些你可能会感兴趣的[群聊](../general/community.md)或是其他 [Wiki](../general/wiki.md), 不要错过了哟~
 
 ## 制图引导
 
