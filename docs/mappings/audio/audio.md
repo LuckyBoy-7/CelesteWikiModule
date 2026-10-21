@@ -43,7 +43,7 @@
 
 ## FMOD 安装和配置
 
-注册并登陆 FMOD 官网, 前往下载页面下载 `FMOD Studio 1.10.20`. 不要下载最新版 FMOD Studio. 在同页面下找到 `Learning Resources > Celeste FMOD Studio Project > Celeste Project (includes DLC content)` 并下载. 
+注册并登陆 FMOD 官网, 前往[下载页面](https://www.fmod.com/download)下载 `FMOD Studio 1.10.20`. 不要下载最新版 FMOD Studio. 在同页面下找到 `Learning Resources > Celeste FMOD Studio Project > Celeste Project (includes DLC content)` 并下载. 
 
 将下载好的工程放在自己记得住的固定位置. 所有以 Celeste Modding 为目的的音频工作都将在你的 FMOD 工程中进行, 所以请妥善保管自己的工程文件. 官网只提供了 Windows 和 macOS 的软件版本. 如果你不在这两个平台上, 你可以尝试使用 WINE 运行软件. 
 
