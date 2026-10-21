@@ -19,17 +19,17 @@
 当然情况也可能很波折, 以我自身为例, 我当初只是一个普通的蔚蓝玩家, 因为某些原因来到制图群偷点蔚蓝图片素材,
 却阴差阳错之下遇见了 [Saplonily 的代码教程](https://saplonily.top/celeste_modding_tutorial/code_modding/), 不过因为能力不够不太懂, 所以就干别的去了, 我本来已经忘记这件事了,
 但是在磨练一段时间的技术后, 仿佛是命中注定一般, 我在某一天突然又搜到 [Saplonily 的代码教程](https://saplonily.top/celeste_modding_tutorial/code_modding/)了! 于是我开始学习制作 Mod,
-然后我发现做 Mod 好有意思! 帮助别人给别人写实体也好有意思! 结果我很自然的就爱上了蔚蓝 Mod 制作并且选择留在这个社区里
+然后我发现做 Mod 好有意思! 帮助别人给别人写实体也好有意思! 结果我很自然的就喜欢上了蔚蓝 Mod 制作并且选择留在这个社区里
 
 其实动机怎么样一点也不重要, 关键是 **你知道自己为何而来吗?**
 
 ## 地图的组成
 
-当我们把一张蔚蓝地图揉碎了掰开大致上能分成如下几个部分
+如果你准备好开始了, 那就让我们先来认识一下一张蔚蓝地图的大致组成部分吧
 
 ### Gameplay
 
-简称 GP, 即游戏玩法, 它的含义非常的广, 游戏操作, 动作交互, 整体玩法都涵盖在内, 比如以弹球抛接为主要玩法的地图 [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/)
+简称 GP, 即游戏玩法, 它的含义非常的广, 游戏操作, 动作交互, 整体玩法都涵盖在内, 比如 [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/) 这种以弹球抛接 GP 为主要玩法的图
 
 <figure>
   <a href="https://www.bilibili.com/video/BV13iLGz3ELu/">
@@ -38,17 +38,61 @@
   <figcaption>西西弗斯来了</figcaption>
 </figure>
 
-* 可以是以操作为卖点的很有动作感的图, 比如 [\/ SYSTEM MELTDOWN \/](https://www.bilibili.com/video/BV1r8g96mEKe) 中的垂直运动
-* 也可以是以某些实体交互为主基调的图, 比如 [逐色寻光](https://www.bilibili.com/video/BV1Zk8s61E1N)中的速度变向实体
-* 也可以是加入了一些新的玩法, 比如 [When Push Comes to Shove](https://www.bilibili.com/video/BV1YaKX6XEyz/) 中改变了操作对象的 GP,
-  又或是[魂斗罗式射击](https://www.bilibili.com/video/BV1Rq4y1o7LT/), [双生图](https://www.bilibili.com/video/BV1MAxWzfErD/)
-* 也可以是以解密为主的玩法, 比如路线解密[迷失森林](https://www.bilibili.com/video/BV1vT421i7LN/), 纯解密 [Debug map](https://www.bilibili.com/video/BV1hJB7YqEm2),
-  双拼解密[子机](https://www.bilibili.com/video/BV1nC8K6AEpB/)
-* 当然也可以是不断重复的 GP, 比如 [514 连 反 凌 波 兔 子 跳](https://www.bilibili.com/video/BV1wPhtzVE8K/)
+Gameplay 品类众多, 它们的内涵相互交织, 又有细微区别, 所以以下提供了一种不严谨不完整的分类思路, 仅供参考
+
+#### 实体交互
+
+> 玩家在游玩过程中能明显感受到这张图的设计是围绕某些实体所展开的
+>
+> 这不仅能奠定 GP 的主基调, 还能深挖一个实体的特性, 循序渐进的提高难度, 不至于让玩家一下子被多种类型的实体淹没
+
+* [余烬山脊](https://www.bilibili.com/video/BV1QQpn6qEvD/): areo 块
+* [崩碎之歌](https://www.bilibili.com/video/BV1YgLe6tEyH/): 变奏节奏块
+* [逐色寻光](https://www.bilibili.com/video/BV1Zk8s61E1N): 速度变向实体
+* [Slnvovhh](https://www.bilibili.com/video/BV1JMwdzGEca/): 掉落块 + 灰砖
+* [Up the Amethyst Trail 紫晶山道](https://www.bilibili.com/video/BV11un36tE63/): 紫水晶
+* [反转山脊](https://www.bilibili.com/video/BV1Qc411E7rq/): 前景砖/背景砖切换 + 果冻水晶
+
+#### 特定操作
+
+> 专注于特定操作, 实体主要只是实现操作的一种手段
+
+* [The Solar Purgatory 烈冕炼狱](https://www.bilibili.com/video/BV11wnderEFi/): 高级抛接技巧 + 高级弹球技巧
+* [\/ SYSTEM MELTDOWN \/](https://www.bilibili.com/video/BV1r8g96mEKe): 高速垂直运动, `Bounce Helper` + `Ceiling Ultra`
+* [Aphelion 远日](https://www.bilibili.com/video/BV1TBu26KEX9/): 冻结帧松抓
+* [NACG](https://www.bilibili.com/video/BV1RFHUzAEbC): 微操
+* [514 连 反 凌 波 兔 子 跳](https://www.bilibili.com/video/BV1wPhtzVE8K/): 重复, 重复, 重复
+
+#### 解密
+
+> 呃啊, 我的脑细胞
+
+* [Debug map](https://www.bilibili.com/video/BV1hJB7YqEm2): 纯解密
+* [迷失森林](https://www.bilibili.com/video/BV1vT421i7LN/): 路线解密
+* [子机](https://www.bilibili.com/video/BV1nC8K6AEpB/): 双拼解密
+
+#### 实验性玩法
+
+> 相对少见偏创新的玩法
+
+* [When Push Comes to Shove](https://www.bilibili.com/video/BV1YaKX6XEyz/): 玛德琳不动, 操控机关
+* [魂斗罗式射击](https://www.bilibili.com/video/BV1Rq4y1o7LT/)
+* [Twisted Pair](https://www.bilibili.com/video/BV1MAxWzfErD/): 玛德琳 + 坏德琳的双生图
+* [Swimming](https://www.bilibili.com/video/BV1cLJEz9Ejo/): 钩爪 + 鞘翅 + 骨钉
+* [Elytra Studio](https://www.bilibili.com/video/BV1Nu4y157fA/): 纯音乐
+* [NULCTRL](https://www.bilibili.com/video/BV13cBSBnEsE/): 音乐踩点
 * 等等
 
-总之, 你这张图在玩法上应该要有一个 **鲜明的记忆点**, 一个 GP 可能很屑但就是容易留下印象, 反之保守的 GP 有时也并不一定是优点, 当然保守的 GP 通过组合衔接起来也是可以形成记忆点的,
-但这需要慢慢总结和体会
+总之, 你这张图在玩法上应该要有一个 **鲜明的记忆点**, 就像提到弹球大家都会想到[弹球炼狱](https://www.bilibili.com/video/BV14nXBYtEf3/?t=12),
+提到节奏块大家都会想到[崩碎之歌](https://www.bilibili.com/video/BV1YgLe6tEyH/), 提到煤球大家都会想到 [(举例了一些煤球图)](https://www.bilibili.com/video/BV1Fc411G7qs/)
+
+哪怕做不到耳濡目染, 至少也应该要让玩家有个印象, 一个 GP 可能很屑但大家就是记住了, 反之玩的很舒服的 GP 反而玩家可能就只记得舒服了, 当然你可以既做得舒服又有记忆点, 但这需要经验
+
+
+<div class="admonition note">
+    <p class="admonition-title">注意</p>
+    <p>把你选定的 GP 正确传达给玩家也需要一定的技巧, 你可以从<a href="https://www.bilibili.com/video/BV1VApX6hEDT/">究竟怎样才算好的玩法教学</a>中获取灵感</p>
+</div>
 
 ### Music
 
@@ -63,8 +107,9 @@
 
 * [新年核心](https://www.bilibili.com/video/BV1P1Nie2Ege/?t=1408)中的踩点和激昂的音乐让人兴奋, [新年核心](https://www.bilibili.com/video/BV1P1Nie2Ege/?t=1932)的上升段搭配空灵音乐让人落泪
 * [氛围测试图 by DeepBlueBerry](https://www.bilibili.com/video/BV1UGKEeuEmv/) 中传达出的凄凉感
-* [命日 (Meinichi)](https://www.bilibili.com/video/BV1KhGB6SEWU/) 中音乐传达出的混沌感
+* [命日 (Meinichi)](https://www.bilibili.com/video/BV1KhGB6SEWU/) 中传达出的混沌感
 * [百香万神殿](https://www.bilibili.com/video/BV1p5pxzEEaG/?t=826) 结尾传达出的神圣感
+* [The Solar Purgatory 烈冕炼狱](https://www.bilibili.com/video/BV11wnderEFi/?t=237) 中传达出的神圣/挑战/试炼感
 * [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/) 中传达出的无力感
 * [Glyph 象形](https://www.bilibili.com/video/BV1er4y1f7gi/) 中传达出的身临其境感
 * [奥日与萤火意志-水磨坊逃亡](https://www.bilibili.com/video/BV1pzhLenEMd/), [奥日与黑暗森林-银之树逃亡](https://www.bilibili.com/video/BV1sh411679F/)中的音乐和 GP 的搭配给人劫后余生的震撼
@@ -73,6 +118,8 @@
 总之, 你这张图在音乐上应该要有一个 **鲜明的记忆点**, 只有合适的音乐, 没有绝对好的音乐, 比如[崩碎之歌](https://www.bilibili.com/video/BV1YYwEz8EJf/)中看似没有规律但又有点规律的叮叮当当的节奏块却能渲染出压抑的氛围
 
 ### Decoration
+
+> 我一直在哭😭
 
 装饰搭配音乐奠定了整体的氛围基调, 比如[致我所热爱的一切](https://www.bilibili.com/video/BV1AMHi6FE1b/)中给人带来的空灵梦幻的感觉
 
@@ -93,7 +140,7 @@
 
 ### Dialog
 
-对话能快速营造活人感, 让游戏里的角色 **活** 起来, 比如 [Journeys of a Bygone Wanderer](https://www.bilibili.com/video/BV1SbWSe6EAT/),
+对话能快速营造真实感, 让游戏里的角色 **活** 起来, 比如 [Journeys of a Bygone Wanderer](https://www.bilibili.com/video/BV1SbWSe6EAT/),
 又或是[带上她的眼睛](https://www.bilibili.com/video/BV1Y5B5B9E5Q/)
 
 <figure>
@@ -128,6 +175,8 @@ Dialog 也可以用来快速营造神秘感, 比如[留下一些奇奇怪怪的�
 
 ## 你该做些什么
 
+### 框架
+
 如果你对做什么样的地图没什么思路的话, 这里提出一些构思上的方法论
 
 一种建议是先想好一个很简单的故事, 比如 **玛德琳今天要爬山**, 然后从不同角度去拓充内容
@@ -136,10 +185,20 @@ Dialog 也可以用来快速营造神秘感, 比如[留下一些奇奇怪怪的�
 * 原因: 想散散心? 跟某人比赛? 意外事故 (比如坠入洞穴得重新爬出来)?
 * 时间: 晚上爬还是白天爬, 还是分不清白天黑夜 (比如在洞穴里, 外太空), 从早爬到晚, 还是从晚爬到早
 * 地点: 爬雪山, 熔岩山, 香蕉山, 冰激凌山, 爬弹球山, 爬 [1:1 珠穆朗玛峰](https://www.bilibili.com/video/BV1yfGE6ZEgv/), 爬香香软软的山, 爬会说话的山, 爬各种奇思妙想的山
-* 手段: 用脚爬 (常规 GP), 用道具爬 (喷气背包, 钩爪), 挂机爬 (自动图)
+* 天气: 下雨, 晴天, 阴天
+* 温度: 寒冷, 炎热, 温暖, 凉爽
+* 手段: 用脚爬 (常规 GP), 用道具爬 (喷气背包, 钩爪, 鞘翅), 挂机爬 (自动图)
 * 等等
 
 当你想好了地图的大体框架, 其中的音乐, 美术, 游戏玩法也能很快定下基调, 为你指明方向
+
+### 难度
+
+> 难不一定差, 简单不一定好
+
+如果你清楚自己想要借作图表达什么, 难度就压根不是问题
+
+你当然可以说我今天想写张酱三左右的图, 但是也没必要特别纠结现在的难度是酱二红还是酱三绿, 酱三红还是酱四绿, 就连草莓酱自己内部方差都大的一批呢, 所以别纠结难度, 放手去做吧
 
 ### [氛围](https://www.bilibili.com/video/BV1ZuG66rErj/)
 
@@ -231,6 +290,7 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
 * 你知道 **讨厌** 的感觉是怎么样的吗
 * 你知道 **喜欢** 的感觉是怎么样的吗
 * 你知道 **无感** 的感觉是怎么样的吗
+* 你知道 **无聊** 的感觉是怎么样的吗
 
 他们的诱因往往各不相同, 而他们带给人的感觉却又如此相似
 
@@ -241,7 +301,7 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
   (可以参考[德西效应](https://baike.baidu.com/item/%E5%BE%B7%E8%A5%BF%E6%95%88%E5%BA%94/6133934))
 * 你可能......
 
-所以你要细细品味分析自己的感受, 把不同的成分抽离出来, 这样你才能堂堂正正的去喜欢和讨厌一个东西, 一件事, 一个人
+所以你要学会细细品味并分析自己的感受, 把不同的成分抽离出来, 这样你才能堂堂正正的去喜欢和讨厌一个东西, 一件事, 一个人
 
 ## 抽离他人
 
@@ -256,10 +316,11 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
 * 各种各样的傻逼, 就知道阴阳怪气, 说风凉话 (无论资历)
 * 各种各样让自己感到可惜的人, 明明可以做的更好, 明明不需要这样的
 
-你看到了麻木, 冷漠, 怠惰, 功利, 怯懦, 你渴望改变, 并采取行动, 但似乎收效甚微
+你看到了傲慢, 麻木, 冷漠, 怠惰, 功利, 怯懦, 你渴望改变, 并采取行动, 但似乎收效甚微,
+你不信邪, 你努力着, 呐喊着, 结果换来的却是连你自己都迷失了
 
-这也是没办法的嘛, 人家变成现在这样都是从小到大的环境一步步熏陶出来的, 这不是扯扯嘴皮子就能让别人的价值观跟你对上的, 
-所以最好的办法可能还是专心做自己的事吧, 有余力的话就掺和下尽力而为就够了, 不然你就是把自己烧成灰了也没法儿照亮他人
+这也是没办法的嘛, 人家变成现在这逼样都是从小到大的环境一步步熏陶出来的, 这不是短时间内扯扯嘴皮子就能让别人的价值观跟你对上的, 
+所以啊, 有的时候学着自私一点也不是啥坏事, 不如把精力剩下来留给更值得的人, 不然你就是把自己烧成灰了也没法儿照亮他人
 
 ## 学会休息
 
@@ -267,7 +328,7 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
 
 娱乐是娱乐, 休息是休息, 刷视频不是休息, 听音乐也不是休息, 它们只是放松的工具, 不能让你恢复精力
 
-如果你真累了, 其实只需要趴桌子上眯个十来分钟就够了
+如果你真累了, 其实只需要趴桌子上眯个十来分钟半个小时就够了
 
 ![05](../assets/mappings/introduction/05.png){style="width:400px"}
 
