@@ -17,13 +17,17 @@
 * 等等等等
 
 当然情况也可能很波折, 以我自身为例, 我当初只是一个普通的蔚蓝玩家, 因为某些原因来到制图群偷点蔚蓝图片素材,
-却阴差阳错之下遇见了 [Saplonily 的代码教程](https://saplonily.top/celeste_modding_tutorial/code_modding/), 不过因为能力不够不太懂, 所以就干别的去了, 我本来已经忘记这件事了,
-但是在磨练一段时间的技术后, 仿佛是命中注定一般, 我在某一天突然又搜到 [Saplonily 的代码教程](https://saplonily.top/celeste_modding_tutorial/code_modding/)了! 于是我开始学习制作 Mod,
-然后我发现做 Mod 好有意思! 帮助别人给别人写实体也好有意思! 结果我很自然的就喜欢上了蔚蓝 Mod 制作并且选择留在这个社区里
+却阴差阳错之下遇见了 [Saplonily 的代码教程](https://saplonily.top/celeste_modding_tutorial/code_modding/), 不过因为能力不够看不懂所以跑去干别的去了, 我本来已经忘记这件事了,
+但是在磨练了一段时间的技术后, 仿佛是命中注定一般, 我在某一天突然又搜到 [Saplonily 的代码教程](https://saplonily.top/celeste_modding_tutorial/code_modding/)了! 于是我开始学习制作
+Mod
 
-其实动机怎么样一点也不重要, 关键是 **你知道自己为何而来吗?**
+然后我发现做 Mod 好有意思! 帮助别人给别人写实体也好有意思! 结果我很自然的就喜欢上了蔚蓝 Mod 制作并且选择留在了这个社区里, 如果没有那次相遇/选择的话也许你就不会看到这个 Wiki 了
+
+所以其实动机怎么样一点也不重要, 关键是 **你知道自己为何而来吗?**
 
 ## 地图的组成
+
+> 下面的这些分类绝对不完整, 不严谨且偏主观, 但仍可以为你提供参考
 
 如果你准备好开始了, 那就让我们先来认识一下一张蔚蓝地图的大致组成部分吧
 
@@ -37,8 +41,6 @@
   </a>
   <figcaption>西西弗斯来了</figcaption>
 </figure>
-
-Gameplay 品类众多, 它们的内涵相互交织, 又有细微区别, 所以以下提供了一种不严谨不完整的分类思路, 仅供参考
 
 #### 实体交互
 
@@ -57,6 +59,7 @@ Gameplay 品类众多, 它们的内涵相互交织, 又有细微区别, 所以�
 
 > 专注于特定操作, 实体主要只是实现操作的一种手段
 
+* [The Climb](https://www.bilibili.com/video/BV1tY4y1g7Dk/?t=10): 垂直攀岩技巧 + 较为严格的体力管控
 * [The Solar Purgatory 烈冕炼狱](https://www.bilibili.com/video/BV11wnderEFi/): 高级抛接技巧 + 高级弹球技巧
 * [\/ SYSTEM MELTDOWN \/](https://www.bilibili.com/video/BV1r8g96mEKe): 高速垂直运动, `Bounce Helper` + `Ceiling Ultra`
 * [Aphelion 远日](https://www.bilibili.com/video/BV1TBu26KEX9/): 冻结帧松抓
@@ -71,26 +74,37 @@ Gameplay 品类众多, 它们的内涵相互交织, 又有细微区别, 所以�
 * [迷失森林](https://www.bilibili.com/video/BV1vT421i7LN/): 路线解密
 * [子机](https://www.bilibili.com/video/BV1nC8K6AEpB/): 双拼解密
 
+#### 音乐
+
+> ↑→→→↑→↓↓↓↓↓↓↓
+
+* [Elytra Studio](https://www.bilibili.com/video/BV1Nu4y157fA/): 纯音乐
+* [curly brace dance](https://www.bilibili.com/video/BV1o62XBZEFt/): 音游
+* [NULCTRL](https://www.bilibili.com/video/BV13cBSBnEsE/), [Rolling Hay](https://www.bilibili.com/video/BV13SEuz1E9S/), [Splash](https://www.bilibili.com/video/BV1oCUoYSEGa/): 踩点
+* [Reincarnation](https://www.bilibili.com/video/BV1wp4y1z79p/?t=305): 半自动踩点
+
 #### 实验性玩法
 
 > 相对少见偏创新的玩法
 
+* [Clueste](https://www.bilibili.com/video/BV1dznB6QE5X/): 我在蔚蓝里当侦探?
 * [When Push Comes to Shove](https://www.bilibili.com/video/BV1YaKX6XEyz/): 玛德琳不动, 操控机关
 * [魂斗罗式射击](https://www.bilibili.com/video/BV1Rq4y1o7LT/)
 * [Twisted Pair](https://www.bilibili.com/video/BV1MAxWzfErD/): 玛德琳 + 坏德琳的双生图
 * [Swimming](https://www.bilibili.com/video/BV1cLJEz9Ejo/): 钩爪 + 鞘翅 + 骨钉
-* [Elytra Studio](https://www.bilibili.com/video/BV1Nu4y157fA/): 纯音乐
-* [NULCTRL](https://www.bilibili.com/video/BV13cBSBnEsE/): 音乐踩点
+* [Lakeside Songbook](https://www.bilibili.com/video/BV1WZ421M7gj/): 钓鱼图
+* [Crossover Collab](https://search.bilibili.com/all?keyword=%E8%94%9A%E8%93%9Dcrossovercollab): 我在蔚蓝里玩其他游戏?
 * 等等
 
-总之, 你这张图在玩法上应该要有一个 **鲜明的记忆点**, 就像提到弹球大家都会想到[弹球炼狱](https://www.bilibili.com/video/BV14nXBYtEf3/?t=12),
-提到节奏块大家都会想到[崩碎之歌](https://www.bilibili.com/video/BV1YgLe6tEyH/), 提到煤球大家都会想到 [(举例了一些煤球图)](https://www.bilibili.com/video/BV1Fc411G7qs/)
+总之, 你这张图在玩法上可以常规也可以新颖, 可以抽象也可以正经, 但至少也应该要让玩家有一个 **鲜明的记忆点**,
+就像提到弹球大家都会想到[弹球炼狱](https://www.bilibili.com/video/BV14nXBYtEf3/?t=12), 提到节奏块大家都会想到[崩碎之歌](https://www.bilibili.com/video/BV1YgLe6tEyH/),
+提到煤球大家都会想到 [(举例了一些煤球图)](https://www.bilibili.com/video/BV1Fc411G7qs/)
 
-哪怕做不到耳濡目染, 至少也应该要让玩家有个印象, 一个 GP 可能很屑但大家就是记住了, 反之玩的很舒服的 GP 反而玩家可能就只记得舒服了, 当然你可以既做得舒服又有记忆点, 但这需要经验
+哪怕做不到耳濡目染, 起码也得让人有个印象, 一个 GP 可能很屑但大家就是记住了, 反之玩的很舒服的 GP 反而玩家可能就只记得舒服了, 当然你可以既做得舒服又有记忆点, 但这需要经验
 
 
-<div class="admonition note">
-    <p class="admonition-title">注意</p>
+<div class="admonition tip">
+    <p class="admonition-title">小贴士</p>
     <p>把你选定的 GP 正确传达给玩家也需要一定的技巧, 你可以从<a href="https://www.bilibili.com/video/BV1VApX6hEDT/">究竟怎样才算好的玩法教学</a>中获取灵感</p>
 </div>
 
@@ -105,17 +119,43 @@ Gameplay 品类众多, 它们的内涵相互交织, 又有细微区别, 所以�
     Your browser does not support audio.
 </audio>
 
+
+<figure>
+  <a href="https://www.bilibili.com/video/BV1sh411679F/">
+    <img src="/celeste_wiki/assets/mappings/introduction/09.png" style="height: 400px"/>
+  </a>
+  <figcaption>孩子们, 快跑😭</figcaption>
+</figure>
+
+#### BGM
+
+> 奠定主基调, 渲染情绪
+
 * [新年核心](https://www.bilibili.com/video/BV1P1Nie2Ege/?t=1408)中的踩点和激昂的音乐让人兴奋, [新年核心](https://www.bilibili.com/video/BV1P1Nie2Ege/?t=1932)的上升段搭配空灵音乐让人落泪
-* [氛围测试图 by DeepBlueBerry](https://www.bilibili.com/video/BV1UGKEeuEmv/) 中传达出的凄凉感
-* [命日 (Meinichi)](https://www.bilibili.com/video/BV1KhGB6SEWU/) 中传达出的混沌感
-* [百香万神殿](https://www.bilibili.com/video/BV1p5pxzEEaG/?t=826) 结尾传达出的神圣感
-* [The Solar Purgatory 烈冕炼狱](https://www.bilibili.com/video/BV11wnderEFi/?t=237) 中传达出的神圣/挑战/试炼感
-* [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/) 中传达出的无力感
-* [Glyph 象形](https://www.bilibili.com/video/BV1er4y1f7gi/) 中传达出的身临其境感
 * [奥日与萤火意志-水磨坊逃亡](https://www.bilibili.com/video/BV1pzhLenEMd/)中的音乐和 GP 的搭配给人劫后余生的刺激
+* [The Solar Purgatory 烈冕炼狱](https://www.bilibili.com/video/BV11wnderEFi/?t=237) 中传达出的神圣/挑战/试炼感
+* [迷云都](https://www.bilibili.com/video/BV12yVozdEoE/) 中传达出的迷失感
+* [命日 (Meinichi)](https://www.bilibili.com/video/BV1KhGB6SEWU/) 中传达出的混沌感
+* [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/) 中传达出的无力感
 * 等等
 
-总之, 你这张图在音乐上应该要有一个 **鲜明的记忆点**, 只有合适的音乐, 没有绝对好的音乐, 比如[崩碎之歌](https://www.bilibili.com/video/BV1YYwEz8EJf/)中看似没有规律但又有点规律的叮叮当当的节奏块却能渲染出压抑的氛围
+#### 环境音
+
+> 增加真实感, 让游戏的视听表现有厚度
+
+* [氛围测试图 by DeepBlueBerry](https://www.bilibili.com/video/BV1UGKEeuEmv/) 中传达出的凄凉感
+* [Glyph 象形](https://www.bilibili.com/video/BV1er4y1f7gi/?t=25) 中传达出的身临其境感
+* [愿逐月华流照君](https://www.bilibili.com/video/BV1MwdVBRE6q/?&t=142) 中传达出的宁静感
+
+#### 音效
+
+> 一般是在特定时机播放的短音频
+
+* [百香万神殿](https://www.bilibili.com/video/BV1p5pxzEEaG/?t=826) 中传达出的神圣感
+* [崩碎之歌](https://www.bilibili.com/video/BV1SJ4m1T7Za/?t=12) 中叮叮当当的节奏块
+* [大狗叫](https://www.bilibili.com/video/BV1aQNp6eEkw/): 汪汪汪!
+
+总之, 你这张图在音乐上应该要有一个 **鲜明的记忆点**, 只有合适的音乐, 没有绝对好的音乐, 哪怕是[大狗叫](https://www.bilibili.com/video/BV1aQNp6eEkw/)这种抽象图也能让人印象深刻不是吗
 
 ### Decoration
 
@@ -130,18 +170,48 @@ Gameplay 品类众多, 它们的内涵相互交织, 又有细微区别, 所以�
   <figcaption>我的天哪这简直太美了</figcaption>
 </figure>
 
+#### 主题
+
+> 装饰可以奠定游戏基调, 比如 "哇, [这张图](https://www.bilibili.com/video/BV11wnderEFi/?t=237)看起来就很难", "哇,
+> [这张图](https://www.bilibili.com/video/BV1x1421r7ya/)光是看着心里就暖暖的"
+
 * [画境](https://www.bilibili.com/video/BV1x1421r7ya/) 给人温暖和谐的感觉
 * [愿逐月华流照君](https://www.bilibili.com/video/BV1MwdVBRE6q/?&t=142) 给人夜晚宁静的感觉
-* [Sorrow of Forgotten Piano](https://www.bilibili.com/video/BV1XRtZ6ZEZX/): 雨中漫步 (就是雨有点晃眼)
+* [Sorrow of Forgotten Piano](https://www.bilibili.com/video/BV1XRtZ6ZEZX/): 雨中漫步
 * [A New Dawn](https://www.bilibili.com/video/BV1Qd4y1P7vY/): 漫步在黎明的古迹
 
-总之, 你这张图在画面上应该要有一个 **鲜明的记忆点**, 只有合适的画面, 没有绝对好的画面, 比如 [Sonder](https://www.bilibili.com/video/BV1ZZDHBSEsq/?t=163)
-中的彩色玻璃窗和透过的有着细微颜色差异的光线让你感到温暖和真实, [Sheepy A Short Adventure](https://www.bilibili.com/video/BV11oen6WEs9/?t=594) 前景的黑影让你体会到空间的纵深感
+#### 逻辑性
+
+> 如果画面没有逻辑, 沉静感就会被破坏, 反过来说 deco 可以构建逻辑, 让玩家更加沉浸
+
+* [带上她的眼睛](https://www.bilibili.com/video/BV1Y5B5B9E5Q/)虽然在平原上放了一个[大瀑布](https://www.bilibili.com/video/BV1Y5B5B9E5Q/?t=666),
+  但是后续玩家会发现水是从[悬崖](https://www.bilibili.com/video/BV1Y5B5B9E5Q/?t=800)上流下来的, 逻辑自洽
+* [画境](https://www.bilibili.com/video/BV1x1421r7ya/?t=192)中的浮空房子被添加了月亮块效果, 这很符合直觉
+* [愿逐月华流照君](https://www.bilibili.com/video/BV1MwdVBRE6q/?t=529)中的植物在仅存的光照下坚强生长, 这很符合直觉
+
+#### 空间感
+
+> 游戏画面不再是薄薄的一片, 而是有厚度的, 这能增加沉浸感
+
+* [Sheepy A Short Adventure](https://www.bilibili.com/video/BV11oen6WEs9/?t=594): 前景的黑影让你体会到空间的纵深感
+* [雨夜](https://www.bilibili.com/video/BV1Er4y1v7or/): [前景砖的叠加](./xml/tilesets.md#ignores)也能营造空间纵深感
+* [寻年城](https://www.bilibili.com/video/BV1TwfnBUEDh/?t=158): 背景的视差和运动也能营造空间纵深感
+* [Sonder](https://www.bilibili.com/video/BV1ZZDHBSEsq/?t=163): 其中透过彩色玻璃窗的有着细微颜色差异的光线让你感到厚度 (光线从 **外面** 照 **进来**, 且 **看起来** 符合彩色花窗逻辑)
+
+#### 引导
+
+> 这里的 deco 似乎想表达什么
+
+* [弹球炼狱](https://www.bilibili.com/video/BV14nXBYtEf3/?t=12)背景的线条不是随意摆放的, 是有意用来引导弹球运动方向的
+* [雨夜](https://www.bilibili.com/video/BV1Er4y1v7or/)中的黄色火把暗示了草莓的位置
+* [9a](https://www.bilibili.com/video/BV15v4y1X71E/?t=1892) 的黑洞是能被风吹动的, 这间接的暗示了风的方向
+
+总之, 你这张图在画面上应该要有一个 **鲜明的记忆点**, 只有合适的画面, 没有绝对好的画面, 比如 [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/)
+看起来只是蒙了一个简单的灰黄[滤镜](./graphics/color_grading.md), 好像也没什么 deco, 但实际上效果也挺不错的
 
 ### Dialog
 
-对话能快速营造真实感, 让游戏里的角色 **活** 起来, 比如 [Journeys of a Bygone Wanderer](https://www.bilibili.com/video/BV1SbWSe6EAT/),
-又或是[带上她的眼睛](https://www.bilibili.com/video/BV1Y5B5B9E5Q/)
+对话能快速营造真实感, 让游戏里的角色 **活** 起来, 比如 [Journeys of a Bygone Wanderer](https://www.bilibili.com/video/BV1SbWSe6EAT/)
 
 <figure>
   <a href="https://www.bilibili.com/video/BV1SbWSe6EAT/">
@@ -150,11 +220,15 @@ Gameplay 品类众多, 它们的内涵相互交织, 又有细微区别, 所以�
   <figcaption>乐观的 Theo</figcaption>
 </figure>
 
-Dialog 也可以用来快速营造神秘感, 比如[留下一些奇奇怪怪的纸条](https://www.bilibili.com/video/BV1tF15YuEaS/?t=560)
+#### 剧情
 
-还可以单纯用来提示操作技巧, 比如[技巧说明告示板](https://www.bilibili.com/video/BV1iN411E7ux/?t=12)
+* [带上她的眼睛](https://www.bilibili.com/video/BV1Y5B5B9E5Q/): 人物塑造
+* [2a](https://www.bilibili.com/video/BV1tF15YuEaS/?t=560): 留下一些奇奇怪怪的纸条, 营造神秘感
+* [愿逐月华流照君](https://www.bilibili.com/video/BV1MwdVBRE6q/?t=529): 充当旁白, 描述画面和动作
 
-又或是充当[旁白](https://www.bilibili.com/video/BV1MwdVBRE6q/?t=529), 描述画面和动作
+#### 提示
+
+* [草莓酱全健身房](https://www.bilibili.com/video/BV1iN411E7ux/?t=12): 用来提示操作技巧, 讲解操作细节
 
 ### Camera
 
@@ -177,7 +251,7 @@ Dialog 也可以用来快速营造神秘感, 比如[留下一些奇奇怪怪的�
 
 ### 框架
 
-如果你对做什么样的地图没什么思路的话, 这里提出一些构思上的方法论
+> 尽管看了这么多示例了, 你可能对做什么样的地图还是没什么思路, 所以这里提出一些构思上的方法论, 也是仅供参考
 
 一种建议是先想好一个很简单的故事, 比如 **玛德琳今天要爬山**, 然后从不同角度去拓充内容
 
@@ -198,31 +272,19 @@ Dialog 也可以用来快速营造神秘感, 比如[留下一些奇奇怪怪的�
 
 如果你清楚自己想要借作图表达什么, 难度就压根不是问题
 
-你当然可以说我今天想写张酱三左右的图, 但是也没必要特别纠结现在的难度是酱二红还是酱三绿, 酱三红还是酱四绿, 就连草莓酱自己内部方差都大的一批呢, 所以别纠结难度, 放手去做吧
+你当然可以说我今天想写张酱三左右的图, 但是也没必要特别纠结现在的难度是酱二红还是酱三绿, 酱三红还是酱四绿, 就连草莓酱自己内部方差都大的一批呢, 所以别太纠结难度, 放手去做吧
 
-### [氛围](https://www.bilibili.com/video/BV1ZuG66rErj/)
+### 氛围
 
 [//]: # (想说的话感觉还能单开一个章节, 不过这些都是要慢慢积累的还是就讲这么多算了)
 
+> KaileyTheAlien: I remember when I found that room in Paint on my first playthrough and just stood there crying for like 10-15 minutes
+
 氛围是一项衡量玩家是否代入作品的指标, 如果哪怕有一瞬间能让玩家 **感受到自己处在对应的世界中**, 而不仅仅是在操控一个角色, 那么你做的氛围就绝对是成功的
 
-所有的一切都可以拿来营造氛围, 不过大体上还是可以分为以下几类
+你可以观看 [如何在蔚蓝 mod 图中营造「氛围感」](https://www.bilibili.com/video/BV1ZuG66rErj/) 来汲取灵感
 
-* [视效方面](https://www.bilibili.com/video/BV1ZuG66rErj/?t=183): [Sonder](https://www.bilibili.com/video/BV1ZZDHBSEsq/?t=163)
-  中的彩色玻璃窗营造和谐温暖的氛围, [愿逐月华流照君](https://www.bilibili.com/video/BV1MwdVBRE6q/?t=529)中营造出的带有顽强生命力的植物所蕴含的力量感
-
-> 你知道吗, 蔚蓝 9a 的黑洞是能[被风吹动](https://www.bilibili.com/video/BV15v4y1X71E/?t=1892)的, 氛围往往就藏在这些小细节里
-
-* [音乐方面](https://www.bilibili.com/video/BV1ZuG66rErj/?t=413): [崩碎之歌](https://www.bilibili.com/video/BV1YYwEz8EJf/) 中的节奏块带来压抑恐怖的氛围
-* [GP 方面](https://www.bilibili.com/video/BV1ZuG66rErj/?t=535): [The Climb](https://www.bilibili.com/video/BV1tY4y1g7Dk/?t=10)
-  通过较为开放的路线/严格的体力管控让人深深的感到攀登的艰辛, [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/) 同理
-* 镜头方面: [Mount Tin](https://www.bilibili.com/video/BV1SVrhBuEAS/) 只用了一个大镜头就让人感受到了 Madeline 的渺小与无助
-* [剧情/世界观方面](https://www.bilibili.com/video/BV1ZuG66rErj/?t=708): [Journeys of a Bygone Wanderer](https://www.bilibili.com/video/BV1SbWSe6EAT/), [带上她的眼睛](https://www.bilibili.com/video/BV1Y5B5B9E5Q/)
-  中的对话让你代入角色视角进入他们的世界
-
-> 趣事一则: 带上她的眼睛在第一版的平原上放了一个[雷霆大瀑布](https://www.bilibili.com/video/BV1Y5B5B9E5Q/?t=666), 虽然画面很美, 但是显然这很不科学, 如果玩家意识到了这一点沉浸感就会被破坏,
-> 所以在后续的迭代中增加了[悬崖](https://www.bilibili.com/video/BV1Y5B5B9E5Q/?t=800)这一结构, 既补全了平原上有瀑布的设定, 还能顺便增加点攀岩
-> GP, 和剧情相辅相成
+**所有的一切都可以拿来营造氛围**, 它的内涵比上面的视频所提及的还要深厚, 这需要你慢慢去体会
 
 <div class="admonition tip">
     <p class="admonition-title">小贴士</p>
@@ -316,12 +378,10 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
 * 各种各样的傻逼, 就知道阴阳怪气, 说风凉话, 装逼 (无论资历, 无论贡献)
 * 各种各样让自己感到可惜的人, 明明可以做的更好, 明明不需要这样的
 
-你看到了傲慢, 麻木, 冷漠, 怠惰, 功利, 怯懦, 你渴望改变, 并采取行动, 但似乎收效甚微,
-你不信邪, 你努力着, 呐喊着, 结果换来的却是连你自己都迷失了
+你看到了傲慢, 麻木, 冷漠, 怠惰, 功利, 怯懦, 你渴望改变, 并采取行动, 但似乎收效甚微, 你不信邪, 你努力着, 呐喊着, 结果换来的却是连你自己都迷失了
 
-这也是没办法的嘛, 人家变成现在这逼样都是从小到大的环境一步步熏陶出来的, 这不是短时间内扯扯嘴皮子就能让别人的价值观跟你对上的, 
-所以啊, 有的时候学着自私一点也不是啥坏事, 该屏蔽的屏蔽, 该无视的无视, 把精力剩下来留给更值得的人, 学会自爱, 被无视了冷落了也没有关系, 
-不然天天只想着别人怎么怎么样的话你就是把自己烧成灰了也没法儿照亮他人
+这也是没办法的嘛, 人家变成现在这逼样都是从小到大的环境一步步熏陶出来的, 这不是短时间内扯扯嘴皮子就能让别人的价值观跟你对上的, 所以啊, 有的时候学着自私一点也不是啥坏事, 该屏蔽的屏蔽,
+该无视的无视, 把精力剩下来留给更值得的人, 学会自爱, 被无视了冷落了也没有关系, 不然天天只想着别人怎么怎么样的话你就是把自己烧成灰了也没法儿照亮他人
 
 ## 学会休息
 
