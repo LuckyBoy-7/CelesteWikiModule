@@ -1,17 +1,15 @@
-参考
-
-* [Crystalline Helper 文档](https://gamebanana.com/mods/53765)
-* [Crystalline Helper Github](https://github.com/CommunalHelper/CrystallineHelper)
-* [Trigger Trigger 简单教程 by Shynnie](../../assets/mappings/useful_helpers/tt/tt_by_shynnie.docx)
-* [常用 Trigger by Breaker-K](https://www.bilibili.com/video/BV1eZW5zVE4t/?&t=2535)
-
----
-
 > Myn:
 >
 > 宇宙是如何诞生的？是 tt 触发了那个奇点
 >
 > 万物是如何运动的？是 eevee 框动着世界变化
+
+## 参考
+
+* [Crystalline Helper 文档](https://gamebanana.com/mods/53765)
+* [Crystalline Helper Github](https://github.com/CommunalHelper/CrystallineHelper)
+* [Trigger Trigger 简单教程 by Shynnie](../../assets/mappings/useful_helpers/tt/tt_by_shynnie.docx)
+* [常用 Trigger by Breaker-K](https://www.bilibili.com/video/BV1eZW5zVE4t/?&t=2535)
 
 ## Trigger Trigger 介绍
 
