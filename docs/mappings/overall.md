@@ -46,9 +46,10 @@
 
 **by ricky06**
 
-* [【转载】蔚蓝Mods中的“可读性”是什么？by ricky06](https://www.bilibili.com/video/BV1QJKWzEEJR/)
+* [蔚蓝 Mods 中的“可读性”是什么? by ricky06](https://www.bilibili.com/video/BV1QJKWzEEJR/)
 * [How I create "Modded Celeste" gameplay by ricky06](https://www.youtube.com/watch?v=KpPkyR3yfeY)
 * [究竟怎样才算好的玩法教学? by ricky06](https://www.bilibili.com/video/BV1VApX6hEDT/)
+* [如何在蔚蓝 mod 图中营造「氛围感」 by ricky06](https://www.bilibili.com/video/BV1ZuG66rErj/)
 
 **by Honly**
 

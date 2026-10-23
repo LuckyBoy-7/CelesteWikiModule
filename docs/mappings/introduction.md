@@ -27,8 +27,6 @@ Mod
 
 ## 地图的组成
 
-> 下面的这些分类绝对不完整, 不严谨且偏主观, 但仍可以为你提供参考
-
 如果你准备好开始了, 那就让我们先来认识一下一张蔚蓝地图的大致组成部分吧
 
 ### Gameplay
@@ -54,16 +52,21 @@ Mod
 * [Slnvovhh](https://www.bilibili.com/video/BV1JMwdzGEca/): 掉落块 + 灰砖
 * [Up the Amethyst Trail 紫晶山道](https://www.bilibili.com/video/BV11un36tE63/): 紫水晶
 * [反转山脊](https://www.bilibili.com/video/BV1Qc411E7rq/): 前景砖/背景砖切换 + 果冻水晶
+* [天际篡夺者](https://www.bilibili.com/video/BV15aBtYgES5/): 小飞机
 
 #### 特定操作
 
 > 专注于特定操作, 实体主要只是实现操作的一种手段
 
 * [The Climb](https://www.bilibili.com/video/BV1tY4y1g7Dk/?t=10): 垂直攀岩技巧 + 较为严格的体力管控
+* [残暴圣所](https://www.bilibili.com/video/BV1zGpJ6LEHH/): 牛抽奖~
+* [Moonlight Center](https://www.bilibili.com/video/BV1jJhD6nE8L/): 无冲
 * [The Solar Purgatory 烈冕炼狱](https://www.bilibili.com/video/BV11wnderEFi/): 高级抛接技巧 + 高级弹球技巧
 * [\/ SYSTEM MELTDOWN \/](https://www.bilibili.com/video/BV1r8g96mEKe): 高速垂直运动, `Bounce Helper` + `Ceiling Ultra`
 * [Aphelion 远日](https://www.bilibili.com/video/BV1TBu26KEX9/): 冻结帧松抓
 * [NACG](https://www.bilibili.com/video/BV1RFHUzAEbC): 微操
+* [MOCE//LXVI](https://www.bilibili.com/video/BV1Fvpn6JESt/): 对准微操
+* [Mauve](https://www.bilibili.com/video/BV1naG16wEka/): 疙瘩
 * [514 连 反 凌 波 兔 子 跳](https://www.bilibili.com/video/BV1wPhtzVE8K/): 重复, 重复, 重复
 
 #### 解密
@@ -85,7 +88,7 @@ Mod
 
 #### 实验性玩法
 
-> 相对少见偏创新的玩法
+> 相对少见偏创新的玩法, 完全举例不完😭
 
 * [Clueste](https://www.bilibili.com/video/BV1dznB6QE5X/): 我在蔚蓝里当侦探?
 * [When Push Comes to Shove](https://www.bilibili.com/video/BV1YaKX6XEyz/): 玛德琳不动, 操控机关
@@ -94,6 +97,10 @@ Mod
 * [Swimming](https://www.bilibili.com/video/BV1cLJEz9Ejo/): 钩爪 + 鞘翅 + 骨钉
 * [Lakeside Songbook](https://www.bilibili.com/video/BV1WZ421M7gj/): 钓鱼图
 * [Crossover Collab](https://search.bilibili.com/all?keyword=%E8%94%9A%E8%93%9Dcrossovercollab): 我在蔚蓝里玩其他游戏?
+* [Exhibition V](https://www.bilibili.com/video/BV1GbWEzSEzp/): 艺术画廊
+* [Troll Sides](https://www.bilibili.com/video/BV1tyHQ6SEKs/): 坑向图
+* [Glass Ocean](https://www.bilibili.com/video/BV1f6YF6DEqS), [Forgotten Fortress](https://www.bilibili.com/video/BV1BU7D6WEu7/): 速通/限时图
+* [WTF？](https://www.bilibili.com/video/BV1kH4y1g7ob/): 用视差作图
 * 等等
 
 总之, 你这张图在玩法上可以常规也可以新颖, 可以抽象也可以正经, 但至少也应该要让玩家有一个 **鲜明的记忆点**,
@@ -105,12 +112,12 @@ Mod
 
 <div class="admonition tip">
     <p class="admonition-title">小贴士</p>
-    <p>把你选定的 GP 正确传达给玩家也需要一定的技巧, 你可以从<a href="https://www.bilibili.com/video/BV1VApX6hEDT/">究竟怎样才算好的玩法教学</a>中获取灵感</p>
+    <p>把你选定的 GP 正确传达给玩家也需要一定的技巧, 你可以从<a href="https://www.bilibili.com/video/BV1VApX6hEDT/">究竟怎样才算好的玩法教学</a>和<a href="https://www.bilibili.com/video/BV1QJKWzEEJR//">蔚蓝 Mods 中的“可读性”是什么?</a>中获取灵感</p>
 </div>
 
 ### Music
 
-> 这里泛指背景音乐/环境音/音效
+> 我一直在哭😭
 
 音乐搭配装饰奠定了整体的氛围基调, 比如[奥日与黑暗森林-银之树逃亡](https://www.bilibili.com/video/BV1sh411679F/)中的音乐让人感到震撼
 
@@ -137,6 +144,7 @@ Mod
 * [迷云都](https://www.bilibili.com/video/BV12yVozdEoE/) 中传达出的迷失感
 * [命日 (Meinichi)](https://www.bilibili.com/video/BV1KhGB6SEWU/) 中传达出的混沌感
 * [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/) 中传达出的无力感
+* [底特律：变人](https://www.bilibili.com/video/BV1op411R7xX/?t=79) 中传达出的紧张感
 * 等等
 
 #### 环境音
@@ -159,8 +167,6 @@ Mod
 
 ### Decoration
 
-> 我一直在哭😭
-
 装饰搭配音乐奠定了整体的氛围基调, 比如[致我所热爱的一切](https://www.bilibili.com/video/BV1AMHi6FE1b/)中给人带来的空灵梦幻的感觉
 
 <figure>
@@ -172,13 +178,16 @@ Mod
 
 #### 主题
 
-> 装饰可以奠定游戏基调, 比如 "哇, [这张图](https://www.bilibili.com/video/BV11wnderEFi/?t=237)看起来就很难", "哇,
-> [这张图](https://www.bilibili.com/video/BV1x1421r7ya/)光是看着心里就暖暖的"
+> deco 能让玩家很快的代入地图中的场景, 感受到它的温度, 而不是玩了半天都不知道自己在什么地方
 
-* [画境](https://www.bilibili.com/video/BV1x1421r7ya/) 给人温暖和谐的感觉
+* [画境](https://www.bilibili.com/video/BV1x1421r7ya/) 给人画中世界温暖和谐的感觉
 * [愿逐月华流照君](https://www.bilibili.com/video/BV1MwdVBRE6q/?&t=142) 给人夜晚宁静的感觉
 * [Sorrow of Forgotten Piano](https://www.bilibili.com/video/BV1XRtZ6ZEZX/): 雨中漫步
 * [A New Dawn](https://www.bilibili.com/video/BV1Qd4y1P7vY/): 漫步在黎明的古迹
+* [Kingdom to Heaven](https://www.bilibili.com/video/BV1ucpG66EWC/): 天空之城
+* [库塔拉花园](https://www.bilibili.com/video/BV1oMnc6EESG/)
+* [钟塔](https://www.bilibili.com/video/BV1C3H765EjV/)
+* [冰汽时代](https://www.bilibili.com/video/BV1B9zfBZEP7/?p=6&t=2918): 在暴风雪中生存
 
 #### 逻辑性
 
@@ -197,6 +206,18 @@ Mod
 * [雨夜](https://www.bilibili.com/video/BV1Er4y1v7or/): [前景砖的叠加](./xml/tilesets.md#ignores)也能营造空间纵深感
 * [寻年城](https://www.bilibili.com/video/BV1TwfnBUEDh/?t=158): 背景的视差和运动也能营造空间纵深感
 * [Sonder](https://www.bilibili.com/video/BV1ZZDHBSEsq/?t=163): 其中透过彩色玻璃窗的有着细微颜色差异的光线让你感到厚度 (光线从 **外面** 照 **进来**, 且 **看起来** 符合彩色花窗逻辑)
+* [FEZ](https://www.bilibili.com/video/BV144411o71c/?t=263): 3D 空间怎么说
+
+#### 标志性
+
+> 我大概永远也不会忘了你吧
+
+* [序章](https://www.bilibili.com/video/BV1Dp4y1D7QR/?t=49) 梦开始的地方
+* [7C](https://www.bilibili.com/video/BV14P41137es/?t=34) 结尾的樱花树
+* [9A](https://www.bilibili.com/video/BV1bb4y117fn/) 心门
+* [空洞骑士](https://www.bilibili.com/video/BV1LV411Y7x2/?t=64)里的辐光战斗场地
+* [星际拓荒](https://www.bilibili.com/video/BV1EE411u7cC/)里的[口口口口口口](https://www.bilibili.com/video/BV1Nb421p7VK)
+* [Gris](https://www.bilibili.com/video/BV14g4y1i7iN/) 里的好多画面
 
 #### 引导
 
@@ -204,7 +225,7 @@ Mod
 
 * [弹球炼狱](https://www.bilibili.com/video/BV14nXBYtEf3/?t=12)背景的线条不是随意摆放的, 是有意用来引导弹球运动方向的
 * [雨夜](https://www.bilibili.com/video/BV1Er4y1v7or/)中的黄色火把暗示了草莓的位置
-* [9a](https://www.bilibili.com/video/BV15v4y1X71E/?t=1892) 的黑洞是能被风吹动的, 这间接的暗示了风的方向
+* [9A](https://www.bilibili.com/video/BV15v4y1X71E/?t=1892) 的黑洞是能被风吹动的, 这间接的暗示了风的方向
 
 总之, 你这张图在画面上应该要有一个 **鲜明的记忆点**, 只有合适的画面, 没有绝对好的画面, 比如 [Me and the Birds](https://www.bilibili.com/video/BV13iLGz3ELu/)
 看起来只是蒙了一个简单的灰黄[滤镜](./graphics/color_grading.md), 好像也没什么 deco, 但实际上效果也挺不错的
@@ -222,13 +243,27 @@ Mod
 
 #### 剧情
 
-* [带上她的眼睛](https://www.bilibili.com/video/BV1Y5B5B9E5Q/): 人物塑造
+* [Love Story：爱情故事](https://www.bilibili.com/video/BV1XY4y1G7Af/?t=649): 人物塑造 (Theo 笑死我了)
+* [带上她的眼睛](https://www.bilibili.com/video/BV1Y5B5B9E5Q/): 世界观 + 人物塑造
 * [2a](https://www.bilibili.com/video/BV1tF15YuEaS/?t=560): 留下一些奇奇怪怪的纸条, 营造神秘感
 * [愿逐月华流照君](https://www.bilibili.com/video/BV1MwdVBRE6q/?t=529): 充当旁白, 描述画面和动作
 
 #### 提示
 
 * [草莓酱全健身房](https://www.bilibili.com/video/BV1iN411E7ux/?t=12): 用来提示操作技巧, 讲解操作细节
+* [逆旅](https://www.bilibili.com/video/BV1AM411d75j/): 你真的要进来吗
+* [第五维度](https://www.bilibili.com/video/BV1enpMznEM7/): 钻缝彩蛋
+
+#### 玩家选择
+
+* [6A](https://www.bilibili.com/video/BV1Dp4y1D7QR/?p=6) 中的谈心
+* [烈冕号](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=127) 中的询问
+
+#### 播片
+
+* [Welcome to Megalophobia](https://www.bilibili.com/video/BV1WzXHY3Eho/?t=5265) 结尾致谢
+* [7a 尾声](https://www.bilibili.com/video/BV1Dp4y1D7QR/?p=7&t=2144)
+* [弹丸论破](https://www.bilibili.com/video/BV1FW411a7Bc/?p=4&t=1032), [魔裁](https://www.bilibili.com/video/BV1hPumztEiy/?p=3&t=113) 中的讨论环节
 
 ### Camera
 
@@ -241,13 +276,28 @@ Mod
   <figcaption>大就是好</figcaption>
 </figure>
 
-比如
+#### 更开阔的视野
 
+> 玩家能更好的看清前方的道路
+
+* [Distant Wasteland](https://www.bilibili.com/video/BV1xw5BziE2h/), [疾星焕影](https://www.bilibili.com/video/BV1sU421o7Tv/?t=39): 镜头不会跟丢且有更好的视野
+* [islome](https://www.bilibili.com/video/BV1ddML6bE5H/): 大就是好
+
+#### 叙事
+
+> 镜头的推拉摇移会给人不一样的感受
+
+* [geodesic](https://www.bilibili.com/video/BV1V83HzaE1R/?t=152): 小镜头能聚焦重要的对象
 * [Sheepy A Short Adventure](https://www.bilibili.com/video/BV11oen6WEs9/?t=571) 中突然变大的画面初见美得让人说不出话
 * [Mount Tin](https://www.bilibili.com/video/BV1SVrhBuEAS/) 只用了一个大镜头就让人感受到了 Madeline 的渺小与无助
 * [Journeys of a Bygone Wanderer](https://www.bilibili.com/video/BV1SbWSe6EAT/?t=243) 中镜头的移动和缩放能很好的传递情绪
+* [百香万神殿](https://www.bilibili.com/video/BV1p5pxzEEaG/?t=826) 最后镜头的踩点缩放更能渲染情绪
 
 ## 你该做些什么
+
+其实如果你稍微有点游戏阅历的话, 你会发现上面提到的这些元素在各个游戏之间都是互通的, 所以从某种意义上来说制图就是在做游戏, 只不过 Loenn 已经为你提供了一些基础的东西, 使得你可以从更高的层级开始构建游戏而已
+
+值得注意的是, 做游戏是 **绝对自由的**, 所以上面的例子里也补充了一些其他游戏的示例以提供一些额外的参考, 你应该尽情挥洒你的想象力, 而不应该被上面提到的条条框框约束住, 但它们仍有一定的参考价值
 
 ### 框架
 
@@ -256,23 +306,31 @@ Mod
 一种建议是先想好一个很简单的故事, 比如 **玛德琳今天要爬山**, 然后从不同角度去拓充内容
 
 * 人数: 一个人爬吗, 还是跟奶奶爬, 又或者是跟坏德琳拌嘴着爬, 会遇见 Theo 吗, 还是跟 Theo 一起爬等等
+* 地点: 爬雪山, 熔岩山, 香蕉山, 冰激凌山, 爬弹球山, 爬 [1:1 珠穆朗玛峰](https://www.bilibili.com/video/BV1yfGE6ZEgv/), 爬香香软软的山, 爬会说话的山, 爬各种奇思妙想的山
 * 原因: 想散散心? 跟某人比赛? 意外事故 (比如坠入洞穴得重新爬出来)?
 * 时间: 晚上爬还是白天爬, 还是分不清白天黑夜 (比如在洞穴里, 外太空), 从早爬到晚, 还是从晚爬到早
-* 地点: 爬雪山, 熔岩山, 香蕉山, 冰激凌山, 爬弹球山, 爬 [1:1 珠穆朗玛峰](https://www.bilibili.com/video/BV1yfGE6ZEgv/), 爬香香软软的山, 爬会说话的山, 爬各种奇思妙想的山
+* 手段: 用脚爬 (常规 GP), 用道具爬 (喷气背包, 钩爪, 鞘翅), 挂机爬 (自动图)
 * 天气: 下雨, 晴天, 阴天
 * 温度: 寒冷, 炎热, 温暖, 凉爽
-* 手段: 用脚爬 (常规 GP), 用道具爬 (喷气背包, 钩爪, 鞘翅), 挂机爬 (自动图)
 * 等等
 
 当你想好了地图的大体框架, 其中的音乐, 美术, 游戏玩法也能很快定下基调, 为你指明方向
 
 ### 难度
 
-> 难不一定差, 简单不一定好
+> 难不一定差, 简单不一定好, 难不一定难写, 简单不一定好写
 
 如果你清楚自己想要借作图表达什么, 难度就压根不是问题
 
 你当然可以说我今天想写张酱三左右的图, 但是也没必要特别纠结现在的难度是酱二红还是酱三绿, 酱三红还是酱四绿, 就连草莓酱自己内部方差都大的一批呢, 所以别太纠结难度, 放手去做吧
+
+### 长度
+
+> 想做多长做多长, 但还是建议第一张图别做太长
+
+* [100 "Dreamdashes"](https://www.bilibili.com/video/BV1Cnn46KEew): 一个房间也能做 GP
+* [一场空](https://www.bilibili.com/video/BV1Po4y1J7Zg/): 短图也可以做的很有质感
+* [Night's Crown of Flowers](https://www.bilibili.com/video/BV1qsn1zxEbA/): 短图也可以很好玩
 
 ### 氛围
 
@@ -361,6 +419,7 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
 * 你可能在学习一项新技术的时候同时感到难/累, 然后误认为这种感觉是不好的信号, 从而得出自己不喜欢这件事的结论
 * 你可能一开始只是觉得制图有点意思, 做了张图之后得到了一些关注, 你以为快乐来自于关注, 结果你为了得到更多的关注选择去做了更多的图, 你的技术在不断提升, 但你却再也快乐不起来了
   (可以参考[德西效应](https://baike.baidu.com/item/%E5%BE%B7%E8%A5%BF%E6%95%88%E5%BA%94/6133934))
+* 你可能既讨厌某一个人, 又羡慕甚至嫉妒他所做的成就, 进而得出 "凭什么" 的结论, 但实际上应该要一码归一码
 * 你可能......
 
 所以你要学会细细品味并分析自己的感受, 把不同的成分抽离出来, 这样你才能堂堂正正的去喜欢和讨厌一个东西, 一件事, 一个人
@@ -378,10 +437,15 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
 * 各种各样的傻逼, 就知道阴阳怪气, 说风凉话, 装逼 (无论资历, 无论贡献)
 * 各种各样让自己感到可惜的人, 明明可以做的更好, 明明不需要这样的
 
-你看到了傲慢, 麻木, 冷漠, 怠惰, 功利, 怯懦, 你渴望改变, 并采取行动, 但似乎收效甚微, 你不信邪, 你努力着, 呐喊着, 结果换来的却是连你自己都迷失了
+你看到了傲慢, 麻木, 冷漠, 怠惰, 功利, 怯懦, 你渴望改变, 并采取行动, 但似乎收效甚微, 你不信邪, 你努力着, 呐喊着, 结果换来的却是连你自己都迷失了, 这也是没办法的嘛,
+人家变成现在这样子都是从小到大的环境一点点熏陶出来的, 这不是短时间内扯扯嘴皮子就能让别人的价值观跟你对上的
 
-这也是没办法的嘛, 人家变成现在这逼样都是从小到大的环境一步步熏陶出来的, 这不是短时间内扯扯嘴皮子就能让别人的价值观跟你对上的, 所以啊, 有的时候学着自私一点也不是啥坏事, 该屏蔽的屏蔽,
-该无视的无视, 把精力剩下来留给更值得的人, 学会自爱, 被无视了冷落了也没有关系, 不然天天只想着别人怎么怎么样的话你就是把自己烧成灰了也没法儿照亮他人
+所以一种建议是
+
+* 不要看得太宏观, 每天惦记着蔚蓝圈子未来的发展, 想把别人变成自己所认为的样子, 或是凭一己之力撼动什么, 历史的车轮滚滚向前, 我们最多只能是影响, 无法靠一己之力迅速改变那些底层的东西
+* 也不要看得太微观, 天天被这个人气被那个人恶心, 学着自私一点也不是啥坏事, 该屏蔽的屏蔽, 该无视的无视, 把精力剩下来留给更值得的人
+* 要学会自爱, 被无视了冷落了也没有关系, 自己爽了就行, 不然天天只想着别人怎么怎么样的话你就是把自己烧成灰了也没法儿照亮他人 (比如我就是想帮助别人, 这个行为让我很爽,
+  至于那个人有多傻逼我就不管了)
 
 ## 学会休息
 
@@ -395,9 +459,7 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
 
 ## 减少对比
 
-> 别人是别人, 我们是我们
-
-天天跟别人比来比去累不累啊
+> 比较是偷走幸福的小偷
 
 ![03](../assets/mappings/introduction/03.png){style="width:400px"}
 
@@ -406,7 +468,7 @@ Wiki 整体的结构, 尽管一开始 Wiki 里满是蓝色的[链接](), 但这�
 虽然我承认装作是一个高手并且在无意间透露出自己的作品并得到别人的夸奖甚至是大力宣传的感觉无疑是很爽的, 但事实是除非真的质量高到离谱, 大多数时候你的作品究竟怎样其实并没有人关心,
 所以如果你坚信自己做的是对的, 是好的, 那么偶尔"推销"一下自己的东西也没什么丢脸的
 
-虽然上文提到成果不论大小在观众眼里都是蛋糕, ~~但是有没有观众是另一回事儿~~
+虽然上文提到成果不论大小在观众眼里都是蛋糕, ~~但是观众能不能看到你的蛋糕是另一回事儿~~
 
 ## 记住当下的感觉
 

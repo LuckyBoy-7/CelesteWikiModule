@@ -3,7 +3,7 @@
 * [【蔚蓝Celeste】酱游第五章爆表 烈冕号（The Solar Express）全收集流程](https://www.bilibili.com/video/BV1Lx4y1F7wy)
 * [地图](https://gamebanana.com/mods/424541)
 
-## [进入列车](https://www.bilibili.com/video/BV1SbWSe6EAT/?t=0)
+## [进入列车](https://www.bilibili.com/video/BV1Lx4y1F7wy/?t=22&vd_source=217bacbee37820b5bf3ed2f4fb8f6c94)
 
 房间名: All Aboard
 
