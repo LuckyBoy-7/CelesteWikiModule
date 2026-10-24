@@ -172,6 +172,9 @@ Flag 是操控/联动所有实体的关键组成部分, 只要对应实体开放
 
 当玩家 FC 过当前地图时, 输出对应的 Flag
 
+### 其他
+
+* [Kosei Helper](https://gamebanana.com/mods/556401) 里的 `Game Data Controller [Kosei Helper]` 实体: 玩家是否在使用望远镜/是否在切板/是否在水面上等等
 
 
 ## 常用 Flag Trigger

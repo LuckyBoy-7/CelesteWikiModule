@@ -50,7 +50,7 @@
 
 我们发现 `Booster` 的动画配置可以在官图的 [`Sprites.xml`](../../xml/sprites_xml.md) 中找到
 
-所以我们可以通过修改这一文件把引向官图的 `Booster` 素材路径改成自己的路径
+所以我们可以通过修改这一文件把指向 `Booster` 对应的官图素材路径改成自己的路径
 
 ```xml title="路径: Celeste/Content/Graphics/Sprites.xml" hl_lines="3"
 
@@ -132,7 +132,7 @@
 
 即可完成换肤
 
-> 别忘了开对应 Mod, 不开我用什么啊
+> 别忘了启用对应 Mod, 不开我用什么啊
 
 ![06](../../../assets/mappings/graphics/replace_assets/replace_assets/refill/06.png)
 
@@ -162,8 +162,6 @@
 
 ```
 
-如果
-
 > 如果你好奇为什么 CollabUtils2 的 `Sprites.xml` 可以跟官图的 `Sprites.xml` 同路径, 可以参考[路径冲突 -- `Sprites.xml`](../../mod_structure.md#conflict_sprites_xml)
 
 之后找到对应素材后就完全跟前面的换法一样了 (尻素材, 套路径, 抄配置, 改路径, 最后在实体面板设置即可)
@@ -174,7 +172,8 @@
 
 如果有些实体并没有给你开放替换皮肤的配置, 但你还是能在它的文件夹中找到相关的 `Sprites.xml`, 这说明其实还是能换的, 只不过人家没把配置开放出来而已
 
-比如肯定存在一条世界线 `CollabUtils2/WarpPedestal` 使用了 `CollabUtils2_placeholderOrb` 这个动画组 ID, 但是没在属性面板里开放
+比如肯定存在一条世界线 `CollabUtils2/WarpPedestal` 使用了 `CollabUtils2_placeholderOrb` 这个动画组 ID, 虽然没在属性面板里开放, 
+但你肯定还是可以在 `Sprites.xml` 里覆盖 `CollabUtils2_placeholderOrb` 配置来更换皮肤的
 
 > 这里只是举例说明把 `CollabUtils2/WarpPedestal` 的 `Sprite` 属性[删了](../../loenn/faq.md#loenn_data)
 
@@ -214,7 +213,8 @@
 
 ![05](../../../assets/mappings/graphics/replace_assets/replace_assets/communal_helper_move_swap_block/05.png)
 
-而这部分在代码中是手动绘制的, 所以用 `Sprite Replace Trigger` 不太能改这部分, 所以我们只能暴力替换素材路径, 例如使用 `Atlas Path Replacer`
+但由于这部分图片是在代码中手动绘制的, 而 `Sprite Replace Trigger` 没有提供这方面的支持, 于是我们只能暴力替换素材路径, 
+把所有找素材 A 的路径换成找素材 B 的, 例如使用 `Atlas Path Replacer`
 
 我们先把官图素材尻过来简单改个色, 如下
 

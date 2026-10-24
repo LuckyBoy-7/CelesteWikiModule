@@ -13,7 +13,7 @@ theme:
     - content.tabs.link
     - navigation.sections
     - navigation.instant
-    
+  
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -51,10 +51,10 @@ extra_css:
 extra_javascript:
   - javascripts/katex/katex.min.js
   - javascripts/katex/auto-render.min.js
-  - javascripts/katex/katex.js 
-  - javascripts/announcement.js 
-  - javascripts/nav-expand.js 
-  - javascripts/banner.js 
+  - javascripts/katex/katex.js
+  - javascripts/announcement.js
+  - javascripts/nav-expand.js
+  - javascripts/banner.js
 
 markdown_extensions:
   - admonition # 警告
@@ -87,24 +87,37 @@ nav:
       - Celeste 中心广场: "https://space.bilibili.com/3691010620131512"
       - 每周蔚闻: "https://space.bilibili.com/104247284/lists/3589526"
   - 活动:
-      - 群服活动: 
-          - 拾遗图鉴: 
+      - 群服活动:
+          - 拾遗图鉴:
               - ~ 蔚蓝拾遗图鉴第三期活动 [万家灯火] ~: "https://bbs.celemiao.com/d/590-wei-lan-shi-yi-tu-jian-x-miaonet-di-tu-da-qia-huo-dong-season-3-mo-jia-deng-huo"
               - ~ 蔚蓝拾遗图鉴第二期活动 [寻迹拾光] ~: "https://bbs.celemiao.com/d/483-wei-lan-shi-yi-tu-jian-di-er-qi-huo-dong-xun-ji-shi-guang"
               - ~ 蔚蓝拾遗图鉴第一期活动 [初夏煦风] ~: "https://bbs.celemiao.com/d/433-wei-lan-shi-yi-tu-jian-di-yi-qi-huo-dong-chu-xia-xu-feng"
           - Any% 分段速通接力活动: "https://bbs.celemiao.com/d/471-miaonet-she-qu-any-fen-duan-su-tong-jie-li-huo-dong"
       - 制图活动:
           - 制图竞赛:
-              - Climb Up 竞赛: "activity/mappings/contest/climb_up.md"
-              - Ban & Pick 竞赛: "activity/mappings/contest/ban_pick.md"
+              - Climb Up Contest: "activity/mappings/contest/climb_up.md"
+              - Ban & Pick Contest: "activity/mappings/contest/ban_pick.md"
           - 制图合集:
               - 糖游: "activity/mappings/collab/candy.md"
+              - Gallery Collab 2024: "https://gamebanana.com/mods/494348"
+              - LPL Collab 2022: "https://gamebanana.com/mods/455644"
+              - Dream Collab 2022:
+                  - 香蕉网: "https://gamebanana.com/mods/391486"
+                  - 创作历程及心得: "https://www.bilibili.com/opus/686624997011095571"
+          - 制图竞赛合集:
+              - P2P Conlab 2025: "https://gamebanana.com/mods/585371"
           - 制图接力:
               - 制图接力汇总: "activity/mappings/relay/relay.md"
               - 第八届蔚蓝制图合作【余烬山脊】: "activity/mappings/relay/8.md"
           - 国外制图活动: "https://discord.com/channels/403698615446536203/1302747608359501895"
       - 其他活动:
           - 国庆 2026&nbsp;<img src="/celeste_wiki/assets/activity/general/china.png" class="china-icon"/>: "activity/general/national_day2026.md"
+          - 团建:
+            - 视频: "https://search.bilibili.com/all?keyword=%E8%94%9A%E8%93%9D%E5%9B%A2%E5%BB%BA"
+            - 群聊: "https://qm.qq.com/q/ZpWXMl4EIa"
+          - 小游戏:
+              - 心战: "https://www.bilibili.com/video/BV1Fqa26jErj/"
+              - Bingo: "https://www.bilibili.com/video/BV19m7H6hE1r/"
   - 常规:
       - 游戏官网: "https://www.celestegame.com/"
       - 速通: "general/speedrun.md"
@@ -158,7 +171,7 @@ nav:
               - 玩家状态表: "mappings/player_state.md"
               - Tile Sound Id 表: "mappings/audio/tile_sounds.md"
               - 蔚蓝 Event 路径表: "https://github.com/EverestAPI/Resources/wiki/Audio-ID-Dump"
-      - 基础: 
+      - 基础:
           - Mod 结构 🧩: "mappings/mod_structure.md"
           - 房间: "mappings/loenn/room.md"
           - 元数据️:

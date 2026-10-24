@@ -7,7 +7,8 @@
 首先找到你想要换肤的实体, 比如 `CommunalHelper/MoveSwapBlock`, 在 `Affected Types` 中填入该对象的[完全限定名](../loenn/faq.md#type), 这里是
 `Celeste.Mod.CommunalHelper.Entities.MoveSwapBlock`, 之后把这个 Trigger 框住你想要换肤的实体并配置好[新的素材路径](#sprite-path)即可
 
-如果你觉得把整个房间框起来很碍眼, 或是每个房间都要放很麻烦, 可以使用[全局房间](../useful_helpers/bits%20&%20bolts.md), 并把 Trigger 宽高设置为 `10000000` 放在右上角即可
+如果你觉得把整个房间框起来很碍眼, 或是每个房间都要放很麻烦, 可以使用[全局房间](../useful_helpers/bits%20&%20bolts.md), 并把 Trigger 宽高设置为 `10000000` 放在右上角即可 
+(你也可以直接用 `Resize Trigger` 方便的调整它的大小和位置)
 
 ![00](../../assets/mappings/useful_helpers/helper/00.png)
 
