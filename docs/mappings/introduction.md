@@ -46,7 +46,7 @@ Mod
 >
 > 这不仅能奠定 GP 的主基调, 还能深挖一个实体的特性, 循序渐进的提高难度, 不至于让玩家一下子被多种类型的实体淹没
 
-* [余烬山脊](https://www.bilibili.com/video/BV1QQpn6qEvD/): areo 块
+* [余烬山脊](https://www.bilibili.com/video/BV1QQpn6qEvD/): Aero 块
 * [崩碎之歌](https://www.bilibili.com/video/BV1YgLe6tEyH/): 变奏节奏块
 * [逐色寻光](https://www.bilibili.com/video/BV1Zk8s61E1N): 速度变向实体
 * [Slnvovhh](https://www.bilibili.com/video/BV1JMwdzGEca/): 掉落块 + 灰砖

@@ -9,3 +9,7 @@
 ### [LuaBadelineBoss](https://github.com/JaThePlayer/FrostHelper/wiki/Lua-Badeline-Boss-Starter-Guide)
 
 使用 Lua 操控的 BadelineBoss, 比原版的拥有更高程度的自定义化, 且易于上手
+
+#### 示例
+
+* [寻年城](https://www.bilibili.com/video/BV1TwfnBUEDh/?t=1737)

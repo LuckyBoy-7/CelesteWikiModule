@@ -298,7 +298,11 @@ ausp 还提供了一些预设名方便你访问一些特定的贴图
 
 ### 编写 Shader
 
-我们可以仿照[源码](https://github.com/cloudsbelow/auspicioushelper/tree/main/Effects/ausp/src)编写我们自己的 Fragment Shader, 比如这里我们编写了一个纯色 Shader, 会将源像素直接修改为固定颜色
+> Shader, 即着色器, 这里的 Shader 特指 Fragment Shader, 是众多 Shader 中的一种, 叫做片元着色器或是像素着色器, 顾名思义就是对显示器屏幕上的一格格像素颜色进行处理,
+> 而写 Shader 就是在实现这个 **处理** 中间的细节, 以实现各种各样的视觉效果,
+> 比如我们可以通过颜色映射实现[滤镜](../../graphics/color_grading.md)效果, 或是拿另一张图的做蒙版实现遮罩效果之类的
+
+我们可以仿照[源码](https://github.com/cloudsbelow/auspicioushelper/tree/main/Effects/ausp/src)编写我们自己的 Fragment Shader, 比如这里我们编写了一个纯色 Shader, 不管输入像素是什么颜色, 都直接返回一个特定颜色, 这会将源像素直接修改为固定颜色
 
 ```hlsl hl_lines="7"
 sampler2D TextureSampler : register(s0);
@@ -320,7 +324,8 @@ technique BasicTech {
 
 ### 编译 Shader
 
-使用 Windows 自带的 fxc 工具编译, `fxc.exe /T fx_2_0 /E main /Fo {output}.cso {input}.fx`, 例如 `fxc.exe /T fx_2_0 /E main /Fo pureColor.cso pureColor.fx`
+使用 Windows 自带的 fxc 工具编译, 在同级目录里打开控制台, 输入命令 `fxc.exe /T fx_2_0 /E main /Fo {output}.cso {input}.fx`,
+例如 `fxc.exe /T fx_2_0 /E main /Fo pureColor.cso pureColor.fx`
 
 随后将 `.cso` 文件放在 `你的 Mod/Effects/` 下, 例如 `/Effects/Wiki/pureColor.cso`, 像下面这样
 
@@ -354,7 +359,7 @@ ausp 为我们定义了一些参数方便我们访问一些游戏里的数据
 * [`.cso`](../../../assets/mappings/useful_helpers/auspicious/shaders/pureColor.cso)
 * [`.fx`](../../../assets/mappings/useful_helpers/auspicious/shaders/src/pureColor.fx)
 
-参数为 `pureColor`, 表示讲贴图设置为纯色, 比如 `pureColor:#000000`
+参数为 `pureColor`, 表示将贴图设置为纯色, 比如 `pureColor:#000000`
 
 #### [`Wiki/offset`](https://www.bilibili.com/video/BV1BZp96kEjr/)
 

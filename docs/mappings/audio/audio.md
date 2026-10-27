@@ -43,14 +43,18 @@
 
 ## FMOD 安装和配置
 
-注册并登陆 FMOD 官网, 前往[下载页面](https://www.fmod.com/download)下载 `FMOD Studio 1.10.20`. 不要下载最新版 FMOD Studio. 在同页面下找到 `Learning Resources > Celeste FMOD Studio Project > Celeste Project (includes DLC content)` 并下载. 
+1. 注册并登陆 [FMOD 官网](https://www.fmod.com/)
+2. 前往[下载页面](https://www.fmod.com/download)下载 `FMOD Studio 1.10.20` (不要下载最新版 FMOD Studio) 
+3. 在同页面下找到 `Learning Resources > Celeste FMOD Studio Project > Celeste Project (includes DLC content)` 并下载 (这是官图音乐对应的 FMOD 工程文件)
 
-将下载好的工程放在自己记得住的固定位置. 所有以 Celeste Modding 为目的的音频工作都将在你的 FMOD 工程中进行, 所以请妥善保管自己的工程文件. 官网只提供了 Windows 和 macOS 的软件版本. 如果你不在这两个平台上, 你可以尝试使用 WINE 运行软件. 
+请将下载好的工程放在自己记得住的固定位置. 所有以 Celeste Modding 为目的的音频工作都将在你的 FMOD 工程中进行, 所以请妥善保管自己的工程文件. 
 
-<details class="admonition note">
-    <summary class="admonition-title">可忽略选项: 调整音频压缩选项以降低文件大小</summary>
+> 官网只提供了 Windows 和 macOS 的软件版本. 如果你不在这两个平台上, 你可以尝试使用 WINE 运行软件. 
+
+<div class="admonition note">
+    <p class="admonition-title">可忽略选项: 调整音频压缩选项以降低文件大小</p>
     <p>Preferences > Build > Project platforms > Desktop > Quality 调整至 50（默认为 80）</p>
-</details>
+</div>
 
 ## 创建你的第一个背景音乐
 
@@ -72,11 +76,11 @@ Event 是 FMOD 播放声音的最小单元, 它是音频的包装, 可以给音�
 
 在左侧的 Events 标签页下, `右键 > New Event > New 2D Event` 即可添加一个 event, 
 但是由于我们的 event 也会跟别人的 event 产生[路径冲突](../mod_structure.md#conflict), 所以这里我们也需要套文件夹,
-`右键 > New Folder` (例子为了方便演示就不多套了)
+`右键 > New Folder`
 
 > 命名建议: 你的名字/项目名字/.../具体 Event
 
-这里的路径是 `Test/music_event`
+这里的路径就偷懒写 `Test/music_event` 了
 
 ![01](../../assets/mappings/audio/basics/01.png)
 
