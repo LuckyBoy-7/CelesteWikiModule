@@ -241,6 +241,11 @@ Tileset, 即 Tile-set, **瓦片-集**
   <figcaption>tileset 模板说明</figcaption>
 </figure>
 
+<figure markdown>
+  ![tileset](../../assets/mappings/xml/tileset/illustration.png){style="width: 800px; title=123"}
+  <figcaption>tileset 模板说明 by ziyang_51571</figcaption>
+</figure>
+
 ```xml title="ForegroundTiles.xml(未带Data标签)"
 <!--
     Copy-paste this at the top of your tilesets .xml
