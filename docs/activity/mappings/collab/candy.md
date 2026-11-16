@@ -4,7 +4,7 @@
 
 在咖啡厅, 你可以品尝到各种各样的甜食, 以补充爬山所消耗的糖分；通过咖啡厅后门, 你可以前往糖果加工厂, 在那里接取任务、实地探险, 将糖山中的原料带回加工厂, 你将获得丰盛的奖励.
 
-糖山欢迎每一位探险家的来访, 下面是探险家们带回来的一些照片, 仅作为参考. 
+糖山欢迎每一位探险家的来访, 下面是探险家们带回来的一些照片和音乐, 仅作为参考. 
 
 
 
@@ -18,10 +18,18 @@
     <img src="/celeste_wiki/assets/activity/mappings/collab/candy/syn1.jpg">
     <img src="/celeste_wiki/assets/activity/mappings/collab/candy/syn2.jpg">
     <img src="/celeste_wiki/assets/activity/mappings/collab/candy/syn3.jpg">
-    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/taosu.jpg">
+    <img src="/celeste_wiki/assets/activity/mappings/collab/candy/taosu.png">
 </div>
 
-> Host有话说: 
+
+糖果梦银河 (合辑版)
+
+<audio controls>
+    <source src="/celeste_wiki/assets/activity/mappings/collab/candy/candy_dream_galaxy.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+> Host 有话说: 
 > 
 > 糖游是正经合集, 只是具有一定整活属性, 但总的方向还是认真地去打磨地图.
 > 
